@@ -14,3 +14,8 @@ if __name__ == '__main__':
     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+# 3 files
+# sentence level classification.py
+# Predict token labels for a given malware related text
+# data processing
