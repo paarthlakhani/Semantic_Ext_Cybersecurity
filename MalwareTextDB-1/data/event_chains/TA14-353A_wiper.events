@@ -1,0 +1,226 @@
+---
+Answer
+3
+Context Event 1
+equipped<|>equip<|><|>This SMB Worm Tool<&>This worm<&>It<&>it<&>The tool<&>This tool<|>
+Context Event 2
+equipped<|>equip<|><|>This SMB Worm Tool<&>This worm<&>It<&>it<&>The tool<&>This tool<|>
+Context Event 3
+equipped<|>equip<|><|>This SMB Worm Tool<&>This worm<&>It<&>it<&>The tool<&>This tool<|>
+Context Event 4
+equipped<|>equip<|><|>This SMB Worm Tool<&>This worm<&>It<&>it<&>The tool<&>This tool<|>
+Context Event 5
+equipped<|>equip<|><|>This SMB Worm Tool<&>This worm<&>It<&>it<&>The tool<&>This tool<|>
+Context Event 6
+propagate<|>propagate<|>This SMB Worm Tool<&>This worm<&>It<&>it<&>The tool<&>This tool<|><|>
+Context Event 7
+uses<|>use<|>This SMB Worm Tool<&>This worm<&>It<&>it<&>The tool<&>This tool<|>a brute force authentication attack<|>
+Context Event 8
+connects<|>connect<|>This SMB Worm Tool<&>This worm<&>It<&>it<&>The tool<&>This tool<|>home<|>
+Context Event 9
+send<|>send<|>This SMB Worm Tool<&>This worm<&>It<&>it<&>The tool<&>This tool<|>log data<|>back to+command and control (C2) infrastructure
+Context Event 10
+spread<|>spread<|>This SMB Worm Tool<&>This worm<&>It<&>it<&>The tool<&>This tool<|><|>
+Context Event 11
+accepts<|>accept<|>This SMB Worm Tool<&>This worm<&>It<&>it<&>The tool<&>This tool<|>new scan tasking<|>
+Context Event 12
+contains<|>contain<|>This SMB Worm Tool<&>This worm<&>It<&>it<&>The tool<&>This tool<|>a listening implant<|>
+Context Event 13
+contains<|>contain<|>This SMB Worm Tool<&>This worm<&>It<&>it<&>The tool<&>This tool<|>lightweight backdoor<|>
+Context Event 14
+contains<|>contain<|>This SMB Worm Tool<&>This worm<&>It<&>it<&>The tool<&>This tool<|>proxy tool<|>
+Context Event 15
+contains<|>contain<|>This SMB Worm Tool<&>This worm<&>It<&>it<&>The tool<&>This tool<|>destructive hard drive tool<|>
+Candidate Event 1
+executes<|>execute<|>This SMB Worm Tool<&>This worm<&>It<&>it<&>The tool<&>This tool<|>some kind of embedded script<|>
+Candidate Event 2
+encrypted<|>encrypt<|>This SMB Worm Tool<&>This worm<&>It<&>it<&>The tool<&>This tool<|>various things, such as system information, running processes and current username<&>The data<|>
+Candidate Event 3
+use<|>use<|>This SMB Worm Tool<&>This worm<&>It<&>it<&>The tool<&>This tool<|>fake ARP packets<|>
+Candidate Event 4
+contains<|>contain<|>This SMB Worm Tool<&>This worm<&>It<&>it<&>The tool<&>This tool<|>destructive target cleaning tool<|>
+Candidate Event 5
+uses<|>use<|>This SMB Worm Tool<&>This worm<&>It<&>it<&>The tool<&>This tool<|>virtual volumes<&>it<|>
+---
+Answer
+0
+Context Event 1
+is<|>be<|>This<&>It<&>The listener<&>This tool<|>a backdoor listener<|>
+Context Event 2
+includes<|>include<|>This<&>It<&>The listener<&>This tool<|>file transfer<|>
+Context Event 3
+includes<|>include<|>This<&>It<&>The listener<&>This tool<|>system survey<|>
+Context Event 4
+includes<|>include<|>This<&>It<&>The listener<&>This tool<|>process manipulation<|>
+Context Event 5
+includes<|>include<|>This<&>It<&>The listener<&>This tool<|>proxy capability<|>
+Context Event 6
+includes<|>include<|>This<&>It<&>The listener<&>This tool<|>file time matching<|>
+Context Event 7
+perform<|>perform<|>This<&>It<&>The listener<&>This tool<|>arbitrary code execution<|>
+Context Event 8
+execute<|>execute<|>This<&>It<&>The listener<&>This tool<|>commands<|>
+Context Event 9
+open<|>open<|>This<&>It<&>The listener<&>This tool<|>ports<|>
+Context Event 10
+discover<|>discover<|>This<&>It<&>The listener<&>This tool<|>routers and gateway devices<|>
+Context Event 11
+add<|>add<|>This<&>It<&>The listener<&>This tool<|>port mappings<|>
+Candidate Event 1
+allowing<|>allow<|>This<&>It<&>The listener<&>This tool<|>inbound connections<|>
+Candidate Event 2
+free<|>free<|>This<&>It<&>The listener<&>This tool<|>The PE file<&>It<&>the encrypted file<&>the PE image allocation<|>
+Candidate Event 3
+used<|>use<|>This<&>It<&>The listener<&>This tool<|>a file mapping named &*SDKJfhksdf89*DIUKJDSF&*sdfsdf78sdfsdf<&>This<|>
+Candidate Event 4
+execute<|>execute<|>This<&>It<&>The listener<&>This tool<|>two files<&>This data file<&>The files<&>the DLLs<&>the DLL<&>ctfmonrc.dll<|>
+Candidate Event 5
+invokes<|>invoke<|>This<&>It<&>The listener<&>This tool<|>the SHGetSpecialFolderPath() API<|>
+---
+Answer
+4
+Context Event 1
+loaded<|>load<|><|>Implants in this malware family<&>Implants in this malware family<&>This proxy tool<|>
+Context Event 2
+listen<|>listen<|>Implants in this malware family<&>Implants in this malware family<&>This proxy tool<|><|>
+Context Event 3
+has<|>have<|>Implants in this malware family<&>Implants in this malware family<&>This proxy tool<|>basic backdoor functionality<|>
+Context Event 4
+fingerprint<|>fingerprint<|>Implants in this malware family<&>Implants in this malware family<&>This proxy tool<|>the victim machine<|>
+Context Event 5
+run<|>run<|>Implants in this malware family<&>Implants in this malware family<&>This proxy tool<|>remote commands<|>
+Context Event 6
+perform<|>perform<|>Implants in this malware family<&>Implants in this malware family<&>This proxy tool<|>directory listings<|>
+Context Event 7
+perform<|>perform<|>Implants in this malware family<&>Implants in this malware family<&>This proxy tool<|>process listings<|>
+Candidate Event 1
+used<|>use<|>Implants in this malware family<&>Implants in this malware family<&>This proxy tool<|>3rd party ad networks<|>
+Candidate Event 2
+wiping<|>wipe<|>Implants in this malware family<&>Implants in this malware family<&>This proxy tool<|>both Linux and Windows machines<|>
+Candidate Event 3
+written<|>write<|>Implants in this malware family<&>Implants in this malware family<&>This proxy tool<|>a DLL or EXE<|>
+Candidate Event 4
+send<|>send<|>Implants in this malware family<&>Implants in this malware family<&>This proxy tool<|>data<&>data<|>
+Candidate Event 5
+transfer<|>transfer<|>Implants in this malware family<&>Implants in this malware family<&>This proxy tool<|>files<|>
+---
+Answer
+2
+Context Event 1
+is<|>be<|>This tool<&>the program<|>a tailored hard-drive wiping tool<|>
+Context Event 2
+destroy<|>destroy<|>This tool<&>the program<|>data<|>
+Context Event 3
+over-write<|>over-write<|>This tool<&>the program<|>portions of up-to the first four physical drives attached<|>
+Context Event 4
+over-write<|>over-write<|>This tool<&>the program<|>the master boot record (MBR)<&>the infected MBR<|>
+Candidate Event 1
+installed<|>instal<|>This tool<&>the program<|>a Dynamic Link Library (DLL)<|>
+Candidate Event 2
+involve<|>involve<|>This tool<&>the program<|>the use of malicious links or e-mail attachments<|>
+Candidate Event 3
+complicate<|>complicate<|>This tool<&>the program<|>he victim machine’s recovery<|>
+Candidate Event 4
+monitor<|>monitor<|>This tool<&>the program<|>the state of the threat<|>
+Candidate Event 5
+stores<|>store<|>This tool<&>the program<|>its message queue<|>in+a file called
+---
+Answer
+3
+Context Event 1
+renders<|>render<|>This tool<&>The tool<|>victim machines<&>inoperable<|>
+Context Event 2
+overwriting<|>overwrite<|>This tool<&>The tool<|>the Master Boot Record<|>
+Candidate Event 1
+destroying<|>destroy<|>This tool<&>The tool<|>the MBR (master boot record) of the affected drive<|>
+Candidate Event 2
+registered<|>register<|>This tool<&>The tool<|>the following file<&>This tmp file<|>
+Candidate Event 3
+copy<|>copy<|>This tool<&>The tool<|>The dropper component<&>itself<&>It<&>itself<&>itself<|>to+accessible network shares
+Candidate Event 4
+dropped<|>drop<|>another executable<|>This tool<&>The tool<|>
+Candidate Event 5
+beaconed<|>beacon<|>This tool<&>The tool<|>its IP address<|>to+an e-mail account under the attacker’s control
+---
+Answer
+4
+Context Event 1
+propagate<|>propagate<|>The malware<&>the malware<&>The malware<&>the malware<&>the malware<|><|>
+Context Event 2
+access<|>access<|>The malware<&>the malware<&>The malware<&>the malware<&>the malware<|>remote network shares<|>
+Context Event 3
+upload<|>upload<|>The malware<&>the malware<&>The malware<&>the malware<&>the malware<|>a copy of the wiper<&>the wiper<&>a copy of the wiper file “taskhostXX.exe”<|>
+Context Event 4
+begin<|>begin<|>The malware<&>the malware<&>The malware<&>the malware<&>the malware<|>the wiping process<|>
+Context Event 5
+access<|>access<|>The malware<&>the malware<&>The malware<&>the malware<&>the malware<|>shares<|>
+Context Event 6
+wiping<|>wipe<|>The malware<&>the malware<&>The malware<&>the malware<&>the malware<|>files<|>
+Context Event 7
+uploads<|>upload<|>The malware<&>the malware<&>The malware<&>the malware<&>the malware<|>a copy of the wiper<&>the wiper<&>a copy of the wiper file “taskhostXX.exe”<|>
+Context Event 8
+uploaded<|>upload<|>The malware<&>the malware<&>The malware<&>the malware<&>the malware<|>a copy of the wiper<&>the wiper<&>a copy of the wiper file “taskhostXX.exe”<|>
+Candidate Event 1
+remove<|>remove<|>The malware<&>the malware<&>The malware<&>the malware<&>the malware<|>remaining traces and artifacts<|>
+Candidate Event 2
+used<|>use<|>The malware<&>the malware<&>The malware<&>the malware<&>the malware<|>“Wage Data 2012”<|>
+Candidate Event 3
+ask<|>ask<|>The malware<&>the malware<&>The malware<&>the malware<&>the malware<|>the pipe server<&>it<&>the pipe server<&>the pipe server<&>the pipe server<|>
+Candidate Event 4
+resend<|>resend<|>The malware<&>the malware<&>The malware<&>the malware<&>the malware<|>the IP address of target(s)<&>them<|>to+the attacker
+Candidate Event 5
+reports<|>report<|>The malware<&>the malware<&>The malware<&>the malware<&>the malware<|>its status<|>
+---
+Answer
+1
+Context Event 1
+upload<|>upload<|>The malware<&>the malware<&>The malware<&>the malware<&>the malware<|>a copy of the wiper<&>the wiper<&>a copy of the wiper file “taskhostXX.exe”<|>
+Context Event 2
+uploads<|>upload<|>The malware<&>the malware<&>The malware<&>the malware<&>the malware<|>a copy of the wiper<&>the wiper<&>a copy of the wiper file “taskhostXX.exe”<|>
+Candidate Event 1
+written<|>write<|>The malware<&>the malware<&>The malware<&>the malware<&>the malware<|>the initial message queue file<|>into+the virtual volume
+Candidate Event 2
+uploaded<|>upload<|>The malware<&>the malware<&>The malware<&>the malware<&>the malware<|>a copy of the wiper<&>the wiper<&>a copy of the wiper file “taskhostXX.exe”<|>
+Candidate Event 3
+encoded<|>encode<|>The malware<&>the malware<&>The malware<&>the malware<&>the malware<|>The communication between the attacker and the SOCKSS<|>
+Candidate Event 4
+carry out<|>carry out<|>The malware<&>the malware<&>The malware<&>the malware<&>the malware<|>all of the communications<|>
+Candidate Event 5
+determined<|>determine<|>The malware<&>the malware<&>The malware<&>the malware<&>the malware<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|>
+---
+Answer
+1
+Context Event 1
+installed<|>instal<|>The second instance of the dropper file<|>itself<|>
+Context Event 2
+started<|>start<|>The second instance of the dropper file<|>the service<|>
+Candidate Event 1
+modify<|>modify<|>The second instance of the dropper file<|>files that the host app can write to<|>
+Candidate Event 2
+terminated<|>terminate<|>The second instance of the dropper file<|><|>
+Candidate Event 3
+has<|>have<|>The second instance of the dropper file<|>a remotely installable trojan named Abel<|>
+Candidate Event 4
+establishing<|>establish<|>The second instance of the dropper file<|>a presence<|>
+Candidate Event 5
+identify<|>identify<|>The second instance of the dropper file<|>potential victims<|>
+---
+Answer
+0
+Context Event 1
+dropped<|>drop<|>The “-s” instance<|>“igfxtrayex.exe”<|>
+Context Event 2
+executed<|>execute<|>The “-s” instance<|>“igfxtrayex.exe”<|>
+Context Event 3
+created<|>create<|>The “-s” instance<|>“net_ver.dat”<|>
+Candidate Event 1
+generating<|>generate<|>The “-s” instance<|>network traffic<|>
+Candidate Event 2
+create<|>create<|>The “-s” instance<|>a copy of itself<&>the copy utilizing PsExec<&>This copy<|>
+Candidate Event 3
+obfuscate<|>obfuscate<|>The “-s” instance<|>a process<|>
+Candidate Event 4
+detect<|>detect<|>The “-s” instance<|>traffic addressed to itself<|>
+Candidate Event 5
+cloak<|>cloak<|>The “-s” instance<|>the backdoor<&>it<|>
+---

@@ -1,0 +1,240 @@
+---
+Answer
+3
+Context Event 1
+sustain<|>sustain<|>Regin<&>It<&>It<&>it<&>It<|>long-term intelligence-gathering operations<|>
+Context Event 2
+remaining<|>remain<|>Regin<&>It<&>It<&>it<&>It<|><|>
+Context Event 3
+conceal<|>conceal<|>Regin<&>It<&>It<&>it<&>It<|>itself and its activities on compromised computers<|>
+Context Event 4
+implicated<|>implicate<|>Regin<&>It<&>It<&>it<&>It<|><|>
+Context Event 5
+used<|>use<|>Regin<&>It<&>It<&>it<&>It<|><|>
+Candidate Event 1
+drops<|>drop<|>Regin<&>It<&>It<&>it<&>It<|>a malicious Downloader “clbcatq.dll”<&>a malicious Downloader “clbcatq.dll”<|>into+a newly created “wuauclt” directory
+Candidate Event 2
+breaks down<|>break down<|>Regin<&>It<&>It<&>it<&>It<|><|>
+Candidate Event 3
+have<|>have<|>Regin<&>It<&>It<&>it<&>It<|>the decoy documents<|>
+Candidate Event 4
+monitoring<|>monitor<|>Regin<&>It<&>It<&>it<&>It<|><|>
+Candidate Event 5
+using<|>use<|>Regin<&>It<&>It<&>it<&>It<|>a "leaked report" lure which contained a decoy document related to Pakistan's alleged inability to locate Osama Bin Laden<|>
+---
+Answer
+2
+Context Event 1
+monitoring<|>monitor<|>It<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<&>the threat<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<|>targets<|>
+Context Event 2
+stealing<|>steal<|>It<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<&>the threat<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<|>data<|>
+Context Event 3
+installing<|>instal<|>It<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<&>the threat<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<|>a large number of additional payloads<|>
+Context Event 4
+steal<|>steal<|>It<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<&>the threat<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<|>passwords<|>
+Context Event 5
+monitor<|>monitor<|>It<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<&>the threat<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<|>network traffic<|>
+Context Event 6
+gather<|>gather<|>It<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<&>the threat<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<|>information on processes and memory utilization<|>
+Context Event 7
+hide<|>hide<|>It<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<&>the threat<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<|>the data<|>
+Context Event 8
+installed<|>instal<|><|>It<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<&>the threat<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<|>
+Context Event 9
+originated<|>originate<|>It<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<&>the threat<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<|><|>
+Context Event 10
+stores<|>store<|>It<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<&>the threat<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<|>data files and payloads<|>on+disk
+Context Event 11
+logs<|>log<|>It<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<&>the threat<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<|>data<|>to+the ApplicationLog.dat file
+Context Event 12
+receive<|>receive<|>It<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<&>the threat<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<|>payload modules<|>
+Context Event 13
+distributed<|>distribute<|><|>It<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<&>the threat<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<|>
+Candidate Event 1
+calling<|>call<|>It<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<&>the threat<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<|>DllRegisterServer<|>
+Candidate Event 2
+transfer<|>transfer<|>It<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<&>the threat<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<|>files<|>to+the command and control servers
+Candidate Event 3
+used<|>use<|><|>It<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<&>the threat<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<|>
+Candidate Event 4
+installed<|>instal<|>It<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<&>the threat<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<|>the use of a digitally­signed advanced keylogger<&>It<&>This keylogger<&>This driver package<&>the NDISKPRO.SYS driver<&>This component<&>This keylogger module<|>
+Candidate Event 5
+become<|>become<|>It<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<&>the threat<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<|>active<|>
+---
+Answer
+4
+Context Event 1
+install<|>install<|>it<&>the dropper<&>Stage 0<|>Stage 1<&>Stage 1<&>kernel drivers<&>kernel drivers<&>Stage 1<&>running instances of Stage 1<|>
+Context Event 2
+execute<|>execute<|>it<&>the dropper<&>Stage 0<|>Stage 1<&>Stage 1<&>kernel drivers<&>kernel drivers<&>Stage 1<&>running instances of Stage 1<|>
+Candidate Event 1
+using<|>use<|>it<&>the dropper<&>Stage 0<|>Cain & Abel<&>It<&>It<&>It<|>
+Candidate Event 2
+creates<|>create<|>it<&>the dropper<&>Stage 0<|>a Windows mailslot<&>the “check_mes_v5555” mailslot<&>the “check_mes_v5555” mailslot<&>the mailslot<|>
+Candidate Event 3
+opens<|>open<|>it<&>the dropper<&>Stage 0<|>the device<|>
+Candidate Event 4
+recording<|>record<|>it<&>the dropper<&>Stage 0<|>audio/video<|>
+Candidate Event 5
+setting up<|>set up<|>it<&>the dropper<&>Stage 0<|>various extended attributes and/or registry keys and values that hold encoded versions of stages 2, 3, and potentially stages 4 and onwards<|>
+---
+Answer
+3
+Context Event 1
+executed<|>execute<|><|>Stage 2<&>kernel driver<&>Stage 2<&>Stage 2<&>Stage 2<&>This stage<&>Stage 2<&>Stage 2<|>
+Context Event 2
+installs<|>install<|>Stage 2<&>kernel driver<&>Stage 2<&>Stage 2<&>Stage 2<&>This stage<&>Stage 2<&>Stage 2<|>Stage 3<&>an encrypted version of Stage 3<&>this file<&>Stage 3<&>Stage 3<|>
+Context Event 3
+encrypted<|>encrypt<|><|>Stage 2<&>kernel driver<&>Stage 2<&>Stage 2<&>Stage 2<&>This stage<&>Stage 2<&>Stage 2<|>
+Context Event 4
+encrypted<|>encrypt<|><|>Stage 2<&>kernel driver<&>Stage 2<&>Stage 2<&>Stage 2<&>This stage<&>Stage 2<&>Stage 2<|>
+Context Event 5
+hide<|>hide<|>Stage 2<&>kernel driver<&>Stage 2<&>Stage 2<&>Stage 2<&>This stage<&>Stage 2<&>Stage 2<|>Stage 1<&>Stage 1<&>kernel drivers<&>kernel drivers<&>Stage 1<&>running instances of Stage 1<|>
+Context Event 6
+loads<|>load<|>Stage 2<&>kernel driver<&>Stage 2<&>Stage 2<&>Stage 2<&>This stage<&>Stage 2<&>Stage 2<|>Stage 3<&>an encrypted version of Stage 3<&>this file<&>Stage 3<&>Stage 3<|>
+Candidate Event 1
+include<|>include<|>Stage 2<&>kernel driver<&>Stage 2<&>Stage 2<&>Stage 2<&>This stage<&>Stage 2<&>Stage 2<|>process enumeration<|>
+Candidate Event 2
+exfiltrated<|>exfiltrated<|>Stage 2<&>kernel driver<&>Stage 2<&>Stage 2<&>Stage 2<&>This stage<&>Stage 2<&>Stage 2<|>data<&>certain types of data<|>
+Candidate Event 3
+dropped<|>drop<|>Stage 2<&>kernel driver<&>Stage 2<&>Stage 2<&>Stage 2<&>This stage<&>Stage 2<&>Stage 2<|>“igfxtrayex.exe”<|>
+Candidate Event 4
+monitor<|>monitor<|>Stage 2<&>kernel driver<&>Stage 2<&>Stage 2<&>Stage 2<&>This stage<&>Stage 2<&>Stage 2<|>the state of the threat<|>
+Candidate Event 5
+repeated<|>repeat<|>Stage 2<&>kernel driver<&>Stage 2<&>Stage 2<&>Stage 2<&>This stage<&>Stage 2<&>Stage 2<|>the C2 request<|>
+---
+Answer
+0
+Context Event 1
+serve<|>serve<|>a compromised computer<&>it<&>compromised computers<&>it<|><|>
+Context Event 2
+contact<|>contact<|>the attackers who operated Regin<&>the attackers<&>the attacker<&>the attacker<|>a compromised computer<&>it<&>compromised computers<&>it<|>
+Context Event 3
+instruct<|>instruct<|>the attackers who operated Regin<&>the attackers<&>the attacker<&>the attacker<|>a compromised computer<&>it<&>compromised computers<&>it<|>
+Candidate Event 1
+begin<|>begin<|>a compromised computer<&>it<&>compromised computers<&>it<|>communications<|>
+Candidate Event 2
+execute<|>execute<|>a compromised computer<&>it<&>compromised computers<&>it<|>any shell code returned by the remote server<|>
+Candidate Event 3
+view<|>view<|>a compromised computer<&>it<&>compromised computers<&>it<|>the main desktop<&>graphically<|>
+Candidate Event 4
+report<|>report<|>a compromised computer<&>it<&>compromised computers<&>it<|>system information<|>
+Candidate Event 5
+retrieve<|>retrieve<|>a compromised computer<&>it<&>compromised computers<&>it<|>binary data<&>binary data<|>
+---
+Answer
+1
+Context Event 1
+retrieve<|>retrieve<|>svcsstat.exe<&>a file<|>binary data<&>binary data<|>
+Context Event 2
+retrieve<|>retrieve<|>svcsstat.exe<&>a file<|><|>
+Candidate Event 1
+infiltrate<|>infiltrate<|>svcsstat.exe<&>a file<|><|>
+Candidate Event 2
+execute<|>execute<|>svcsstat.exe<&>a file<|>the data<|>
+Candidate Event 3
+launched<|>launch<|>svcsstat.exe<&>a file<|>the installer component (0ae82fd94836815a1e8d284ccb75109d)<&>The installer<&>The installer<|>
+Candidate Event 4
+downloaded<|>download<|>svcsstat.exe<&>a file<|>dropper packages<&>These files<&>something unexpected and wholly different from what we have discussed until now<&>It<&>sccm.exe<|>
+Candidate Event 5
+starts<|>start<|>svcsstat.exe<&>a file<|>This module<&>It<&>the module<&>The module<&>current module<&>The component<|>
+---
+Answer
+4
+Context Event 1
+install<|>install<|>it<&>the dropper<&>Stage 0<|>Stage 1<&>Stage 1<&>kernel drivers<&>kernel drivers<&>Stage 1<&>running instances of Stage 1<|>
+Context Event 2
+execute<|>execute<|>it<&>the dropper<&>Stage 0<|>Stage 1<&>Stage 1<&>kernel drivers<&>kernel drivers<&>Stage 1<&>running instances of Stage 1<|>
+Context Event 3
+is<|>be<|>Stage 1<&>Stage 1<&>kernel drivers<&>kernel drivers<&>Stage 1<&>running instances of Stage 1<|>the initial load point for the threat<|>
+Context Event 4
+execute<|>execute<|>Stage 1<&>Stage 1<&>kernel drivers<&>kernel drivers<&>Stage 1<&>running instances of Stage 1<|>Stage 2<&>Stage 2<&>Stage 2<|>
+Context Event 5
+load<|>load<|>Stage 1<&>Stage 1<&>kernel drivers<&>kernel drivers<&>Stage 1<&>running instances of Stage 1<|>the driver<|>
+Context Event 6
+executes<|>execute<|>Stage 1<&>Stage 1<&>kernel drivers<&>kernel drivers<&>Stage 1<&>running instances of Stage 1<|>Stage 2<&>Stage 2<&>Stage 2<|>
+Candidate Event 1
+view<|>view<|>Stage 1<&>Stage 1<&>kernel drivers<&>kernel drivers<&>Stage 1<&>running instances of Stage 1<|>the main desktop<&>graphically<|>
+Candidate Event 2
+upload<|>upload<|>Stage 1<&>Stage 1<&>kernel drivers<&>kernel drivers<&>Stage 1<&>running instances of Stage 1<|>file<|>
+Candidate Event 3
+creates<|>create<|>Stage 1<&>Stage 1<&>kernel drivers<&>kernel drivers<&>Stage 1<&>running instances of Stage 1<|>the kernel mode driver<&>a 32-bit driver<&>a driver<&>The driver<&>the driver<&>The rootkit<&>the rootkit<&>it<&>the driver<&>the rootkit<&>it<&>the rootkit<&>The driver<&>Snake<&>Snake<&>Snake<&>it<&>it<|>in+the following location
+Candidate Event 4
+hooks<|>hook<|>Stage 1<&>Stage 1<&>kernel drivers<&>kernel drivers<&>Stage 1<&>running instances of Stage 1<|>various Windows Kernel API calls<|>
+Candidate Event 5
+hide<|>hide<|>Stage 2<&>kernel driver<&>Stage 2<&>Stage 2<&>Stage 2<&>This stage<&>Stage 2<&>Stage 2<|>Stage 1<&>Stage 1<&>kernel drivers<&>kernel drivers<&>Stage 1<&>running instances of Stage 1<|>
+---
+Answer
+1
+Context Event 1
+installs<|>install<|>Stage 2<&>kernel driver<&>Stage 2<&>Stage 2<&>Stage 2<&>This stage<&>Stage 2<&>Stage 2<|>Stage 3<&>an encrypted version of Stage 3<&>this file<&>Stage 3<&>Stage 3<|>
+Context Event 2
+loads<|>load<|>Stage 2<&>kernel driver<&>Stage 2<&>Stage 2<&>Stage 2<&>This stage<&>Stage 2<&>Stage 2<|>Stage 3<&>an encrypted version of Stage 3<&>this file<&>Stage 3<&>Stage 3<|>
+Context Event 3
+encrypted<|>encrypt<|><|>Stage 3<&>an encrypted version of Stage 3<&>this file<&>Stage 3<&>Stage 3<|>
+Context Event 4
+executing<|>execute<|>Stage 3<&>an encrypted version of Stage 3<&>this file<&>Stage 3<&>Stage 3<|>Stage 4<&>The files for Stage 4<&>Stage 4<|>
+Candidate Event 1
+repurposed<|>repurposed<|>Stage 3<&>an encrypted version of Stage 3<&>this file<&>Stage 3<&>Stage 3<|>This document<|>
+Candidate Event 2
+loaded<|>load<|>Stage 3<&>an encrypted version of Stage 3<&>this file<&>Stage 3<&>Stage 3<|>Stage 4<&>The files for Stage 4<&>Stage 4<|>
+Candidate Event 3
+is<|>be<|>Stage 3<&>an encrypted version of Stage 3<&>this file<&>Stage 3<&>Stage 3<|>an Epic backdoor<&>an Epic backdoor<|>
+Candidate Event 4
+used<|>use<|>Stage 3<&>an encrypted version of Stage 3<&>this file<&>Stage 3<&>Stage 3<|>The files within that directory<|>
+Candidate Event 5
+renames<|>rename<|>Stage 3<&>an encrypted version of Stage 3<&>this file<&>Stage 3<&>Stage 3<|>the files<&>them<&>them<&>them<|>
+---
+Answer
+1
+Context Event 1
+executing<|>execute<|>Stage 3<&>an encrypted version of Stage 3<&>this file<&>Stage 3<&>Stage 3<|>Stage 4<&>The files for Stage 4<&>Stage 4<|>
+Context Event 2
+loaded<|>load<|>Stage 3<&>an encrypted version of Stage 3<&>this file<&>Stage 3<&>Stage 3<|>Stage 4<&>The files for Stage 4<&>Stage 4<|>
+Candidate Event 1
+written<|>write<|>Stage 4<&>The files for Stage 4<&>Stage 4<|>both applications<|>to+a temporary directory
+Candidate Event 2
+injected<|>inject<|>Stage 4<&>The files for Stage 4<&>Stage 4<|>The files for Stage 5<|>into+services.exe
+Candidate Event 3
+manipulate<|>manipulate<|>Stage 4<&>The files for Stage 4<&>Stage 4<|>Android home screen icons<|>
+Candidate Event 4
+stored<|>store<|>Stage 4<&>The files for Stage 4<&>Stage 4<|>The malicious content<&>this<|>inside+the document
+Candidate Event 5
+write<|>write<|>Stage 4<&>The files for Stage 4<&>Stage 4<|>data<|>
+---
+Answer
+4
+Context Event 1
+cleaned up<|>clean up<|>the attackers who operated Regin<&>the attackers<&>the attacker<&>the attacker<|>compromised computers<|>
+Context Event 2
+initiate<|>initiate<|>the attackers who operated Regin<&>the attackers<&>the attacker<&>the attacker<|>communications<|>
+Context Event 3
+contact<|>contact<|>the attackers who operated Regin<&>the attackers<&>the attacker<&>the attacker<|>a compromised computer<&>it<&>compromised computers<&>it<|>
+Candidate Event 1
+using<|>use<|>the attackers who operated Regin<&>the attackers<&>the attacker<&>the attacker<|>a wide range of off-the-shelf spyware, as well as publicly available third-party services, like iplogger.org<|>
+Candidate Event 2
+launch<|>launch<|>the attackers who operated Regin<&>the attackers<&>the attacker<&>the attacker<|>an instance of Internet Explorer<|>
+Candidate Event 3
+hooks<|>hook<|>the attackers who operated Regin<&>the attackers<&>the attacker<&>the attacker<|>a minimum number of kernel API functions<|>
+Candidate Event 4
+write<|>write<|>the attackers who operated Regin<&>the attackers<&>the attacker<&>the attacker<|>a malicious component<|>
+Candidate Event 5
+instruct<|>instruct<|>the attackers who operated Regin<&>the attackers<&>the attacker<&>the attacker<|>a compromised computer<&>it<&>compromised computers<&>it<|>
+---
+Answer
+4
+Context Event 1
+looks<|>look<|>Stage 1<&>Stage 1<|><|>
+Context Event 2
+searches<|>search<|>Stage 1<&>Stage 1<|><|>
+Candidate Event 1
+infect<|>infect<|>Stage 1<&>Stage 1<|>other systems<|>
+Candidate Event 2
+enumerate<|>enumerate<|>Stage 1<&>Stage 1<|>network resources<|>
+Candidate Event 3
+sends<|>send<|>Stage 1<&>Stage 1<|>an initial beacon<&>The beacon<&>the initial beacon<|>
+Candidate Event 4
+distributed<|>distribute<|>Stage 1<&>Stage 1<|>This file<&>The file<&>This<|>
+Candidate Event 5
+loaded<|>load<|>Stage 1<&>Stage 1<|><|>
+---

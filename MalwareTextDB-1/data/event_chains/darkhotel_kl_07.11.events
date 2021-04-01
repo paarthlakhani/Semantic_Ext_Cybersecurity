@@ -1,0 +1,352 @@
+---
+Answer
+3
+Context Event 1
+installed<|>instal<|><|>Darkhotel<&>it<&>the malware<&>Digitally signed Darkhotel backdoors<&>This Darkhotel package<&>the trojan<&>Catch.exe<|>
+Context Event 2
+seeds<|>seed<|>Darkhotel<&>it<&>the malware<&>Digitally signed Darkhotel backdoors<&>This Darkhotel package<&>the trojan<&>Catch.exe<|>Japanese p2p sharing sites<|>
+Context Event 3
+delivered<|>deliver<|><|>Darkhotel<&>it<&>the malware<&>Digitally signed Darkhotel backdoors<&>This Darkhotel package<&>the trojan<&>Catch.exe<|>
+Context Event 4
+uses<|>use<|>Darkhotel<&>it<&>the malware<&>Digitally signed Darkhotel backdoors<&>This Darkhotel package<&>the trojan<&>Catch.exe<|>this method<|>
+Context Event 5
+downloaded<|>download<|><|>Darkhotel<&>it<&>the malware<&>Digitally signed Darkhotel backdoors<&>This Darkhotel package<&>the trojan<&>Catch.exe<|>
+Context Event 6
+installed<|>instal<|><|>Darkhotel<&>it<&>the malware<&>Digitally signed Darkhotel backdoors<&>This Darkhotel package<&>the trojan<&>Catch.exe<|>on+the victim system
+Candidate Event 1
+find<|>find<|>Darkhotel<&>it<&>the malware<&>Digitally signed Darkhotel backdoors<&>This Darkhotel package<&>the trojan<&>Catch.exe<|>valuable information<|>
+Candidate Event 2
+manipulating<|>manipulate<|>Darkhotel<&>it<&>the malware<&>Digitally signed Darkhotel backdoors<&>This Darkhotel package<&>the trojan<&>Catch.exe<|>the clipboard<|>
+Candidate Event 3
+gathering<|>gather<|>Darkhotel<&>it<&>the malware<&>Digitally signed Darkhotel backdoors<&>This Darkhotel package<&>the trojan<&>Catch.exe<|>intelligence on the infected system<|>
+Candidate Event 4
+communicates<|>communicate<|>Darkhotel<&>it<&>the malware<&>Digitally signed Darkhotel backdoors<&>This Darkhotel package<&>the trojan<&>Catch.exe<|><|>
+Candidate Event 5
+identifying<|>identify<|>Darkhotel<&>it<&>the malware<&>Digitally signed Darkhotel backdoors<&>This Darkhotel package<&>the trojan<&>Catch.exe<|>a target<|>
+---
+Answer
+0
+Context Event 1
+was<|>be<|>One of the most interesting components that we discovered as a part of this cam- paign<|>the use of a digitally­signed advanced keylogger<&>It<&>This keylogger<&>This driver package<&>the NDISKPRO.SYS driver<&>This component<&>This keylogger module<|>
+Context Event 2
+dropped<|>drop<|><|>the use of a digitally­signed advanced keylogger<&>It<&>This keylogger<&>This driver package<&>the NDISKPRO.SYS driver<&>This component<&>This keylogger module<|>
+Context Event 3
+built<|>build<|><|>the use of a digitally­signed advanced keylogger<&>It<&>This keylogger<&>This driver package<&>the NDISKPRO.SYS driver<&>This component<&>This keylogger module<|>
+Context Event 4
+installed<|>instal<|><|>the use of a digitally­signed advanced keylogger<&>It<&>This keylogger<&>This driver package<&>the NDISKPRO.SYS driver<&>This component<&>This keylogger module<|>
+Context Event 5
+hooks<|>hook<|>the use of a digitally­signed advanced keylogger<&>It<&>This keylogger<&>This driver package<&>the NDISKPRO.SYS driver<&>This component<&>This keylogger module<|>both INT 0x01 and INT 0xff<|>
+Context Event 6
+retrieves<|>retrieve<|>the use of a digitally­signed advanced keylogger<&>It<&>This keylogger<&>This driver package<&>the NDISKPRO.SYS driver<&>This component<&>This keylogger module<|>keystroke data<|>
+Context Event 7
+encrypts<|>encrypt<|>the use of a digitally­signed advanced keylogger<&>It<&>This keylogger<&>This driver package<&>the NDISKPRO.SYS driver<&>This component<&>This keylogger module<|>the retrieved values ondisk<|>
+Context Event 8
+writes<|>write<|>the use of a digitally­signed advanced keylogger<&>It<&>This keylogger<&>This driver package<&>the NDISKPRO.SYS driver<&>This component<&>This keylogger module<|>the retrieved values ondisk<|>to+a randomly named .tmp, file like ffffz07131101.tmp
+Context Event 9
+encrypts<|>encrypt<|>the use of a digitally­signed advanced keylogger<&>It<&>This keylogger<&>This driver package<&>the NDISKPRO.SYS driver<&>This component<&>This keylogger module<|>gathered data<|>
+Candidate Event 1
+stores<|>store<|>the use of a digitally­signed advanced keylogger<&>It<&>This keylogger<&>This driver package<&>the NDISKPRO.SYS driver<&>This component<&>This keylogger module<|>gathered data<|>in+a log file
+Candidate Event 2
+adapts<|>adapt<|>the use of a digitally­signed advanced keylogger<&>It<&>This keylogger<&>This driver package<&>the NDISKPRO.SYS driver<&>This component<&>This keylogger module<|>its behavior<|>
+Candidate Event 3
+connect<|>connect<|>the use of a digitally­signed advanced keylogger<&>It<&>This keylogger<&>This driver package<&>the NDISKPRO.SYS driver<&>This component<&>This keylogger module<|><|>back to+srv01.microsoftwindowsupdate(dot)net (a deceptive domain owned by this group with falsified Whois data attributing to Microsoft Investor Relations)
+Candidate Event 4
+zips<|>zip<|>the use of a digitally­signed advanced keylogger<&>It<&>This keylogger<&>This driver package<&>the NDISKPRO.SYS driver<&>This component<&>This keylogger module<|>them<|>
+Candidate Event 5
+using<|>use<|>the use of a digitally­signed advanced keylogger<&>It<&>This keylogger<&>This driver package<&>the NDISKPRO.SYS driver<&>This component<&>This keylogger module<|>"JPG" files<|>
+---
+Answer
+4
+Context Event 1
+drops<|>drop<|>WinRar SFX file<|>This module<&>It<&>the module<&>The module<&>current module<&>The component<|>
+Context Event 2
+starts<|>start<|>WinRar SFX file<|>This module<&>It<&>the module<&>The module<&>current module<&>The component<|>
+Context Event 3
+update<|>update<|>This module<&>It<&>the module<&>The module<&>current module<&>The component<|>malicious components<|>
+Context Event 4
+removing<|>remove<|>This module<&>It<&>the module<&>The module<&>current module<&>The component<|>some older components<|>
+Context Event 5
+adds<|>add<|>This module<&>It<&>the module<&>The module<&>current module<&>The component<|>autorun registry settings<|>
+Context Event 6
+backs up<|>back up<|>This module<&>It<&>the module<&>The module<&>current module<&>The component<|>access to the system within 6 months<|>
+Context Event 7
+gathers<|>gather<|>This module<&>It<&>the module<&>The module<&>current module<&>The component<|>system information<&>it<|>
+Candidate Event 1
+identify<|>identify<|>This module<&>It<&>the module<&>The module<&>current module<&>The component<|>an analysis environment<|>
+Candidate Event 2
+communicating<|>communicate<|>This module<&>It<&>the module<&>The module<&>current module<&>The component<|><|>
+Candidate Event 3
+send<|>send<|>This module<&>It<&>the module<&>The module<&>current module<&>The component<|>waves of spearphishing messages<|>
+Candidate Event 4
+manipulate<|>manipulate<|>This module<&>It<&>the module<&>The module<&>current module<&>The component<|>the host application<|>
+Candidate Event 5
+sends<|>send<|>This module<&>It<&>the module<&>The module<&>current module<&>The component<|>system information<&>it<|>to+the Darkhotel com- mand and control servers
+---
+Answer
+3
+Context Event 1
+collect<|>collect<|>This module<&>itself<&>the module<|>various secrets stored on a lo- cal system<&>them<|>
+Context Event 2
+upload<|>upload<|>This module<&>itself<&>the module<|>various secrets stored on a lo- cal system<&>them<|>to+Darkhotel command and control servers
+Candidate Event 1
+using<|>use<|>This module<&>itself<&>the module<|>the services of a cloud service provider based in Sweden, CloudMe.com<&>the cloud service<|>
+Candidate Event 2
+detects<|>detect<|>This module<&>itself<&>the module<|>a usermode process that goes online (e.g. a browser)<&>it<|>
+Candidate Event 3
+disinfect<|>disinfect<|>This module<&>itself<&>the module<|>the compromised device<|>
+Candidate Event 4
+terminate<|>terminate<|>This module<&>itself<&>the module<|>This module<&>itself<&>the module<|>
+Candidate Event 5
+uses<|>use<|>This module<&>itself<&>the module<|>The payload<&>the final Epic backdoor payload<&>The backdoor extracted from the Java exploits<&>The primary backdoor<&>a custom backdoor<|>
+---
+Answer
+2
+Context Event 1
+mimics<|>mimic<|>The Trojan<&>It<|>a GUI desktop application<|>
+Context Event 2
+collects<|>collect<|>The Trojan<&>It<|>data<&>that data<|>
+Context Event 3
+collects<|>collect<|>The Trojan<&>It<|>data<&>that data<|>
+Candidate Event 1
+having<|>have<|>The Trojan<&>It<|>multiple communication capabilities<|>
+Candidate Event 2
+infecting<|>infect<|>The Trojan<&>It<|>the employees’ computers<|>
+Candidate Event 3
+uploads<|>upload<|>The Trojan<&>It<|>data<&>that data<|>to+Darkhotel command and control servers
+Candidate Event 4
+open<|>open<|>The Trojan<&>It<|>ports<|>
+Candidate Event 5
+launched<|>launch<|>The Trojan<&>It<|>vulnerability scanning<|>
+---
+Answer
+1
+Context Event 1
+has<|>have<|>Every infected file<&>it<|>functionality described in Trojan­Dropper & Injector section<|>
+Context Event 2
+collect<|>collect<|>Every infected file<&>it<|>information about the comput- er<&>it<|>
+Context Event 3
+send<|>send<|>Every infected file<&>it<|>information about the comput- er<&>it<|>to+the C2
+Candidate Event 1
+sending<|>send<|>Every infected file<&>it<|>compressed binary blobs<|>
+Candidate Event 2
+download<|>download<|>Every infected file<&>it<|>other Darkhotel components<|>
+Candidate Event 3
+create<|>create<|>Every infected file<&>it<|>a channel that is capable of transporting information over the network<|>
+Candidate Event 4
+has<|>have<|>Every infected file<&>it<|>basic backdoor functionality<|>
+Candidate Event 5
+associated<|>associate<|>Every infected file<&>it<|>Two droppers<|>
+---
+Answer
+3
+Context Event 1
+spear-phish<|>spear-phish<|>they<&>the attackers<&>The attackers<&>The attackers<&>he attackers<&>The attackers<&>the attackers<&>the attackers<&>the group<&>they<&>The crew<&>an attacker<&>the operators<&>The group<&>The attackers<&>The attackers<|>targets<|>
+Context Event 2
+identify<|>identify<|>they<&>the attackers<&>The attackers<&>The attackers<&>he attackers<&>The attackers<&>the attackers<&>the attackers<&>the group<&>they<&>The crew<&>an attacker<&>the operators<&>The group<&>The attackers<&>The attackers<|>more significant victims<|>
+Context Event 3
+delete<|>delete<|>they<&>the attackers<&>The attackers<&>The attackers<&>he attackers<&>The attackers<&>the attackers<&>the attackers<&>the group<&>they<&>The crew<&>an attacker<&>the operators<&>The group<&>The attackers<&>The attackers<|>all traces of their tools<|>
+Context Event 4
+hit<|>hit<|>they<&>the attackers<&>The attackers<&>The attackers<&>he attackers<&>The attackers<&>the attackers<&>the attackers<&>the group<&>they<&>The crew<&>an attacker<&>the operators<&>The group<&>The attackers<&>The attackers<|>their individual targets<|>
+Context Event 5
+deleted<|>delete<|>they<&>the attackers<&>The attackers<&>The attackers<&>he attackers<&>The attackers<&>the attackers<&>the attackers<&>the group<&>they<&>The crew<&>an attacker<&>the operators<&>The group<&>The attackers<&>The attackers<|>their iframe placement and backdoored executables<|>
+Context Event 6
+deleted<|>delete<|>they<&>the attackers<&>The attackers<&>The attackers<&>he attackers<&>The attackers<&>the attackers<&>the attackers<&>the group<&>they<&>The crew<&>an attacker<&>the operators<&>The group<&>The attackers<&>The attackers<|>traces of their work<|>
+Context Event 7
+maintain<|>maintain<|>they<&>the attackers<&>The attackers<&>The attackers<&>he attackers<&>The attackers<&>the attackers<&>the attackers<&>the group<&>they<&>The crew<&>an attacker<&>the operators<&>The group<&>The attackers<&>The attackers<|>truly precise targeting information<|>
+Context Event 8
+present<|>present<|>they<&>the attackers<&>The attackers<&>The attackers<&>he attackers<&>The attackers<&>the attackers<&>the attackers<&>the group<&>they<&>The crew<&>an attacker<&>the operators<&>The group<&>The attackers<&>The attackers<|>the malicious iframe<|>
+Context Event 9
+emailed<|>email<|>they<&>the attackers<&>The attackers<&>The attackers<&>he attackers<&>The attackers<&>the attackers<&>the attackers<&>the group<&>they<&>The crew<&>an attacker<&>the operators<&>The group<&>The attackers<&>The attackers<|>links<&>links<|>
+Context Event 10
+deployed<|>deploy<|>they<&>the attackers<&>The attackers<&>The attackers<&>he attackers<&>The attackers<&>the attackers<&>the attackers<&>the group<&>they<&>The crew<&>an attacker<&>the operators<&>The group<&>The attackers<&>The attackers<|>0-day spear-phishing attacks<&>0-day spear-phishing attacks<|>
+Context Event 11
+spear-phished<|>spear-phished<|>they<&>the attackers<&>The attackers<&>The attackers<&>he attackers<&>The attackers<&>the attackers<&>the attackers<&>the group<&>they<&>The crew<&>an attacker<&>the operators<&>The group<&>The attackers<&>The attackers<|>a set of target systems connected to the Internet through Chinese ISPs<|>
+Context Event 12
+use<|>use<|>they<&>the attackers<&>The attackers<&>The attackers<&>he attackers<&>The attackers<&>the attackers<&>the attackers<&>the group<&>they<&>The crew<&>an attacker<&>the operators<&>The group<&>The attackers<&>The attackers<|>the certificates<&>fraudulently<|>
+Context Event 13
+use<|>use<|>they<&>the attackers<&>The attackers<&>The attackers<&>he attackers<&>The attackers<&>the attackers<&>the attackers<&>the group<&>they<&>The crew<&>an attacker<&>the operators<&>The group<&>The attackers<&>The attackers<|>the certificates<&>fraudulently<|>
+Context Event 14
+use<|>use<|>they<&>the attackers<&>The attackers<&>The attackers<&>he attackers<&>The attackers<&>the attackers<&>the attackers<&>the group<&>they<&>The crew<&>an attacker<&>the operators<&>The group<&>The attackers<&>The attackers<|>the certificates<&>fraudulently<|>
+Context Event 15
+build up<|>build up<|>they<&>the attackers<&>The attackers<&>The attackers<&>he attackers<&>The attackers<&>the attackers<&>the attackers<&>the group<&>they<&>The crew<&>an attacker<&>the operators<&>The group<&>The attackers<&>The attackers<|>new command and control serv- ers<|>
+Context Event 16
+encrypts<|>encrypt<|>they<&>the attackers<&>The attackers<&>The attackers<&>he attackers<&>The attackers<&>the attackers<&>the attackers<&>the group<&>they<&>The crew<&>an attacker<&>the operators<&>The group<&>The attackers<&>The attackers<|>victim data<|>
+Context Event 17
+maintain<|>maintain<|>they<&>the attackers<&>The attackers<&>The attackers<&>he attackers<&>The attackers<&>the attackers<&>the attackers<&>the group<&>they<&>The crew<&>an attacker<&>the operators<&>The group<&>The attackers<&>The attackers<|>a web interface<|>
+Candidate Event 1
+used<|>use<|>they<&>the attackers<&>The attackers<&>The attackers<&>he attackers<&>The attackers<&>the attackers<&>the attackers<&>the group<&>they<&>The crew<&>an attacker<&>the operators<&>The group<&>The attackers<&>The attackers<|>e-mail<|>
+Candidate Event 2
+installing<|>instal<|>they<&>the attackers<&>The attackers<&>The attackers<&>he attackers<&>The attackers<&>the attackers<&>the attackers<&>the group<&>they<&>The crew<&>an attacker<&>the operators<&>The group<&>The attackers<&>The attackers<|>a large number of additional payloads<|>
+Candidate Event 3
+were<|>be<|>they<&>the attackers<&>The attackers<&>The attackers<&>he attackers<&>The attackers<&>the attackers<&>the attackers<&>the group<&>they<&>The crew<&>an attacker<&>the operators<&>The group<&>The attackers<&>The attackers<|>web applications<|>
+Candidate Event 4
+list<|>list<|>they<&>the attackers<&>The attackers<&>The attackers<&>he attackers<&>The attackers<&>the attackers<&>the attackers<&>the group<&>they<&>The crew<&>an attacker<&>the operators<&>The group<&>The attackers<&>The attackers<|>victim systems<|>
+Candidate Event 5
+targeted<|>target<|>they<&>the attackers<&>The attackers<&>The attackers<&>he attackers<&>The attackers<&>the attackers<&>the attackers<&>the group<&>they<&>The crew<&>an attacker<&>the operators<&>The group<&>The attackers<&>The attackers<|>multiple US Defense/Aerospace contractors<&>these organizations<|>
+---
+Answer
+0
+Context Event 1
+detected<|>detect<|><|>Catch.exe<&>Catch.exe<&>this Darkhotel backdoor<&>The associated Darkhotel backdoor<|>
+Context Event 2
+bound<|>bind<|><|>Catch.exe<&>Catch.exe<&>this Darkhotel backdoor<&>The associated Darkhotel backdoor<|>
+Candidate Event 1
+hosted<|>host<|><|>Catch.exe<&>Catch.exe<&>this Darkhotel backdoor<&>The associated Darkhotel backdoor<|>
+Candidate Event 2
+loads<|>load<|>Catch.exe<&>Catch.exe<&>this Darkhotel backdoor<&>The associated Darkhotel backdoor<|>a Delphi component called DelphiNative.DLL<&>a Delphi component called DelphiNative.DLL<|>
+Candidate Event 3
+keep<|>keep<|>Catch.exe<&>Catch.exe<&>this Darkhotel backdoor<&>The associated Darkhotel backdoor<|>its network communications<&>as quiet as possible<|>
+Candidate Event 4
+hide<|>hide<|>Catch.exe<&>Catch.exe<&>this Darkhotel backdoor<&>The associated Darkhotel backdoor<|>the presence of its components<|>
+Candidate Event 5
+capturing<|>capture<|>Catch.exe<&>Catch.exe<&>this Darkhotel backdoor<&>The associated Darkhotel backdoor<|>screenshots<|>
+---
+Answer
+3
+Context Event 1
+dropped<|>drop<|>hotel installers<&>hotel installers<|>These tools<&>one of these implants<&>these backdoors<&>backdoors<&>These tools<|>
+Context Event 2
+spoofing<|>spoof<|>hotel installers<&>hotel installers<|>legiti- mate software installers<|>
+Context Event 3
+bound<|>bind<|><|>hotel installers<&>hotel installers<|>
+Context Event 4
+dropped<|>drop<|>exploits<|>hotel installers<&>hotel installers<|>
+Candidate Event 1
+disguised<|>disguise<|>hotel installers<&>hotel installers<|><|>
+Candidate Event 2
+retrieving<|>retrieve<|>hotel installers<&>hotel installers<|>their stored passwords<|>
+Candidate Event 3
+executing<|>execute<|>hotel installers<&>hotel installers<|>processes<|>
+Candidate Event 4
+linked<|>link<|><|>hotel installers<&>hotel installers<|>
+Candidate Event 5
+upgraded<|>upgrade<|>hotel installers<&>hotel installers<|>the high profile victim<&>they<|>
+---
+Answer
+3
+Context Event 1
+dropped<|>drop<|>hotel installers<&>hotel installers<|>These tools<&>one of these implants<&>these backdoors<&>backdoors<&>These tools<|>
+Context Event 2
+downloaded<|>download<|>These tools<&>one of these implants<&>these backdoors<&>backdoors<&>These tools<|>More advanced tools, like the keylogger decribed above<|>to+the victim system
+Context Event 3
+dropped<|>drop<|>word docs<&>word docs<|>These tools<&>one of these implants<&>these backdoors<&>backdoors<&>These tools<|>
+Context Event 4
+downloaded<|>download<|>word docs<&>word docs<|>These tools<&>one of these implants<&>these backdoors<&>backdoors<&>These tools<|>
+Context Event 5
+executed<|>execute<|>word docs<&>word docs<|>These tools<&>one of these implants<&>these backdoors<&>backdoors<&>These tools<|>
+Context Event 6
+pull down<|>pull down<|>These tools<&>one of these implants<&>these backdoors<&>backdoors<&>These tools<|>the keylog- ger<|>
+Context Event 7
+steal<|>steal<|>These tools<&>one of these implants<&>these backdoors<&>backdoors<&>These tools<|>information<|>
+Candidate Event 1
+maintain<|>maintain<|>These tools<&>one of these implants<&>these backdoors<&>backdoors<&>These tools<|>a web interface<|>
+Candidate Event 2
+store<|>store<|>These tools<&>one of these implants<&>these backdoors<&>backdoors<&>These tools<|>configuration and log data<|>
+Candidate Event 3
+conducting<|>conduct<|>These tools<&>one of these implants<&>these backdoors<&>backdoors<&>These tools<|>SQL injections<|>
+Candidate Event 4
+download<|>download<|>These tools<&>one of these implants<&>these backdoors<&>backdoors<&>These tools<|>other tools<|>
+Candidate Event 5
+is deleted<|>is deleted<|>These tools<&>one of these implants<&>these backdoors<&>backdoors<&>These tools<|>a temporary new user “_DomainUser_” with password “Dom4!nU- serP4ss”<&>the user<|>
+---
+Answer
+0
+Context Event 1
+embedded<|>embed<|><|>word docs<&>word docs<|>
+Context Event 2
+dropped<|>drop<|>word docs<&>word docs<|>These tools<&>one of these implants<&>these backdoors<&>backdoors<&>These tools<|>
+Context Event 3
+downloaded<|>download<|>word docs<&>word docs<|>These tools<&>one of these implants<&>these backdoors<&>backdoors<&>These tools<|>
+Candidate Event 1
+executed<|>execute<|>word docs<&>word docs<|>These tools<&>one of these implants<&>these backdoors<&>backdoors<&>These tools<|>
+Candidate Event 2
+distributed<|>distribute<|>word docs<&>word docs<|>any one of several major software releases<&>these installs<&>install software updates to popular software packages<&>these packages<|>to+targeted individuals
+Candidate Event 3
+infect<|>infect<|>word docs<&>word docs<|>other computers on the target network<|>
+Candidate Event 4
+injected<|>inject<|>word docs<&>word docs<|>libraries<|>into+usermode processes
+Candidate Event 5
+gathers<|>gather<|>word docs<&>word docs<|>OS version<|>
+---
+Answer
+1
+Context Event 1
+collects<|>collect<|>The Trojan<&>It<|>data<&>that data<|>
+Context Event 2
+collects<|>collect<|>The Trojan<&>It<|>data<&>that data<|>
+Candidate Event 1
+intercepts<|>intercept<|>data<&>that data<|>all connections<|>
+Candidate Event 2
+uploads<|>upload<|>The Trojan<&>It<|>data<&>that data<|>to+Darkhotel command and control servers
+Candidate Event 3
+searches<|>search<|>data<&>that data<|><|>
+Candidate Event 4
+used<|>use<|>data<&>that data<|>the malware<&>it<&>The malware<|>
+Candidate Event 5
+manage<|>manage<|>data<&>that data<|>running processes<|>
+---
+Answer
+3
+Context Event 1
+bound<|>bind<|><|>It<&>It<|>
+Context Event 2
+drops<|>drop<|>It<&>It<|>the igfxext.exe “selective infector” component<&>it<|>to+disk
+Candidate Event 1
+act<|>act<|>It<&>It<|><|>
+Candidate Event 2
+executing<|>execute<|>It<&>It<|>the commands<|>
+Candidate Event 3
+uploaded<|>upload<|>It<&>It<|>The encrypted files<&>the files themselves<|>to+the WebDAV shares
+Candidate Event 4
+runs<|>run<|>It<&>It<|>the igfxext.exe “selective infector” component<&>it<|>
+Candidate Event 5
+was<|>be<|>It<&>It<|>malicious attachments<&>The malware chosen<&>Trojan droppers<&>a variant of the Poison Ivy Trojan Backdoor.Darkmoon<|>
+---
+Answer
+4
+Context Event 1
+infiltrate<|>infiltrate<|>This component<&>the virus<&>The code<&>the infector<|><|>
+Context Event 2
+infiltrate<|>infiltrate<|>This component<&>the virus<&>The code<&>the infector<|><|>
+Context Event 3
+retrieves<|>retrieve<|>This component<&>the virus<&>The code<&>the infector<|>all available disks<|>
+Context Event 4
+finds<|>find<|>This component<&>the virus<&>The code<&>the infector<|>executable files<&>them<|>
+Context Event 5
+infects<|>infect<|>This component<&>the virus<&>The code<&>the infector<|>executable files<&>them<|>
+Context Event 6
+brute forces<|>brute force<|>This component<&>the virus<&>The code<&>the infector<|>the list of mapped removable drives<|>
+Context Event 7
+changes<|>change<|>This component<&>the virus<&>The code<&>the infector<|>the entrypoint of executable files<|>
+Context Event 8
+creates<|>create<|>This component<&>the virus<&>The code<&>the infector<|>an .rdat section<&>the section<|>
+Context Event 9
+inserts<|>insert<|>This component<&>the virus<&>The code<&>the infector<|>a small loader<|>in+the section
+Candidate Event 1
+ensures<|>ensure<|>This component<&>the virus<&>The code<&>the infector<|><|>
+Candidate Event 2
+function<|>function<|>This component<&>the virus<&>The code<&>the infector<|>the "mothership" server<&>The mothership server<&>The mothership<&>the motherships<|>
+Candidate Event 3
+set up<|>set up<|>This component<&>the virus<&>The code<&>the infector<|><|>
+Candidate Event 4
+destroyed<|>destroy<|>This component<&>the virus<&>The code<&>the infector<|>the targeted files<|>
+Candidate Event 5
+puts<|>put<|>This component<&>the virus<&>The code<&>the infector<|>its main payload<|>in+the overlay
+---
+Answer
+2
+Context Event 1
+launching<|>launch<|>botnet style operations<&>botnet style operations<|>DDoS attacks<|>on+hostile parties
+Context Event 2
+used<|>use<|><|>botnet style operations<&>botnet style operations<|>
+Candidate Event 1
+loaded<|>load<|>botnet style operations<&>botnet style operations<|>MiniDuke<&>it<&>the payload<&>the encrypted version of the malware<&>the malware<&>the malware<&>the malware<&>MiniDuke<&>MiniDuke<&>it<&>MiniDuke<&>MiniDuke<|>
+Candidate Event 2
+spear-phish<|>spear-phish<|>botnet style operations<&>botnet style operations<|>targets<|>
+Candidate Event 3
+upgrading<|>upgrade<|>botnet style operations<&>botnet style operations<|>victims<|>
+Candidate Event 4
+download<|>download<|>botnet style operations<&>botnet style operations<|>the file<&>the file<&>The file<|>
+Candidate Event 5
+redirected<|>redirect<|>botnet style operations<&>botnet style operations<|>Visitors to the Peter G. Peterson Institute for International Economics (www.piie[.]com)<|>to+an exploit server hosting this Flash zero-day
+---

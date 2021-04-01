@@ -1,0 +1,77 @@
+---
+Answer
+4
+Context Event 1
+downloaded<|>download<|><|>The shellcode<&>it<&>it<&>it<|>
+Context Event 2
+downloads<|>download<|>The shellcode<&>it<&>it<&>it<|>an executable<&>the file<&>the file<|>
+Context Event 3
+writes<|>write<|>The shellcode<&>it<&>it<&>it<|>an executable<&>the file<&>the file<|>to+disk
+Candidate Event 1
+making sure<|>make sure<|>The shellcode<&>it<&>it<&>it<|>it starts with the markers 0xDEADBEAF and 0xC001BA5E (which appear to derive from ‘DEAD BEEF’ and ‘COOL BASE’)<|>
+Candidate Event 2
+accesses<|>access<|>The shellcode<&>it<&>it<&>it<|><|>
+Candidate Event 3
+collects<|>collect<|>The shellcode<&>it<&>it<&>it<|>data<&>that data<|>
+Candidate Event 4
+hooks<|>hook<|>The shellcode<&>it<&>it<&>it<|>Major Function 14 the IRP_MJ_DEVICE_CONTROL<|>
+Candidate Event 5
+runs<|>run<|>The shellcode<&>it<&>it<&>it<|>an executable<&>the file<&>the file<|>
+---
+Answer
+0
+Context Event 1
+infect<|>infect<|>The group behind this campaign<&>The threat actors<&>an attacker<&>the attackers<&>the attackers<&>This actor<|>visitors to foreign and public policy websites<|>
+Context Event 2
+infect<|>infect<|>The group behind this campaign<&>The threat actors<&>an attacker<&>the attackers<&>the attackers<&>This actor<|>users to these sites<|>
+Context Event 3
+overwrite<|>overwrite<|>The group behind this campaign<&>The threat actors<&>an attacker<&>the attackers<&>the attackers<&>This actor<|>the vftable pointer of a Flash object<|>
+Context Event 4
+build<|>build<|>The group behind this campaign<&>The threat actors<&>an attacker<&>the attackers<&>the attackers<&>This actor<|>a return-oriented programming (ROP) chain of MSVCRT (Visual C runtime) gadgets<|>
+Context Event 5
+use<|>use<|>The group behind this campaign<&>The threat actors<&>an attacker<&>the attackers<&>the attackers<&>This actor<|>a hard-coded ROP chain for MSVCR71.dll (Visual C++ runtime)<&>a hard-coded ROP chain for HXDS.dll (Help Data Services Module)<|>
+Candidate Event 1
+deploys<|>deploy<|>The group behind this campaign<&>The threat actors<&>an attacker<&>the attackers<&>the attackers<&>This actor<|>a variety of malware families<|>on+compromised systems
+Candidate Event 2
+gather<|>gather<|>The group behind this campaign<&>The threat actors<&>an attacker<&>the attackers<&>the attackers<&>This actor<|>history of visited URLs<|>
+Candidate Event 3
+executed<|>execute<|>The group behind this campaign<&>The threat actors<&>an attacker<&>the attackers<&>the attackers<&>This actor<|>921.bin<&>They<&>922.bin<&>they<&>they<&>They<&>They<|>
+Candidate Event 4
+run<|>run<|>The group behind this campaign<&>The threat actors<&>an attacker<&>the attackers<&>the attackers<&>This actor<|>both backdoors<|>
+Candidate Event 5
+include<|>include<|>The group behind this campaign<&>The threat actors<&>an attacker<&>the attackers<&>the attackers<&>This actor<|>WMI querying<|>
+---
+Answer
+0
+Context Event 1
+downloads<|>download<|>The shellcode<&>it<&>it<&>it<|>an executable<&>the file<&>the file<|>
+Context Event 2
+writes<|>write<|>The shellcode<&>it<&>it<&>it<|>an executable<&>the file<&>the file<|>to+disk
+Candidate Event 1
+runs<|>run<|>The shellcode<&>it<&>it<&>it<|>an executable<&>the file<&>the file<|>
+Candidate Event 2
+upload<|>upload<|>The shellcode<&>it<&>it<&>it<|>several tools that are used for lateral movement<|>
+Candidate Event 3
+shows<|>show<|>The shellcode<&>it<&>it<&>it<|>all software installed on the system<|>
+Candidate Event 4
+obtains<|>obtain<|>The shellcode<&>it<&>it<&>it<|>This backdoor<&>This backdoor<&>a second-stage backdoor<&>its second stage backdoor EVILTOSS<&>a second stage backdoor<|>
+Candidate Event 5
+use<|>use<|>The shellcode<&>it<&>it<&>it<|>this side-loading trick<|>
+---
+Answer
+2
+Context Event 1
+dropped<|>drop<|>an Adobe Flash exploit (CVE-2012-0779)<&>This exploit<|>the Poison Ivy variant<&>this variant<&>a related Poison Ivy sample (MD5 8936c87a08ffa56d19fdb87588e35952) with the same “java7” password<|>
+Context Event 2
+dropped<|>drop<|>an Adobe Flash exploit (CVE-2012-0779)<&>This exploit<|>the Poison Ivy variant<&>this variant<&>a related Poison Ivy sample (MD5 8936c87a08ffa56d19fdb87588e35952) with the same “java7” password<|>
+Candidate Event 1
+issues<|>issue<|>the Poison Ivy variant<&>this variant<&>a related Poison Ivy sample (MD5 8936c87a08ffa56d19fdb87588e35952) with the same “java7” password<|>another HTTP request<|>
+Candidate Event 2
+infects<|>infect<|>the Poison Ivy variant<&>this variant<&>a related Poison Ivy sample (MD5 8936c87a08ffa56d19fdb87588e35952) with the same “java7” password<|>a user who views the decoy “slideshow,”<|>
+Candidate Event 3
+connected<|>connect<|>the Poison Ivy variant<&>this variant<&>a related Poison Ivy sample (MD5 8936c87a08ffa56d19fdb87588e35952) with the same “java7” password<|><|>to+a CnC server at windows.ddns[.]us
+Candidate Event 4
+identify<|>identify<|>the Poison Ivy variant<&>this variant<&>a related Poison Ivy sample (MD5 8936c87a08ffa56d19fdb87588e35952) with the same “java7” password<|>any potentially exploitable hosts located in the same network as the victim<|>
+Candidate Event 5
+remove<|>remove<|>the Poison Ivy variant<&>this variant<&>a related Poison Ivy sample (MD5 8936c87a08ffa56d19fdb87588e35952) with the same “java7” password<|>a Windows device driver (“the Driver”)<&>it<&>The Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>The Driver<&>the Driver<|>
+---

@@ -1,0 +1,309 @@
+---
+Answer
+2
+Context Event 1
+employs<|>employ<|>The Gen 2 Driver<&>The Gen 2 sub-family, beginning with Gen 2.0 Beta<&>The second generation of Hikit (referred to as “Gen 2”)<&>Gen 2 samples<&>The Gen 2 sub-family<&>Gen 2<&>Gen 2 samples<|>a Windows device driver (“the Driver”)<&>it<&>The Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>The Driver<&>the Driver<|>
+Context Event 2
+hooks<|>hook<|>a Windows device driver (“the Driver”)<&>it<&>The Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>The Driver<&>the Driver<|>a minimum number of kernel API functions<|>
+Context Event 3
+hiding<|>hide<|>a Windows device driver (“the Driver”)<&>it<&>The Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>The Driver<&>the Driver<|>directories<|>
+Context Event 4
+hiding<|>hide<|>a Windows device driver (“the Driver”)<&>it<&>The Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>The Driver<&>the Driver<|>files<|>
+Context Event 5
+hiding<|>hide<|>a Windows device driver (“the Driver”)<&>it<&>The Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>The Driver<&>the Driver<|>processes<|>
+Context Event 6
+hiding<|>hide<|>a Windows device driver (“the Driver”)<&>it<&>The Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>The Driver<&>the Driver<|>registry keys and values<|>
+Context Event 7
+hooks<|>hook<|>a Windows device driver (“the Driver”)<&>it<&>The Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>The Driver<&>the Driver<|>various Windows Kernel API calls<|>
+Context Event 8
+hooks<|>hook<|>a Windows device driver (“the Driver”)<&>it<&>The Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>The Driver<&>the Driver<|>the API function<|>
+Context Event 9
+hide<|>hide<|>a Windows device driver (“the Driver”)<&>it<&>The Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>The Driver<&>the Driver<|>he items<|>
+Context Event 10
+hiding<|>hide<|>a Windows device driver (“the Driver”)<&>it<&>The Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>The Driver<&>the Driver<|>system modules<|>
+Context Event 11
+hiding<|>hide<|>a Windows device driver (“the Driver”)<&>it<&>The Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>The Driver<&>the Driver<|>services<|>
+Context Event 12
+hiding<|>hide<|>a Windows device driver (“the Driver”)<&>it<&>The Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>The Driver<&>the Driver<|>network connections<|>
+Context Event 13
+hiding<|>hide<|>a Windows device driver (“the Driver”)<&>it<&>The Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>The Driver<&>the Driver<|>listening ports<|>
+Context Event 14
+access<|>access<|>a Windows device driver (“the Driver”)<&>it<&>The Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>The Driver<&>the Driver<|>the memory of the services.exe process<|>
+Context Event 15
+hide<|>hide<|>a Windows device driver (“the Driver”)<&>it<&>The Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>The Driver<&>the Driver<|>services<|>
+Context Event 16
+remove<|>remove<|>a Windows device driver (“the Driver”)<&>it<&>The Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>The Driver<&>the Driver<|>the service entry that the Driver wishes to hide<|>
+Context Event 17
+calling<|>call<|>a Windows device driver (“the Driver”)<&>it<&>The Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>The Driver<&>the Driver<|>IoCreateDevice<|>
+Context Event 18
+creates<|>create<|>a Windows device driver (“the Driver”)<&>it<&>The Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>The Driver<&>the Driver<|>a symbolic link<|>
+Candidate Event 1
+install<|>install<|>a Windows device driver (“the Driver”)<&>it<&>The Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>The Driver<&>the Driver<|>more malware<|>on+the infected computer
+Candidate Event 2
+encrypted<|>encrypt<|>a Windows device driver (“the Driver”)<&>it<&>The Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>The Driver<&>the Driver<|>Stage 2<&>kernel driver<&>Stage 2<&>Stage 2<&>Stage 2<&>This stage<&>Stage 2<&>Stage 2<|>
+Candidate Event 3
+remove<|>remove<|>mainThread<|>a Windows device driver (“the Driver”)<&>it<&>The Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>The Driver<&>the Driver<|>
+Candidate Event 4
+stays<|>stay<|>a Windows device driver (“the Driver”)<&>it<&>The Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>The Driver<&>the Driver<|>dormant<|>
+Candidate Event 5
+used<|>use<|>a Windows device driver (“the Driver”)<&>it<&>The Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>The Driver<&>the Driver<|>a WebDAV URL<|>
+---
+Answer
+3
+Context Event 1
+load<|>load<|>ImageLoaderData::LoadDll<&>ImageLoaderData::LoadDll<&>ImageLoaderData::LoadDll<|>itself<&>the DLL<&>the DLL<&>The DLL<&>individual instances of Gen 2 DLL<|>into+memory
+Context Event 2
+install<|>install<|>itself<&>the DLL<&>the DLL<&>The DLL<&>individual instances of Gen 2 DLL<|>itself<&>the DLL<&>the DLL<&>The DLL<&>individual instances of Gen 2 DLL<|>on+the victim’s machine
+Context Event 3
+create<|>create<|>itself<&>the DLL<&>the DLL<&>The DLL<&>individual instances of Gen 2 DLL<|>a new service<|>
+Context Event 4
+listen<|>listen<|>itself<&>the DLL<&>the DLL<&>The DLL<&>individual instances of Gen 2 DLL<|><|>
+Candidate Event 1
+encrypted<|>encrypt<|>itself<&>the DLL<&>the DLL<&>The DLL<&>individual instances of Gen 2 DLL<|>All communications<|>
+Candidate Event 2
+uses<|>use<|>itself<&>the DLL<&>the DLL<&>The DLL<&>individual instances of Gen 2 DLL<|>a protocol based on HTTP POST requests<|>
+Candidate Event 3
+converted<|>convert<|>itself<&>the DLL<&>the DLL<&>The DLL<&>individual instances of Gen 2 DLL<|>the host<|>
+Candidate Event 4
+accept<|>accept<|>itself<&>the DLL<&>the DLL<&>The DLL<&>individual instances of Gen 2 DLL<|>commands<|>
+Candidate Event 5
+installed<|>instal<|>itself<&>the DLL<&>the DLL<&>The DLL<&>individual instances of Gen 2 DLL<|>TinyZBot<&>Recent versions<&>they<&>The backdoor<&>It<&>TinyZBot<&>the malicious TinyZBot executable<&>the original malicious executable<&>The initial version<&>a new version<&>The version compiled on June 23, 2014<&>These versions<&>TinyZBot<&>TinyZBot<&>TinyZBot<&>These versions<&>another TinyZBot instance<|>
+---
+Answer
+1
+Context Event 1
+deletes<|>delete<|>the RAT functionality code<&>the code<&>the RAT functionality code<|>a service<&>the service<&>the service<|>
+Context Event 2
+hide<|>hide<|>the RAT functionality code<&>the code<&>the RAT functionality code<|>the DLL’s PID<|>
+Context Event 3
+hide<|>hide<|>the RAT functionality code<&>the code<&>the RAT functionality code<|>the DLL’s service names (e.g. “NetDDESrv” and "Network DDE Service") and the service entry as well<|>
+Candidate Event 1
+compromising<|>compromise<|>the RAT functionality code<&>the code<&>the RAT functionality code<|>computers<|>
+Candidate Event 2
+hide<|>hide<|>the RAT functionality code<&>the code<&>the RAT functionality code<|>a service named “Hitx”<|>
+Candidate Event 3
+using<|>use<|>the RAT functionality code<&>the code<&>the RAT functionality code<|>GET<|>
+Candidate Event 4
+retrieves<|>retrieve<|>the RAT functionality code<&>the code<&>the RAT functionality code<|>several datapoints<|>
+Candidate Event 5
+connect<|>connect<|>the RAT functionality code<&>the code<&>the RAT functionality code<|><|>to+intel-update[.]com and update-mirror[.]com
+---
+Answer
+4
+Context Event 1
+operates<|>operate<|>The Gen 1 Driver<&>The Driver<&>The first generation of Hikit (referred to as “Gen 1”)<&>the Gen 1 system<|><|>
+Context Event 2
+listens<|>listen<|>The Gen 1 Driver<&>The Driver<&>The first generation of Hikit (referred to as “Gen 1”)<&>the Gen 1 system<|><|>
+Context Event 3
+intercepts<|>intercept<|>The Gen 1 Driver<&>The Driver<&>The first generation of Hikit (referred to as “Gen 1”)<&>the Gen 1 system<|>any and all network communication that traverses the Windows network stack<|>
+Candidate Event 1
+launched<|>launch<|>The Gen 1 Driver<&>The Driver<&>The first generation of Hikit (referred to as “Gen 1”)<&>the Gen 1 system<|>a series of Distributed Denial of Service attacks (DDoS)<&>an ongoing DDoS attack that “brought down its email system for hours”<&>These ongoing DDoS attacks<&>a DDoS attack<&>these attacks<|>
+Candidate Event 2
+executing<|>execute<|>The Gen 1 Driver<&>The Driver<&>The first generation of Hikit (referred to as “Gen 1”)<&>the Gen 1 system<|>the payload<&>it<|>
+Candidate Event 3
+puts<|>put<|>The Gen 1 Driver<&>The Driver<&>The first generation of Hikit (referred to as “Gen 1”)<&>the Gen 1 system<|>its main payload<|>in+the overlay
+Candidate Event 4
+has<|>have<|>The Gen 1 Driver<&>The Driver<&>The first generation of Hikit (referred to as “Gen 1”)<&>the Gen 1 system<|>a remotely installable trojan named Abel<|>
+Candidate Event 5
+uninstall<|>uninstall<|>the main thread<|>The Gen 1 Driver<&>The Driver<&>The first generation of Hikit (referred to as “Gen 1”)<&>the Gen 1 system<|>
+---
+Answer
+2
+Context Event 1
+contains<|>contain<|>a main DLL (referred to as “the DLL”)<&>The DLL<&>the DLL<&>the DLL<&>the DLL<&>the DLL<&>the DLL<|>the RAT functionality<|>
+Context Event 2
+send<|>send<|>a main DLL (referred to as “the DLL”)<&>The DLL<&>the DLL<&>the DLL<&>the DLL<&>the DLL<&>the DLL<|>a legitimate SSL certificate<|>
+Context Event 3
+interact<|>interact<|>a main DLL (referred to as “the DLL”)<&>The DLL<&>the DLL<&>the DLL<&>the DLL<&>the DLL<&>the DLL<|><|>
+Context Event 4
+install<|>install<|>an attacker<&>an attacker<&>an attacker<|>a main DLL (referred to as “the DLL”)<&>The DLL<&>the DLL<&>the DLL<&>the DLL<&>the DLL<&>the DLL<|>
+Context Event 5
+installs<|>install<|>a main DLL (referred to as “the DLL”)<&>The DLL<&>the DLL<&>the DLL<&>the DLL<&>the DLL<&>the DLL<|>the version of the Driver found within the DLL’s resource section (under the BIN resource tree)<|>
+Context Event 6
+install<|>install<|>a main DLL (referred to as “the DLL”)<&>The DLL<&>the DLL<&>the DLL<&>the DLL<&>the DLL<&>the DLL<|>the correct version of the Driver<|>
+Candidate Event 1
+parse<|>parse<|>a main DLL (referred to as “the DLL”)<&>The DLL<&>the DLL<&>the DLL<&>the DLL<&>the DLL<&>the DLL<|>all incoming traffic<|>
+Candidate Event 2
+downloaded<|>download<|>a main DLL (referred to as “the DLL”)<&>The DLL<&>the DLL<&>the DLL<&>the DLL<&>the DLL<&>the DLL<|>The SpyNet sample<&>a sam- ple of SpyNet<&>This sample of SpyNet<&>an instance of SpyNet<|>
+Candidate Event 3
+generating<|>generate<|>a main DLL (referred to as “the DLL”)<&>The DLL<&>the DLL<&>the DLL<&>the DLL<&>the DLL<&>the DLL<|>a new thread (“HikitThreadFunc”) which will service any request coming from the new channel<|>
+Candidate Event 4
+deliver<|>deliver<|>a main DLL (referred to as “the DLL”)<&>The DLL<&>the DLL<&>the DLL<&>the DLL<&>the DLL<&>the DLL<|>the generated shellcode<|>back to+the reconnaissance tool
+Candidate Event 5
+implemented<|>implement<|>a main DLL (referred to as “the DLL”)<&>The DLL<&>the DLL<&>the DLL<&>the DLL<&>the DLL<&>the DLL<|>The following commands<|>
+---
+Answer
+0
+Context Event 1
+beacons<|>beacon<|>The Gen 2 Driver<&>The Gen 2 sub-family, beginning with Gen 2.0 Beta<&>The second generation of Hikit (referred to as “Gen 2”)<&>Gen 2 samples<&>The Gen 2 sub-family<&>Gen 2<&>Gen 2 samples<|><|>
+Context Event 2
+hide<|>hide<|>The Gen 2 Driver<&>The Gen 2 sub-family, beginning with Gen 2.0 Beta<&>The second generation of Hikit (referred to as “Gen 2”)<&>Gen 2 samples<&>The Gen 2 sub-family<&>Gen 2<&>Gen 2 samples<|>processes, registry keys and network connections associated with Gen 2 activity on the victim’s system<|>
+Context Event 3
+employs<|>employ<|>The Gen 2 Driver<&>The Gen 2 sub-family, beginning with Gen 2.0 Beta<&>The second generation of Hikit (referred to as “Gen 2”)<&>Gen 2 samples<&>The Gen 2 sub-family<&>Gen 2<&>Gen 2 samples<|>a Windows device driver (“the Driver”)<&>it<&>The Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>The Driver<&>the Driver<|>
+Context Event 4
+rely<|>rely<|>The Gen 2 Driver<&>The Gen 2 sub-family, beginning with Gen 2.0 Beta<&>The second generation of Hikit (referred to as “Gen 2”)<&>Gen 2 samples<&>The Gen 2 sub-family<&>Gen 2<&>Gen 2 samples<|><|>
+Context Event 5
+uses<|>use<|>The Gen 2 Driver<&>The Gen 2 sub-family, beginning with Gen 2.0 Beta<&>The second generation of Hikit (referred to as “Gen 2”)<&>Gen 2 samples<&>The Gen 2 sub-family<&>Gen 2<&>Gen 2 samples<|>a DLL<&>the embedded DLL<&>the embedded DLL<&>the DLL<&>the compressed embedded DLL<&>the DLL<|>
+Context Event 6
+uses<|>use<|>The Gen 2 Driver<&>The Gen 2 sub-family, beginning with Gen 2.0 Beta<&>The second generation of Hikit (referred to as “Gen 2”)<&>Gen 2 samples<&>The Gen 2 sub-family<&>Gen 2<&>Gen 2 samples<|>a loader application<&>both variants of the Loader<&>Both versions of the Loader<&>the Loader<&>The Loaders<|>
+Candidate Event 1
+produce<|>produce<|>The Gen 2 Driver<&>The Gen 2 sub-family, beginning with Gen 2.0 Beta<&>The second generation of Hikit (referred to as “Gen 2”)<&>Gen 2 samples<&>The Gen 2 sub-family<&>Gen 2<&>Gen 2 samples<|><|>
+Candidate Event 2
+gathers<|>gather<|>The Gen 2 Driver<&>The Gen 2 sub-family, beginning with Gen 2.0 Beta<&>The second generation of Hikit (referred to as “Gen 2”)<&>Gen 2 samples<&>The Gen 2 sub-family<&>Gen 2<&>Gen 2 samples<|>information about the system<&>that information<|>
+Candidate Event 3
+worm<|>worm<|>The Gen 2 Driver<&>The Gen 2 sub-family, beginning with Gen 2.0 Beta<&>The second generation of Hikit (referred to as “Gen 2”)<&>Gen 2 samples<&>The Gen 2 sub-family<&>Gen 2<&>Gen 2 samples<|><|>
+Candidate Event 4
+used<|>use<|>The Gen 2 Driver<&>The Gen 2 sub-family, beginning with Gen 2.0 Beta<&>The second generation of Hikit (referred to as “Gen 2”)<&>Gen 2 samples<&>The Gen 2 sub-family<&>Gen 2<&>Gen 2 samples<|>the vulnerable driver<|>
+Candidate Event 5
+upload<|>upload<|>The Gen 2 Driver<&>The Gen 2 sub-family, beginning with Gen 2.0 Beta<&>The second generation of Hikit (referred to as “Gen 2”)<&>Gen 2 samples<&>The Gen 2 sub-family<&>Gen 2<&>Gen 2 samples<|>arbitrary files<|>
+---
+Answer
+2
+Context Event 1
+access<|>access<|>an attacker<&>an attacker<&>an attacker<|>the victim machine<|>
+Context Event 2
+utilize<|>utilize<|>an attacker<&>an attacker<&>an attacker<|>a Hikit-infected machine<|>
+Candidate Event 1
+conduct<|>conduct<|>an attacker<&>an attacker<&>an attacker<|>attacks like ARP cache poisoning<|>
+Candidate Event 2
+dump<|>dump<|>an attacker<&>an attacker<&>an attacker<|>password hashes<|>
+Candidate Event 3
+install<|>install<|>an attacker<&>an attacker<&>an attacker<|>a main DLL (referred to as “the DLL”)<&>The DLL<&>the DLL<&>the DLL<&>the DLL<&>the DLL<&>the DLL<|>
+Candidate Event 4
+is handled<|>is handled<|>an attacker<&>an attacker<&>an attacker<|>calling out to the Command and Control (C2)<&>The communication to the C2<|>
+Candidate Event 5
+created<|>create<|>an attacker<&>an attacker<&>an attacker<|>“net_ver.dat”<|>
+---
+Answer
+1
+Context Event 1
+uses<|>use<|>The Gen 2 Driver<&>The Gen 2 sub-family, beginning with Gen 2.0 Beta<&>The second generation of Hikit (referred to as “Gen 2”)<&>Gen 2 samples<&>The Gen 2 sub-family<&>Gen 2<&>Gen 2 samples<|>a loader application<&>both variants of the Loader<&>Both versions of the Loader<&>the Loader<&>The Loaders<|>
+Context Event 2
+load<|>load<|>a loader application<&>both variants of the Loader<&>Both versions of the Loader<&>the Loader<&>The Loaders<|>a DLL<&>the embedded DLL<&>the embedded DLL<&>the DLL<&>the compressed embedded DLL<&>the DLL<|>
+Context Event 3
+loading<|>load<|>a loader application<&>both variants of the Loader<&>Both versions of the Loader<&>the Loader<&>The Loaders<|>a DLL<&>the embedded DLL<&>the embedded DLL<&>the DLL<&>the compressed embedded DLL<&>the DLL<|>
+Context Event 4
+loading<|>load<|>a loader application<&>both variants of the Loader<&>Both versions of the Loader<&>the Loader<&>The Loaders<|>a DLL<&>the embedded DLL<&>the embedded DLL<&>the DLL<&>the compressed embedded DLL<&>the DLL<|>into+memory
+Context Event 5
+loading<|>load<|>a loader application<&>both variants of the Loader<&>Both versions of the Loader<&>the Loader<&>The Loaders<|>the image<&>the embedded DLL image<|>into+memory
+Context Event 6
+call<|>call<|>a loader application<&>both variants of the Loader<&>Both versions of the Loader<&>the Loader<&>The Loaders<|>the DLL’s StartServer or MatrixMain function<|>
+Candidate Event 1
+spoofing<|>spoof<|>a loader application<&>both variants of the Loader<&>Both versions of the Loader<&>the Loader<&>The Loaders<|>legiti- mate software installers<|>
+Candidate Event 2
+call<|>call<|>a loader application<&>both variants of the Loader<&>Both versions of the Loader<&>the Loader<&>The Loaders<|>the StopServer function<|>
+Candidate Event 3
+sent<|>send<|>a loader application<&>both variants of the Loader<&>Both versions of the Loader<&>the Loader<&>The Loaders<|>NGO Worker D<&>a shortened link (url[.] no/Uu5) to a download from a directory of Mrconstrucciones[.] net<|>
+Candidate Event 4
+loaded<|>load<|>a loader application<&>both variants of the Loader<&>Both versions of the Loader<&>the Loader<&>The Loaders<|>Implants in this malware family<&>Implants in this malware family<&>This proxy tool<|>
+Candidate Event 5
+installed<|>instal<|>a loader application<&>both variants of the Loader<&>Both versions of the Loader<&>the Loader<&>The Loaders<|>such a driver<&>the kernel-mode driver<&>its kernel-mode driver<|>
+---
+Answer
+0
+Context Event 1
+uses<|>use<|>The Gen 2 Driver<&>The Gen 2 sub-family, beginning with Gen 2.0 Beta<&>The second generation of Hikit (referred to as “Gen 2”)<&>Gen 2 samples<&>The Gen 2 sub-family<&>Gen 2<&>Gen 2 samples<|>a DLL<&>the embedded DLL<&>the embedded DLL<&>the DLL<&>the compressed embedded DLL<&>the DLL<|>
+Context Event 2
+load<|>load<|>a loader application<&>both variants of the Loader<&>Both versions of the Loader<&>the Loader<&>The Loaders<|>a DLL<&>the embedded DLL<&>the embedded DLL<&>the DLL<&>the compressed embedded DLL<&>the DLL<|>
+Context Event 3
+loading<|>load<|>a loader application<&>both variants of the Loader<&>Both versions of the Loader<&>the Loader<&>The Loaders<|>a DLL<&>the embedded DLL<&>the embedded DLL<&>the DLL<&>the compressed embedded DLL<&>the DLL<|>
+Context Event 4
+loading<|>load<|>a loader application<&>both variants of the Loader<&>Both versions of the Loader<&>the Loader<&>The Loaders<|>a DLL<&>the embedded DLL<&>the embedded DLL<&>the DLL<&>the compressed embedded DLL<&>the DLL<|>into+memory
+Candidate Event 1
+copies<|>copy<|>LoadEmbeddedImage<&>LoadEmbeddedImage<|>a DLL<&>the embedded DLL<&>the embedded DLL<&>the DLL<&>the compressed embedded DLL<&>the DLL<|>into+a newly allocated heap buffer
+Candidate Event 2
+installed<|>instal<|>a DLL<&>the embedded DLL<&>the embedded DLL<&>the DLL<&>the compressed embedded DLL<&>the DLL<|>a kernel mode driver<&>the driver<|>
+Candidate Event 3
+access<|>access<|>a DLL<&>the embedded DLL<&>the embedded DLL<&>the DLL<&>the compressed embedded DLL<&>the DLL<|>shares<|>
+Candidate Event 4
+delivering<|>deliver<|>a DLL<&>the embedded DLL<&>the embedded DLL<&>the DLL<&>the compressed embedded DLL<&>the DLL<|>targeted malware<|>
+Candidate Event 5
+load<|>load<|>a DLL<&>the embedded DLL<&>the embedded DLL<&>the DLL<&>the compressed embedded DLL<&>the DLL<|>a remote JavaScript<|>into+the victim's browser
+---
+Answer
+1
+Context Event 1
+copies<|>copy<|>LoadEmbeddedImage<&>LoadEmbeddedImage<|>a DLL<&>the embedded DLL<&>the embedded DLL<&>the DLL<&>the compressed embedded DLL<&>the DLL<|>into+a newly allocated heap buffer
+Context Event 2
+calls<|>call<|>LoadEmbeddedImage<&>LoadEmbeddedImage<|>the function decodeBuffer (using the EncodingKey value)<|>
+Candidate Event 1
+encoded<|>encode<|>LoadEmbeddedImage<&>LoadEmbeddedImage<|>The data sent<|>
+Candidate Event 2
+calls<|>call<|>LoadEmbeddedImage<&>LoadEmbeddedImage<|>ImageLoaderData::LoadDll<&>ImageLoaderData::LoadDll<&>ImageLoaderData::LoadDll<|>
+Candidate Event 3
+used<|>use<|>LoadEmbeddedImage<&>LoadEmbeddedImage<|>“Wage Data 2012”<|>
+Candidate Event 4
+uses<|>use<|>LoadEmbeddedImage<&>LoadEmbeddedImage<|>a hash<|>
+Candidate Event 5
+used<|>use<|>LoadEmbeddedImage<&>LoadEmbeddedImage<|>This remote administration tool<&>The binary<&>the RAT<&>The RAT<&>our sample<|>
+---
+Answer
+0
+Context Event 1
+calls<|>call<|>LoadEmbeddedImage<&>LoadEmbeddedImage<|>ImageLoaderData::LoadDll<&>ImageLoaderData::LoadDll<&>ImageLoaderData::LoadDll<|>
+Context Event 2
+load<|>load<|>ImageLoaderData::LoadDll<&>ImageLoaderData::LoadDll<&>ImageLoaderData::LoadDll<|>itself<&>the DLL<&>the DLL<&>The DLL<&>individual instances of Gen 2 DLL<|>into+memory
+Context Event 3
+calls<|>call<|>ImageLoaderData::LoadDll<&>ImageLoaderData::LoadDll<&>ImageLoaderData::LoadDll<|>the DllMain (DLL’s entry point) function<|>
+Candidate Event 1
+loads<|>load<|>ImageLoaderData::LoadDll<&>ImageLoaderData::LoadDll<&>ImageLoaderData::LoadDll<|>the image<&>the embedded DLL image<|>into+the appropriate memory configuration
+Candidate Event 2
+access<|>access<|>ImageLoaderData::LoadDll<&>ImageLoaderData::LoadDll<&>ImageLoaderData::LoadDll<|>the memory of the services.exe process<|>
+Candidate Event 3
+launching<|>launch<|>ImageLoaderData::LoadDll<&>ImageLoaderData::LoadDll<&>ImageLoaderData::LoadDll<|>specified executable files<|>
+Candidate Event 4
+destroyed<|>destroy<|>ImageLoaderData::LoadDll<&>ImageLoaderData::LoadDll<&>ImageLoaderData::LoadDll<|>the targeted files<|>
+Candidate Event 5
+setting<|>set<|>ImageLoaderData::LoadDll<&>ImageLoaderData::LoadDll<&>ImageLoaderData::LoadDll<|>the key "bookstore"<|>
+---
+Answer
+4
+Context Event 1
+install<|>install<|>the RAT functionality code<&>The RAT functionality code<&>the RAT<&>the RAT functionality code<|>a rootkit<|>on+32-bit versions of Windows
+Context Event 2
+creates<|>create<|>the RAT functionality code<&>The RAT functionality code<&>the RAT<&>the RAT functionality code<|>a service<&>the service<&>the service<|>
+Candidate Event 1
+compromised<|>compromise<|>the RAT functionality code<&>The RAT functionality code<&>the RAT<&>the RAT functionality code<|>a victim<|>
+Candidate Event 2
+used<|>use<|>the RAT functionality code<&>The RAT functionality code<&>the RAT<&>the RAT functionality code<|>the domain aerospace2014[.]org<|>
+Candidate Event 3
+installed<|>instal<|>the RAT functionality code<&>The RAT functionality code<&>the RAT<&>the RAT functionality code<|>the hooks<|>
+Candidate Event 4
+created<|>create<|>the RAT functionality code<&>The RAT functionality code<&>the RAT<&>the RAT functionality code<|>MiniDuke<&>it<&>the payload<&>the encrypted version of the malware<&>the malware<&>the malware<&>the malware<&>MiniDuke<&>MiniDuke<&>it<&>MiniDuke<&>MiniDuke<|>
+Candidate Event 5
+activates<|>activate<|>the RAT functionality code<&>The RAT functionality code<&>the RAT<&>the RAT functionality code<|>a service<&>the service<&>the service<|>
+---
+Answer
+2
+Context Event 1
+creates<|>create<|>the RAT functionality code<&>The RAT functionality code<&>the RAT<&>the RAT functionality code<|>a service<&>the service<&>the service<|>
+Context Event 2
+activates<|>activate<|>the RAT functionality code<&>The RAT functionality code<&>the RAT<&>the RAT functionality code<|>a service<&>the service<&>the service<|>
+Candidate Event 1
+recorded<|>record<|>a service<&>the service<&>the service<|>all keystrokes<&>keystrokes<&>all the keystrokes the victim is typing inside the compromised website<|>
+Candidate Event 2
+upgrading<|>upgrade<|>a service<&>the service<&>the service<|>applications<|>
+Candidate Event 3
+deletes<|>delete<|>the RAT functionality code<&>the code<&>the RAT functionality code<|>a service<&>the service<&>the service<|>
+Candidate Event 4
+overwrote<|>overwrite<|>a service<&>the service<&>the service<|>the MBR<|>
+Candidate Event 5
+detects<|>detect<|>a service<&>the service<&>the service<|>a usermode process that goes online (e.g. a browser)<&>it<|>
+---
+Answer
+4
+Context Event 1
+listing<|>list<|>The file command<|>directories<|>
+Context Event 2
+uploading<|>upload<|>The file command<|>files<|>
+Candidate Event 1
+hooks<|>hook<|>The file command<|>a minimum number of kernel API functions<|>
+Candidate Event 2
+alter<|>alter<|>The file command<|>registry keys<|>
+Candidate Event 3
+started<|>start<|>The file command<|>producing the following traffic<|>
+Candidate Event 4
+inject<|>inject<|>The file command<|>that DLL<&>the DLL<&>malicious DLL module<&>the DLL<&>the injected DLL<|>into+it
+Candidate Event 5
+downloading<|>download<|>The file command<|>files<|>
+---

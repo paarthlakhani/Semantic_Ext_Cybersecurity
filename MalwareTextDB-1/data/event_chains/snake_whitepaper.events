@@ -1,0 +1,765 @@
+---
+Answer
+1
+Context Event 1
+establishing<|>establish<|>two distinct variants<&>It<|>a presence<|>
+Context Event 2
+install<|>install<|>two distinct variants<&>It<|>a backdoor<|>on+a compromised system
+Context Event 3
+hide<|>hide<|>two distinct variants<&>It<|>the presence of its components<|>
+Context Event 4
+provide<|>provide<|>two distinct variants<&>It<|>a communication mechanism with its C&C servers<|>
+Candidate Event 1
+loads<|>load<|>two distinct variants<&>It<|>Stage 3<&>an encrypted version of Stage 3<&>this file<&>Stage 3<&>Stage 3<|>
+Candidate Event 2
+enable<|>enable<|>two distinct variants<&>It<|>an effective data exfiltration mechanism<|>
+Candidate Event 3
+communicated<|>communicate<|>two distinct variants<&>It<|><|>
+Candidate Event 4
+execute<|>execute<|>two distinct variants<&>It<|>The dropper component<&>itself<&>It<&>itself<&>itself<|>
+Candidate Event 5
+sent<|>send<|>two distinct variants<&>It<|>the C&C replies<&>The replies<|>back to+the C&C
+---
+Answer
+2
+Context Event 1
+load<|>load<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>the DLL module<&>that module<|>into+the usermode processes
+Context Event 2
+use<|>use<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>the DLL module<&>that module<|>
+Context Event 3
+creates<|>create<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>This device<&>device named \Device\vstor32<|>
+Context Event 4
+drops<|>drop<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>a DLL<&>it<&>the DLL<&>this DLL<&>DLL modules<&>the malicious DLL module<&>the module<&>a malicious DLL module<&>that module<|>into+the %windows% directory
+Context Event 5
+sets up<|>set up<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>the hooks<|>
+Context Event 6
+calls<|>call<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>PsSetCreateProcessNotifyRoutine()<|>
+Context Event 7
+notified<|>notify<|><|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>
+Context Event 8
+stay<|>stay<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>persistent on a system<|>
+Context Event 9
+infect<|>infect<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>any newly created processes<|>
+Context Event 10
+restore<|>restore<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>
+Context Event 11
+sets<|>set<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>Another set of hooks<&>Another set of hooks<|>
+Context Event 12
+watches<|>watch<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|><|>
+Context Event 13
+stays<|>stay<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>dormant<|>
+Context Event 14
+intercepts<|>intercept<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>that event<|>
+Context Event 15
+injects<|>inject<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>a DLL<&>it<&>the DLL<&>this DLL<&>DLL modules<&>the malicious DLL module<&>the module<&>a malicious DLL module<&>that module<|>into+the process that initiated connection
+Context Event 16
+stay<|>stay<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>unnoticed<|>
+Context Event 17
+hiding<|>hiding<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>a few DNS/HTTP requests<|>
+Context Event 18
+injected<|>inject<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>a DLL<&>it<&>the DLL<&>this DLL<&>DLL modules<&>the malicious DLL module<&>the module<&>a malicious DLL module<&>that module<|>in+it
+Context Event 19
+relies on<|>rely on<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>The domain names of the C&C servers<|>
+Context Event 20
+resolves<|>resolve<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>the domain name of its C&C<|>
+Context Event 21
+store<|>store<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>configuration and log data<|>
+Context Event 22
+used<|>use<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>The files within that directory<|>
+Context Event 23
+injects<|>inject<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>that DLL<&>the DLL<&>malicious DLL module<&>the DLL<&>the injected DLL<|>into+a system process, such as services.exe
+Context Event 24
+detects<|>detect<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>a usermode process that goes online (e.g. a browser)<&>it<|>
+Candidate Event 1
+contact<|>contact<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>its C&C server<&>the C&C server<&>the C&C server<|>
+Candidate Event 2
+include<|>include<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>keypresses<|>
+Candidate Event 3
+performed<|>perform<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>the commands<|>
+Candidate Event 4
+use<|>use<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>zhCat<&>Its main purpose<&>zhCat<&>a server instance of zhCat<&>zhCat<&>zhCat<|>
+Candidate Event 5
+provides<|>provide<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>a wide degree of control over a victim system<|>
+---
+Answer
+3
+Context Event 1
+drops<|>drop<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>a DLL<&>it<&>the DLL<&>this DLL<&>DLL modules<&>the malicious DLL module<&>the module<&>a malicious DLL module<&>that module<|>into+the %windows% directory
+Context Event 2
+dropped<|>drop<|><|>a DLL<&>it<&>the DLL<&>this DLL<&>DLL modules<&>the malicious DLL module<&>the module<&>a malicious DLL module<&>that module<|>
+Context Event 3
+injected<|>inject<|><|>a DLL<&>it<&>the DLL<&>this DLL<&>DLL modules<&>the malicious DLL module<&>the module<&>a malicious DLL module<&>that module<|>into+the user-mode processes
+Context Event 4
+installed<|>instal<|><|>a DLL<&>it<&>the DLL<&>this DLL<&>DLL modules<&>the malicious DLL module<&>the module<&>a malicious DLL module<&>that module<|>
+Context Event 5
+run<|>run<|><|>a DLL<&>it<&>the DLL<&>this DLL<&>DLL modules<&>the malicious DLL module<&>the module<&>a malicious DLL module<&>that module<|>
+Context Event 6
+injects<|>inject<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>a DLL<&>it<&>the DLL<&>this DLL<&>DLL modules<&>the malicious DLL module<&>the module<&>a malicious DLL module<&>that module<|>into+the process that initiated connection
+Context Event 7
+initiates<|>initiate<|>a DLL<&>it<&>the DLL<&>this DLL<&>DLL modules<&>the malicious DLL module<&>the module<&>a malicious DLL module<&>that module<|>polling<&>this behaviour<|>
+Context Event 8
+injected<|>inject<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>a DLL<&>it<&>the DLL<&>this DLL<&>DLL modules<&>the malicious DLL module<&>the module<&>a malicious DLL module<&>that module<|>in+it
+Candidate Event 1
+applies<|>apply<|>a DLL<&>it<&>the DLL<&>this DLL<&>DLL modules<&>the malicious DLL module<&>the module<&>a malicious DLL module<&>that module<|>a light encoding<|>
+Candidate Event 2
+sent<|>send<|>a DLL<&>it<&>the DLL<&>this DLL<&>DLL modules<&>the malicious DLL module<&>the module<&>a malicious DLL module<&>that module<|>the e-mails<|>
+Candidate Event 3
+considered<|>consider<|>a DLL<&>it<&>the DLL<&>this DLL<&>DLL modules<&>the malicious DLL module<&>the module<&>a malicious DLL module<&>that module<|>SOAP traffic<&>benign traffic<|>
+Candidate Event 4
+started<|>start<|>a DLL<&>it<&>the DLL<&>this DLL<&>DLL modules<&>the malicious DLL module<&>the module<&>a malicious DLL module<&>that module<|>producing the following traffic<|>
+Candidate Event 5
+deletes<|>delete<|>a DLL<&>it<&>the DLL<&>this DLL<&>DLL modules<&>the malicious DLL module<&>the module<&>a malicious DLL module<&>that module<|>the files<&>them<&>them<&>them<|>
+---
+Answer
+4
+Context Event 1
+fetches<|>fetch<|>the malware<&>it<&>it<&>it<&>it<&>the malware<&>the malware<&>the malware<|>a file /D/pub.txt<|>
+Context Event 2
+expects<|>expect<|>the malware<&>it<&>it<&>it<&>it<&>the malware<&>the malware<&>the malware<|>the server to respond with a string “1”, acknowledging it’s active<|>
+Context Event 3
+asks<|>ask<|>the malware<&>it<&>it<&>it<&>it<&>the malware<&>the malware<&>the malware<|>the server<&>the server<|>
+Context Event 4
+receives<|>receive<|>the malware<&>it<&>it<&>it<&>it<&>the malware<&>the malware<&>the malware<|>The command<&>it<&>the received command<|>
+Context Event 5
+calculates<|>calculate<|>the malware<&>it<&>it<&>it<&>it<&>the malware<&>the malware<&>the malware<|>a CRC32 checksum<|>
+Context Event 6
+decrypt<|>decrypt<|>the malware<&>it<&>it<&>it<&>it<&>the malware<&>the malware<&>the malware<|>The command<&>it<&>the received command<|>
+Context Event 7
+applies<|>apply<|>the malware<&>it<&>it<&>it<&>it<&>the malware<&>the malware<&>the malware<|>the XOR mask<|>
+Context Event 8
+decrypts<|>decrypt<|>the malware<&>it<&>it<&>it<&>it<&>the malware<&>the malware<&>the malware<|>the data<|>
+Context Event 9
+makes sure<|>make sure<|>the malware<&>it<&>it<&>it<&>it<&>the malware<&>the malware<&>the malware<|>the command is destined to the current host<|>
+Context Event 10
+interprets<|>interpret<|>the malware<&>it<&>it<&>it<&>it<&>the malware<&>the malware<&>the malware<|>The command<&>it<&>the received command<|>
+Context Event 11
+connects<|>connect<|>the malware<&>it<&>it<&>it<&>it<&>the malware<&>the malware<&>the malware<|><|>to+the new C&C
+Candidate Event 1
+loaded<|>load<|>the malware<&>it<&>it<&>it<&>it<&>the malware<&>the malware<&>the malware<|>a system kernel driver “Ndiskpro” service<&>the NDISKPRO.SYS driver<&>the NDISKPRO.SYS driver<&>This component<&>This keylogger module<|>
+Candidate Event 2
+writing<|>write<|>the malware<&>it<&>it<&>it<&>it<&>the malware<&>the malware<&>the malware<|>arbitrary files<|>
+Candidate Event 3
+dropped<|>drop<|>the malware<&>it<&>it<&>it<&>it<&>the malware<&>the malware<&>the malware<|>the use of a digitally­signed advanced keylogger<&>It<&>This keylogger<&>This driver package<&>the NDISKPRO.SYS driver<&>This component<&>This keylogger module<|>
+Candidate Event 4
+registers<|>register<|>the malware<&>it<&>it<&>it<&>it<&>the malware<&>the malware<&>the malware<|>a callout driver for Windows Filtering Platform (WFP)<|>
+Candidate Event 5
+asking<|>ask<|>the malware<&>it<&>it<&>it<&>it<&>the malware<&>the malware<&>the malware<|><|>
+---
+Answer
+1
+Context Event 1
+receives<|>receive<|>the malware<&>it<&>it<&>it<&>it<&>it<&>it<&>it<&>it<|>The command<|>
+Context Event 2
+uploads<|>upload<|>the malware<&>it<&>it<&>it<&>it<&>it<&>it<&>it<&>it<|>all the collected logs<&>those logs<|>to+the server
+Context Event 3
+cleans out<|>clean out<|>the malware<&>it<&>it<&>it<&>it<&>it<&>it<&>it<&>it<|>all the collected logs<&>those logs<|>
+Context Event 4
+uploads<|>upload<|>the malware<&>it<&>it<&>it<&>it<&>it<&>it<&>it<&>it<|>The files<|>
+Context Event 5
+supports<|>support<|>the malware<&>it<&>it<&>it<&>it<&>it<&>it<&>it<&>it<|>3 modes of fetching C&C commands<|>
+Context Event 6
+relies on<|>rely on<|>the malware<&>it<&>it<&>it<&>it<&>it<&>it<&>it<&>it<|>Windows Internet (WinINet) APIs, such as HttpOpenRequest(), HttpSendRequest(), InternetReadFile(), etc<|>
+Context Event 7
+uses<|>use<|>the malware<&>it<&>it<&>it<&>it<&>it<&>it<&>it<&>it<|>Windows Sockets 2 (Winsock) APIs, such as WSAStartup(), socket(), connect(), send(), etc<|>
+Context Event 8
+works<|>work<|>the malware<&>it<&>it<&>it<&>it<&>it<&>it<&>it<&>it<|><|>
+Candidate Event 1
+xor encoded<|>xor encode<|>the malware<&>it<&>it<&>it<&>it<&>it<&>it<&>it<&>it<|>Each message<|>
+Candidate Event 2
+passes<|>pass<|>the malware<&>it<&>it<&>it<&>it<&>it<&>it<&>it<&>it<|>the web requests it is interested in (as a client)<|>to+the pipe server that runs within Windows Explorer (explorer.exe) and/or Internet Explorer (iexplore.exe) processes
+Candidate Event 3
+run<|>run<|>the malware<&>it<&>it<&>it<&>it<&>it<&>it<&>it<&>it<|>file<|>
+Candidate Event 4
+targeted<|>target<|>the malware<&>it<&>it<&>it<&>it<&>it<&>it<&>it<&>it<|>companies in the DIB<|>
+Candidate Event 5
+dropped<|>drop<|>the malware<&>it<&>it<&>it<&>it<&>it<&>it<&>it<&>it<|>“igfxtrayex.exe”<|>
+---
+Answer
+3
+Context Event 1
+injects<|>inject<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>that DLL<&>the DLL<&>malicious DLL module<&>the DLL<&>the injected DLL<|>into+a system process, such as services.exe
+Context Event 2
+function<|>function<|>that DLL<&>the DLL<&>malicious DLL module<&>the DLL<&>the injected DLL<|><|>
+Context Event 3
+inject<|>inject<|>the driver<&>it<|>that DLL<&>the DLL<&>malicious DLL module<&>the DLL<&>the injected DLL<|>into+it
+Context Event 4
+start<|>start<|>that DLL<&>the DLL<&>malicious DLL module<&>the DLL<&>the injected DLL<|>communicating with C&C directly<|>
+Context Event 5
+start<|>start<|>that DLL<&>the DLL<&>malicious DLL module<&>the DLL<&>the injected DLL<|>communicating with the pipe server<|>
+Candidate Event 1
+transfer<|>transfer<|>that DLL<&>the DLL<&>malicious DLL module<&>the DLL<&>the injected DLL<|>the clipboard contents<&>the clipboard content<&>changes to a clipboard<|>to+some remote server
+Candidate Event 2
+is provided<|>is provided<|>that DLL<&>the DLL<&>malicious DLL module<&>the DLL<&>the injected DLL<|>The standard output channel of that command<|>
+Candidate Event 3
+steal<|>steal<|>that DLL<&>the DLL<&>malicious DLL module<&>the DLL<&>the injected DLL<|>data<&>data<|>
+Candidate Event 4
+sending<|>send<|>that DLL<&>the DLL<&>malicious DLL module<&>the DLL<&>the injected DLL<|>messages<|>into+the established inter-process communication pipes
+Candidate Event 5
+served up<|>serve up<|>that DLL<&>the DLL<&>malicious DLL module<&>the DLL<&>the injected DLL<|>the exploit at www.[REDACTED].com/Data/img/img.html<&>It<&>a zero-day exploit (CVE-2014-0322)<&>it<&>this exploit<|>
+---
+Answer
+1
+Context Event 1
+start<|>start<|>the pipe server<&>it<&>the pipe server<&>the pipe server<&>the pipe server<|>communicating with the C&C<|>
+Context Event 2
+perform<|>perform<|>the pipe server<&>it<&>the pipe server<&>the pipe server<&>the pipe server<|>GET<|>
+Context Event 3
+perform<|>perform<|>the pipe server<&>it<&>the pipe server<&>the pipe server<&>the pipe server<|>POST requests<|>
+Context Event 4
+ask<|>ask<|>the pipe clients (infected usermode processes)<|>the pipe server<&>it<&>the pipe server<&>the pipe server<&>the pipe server<|>
+Context Event 5
+saving<|>save<|>the pipe server<&>it<&>the pipe server<&>the pipe server<&>the pipe server<|>data<|>into+a temporary file
+Context Event 6
+copy<|>copy<|>the pipe server<&>it<&>the pipe server<&>the pipe server<&>the pipe server<|>files<|>
+Context Event 7
+delete<|>delete<|>the pipe server<&>it<&>the pipe server<&>the pipe server<&>the pipe server<|>files<|>
+Candidate Event 1
+detects<|>detect<|>the pipe server<&>it<&>the pipe server<&>the pipe server<&>the pipe server<|>debuggers<|>
+Candidate Event 2
+save<|>save<|>the pipe server<&>it<&>the pipe server<&>the pipe server<&>the pipe server<|>configuration data<|>into+the registry
+Candidate Event 3
+connects<|>connect<|>the pipe server<&>it<&>the pipe server<&>the pipe server<&>the pipe server<|><|>to+autolace.twilightparadox.com (or automachine. servequake.com)
+Candidate Event 4
+connect<|>connect<|>the pipe server<&>it<&>the pipe server<&>the pipe server<&>the pipe server<|><|>to+the command and control server
+Candidate Event 5
+detect<|>detect<|>the pipe server<&>it<&>the pipe server<&>the pipe server<&>the pipe server<|>hooks and debugger breakpoints which may be set by security software and monitoring tools<|>
+---
+Answer
+4
+Context Event 1
+calls<|>call<|>The usermode component of Snake<&>it<&>the usermode component<|>DeviceIoControl() API<|>
+Context Event 2
+communicates<|>communicate<|>The usermode component of Snake<&>it<&>the usermode component<|><|>
+Context Event 3
+write<|>write<|>The usermode component of Snake<&>it<&>the usermode component<|>data<|>
+Context Event 4
+opens<|>open<|>The usermode component of Snake<&>it<&>the usermode component<|>the device<|>
+Candidate Event 1
+ensure<|>ensure<|>The usermode component of Snake<&>it<&>the usermode component<|>the driver is loaded automatically at startup<|>
+Candidate Event 2
+delivered<|>deliver<|>The usermode component of Snake<&>it<&>the usermode component<|>a kernel-mode driver<&>it<&>the kernel mode driver<&>a 64-bit driver<|>
+Candidate Event 3
+expects<|>expect<|>The usermode component of Snake<&>it<&>the usermode component<|>the server to respond with a string “1”, acknowledging it’s active<|>
+Candidate Event 4
+send<|>send<|>The usermode component of Snake<&>it<&>the usermode component<|>spear phishing emails<|>
+Candidate Event 5
+instructed<|>instruct<|><|>The usermode component of Snake<&>it<&>the usermode component<|>
+---
+Answer
+3
+Context Event 1
+hooks<|>hook<|>the rootkit<&>it<&>Snake<&>the TDI driver<&>the driver<&>the driver<|>the Transport Driver Interface (TDI) network routines<|>
+Context Event 2
+detects<|>detect<|>the rootkit<&>it<&>Snake<&>the TDI driver<&>the driver<&>the driver<|><|>
+Context Event 3
+invoke<|>invoke<|>the rootkit<&>it<&>Snake<&>the TDI driver<&>the driver<&>the driver<|>FwpsStreamInjectAsync0() API<|>
+Context Event 4
+generate<|>generate<|>the rootkit<&>it<&>Snake<&>the TDI driver<&>the driver<&>the driver<|>outbound requests<|>
+Context Event 5
+‘pulse’<|>‘pulse’<|>the rootkit<&>it<&>Snake<&>the TDI driver<&>the driver<&>the driver<|>the \BaseNamedObjects\wininet_activate event<|>
+Context Event 6
+intercepts<|>intercept<|>the rootkit<&>it<&>Snake<&>the TDI driver<&>the driver<&>the driver<|>The data<|>
+Candidate Event 1
+set up<|>set up<|>the rootkit<&>it<&>Snake<&>the TDI driver<&>the driver<&>the driver<|>zhCat<&>Its main purpose<&>zhCat<&>a server instance of zhCat<&>zhCat<&>zhCat<|>
+Candidate Event 2
+loaded<|>load<|>the rootkit<&>it<&>Snake<&>the TDI driver<&>the driver<&>the driver<|>Implants in this malware family<&>Implants in this malware family<&>This proxy tool<|>
+Candidate Event 3
+install<|>install<|>the rootkit<&>it<&>Snake<&>the TDI driver<&>the driver<&>the driver<|>an OS-appropriate version of RCS<&>RCS<&>the spyware<&>spyware<&>the RCS sample sent to Ahmed<&>The RCS samples we examined<&>The RCS samples<|>
+Candidate Event 4
+delivered<|>deliver<|>the rootkit<&>it<&>Snake<&>the TDI driver<&>the driver<&>the driver<|><|>back to+C&C
+Candidate Event 5
+manage<|>manage<|>the rootkit<&>it<&>Snake<&>the TDI driver<&>the driver<&>the driver<|>processes and services on the infected machine<|>
+---
+Answer
+2
+Context Event 1
+intercepts<|>intercept<|>the driver<&>it<&>the driver<&>the driver<&>it<&>the driver<|>all connections<|>
+Context Event 2
+parses<|>parse<|>the driver<&>it<&>the driver<&>the driver<&>it<&>the driver<|>all incoming HTTP and SMTP traffic<&>it<&>the data<|>
+Context Event 3
+authenticated<|>authenticate<|>the driver<&>it<&>the driver<&>the driver<&>it<&>the driver<|>all incoming HTTP and SMTP traffic<&>it<&>the data<|>
+Context Event 4
+routing<|>rout<|>the driver<&>it<&>the driver<&>the driver<&>it<&>the driver<|>requests from other infected hosts<|>to+a remote C&C server
+Context Event 5
+acting<|>act<|>the driver<&>it<&>the driver<&>the driver<&>it<&>the driver<|><|>
+Context Event 6
+respond<|>respond<|>the driver<&>it<&>the driver<&>the driver<&>it<&>the driver<|><|>
+Context Event 7
+log<|>log<|>the driver<&>it<&>the driver<&>the driver<&>it<&>the driver<|>its activity<|>
+Context Event 8
+writes<|>write<|>the driver<&>it<&>the driver<&>the driver<&>it<&>the driver<|>log data<|>into+the pipe \Device\NamedPipe\isapi_log
+Context Event 9
+send<|>send<|>the driver<&>it<&>the driver<&>the driver<&>it<&>the driver<|>traffic data<|>into+a memory pipe \Device\NamedPipe\isapi_http
+Candidate Event 1
+exploit<|>exploit<|>the driver<&>it<&>the driver<&>the driver<&>it<&>the driver<|>Oracle Sun Java and Adobe Flash Player<|>
+Candidate Event 2
+perform<|>perform<|>the driver<&>it<&>the driver<&>the driver<&>it<&>the driver<|>a connectivity check<|>
+Candidate Event 3
+send<|>send<|>the driver<&>it<&>the driver<&>the driver<&>it<&>the driver<|>a received peer-2-peer command message write_peer_nfo=[IP_ADDRESS:PORT]0frag_no_scrambling=Y0<|>into+another memory pipe called \Device\NamedPipe\isapi_dg
+Candidate Event 4
+written<|>write<|>the driver<&>it<&>the driver<&>the driver<&>it<&>the driver<|>the ransom note<|>to+disk
+Candidate Event 5
+uploads<|>upload<|>the driver<&>it<&>the driver<&>the driver<&>it<&>the driver<|>all collected information<&>The data<&>secrets<&>additional in- formation<|>to+one of the following URLs
+---
+Answer
+1
+Context Event 1
+written<|>write<|><|>the data<&>it<&>that data<|>to+the volume
+Context Event 2
+read<|>read<|><|>the data<&>it<&>that data<|>
+Candidate Event 1
+infiltrate<|>infiltrate<|>the data<&>it<&>that data<|><|>into+other computers
+Candidate Event 2
+saved<|>save<|><|>the data<&>it<&>that data<|>into+the volume Hd1
+Candidate Event 3
+fool<|>fool<|>the data<&>it<&>that data<|>some automated dynamic analysis or anti-malware software<|>
+Candidate Event 4
+launched<|>launch<|>the data<&>it<&>that data<|>a series of Distributed Denial of Service attacks (DDoS)<&>an ongoing DDoS attack that “brought down its email system for hours”<&>These ongoing DDoS attacks<&>a DDoS attack<&>these attacks<|>
+Candidate Event 5
+is<|>be<|>the data<&>it<&>that data<|>HTTP based<|>
+---
+Answer
+3
+Context Event 1
+keep<|>keep<|>the Snake driver<&>it<&>Snake<&>the Snake driver<|>its data<|>
+Context Event 2
+uses<|>use<|>the Snake driver<&>it<&>Snake<&>the Snake driver<|>virtual volumes<&>it<|>
+Context Event 3
+stores<|>store<|>the Snake driver<&>it<&>Snake<&>the Snake driver<|>its message queue<|>in+a file called
+Candidate Event 1
+sent<|>send<|>the Snake driver<&>it<&>Snake<&>the Snake driver<|>a number of messages<|>
+Candidate Event 2
+spread<|>spread<|>the Snake driver<&>it<&>Snake<&>the Snake driver<|><|>
+Candidate Event 3
+upgraded<|>upgrade<|>the Snake driver<&>it<&>Snake<&>the Snake driver<|>the high profile victim<&>they<|>
+Candidate Event 4
+store<|>store<|>the Snake driver<&>it<&>Snake<&>the Snake driver<|>its data and additional files<|>on+it
+Candidate Event 5
+uploaded<|>upload<|>the Snake driver<&>it<&>Snake<&>the Snake driver<|>The result of this execution<|>to+the C&C server
+---
+Answer
+4
+Context Event 1
+load<|>load<|>the dropper<&>it<&>it<&>it<&>the dropper<&>The dropper<&>the Snake dropper<&>it<&>Snake dropper<&>the dropper<|>its unsigned 64-bit driver<&>the 64-bit driver<|>on+a 64-bit version of Windows XP
+Context Event 2
+ensure<|>ensure<|>the dropper<&>it<&>it<&>it<&>the dropper<&>The dropper<&>the Snake dropper<&>it<&>Snake dropper<&>the dropper<|>the driver is loaded automatically at startup<|>
+Context Event 3
+install<|>install<|>the dropper<&>it<&>it<&>it<&>the dropper<&>The dropper<&>the Snake dropper<&>it<&>Snake dropper<&>the dropper<|>its unsigned 64-bit driver<&>the 64-bit driver<|>on+64-bit Windows XP
+Context Event 4
+installs<|>install<|>the dropper<&>it<&>it<&>it<&>the dropper<&>The dropper<&>the Snake dropper<&>it<&>Snake dropper<&>the dropper<|>a 32-bit driver<|>on+a 32-bit version of Windows XP
+Context Event 5
+behaves<|>behave<|>the dropper<&>it<&>it<&>it<&>the dropper<&>The dropper<&>the Snake dropper<&>it<&>Snake dropper<&>the dropper<|>differently<|>
+Context Event 6
+copies<|>copy<|>the dropper<&>it<&>it<&>it<&>the dropper<&>The dropper<&>the Snake dropper<&>it<&>Snake dropper<&>the dropper<|>itself<&>the dropper<&>the dropper itself<|>
+Context Event 7
+registers<|>register<|>the dropper<&>it<&>it<&>it<&>the dropper<&>The dropper<&>the Snake dropper<&>it<&>Snake dropper<&>the dropper<|>itself<&>The dropper<|>
+Context Event 8
+ensure<|>ensure<|>the dropper<&>it<&>it<&>it<&>the dropper<&>The dropper<&>the Snake dropper<&>it<&>Snake dropper<&>the dropper<|>it starts every time Windows is booted<|>
+Context Event 9
+loads<|>load<|>the dropper<&>it<&>it<&>it<&>the dropper<&>The dropper<&>the Snake dropper<&>it<&>Snake dropper<&>the dropper<|>a copy of the NT core image (ntoskrnl.exe)<|>
+Context Event 10
+locates<|>locate<|>the dropper<&>it<&>it<&>it<&>the dropper<&>The dropper<&>the Snake dropper<&>it<&>Snake dropper<&>the dropper<|>the import of CI.dll’s function CiInitialize()<&>SepInitializeCodeIntegrity() within it<|>
+Context Event 11
+parses<|>parse<|>the dropper<&>it<&>it<&>it<&>the dropper<&>The dropper<&>the Snake dropper<&>it<&>Snake dropper<&>the dropper<|>the function’s code<|>
+Context Event 12
+registers<|>register<|>the dropper<&>it<&>it<&>it<&>the dropper<&>The dropper<&>the Snake dropper<&>it<&>Snake dropper<&>the dropper<|>itself<&>Snake dropper<|>
+Context Event 13
+start<|>start<|>the dropper<&>it<&>it<&>it<&>the dropper<&>The dropper<&>the Snake dropper<&>it<&>Snake dropper<&>the dropper<|>each time Windows starts<|>
+Context Event 14
+load<|>load<|>the dropper<&>it<&>it<&>it<&>the dropper<&>The dropper<&>the Snake dropper<&>it<&>Snake dropper<&>the dropper<|>the driver<&>the vulnerable VBox driver<|>
+Context Event 15
+install<|>install<|>the dropper<&>it<&>it<&>it<&>the dropper<&>The dropper<&>the Snake dropper<&>it<&>Snake dropper<&>the dropper<|>the driver<&>the vulnerable VBox driver<|>
+Context Event 16
+disable<|>disable<|>the dropper<&>it<&>it<&>it<&>the dropper<&>The dropper<&>the Snake dropper<&>it<&>Snake dropper<&>the dropper<|>Code Integrity control<|>
+Candidate Event 1
+modify<|>modify<|>the dropper<&>it<&>it<&>it<&>the dropper<&>The dropper<&>the Snake dropper<&>it<&>Snake dropper<&>the dropper<|>the creation time, last access time and last modification    time<|>
+Candidate Event 2
+modify<|>modify<|>the dropper<&>it<&>it<&>it<&>the dropper<&>The dropper<&>the Snake dropper<&>it<&>Snake dropper<&>the dropper<|>one byte of memory<|>
+Candidate Event 3
+extract<|>extract<|>the dropper<&>it<&>it<&>it<&>the dropper<&>The dropper<&>the Snake dropper<&>it<&>Snake dropper<&>the dropper<|>valuable information<|>
+Candidate Event 4
+install<|>install<|>the dropper<&>it<&>it<&>it<&>the dropper<&>The dropper<&>the Snake dropper<&>it<&>Snake dropper<&>the dropper<|>the correct version of the Driver<|>
+Candidate Event 5
+obtain<|>obtain<|>the dropper<&>it<&>it<&>it<&>the dropper<&>The dropper<&>the Snake dropper<&>it<&>Snake dropper<&>the dropper<|>Administrator privileges<|>
+---
+Answer
+1
+Context Event 1
+activates<|>activate<|>the DLL<&>it<&>the DLL<&>this Snake DLL module<&>the DLL<|><|>
+Context Event 2
+reads<|>read<|>the DLL<&>it<&>the DLL<&>this Snake DLL module<&>the DLL<|>configuration parameters<|>
+Context Event 3
+use<|>use<|>the DLL<&>it<&>the DLL<&>this Snake DLL module<&>the DLL<|>the pipe name(s)<|>
+Context Event 4
+received<|>receive<|>the DLL<&>it<&>the DLL<&>this Snake DLL module<&>the DLL<|>The remote commands<|>
+Candidate Event 1
+registers<|>register<|>the DLL<&>it<&>the DLL<&>this Snake DLL module<&>the DLL<|>itself<&>Snake dropper<|>
+Candidate Event 2
+post<|>post<|>the DLL<&>it<&>the DLL<&>this Snake DLL module<&>the DLL<|>the data<|>
+Candidate Event 3
+updated<|>update<|>the DLL<&>it<&>the DLL<&>this Snake DLL module<&>the DLL<|>The configuration<|>
+Candidate Event 4
+distributed<|>distribute<|>the DLL<&>it<&>the DLL<&>this Snake DLL module<&>the DLL<|>an anti-censorship tool that is primarily used by Internet users in Iran<&>malware-laden versions of legitimate anti-censorship software, such as Psiphon and Ultrasurf<&>anti-censorship tools<&>anti-censorship tools<|>to+users Iran and Persian speaking people around the world
+Candidate Event 5
+receives<|>receive<|>the DLL<&>it<&>the DLL<&>this Snake DLL module<&>the DLL<|>a heartbeat/keepalive packet<|>
+---
+Answer
+4
+Context Event 1
+enumerates<|>enumerate<|>this tool<&>It<&>it<&>it<&>a network reconnaissance tool<&>the tool<|>other network hosts<|>
+Context Event 2
+detects<|>detect<|>this tool<&>It<&>it<&>it<&>a network reconnaissance tool<&>the tool<|>what Windows RPC services are enabled at the endpoints<|>
+Context Event 3
+write<|>write<|>this tool<&>It<&>it<&>it<&>a network reconnaissance tool<&>the tool<|>a message<|>to+the associated named pipes
+Context Event 4
+read<|>read<|>this tool<&>It<&>it<&>it<&>a network reconnaissance tool<&>the tool<|>a message<|>
+Context Event 5
+fingerprint<|>fingerprint<|>this tool<&>It<&>it<&>it<&>a network reconnaissance tool<&>the tool<|>all network hosts<|>
+Context Event 6
+reveal<|>reveal<|>this tool<&>It<&>it<&>it<&>a network reconnaissance tool<&>the tool<|>the following characteristics<|>
+Context Event 7
+delivers<|>deliver<|>this tool<&>It<&>it<&>it<&>a network reconnaissance tool<&>the tool<|>the payload<|>
+Candidate Event 1
+replacing<|>replace<|>this tool<&>It<&>it<&>it<&>a network reconnaissance tool<&>the tool<|>“MZ”<|>
+Candidate Event 2
+disguised<|>disguise<|>this tool<&>It<&>it<&>it<&>a network reconnaissance tool<&>the tool<|>This sample<&>the sample<&>malware samples<&>malware<|>
+Candidate Event 3
+delivered<|>deliver<|>this tool<&>It<&>it<&>it<&>a network reconnaissance tool<&>the tool<|>The sample e9580b6b13822090db018c320e80865f<|>to+several Epic victims
+Candidate Event 4
+uploaded<|>upload<|>this tool<&>It<&>it<&>it<&>a network reconnaissance tool<&>the tool<|>The encrypted files<&>the files themselves<|>to+the WebDAV shares
+Candidate Event 5
+exploits<|>exploit<|>this tool<&>It<&>it<&>it<&>a network reconnaissance tool<&>the tool<|>the remote host(s)<|>
+---
+Answer
+1
+Context Event 1
+replicate<|>replicate<|>the tool<&>it<|>the infection<|>
+Context Event 2
+spreading<|>spread<|>the tool<&>it<|>the infection<&>further<|>
+Context Event 3
+repeating<|>repeat<|>the tool<&>it<|>the infection cycle<&>all over again<|>
+Candidate Event 1
+manipulate<|>manipulate<|>the tool<&>it<|>the host application<|>
+Candidate Event 2
+taking control<|>take control<|>the tool<&>it<|><|>
+Candidate Event 3
+is<|>be<|>the tool<&>it<|>a backdoor developed in C#<|>
+Candidate Event 4
+obtain<|>obtain<|>the tool<&>it<|>Administrator privileges<|>
+Candidate Event 5
+write<|>write<|>the tool<&>it<|>a malicious payload<&>it<&>the malicious payload<&>the malicious payload<&>the newly created malicious  DLL<&>The malicious DLL file that is dropped<&>the file<&>the file<&>the dropped file<&>the dropped DLL<&>the DLL<|>
+---
+Answer
+4
+Context Event 1
+receives<|>receive<|>the malware<&>it<&>it<&>it<&>it<&>the malware<&>the malware<&>the malware<|>The command<&>it<&>the received command<|>
+Context Event 2
+encrypted<|>encrypt<|><|>The command<&>it<&>the received command<|>
+Context Event 3
+decrypt<|>decrypt<|>the malware<&>it<&>it<&>it<&>it<&>the malware<&>the malware<&>the malware<|>The command<&>it<&>the received command<|>
+Candidate Event 1
+sending<|>send<|>The command<&>it<&>the received command<|>compressed binary blobs<|>
+Candidate Event 2
+write<|>write<|>The command<&>it<&>the received command<|>a malicious component<|>
+Candidate Event 3
+modify<|>modify<|>The command<&>it<&>the received command<|>one byte of memory<|>
+Candidate Event 4
+exfiltrates<|>exfiltrates<|>The command<&>it<&>the received command<|><|>to+an online e-mail account
+Candidate Event 5
+interprets<|>interpret<|>the malware<&>it<&>it<&>it<&>it<&>the malware<&>the malware<&>the malware<|>The command<&>it<&>the received command<|>
+---
+Answer
+1
+Context Event 1
+carry out<|>carry out<|>a kernel-mode driver<&>it<&>the kernel mode driver<&>a 64-bit driver<|>the network communications<|>
+Context Event 2
+distributed<|>distribute<|><|>a kernel-mode driver<&>it<&>the kernel mode driver<&>a 64-bit driver<|>
+Context Event 3
+delivered<|>deliver<|><|>a kernel-mode driver<&>it<&>the kernel mode driver<&>a 64-bit driver<|>
+Context Event 4
+installs<|>install<|>the dropper<&>the dropper<&>it<&>it<&>The analysed 32-bit dropper<|>a kernel-mode driver<&>it<&>the kernel mode driver<&>a 64-bit driver<|>in+a pre-defined location
+Candidate Event 1
+compromise<|>compromise<|>a kernel-mode driver<&>it<&>the kernel mode driver<&>a 64-bit driver<|>two of the compromised websites<&>these websites<|>
+Candidate Event 2
+install<|>install<|>the dropper<&>the dropper<&>it<&>it<&>The analysed 32-bit dropper<|>a kernel-mode driver<&>it<&>the kernel mode driver<&>a 64-bit driver<|>On+a 64-bit OS
+Candidate Event 3
+performed<|>perform<|>a kernel-mode driver<&>it<&>the kernel mode driver<&>a 64-bit driver<|>The RAT communication<|>
+Candidate Event 4
+installed<|>instal<|>a kernel-mode driver<&>it<&>the kernel mode driver<&>a 64-bit driver<|>EVILTOSS variants<&>The backdoor<&>The backdoor<|>
+Candidate Event 5
+launched<|>launch<|>a kernel-mode driver<&>it<&>the kernel mode driver<&>a 64-bit driver<|>the installer component (0ae82fd94836815a1e8d284ccb75109d)<&>The installer<&>The installer<|>
+---
+Answer
+1
+Context Event 1
+executed<|>execute<|><|>the dropper<&>the dropper<&>it<&>it<&>The analysed 32-bit dropper<|>
+Context Event 2
+installs<|>install<|>the dropper<&>the dropper<&>it<&>it<&>The analysed 32-bit dropper<|>a kernel-mode driver<&>it<&>the kernel mode driver<&>a 64-bit driver<|>in+a pre-defined location
+Context Event 3
+install<|>install<|>the dropper<&>the dropper<&>it<&>it<&>The analysed 32-bit dropper<|>the kernel mode driver<&>a 32-bit driver<&>a driver<&>The driver<&>the driver<&>The rootkit<&>the rootkit<&>it<&>the driver<&>the rootkit<&>it<&>the rootkit<&>The driver<&>Snake<&>Snake<&>Snake<&>it<&>it<|>On+a 32-bit OS
+Context Event 4
+install<|>install<|>the dropper<&>the dropper<&>it<&>it<&>The analysed 32-bit dropper<|>a kernel-mode driver<&>it<&>the kernel mode driver<&>a 64-bit driver<|>On+a 64-bit OS
+Candidate Event 1
+including<|>include<|>the dropper<&>the dropper<&>it<&>it<&>The analysed 32-bit dropper<|>remote monitoring of<&>microphones<|>
+Candidate Event 2
+creates<|>create<|>the dropper<&>the dropper<&>it<&>it<&>The analysed 32-bit dropper<|>the kernel mode driver<&>a 32-bit driver<&>a driver<&>The driver<&>the driver<&>The rootkit<&>the rootkit<&>it<&>the driver<&>the rootkit<&>it<&>the rootkit<&>The driver<&>Snake<&>Snake<&>Snake<&>it<&>it<|>in+the following location
+Candidate Event 3
+reused<|>reuse<|>the dropper<&>the dropper<&>it<&>it<&>The analysed 32-bit dropper<|>SmartAssembly<|>
+Candidate Event 4
+execute<|>execute<|>the dropper<&>the dropper<&>it<&>it<&>The analysed 32-bit dropper<|>the following Windows Management Instrumentation (WMI) command<|>
+Candidate Event 5
+spread<|>spread<|>the dropper<&>the dropper<&>it<&>it<&>The analysed 32-bit dropper<|>a PE resource<&>the DLL file<&>the malware<&>the original backdoor process<&>OnionDuke<|>
+---
+Answer
+2
+Context Event 1
+install<|>install<|>the dropper<&>the dropper<&>it<&>it<&>The analysed 32-bit dropper<|>the kernel mode driver<&>a 32-bit driver<&>a driver<&>The driver<&>the driver<&>The rootkit<&>the rootkit<&>it<&>the driver<&>the rootkit<&>it<&>the rootkit<&>The driver<&>Snake<&>Snake<&>Snake<&>it<&>it<|>On+a 32-bit OS
+Context Event 2
+creates<|>create<|>the dropper<&>the dropper<&>it<&>it<&>The analysed 32-bit dropper<|>the kernel mode driver<&>a 32-bit driver<&>a driver<&>The driver<&>the driver<&>The rootkit<&>the rootkit<&>it<&>the driver<&>the rootkit<&>it<&>the rootkit<&>The driver<&>Snake<&>Snake<&>Snake<&>it<&>it<|>in+the following location
+Context Event 3
+places<|>place<|>the kernel mode driver<&>a 32-bit driver<&>a driver<&>The driver<&>the driver<&>The rootkit<&>the rootkit<&>it<&>the driver<&>the rootkit<&>it<&>the rootkit<&>The driver<&>Snake<&>Snake<&>Snake<&>it<&>it<|>a number of the hooks<|>
+Context Event 4
+flags<|>flag<|>the kernel mode driver<&>a 32-bit driver<&>a driver<&>The driver<&>the driver<&>The rootkit<&>the rootkit<&>it<&>the driver<&>the rootkit<&>it<&>the rootkit<&>The driver<&>Snake<&>Snake<&>Snake<&>it<&>it<|>the following events<|>
+Context Event 5
+hide<|>hide<|>the kernel mode driver<&>a 32-bit driver<&>a driver<&>The driver<&>the driver<&>The rootkit<&>the rootkit<&>it<&>the driver<&>the rootkit<&>it<&>the rootkit<&>The driver<&>Snake<&>Snake<&>Snake<&>it<&>it<|>its components<|>
+Context Event 6
+hooks<|>hook<|>the kernel mode driver<&>a 32-bit driver<&>a driver<&>The driver<&>the driver<&>The rootkit<&>the rootkit<&>it<&>the driver<&>the rootkit<&>it<&>the rootkit<&>The driver<&>Snake<&>Snake<&>Snake<&>it<&>it<|>the following APIs<|>
+Context Event 7
+blocks<|>block<|>the kernel mode driver<&>a 32-bit driver<&>a driver<&>The driver<&>the driver<&>The rootkit<&>the rootkit<&>it<&>the driver<&>the rootkit<&>it<&>the rootkit<&>The driver<&>Snake<&>Snake<&>Snake<&>it<&>it<|>access to registry entries that contain the strings “Ultra3” and “~ROOT”<|>
+Context Event 8
+blocked<|>block<|>the kernel mode driver<&>a 32-bit driver<&>a driver<&>The driver<&>the driver<&>The rootkit<&>the rootkit<&>it<&>the driver<&>the rootkit<&>it<&>the rootkit<&>The driver<&>Snake<&>Snake<&>Snake<&>it<&>it<|>file read access from that directory<|>
+Context Event 9
+encrypt<|>encrypt<|>the kernel mode driver<&>a 32-bit driver<&>a driver<&>The driver<&>the driver<&>The rootkit<&>the rootkit<&>it<&>the driver<&>the rootkit<&>it<&>the rootkit<&>The driver<&>Snake<&>Snake<&>Snake<&>it<&>it<|>data stored on its virtual partitions<|>
+Context Event 10
+sets<|>set<|>the kernel mode driver<&>a 32-bit driver<&>a driver<&>The driver<&>the driver<&>The rootkit<&>the rootkit<&>it<&>the driver<&>the rootkit<&>it<&>the rootkit<&>The driver<&>Snake<&>Snake<&>Snake<&>it<&>it<|>a hook for another API<|>
+Context Event 11
+re-infect<|>re-infect<|>the kernel mode driver<&>a 32-bit driver<&>a driver<&>The driver<&>the driver<&>The rootkit<&>the rootkit<&>it<&>the driver<&>the rootkit<&>it<&>the rootkit<&>The driver<&>Snake<&>Snake<&>Snake<&>it<&>it<|>the usermode process svchost.exe<|>
+Context Event 12
+re-enable<|>re-enable<|>the kernel mode driver<&>a 32-bit driver<&>a driver<&>The driver<&>the driver<&>The rootkit<&>the rootkit<&>it<&>the driver<&>the rootkit<&>it<&>the rootkit<&>The driver<&>Snake<&>Snake<&>Snake<&>it<&>it<|>its network drivers<|>
+Context Event 13
+hooks<|>hook<|>the kernel mode driver<&>a 32-bit driver<&>a driver<&>The driver<&>the driver<&>The rootkit<&>the rootkit<&>it<&>the driver<&>the rootkit<&>it<&>the rootkit<&>The driver<&>Snake<&>Snake<&>Snake<&>it<&>it<|>these APIs<|>
+Context Event 14
+registers<|>register<|>the kernel mode driver<&>a 32-bit driver<&>a driver<&>The driver<&>the driver<&>The rootkit<&>the rootkit<&>it<&>the driver<&>the rootkit<&>it<&>the rootkit<&>The driver<&>Snake<&>Snake<&>Snake<&>it<&>it<|>a callout driver for Windows Filtering Platform (WFP)<|>
+Context Event 15
+triggers<|>trigger<|>the kernel mode driver<&>a 32-bit driver<&>a driver<&>The driver<&>the driver<&>The rootkit<&>the rootkit<&>it<&>the driver<&>the rootkit<&>it<&>the rootkit<&>The driver<&>Snake<&>Snake<&>Snake<&>it<&>it<|>an event named \BaseNamedObjects\wininet_activate<|>
+Context Event 16
+inspects<|>inspect<|>the kernel mode driver<&>a 32-bit driver<&>a driver<&>The driver<&>the driver<&>The rootkit<&>the rootkit<&>it<&>the driver<&>the rootkit<&>it<&>the rootkit<&>The driver<&>Snake<&>Snake<&>Snake<&>it<&>it<|>bidirectional network data<|>
+Context Event 17
+manipulate<|>manipulate<|>the kernel mode driver<&>a 32-bit driver<&>a driver<&>The driver<&>the driver<&>The rootkit<&>the rootkit<&>it<&>the driver<&>the rootkit<&>it<&>the rootkit<&>The driver<&>Snake<&>Snake<&>Snake<&>it<&>it<|>data streams<|>
+Context Event 18
+insert<|>insert<|>the kernel mode driver<&>a 32-bit driver<&>a driver<&>The driver<&>the driver<&>The rootkit<&>the rootkit<&>it<&>the driver<&>the rootkit<&>it<&>the rootkit<&>The driver<&>Snake<&>Snake<&>Snake<&>it<&>it<|>traffic destined to its C&C servers<|>
+Context Event 19
+hooks<|>hook<|>the kernel mode driver<&>a 32-bit driver<&>a driver<&>The driver<&>the driver<&>The rootkit<&>the rootkit<&>it<&>the driver<&>the rootkit<&>it<&>the rootkit<&>The driver<&>Snake<&>Snake<&>Snake<&>it<&>it<|>TCP calls<|>
+Context Event 20
+intercepts<|>intercept<|>the kernel mode driver<&>a 32-bit driver<&>a driver<&>The driver<&>the driver<&>The rootkit<&>the rootkit<&>it<&>the driver<&>the rootkit<&>it<&>the rootkit<&>The driver<&>Snake<&>Snake<&>Snake<&>it<&>it<|>all requests along with their parameters<|>
+Context Event 21
+inspect<|>inspect<|>the kernel mode driver<&>a 32-bit driver<&>a driver<&>The driver<&>the driver<&>The rootkit<&>the rootkit<&>it<&>the driver<&>the rootkit<&>it<&>the rootkit<&>The driver<&>Snake<&>Snake<&>Snake<&>it<&>it<|>the traffic<|>
+Context Event 22
+parsing<|>parse<|>the kernel mode driver<&>a 32-bit driver<&>a driver<&>The driver<&>the driver<&>The rootkit<&>the rootkit<&>it<&>the driver<&>the rootkit<&>it<&>the rootkit<&>The driver<&>Snake<&>Snake<&>Snake<&>it<&>it<|>GET/POST HTTP requests and also SMTP communications<|>
+Context Event 23
+distinguish<|>distinguish<|>the kernel mode driver<&>a 32-bit driver<&>a driver<&>The driver<&>the driver<&>The rootkit<&>the rootkit<&>it<&>the driver<&>the rootkit<&>it<&>the rootkit<&>The driver<&>Snake<&>Snake<&>Snake<&>it<&>it<|>commands addressed to itself<|>
+Candidate Event 1
+set up<|>set up<|>the kernel mode driver<&>a 32-bit driver<&>a driver<&>The driver<&>the driver<&>The rootkit<&>the rootkit<&>it<&>the driver<&>the rootkit<&>it<&>the rootkit<&>The driver<&>Snake<&>Snake<&>Snake<&>it<&>it<|>Web pages<&>these login pages<|>
+Candidate Event 2
+manipulating<|>manipulate<|>the kernel mode driver<&>a 32-bit driver<&>a driver<&>The driver<&>the driver<&>The rootkit<&>the rootkit<&>it<&>the driver<&>the rootkit<&>it<&>the rootkit<&>The driver<&>Snake<&>Snake<&>Snake<&>it<&>it<|>the spinning frequency of the rotating motors<|>
+Candidate Event 3
+registered<|>register<|>the kernel mode driver<&>a 32-bit driver<&>a driver<&>The driver<&>the driver<&>The rootkit<&>the rootkit<&>it<&>the driver<&>the rootkit<&>it<&>the rootkit<&>The driver<&>Snake<&>Snake<&>Snake<&>it<&>it<|><|>
+Candidate Event 4
+uploaded<|>upload<|>the kernel mode driver<&>a 32-bit driver<&>a driver<&>The driver<&>the driver<&>The rootkit<&>the rootkit<&>it<&>the driver<&>the rootkit<&>it<&>the rootkit<&>The driver<&>Snake<&>Snake<&>Snake<&>it<&>it<|>The encrypted files<&>the files themselves<|>to+the WebDAV shares
+Candidate Event 5
+embedded<|>embed<|>the kernel mode driver<&>a 32-bit driver<&>a driver<&>The driver<&>the driver<&>The rootkit<&>the rootkit<&>it<&>the driver<&>the rootkit<&>it<&>the rootkit<&>The driver<&>Snake<&>Snake<&>Snake<&>it<&>it<|>word docs<&>word docs<|>
+---
+Answer
+2
+Context Event 1
+install<|>install<|>The installed hook handler<&>it<|>a TDI filter driver<|>
+Context Event 2
+calls<|>call<|>The installed hook handler<&>it<|>the original API<|>
+Candidate Event 1
+refer<|>refer<|>The installed hook handler<&>it<|><|>
+Candidate Event 2
+includes<|>include<|>The installed hook handler<&>it<|>counter-reverse engineering tactics<|>
+Candidate Event 3
+checks<|>check<|>The installed hook handler<&>it<|>if the name of the device is netbt or afd<|>
+Candidate Event 4
+delete<|>delete<|>The installed hook handler<&>it<|>all files and folders in this directory<|>
+Candidate Event 5
+conducted<|>conduct<|>The installed hook handler<&>it<|>Data exfiltration<|>
+---
+Answer
+4
+Context Event 1
+injected<|>inject<|><|>the DLL module<&>its usermode DLL<&>The usermode DLLs<&>the DLL module<|>into+the system processes
+Context Event 2
+inject<|>inject<|>The ZwClose() hook handler<|>the DLL module<&>its usermode DLL<&>The usermode DLLs<&>the DLL module<|>into+the userland processes
+Context Event 3
+unloads<|>unload<|>The hook handler for ZwTerminateProcess()<&>it<|>the DLL module<&>its usermode DLL<&>The usermode DLLs<&>the DLL module<|>
+Candidate Event 1
+profiled<|>profile<|>the DLL module<&>its usermode DLL<&>The usermode DLLs<&>the DLL module<|>the victim’s computer<|>
+Candidate Event 2
+contains<|>contain<|>the DLL module<&>its usermode DLL<&>The usermode DLLs<&>the DLL module<|>lightweight backdoor<|>
+Candidate Event 3
+deployed<|>deployed<|>the DLL module<&>its usermode DLL<&>The usermode DLLs<&>the DLL module<|>malware<&>it<&>the malware<&>a file containing both the legitimate update and the malware<&>Gh0st RAT<|>
+Candidate Event 4
+runs<|>run<|>the DLL module<&>its usermode DLL<&>The usermode DLLs<&>the DLL module<|>the igfxext.exe “selective infector” component<&>it<|>
+Candidate Event 5
+execute<|>execute<|>the DLL module<&>its usermode DLL<&>The usermode DLLs<&>the DLL module<|>them<|>
+---
+Answer
+0
+Context Event 1
+checks<|>check<|>The hook handler for ZwTerminateProcess()<&>it<|>if the process being shut down is svchost.exe<|>
+Context Event 2
+unloads<|>unload<|>The hook handler for ZwTerminateProcess()<&>it<|>the DLL module<&>its usermode DLL<&>The usermode DLLs<&>the DLL module<|>
+Candidate Event 1
+deactivates<|>deactivate<|>The hook handler for ZwTerminateProcess()<&>it<|>its own network drivers<|>
+Candidate Event 2
+copied<|>copy<|>The hook handler for ZwTerminateProcess()<&>it<|>file<|>
+Candidate Event 3
+propagate<|>propagate<|>The hook handler for ZwTerminateProcess()<&>it<|><|>
+Candidate Event 4
+hiding<|>hide<|>The hook handler for ZwTerminateProcess()<&>it<|>directories<|>
+Candidate Event 5
+used<|>use<|>The hook handler for ZwTerminateProcess()<&>it<|>3rd party ad networks<|>
+---
+Answer
+1
+Context Event 1
+installs<|>install<|>code<|>NDIS filter intermediate driver<&>This driver<&>The driver<&>NDIS filter driver for NDIS 6.0 and above<&>The driver<&>it<&>it<|>
+Context Event 2
+set up<|>set up<|>NDIS filter intermediate driver<&>This driver<&>The driver<&>NDIS filter driver for NDIS 6.0 and above<&>The driver<&>it<&>it<|><|>
+Context Event 3
+installs<|>install<|>code<|>NDIS filter intermediate driver<&>This driver<&>The driver<&>NDIS filter driver for NDIS 6.0 and above<&>The driver<&>it<&>it<|>
+Context Event 4
+hook<|>hook<|>NDIS filter intermediate driver<&>This driver<&>The driver<&>NDIS filter driver for NDIS 6.0 and above<&>The driver<&>it<&>it<|>Another set of exports<|>
+Context Event 5
+send<|>send<|>NDIS filter intermediate driver<&>This driver<&>The driver<&>NDIS filter driver for NDIS 6.0 and above<&>The driver<&>it<&>it<|>data<|>
+Context Event 6
+receive<|>receive<|>NDIS filter intermediate driver<&>This driver<&>The driver<&>NDIS filter driver for NDIS 6.0 and above<&>The driver<&>it<&>it<|>data<|>
+Context Event 7
+bypassing<|>bypass<|>NDIS filter intermediate driver<&>This driver<&>The driver<&>NDIS filter driver for NDIS 6.0 and above<&>The driver<&>it<&>it<|><|>
+Context Event 8
+making<|>make<|>NDIS filter intermediate driver<&>This driver<&>The driver<&>NDIS filter driver for NDIS 6.0 and above<&>The driver<&>it<&>it<|>its open ports<&>invisible to scanners<|>
+Context Event 9
+registered<|>register<|><|>NDIS filter intermediate driver<&>This driver<&>The driver<&>NDIS filter driver for NDIS 6.0 and above<&>The driver<&>it<&>it<|>
+Candidate Event 1
+checks<|>check<|>NDIS filter intermediate driver<&>This driver<&>The driver<&>NDIS filter driver for NDIS 6.0 and above<&>The driver<&>it<&>it<|>configured subfolders<|>
+Candidate Event 2
+registered<|>register<|><|>NDIS filter intermediate driver<&>This driver<&>The driver<&>NDIS filter driver for NDIS 6.0 and above<&>The driver<&>it<&>it<|>
+Candidate Event 3
+be<|>be<|>NDIS filter intermediate driver<&>This driver<&>The driver<&>NDIS filter driver for NDIS 6.0 and above<&>The driver<&>it<&>it<|>a variant of a Trojan<|>
+Candidate Event 4
+records<|>record<|>NDIS filter intermediate driver<&>This driver<&>The driver<&>NDIS filter driver for NDIS 6.0 and above<&>The driver<&>it<&>it<|>the user’s actions<&>them<&>The recorded actions<|>to+a file
+Candidate Event 5
+uploads<|>upload<|>NDIS filter intermediate driver<&>This driver<&>The driver<&>NDIS filter driver for NDIS 6.0 and above<&>The driver<&>it<&>it<|>a copy of the wiper<&>the wiper<&>a copy of the wiper file “taskhostXX.exe”<|>
+---
+Answer
+4
+Context Event 1
+parses<|>parse<|>the driver<&>it<&>the driver<&>the driver<&>it<&>the driver<|>all incoming HTTP and SMTP traffic<&>it<&>the data<|>
+Context Event 2
+authenticated<|>authenticate<|>the driver<&>it<&>the driver<&>the driver<&>it<&>the driver<|>all incoming HTTP and SMTP traffic<&>it<&>the data<|>
+Candidate Event 1
+notified<|>notify<|>all incoming HTTP and SMTP traffic<&>it<&>the data<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>
+Candidate Event 2
+employs<|>employ<|>all incoming HTTP and SMTP traffic<&>it<&>the data<|>a Windows device driver (“the Driver”)<&>it<&>The Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>the Driver<&>The Driver<&>the Driver<|>
+Candidate Event 3
+infected<|>infect<|>all incoming HTTP and SMTP traffic<&>it<&>the data<|>victims<|>
+Candidate Event 4
+gathering<|>gather<|>all incoming HTTP and SMTP traffic<&>it<&>the data<|>the same system information as described in the “Installation” section<|>
+Candidate Event 5
+decrypting<|>decrypt<|><|>all incoming HTTP and SMTP traffic<&>it<&>the data<|>
+---
+Answer
+3
+Context Event 1
+creates<|>create<|>The driver<&>the rootkit<&>Snake<|>virtual file volumes<&>The volumes<&>Both volumes<|>
+Context Event 2
+mounted<|>mount<|><|>virtual file volumes<&>The volumes<&>Both volumes<|>
+Candidate Event 1
+creates<|>create<|>virtual file volumes<&>The volumes<&>Both volumes<|>The .LNKfile<&>a hidden .LNK file<|>in+the “Startup” directory
+Candidate Event 2
+attack<|>attack<|>virtual file volumes<&>The volumes<&>Both volumes<|>targets<|>
+Candidate Event 3
+is<|>be<|>virtual file volumes<&>The volumes<&>Both volumes<|>a backdoor<|>
+Candidate Event 4
+set up<|>set up<|><|>virtual file volumes<&>The volumes<&>Both volumes<|>
+Candidate Event 5
+loads<|>load<|>virtual file volumes<&>The volumes<&>Both volumes<|>a copy of the NT core image (ntoskrnl.exe)<|>
+---
+Answer
+3
+Context Event 1
+identify<|>identify<|>the remote attacker<&>The attacker<&>the attacker<|>any potentially exploitable hosts located in the same network as the victim<|>
+Context Event 2
+deliver<|>deliver<|>the remote attacker<&>The attacker<&>the attacker<|>the generated shellcode<|>back to+the reconnaissance tool
+Candidate Event 1
+enumerate<|>enumerate<|>the remote attacker<&>The attacker<&>the attacker<|>network resources<|>
+Candidate Event 2
+use<|>use<|>the remote attacker<&>The attacker<&>the attacker<|>spear phishing e-mails<&>extensively<|>
+Candidate Event 3
+remaining<|>remain<|>the remote attacker<&>The attacker<&>the attacker<|><|>
+Candidate Event 4
+adjusting<|>adjust<|>the remote attacker<&>The attacker<&>the attacker<|>them<|>
+Candidate Event 5
+use<|>use<|>the remote attacker<&>The attacker<&>the attacker<|>direct IPs<|>
+---
+Answer
+0
+Context Event 1
+using<|>use<|>It<&>it<&>Snake<|>complex techniques<|>
+Context Event 2
+providing<|>provide<|>It<&>it<&>Snake<|>the attackers<&>covert communication channels<|>
+Context Event 3
+needs<|>need<|>It<&>it<&>Snake<|>one host to be connected online<|>
+Candidate Event 1
+provide<|>provide<|>It<&>it<&>Snake<|>remote attackers<|>
+Candidate Event 2
+connecting<|>connect<|>It<&>it<&>Snake<|><|>to+the same C&C domain
+Candidate Event 3
+add<|>add<|>It<&>it<&>Snake<|>port mappings<|>
+Candidate Event 4
+started<|>start<|>It<&>it<&>Snake<|>producing the following traffic<|>
+Candidate Event 5
+hijacking<|>hijack<|>It<&>it<&>Snake<|>local software distribution systems<|>
+---
+Answer
+0
+Context Event 1
+allow<|>allow<|>the backdoor commands<|>it<&>it<&>Snake<|>
+Context Event 2
+creates<|>create<|>it<&>it<&>Snake<|>The logs and dumps<|>on+the hidden virtual volumes
+Context Event 3
+generate<|>generate<|>it<&>it<&>Snake<|>malicious traffic<|>
+Candidate Event 1
+blend in<|>blend in<|>it<&>it<&>Snake<|><|>
+Candidate Event 2
+has<|>have<|>it<&>it<&>Snake<|>a remotely installable trojan named Abel<|>
+Candidate Event 3
+check<|>check<|>it<&>it<&>Snake<|><|>
+Candidate Event 4
+analyzed<|>analyze<|>it<&>it<&>Snake<|>the infected system<|>
+Candidate Event 5
+retrieve<|>retrieve<|>it<&>it<&>Snake<|><|>
+---
+Answer
+4
+Context Event 1
+manipulate<|>manipulate<|>Snake<|>traffic<|>
+Context Event 2
+parse<|>parse<|>Snake<|>all incoming traffic<|>
+Context Event 3
+‘inject’<|>‘inject’<|>Snake<|>the traffic<|>
+Context Event 4
+reach out<|>reach out<|>Snake<|><|>
+Candidate Event 1
+adapts<|>adapt<|>Snake<|>its behavior<|>
+Candidate Event 2
+serve<|>serve<|>Snake<|><|>
+Candidate Event 3
+download<|>download<|>Snake<|>other Darkhotel components<|>
+Candidate Event 4
+is then performed<|>is then performed<|>Snake<|>The system call hook<|>
+Candidate Event 5
+detect<|>detect<|>Snake<|>traffic addressed to itself<|>
+---

@@ -1,0 +1,662 @@
+---
+Answer
+3
+Context Event 1
+evaded<|>evade<|>Operation Cleaver<&>it<&>the Operation Cleaver team<&>Cleaver<&>them, or affiliated organizations<&>The attackers<|>detection by existing security technologies<|>
+Context Event 2
+conducted<|>conduct<|>Operation Cleaver<&>it<&>the Operation Cleaver team<&>Cleaver<&>them, or affiliated organizations<&>The attackers<|>a significant global surveillance and infiltration campaign<|>
+Context Event 3
+captured<|>capture<|>Operation Cleaver<&>it<&>the Operation Cleaver team<&>Cleaver<&>them, or affiliated organizations<&>The attackers<|>Private signing certificates of one victim<|>
+Context Event 4
+compromise<|>compromise<|>Operation Cleaver<&>it<&>the Operation Cleaver team<&>Cleaver<&>them, or affiliated organizations<&>The attackers<|>the entirety of their organization<|>
+Context Event 5
+exfiltrate<|>exfiltrate<|>Operation Cleaver<&>it<&>the Operation Cleaver team<&>Cleaver<&>them, or affiliated organizations<&>The attackers<|>extremely sensitive data<|>
+Context Event 6
+target<|>target<|>Operation Cleaver<&>it<&>the Operation Cleaver team<&>Cleaver<&>them, or affiliated organizations<&>The attackers<|>ICS and SCADA environments<|>
+Candidate Event 1
+authenticated<|>authenticate<|>Operation Cleaver<&>it<&>the Operation Cleaver team<&>Cleaver<&>them, or affiliated organizations<&>The attackers<|>all incoming HTTP and SMTP traffic<&>it<&>the data<|>
+Candidate Event 2
+install<|>install<|>Operation Cleaver<&>it<&>the Operation Cleaver team<&>Cleaver<&>them, or affiliated organizations<&>The attackers<|>more malware<|>on+the infected computer
+Candidate Event 3
+launch<|>launch<|>Operation Cleaver<&>it<&>the Operation Cleaver team<&>Cleaver<&>them, or affiliated organizations<&>The attackers<|>it<&>it<&>The sample<|>
+Candidate Event 4
+targeted<|>target<|>Operation Cleaver<&>it<&>the Operation Cleaver team<&>Cleaver<&>them, or affiliated organizations<&>The attackers<|>research efforts, student information, student housing, and financial aid systems<|>
+Candidate Event 5
+runs<|>run<|>Operation Cleaver<&>it<&>the Operation Cleaver team<&>Cleaver<&>them, or affiliated organizations<&>The attackers<|>svhosts<&>svhosts<|>
+---
+Answer
+3
+Context Event 1
+achieved<|>achieve<|>The attackers<&>They<&>them<&>them<&>They<&>They<&>They<&>attackers<|>complete access to airport gates and their security control systems<|>
+Context Event 2
+allowing<|>allow<|>complete access to airport gates and their security control systems<|>The attackers<&>They<&>them<&>them<&>They<&>They<&>They<&>attackers<|>
+Context Event 3
+gained<|>gain<|>The attackers<&>They<&>them<&>them<&>They<&>They<&>They<&>attackers<|>access to PayPal and Go Daddy credentials<|>
+Context Event 4
+allowing<|>allow<|>access to PayPal and Go Daddy credentials<|>The attackers<&>They<&>them<&>them<&>They<&>They<&>They<&>attackers<|>
+Context Event 5
+conducting<|>conduct<|>The attackers<&>They<&>them<&>them<&>They<&>They<&>They<&>attackers<|>SQL injections<|>
+Context Event 6
+controlling<|>control<|>The attackers<&>They<&>them<&>them<&>They<&>They<&>They<&>attackers<|>backdoors<|>
+Context Event 7
+exfiltrating<|>exfiltrating<|>The attackers<&>They<&>them<&>them<&>They<&>They<&>They<&>attackers<|>information<|>
+Context Event 8
+conducting<|>conduct<|>The attackers<&>They<&>them<&>them<&>They<&>They<&>They<&>attackers<|>SQL injection attacks<|>
+Candidate Event 1
+downloaded<|>download<|>The attackers<&>They<&>them<&>them<&>They<&>They<&>They<&>attackers<|>the file<&>the file<&>The file<|>
+Candidate Event 2
+gathers<|>gather<|>The attackers<&>They<&>them<&>them<&>They<&>They<&>They<&>attackers<|>system drive and volume information<|>
+Candidate Event 3
+written<|>write<|>The attackers<&>They<&>them<&>them<&>They<&>They<&>They<&>attackers<|>The executable and DLL<&>Both the document and executable<&>The executable<|>to+disk
+Candidate Event 4
+social engineer<|>social engineer<|>The attackers<&>They<&>them<&>them<&>They<&>They<&>They<&>attackers<|>users<&>the victim<|>
+Candidate Event 5
+converted<|>convert<|>The attackers<&>They<&>them<&>them<&>They<&>They<&>They<&>attackers<|>the host<|>
+---
+Answer
+4
+Context Event 1
+combined<|>combine<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>the original Easy Resume Creator Pro product<|>
+Context Event 2
+allows<|>allow<|>This increase in privileges<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>
+Context Event 3
+gain<|>gain<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>access to privleged areas of the operating system<|>
+Context Event 4
+infect<|>infect<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>other computers on the target network<|>
+Context Event 5
+extracted<|>extract<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>credentials<|>
+Context Event 6
+using<|>use<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>Cain & Abel<&>It<&>It<&>It<|>
+Context Event 7
+stealing<|>steal<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>confidential/privileged information<|>
+Context Event 8
+utilized<|>utilize<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>FTP servers<&>These FTP servers<&>these FTP servers<&>FTP servers<|>
+Context Event 9
+use<|>use<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>NetCat<&>it<&>NetCat<|>
+Context Event 10
+use<|>use<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>NetCat<&>it<&>NetCat<|>
+Context Event 11
+use<|>use<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>zhCat<&>Its main purpose<&>zhCat<&>a server instance of zhCat<&>zhCat<&>zhCat<|>
+Context Event 12
+set up<|>set up<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>zhCat<&>Its main purpose<&>zhCat<&>a server instance of zhCat<&>zhCat<&>zhCat<|>
+Context Event 13
+uses<|>use<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>PLink<|>
+Context Event 14
+abused<|>abuse<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>SMTP<|>
+Context Event 15
+use<|>use<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>infrastructure that was not theirs<|>
+Context Event 16
+used<|>use<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>the following are techniques and tools for persistence<|>
+Context Event 17
+run<|>run<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>multiple campaigns<|>
+Context Event 18
+know<|>know<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>which target was infected<|>
+Context Event 19
+used<|>use<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>Multiple backdoors<&>scripts or applications<&>Many of their backdoors<&>This group<|>
+Context Event 20
+utilized<|>utilize<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>backdoors<&>they<&>backdoors<|>
+Candidate Event 1
+launching<|>launch<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>attacks<|>
+Candidate Event 2
+used<|>use<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>Those ad windows<|>
+Candidate Event 3
+sets up<|>set up<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>the hooks<|>
+Candidate Event 4
+encrypted<|>encrypt<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>All communications<|>
+Candidate Event 5
+regain<|>regain<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>access to a compromised network<|>
+---
+Answer
+4
+Context Event 1
+use<|>use<|>users<&>the victim<|>the résumé submission application<&>it<&>the fake résumé submission application supplied by the malicious recruiter<&>The first résumé submission form<&>the résumé submitter<|>
+Context Event 2
+checks<|>check<|>the résumé submission application<&>it<&>the fake résumé submission application supplied by the malicious recruiter<&>The first résumé submission form<&>the résumé submitter<|>the Internet connection<|>
+Context Event 3
+display<|>display<|>the résumé submission application<&>it<&>the fake résumé submission application supplied by the malicious recruiter<&>The first résumé submission form<&>the résumé submitter<|>a window<|>
+Context Event 4
+requests<|>request<|>the résumé submission application<&>it<&>the fake résumé submission application supplied by the malicious recruiter<&>The first résumé submission form<&>the résumé submitter<|>contact information<&>the submitted information<|>
+Candidate Event 1
+spreading<|>spread<|>the résumé submission application<&>it<&>the fake résumé submission application supplied by the malicious recruiter<&>The first résumé submission form<&>the résumé submitter<|>This one<&>It<&>The payload<&>this malware<&>the exploit<|>
+Candidate Event 2
+used<|>use<|>the résumé submission application<&>it<&>the fake résumé submission application supplied by the malicious recruiter<&>The first résumé submission form<&>the résumé submitter<|>compromised embedded devices – typically routers- on the Internet as well as multiple dedicated hosting providers and VPN services<&>The same router botnet<|>
+Candidate Event 3
+connect<|>connect<|>the résumé submission application<&>it<&>the fake résumé submission application supplied by the malicious recruiter<&>The first résumé submission form<&>the résumé submitter<|><|>to+intel-update[.]com and update-mirror[.]com
+Candidate Event 4
+using<|>use<|>the résumé submission application<&>it<&>the fake résumé submission application supplied by the malicious recruiter<&>The first résumé submission form<&>the résumé submitter<|>Cain & Abel<&>It<&>It<&>It<|>
+Candidate Event 5
+does<|>do<|>the résumé submission application<&>it<&>the fake résumé submission application supplied by the malicious recruiter<&>The first résumé submission form<&>the résumé submitter<|>a GET request<|>
+---
+Answer
+1
+Context Event 1
+run<|>run<|>PsExec<&>this technique<&>it<|>commands<|>on+any other computer which accepts those domain credentials
+Context Event 2
+jump<|>jump<|>PsExec<&>this technique<&>it<|><|>
+Candidate Event 1
+include<|>include<|>PsExec<&>this technique<&>it<|>clipboard data<|>
+Candidate Event 2
+combined<|>combine<|><|>PsExec<&>this technique<&>it<|>
+Candidate Event 3
+schedules<|>schedule<|>PsExec<&>this technique<&>it<|>the copy<|>
+Candidate Event 4
+used<|>use<|>PsExec<&>this technique<&>it<|>botnet style operations<&>botnet style operations<|>
+Candidate Event 5
+executes<|>execute<|>PsExec<&>this technique<&>it<|>some kind of embedded script<|>
+---
+Answer
+4
+Context Event 1
+utilizes<|>utilize<|>Net Crawler<&>It<&>it<&>it<|>a cached credential dumping technique<|>
+Context Event 2
+worm<|>worm<|>Net Crawler<&>It<&>it<&>it<|><|>
+Context Event 3
+collecting<|>collect<|>Net Crawler<&>It<&>it<&>it<|>any and all credentials that it can extract from credential caches<|>
+Context Event 4
+extracting<|>extract<|>Net Crawler<&>It<&>it<&>it<|>cached credentials<|>
+Context Event 5
+scan<|>scan<|>Net Crawler<&>It<&>it<&>it<|>a set of configured IP addresses<|>
+Context Event 6
+create<|>create<|>Net Crawler<&>It<&>it<&>it<|>a copy of itself<&>the copy utilizing PsExec<&>This copy<|>
+Context Event 7
+send<|>send<|>Net Crawler<&>It<&>it<&>it<|>a copy of itself<&>the copy utilizing PsExec<&>This copy<|>
+Candidate Event 1
+include<|>include<|>Net Crawler<&>It<&>it<&>it<|>spyware for ongoing monitoring<|>
+Candidate Event 2
+loads<|>load<|>Net Crawler<&>It<&>it<&>it<|>Stage 3<&>an encrypted version of Stage 3<&>this file<&>Stage 3<&>Stage 3<|>
+Candidate Event 3
+made<|>make<|>Net Crawler<&>It<&>it<&>it<|>A bug fix<|>
+Candidate Event 4
+overwriting<|>overwrite<|>Net Crawler<&>It<&>it<&>it<|>the Master Boot Record<|>
+Candidate Event 5
+execute<|>execute<|>Net Crawler<&>It<&>it<&>it<|>a copy of itself<&>the copy utilizing PsExec<&>This copy<|>
+---
+Answer
+1
+Context Event 1
+create<|>create<|>Net Crawler<&>It<&>it<&>it<|>a copy of itself<&>the copy utilizing PsExec<&>This copy<|>
+Context Event 2
+send<|>send<|>Net Crawler<&>It<&>it<&>it<|>a copy of itself<&>the copy utilizing PsExec<&>This copy<|>
+Context Event 3
+execute<|>execute<|>Net Crawler<&>It<&>it<&>it<|>a copy of itself<&>the copy utilizing PsExec<&>This copy<|>
+Candidate Event 1
+install<|>install<|>a copy of itself<&>the copy utilizing PsExec<&>This copy<|>a TDI filter driver<|>
+Candidate Event 2
+repeats<|>repeat<|>a copy of itself<&>the copy utilizing PsExec<&>This copy<|>the behavior of the original<|>
+Candidate Event 3
+has<|>have<|>a copy of itself<&>the copy utilizing PsExec<&>This copy<|>multiple communication capabilities available<|>
+Candidate Event 4
+utilized<|>utilize<|>a copy of itself<&>the copy utilizing PsExec<&>This copy<|>a staging server<|>
+Candidate Event 5
+infect<|>infect<|>a copy of itself<&>the copy utilizing PsExec<&>This copy<|>computers<|>
+---
+Answer
+2
+Context Event 1
+dump<|>dump<|>Cain & Abel<&>It<&>It<&>It<|>stored and cached credentials<|>
+Context Event 2
+conduct<|>conduct<|>Cain & Abel<&>It<&>It<&>It<|>attacks like ARP cache poisoning<|>
+Context Event 3
+capture<|>capture<|>Cain & Abel<&>It<&>It<&>It<|>credentials being transmitted on the network<|>
+Context Event 4
+has<|>have<|>Cain & Abel<&>It<&>It<&>It<|>a remotely installable trojan named Abel<|>
+Candidate Event 1
+cloak<|>cloak<|>Cain & Abel<&>It<&>It<&>It<|>the backdoor<&>it<|>
+Candidate Event 2
+uses<|>use<|>Cain & Abel<&>It<&>It<&>It<|>virtual volumes<&>it<|>
+Candidate Event 3
+using<|>use<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>Cain & Abel<&>It<&>It<&>It<|>
+Candidate Event 4
+delete<|>delete<|>Cain & Abel<&>It<&>It<&>It<|>files<|>
+Candidate Event 5
+use<|>use<|>Cain & Abel<&>It<&>It<&>It<|>the resume- based methods reported in the Initial Compromise sections<|>
+---
+Answer
+2
+Context Event 1
+use<|>use<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>NetCat<&>it<&>NetCat<|>
+Context Event 2
+use<|>use<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>NetCat<&>it<&>NetCat<|>
+Candidate Event 1
+obfuscated<|>obfuscate<|>NetCat<&>it<&>NetCat<|>an iframe<&>malicious iframes<&>the iframe<&>The iframes on these websites<|>
+Candidate Event 2
+retrieves<|>retrieve<|>NetCat<&>it<&>NetCat<|>several datapoints<|>
+Candidate Event 3
+execute<|>execute<|>NetCat<&>it<&>NetCat<|>a command<|>
+Candidate Event 4
+including<|>include<|>NetCat<&>it<&>NetCat<|>the computer’s micro- phone<&>input from<|>
+Candidate Event 5
+downloaded<|>download<|>NetCat<&>it<&>NetCat<|>One of the Snake components<|>
+---
+Answer
+1
+Context Event 1
+enable<|>enable<|>NetCat<&>This feature<&>Its main functionality<|>a reverse connecting shell<|>
+Context Event 2
+allows<|>allow<|>NetCat<&>This feature<&>Its main functionality<|><|>
+Candidate Event 1
+stealing<|>steal<|>NetCat<&>This feature<&>Its main functionality<|>more information<|>
+Candidate Event 2
+allowing<|>allow<|>NetCat<&>This feature<&>Its main functionality<|><|>
+Candidate Event 3
+uploaded<|>upload<|>NetCat<&>This feature<&>Its main functionality<|>The encrypted files<&>the files themselves<|>to+the WebDAV shares
+Candidate Event 4
+installed<|>instal<|>NetCat<&>This feature<&>Its main functionality<|>this kernel mode keylogger<&>It<&>a keylogger<&>a system kernel driver “Ndiskpro” service<|>
+Candidate Event 5
+executing<|>execute<|>NetCat<&>This feature<&>Its main functionality<|>processes<|>
+---
+Answer
+2
+Context Event 1
+create<|>create<|>zhCat<&>Its main purpose<&>zhCat<&>a server instance of zhCat<&>zhCat<&>zhCat<|>a channel that is capable of transporting information over the network<|>
+Context Event 2
+transferred<|>transfer<|>zhCat<&>Its main purpose<&>zhCat<&>a server instance of zhCat<&>zhCat<&>zhCat<|>this information<|>
+Context Event 3
+use<|>use<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>zhCat<&>Its main purpose<&>zhCat<&>a server instance of zhCat<&>zhCat<&>zhCat<|>
+Context Event 4
+set up<|>set up<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>zhCat<&>Its main purpose<&>zhCat<&>a server instance of zhCat<&>zhCat<&>zhCat<|>
+Context Event 5
+has<|>have<|>zhCat<&>Its main purpose<&>zhCat<&>a server instance of zhCat<&>zhCat<&>zhCat<|>a variety of other features such as port mirroring as well as traffic redirecting<|>
+Candidate Event 1
+intercepts<|>intercept<|>zhCat<&>Its main purpose<&>zhCat<&>a server instance of zhCat<&>zhCat<&>zhCat<|>The data<|>
+Candidate Event 2
+exploit<|>exploit<|>zhCat<&>Its main purpose<&>zhCat<&>a server instance of zhCat<&>zhCat<&>zhCat<|>the same theme<|>
+Candidate Event 3
+connect<|>connect<|>zhCat<&>Its main purpose<&>zhCat<&>a server instance of zhCat<&>zhCat<&>zhCat<|><|>back to+srv01.microsoftwindowsupdate(dot)net (a deceptive domain owned by this group with falsified Whois data attributing to Microsoft Investor Relations)
+Candidate Event 4
+gained<|>gain<|>zhCat<&>Its main purpose<&>zhCat<&>a server instance of zhCat<&>zhCat<&>zhCat<|>access to one or several machines inside the target’s corporate network<|>
+Candidate Event 5
+maintain<|>maintain<|>zhCat<&>Its main purpose<&>zhCat<&>a server instance of zhCat<&>zhCat<&>zhCat<|>access into a compromised network<|>
+---
+Answer
+4
+Context Event 1
+responds<|>respond<|>TinyZBot<&>Recent versions<&>they<&>The backdoor<&>It<&>TinyZBot<&>the malicious TinyZBot executable<&>the original malicious executable<&>The initial version<&>a new version<&>The version compiled on June 23, 2014<&>These versions<&>TinyZBot<&>TinyZBot<&>TinyZBot<&>These versions<&>another TinyZBot instance<|><|>
+Context Event 2
+installed<|>instal<|><|>TinyZBot<&>Recent versions<&>they<&>The backdoor<&>It<&>TinyZBot<&>the malicious TinyZBot executable<&>the original malicious executable<&>The initial version<&>a new version<&>The version compiled on June 23, 2014<&>These versions<&>TinyZBot<&>TinyZBot<&>TinyZBot<&>These versions<&>another TinyZBot instance<|>
+Context Event 3
+use<|>use<|>TinyZBot<&>Recent versions<&>they<&>The backdoor<&>It<&>TinyZBot<&>the malicious TinyZBot executable<&>the original malicious executable<&>The initial version<&>a new version<&>The version compiled on June 23, 2014<&>These versions<&>TinyZBot<&>TinyZBot<&>TinyZBot<&>These versions<&>another TinyZBot instance<|>the resume- based methods reported in the Initial Compromise sections<|>
+Context Event 4
+copied<|>copy<|>TinyZBot<&>Recent versions<&>they<&>The backdoor<&>It<&>TinyZBot<&>the malicious TinyZBot executable<&>the original malicious executable<&>The initial version<&>a new version<&>The version compiled on June 23, 2014<&>These versions<&>TinyZBot<&>TinyZBot<&>TinyZBot<&>These versions<&>another TinyZBot instance<|>TinyZBot<&>Recent versions<&>they<&>The backdoor<&>It<&>TinyZBot<&>the malicious TinyZBot executable<&>the original malicious executable<&>The initial version<&>a new version<&>The version compiled on June 23, 2014<&>These versions<&>TinyZBot<&>TinyZBot<&>TinyZBot<&>These versions<&>another TinyZBot instance<|>to+the %AppData% directory
+Context Event 5
+opened<|>open<|>TinyZBot<&>Recent versions<&>they<&>The backdoor<&>It<&>TinyZBot<&>the malicious TinyZBot executable<&>the original malicious executable<&>The initial version<&>a new version<&>The version compiled on June 23, 2014<&>These versions<&>TinyZBot<&>TinyZBot<&>TinyZBot<&>These versions<&>another TinyZBot instance<|>an image stored in the resource section of the executable<|>
+Context Event 6
+replaced<|>replace<|>TinyZBot<&>Recent versions<&>they<&>The backdoor<&>It<&>TinyZBot<&>the malicious TinyZBot executable<&>the original malicious executable<&>The initial version<&>a new version<&>The version compiled on June 23, 2014<&>These versions<&>TinyZBot<&>TinyZBot<&>TinyZBot<&>These versions<&>another TinyZBot instance<|>TinyZBot<&>Recent versions<&>they<&>The backdoor<&>It<&>TinyZBot<&>the malicious TinyZBot executable<&>the original malicious executable<&>The initial version<&>a new version<&>The version compiled on June 23, 2014<&>These versions<&>TinyZBot<&>TinyZBot<&>TinyZBot<&>These versions<&>another TinyZBot instance<|>
+Context Event 7
+padded<|>pad<|>TinyZBot<&>Recent versions<&>they<&>The backdoor<&>It<&>TinyZBot<&>the malicious TinyZBot executable<&>the original malicious executable<&>The initial version<&>a new version<&>The version compiled on June 23, 2014<&>These versions<&>TinyZBot<&>TinyZBot<&>TinyZBot<&>These versions<&>another TinyZBot instance<|>an appropriately named image file<&>the image file<|>
+Context Event 8
+logging<|>log<|>TinyZBot<&>Recent versions<&>they<&>The backdoor<&>It<&>TinyZBot<&>the malicious TinyZBot executable<&>the original malicious executable<&>The initial version<&>a new version<&>The version compiled on June 23, 2014<&>These versions<&>TinyZBot<&>TinyZBot<&>TinyZBot<&>These versions<&>another TinyZBot instance<|>keystroke data<|>
+Context Event 9
+sending<|>send<|>TinyZBot<&>Recent versions<&>they<&>The backdoor<&>It<&>TinyZBot<&>the malicious TinyZBot executable<&>the original malicious executable<&>The initial version<&>a new version<&>The version compiled on June 23, 2014<&>These versions<&>TinyZBot<&>TinyZBot<&>TinyZBot<&>These versions<&>another TinyZBot instance<|>emails<|>
+Context Event 10
+creating<|>create<|>TinyZBot<&>Recent versions<&>they<&>The backdoor<&>It<&>TinyZBot<&>the malicious TinyZBot executable<&>the original malicious executable<&>The initial version<&>a new version<&>The version compiled on June 23, 2014<&>These versions<&>TinyZBot<&>TinyZBot<&>TinyZBot<&>These versions<&>another TinyZBot instance<|>a link<|>
+Context Event 11
+obfuscated<|>obfuscate<|><|>TinyZBot<&>Recent versions<&>they<&>The backdoor<&>It<&>TinyZBot<&>the malicious TinyZBot executable<&>the original malicious executable<&>The initial version<&>a new version<&>The version compiled on June 23, 2014<&>These versions<&>TinyZBot<&>TinyZBot<&>TinyZBot<&>These versions<&>another TinyZBot instance<|>
+Context Event 12
+allowed<|>allow<|>TinyZBot<&>Recent versions<&>they<&>The backdoor<&>It<&>TinyZBot<&>the malicious TinyZBot executable<&>the original malicious executable<&>The initial version<&>a new version<&>The version compiled on June 23, 2014<&>These versions<&>TinyZBot<&>TinyZBot<&>TinyZBot<&>These versions<&>another TinyZBot instance<|><|>
+Context Event 13
+allowed<|>allow<|>TinyZBot<&>Recent versions<&>they<&>The backdoor<&>It<&>TinyZBot<&>the malicious TinyZBot executable<&>the original malicious executable<&>The initial version<&>a new version<&>The version compiled on June 23, 2014<&>These versions<&>TinyZBot<&>TinyZBot<&>TinyZBot<&>These versions<&>another TinyZBot instance<|>screenshots of the desktop<|>
+Context Event 14
+install<|>install<|>TinyZBot<&>Recent versions<&>they<&>The backdoor<&>It<&>TinyZBot<&>the malicious TinyZBot executable<&>the original malicious executable<&>The initial version<&>a new version<&>The version compiled on June 23, 2014<&>These versions<&>TinyZBot<&>TinyZBot<&>TinyZBot<&>These versions<&>another TinyZBot instance<|><|>
+Context Event 15
+installed<|>instal<|><|>TinyZBot<&>Recent versions<&>they<&>The backdoor<&>It<&>TinyZBot<&>the malicious TinyZBot executable<&>the original malicious executable<&>The initial version<&>a new version<&>The version compiled on June 23, 2014<&>These versions<&>TinyZBot<&>TinyZBot<&>TinyZBot<&>These versions<&>another TinyZBot instance<|>
+Context Event 16
+impersonating<|>impersonate<|>TinyZBot<&>Recent versions<&>they<&>The backdoor<&>It<&>TinyZBot<&>the malicious TinyZBot executable<&>the original malicious executable<&>The initial version<&>a new version<&>The version compiled on June 23, 2014<&>These versions<&>TinyZBot<&>TinyZBot<&>TinyZBot<&>These versions<&>another TinyZBot instance<|>potential employers<|>
+Context Event 17
+include<|>include<|>TinyZBot<&>Recent versions<&>they<&>The backdoor<&>It<&>TinyZBot<&>the malicious TinyZBot executable<&>the original malicious executable<&>The initial version<&>a new version<&>The version compiled on June 23, 2014<&>These versions<&>TinyZBot<&>TinyZBot<&>TinyZBot<&>These versions<&>another TinyZBot instance<|>a new method of installing as a service<|>
+Candidate Event 1
+removed<|>remove<|>TinyZBot<&>Recent versions<&>they<&>The backdoor<&>It<&>TinyZBot<&>the malicious TinyZBot executable<&>the original malicious executable<&>The initial version<&>a new version<&>The version compiled on June 23, 2014<&>These versions<&>TinyZBot<&>TinyZBot<&>TinyZBot<&>These versions<&>another TinyZBot instance<|>the remote network share<|>
+Candidate Event 2
+sent<|>send<|>TinyZBot<&>Recent versions<&>they<&>The backdoor<&>It<&>TinyZBot<&>the malicious TinyZBot executable<&>the original malicious executable<&>The initial version<&>a new version<&>The version compiled on June 23, 2014<&>These versions<&>TinyZBot<&>TinyZBot<&>TinyZBot<&>These versions<&>another TinyZBot instance<|>A wave of spear phishing emails<&>All of the emails<|>to+291 individuals at the targeted company
+Candidate Event 3
+steal<|>steal<|>TinyZBot<&>Recent versions<&>they<&>The backdoor<&>It<&>TinyZBot<&>the malicious TinyZBot executable<&>the original malicious executable<&>The initial version<&>a new version<&>The version compiled on June 23, 2014<&>These versions<&>TinyZBot<&>TinyZBot<&>TinyZBot<&>These versions<&>another TinyZBot instance<|>data<|>
+Candidate Event 4
+is mapped<|>is mapped<|>TinyZBot<&>Recent versions<&>they<&>The backdoor<&>It<&>TinyZBot<&>the malicious TinyZBot executable<&>the original malicious executable<&>The initial version<&>a new version<&>The version compiled on June 23, 2014<&>These versions<&>TinyZBot<&>TinyZBot<&>TinyZBot<&>These versions<&>another TinyZBot instance<|>This sample<&>the DLL<&>it<&>a 'backdoor'<&>the malware<&>the backdoor<&>The backdoor<&>the backdoor<|>
+Candidate Event 5
+started<|>start<|><|>TinyZBot<&>Recent versions<&>they<&>The backdoor<&>It<&>TinyZBot<&>the malicious TinyZBot executable<&>the original malicious executable<&>The initial version<&>a new version<&>The version compiled on June 23, 2014<&>These versions<&>TinyZBot<&>TinyZBot<&>TinyZBot<&>These versions<&>another TinyZBot instance<|>
+---
+Answer
+3
+Context Event 1
+utilized<|>utilize<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>backdoors<&>they<&>backdoors<|>
+Context Event 2
+masqueraded<|>masquerade<|>backdoors<&>they<&>backdoors<|><|>
+Context Event 3
+call out<|>call out<|>backdoors<&>they<&>backdoors<|><|>
+Candidate Event 1
+communicated<|>communicate<|>backdoors<&>they<&>backdoors<|><|>
+Candidate Event 2
+requests<|>request<|>backdoors<&>they<&>backdoors<|>a connection to 192.184.60.229 on TCP port 81<|>
+Candidate Event 3
+delete<|>delete<|>backdoors<&>they<&>backdoors<|>files<|>
+Candidate Event 4
+execute<|>execute<|>backdoors<&>they<&>backdoors<|>any shell code returned by the remote server<|>
+Candidate Event 5
+compromised<|>compromise<|>backdoors<&>they<&>backdoors<|>many DNS servers, including the ones from Google and Godaddy<|>
+---
+Answer
+3
+Context Event 1
+observes<|>observe<|>Logger Module<|>the user’s actions<&>them<&>The recorded actions<|>
+Context Event 2
+records<|>record<|>Logger Module<|>the user’s actions<&>them<&>The recorded actions<|>to+a file
+Context Event 3
+include<|>include<|>the user’s actions<&>them<&>The recorded actions<|>mouse clicks<|>
+Context Event 4
+include<|>include<|>the user’s actions<&>them<&>The recorded actions<|>active windows<|>
+Context Event 5
+include<|>include<|>the user’s actions<&>them<&>The recorded actions<|>keypresses<|>
+Candidate Event 1
+extracted<|>extract<|>the user’s actions<&>them<&>The recorded actions<|>credentials<|>
+Candidate Event 2
+receive<|>receive<|>the user’s actions<&>them<&>The recorded actions<|>targeting instructions<|>
+Candidate Event 3
+registered<|>register<|>the user’s actions<&>them<&>The recorded actions<|>only 6/55 detections by anti virus scanners, or a 10% detection rate<|>
+Candidate Event 4
+include<|>include<|>the user’s actions<&>them<&>The recorded actions<|>clipboard data<|>
+Candidate Event 5
+including<|>include<|>the user’s actions<&>them<&>The recorded actions<|>compromised data repositories<|>
+---
+Answer
+4
+Context Event 1
+used<|>use<|>this organization<|>SQL injection payloads<&>Double encoding SQL injection payloads<|>
+Context Event 2
+double encoded<|>double encode<|><|>SQL injection payloads<&>Double encoding SQL injection payloads<|>
+Candidate Event 1
+sent<|>send<|>SQL injection payloads<&>Double encoding SQL injection payloads<|>this information<|>
+Candidate Event 2
+cleans<|>clean<|>SQL injection payloads<&>Double encoding SQL injection payloads<|>traces of the initial loader<|>
+Candidate Event 3
+steal<|>steal<|>SQL injection payloads<&>Double encoding SQL injection payloads<|>confidential information<|>
+Candidate Event 4
+bypassing<|>bypass<|>SQL injection payloads<&>Double encoding SQL injection payloads<|>the host-based firewalls that keep an infected system process in a white-list<|>
+Candidate Event 5
+allows<|>allow<|>SQL injection payloads<&>Double encoding SQL injection payloads<|><|>
+---
+Answer
+4
+Context Event 1
+dropped<|>drop<|><|>the malware (TinyZbot)<&>the malware<&>the malware<|>
+Context Event 2
+executed<|>execute<|><|>the malware (TinyZbot)<&>the malware<&>the malware<|>
+Context Event 3
+connect<|>connect<|>the malware (TinyZbot)<&>the malware<&>the malware<|><|>to+the command and control server
+Context Event 4
+logging<|>log<|>the malware (TinyZbot)<&>the malware<&>the malware<|>their keystrokes<|>
+Candidate Event 1
+use<|>use<|>the malware (TinyZbot)<&>the malware<&>the malware<|>zero-day vulnerabilities<|>
+Candidate Event 2
+ensured<|>ensure<|>the malware (TinyZbot)<&>the malware<&>the malware<|>The registration<|>
+Candidate Event 3
+runs<|>run<|>the malware (TinyZbot)<&>the malware<&>the malware<|>an encrypted Visual Basic Script<&>it<&>This VBScript<&>The VBS<|>
+Candidate Event 4
+use<|>use<|>the malware (TinyZbot)<&>the malware<&>the malware<|>infrastructure that was not theirs<|>
+Candidate Event 5
+retrieving<|>retrieve<|>the malware (TinyZbot)<&>the malware<&>the malware<|>their stored passwords<|>
+---
+Answer
+4
+Context Event 1
+utilized<|>utilize<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>FTP servers<&>These FTP servers<&>these FTP servers<&>FTP servers<|>
+Context Event 2
+observed<|>observe<|><|>FTP servers<&>These FTP servers<&>these FTP servers<&>FTP servers<|>
+Context Event 3
+hosted<|>host<|>The following IP addresses<|>FTP servers<&>These FTP servers<&>these FTP servers<&>FTP servers<|>
+Context Event 4
+used<|>use<|><|>FTP servers<&>These FTP servers<&>these FTP servers<&>FTP servers<|>
+Candidate Event 1
+sets<|>set<|>FTP servers<&>These FTP servers<&>these FTP servers<&>FTP servers<|>a startup key<&>a startup key<|>in+the “HKCU\Software\Microsoft\Windows\CurrentVersion\Run” registry path
+Candidate Event 2
+control<|>control<|>FTP servers<&>These FTP servers<&>these FTP servers<&>FTP servers<|>the keyboard<|>
+Candidate Event 3
+install<|>install<|>FTP servers<&>These FTP servers<&>these FTP servers<&>FTP servers<|>a main DLL (referred to as “the DLL”)<&>The DLL<&>the DLL<&>the DLL<&>the DLL<&>the DLL<&>the DLL<|>
+Candidate Event 4
+exfiltrate<|>exfiltrate<|>FTP servers<&>These FTP servers<&>these FTP servers<&>FTP servers<|>The resulting log<&>it<&>a file<|>to+its command and control server
+Candidate Event 5
+used<|>use<|><|>FTP servers<&>These FTP servers<&>these FTP servers<&>FTP servers<|>
+---
+Answer
+0
+Context Event 1
+is<|>be<|>TinyZBot<&>TinyZBot<&>the TinyZBot infection<&>a running TinyZBot instance<&>The TinyZBot<&>the TinyZBot<&>TinyZBot<|>a backdoor developed in C#<|>
+Context Event 2
+gather<|>gather<|>TinyZBot<&>TinyZBot<&>the TinyZBot infection<&>a running TinyZBot instance<&>The TinyZBot<&>the TinyZBot<&>TinyZBot<|>information<|>
+Context Event 3
+maintain<|>maintain<|>TinyZBot<&>TinyZBot<&>the TinyZBot infection<&>a running TinyZBot instance<&>The TinyZBot<&>the TinyZBot<&>TinyZBot<|>access into a compromised network<|>
+Context Event 4
+further<|>further<|>TinyZBot<&>TinyZBot<&>the TinyZBot infection<&>a running TinyZBot instance<&>The TinyZBot<&>the TinyZBot<&>TinyZBot<|>access into a compromised network<|>
+Context Event 5
+done<|>do<|>TinyZBot<&>TinyZBot<&>the TinyZBot infection<&>a running TinyZBot instance<&>The TinyZBot<&>the TinyZBot<&>TinyZBot<|>the first query<|>
+Context Event 6
+queries<|>query<|>TinyZBot<&>TinyZBot<&>the TinyZBot infection<&>a running TinyZBot instance<&>The TinyZBot<&>the TinyZBot<&>TinyZBot<|>the server<|>
+Context Event 7
+download<|>download<|>TinyZBot<&>TinyZBot<&>the TinyZBot infection<&>a running TinyZBot instance<&>The TinyZBot<&>the TinyZBot<&>TinyZBot<|>the file<&>the file<&>The file<|>
+Candidate Event 1
+request<|>request<|>TinyZBot<&>TinyZBot<&>the TinyZBot infection<&>a running TinyZBot instance<&>The TinyZBot<&>the TinyZBot<&>TinyZBot<|>the file<&>the file<&>The file<|>
+Candidate Event 2
+sends<|>send<|>TinyZBot<&>TinyZBot<&>the TinyZBot infection<&>a running TinyZBot instance<&>The TinyZBot<&>the TinyZBot<&>TinyZBot<|>data captured by the malware<|>to+an e-mail address
+Candidate Event 3
+‘inject’<|>‘inject’<|>TinyZBot<&>TinyZBot<&>the TinyZBot infection<&>a running TinyZBot instance<&>The TinyZBot<&>the TinyZBot<&>TinyZBot<|>the traffic<|>
+Candidate Event 4
+bypassing<|>bypass<|>TinyZBot<&>TinyZBot<&>the TinyZBot infection<&>a running TinyZBot instance<&>The TinyZBot<&>the TinyZBot<&>TinyZBot<|><|>
+Candidate Event 5
+creates<|>create<|>TinyZBot<&>TinyZBot<&>the TinyZBot infection<&>a running TinyZBot instance<&>The TinyZBot<&>the TinyZBot<&>TinyZBot<|>a copy of regsvr32.exe named Update.exe<|>
+---
+Answer
+4
+Context Event 1
+download<|>download<|>TinyZBot<&>TinyZBot<&>the TinyZBot infection<&>a running TinyZBot instance<&>The TinyZBot<&>the TinyZBot<&>TinyZBot<|>the file<&>the file<&>The file<|>
+Context Event 2
+request<|>request<|>TinyZBot<&>TinyZBot<&>the TinyZBot infection<&>a running TinyZBot instance<&>The TinyZBot<&>the TinyZBot<&>TinyZBot<|>the file<&>the file<&>The file<|>
+Candidate Event 1
+downloaded<|>download<|>the file<&>the file<&>The file<|>dropper packages<&>These files<&>something unexpected and wholly different from what we have discussed until now<&>It<&>sccm.exe<|>
+Candidate Event 2
+notified<|>notify<|>the file<&>the file<&>The file<|>the driver<&>it<&>the Snake driver<&>the driver<&>it<&>it<&>Snake<&>its driver file<&>it<&>The driver<&>Snake<&>the driver<&>Snake rootkit<&>the driver<&>it<&>the malware<&>rootkit<&>the malicious driver with the embedded DLL module<&>the driver<&>the malware<|>
+Candidate Event 3
+started<|>start<|>the file<&>the file<&>The file<|>the service<|>
+Candidate Event 4
+adds<|>add<|>the file<&>the file<&>The file<|>a registry key: HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run\<|>
+Candidate Event 5
+downloaded<|>download<|><|>the file<&>the file<&>The file<|>
+---
+Answer
+4
+Context Event 1
+added<|>add<|><|>FTP upload support<&>This FTP upload functionality<&>This FTP upload functionality<|>
+Context Event 2
+points<|>point<|>FTP upload support<&>This FTP upload functionality<&>This FTP upload functionality<|><|>
+Candidate Event 1
+sends<|>send<|>FTP upload support<&>This FTP upload functionality<&>This FTP upload functionality<|>data captured by the malware<|>to+an e-mail address
+Candidate Event 2
+installed<|>instal<|>FTP upload support<&>This FTP upload functionality<&>This FTP upload functionality<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|>
+Candidate Event 3
+delete<|>delete<|>FTP upload support<&>This FTP upload functionality<&>This FTP upload functionality<|>some other, prob- ably older, components which might be present on the system<|>
+Candidate Event 4
+uploaded<|>upload<|>FTP upload support<&>This FTP upload functionality<&>This FTP upload functionality<|>The encrypted files<&>the files themselves<|>to+the WebDAV shares
+Candidate Event 5
+invoked<|>invoke<|><|>FTP upload support<&>This FTP upload functionality<&>This FTP upload functionality<|>
+---
+Answer
+1
+Context Event 1
+used<|>use<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>Multiple backdoors<&>scripts or applications<&>Many of their backdoors<&>This group<|>
+Context Event 2
+allowed<|>allow<|>Multiple backdoors<&>scripts or applications<&>Many of their backdoors<&>This group<|><|>
+Context Event 3
+were<|>be<|>Multiple backdoors<&>scripts or applications<&>Many of their backdoors<&>This group<|>web applications<|>
+Candidate Event 1
+used<|>use<|>Multiple backdoors<&>scripts or applications<&>Many of their backdoors<&>This group<|>GET requests<&>GET requests<|>
+Candidate Event 2
+includes<|>include<|>Multiple backdoors<&>scripts or applications<&>Many of their backdoors<&>This group<|>the results of the Shell Creator mentioned in the Attribution section, as well as ASPX backdoors used by Nesha<|>
+Candidate Event 3
+receive<|>receive<|>Multiple backdoors<&>scripts or applications<&>Many of their backdoors<&>This group<|>commands<|>
+Candidate Event 4
+uploading<|>upload<|>Multiple backdoors<&>scripts or applications<&>Many of their backdoors<&>This group<|>files<|>
+Candidate Event 5
+utilize<|>utilize<|>Multiple backdoors<&>scripts or applications<&>Many of their backdoors<&>This group<|>compromised embedded devices – typically routers- on the Internet as well as multiple dedicated hosting providers and VPN services<&>The same router botnet<|>
+---
+Answer
+3
+Context Event 1
+is<|>be<|>PVZ-Out<&>PVZ-Out<|>the other half of the command and control channel<|>
+Context Event 2
+uploading<|>upload<|>PVZ-Out<&>PVZ-Out<|>results of commands and keystroke logging data<|>to+a remote server
+Candidate Event 1
+set up<|>set up<|>PVZ-Out<&>PVZ-Out<|>zhCat<&>Its main purpose<&>zhCat<&>a server instance of zhCat<&>zhCat<&>zhCat<|>
+Candidate Event 2
+deliver<|>deliver<|>PVZ-Out<&>PVZ-Out<|>malware<&>it<&>the malware<&>a file containing both the legitimate update and the malware<&>Gh0st RAT<|>to+the victim
+Candidate Event 3
+load<|>load<|>PVZ-Out<&>PVZ-Out<|>itself<&>the DLL<&>the DLL<&>The DLL<&>individual instances of Gen 2 DLL<|>into+memory
+Candidate Event 4
+exfiltrate<|>exfiltrate<|>PVZ-Out<&>PVZ-Out<|>The resulting log<&>it<&>a file<|>to+its command and control server
+Candidate Event 5
+calls<|>call<|>PVZ-Out<&>PVZ-Out<|>the original API<|>
+---
+Answer
+4
+Context Event 1
+minimized down<|>minimize down<|><|>The tool chain<&>WndTest<&>WndTest<&>wndTest<|>
+Context Event 2
+minimized down<|>minimize down<|><|>The tool chain<&>WndTest<&>WndTest<&>wndTest<|>
+Context Event 3
+minimized down<|>minimize down<|><|>The tool chain<&>WndTest<&>WndTest<&>wndTest<|>
+Context Event 4
+installs<|>install<|>The tool chain<&>WndTest<&>WndTest<&>wndTest<|><|>
+Context Event 5
+impersonate<|>impersonate<|>The tool chain<&>WndTest<&>WndTest<&>wndTest<|>Adobe Report Service<|>
+Context Event 6
+using<|>use<|>The tool chain<&>WndTest<&>WndTest<&>wndTest<|>PHP servers<|>
+Candidate Event 1
+adjusting<|>adjust<|>The tool chain<&>WndTest<&>WndTest<&>wndTest<|>them<|>
+Candidate Event 2
+store<|>store<|>The tool chain<&>WndTest<&>WndTest<&>wndTest<|>its data and additional files<|>on+it
+Candidate Event 3
+provide<|>provide<|>The tool chain<&>WndTest<&>WndTest<&>wndTest<|>remote persistent access<|>
+Candidate Event 4
+starts<|>start<|>The tool chain<&>WndTest<&>WndTest<&>wndTest<|>This module<&>It<&>the module<&>The module<&>current module<&>The component<|>
+Candidate Event 5
+communicate<|>communicate<|>The tool chain<&>WndTest<&>WndTest<&>wndTest<|><|>
+---
+Answer
+1
+Context Event 1
+executes<|>execute<|>This configuration<|>zhCat<&>zhCat<&>This zhCat instance<&>it<|>
+Context Event 2
+running<|>run<|>zhCat<&>zhCat<&>This zhCat instance<&>it<|>cmd.exe<|>
+Candidate Event 1
+replaced<|>replace<|>zhCat<&>zhCat<&>This zhCat instance<&>it<|>TinyZBot<&>Recent versions<&>they<&>The backdoor<&>It<&>TinyZBot<&>the malicious TinyZBot executable<&>the original malicious executable<&>The initial version<&>a new version<&>The version compiled on June 23, 2014<&>These versions<&>TinyZBot<&>TinyZBot<&>TinyZBot<&>These versions<&>another TinyZBot instance<|>
+Candidate Event 2
+making<|>make<|><|>zhCat<&>zhCat<&>This zhCat instance<&>it<|>
+Candidate Event 3
+insert<|>insert<|>zhCat<&>zhCat<&>This zhCat instance<&>it<|>traffic destined to its C&C servers<|>
+Candidate Event 4
+communicated<|>communicate<|>zhCat<&>zhCat<&>This zhCat instance<&>it<|><|>
+Candidate Event 5
+checks<|>check<|>zhCat<&>zhCat<&>This zhCat instance<&>it<|>if an older version is installed on the system<|>
+---
+Answer
+1
+Context Event 1
+is<|>be<|>Csext<&>Csext<&>Csext<|>a backdoor application developed in C#<|>
+Context Event 2
+runs<|>run<|>Csext<&>Csext<&>Csext<|><|>
+Context Event 3
+has<|>have<|>Csext<&>Csext<&>Csext<|>email functionality similar to TinyZBot<&>This email functionality<|>
+Candidate Event 1
+rely<|>rely<|>Csext<&>Csext<&>Csext<|><|>
+Candidate Event 2
+communicate<|>communicate<|>Csext<&>Csext<&>Csext<|><|>
+Candidate Event 3
+have<|>have<|>Csext<&>Csext<&>Csext<|>the decoy documents<|>
+Candidate Event 4
+encrypted<|>encrypt<|>Csext<&>Csext<&>Csext<|>Important parts of Type T, such as the C&C server address it contacts and its protection mechanisms<|>
+Candidate Event 5
+contained<|>contain<|>Csext<&>Csext<&>Csext<|>the same Trojan.Dropper<&>the same Trojan.Dropper<&>The malware itself<&>The back door<&>other back door Trojans<|>
+---
+Answer
+1
+Context Event 1
+include<|>include<|>Customized private tools with functions<|>ARP poisoning<|>
+Context Event 2
+include<|>include<|>Customized private tools with functions<|>encryption<|>
+Context Event 3
+include<|>include<|>Customized private tools with functions<|>credential dumping<|>
+Context Event 4
+include<|>include<|>Customized private tools with functions<|>ASP.NET shells<|>
+Context Event 5
+include<|>include<|>Customized private tools with functions<|>web backdoors<|>
+Context Event 6
+include<|>include<|>Customized private tools with functions<|>process enumeration<|>
+Context Event 7
+include<|>include<|>Customized private tools with functions<|>WMI querying<|>
+Context Event 8
+include<|>include<|>Customized private tools with functions<|>HTTP and SMB communications<|>
+Context Event 9
+include<|>include<|>Customized private tools with functions<|>network interface sniffing<|>
+Candidate Event 1
+repurposed<|>repurposed<|>Customized private tools with functions<|>This document<|>
+Candidate Event 2
+include<|>include<|>Customized private tools with functions<|>keystroke logging<|>
+Candidate Event 3
+uses<|>use<|>Customized private tools with functions<|>seven vulnerabilities<|>
+Candidate Event 4
+terminate<|>terminate<|>Customized private tools with functions<|>This module<&>itself<&>the module<|>
+Candidate Event 5
+stay<|>stay<|>Customized private tools with functions<|>unnoticed<|>
+---
+Answer
+0
+Context Event 1
+including<|>include<|>Cleaver’s level of access into each organization<|>completely compromised systems and networks<|>
+Context Event 2
+including<|>include<|>Cleaver’s level of access into each organization<|>Active Directory domain controllers and credentials<|>
+Context Event 3
+including<|>include<|>Cleaver’s level of access into each organization<|>compromised data repositories<|>
+Candidate Event 1
+including<|>include<|>Cleaver’s level of access into each organization<|>stolen VPN credentials<|>
+Candidate Event 2
+upload<|>upload<|>Cleaver’s level of access into each organization<|>arbitrary files<|>
+Candidate Event 3
+load<|>load<|>Cleaver’s level of access into each organization<|>executables compiled from JNI code<&>the code<|>
+Candidate Event 4
+stores<|>store<|>Cleaver’s level of access into each organization<|>the encrypted message<|>
+Candidate Event 5
+compromised<|>compromise<|>Cleaver’s level of access into each organization<|>a victim<|>
+---
+Answer
+0
+Context Event 1
+breaks down<|>break down<|>Its functionality<|><|>
+Context Event 2
+breaks down<|>break down<|>Its functionality<|><|>
+Candidate Event 1
+breaks down<|>break down<|>Its functionality<|><|>
+Candidate Event 2
+hide<|>hide<|><|>the data<|>
+Candidate Event 3
+drop<|>drop<|><|>a file<&>it<&>the downloaded file<|>to+%APPDATA%\microsoft\dis- play\ctfmon.exe (md5= e8bfb82b0dd5cef46116d61f62c25060)
+Candidate Event 4
+utilized<|>utilize<|><|>backdoors<&>they<&>backdoors<|>
+Candidate Event 5
+played<|>play<|><|>those back in a loop<|>
+---
+Answer
+2
+Context Event 1
+upgrading<|>upgrade<|>he command and control<|>applications<|>
+Context Event 2
+downloading<|>download<|>he command and control<|>applications<|>
+Context Event 3
+executing<|>execute<|>he command and control<|>applications<|>
+Candidate Event 1
+terminate<|>terminate<|>he command and control<|>This module<&>itself<&>the module<|>
+Candidate Event 2
+have<|>have<|>he command and control<|>the decoy documents<|>
+Candidate Event 3
+executing<|>execute<|>he command and control<|>batch scripts<|>
+Candidate Event 4
+steal<|>steal<|>he command and control<|>data<|>
+Candidate Event 5
+located<|>locate<|>he command and control<|>a remote server<&>The known command and control server for PVZ-Out<|>
+---

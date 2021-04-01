@@ -1,0 +1,148 @@
+Arbor Threat Intelligence Brief 2014-07 ASERT Threat Intelligence , June 2014 Etumbot is a backdoor used in targeted attacks since at least March 2011 . 
+Although previous research has covered a related family , IXESHE , little has been discussed regarding Etumbot 's capabilities . 
+ASERT has observed several Etumbot samples using decoy documents involving Taiwanese and Japanese topics of interest , indicating the malware is used in ongoing , targeted campaigns . 
+This report will provide information on the capabilities of Etumbot and associated campaign activity . 
+Etumbot is a backdoor malware that has been associated with a Chinese threat actor group alternatively known as `` Numbered Panda '' , APT12 , DYNCALC/CALC Team , and IXESHE . 
+Targeted campaigns attributed to this group include attacks on media , technology companies , and governments . 
+IXESHE/Numbered Panda is known for using screen saver files ( .scr 
+) , a technique repeated with the Etumbot malware . 
+[ 1 ] A previous campaign using IXESHE malware was highlighted in 2012 ; the group used targeted emails with malicious PDF attachments to compromise East Asian governments , Taiwanese electronics manufacturers , and a telecommunications company . 
+The group has reportedly been active since at least July 2009 . 
+[ 2 ] Etumbot has also been referred to as Exploz [ 3 ] and Specfix . 
+The variety of names for this malware could lead to some confusion about the actual threat . 
+ASERT has associated Etumbot with IXESHE , and therefore Numbered Panda , based on similar system and network artifacts that are common between the malware families . 
+For example , both malware families have been seen using the same ka4281x3.log and kb71271.log files , both families have been observed calling back to the same Command & Control servers and have been used to target similar victim populations with similar attack methodologies . 
+Etumbot has two primary components . 
+The first is a dropper which contains the backdoor binary ( the second component ) and the distraction file . 
+Stage one is likely delivered via spear phish using an archive file extension such as .7z 
+to deliver executable content . 
+Stage one has been seen to leverage the Unicode Right to Left Override trick combined with convincing icons for various types of PDFs or Microsoft Office documents to convince the user to click and therefore execute the malware , which then runs the backdoor and displays the distraction file . 
+As with the IXESHE malware , Etumbot has been observed dropping documents of interest to a Taiwanese and Japanese target population . 
+To profile the techniques and capabilities of Etumbot , we will analyze an Etumbot dropper with MD5 ff5a7a610746ab5492cc6ab284138852 and a compile date of March 4 , 2014 . 
+When executed , the dropper loads up a resource named `` BINARY '' from the resource section then creates the directory C : \Documents and Settings\User\Application Data\JAVA , then creates a temporary file C : \DOCUME~1\User\LOCALS~1\Temp\ka4281x3.log then creates C : \Documents and Settings\User\Application Data\JAVA\JavaSvc.exe from the aforementioned BINARY resource . 
+This file , JavaSvc.exe , is the backdoor component ( MD5 82d4850a02375a7447d2d0381b642a72 ) . 
+JavaSvc.exe is executed with CreateProcessInternalW . 
+The backdoor component of the malware ( named here as JavaSvc.exe ) is now running . 
+It is interesting to note that versions of the IXESHE malware also used JavaSvc.exe as a filename . 
+Most Etumbot samples observed by ASERT drop decoy documents ( PDFs , Word Documents , and Excel Spreadsheets ) written in Traditional Chinese and usually pertaining to Cross-Strait or Taiwanese Government interests . 
+Several decoy files contain details on upcoming conferences in Taiwan . 
+Etumbot appears to be sent to targets via spear phishing emails as an archive ; ASERT has observed .7z 
+and .rar 
+formats being used to presumably deliver the Etumbot installer . 
+The archive filename will have a topic most likely of interest to the victim . 
+At least one identified malware sample ( 75193fc10145931ec0788d7c88fc8832 , compiled in March 2014 ) uses a password-protected .7z 
+to deliver the Etumbot installer . 
+It is most likely that the spear phish email contained the password . 
+With the correct password , the victim has access to the dropper inside the archive . 
+This archive most likely included the installer d444be30d2773b23de38ead1f2c6d117 , as the filenames match ( 1030522 新 機關籌備小組清單.7z and 1030522 新機關籌備小組清單 rcs.DOC ) . 
+1030522 is a date ( May 22 , 2014 ) from the Minguo calendar , which is unique to Taiwan . 
+The calendar is based on the establishment of the rd Republic of China in 1911 . 
+2014 is therefore the `` 103 `` year of the ROC . 
+The installer is a .scr 
+binary posing as a Word Document . 
+This dropper drops a decoy document and the backdoor , named sysupdate.exe in this instance . 
+Right-to-Left Override After the files are extracted from the archive , the filenames of Etumbot installers make use of the right-to-left override ( RTLO ) trick in an attempt to trick users into clicking on the installer . 
+The RTLO technique is a simple way for malware writers to disguise names of malicious files . 
+A hidden Unicode character in the filename will reverse the order of the characters that follow it , so that a .scr 
+binary file appears to be a .xls 
+document , for example . 
+Threat actors using this trick have been well documented since at least 2009 . 
+[ 4- 5 ] One way to avoid this trick in Windows is to set the `` Change your view '' level to `` Content '' . 
+[ 6 ] Below are some of the names of Etumbot installers using RTLO successfully : As the backdoor executes from our previous example , C : \DOCUME~1\User\LOCALS~1\Temp\ kb71271.log is created and contains the following registry file to make the malware persistent : [ HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run ] `` JavaSvc '' = '' C : \\Documents and Settings\\User\\Application Data\\JAVA\\JavaSvc.exe '' The dropper then calls regedit with kb71271.log as a parameter to modify the registry . 
+kb71271.log is then deleted . 
+These temp files appear to be static and used across multiple samples of Etumbot and IXESHE . 
+Various other samples were found using this same naming scheme . 
+Next , C : \DOCUME~1\User\LOCALS~1\Temp\ka4281x3.log is created , filled with contents of the bait/distraction file , and then copied to C : \DOCUME~1\User\LOCALS~1\Temp\~t3fcj1.doc , which is then opened . 
+If Word is n't installed , then notepad will open the file instead . 
+The ka4281x3.log file is then deleted . 
+Returning to the first sample , once the dropper ( ff5a7a610746ab5492cc6ab284138852 ) installs the Etumbot backdoor ( 82d4850a02375a7447d2d0381b642a72 ) , an initial HTTP beacon is sent to the Command & Control server that requests an RC4 encryption key . 
+The beacon takes the form of a GET request to /home/index.asp ? typeid=N where N is a randomly selected odd number between 1 and 13 . 
+If the C & C is online , the decoded response payload will contain the RC4 key that is used to encrypt subsequent communication . 
+If the C & C does not send a valid response , the bot will re-send the initial request every 45 seconds . 
+While the user-agent may appear to be legitimate , it only occurred 39 times in a corpus of over 61 million HTTP requests . 
+Due to the possibility of this User-Agent appearing in legitimate traffic , other indicators – such as the additional fake Referer value of http : //www.google.com should be present before compromise is assumed . 
+All of the headers in the HTTP request are hard-coded in both order and value , so they may be used to provide additional indicators of compromise . 
+If the C & C is online and responds to the beacon , then the RC4 key is delivered to the bot in a string of base64 encoded characters . 
+Etumbot uses a url-safe base64 alphabet , i.e. , any characters that would require URL-encoding are replaced . 
+Usage of base64 is a technique consistent with previous analysis done on IXESHE malware . 
+[ 2,7 ] In the case of Base64 , the `` / '' and `` = '' characters are replaced with `` _ '' and `` - '' respectively . 
+The payload from the C & C contains an 8-byte command code in little-endian format , followed by a null-terminated string argument if the command requires it . 
+In the case of the initial beacon response , the RC4 key is located after the command code and has been observed to be e65wb24n5 for all live C & C 's that ASERT has analyzed . 
+An example of this initial beacon and delivery of RC4 key is as follows . 
+The RC4 key can be obtained from the C & C response with the following python : While a payload of 1080 bytes is sent back , the majority appears to be random padding . 
+Once the bot has received the encryption key , the bot sends a registration callback to the C & C /image/ < encrypted data > .jpg 
+containing the encrypted values of system information to include the NetBIOS name of the system , user name , IP address , if the system is using a proxy ( Yes/No ) , and a numeric value which may be some type of campaign code . 
+IXESHE malware has also been observed using a unique campaign code that is delivered back to the C & C . 
+[ 7 ] Etumbot discovers the proxy settings of the local machine . 
+If a proxy is defined , communications to the C & C bypass the proxy and go directly to the Internet . 
+Environments with system-defined proxies wo n't get this activity in proxy logs , however transparent proxies may see this activity . 
+A contrived example of this registration string generated by the Etumbot backdoor prior to encryption is as follows : WINXPBOX|johnsmith|10.0.1.15|No Proxy|05147| Once the bot has registered with the C & C , it will send periodic pings to ask for new commands to execute . 
+The URI for the ping requests is /history/ < encrypted NetBIOS name > .asp 
+, where encrypted NetBIOS name is the url-safe base64 encoding of the rc4-encrypted NetBIOS name . 
+The first eight bytes of C & C responses to the bot include the command , and the second eight bytes contain an ASCII string that is parsed . 
+In the event of a file download , file upload , or command execution , the second eight bytes contain the filename or command to be executed . 
+The parsing function inside the binary reveals at least five commands : ETUM_CMD_EXEC provides the capability for the attacker to run any command on the compromised hosts . 
+Both stdout and stderr from the command are redirected to a pipe and are then relayed back to the C & C using a separate thread that spawned during initialization . 
+In the event of a process creation or hang error , an HTTP transaction to /tech/s.asp/m= < message > is sent to the C & C , where < message > contains a create process error statement `` CreateProcess Error : % d '' or a message that states `` Process Do not exit in 10 second , so i Kill it ! '' . 
+Some samples of droppers have been observed using the string `` Process Do not cunzai in 10 second , so i Kill it ! '' . 
+The word `` cunzai '' is likely the pinyin ( romanization ) for the Mandarin word 'exist ' . 
+ETUM_CMD_PUTFILE provides the capability for files to be placed on local system from the C & C . 
+The file upload is accomplished by sending a request to /docs/name= < data > and the C & C is expected to respond with the full contents of the file as the response payload . 
+A success or failure status message is relayed via a call to /tech/s.asp ? m= < encrypted status message > with various reasons for failure potentially being relayed . 
+ETUM_CMD_READFILE allows any file from the compromised system to be uploaded to the C & C . 
+When a READFILE command is received from the C & C , the bot makes an initial call to /manage/asp/item.asp ? id= < encrypted computer name > & & mux= < encrypted total file size > and checks for the presence of `` I 'm Ready '' in the response from the C & C . 
+Data from the file is read in 2000 byte chunks , RC4 encrypted and then url-safe base64 encoded . 
+The data is sent back to the C & C via the URI /article/30441/Review.asp ? id= < encoded computer name > & & date= < file chunk data > . 
+The bot expects a message of `` OK '' from the C & C after each response is sent and will terminate the upload and send an error message to the C & C in the case it is not seen . 
+A success or failure message is sent via the /tech/s.asp ? m= < encrypted status message > to complete or terminate the upload . 
+ETUM_CMD_SLEEP puts the bot into a dormant state for a period of time . 
+When a bot receives the sleep command , it will relay the message , `` I will sleep % d minutes ! '' via a call to /tech/s.asp ? m= < encrypted message > . 
+ETUM_CMD_UNINSTALL deletes the binary and terminates the process with no additional communication to the C & C . 
+Etumbot uses a technique to load strings into memory that has been called `` byte strings '' and also `` string stacking '' whereby character values are loaded into a specific memory location one byte at a time . 
+Assuming the string values do not change frequently , these byte strings can make for meaningful detection capabilities , such as discovering an unusual combination of characters ( to include typos , unique or odd syntax ) being loaded into memory that creates a unique fingerprint for the malware activity that can be used as part of a yara rule or other detection mechanism . 
+The byte string technique has been observed in various Chinese APT malware , including Gh0st RAT , IXESHE malware , Etumbot and others . 
+ASERT has provided an IDApython script that will provide for cleaner analysis of such strings as well as a corresponding blog entry that describes the obfuscation technique and code . 
+[ 8-9 ] The output of running find_byte_strings.py on an Etumbot backdoor shows the string `` I 'm Ready '' which is involved in file transfer routines . 
+The first screenshot shows the default hex byte values that are MOVed into offsets from EBP , and the second screenshot shows those same characters after translation to string values . 
+Two additional screenshots provide insight into all of the strings discovered . 
+The byte string technique has also been observed in other malware , so its presence alone does not specifically indicate the activities of Chinese threat actors . 
+An interesting artifact occasionally observed during analysis is the presence of a numeric value just after an IP address used as a C & C . 
+The placement of this number after a colon suggests the use of a port value , however such a port value is too high to be valid . 
+An example of this taken from an Etumbot sample performing an initial beacon is as follows : 11 Most instances of Etumbot that were analyzed connect directly to an IP address with the IP address hardcoded in the binary . 
+These C & C 's were obtained from analyzing malware samples compiled over a period of several years . 
+A number of these C & C IP addresses are also used by IXESHE-related malware , which seems to indicate that Etumbot is often used in tandem with IXESHE . 
+The domain finance [ . 
+] yesplusno [ . 
+] com and IP address 211 [ . 
+] 53.164.152 was also used by a variety of IXESHE samples , for instance . 
+The registrant for the domain yesplusno [ . 
+] com is listed as `` alice yoker '' wit the email address `` chuni_fan @ sina.com '' . 
+Other domains registered in this name have also been used as C & C for IXESHE : securezone [ . 
+] yesplusno [ . 
+] com [ 10 ] prishmobile [ . 
+] googlesale [ . 
+] net yahoopush [ . 
+] googlesale [ . 
+] net The IP address 98.188.111.244 has also been used as a C & C for multiple IXESHE samples , beginning in at least March 2013 and observed as recently as March 2014 with an Etumbot sample . 
+This is the IP address for what appears to be a legitimate website for a school in Taiwan : intro.sunnyschool.com.tw . 
+Note that if HTran or other connection bouncer is used , the C & C may be a legitimate site that was simply compromised and used to direct traffic elsewhere . 
+Indicators suggest that HTran , a connection bouncer , is being used in some cases such as on the C & C contacted by malware sample MD5 : 1ce47f76fca26b94b0b1d74610a734a4 ( compilation date March 12 , 2014 ) . 
+The presence of HTran is based on the following response string HTran is also called `` HUC Packet Transmit Tool '' , developed by a member of the Honker Union of China , a hacker group ; the source code for the program is available online . 
+[ 11 ] HTran is designed to redirect TCP traffic intended for one host to another , and has been used by IXESHE malware previously . 
+[ 2 ] Researchers at SecureWorks determined some years back that HTran would deliver the IP address of the final destination server if the final server were down or unreachable . 
+The code in use here has been modified to not reveal such information . 
+Organizations properly positioned with netflow or other traffic analysis capabilities may be able to locate upstream servers from HTran nodes that operate as the initial tier of C & C . 
+Htran activity can be detected with the following signature : ET CURRENT_EVENTS HTran/SensLiceld.A response to infected host The import hash for the sample observed connecting to an Htran bouncer is a9059c354e5025dfe4f1c0b8b57e4f62 which links to other Etumbot samples compiled with Microsoft Visual C++ 5.0 in a similar March 2014 timeframe : • 4c703a8cfeded7f889872a86fb7c70cf 2014-03-24 • ff5a7a610746ab5492cc6ab284138852 2014-03-04 The following samples have been identified by ASERT as Etumbot malware . 
+The first identified sample has a compilation date of March 2011 , while the most recent was compiled in May 2014 . 
+Many droppers/installers contain Etumbot or , alternatively , IXESHE-related backdoors . 
+Most of the documents dropped with Etumbot are written in traditional Chinese . 
+Traditional Chinese ( versus simplified Chinese used in mainland China ) is most widely used in Taiwan . 
+While other areas do make use of traditional Chinese ( Hong Kong , Macau ) , the topics of the decoy documents strongly suggest that Taiwanese entities are the targets for many Etumbot samples . 
+A recent increase in Etumbot samples with configuration dates of 2014 seems to indicate that the Numbered Panda/IXESHE group has increased activity lately or has begun using Etumbot more widely in targeted campaigns . 
+[ 1 ] http : //www.crowdstrike.com/blog/whois-numbered-panda/ [ 2 ] http : //www.trendmicro.com/cloud-content/us/pdfs/security-intelligence/white-papers/wp_ixeshe.pdf [ 3 ] http : //www.symantec.com/security_response/writeup.jsp ? docid=2013-080921-5219-99 & tabid=2 [ 4 ] https : //blog.commtouch.com/cafe/malware/exe-read-backwards-spells-malware/ [ 5 ] http : //threatpost.com/sirefef-malware-found-using-unicode-right-to-left-override-technique/102033 [ 6 ] http : //blog.malwarebytes.org/online-security/2014/01/the-rtlo-method/ [ 7 ] http : //www.fireeye.com/blog/technical/2013/08/survival-of-the-fittest-new-york-times-attackers-evolve- quickly.html [ 8 ] https : //github.com/arbor/reversing/blob/master/find_byte_strings.py [ 9 ] http : //www.arbornetworks.com/asert/2013/07/asert-mindshare-finding-byte-strings-using-idapython/ [ 10 ] https : //www.symantec.com/security_response/writeup.jsp ? docid=2014-011500-2419-99 & tabid=2 [ 11 ] http : //read.pudn.com/downloads199/sourcecode/windows/935255/htran.cpp__.htm The Arbor Security Engineering & Response Team ( ASERT ) at Arbor Networks delivers world-class network security research and analysis for the benefit of today 's enterprise and network operators . 
+ASERT engineers and researchers are part of an elite group of institutions that are referred to as `` super remediators , '' and represent the best in information security . 
+This is a reflection of having both visibility and remediation capabilities at a majority of service provider networks globally . 
+ASERT shares operationally viable intelligence with hundreds of international Computer Emergency Response Teams ( CERTs ) and with thousands of network operators via intelligence briefs and security content feeds . 
+ASERT also operates the world¹s largest distributed honeynet , actively monitoring Internet threats around the clock and around the globe via ATLAS® , Arbor 's global network of sensors : http : //atlas.arbor.net . 
+This mission and the associated resources that Arbor Networks brings to bear to the problem of global Internet security is an impetus for innovation and research . 
+To view the latest research , news , and trends from Arbor , ASERT and the information security community at large , visit our Threat Portal at http : //www.arbornetworks.com/threats/ . 

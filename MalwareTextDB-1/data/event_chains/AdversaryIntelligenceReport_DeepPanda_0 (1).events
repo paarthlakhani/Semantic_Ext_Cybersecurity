@@ -1,0 +1,490 @@
+---
+Answer
+0
+Context Event 1
+write<|>write<|>a post exploitation tool<&>itself<&>One sample<|>a malicious component<|>
+Context Event 2
+infect<|>infect<|>a post exploitation tool<&>itself<&>One sample<|>other systems<|>
+Context Event 3
+download<|>download<|>a post exploitation tool<&>itself<&>One sample<|><|>
+Context Event 4
+remove<|>remove<|>a post exploitation tool<&>itself<&>One sample<|>log data<|>
+Candidate Event 1
+be used<|>be used<|><|>a post exploitation tool<&>itself<&>One sample<|>
+Candidate Event 2
+checks<|>check<|>a post exploitation tool<&>itself<&>One sample<|>a separate folder on the cloud service designated to contain new configuration information<|>
+Candidate Event 3
+creates<|>create<|>a post exploitation tool<&>itself<&>One sample<|>a symbolic link<|>
+Candidate Event 4
+compiles<|>compile<|>a post exploitation tool<&>itself<&>One sample<|>a dirwalk – a complete listing of every file path – of each fixed drive<|>
+Candidate Event 5
+infected<|>infect<|>a post exploitation tool<&>itself<&>One sample<|>they<|>
+---
+Answer
+0
+Context Event 1
+extracting<|>extract<|>The executable 14c04f88dc97aef3e9b516ef208a2bf5<&>itself<&>The dropper<&>The dropper<&>The dropper<&>the dropper<&>The dropper<&>the dropper<&>the dropper sample file<|>a malicious payload<&>it<&>the malicious payload<&>the malicious payload<&>the newly created malicious  DLL<&>The malicious DLL file that is dropped<&>the file<&>the file<&>the dropped file<&>the dropped DLL<&>the DLL<|>
+Context Event 2
+initialize and install<|>initialize and install<|>The executable 14c04f88dc97aef3e9b516ef208a2bf5<&>itself<&>The dropper<&>The dropper<&>The dropper<&>the dropper<&>The dropper<&>the dropper<&>the dropper sample file<|>a malicious payload<&>it<&>the malicious payload<&>the malicious payload<&>the newly created malicious  DLL<&>The malicious DLL file that is dropped<&>the file<&>the file<&>the dropped file<&>the dropped DLL<&>the DLL<|>
+Context Event 3
+invokes<|>invoke<|>The executable 14c04f88dc97aef3e9b516ef208a2bf5<&>itself<&>The dropper<&>The dropper<&>The dropper<&>the dropper<&>The dropper<&>the dropper<&>the dropper sample file<|>the SHGetSpecialFolderPath() API<|>
+Context Event 4
+write<|>write<|>The executable 14c04f88dc97aef3e9b516ef208a2bf5<&>itself<&>The dropper<&>The dropper<&>The dropper<&>the dropper<&>The dropper<&>the dropper<&>the dropper sample file<|>a malicious payload<&>it<&>the malicious payload<&>the malicious payload<&>the newly created malicious  DLL<&>The malicious DLL file that is dropped<&>the file<&>the file<&>the dropped file<&>the dropped DLL<&>the DLL<|>
+Context Event 5
+sets<|>set<|>The executable 14c04f88dc97aef3e9b516ef208a2bf5<&>itself<&>The dropper<&>The dropper<&>The dropper<&>the dropper<&>The dropper<&>the dropper<&>the dropper sample file<|>the creation and last written timestamp of the newly created file<|>
+Context Event 6
+writes<|>write<|>The executable 14c04f88dc97aef3e9b516ef208a2bf5<&>itself<&>The dropper<&>The dropper<&>The dropper<&>the dropper<&>The dropper<&>the dropper<&>the dropper sample file<|>a malicious payload<&>it<&>the malicious payload<&>the malicious payload<&>the newly created malicious  DLL<&>The malicious DLL file that is dropped<&>the file<&>the file<&>the dropped file<&>the dropped DLL<&>the DLL<|>
+Context Event 7
+opens<|>open<|>The executable 14c04f88dc97aef3e9b516ef208a2bf5<&>itself<&>The dropper<&>The dropper<&>The dropper<&>the dropper<&>The dropper<&>the dropper<&>the dropper sample file<|>a malicious payload<&>it<&>the malicious payload<&>the malicious payload<&>the newly created malicious  DLL<&>The malicious DLL file that is dropped<&>the file<&>the file<&>the dropped file<&>the dropped DLL<&>the DLL<|>
+Context Event 8
+corrects<|>correct<|>The executable 14c04f88dc97aef3e9b516ef208a2bf5<&>itself<&>The dropper<&>The dropper<&>The dropper<&>the dropper<&>The dropper<&>the dropper<&>the dropper sample file<|>the header<|>
+Context Event 9
+load<|>load<|>The executable 14c04f88dc97aef3e9b516ef208a2bf5<&>itself<&>The dropper<&>The dropper<&>The dropper<&>the dropper<&>The dropper<&>the dropper<&>the dropper sample file<|>a malicious payload<&>it<&>the malicious payload<&>the malicious payload<&>the newly created malicious  DLL<&>The malicious DLL file that is dropped<&>the file<&>the file<&>the dropped file<&>the dropped DLL<&>the DLL<|>
+Candidate Event 1
+dropped<|>drop<|>The executable 14c04f88dc97aef3e9b516ef208a2bf5<&>itself<&>The dropper<&>The dropper<&>The dropper<&>the dropper<&>The dropper<&>the dropper<&>the dropper sample file<|>a malicious payload<&>it<&>the malicious payload<&>the malicious payload<&>the newly created malicious  DLL<&>The malicious DLL file that is dropped<&>the file<&>the file<&>the dropped file<&>the dropped DLL<&>the DLL<|>
+Candidate Event 2
+deactivates<|>deactivate<|>The executable 14c04f88dc97aef3e9b516ef208a2bf5<&>itself<&>The dropper<&>The dropper<&>The dropper<&>the dropper<&>The dropper<&>the dropper<&>the dropper sample file<|>its own network drivers<|>
+Candidate Event 3
+schedules<|>schedule<|>The executable 14c04f88dc97aef3e9b516ef208a2bf5<&>itself<&>The dropper<&>The dropper<&>The dropper<&>the dropper<&>The dropper<&>the dropper<&>the dropper sample file<|>the copy<|>
+Candidate Event 4
+instructed<|>instruct<|>The executable 14c04f88dc97aef3e9b516ef208a2bf5<&>itself<&>The dropper<&>The dropper<&>The dropper<&>the dropper<&>The dropper<&>the dropper<&>the dropper sample file<|>The usermode component of Snake<&>it<&>the usermode component<|>
+Candidate Event 5
+inject<|>inject<|>The executable 14c04f88dc97aef3e9b516ef208a2bf5<&>itself<&>The dropper<&>The dropper<&>The dropper<&>the dropper<&>The dropper<&>the dropper<&>the dropper sample file<|>The payload<&>the final Epic backdoor payload<&>The backdoor extracted from the Java exploits<&>The primary backdoor<&>a custom backdoor<|>into+explorer.exe
+---
+Answer
+2
+Context Event 1
+extracting<|>extract<|>The executable 14c04f88dc97aef3e9b516ef208a2bf5<&>itself<&>The dropper<&>The dropper<&>The dropper<&>the dropper<&>The dropper<&>the dropper<&>the dropper sample file<|>a malicious payload<&>it<&>the malicious payload<&>the malicious payload<&>the newly created malicious  DLL<&>The malicious DLL file that is dropped<&>the file<&>the file<&>the dropped file<&>the dropped DLL<&>the DLL<|>
+Context Event 2
+initialize and install<|>initialize and install<|>The executable 14c04f88dc97aef3e9b516ef208a2bf5<&>itself<&>The dropper<&>The dropper<&>The dropper<&>the dropper<&>The dropper<&>the dropper<&>the dropper sample file<|>a malicious payload<&>it<&>the malicious payload<&>the malicious payload<&>the newly created malicious  DLL<&>The malicious DLL file that is dropped<&>the file<&>the file<&>the dropped file<&>the dropped DLL<&>the DLL<|>
+Context Event 3
+enables<|>enable<|>a malicious payload<&>it<&>the malicious payload<&>the malicious payload<&>the newly created malicious  DLL<&>The malicious DLL file that is dropped<&>the file<&>the file<&>the dropped file<&>the dropped DLL<&>the DLL<|>an attacker<|>
+Context Event 4
+write<|>write<|>The executable 14c04f88dc97aef3e9b516ef208a2bf5<&>itself<&>The dropper<&>The dropper<&>The dropper<&>the dropper<&>The dropper<&>the dropper<&>the dropper sample file<|>a malicious payload<&>it<&>the malicious payload<&>the malicious payload<&>the newly created malicious  DLL<&>The malicious DLL file that is dropped<&>the file<&>the file<&>the dropped file<&>the dropped DLL<&>the DLL<|>
+Context Event 5
+blend in<|>blend in<|><|>a malicious payload<&>it<&>the malicious payload<&>the malicious payload<&>the newly created malicious  DLL<&>The malicious DLL file that is dropped<&>the file<&>the file<&>the dropped file<&>the dropped DLL<&>the DLL<|>
+Context Event 6
+is hidden<|>is hidden<|><|>a malicious payload<&>it<&>the malicious payload<&>the malicious payload<&>the newly created malicious  DLL<&>The malicious DLL file that is dropped<&>the file<&>the file<&>the dropped file<&>the dropped DLL<&>the DLL<|>
+Context Event 7
+writes<|>write<|>The executable 14c04f88dc97aef3e9b516ef208a2bf5<&>itself<&>The dropper<&>The dropper<&>The dropper<&>the dropper<&>The dropper<&>the dropper<&>the dropper sample file<|>a malicious payload<&>it<&>the malicious payload<&>the malicious payload<&>the newly created malicious  DLL<&>The malicious DLL file that is dropped<&>the file<&>the file<&>the dropped file<&>the dropped DLL<&>the DLL<|>
+Context Event 8
+prevents<|>prevent<|>the first byte of the file is 'Z'<|>a malicious payload<&>it<&>the malicious payload<&>the malicious payload<&>the newly created malicious  DLL<&>The malicious DLL file that is dropped<&>the file<&>the file<&>the dropped file<&>the dropped DLL<&>the DLL<|>
+Context Event 9
+opens<|>open<|>The executable 14c04f88dc97aef3e9b516ef208a2bf5<&>itself<&>The dropper<&>The dropper<&>The dropper<&>the dropper<&>The dropper<&>the dropper<&>the dropper sample file<|>a malicious payload<&>it<&>the malicious payload<&>the malicious payload<&>the newly created malicious  DLL<&>The malicious DLL file that is dropped<&>the file<&>the file<&>the dropped file<&>the dropped DLL<&>the DLL<|>
+Context Event 10
+load<|>load<|>The executable 14c04f88dc97aef3e9b516ef208a2bf5<&>itself<&>The dropper<&>The dropper<&>The dropper<&>the dropper<&>The dropper<&>the dropper<&>the dropper sample file<|>a malicious payload<&>it<&>the malicious payload<&>the malicious payload<&>the newly created malicious  DLL<&>The malicious DLL file that is dropped<&>the file<&>the file<&>the dropped file<&>the dropped DLL<&>the DLL<|>
+Candidate Event 1
+modify<|>modify<|>a malicious payload<&>it<&>the malicious payload<&>the malicious payload<&>the newly created malicious  DLL<&>The malicious DLL file that is dropped<&>the file<&>the file<&>the dropped file<&>the dropped DLL<&>the DLL<|>files that the host app can write to<|>
+Candidate Event 2
+associated<|>associate<|>a malicious payload<&>it<&>the malicious payload<&>the malicious payload<&>the newly created malicious  DLL<&>The malicious DLL file that is dropped<&>the file<&>the file<&>the dropped file<&>the dropped DLL<&>the DLL<|>Two droppers<|>
+Candidate Event 3
+dropped<|>drop<|>The executable 14c04f88dc97aef3e9b516ef208a2bf5<&>itself<&>The dropper<&>The dropper<&>The dropper<&>the dropper<&>The dropper<&>the dropper<&>the dropper sample file<|>a malicious payload<&>it<&>the malicious payload<&>the malicious payload<&>the newly created malicious  DLL<&>The malicious DLL file that is dropped<&>the file<&>the file<&>the dropped file<&>the dropped DLL<&>the DLL<|>
+Candidate Event 4
+upgrading<|>upgrade<|>a malicious payload<&>it<&>the malicious payload<&>the malicious payload<&>the newly created malicious  DLL<&>The malicious DLL file that is dropped<&>the file<&>the file<&>the dropped file<&>the dropped DLL<&>the DLL<|>victims<|>
+Candidate Event 5
+copy<|>copy<|>a malicious payload<&>it<&>the malicious payload<&>the malicious payload<&>the newly created malicious  DLL<&>The malicious DLL file that is dropped<&>the file<&>the file<&>the dropped file<&>the dropped DLL<&>the DLL<|>The dropper component<&>itself<&>It<&>itself<&>itself<|>to+accessible network shares
+---
+Answer
+3
+Context Event 1
+is<|>be<|>This sample<&>the DLL<&>it<&>a 'backdoor'<&>the malware<&>the backdoor<&>The backdoor<&>the backdoor<|>This sample<&>the DLL<&>it<&>a 'backdoor'<&>the malware<&>the backdoor<&>The backdoor<&>the backdoor<|>
+Context Event 2
+is mapped<|>is mapped<|><|>This sample<&>the DLL<&>it<&>a 'backdoor'<&>the malware<&>the backdoor<&>The backdoor<&>the backdoor<|>
+Context Event 3
+replaces<|>replace<|>This sample<&>the DLL<&>it<&>a 'backdoor'<&>the malware<&>the backdoor<&>The backdoor<&>the backdoor<|>its previous instances or versions of this backdoor<|>
+Context Event 4
+is then started<|>is then started<|><|>This sample<&>the DLL<&>it<&>a 'backdoor'<&>the malware<&>the backdoor<&>The backdoor<&>the backdoor<|>
+Context Event 5
+filter<|>filter<|>This sample<&>the DLL<&>it<&>a 'backdoor'<&>the malware<&>the backdoor<&>The backdoor<&>the backdoor<|>the contents of specified files<|>
+Candidate Event 1
+send<|>send<|>This sample<&>the DLL<&>it<&>a 'backdoor'<&>the malware<&>the backdoor<&>The backdoor<&>the backdoor<|>spear phishing emails<|>
+Candidate Event 2
+limiting<|>limit<|>This sample<&>the DLL<&>it<&>a 'backdoor'<&>the malware<&>the backdoor<&>The backdoor<&>the backdoor<|>the MIA network security department’s abilities to detect the traffic<|>
+Candidate Event 3
+loads<|>load<|>This sample<&>the DLL<&>it<&>a 'backdoor'<&>the malware<&>the backdoor<&>The backdoor<&>the backdoor<|>Stage 3<&>an encrypted version of Stage 3<&>this file<&>Stage 3<&>Stage 3<|>
+Candidate Event 4
+remove<|>remove<|>This sample<&>the DLL<&>it<&>a 'backdoor'<&>the malware<&>the backdoor<&>The backdoor<&>the backdoor<|>content<|>
+Candidate Event 5
+hide<|>hide<|>This sample<&>the DLL<&>it<&>a 'backdoor'<&>the malware<&>the backdoor<&>The backdoor<&>the backdoor<|>the DLL’s service names (e.g. “NetDDESrv” and "Network DDE Service") and the service entry as well<|>
+---
+Answer
+4
+Context Event 1
+sends<|>send<|>the malware<&>the malware<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>The malicious sample<&>the sample<&>The malware<&>the malware<&>the malware<&>the malware<|>an initial beacon<&>The beacon<&>the initial beacon<|>
+Context Event 2
+is encrypted<|>is encrypted<|><|>an initial beacon<&>The beacon<&>the initial beacon<|>
+Context Event 3
+sent<|>send<|><|>an initial beacon<&>The beacon<&>the initial beacon<|>
+Candidate Event 1
+gathers<|>gather<|>an initial beacon<&>The beacon<&>the initial beacon<|>system information<&>All of this<|>
+Candidate Event 2
+utilizes<|>utilize<|>an initial beacon<&>The beacon<&>the initial beacon<|>a cached credential dumping technique<|>
+Candidate Event 3
+used<|>use<|>an initial beacon<&>The beacon<&>the initial beacon<|>decoy documents<|>
+Candidate Event 4
+hook<|>hook<|>an initial beacon<&>The beacon<&>the initial beacon<|>Another set of exports<|>
+Candidate Event 5
+sending<|>send<|>the routine<|>an initial beacon<&>The beacon<&>the initial beacon<|>
+---
+Answer
+2
+Context Event 1
+is created<|>is created<|><|>a temporary new user “_DomainUser_” with password “Dom4!nU- serP4ss”<&>the user<|>
+Context Event 2
+added<|>add<|><|>a temporary new user “_DomainUser_” with password “Dom4!nU- serP4ss”<&>the user<|>
+Candidate Event 1
+harvested<|>harvest<|>a temporary new user “_DomainUser_” with password “Dom4!nU- serP4ss”<&>the user<|>Among other items, staff training documents and more than 40,000 emails<|>
+Candidate Event 2
+verifies<|>verify<|>a temporary new user “_DomainUser_” with password “Dom4!nU- serP4ss”<&>the user<|><|>
+Candidate Event 3
+is deleted<|>is deleted<|><|>a temporary new user “_DomainUser_” with password “Dom4!nU- serP4ss”<&>the user<|>
+Candidate Event 4
+use<|>use<|>a temporary new user “_DomainUser_” with password “Dom4!nU- serP4ss”<&>the user<|>a wide set of tools<&>several Remote Access Tools (RATs)<&>The RATs<&>This toolset<&>Several RATs<&>the PUTTER PANDA toolset<&>their toolset<|>
+Candidate Event 5
+steal<|>steal<|>a temporary new user “_DomainUser_” with password “Dom4!nU- serP4ss”<&>the user<|>information<|>
+---
+Answer
+2
+Context Event 1
+be registered<|>be registered<|><|>This sample<&>It<&>it<&>itself<&>it<&>itself<&>itself<&>a DLL<&>The sample<&>the backdoor<|>
+Context Event 2
+drop<|>drop<|>This sample<&>It<&>it<&>itself<&>it<&>itself<&>itself<&>a DLL<&>The sample<&>the backdoor<|>a kernel driver<|>
+Context Event 3
+provide<|>provide<|>This sample<&>It<&>it<&>itself<&>it<&>itself<&>itself<&>a DLL<&>The sample<&>the backdoor<|>an interactive command line shell<|>
+Context Event 4
+bypass<|>bypass<|>This sample<&>It<&>it<&>itself<&>it<&>itself<&>itself<&>a DLL<&>The sample<&>the backdoor<|>User Account Control (UAC)<|>
+Context Event 5
+copies<|>copy<|>This sample<&>It<&>it<&>itself<&>it<&>itself<&>itself<&>a DLL<&>The sample<&>the backdoor<|>This sample<&>It<&>it<&>itself<&>it<&>itself<&>itself<&>a DLL<&>The sample<&>the backdoor<|>
+Context Event 6
+modify<|>modify<|>This sample<&>It<&>it<&>itself<&>it<&>itself<&>itself<&>a DLL<&>The sample<&>the backdoor<|>the creation time, last access time and last modification    time<|>
+Context Event 7
+adds<|>adds<|><|>This sample<&>It<&>it<&>itself<&>it<&>itself<&>itself<&>a DLL<&>The sample<&>the backdoor<|>
+Context Event 8
+adds<|>adds<|><|>This sample<&>It<&>it<&>itself<&>it<&>itself<&>itself<&>a DLL<&>The sample<&>the backdoor<|>
+Context Event 9
+'dropping'<|>'dropping'<|>This sample<&>It<&>it<&>itself<&>it<&>itself<&>itself<&>a DLL<&>The sample<&>the backdoor<|>the driver<&>it<&>an embedded/encrypted kernel driver<&>The driv- er<|>
+Candidate Event 1
+allows<|>allow<|>This sample<&>It<&>it<&>itself<&>it<&>itself<&>itself<&>a DLL<&>The sample<&>the backdoor<|><|>
+Candidate Event 2
+used<|>use<|>This sample<&>It<&>it<&>itself<&>it<&>itself<&>itself<&>a DLL<&>The sample<&>the backdoor<|>a ZxShell backdoor (MD5: 8455bbb9a210ce603a1b646b0d951bce)<&>The ZxShell backdoor<&>This particular variant<|>
+Candidate Event 3
+loads<|>load<|>This sample<&>It<&>it<&>itself<&>it<&>itself<&>itself<&>a DLL<&>The sample<&>the backdoor<|>the original service’s DLL<|>
+Candidate Event 4
+creates<|>create<|>This sample<&>It<&>it<&>itself<&>it<&>itself<&>itself<&>a DLL<&>The sample<&>the backdoor<|>an instance of the Internet Explorer<|>
+Candidate Event 5
+does<|>do<|>This sample<&>It<&>it<&>itself<&>it<&>itself<&>itself<&>a DLL<&>The sample<&>the backdoor<|>a GET request<|>
+---
+Answer
+2
+Context Event 1
+'dropping'<|>'dropping'<|>This sample<&>It<&>it<&>itself<&>it<&>itself<&>itself<&>a DLL<&>The sample<&>the backdoor<|>the driver<&>it<&>an embedded/encrypted kernel driver<&>The driv- er<|>
+Context Event 2
+writing<|>write<|><|>the driver<&>it<&>an embedded/encrypted kernel driver<&>The driv- er<|>
+Context Event 3
+is loaded<|>is loaded<|><|>the driver<&>it<&>an embedded/encrypted kernel driver<&>The driv- er<|>
+Candidate Event 1
+sends<|>send<|>the driver<&>it<&>an embedded/encrypted kernel driver<&>The driv- er<|>a heartbeat/keepalive packet<|>
+Candidate Event 2
+manipulate<|>manipulate<|>the driver<&>it<&>an embedded/encrypted kernel driver<&>The driv- er<|>data streams<|>
+Candidate Event 3
+is encrypted<|>is encrypted<|><|>the driver<&>it<&>an embedded/encrypted kernel driver<&>The driv- er<|>
+Candidate Event 4
+rendering<|>render<|>the driver<&>it<&>an embedded/encrypted kernel driver<&>The driv- er<|>the computer<&>unusable<|>
+Candidate Event 5
+load<|>load<|>the driver<&>it<&>an embedded/encrypted kernel driver<&>The driv- er<|>a DLL<&>the embedded DLL<&>the embedded DLL<&>the DLL<&>the compressed embedded DLL<&>the DLL<|>
+---
+Answer
+4
+Context Event 1
+implements<|>implement<|>This handler class for command ID 8<&>this class<&>this class<|>generic directory and file browsing<|>
+Context Event 2
+reading<|>read<|>This handler class for command ID 8<&>this class<&>this class<|>arbitrary files<|>
+Context Event 3
+writing<|>write<|>This handler class for command ID 8<&>this class<&>this class<|>arbitrary files<|>
+Context Event 4
+upload<|>upload<|>This handler class for command ID 8<&>this class<&>this class<|>arbitrary files<|>
+Context Event 5
+download<|>download<|>This handler class for command ID 8<&>this class<&>this class<|>arbitrary files<|>
+Candidate Event 1
+instruct<|>instruct<|>This handler class for command ID 8<&>this class<&>this class<|>a compromised computer<&>it<&>compromised computers<&>it<|>
+Candidate Event 2
+be used<|>be used<|>This handler class for command ID 8<&>this class<&>this class<|>a post exploitation tool<&>itself<&>One sample<|>
+Candidate Event 3
+performs<|>perform<|>This handler class for command ID 8<&>this class<&>this class<|>an HTTP GET request<|>
+Candidate Event 4
+infected<|>infect<|>This handler class for command ID 8<&>this class<&>this class<|>their machine<|>
+Candidate Event 5
+launching<|>launch<|>This handler class for command ID 8<&>this class<&>this class<|>specified executable files<|>
+---
+Answer
+3
+Context Event 1
+implements<|>implement<|>This handler class<&>It<|>a generic TCP proxy<|>
+Context Event 2
+establishing<|>establish<|>This handler class<&>It<|>TCP connections<|>
+Candidate Event 1
+ensured<|>ensure<|>This handler class<&>It<|>The registration<|>
+Candidate Event 2
+using<|>use<|>This handler class<&>It<|>a known malicious C&C domain name<|>
+Candidate Event 3
+detect<|>detect<|>This handler class<&>It<|>hooks and debugger breakpoints which may be set by security software and monitoring tools<|>
+Candidate Event 4
+listening<|>listen<|>This handler class<&>It<|><|>
+Candidate Event 5
+receives<|>receive<|>This handler class<&>It<|>another dropper<&>this second dropper<|>
+---
+Answer
+2
+Context Event 1
+is<|>be<|>This DLL<&>This sample<&>It<&>The tool<&>The sample<|>a moderately sophisticated backdoor<|>
+Context Event 2
+has<|>have<|>This DLL<&>This sample<&>It<&>The tool<&>The sample<|>multiple communication capabilities available<|>
+Context Event 3
+implements<|>implement<|>This DLL<&>This sample<&>It<&>The tool<&>The sample<|>relatively well thought out protocols including HTTP and DNS<|>
+Context Event 4
+select<|>select<|>This DLL<&>This sample<&>It<&>The tool<&>The sample<|>the most effective communication channel<|>
+Context Event 5
+avoid<|>avoid<|>This DLL<&>This sample<&>It<&>The tool<&>The sample<|>detection from solutions like DNS blacklisting and RFC protocol enforcement<|>
+Context Event 6
+act<|>act<|>This DLL<&>This sample<&>It<&>The tool<&>The sample<|><|>
+Candidate Event 1
+deliver<|>deliver<|>This DLL<&>This sample<&>It<&>The tool<&>The sample<|>malware<&>it<&>the malware<&>a file containing both the legitimate update and the malware<&>Gh0st RAT<|>to+the victim
+Candidate Event 2
+contains<|>contain<|>This DLL<&>This sample<&>It<&>The tool<&>The sample<|>the OS version<|>
+Candidate Event 3
+proxy<|>proxy<|>This DLL<&>This sample<&>It<&>The tool<&>The sample<|>C2 traffic<|>
+Candidate Event 4
+sending<|>send<|>This DLL<&>This sample<&>It<&>The tool<&>The sample<|>chunks of POST payload<|>
+Candidate Event 5
+is<|>be<|>This DLL<&>This sample<&>It<&>The tool<&>The sample<|>a downloader<|>
+---
+Answer
+4
+Context Event 1
+provided<|>provide<|>All three samples<&>One sample<&>The third sample<&>This third component<|>remote access<|>
+Context Event 2
+having<|>have<|>All three samples<&>One sample<&>The third sample<&>This third component<|>multiple communication capabilities<|>
+Context Event 3
+act<|>act<|>All three samples<&>One sample<&>The third sample<&>This third component<|><|>
+Context Event 4
+utilized<|>utilize<|>All three samples<&>One sample<&>The third sample<&>This third component<|>a kernel mode driver<|>
+Context Event 5
+hide<|>hide<|>All three samples<&>One sample<&>The third sample<&>This third component<|>aspects of the tool<|>
+Candidate Event 1
+abused<|>abuse<|>All three samples<&>One sample<&>The third sample<&>This third component<|>SMTP<|>
+Candidate Event 2
+was<|>be<|>All three samples<&>One sample<&>The third sample<&>This third component<|>the use of a digitally­signed advanced keylogger<&>It<&>This keylogger<&>This driver package<&>the NDISKPRO.SYS driver<&>This component<&>This keylogger module<|>
+Candidate Event 3
+used<|>use<|>All three samples<&>One sample<&>The third sample<&>This third component<|>SOAP<&>it<|>
+Candidate Event 4
+registers<|>register<|>All three samples<&>One sample<&>The third sample<&>This third component<|>itself<&>Snake dropper<|>
+Candidate Event 5
+is likely used<|>is likely used<|><|>All three samples<&>One sample<&>The third sample<&>This third component<|>
+---
+Answer
+2
+Context Event 1
+install<|>install<|>the malware<&>the malware<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>The malicious sample<&>the sample<&>The malware<&>the malware<&>the malware<&>the malware<|>itself<|>
+Context Event 2
+use<|>use<|>the malware<&>the malware<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>The malicious sample<&>the sample<&>The malware<&>the malware<&>the malware<&>the malware<|>documented APIs such as OpenSCManager() and CreateService()<|>
+Context Event 3
+writes<|>write<|>the malware<&>the malware<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>The malicious sample<&>the sample<&>The malware<&>the malware<&>the malware<&>the malware<|>settings<|>
+Context Event 4
+starts<|>start<|>the malware<&>the malware<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>The malicious sample<&>the sample<&>The malware<&>the malware<&>the malware<&>the malware<|>the new service<|>
+Context Event 5
+spawns<|>spawn<|>the malware<&>the malware<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>The malicious sample<&>the sample<&>The malware<&>the malware<&>the malware<&>the malware<|>a new process<|>
+Context Event 6
+access<|>access<|>the malware<&>the malware<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>The malicious sample<&>the sample<&>The malware<&>the malware<&>the malware<&>the malware<|>the real user’s desktop<|>
+Context Event 7
+connect<|>connect<|>the malware<&>the malware<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>The malicious sample<&>the sample<&>The malware<&>the malware<&>the malware<&>the malware<|><|>
+Context Event 8
+connect<|>connect<|>the malware<&>the malware<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>The malicious sample<&>the sample<&>The malware<&>the malware<&>the malware<&>the malware<|><|>
+Context Event 9
+sends<|>send<|>the malware<&>the malware<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>The malicious sample<&>the sample<&>The malware<&>the malware<&>the malware<&>the malware<|>an initial beacon<&>The beacon<&>the initial beacon<|>
+Context Event 10
+sending<|>send<|>the malware<&>the malware<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>The malicious sample<&>the sample<&>The malware<&>the malware<&>the malware<&>the malware<|>An example authentication packet<&>the initial authentication packet<|>
+Context Event 11
+verifies<|>verify<|>the malware<&>the malware<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>The malicious sample<&>the sample<&>The malware<&>the malware<&>the malware<&>the malware<|><|>
+Context Event 12
+sends<|>send<|>the malware<&>the malware<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>The malicious sample<&>the sample<&>The malware<&>the malware<&>the malware<&>the malware<|>a heartbeat/keepalive packet<|>
+Context Event 13
+receives<|>receive<|>the malware<&>the malware<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>The malicious sample<&>the sample<&>The malware<&>the malware<&>the malware<&>the malware<|>a heartbeat/keepalive packet<|>
+Context Event 14
+attempts<|>attempt<|>the malware<&>the malware<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>The malicious sample<&>the sample<&>The malware<&>the malware<&>the malware<&>the malware<|>the different C2 protocols<|>
+Context Event 15
+contains<|>contain<|>the malware<&>the malware<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>The malicious sample<&>the sample<&>The malware<&>the malware<&>the malware<&>the malware<|>a custom DNS client implementation<|>
+Context Event 16
+sending<|>send<|>the malware<&>the malware<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>The malicious sample<&>the sample<&>The malware<&>the malware<&>the malware<&>the malware<|>compressed binary blobs<|>
+Candidate Event 1
+including<|>include<|>the malware<&>the malware<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>The malicious sample<&>the sample<&>The malware<&>the malware<&>the malware<&>the malware<|>completely compromised systems and networks<|>
+Candidate Event 2
+identify<|>identify<|>the malware<&>the malware<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>The malicious sample<&>the sample<&>The malware<&>the malware<&>the malware<&>the malware<|>any potentially exploitable hosts located in the same network as the victim<|>
+Candidate Event 3
+receiving<|>receive<|>the malware<&>the malware<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>The malicious sample<&>the sample<&>The malware<&>the malware<&>the malware<&>the malware<|>compressed binary blobs<|>
+Candidate Event 4
+targeted<|>target<|>the malware<&>the malware<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>The malicious sample<&>the sample<&>The malware<&>the malware<&>the malware<&>the malware<|>companies in the DIB<|>
+Candidate Event 5
+launch<|>launch<|>the malware<&>the malware<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>the sample<&>The malicious sample<&>the sample<&>The malware<&>the malware<&>the malware<&>the malware<|>it<&>it<&>The sample<|>
+---
+Answer
+1
+Context Event 1
+gathering<|>gather<|>the malware<&>The malware<&>the malware<|>various pieces of information<|>
+Context Event 2
+invoke<|>invoke<|>the malware<&>The malware<&>the malware<|>cmd.exe<|>
+Candidate Event 1
+delivered<|>deliver<|>the malware<&>The malware<&>the malware<|>malvertising<&>malvertising<|>
+Candidate Event 2
+launching<|>launch<|>the malware<&>The malware<&>the malware<|>a command or command line utility already present on the system<|>
+Candidate Event 3
+obfuscate<|>obfuscate<|>the malware<&>The malware<&>the malware<|>strings that are decoded at runtime<|>
+Candidate Event 4
+uploads<|>upload<|>the malware<&>The malware<&>the malware<|>data<|>
+Candidate Event 5
+find<|>find<|>the malware<&>The malware<&>the malware<|>e-mails related to "NATO", "Energy Dialogue within European Unition" and so on<|>
+---
+Answer
+3
+Context Event 1
+opening<|>open<|>The driver<&>the driver<&>the driver<&>the driver<&>the driver<&>the driver<&>this driver<|>it<&>a named event<|>
+Context Event 2
+avoid<|>avoid<|>The driver<&>the driver<&>the driver<&>the driver<&>the driver<&>the driver<&>this driver<|>multiple instances of itself<|>
+Context Event 3
+creates<|>create<|>The driver<&>the driver<&>the driver<&>the driver<&>the driver<&>the driver<&>this driver<|>it<&>a named event<|>
+Context Event 4
+disable<|>disable<|>The driver<&>the driver<&>the driver<&>the driver<&>the driver<&>the driver<&>this driver<|>usage of the built-in Windows kernel debugging facility that is used by popular kernel debuggers KD and WinDbg<|>
+Context Event 5
+hooks<|>hook<|>The driver<&>the driver<&>the driver<&>the driver<&>the driver<&>the driver<&>this driver<|>Major Function 14 the IRP_MJ_DEVICE_CONTROL<|>
+Context Event 6
+applying<|>apply<|>The driver<&>the driver<&>the driver<&>the driver<&>the driver<&>the driver<&>this driver<|>a Detours-style hook<|>
+Candidate Event 1
+be used<|>be used<|>The driver<&>the driver<&>the driver<&>the driver<&>the driver<&>the driver<&>this driver<|>a post exploitation tool<&>itself<&>One sample<|>
+Candidate Event 2
+steal<|>steal<|>The driver<&>the driver<&>the driver<&>the driver<&>the driver<&>the driver<&>this driver<|>confidential information<|>
+Candidate Event 3
+is<|>be<|>The driver<&>the driver<&>the driver<&>the driver<&>the driver<&>the driver<&>this driver<|>a backdoor<|>
+Candidate Event 4
+hide<|>hide<|>The driver<&>the driver<&>the driver<&>the driver<&>the driver<&>the driver<&>this driver<|>the service<|>
+Candidate Event 5
+work<|>work<|>The driver<&>the driver<&>the driver<&>the driver<&>the driver<&>the driver<&>this driver<|><|>
+---
+Answer
+2
+Context Event 1
+be dropped<|>be dropped<|>a client-side exploit<|>it<&>it<&>The sample<|>
+Context Event 2
+executed<|>execute<|>a client-side exploit<|>it<&>it<&>The sample<|>
+Context Event 3
+launch<|>launch<|>the adversary<|>it<&>it<&>The sample<|>
+Candidate Event 1
+connecting<|>connect<|>it<&>it<&>The sample<|><|>to+a different domain name resolving to the same IPs as notebookhk.net
+Candidate Event 2
+received<|>receive<|>it<&>it<&>The sample<|>a command<|>
+Candidate Event 3
+utilizes<|>utilize<|>it<&>it<&>The sample<|>the AES cryptographic algorithm<|>
+Candidate Event 4
+infect<|>infect<|>it<&>it<&>The sample<|>all connected systems<|>
+Candidate Event 5
+execute<|>execute<|>it<&>it<&>The sample<|>shellcode<|>
+---
+Answer
+2
+Context Event 1
+receiving<|>receive<|>the routine<|>incoming commands<&>them<|>
+Context Event 2
+executes<|>execute<|>the routine<|>incoming commands<&>them<|>
+Candidate Event 1
+downloaded<|>download<|>the routine<|>These tools<&>one of these implants<&>these backdoors<&>backdoors<&>These tools<|>
+Candidate Event 2
+used<|>use<|>the routine<|>The final URL<|>
+Candidate Event 3
+sending<|>send<|>the routine<|>an initial beacon<&>The beacon<&>the initial beacon<|>
+Candidate Event 4
+disguise<|>disguise<|>the routine<|>its activity<|>
+Candidate Event 5
+re-enable<|>re-enable<|>the routine<|>its network drivers<|>
+---
+Answer
+4
+Context Event 1
+view<|>view<|>the adversary<|>the main desktop<&>graphically<|>
+Context Event 2
+control<|>control<|>the adversary<|>the keyboard<|>
+Candidate Event 1
+parse<|>parse<|>the adversary<|>all incoming traffic<|>
+Candidate Event 2
+configured<|>configure<|>the adversary<|>Up to 5 c&c servers<|>
+Candidate Event 3
+used<|>use<|>the adversary<|>The last C&C server<|>
+Candidate Event 4
+conducting<|>conduct<|>the adversary<|>SQL injections<|>
+Candidate Event 5
+control<|>control<|>the adversary<|>mouse<|>
+---
+Answer
+3
+Context Event 1
+support<|>support<|>The command line options<|>changing file timestamps<|>
+Context Event 2
+support<|>support<|>The command line options<|>forensic mitigation<|>
+Context Event 3
+support<|>support<|>The command line options<|>privilege escalation<|>
+Context Event 4
+support<|>support<|>The command line options<|>launching the executable<|>
+Candidate Event 1
+monitor<|>monitor<|>The command line options<|>network traffic<|>
+Candidate Event 2
+download<|>download<|>The command line options<|>additional malicious components<|>
+Candidate Event 3
+overwrites<|>overwrite<|>The command line options<|>the first 512 bytes<|>
+Candidate Event 4
+support<|>support<|>The command line options<|>specifying a specific C2<|>
+Candidate Event 5
+created<|>create<|>The command line options<|>a mutex called “PittyTiger”<|>
+---
+Answer
+3
+Context Event 1
+gathering<|>gather<|>This class<|>intelligence on the infected system<|>
+Context Event 2
+identifying<|>identify<|>This class<|>security tools<|>
+Context Event 3
+identifying<|>identify<|>This class<|>proxy accounts<|>
+Context Event 4
+identifying<|>identify<|>This class<|>version numbers for the Operating System (OS)<|>
+Candidate Event 1
+exfiltrate<|>exfiltrate<|>This class<|>data<|>to+ultrasms[.]ir
+Candidate Event 2
+loaded<|>load<|>This class<|>The malware<&>the malware<|>into+each and every process of the infected machine
+Candidate Event 3
+validate<|>validate<|>This class<|>the high profile victim<&>they<|>
+Candidate Event 4
+identifying<|>identify<|>This class<|>Internet Explorer<|>
+Candidate Event 5
+load<|>load<|>This class<|>itself<&>the DLL<&>the DLL<&>The DLL<&>individual instances of Gen 2 DLL<|>into+memory
+---
+Answer
+2
+Context Event 1
+manage<|>manage<|>This handler class<|>system components<|>
+Context Event 2
+start<|>start<|>This handler class<|>system services<|>
+Context Event 3
+stop<|>stop<|>This handler class<|>system services<|>
+Context Event 4
+delete<|>delete<|>This handler class<|>system services<|>
+Context Event 5
+enumerate<|>enumerate<|>This handler class<|>registry keys<|>
+Context Event 6
+alter<|>alter<|>This handler class<|>registry keys<|>
+Candidate Event 1
+hooks<|>hook<|>This handler class<|>the Transport Driver Interface (TDI) network routines<|>
+Candidate Event 2
+cleans<|>clean<|>This handler class<|>traces of the initial loader<|>
+Candidate Event 3
+manage<|>manage<|>This handler class<|>running processes<|>
+Candidate Event 4
+including<|>include<|>This handler class<|>remote monitoring of<&>webcams<|>
+Candidate Event 5
+collects<|>collect<|>This handler class<|>User Account Control (UAC) configuration settings on Windows Vista and above<|>
+---

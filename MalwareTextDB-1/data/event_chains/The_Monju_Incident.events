@@ -1,0 +1,98 @@
+---
+Answer
+2
+Context Event 1
+aact as<|>aact as<|>the ‘GOM Player’ update server<&>it<&>the GOM Player update server (app.gomlab.com)<|>a ‘watering hole’<|>
+Context Event 2
+compromised<|>compromise<|>the attacker<&>the attackers<&>attackers<|>the ‘GOM Player’ update server<&>it<&>the GOM Player update server (app.gomlab.com)<|>
+Candidate Event 1
+collects<|>collect<|>the ‘GOM Player’ update server<&>it<&>the GOM Player update server (app.gomlab.com)<|>information about current system which includes the following<|>
+Candidate Event 2
+registered<|>register<|>the ‘GOM Player’ update server<&>it<&>the GOM Player update server (app.gomlab.com)<|><|>
+Candidate Event 3
+compromise<|>compromise<|>the attacker<&>the attackers<&>attackers<|>the ‘GOM Player’ update server<&>it<&>the GOM Player update server (app.gomlab.com)<|>
+Candidate Event 4
+adds<|>adds<|>the ‘GOM Player’ update server<&>it<&>the GOM Player update server (app.gomlab.com)<|>This sample<&>It<&>it<&>itself<&>it<&>itself<&>itself<&>a DLL<&>The sample<&>the backdoor<|>
+Candidate Event 5
+verifies<|>verify<|>the ‘GOM Player’ update server<&>it<&>the GOM Player update server (app.gomlab.com)<|>the server response starts with "05 00"<|>
+---
+Answer
+1
+Context Event 1
+harvested<|>harvest<|>the attacker<&>the attackers<&>attackers<|>Among other items, staff training documents and more than 40,000 emails<|>
+Context Event 2
+compromised<|>compromise<|>the attacker<&>the attackers<&>attackers<|>the ‘GOM Player’ update server<&>it<&>the GOM Player update server (app.gomlab.com)<|>
+Context Event 3
+compromise<|>compromise<|>the attacker<&>the attackers<&>attackers<|>the ‘GOM Player’ update server<&>it<&>the GOM Player update server (app.gomlab.com)<|>
+Candidate Event 1
+drops<|>drop<|>the attacker<&>the attackers<&>attackers<|>the script<&>it<&>a Word document and a Visual Basic script<&>The VBScript<&>The one above<|>
+Candidate Event 2
+gained<|>gain<|>the attacker<&>the attackers<&>attackers<|>entry<|>
+Candidate Event 3
+use<|>use<|>the attacker<&>the attackers<&>attackers<|>the WebDAV protocol<|>
+Candidate Event 4
+supplied<|>supply<|>the attacker<&>the attackers<&>attackers<|>separate commands<|>to+different targets
+Candidate Event 5
+loaded<|>load<|>the attacker<&>the attackers<&>attackers<|>Stage 4<&>The files for Stage 4<&>Stage 4<|>
+---
+Answer
+0
+Context Event 1
+delivered<|>deliver<|><|>malware<&>it<&>the malware<&>a file containing both the legitimate update and the malware<&>Gh0st RAT<|>
+Context Event 2
+be<|>be<|>malware<&>it<&>the malware<&>a file containing both the legitimate update and the malware<&>Gh0st RAT<|>a variant of a Trojan<|>
+Context Event 3
+deliver<|>deliver<|><|>malware<&>it<&>the malware<&>a file containing both the legitimate update and the malware<&>Gh0st RAT<|>to+the victim
+Context Event 4
+deployed<|>deployed<|><|>malware<&>it<&>the malware<&>a file containing both the legitimate update and the malware<&>Gh0st RAT<|>
+Candidate Event 1
+spread<|>spread<|>malware<&>it<&>the malware<&>a file containing both the legitimate update and the malware<&>Gh0st RAT<|><|>
+Candidate Event 2
+reported<|>report<|>malware<&>it<&>the malware<&>a file containing both the legitimate update and the malware<&>Gh0st RAT<|>The modules that are included in an instance of CHOPSTICK<|>
+Candidate Event 3
+use<|>use<|>malware<&>it<&>the malware<&>a file containing both the legitimate update and the malware<&>Gh0st RAT<|>the resume- based methods reported in the Initial Compromise sections<|>
+Candidate Event 4
+not detected<|>not detect<|>malware<&>it<&>the malware<&>a file containing both the legitimate update and the malware<&>Gh0st RAT<|>Threat actors<&>these threat actors<&>advanced threat actors<&>a malvertising campaign<&>malvertisers<&>a malvertiser<&>the attacker<&>Operation DeathClick<&>attackers<&>Most of the attacks featured here<|>
+Candidate Event 5
+uses<|>use<|>malware<&>it<&>the malware<&>a file containing both the legitimate update and the malware<&>Gh0st RAT<|>a modular family of implants that we call CHOPSTICK<&>a backdoor developed using a modular framework<&>One CHOPSTICK v1 variant<&>It<&>One variant of CHOPSTICK<|>
+---
+Answer
+2
+Context Event 1
+launched<|>launch<|><|>the installer component (0ae82fd94836815a1e8d284ccb75109d)<&>The installer<&>The installer<|>
+Context Event 2
+is<|>be<|>the installer component (0ae82fd94836815a1e8d284ccb75109d)<&>The installer<&>The installer<|>responsible for the malware persistence mechanism<|>
+Context Event 3
+adding<|>add<|>the installer component (0ae82fd94836815a1e8d284ccb75109d)<&>The installer<&>The installer<|>entries<|>to+the registry
+Context Event 4
+determine<|>determine<|>the installer component (0ae82fd94836815a1e8d284ccb75109d)<&>The installer<&>The installer<|>the system architecture (32- or 64-bit)<|>
+Context Event 5
+deobfuscate<|>deobfuscate<|>the installer component (0ae82fd94836815a1e8d284ccb75109d)<&>The installer<&>The installer<|>the relevant loader DLL to the path ‘C:\Windows\temp\install.ocx’<|>
+Candidate Event 1
+begin<|>begin<|>the installer component (0ae82fd94836815a1e8d284ccb75109d)<&>The installer<&>The installer<|>communications<|>
+Candidate Event 2
+runs<|>run<|>the installer component (0ae82fd94836815a1e8d284ccb75109d)<&>The installer<&>The installer<|>svhosts<&>svhosts<|>
+Candidate Event 3
+ensuring<|>ensure<|>the installer component (0ae82fd94836815a1e8d284ccb75109d)<&>The installer<&>The installer<|>the malware is launched on system start-up<|>
+Candidate Event 4
+used<|>use<|>the installer component (0ae82fd94836815a1e8d284ccb75109d)<&>The installer<&>The installer<|>The payload of this malware<&>It<&>The payload of this malware<|>
+Candidate Event 5
+received<|>receive<|>the installer component (0ae82fd94836815a1e8d284ccb75109d)<&>The installer<&>The installer<|>a command<|>
+---
+Answer
+2
+Context Event 1
+reads<|>read<|>The loader<|>the main implant code<&>the main implant code<|>
+Context Event 2
+deobfuscates<|>deobfuscates<|>The loader<|>the main implant code<&>the main implant code<|>
+Candidate Event 1
+including<|>include<|>the main implant code<&>the main implant code<|>Active Directory domain controllers and credentials<|>
+Candidate Event 2
+flags<|>flag<|>the main implant code<&>the main implant code<|>the following events<|>
+Candidate Event 3
+communicates<|>communicate<|>the main implant code<&>the main implant code<|><|>
+Candidate Event 4
+perform<|>perform<|>the main implant code<&>the main implant code<|>a connectivity check<|>
+Candidate Event 5
+retrieves<|>retrieve<|>the main implant code<&>the main implant code<|>several datapoints<|>
+---

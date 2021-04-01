@@ -1,0 +1,56 @@
+---
+Answer
+0
+Context Event 1
+receive<|>receive<|>These binaries<&>they<&>a number of binaries<|>instructions<|>
+Context Event 2
+drop<|>drop<|>These binaries<&>they<&>a number of binaries<|>a variant of an older DDoS tool known as KernelBot<&>three files<&>The KernelBot implants<&>a KernelBot variant<&>a KernelBot variant<|>
+Candidate Event 1
+drop<|>drop<|>These binaries<&>they<&>a number of binaries<|>a variant of an older DDoS tool known as KernelBot<&>three files<&>The KernelBot implants<&>a KernelBot variant<&>a KernelBot variant<|>
+Candidate Event 2
+retrieve<|>retrieve<|>These binaries<&>they<&>a number of binaries<|>the listening port<|>
+Candidate Event 3
+post<|>post<|>These binaries<&>they<&>a number of binaries<|>the data<|>
+Candidate Event 4
+establishes<|>establish<|>These binaries<&>they<&>a number of binaries<|>a SOCKS5 connection<|>to+192.157.198.103
+Candidate Event 5
+is<|>be<|>These binaries<&>they<&>a number of binaries<|>a simple copy of the original binary<|>
+---
+Answer
+4
+Context Event 1
+drop<|>drop<|>These binaries<&>they<&>a number of binaries<|>a variant of an older DDoS tool known as KernelBot<&>three files<&>The KernelBot implants<&>a KernelBot variant<&>a KernelBot variant<|>
+Context Event 2
+drop<|>drop<|>These binaries<&>they<&>a number of binaries<|>a variant of an older DDoS tool known as KernelBot<&>three files<&>The KernelBot implants<&>a KernelBot variant<&>a KernelBot variant<|>
+Context Event 3
+receive<|>receive<|>a variant of an older DDoS tool known as KernelBot<&>three files<&>The KernelBot implants<&>a KernelBot variant<&>a KernelBot variant<|>targeting instructions<|>
+Context Event 4
+drops<|>drop<|>c3d6450075d618b1edba17ee723eb3ca<|>a variant of an older DDoS tool known as KernelBot<&>three files<&>The KernelBot implants<&>a KernelBot variant<&>a KernelBot variant<|>
+Candidate Event 1
+set up<|>set up<|>a variant of an older DDoS tool known as KernelBot<&>three files<&>The KernelBot implants<&>a KernelBot variant<&>a KernelBot variant<|>Web pages<&>these login pages<|>
+Candidate Event 2
+dropped<|>drop<|>a variant of an older DDoS tool known as KernelBot<&>three files<&>The KernelBot implants<&>a KernelBot variant<&>a KernelBot variant<|>the Poison Ivy variant<&>this variant<&>a related Poison Ivy sample (MD5 8936c87a08ffa56d19fdb87588e35952) with the same “java7” password<|>
+Candidate Event 3
+ensures<|>ensure<|>a variant of an older DDoS tool known as KernelBot<&>three files<&>The KernelBot implants<&>a KernelBot variant<&>a KernelBot variant<|><|>
+Candidate Event 4
+performs<|>perform<|>a variant of an older DDoS tool known as KernelBot<&>three files<&>The KernelBot implants<&>a KernelBot variant<&>a KernelBot variant<|>a connectivity check<|>
+Candidate Event 5
+connects<|>connect<|>a variant of an older DDoS tool known as KernelBot<&>three files<&>The KernelBot implants<&>a KernelBot variant<&>a KernelBot variant<|><|>to+both www.sapporo-digital-photoclub[.]com and wakayamasatei[.]com
+---
+Answer
+3
+Context Event 1
+launched<|>launch<|>attackers<&>the attackers<&>the attackers<|>a series of Distributed Denial of Service attacks (DDoS)<&>an ongoing DDoS attack that “brought down its email system for hours”<&>These ongoing DDoS attacks<&>a DDoS attack<&>these attacks<|>
+Context Event 2
+pushed<|>push<|>attackers<&>the attackers<&>the attackers<|>a configuration update<|>to+four controls servers
+Candidate Event 1
+spear phish<|>spear phish<|>attackers<&>the attackers<&>the attackers<|>other companies which are in commercial relation with this web development company<|>
+Candidate Event 2
+receiving<|>receive<|>attackers<&>the attackers<&>the attackers<|>compressed binary blobs<|>
+Candidate Event 3
+has<|>have<|>attackers<&>the attackers<&>the attackers<|>the following C&C<|>
+Candidate Event 4
+issued<|>issue<|>attackers<&>the attackers<&>the attackers<|>new instructions<|>to+their botnet
+Candidate Event 5
+xored<|>xored<|>attackers<&>the attackers<&>the attackers<|>an additional file called winview.ocx<&>The file<|>
+---

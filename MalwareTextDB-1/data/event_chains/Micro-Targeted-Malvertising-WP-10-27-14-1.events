@@ -1,0 +1,85 @@
+---
+Answer
+3
+Context Event 1
+switch<|>switch<|>Threat actors<&>these threat actors<&>advanced threat actors<&>a malvertising campaign<&>malvertisers<&>a malvertiser<&>the attacker<&>Operation DeathClick<&>attackers<&>Most of the attacks featured here<|><|>
+Context Event 2
+create<|>create<|>Threat actors<&>these threat actors<&>advanced threat actors<&>a malvertising campaign<&>malvertisers<&>a malvertiser<&>the attacker<&>Operation DeathClick<&>attackers<&>Most of the attacks featured here<|>a temporary redirection from their usual content to the malicious landing page<|>
+Context Event 3
+weaponized<|>weaponize<|>Threat actors<&>these threat actors<&>advanced threat actors<&>a malvertising campaign<&>malvertisers<&>a malvertiser<&>the attacker<&>Operation DeathClick<&>attackers<&>Most of the attacks featured here<|>ad delivery networks<|>
+Context Event 4
+target<|>target<|>Threat actors<&>these threat actors<&>advanced threat actors<&>a malvertising campaign<&>malvertisers<&>a malvertiser<&>the attacker<&>Operation DeathClick<&>attackers<&>Most of the attacks featured here<|>an organization<&>directly<|>
+Context Event 5
+targeted<|>target<|>Threat actors<&>these threat actors<&>advanced threat actors<&>a malvertising campaign<&>malvertisers<&>a malvertiser<&>the attacker<&>Operation DeathClick<&>attackers<&>Most of the attacks featured here<|>multiple US Defense/Aerospace contractors<&>these organizations<|>
+Context Event 6
+using<|>use<|>Threat actors<&>these threat actors<&>advanced threat actors<&>a malvertising campaign<&>malvertisers<&>a malvertiser<&>the attacker<&>Operation DeathClick<&>attackers<&>Most of the attacks featured here<|>these same tools and techniques<|>
+Context Event 7
+delivered<|>deliver<|>Threat actors<&>these threat actors<&>advanced threat actors<&>a malvertising campaign<&>malvertisers<&>a malvertiser<&>the attacker<&>Operation DeathClick<&>attackers<&>Most of the attacks featured here<|>a Java exploit<&>This exploit<|>
+Context Event 8
+delivering<|>deliver<|>Threat actors<&>these threat actors<&>advanced threat actors<&>a malvertising campaign<&>malvertisers<&>a malvertiser<&>the attacker<&>Operation DeathClick<&>attackers<&>Most of the attacks featured here<|>the malicious ads<&>the malicious ads<|>
+Context Event 9
+micro-target<|>micro-target<|>Threat actors<&>these threat actors<&>advanced threat actors<&>a malvertising campaign<&>malvertisers<&>a malvertiser<&>the attacker<&>Operation DeathClick<&>attackers<&>Most of the attacks featured here<|>companies<|>
+Context Event 10
+deliver<|>deliver<|>Threat actors<&>these threat actors<&>advanced threat actors<&>a malvertising campaign<&>malvertisers<&>a malvertiser<&>the attacker<&>Operation DeathClick<&>attackers<&>Most of the attacks featured here<|>malware<|>to+you
+Candidate Event 1
+disguise<|>disguise<|>Threat actors<&>these threat actors<&>advanced threat actors<&>a malvertising campaign<&>malvertisers<&>a malvertiser<&>the attacker<&>Operation DeathClick<&>attackers<&>Most of the attacks featured here<|>the malicious activity<|>
+Candidate Event 2
+thwarted<|>thwart<|>Threat actors<&>these threat actors<&>advanced threat actors<&>a malvertising campaign<&>malvertisers<&>a malvertiser<&>the attacker<&>Operation DeathClick<&>attackers<&>Most of the attacks featured here<|>our attempts to attach debuggers<|>
+Candidate Event 3
+execute<|>execute<|>Threat actors<&>these threat actors<&>advanced threat actors<&>a malvertising campaign<&>malvertisers<&>a malvertiser<&>the attacker<&>Operation DeathClick<&>attackers<&>Most of the attacks featured here<|>binaries<|>
+Candidate Event 4
+not detected<|>not detect<|>standard Anti-Virus<|>Threat actors<&>these threat actors<&>advanced threat actors<&>a malvertising campaign<&>malvertisers<&>a malvertiser<&>the attacker<&>Operation DeathClick<&>attackers<&>Most of the attacks featured here<|>
+Candidate Event 5
+creates<|>create<|>Threat actors<&>these threat actors<&>advanced threat actors<&>a malvertising campaign<&>malvertisers<&>a malvertiser<&>the attacker<&>Operation DeathClick<&>attackers<&>Most of the attacks featured here<|>virtual file volumes<&>The volumes<&>Both volumes<|>
+---
+Answer
+0
+Context Event 1
+copied<|>copy<|>a Java exploit<&>This exploit<|>a fully functional version of Chrome<&>that version of Chrome<&>a background web browser<|>into+the Java cache directory
+Context Event 2
+click<|>click<|>a fully functional version of Chrome<&>that version of Chrome<&>a background web browser<|><|>
+Candidate Event 1
+does<|>do<|>a fully functional version of Chrome<&>that version of Chrome<&>a background web browser<|>click fraud<|>
+Candidate Event 2
+retrieving<|>retrieve<|>a fully functional version of Chrome<&>that version of Chrome<&>a background web browser<|>their stored passwords<|>
+Candidate Event 3
+gathers<|>gather<|>a fully functional version of Chrome<&>that version of Chrome<&>a background web browser<|>the following information<|>
+Candidate Event 4
+social engineering<|>social engineer<|>a fully functional version of Chrome<&>that version of Chrome<&>a background web browser<|><|>
+Candidate Event 5
+complicate<|>complicate<|>a fully functional version of Chrome<&>that version of Chrome<&>a background web browser<|>he victim machine’s recovery<|>
+---
+Answer
+1
+Context Event 1
+perpetrate<|>perpetrate<|>cyber crime gangs<|>identity fraud<|>
+Context Event 2
+perpetrate<|>perpetrate<|>cyber crime gangs<|>ad fraud<|>
+Candidate Event 1
+act<|>act<|>cyber crime gangs<|><|>
+Candidate Event 2
+perpetrate<|>perpetrate<|>cyber crime gangs<|>banking credential theft<|>
+Candidate Event 3
+opens<|>open<|>cyber crime gangs<|>a back door<|>
+Candidate Event 4
+wiping<|>wipe<|>cyber crime gangs<|>the operating system and master boot record<|>
+Candidate Event 5
+gathers<|>gather<|>cyber crime gangs<|>system drive and volume information<|>
+---
+Answer
+4
+Context Event 1
+is<|>be<|>this malware<|>a Trojan backdoor<|>
+Context Event 2
+download<|>download<|>this malware<|>additional malware<|>
+Candidate Event 1
+maintain<|>maintain<|>this malware<|>truly precise targeting information<|>
+Candidate Event 2
+delivered<|>deliver<|>this malware<|>The sample e9580b6b13822090db018c320e80865f<|>to+several Epic victims
+Candidate Event 3
+propagate<|>propagate<|>this malware<|><|>
+Candidate Event 4
+installed<|>instal<|>this malware<|>the same Trojan.Dropper<&>the same Trojan.Dropper<&>The malware itself<&>The back door<&>other back door Trojans<|>
+Candidate Event 5
+provide<|>provide<|>this malware<|>remote persistent access<|>
+---

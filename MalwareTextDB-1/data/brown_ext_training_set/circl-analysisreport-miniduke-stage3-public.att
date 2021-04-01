@@ -1,0 +1,23 @@
+In the scope of targeted attacks with a malware labeled as Miniduke by Kaspersky Labs , CIRCL was interested in the way the malware 's later stages work and what kind of interesting information they reveal ( e.g . 
+techniques , style , IOCs ) . 
+No public analysis was found except the mention in Kaspersky 's report of a custom backdoor , so CIRCL took one of the known samples and started this analysis . 
+This work has been done with utmost care , following best practices in software reversing , forensic investigations and/or information gathering . 
+However , the work is only covering small aspects ( based on the indicators given , lacking full context ) and not an exhaustive analysis , and hence the report is as-is , not giving any guarantees of completeness or claiming absolute accuracy . 
+The document is classiﬁed as TLP : WHITE , therefore CIRCL encourages everyone to share this analysis report as-is without modiﬁcation . 
+Sample B , contained in Sample A , can be categorized as an exhaustive backdoor , implementing any kind of functionality that can be expected for this kind of attacks . 
+Despite the fact that it does n't implement any particular fancy or new technique , the code quality appears to be clean and robust , making rich use of C structures and logging and it shows on some places that it is targeting organizational infrastructures rather than home users . 
+Sample A can be categorized as a container , obfuscating and compressing the real payload . 
+Sample A has been debugged until Sample B 's decompression ﬁnished . 
+The memory segment was dumped to disk for further analysis . 
+The focus of the analysis then shifted to Sample B . 
+Sample B is identiﬁed to be a HTTP controlled backdoor , enabling the attacker to take full control over the victim computer . 
+The analysis has been done using a mixed-approach of dynamic analysis and static analysis in order to overcome some of the obfuscation and encryptions used by the malware . 
+Some of the techniques might have also an impact on the interpretation of the malware . 
+Unfortunately , when we started this investigation , the domain is now pointing to an IP address of Google and returning a 404 Not Found page only . 
+An interaction following the protocol of this malware is therefore no longer possible . 
+The analysis of Sample B revealed the commands as shown in table 1 The attacker controls the remote computer via HTTP GET and POST requests like the following : The request is encoded in a custom BASE64 encoding , using the following alphabet : The malware connects via HTTP GET and POST requests to and the path is ﬁxed : The variable part is the custom BASE64 encoded string corresponding to `` i= '' . 
+A full request looks like : The user agent is always Sent accept headers are : The malware creates in a value 'AppID ' with the data it calculates from GetTickcount ( ) , used as an identiﬁer/mutex . 
+No persistency mechanisms have been identiﬁed . 
+We assume the ﬁle is only dropped and/or executed on request via stage 2 of Miniduke and not running persistently . 
+Update on Jul 03 2014 : F-Secure released an analysis of the latest MiniDuke evolution , called `` CosmicDuke '' , mentioning similar loaders in old and new samples . 
+That 's why we updated this document to include a graph of the loader : Decryption of module and function names Command `` exec '' - standard process creation : Command `` exeu '' - process creation in a domain environment The domain news.grouptumbler.com is currently resolving to 173.194.70.101 Before that date , the IP was 200.63.46.33 The IP 200.63.46.33 was hosting the following domains : None , some or all domains in this list might be malicious as well . 

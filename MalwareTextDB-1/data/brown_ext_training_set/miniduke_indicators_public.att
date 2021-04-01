@@ -1,0 +1,73 @@
+27/02/2013 Initial release Our malware analysis team in the CrySyS Lab , Budapest worked together with Kaspersky Labs on the analysis of the Miniduke malware . 
+Our participation in this research was justified by a detected Hungarian incident . 
+A detailed report on the results of our joint efforts has been published by Kaspersky Labs Securelist blog site ( see link below ) . 
+The Kaspersky Labs report describes what we currently know about the operation of Miniduke including its stages , and also information on the C & C infrastructure and communications . 
+In this report , we summarize the indicators of a Miniduke infection , and give specific hints on its detection . 
+The Kaspersky Labs report is available at https : //www.securelist.com/en/blog/208194129/The_MiniDuke_Mystery_PDF_0_day _Government_Spy_Assembler_Micro_Backdoor The available malware samples are highly obfuscated , and compiled by a polymorphic compiler . 
+The attackers were able to produce new variants with only a few minutes difference between compile times . 
+Therefore the number of distinct samples could be very large . 
+bg_ < sthg > .gif 
+and bg_ < sthg > .gif_dec 
+refers to pieces of stage 2 of the malware , which are downloaded from the C & C server by the stage 1 code . 
+bg_ < sthg > .gif 
+is a gif file that contains encrypted code , bg_ < sthg > .gif 
+is the corresponding decrypted file . 
+bg_ < sthg > .gif 
+is generally 24484 bytes long , while bg_ < sthg > .gif_dec 
+is 22784 bytes long . 
+< id > .gif 
+files are pieces of stage 3 codes prepared for specific victims with < id > used as an ID . 
+These are typically 334093 byte long files with a 13-byte long gif header . 
+Below , we list the hashes of these files ; in case of the decrypted files with .gif_dec 
+extension , we list the hashes for the internal decrypted PE file . 
+Due to a large number of compiled samples , there is a high chance that the current version is difficult to detect by signatures . 
+Yet , there are common features in the samples that can be used to identify the malware components . 
+In every sample we checked , the `` Program Files/Startup '' contains a file with `` .lnk 
+'' extension after installation . 
+This is used to start up the malware after the computer is rebooted . 
+An example of the lnk file created by the malware : The contents of the .lnk 
+files are similar to the below described path and file , but random names are used . 
+The extension of the dll called is generally `` .tmp 
+'' or `` .cat 
+'' or `` .db 
+'' ( not sure about full list ) and the export function called has a random name . 
+`` C : \WINDOWS\system32\rundll32.exe '' C : \DOCUME~1\ALLUSE~1\APPLIC~1\base.cat , JorNgoq The running process of the malware can be pinpointed , e.g. , by using ProcessExplorer . 
+The running copies of stage 1 and 2 appear as separated rundll.exe processes . 
+It is very useful to create a memory dump from these running processes , e.g. , by using SysInternals ProcessExplorer . 
+On the picture below , the export function name they use is GqOlls . 
+The names seem to follow a pattern : 6 chars long with two upper case letters . 
+A not fully cross-checked information is that during installation the malware will be copied in two copies to the system and the two executables differ . 
+This might mean that the executable modifies itself . 
+For example , we recovered the following two files : md5sum base.cat :113e6fc85317fdd135e3f5f19e6c7a58 *base.cat md5sum ~6rld.tmp : c786a4cdfe08dbe7c64972a14669c4d1 *~6rld.tmp where base.cat is the startup file , which is created based on ~6lrd.tmp . 
+base.cat is stored in the `` All users '' directory , whereas ~6lrd.tmp is stored in a user 's directory , e.g. , in the guest user directory as `` C : \Documents and Settings\guest\Local Settings\Application Data\~6rld.tmp '' This user directory contains at least one more file , update.cmd with a specific content that could be used for detection . 
+E.g. , a search for any *.cmd files with content `` TASKKILL /f /IM acro* '' might be a a detection tool of this stage . 
+As for stage 3 of the attack , it is important to note that it is not yet analyized deeply . 
+So once a victim downloads the ~300k long piece of code , we do n't know what happens with the previous stages , and we have no information about detections once this stage is reached , except the usage of the C & C server news.grouptumbler.com . 
+There are multiple layers of C & C communications in the malware . 
+First the malware uses Google search to receive information from its master . 
+Then , it uses the Twitter messaging service looking for the twits of a specific Twitter user . 
+Commands received via this channel trigger the download of stage 2 and stage 3 code from the C & C server . 
+We identified the following C & C servers delivering stage 2 and stage 3 codes : The C & C server used by stage 3 of the malware is news.grouptumbler.com and it is located in Panama . 
+At the time of this writing , port 80 seems to be closed on this server . 
+Address and open port information is below : Basic detection can be based on 3 queries that are initiated by the victim computers within seconds . 
+Known search strings in Google search ( see below ) can also be used to detect the malware . 
+Unfortunately , these strings are most likely unique to each C & C server or victim , thus unknown samples might use other strings , but possibly with the same length . 
+The malware also sends a query to the geoiptool . 
+An example is shown below : Initial communications with the stage 2/3 delivery C & C servers ( such as arabooks.ch ) can be used to develop detection signatures as follows : The malware retrieves the URL using a Twitter query as described earlier . 
+Then , we can observe the first query from the victim towards the stage 2/3 delivery C & C server . 
+This query contains pure HTTP traffic on port 80 to the server following the template below . 
+GET /original/path/shortname/index.php ? e=aaaaaaaaa where : • shortname can be a number of strings , generally human readable ( e.g . 
+lib , engine , forum , forumengine etc . 
+) • `` e= '' is not constant , can be anything , but generally 1-2 letters long • aaaaaaaaa stands for some Base64-like text ( see details below ) • the servers used are assumed to be legitimate sites , just hacked by the attackers . 
+Based on this format , we can detect a valid query as follows : • The name of the 1st GET parameter should be discarded • this means `` e= '' is not important • we saw only one GET parameter , queries with multiple parameters are likely not used For detection , the Base64-like string `` aaa… '' should be first modified as follows : • `` - '' should be replaced by `` + '' • `` _ '' should be replaced by `` / '' This results in correct Base64 encoding , which can be decoded with library functions such as base64_decode . 
+After decoding , a string of data , partially binary will be available . 
+Parts are separated by the delimiter character `` | '' . 
+The format and a numerical example are below : < binary data ( ~100 bytes ) > | < numerical ID ( ~10 digits ) > | < version number > e.g. , < binary data > |5551115551|1.13 As the binary data itself may contain the `` | '' character , parsing should start from the end ( i.e. , the numerical ID starts from the second `` | '' character from the end ) . 
+In additional , the ID length may vary ( not fully confirmed ) , but it seems to be around 10 digits . 
+Finally , the version number always follows the pattern < 1digit > < dot > < two digits > , e.g. , 1.1X 3.1X . 
+The correct decoding of the HTTP query information should be enough to quickly develop possible IDS-based detections . 
+As we have seen , detection is complicated , but not impossible . 
+The following is the summary of potential detection steps : • Check if there is only one GET parameter • ( check if path is not empty and contains index.php ) ( possible , but not confirmed ) • convert the Base64-like GET parameter string into real Base64 encoding , and check if it decodes correctly • check if the decoded string has at least two delimieter character `` | '' in it • check if after the last but first `` | '' character , there are digits only • check if the version part of the string follows the format `` 1.11 '' or similar The header sent is fairly standard , but we include one example nonetheless : The used Agent strings vary significantly across queries , therefore they can not be really used for detection : The Google search step also uses different agent strings : The C & C server 's response – if it sends encrypted files – is a GIF file containing a small icon , and after that , the malware : For stage 3 ( i.e. , < id > .gif 
+files ) , the file downloaded has a larger size ( ~300KB ) . 
+It also begins with a GIF header , but that header is only 13 bytes long , and then starts the encrypted executable , as shown below : Examples for twits containing the URL of the C & C server are shown below : The twitter information is currently not very useful for content based detection , as it is downloaded through SSL connection , and therefore , IDS rules can only be applied if some SSL proxy is used . 
+An interesting observation is that this user follows 4 partners , most likely for deception . 

@@ -1,0 +1,234 @@
+---
+Answer
+4
+Context Event 1
+collect<|>collect<|>this module<&>it<&>the module<&>The code<&>the module<&>the mod- ule<&>The module<|>various secrets stored on a local system<|>
+Context Event 2
+checks<|>check<|>this module<&>it<&>the module<&>The code<&>the module<&>the mod- ule<&>The module<|>if «bdagent.exe» process is running on current system<|>
+Context Event 3
+uses<|>use<|>this module<&>it<&>the module<&>The code<&>the module<&>the mod- ule<&>The module<|>simple AV heuristics evasion technique<|>
+Context Event 4
+starts<|>start<|>this module<&>it<&>the module<&>The code<&>the module<&>the mod- ule<&>The module<|>a thread that simulates keystrokes of ESC keyboard key and then shows a system modal message box<|>
+Context Event 5
+makes sure<|>make sure<|>this module<&>it<&>the module<&>The code<&>the module<&>the mod- ule<&>The module<|>only one instance of current code is running<|>
+Context Event 6
+collects<|>collect<|>this module<&>it<&>the module<&>The code<&>the module<&>the mod- ule<&>The module<|>information about current system which includes the following<|>
+Candidate Event 1
+reports<|>report<|>this module<&>it<&>the module<&>The code<&>the module<&>the mod- ule<&>The module<|>its status<|>
+Candidate Event 2
+infects<|>infect<|>this module<&>it<&>the module<&>The code<&>the module<&>the mod- ule<&>The module<|>a website that has a high likelihood of being visited by the intended victim<|>
+Candidate Event 3
+hooks<|>hook<|>this module<&>it<&>the module<&>The code<&>the module<&>the mod- ule<&>The module<|>TCP calls<|>
+Candidate Event 4
+contact<|>contact<|>this module<&>it<&>the module<&>The code<&>the module<&>the mod- ule<&>The module<|>a compromised computer<&>it<&>compromised computers<&>it<|>
+Candidate Event 5
+uses<|>use<|>this module<&>it<&>the module<&>The code<&>the module<&>the mod- ule<&>The module<|>several simple XOR­based algorithms<|>
+---
+Answer
+0
+Context Event 1
+stealing<|>steal<|>The module<&>it<&>the malware<|>secrets<|>
+Context Event 2
+stealing<|>steal<|>The module<&>it<&>the malware<|>all collected information<&>The data<&>secrets<&>additional in- formation<|>
+Candidate Event 1
+executes<|>execute<|>The module<&>it<&>the malware<|>some kind of embedded script<|>
+Candidate Event 2
+conduct<|>conduct<|>The module<&>it<&>the malware<|>runtime checks<|>
+Candidate Event 3
+include<|>include<|>The module<&>it<&>the malware<|>a new method of installing as a service<|>
+Candidate Event 4
+performs<|>perform<|>The module<&>it<&>the malware<|>an HTTP GET request<|>
+Candidate Event 5
+create<|>create<|>The module<&>it<&>the malware<|>a new share “cmd.exe /q /c net share shared$=%SystemRoot% /GRANT:everyone, FULL”<|>
+---
+Answer
+4
+Context Event 1
+iterates<|>iterate<|>The malware<&>it<&>The trojan<&>the process<&>the malware<|><|>
+Context Event 2
+looks<|>look<|>The malware<&>it<&>The trojan<&>the process<&>the malware<|><|>
+Context Event 3
+evade<|>evade<|>The malware<&>it<&>The trojan<&>the process<&>the malware<|>running on a VMware<|>
+Context Event 4
+checks<|>check<|>The malware<&>it<&>The trojan<&>the process<&>the malware<|>if cur- rent process is running in WOW64 environment<|>
+Context Event 5
+terminates<|>terminate<|>The malware<&>it<&>The trojan<&>the process<&>the malware<|><|>
+Candidate Event 1
+reads<|>read<|>The malware<&>it<&>The trojan<&>the process<&>the malware<|>the configuration file<|>
+Candidate Event 2
+hide<|>hide<|>The malware<&>it<&>The trojan<&>the process<&>the malware<|>a service named “Hitx”<|>
+Candidate Event 3
+sent<|>send<|>The malware<&>it<&>The trojan<&>the process<&>the malware<|>Commands<|>to+the CORESHELL backdoor
+Candidate Event 4
+modify<|>modify<|>The malware<&>it<&>The trojan<&>the process<&>the malware<|>the creation time, last access time and last modification    time<|>
+Candidate Event 5
+submits<|>submit<|>The malware<&>it<&>The trojan<&>the process<&>the malware<|>collected information<|>to+the C&C server
+---
+Answer
+4
+Context Event 1
+download<|>download<|>Igfxext.exe<|>a file<&>it<&>the downloaded file<|>
+Context Event 2
+drop<|>drop<|>Igfxext.exe<|>a file<&>it<&>the downloaded file<|>to+%APPDATA%\microsoft\dis- play\ctfmon.exe (md5= e8bfb82b0dd5cef46116d61f62c25060)
+Context Event 3
+drops<|>drop<|>a file<&>it<&>the downloaded file<|>SMAGENT.EXE (md5 0306f9ae- 7786570139f78e78bc940597)<&>it<&>This component<|>to+%APPDATA%\MICROSOFT\DISPLAY
+Candidate Event 1
+connected<|>connect<|>a file<&>it<&>the downloaded file<|><|>to+both intel- update[.]com and ultrasms[.]ir
+Candidate Event 2
+keep<|>keep<|>a file<&>it<&>the downloaded file<|>a low profile<|>
+Candidate Event 3
+remove<|>remove<|>a file<&>it<&>the downloaded file<|>content<|>
+Candidate Event 4
+execute<|>execute<|>a file<&>it<&>the downloaded file<|>two files<&>This data file<&>The files<&>the DLLs<&>the DLL<&>ctfmonrc.dll<|>
+Candidate Event 5
+executes<|>execute<|>a file<&>it<&>the downloaded file<|>SMAGENT.EXE (md5 0306f9ae- 7786570139f78e78bc940597)<&>it<&>This component<|>
+---
+Answer
+4
+Context Event 1
+drops<|>drop<|>a file<&>it<&>the downloaded file<|>SMAGENT.EXE (md5 0306f9ae- 7786570139f78e78bc940597)<&>it<&>This component<|>to+%APPDATA%\MICROSOFT\DISPLAY
+Context Event 2
+executes<|>execute<|>a file<&>it<&>the downloaded file<|>SMAGENT.EXE (md5 0306f9ae- 7786570139f78e78bc940597)<&>it<&>This component<|>
+Context Event 3
+infiltrate<|>infiltrate<|>SMAGENT.EXE (md5 0306f9ae- 7786570139f78e78bc940597)<&>it<&>This component<|><|>into+other computers
+Candidate Event 1
+send<|>send<|>SMAGENT.EXE (md5 0306f9ae- 7786570139f78e78bc940597)<&>it<&>This component<|>the data<|>
+Candidate Event 2
+compromise<|>compromise<|>SMAGENT.EXE (md5 0306f9ae- 7786570139f78e78bc940597)<&>it<&>This component<|>the website of a third party, generally a supplier of the target, which is typically visited by a specific group of professionals and very likely by the target<|>
+Candidate Event 3
+retrieves<|>retrieve<|>SMAGENT.EXE (md5 0306f9ae- 7786570139f78e78bc940597)<&>it<&>This component<|>several datapoints<|>
+Candidate Event 4
+connect<|>connect<|>SMAGENT.EXE (md5 0306f9ae- 7786570139f78e78bc940597)<&>it<&>This component<|><|>to+the Bahrain C&C server
+Candidate Event 5
+infiltrate<|>infiltrate<|>SMAGENT.EXE (md5 0306f9ae- 7786570139f78e78bc940597)<&>it<&>This component<|><|>into+other computers
+---
+Answer
+2
+Context Event 1
+drop<|>drop<|>These files<&>All of these infected files<|>The igfxext.exe component<&>It<&>a 63kb self injecting compo- nent<|>
+Context Event 2
+dropped<|>drop<|><|>The igfxext.exe component<&>It<&>a 63kb self injecting compo- nent<|>to+disk
+Context Event 3
+run<|>run<|><|>The igfxext.exe component<&>It<&>a 63kb self injecting compo- nent<|>
+Candidate Event 1
+hide<|>hide<|>The igfxext.exe component<&>It<&>a 63kb self injecting compo- nent<|>the data<|>
+Candidate Event 2
+install<|>install<|>The igfxext.exe component<&>It<&>a 63kb self injecting compo- nent<|>a rootkit<|>on+32-bit versions of Windows
+Candidate Event 3
+spawns<|>spawn<|>The igfxext.exe component<&>It<&>a 63kb self injecting compo- nent<|>an- other suspended process<&>the suspended process<|>
+Candidate Event 4
+start<|>start<|>The igfxext.exe component<&>It<&>a 63kb self injecting compo- nent<|>The dropper component<&>itself<&>It<&>itself<&>itself<|>
+Candidate Event 5
+execute<|>execute<|>The igfxext.exe component<&>It<&>a 63kb self injecting compo- nent<|>a copy of itself<&>the copy utilizing PsExec<&>This copy<|>
+---
+Answer
+2
+Context Event 1
+drops<|>drop<|>This sample<&>It<&>The dropper above<&>the original dropper<|>this kernel mode keylogger<&>It<&>a keylogger<&>a system kernel driver “Ndiskpro” service<|>
+Context Event 2
+started<|>start<|>code running within svchost.exe on WinXP SP3<|>This sample<&>It<&>The dropper above<&>the original dropper<|>
+Context Event 3
+drops<|>drop<|>This sample<&>It<&>The dropper above<&>the original dropper<|>this kernel mode keylogger<&>It<&>a keylogger<&>a system kernel driver “Ndiskpro” service<|>
+Candidate Event 1
+communicate<|>communicate<|>This sample<&>It<&>The dropper above<&>the original dropper<|><|>
+Candidate Event 2
+runs<|>run<|>This sample<&>It<&>The dropper above<&>the original dropper<|>AdobeIns<&>AdobeIns<&>Program “AdobeIns.exe”<&>AdobeIns<&>The malware<|>
+Candidate Event 3
+maintains<|>maintain<|>This sample<&>It<&>The dropper above<&>the original dropper<|>persistence<|>
+Candidate Event 4
+sending<|>send<|>This sample<&>It<&>The dropper above<&>the original dropper<|>SMS<|>
+Candidate Event 5
+is sent<|>is sent<|>This sample<&>It<&>The dropper above<&>the original dropper<|>an 8 byte key<|>
+---
+Answer
+2
+Context Event 1
+drops<|>drop<|>This sample<&>It<&>The dropper above<&>the original dropper<|>this kernel mode keylogger<&>It<&>a keylogger<&>a system kernel driver “Ndiskpro” service<|>
+Context Event 2
+drops<|>drop<|>This sample<&>It<&>The dropper above<&>the original dropper<|>this kernel mode keylogger<&>It<&>a keylogger<&>a system kernel driver “Ndiskpro” service<|>
+Candidate Event 1
+trick<|>trick<|>this kernel mode keylogger<&>It<&>a keylogger<&>a system kernel driver “Ndiskpro” service<|>the user<|>
+Candidate Event 2
+launched<|>launch<|>this kernel mode keylogger<&>It<&>a keylogger<&>a system kernel driver “Ndiskpro” service<|>vulnerability scanning<|>
+Candidate Event 3
+installed<|>instal<|><|>this kernel mode keylogger<&>It<&>a keylogger<&>a system kernel driver “Ndiskpro” service<|>
+Candidate Event 4
+allows<|>allow<|>this kernel mode keylogger<&>It<&>a keylogger<&>a system kernel driver “Ndiskpro” service<|>attackers<&>they<&>the attacker<&>the attacker<&>an attacker<&>the Operation Cleaver team<&>Operation Cleaver<&>Cleaver Operations<&>The Operation Cleaver team<&>the attackers<&>An attacker<&>Operation Cleaver<&>Early Cleaver operations<&>the attackers<&>Cleaver<&>they<&>this organization<&>This organization<&>the attackers<|>
+Candidate Event 5
+compromise<|>compromise<|>this kernel mode keylogger<&>It<&>a keylogger<&>a system kernel driver “Ndiskpro” service<|>two of the compromised websites<&>these websites<|>
+---
+Answer
+4
+Context Event 1
+ensure<|>ensure<|>The module<&>the module<&>It<&>the module<&>the module<&>The module<&>the module<&>the module<|>only single instance of the module is running<|>
+Context Event 2
+gets<|>get<|>The module<&>the module<&>It<&>the module<&>the module<&>The module<&>the module<&>the module<|>CPU name and identifier<|>
+Context Event 3
+collects<|>collect<|>The module<&>the module<&>It<&>the module<&>the module<&>The module<&>the module<&>the module<|>IP and MAC addresses of local network adapters<|>
+Context Event 4
+implements<|>implement<|>The module<&>the module<&>It<&>the module<&>the module<&>The module<&>the module<&>the module<|>a method<|>
+Context Event 5
+delete<|>delete<|>The module<&>the module<&>It<&>the module<&>the module<&>The module<&>the module<&>the module<|>some other, prob- ably older, components which might be present on the system<|>
+Context Event 6
+wipes<|>wipe<|>The module<&>the module<&>It<&>the module<&>the module<&>The module<&>the module<&>the module<|>the file<|>
+Context Event 7
+connects<|>connect<|>The module<&>the module<&>It<&>the module<&>the module<&>The module<&>the module<&>the module<|><|>to+autolace.twilightparadox.com (or automachine. servequake.com)
+Context Event 8
+issues<|>issue<|>The module<&>the module<&>It<&>the module<&>the module<&>The module<&>the module<&>the module<|>a HTTP GET request<|>
+Context Event 9
+send<|>send<|>The module<&>the module<&>It<&>the module<&>the module<&>The module<&>the module<&>the module<|>identical request<&>again<|>
+Candidate Event 1
+routing<|>rout<|>The module<&>the module<&>It<&>the module<&>the module<&>The module<&>the module<&>the module<|>requests from other infected hosts<|>to+a remote C&C server
+Candidate Event 2
+loads<|>load<|>The module<&>the module<&>It<&>the module<&>the module<&>The module<&>the module<&>the module<|>the original service’s DLL<|>
+Candidate Event 3
+deletes<|>delete<|>The module<&>the module<&>It<&>the module<&>the module<&>The module<&>the module<&>the module<|>a hidden file that may be named %ALLUSERSPROFILE%\edg6EF885E2.tmp<&>an edg6EF885E2.tmp temporary file<&>the file contents of edg6EF885E2. tmp<&>the contents of edg6EF885E2.tmp<&>the file<&>a segment from edg6EF885E2.tmp<|>
+Candidate Event 4
+access<|>access<|>The module<&>the module<&>It<&>the module<&>the module<&>The module<&>the module<&>the module<|>the memory of the services.exe process<|>
+Candidate Event 5
+issues<|>issue<|>The module<&>the module<&>It<&>the module<&>the module<&>The module<&>the module<&>the module<|>another HTTP request<|>
+---
+Answer
+1
+Context Event 1
+stealing<|>steal<|>The module<&>it<&>the malware<|>all collected information<&>The data<&>secrets<&>additional in- formation<|>
+Context Event 2
+uploads<|>upload<|>the malware<&>It<&>The module<|>all collected information<&>The data<&>secrets<&>additional in- formation<|>to+one of the following URLs
+Context Event 3
+uploaded<|>upload<|><|>all collected information<&>The data<&>secrets<&>additional in- formation<|>
+Candidate Event 1
+configured<|>configure<|>all collected information<&>The data<&>secrets<&>additional in- formation<|>Up to 5 c&c servers<|>
+Candidate Event 2
+sending<|>send<|>The module<&>it<|>all collected information<&>The data<&>secrets<&>additional in- formation<|>
+Candidate Event 3
+obfuscate<|>obfuscate<|>all collected information<&>The data<&>secrets<&>additional in- formation<|>a process<|>
+Candidate Event 4
+execute<|>execute<|>all collected information<&>The data<&>secrets<&>additional in- formation<|>the data<|>
+Candidate Event 5
+collects<|>collect<|>all collected information<&>The data<&>secrets<&>additional in- formation<|>Windows Firewall state<|>
+---
+Answer
+2
+Context Event 1
+hooks<|>hook<|>a system kernel driver “Ndiskpro” service<&>the NDISKPRO.SYS driver<&>the NDISKPRO.SYS driver<&>This component<&>This keylogger module<|>both INT 0x01 and INT 0xff<|>
+Context Event 2
+loaded<|>load<|><|>a system kernel driver “Ndiskpro” service<&>the NDISKPRO.SYS driver<&>the NDISKPRO.SYS driver<&>This component<&>This keylogger module<|>
+Context Event 3
+retrieves<|>retrieve<|>a system kernel driver “Ndiskpro” service<&>the NDISKPRO.SYS driver<&>the NDISKPRO.SYS driver<&>This component<&>This keylogger module<|>keystroke data<|>
+Context Event 4
+encrypts<|>encrypt<|>a system kernel driver “Ndiskpro” service<&>the NDISKPRO.SYS driver<&>the NDISKPRO.SYS driver<&>This component<&>This keylogger module<|>the retrieved values ondisk<|>
+Context Event 5
+writes<|>write<|>a system kernel driver “Ndiskpro” service<&>the NDISKPRO.SYS driver<&>the NDISKPRO.SYS driver<&>This component<&>This keylogger module<|>the retrieved values ondisk<|>to+a ran- domly named .tmp, file like ffffz07131101.tmp
+Context Event 6
+encrypts<|>encrypt<|>a system kernel driver “Ndiskpro” service<&>the NDISKPRO.SYS driver<&>the NDISKPRO.SYS driver<&>This component<&>This keylogger module<|>gathered data<|>
+Candidate Event 1
+make<|>make<|>a system kernel driver “Ndiskpro” service<&>the NDISKPRO.SYS driver<&>the NDISKPRO.SYS driver<&>This component<&>This keylogger module<|>external control<&>still possible<|>
+Candidate Event 2
+sends<|>send<|>a system kernel driver “Ndiskpro” service<&>the NDISKPRO.SYS driver<&>the NDISKPRO.SYS driver<&>This component<&>This keylogger module<|>a first login packet<|>to+its c&c
+Candidate Event 3
+stores<|>store<|>a system kernel driver “Ndiskpro” service<&>the NDISKPRO.SYS driver<&>the NDISKPRO.SYS driver<&>This component<&>This keylogger module<|>gathered data<|>in+a log file
+Candidate Event 4
+hide<|>hide<|>a system kernel driver “Ndiskpro” service<&>the NDISKPRO.SYS driver<&>the NDISKPRO.SYS driver<&>This component<&>This keylogger module<|>the DLL’s PID<|>
+Candidate Event 5
+registered<|>register<|>a system kernel driver “Ndiskpro” service<&>the NDISKPRO.SYS driver<&>the NDISKPRO.SYS driver<&>This component<&>This keylogger module<|>a domain (smigroup- online.co[.]uk) that appeared to mimic that for the SMi Group<|>
+---

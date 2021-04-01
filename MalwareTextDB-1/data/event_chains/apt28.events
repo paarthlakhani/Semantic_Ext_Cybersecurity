@@ -1,0 +1,466 @@
+---
+Answer
+1
+Context Event 1
+are<|>be<|>their implants<&>Several of APT28’s malware samples<&>malware<&>Some of APT28’s more commonly used tools<&>Many samples across the SOURFACE/ CORESHELL, CHOPSTICK, and EVILTOSS malware families<|>the name SOURFACE<&>This downloader<&>the SOURFACE downloader<&>the SOURFACE downloader<&>SOURFACE<&>the SOURFACE downloader<&>SOURFACE<&>The SOURFACE downloader<&>SOURFACE<|>
+Context Event 2
+refer<|>refer<|>the name SOURFACE<&>This downloader<&>the SOURFACE downloader<&>the SOURFACE downloader<&>SOURFACE<&>the SOURFACE downloader<&>SOURFACE<&>The SOURFACE downloader<&>SOURFACE<|><|>
+Context Event 3
+obtains<|>obtain<|>the name SOURFACE<&>This downloader<&>the SOURFACE downloader<&>the SOURFACE downloader<&>SOURFACE<&>the SOURFACE downloader<&>SOURFACE<&>The SOURFACE downloader<&>SOURFACE<|>This backdoor<&>This backdoor<&>a second-stage backdoor<&>its second stage backdoor EVILTOSS<&>a second stage backdoor<|>
+Context Event 4
+retrieve<|>retrieve<|>the name SOURFACE<&>This downloader<&>the SOURFACE downloader<&>the SOURFACE downloader<&>SOURFACE<&>the SOURFACE downloader<&>SOURFACE<&>The SOURFACE downloader<&>SOURFACE<|>a second stage payload<|>
+Context Event 5
+used<|>use<|>the name SOURFACE<&>This downloader<&>the SOURFACE downloader<&>the SOURFACE downloader<&>SOURFACE<&>the SOURFACE downloader<&>SOURFACE<&>The SOURFACE downloader<&>SOURFACE<|>hard-coded IP addresses<|>
+Context Event 6
+installs<|>install<|>a dropper<|>the name SOURFACE<&>This downloader<&>the SOURFACE downloader<&>the SOURFACE downloader<&>SOURFACE<&>the SOURFACE downloader<&>SOURFACE<&>The SOURFACE downloader<&>SOURFACE<|>
+Context Event 7
+receives<|>receive<|>the name SOURFACE<&>This downloader<&>the SOURFACE downloader<&>the SOURFACE downloader<&>SOURFACE<&>the SOURFACE downloader<&>SOURFACE<&>The SOURFACE downloader<&>SOURFACE<|>another dropper<&>this second dropper<|>
+Context Event 8
+is<|>be<|>the name SOURFACE<&>This downloader<&>the SOURFACE downloader<&>the SOURFACE downloader<&>SOURFACE<&>the SOURFACE downloader<&>SOURFACE<&>The SOURFACE downloader<&>SOURFACE<|>a downloader<|>
+Candidate Event 1
+allowed<|>allow<|>the name SOURFACE<&>This downloader<&>the SOURFACE downloader<&>the SOURFACE downloader<&>SOURFACE<&>the SOURFACE downloader<&>SOURFACE<&>The SOURFACE downloader<&>SOURFACE<|>screenshots of the desktop<|>
+Candidate Event 2
+obtains<|>obtain<|>the name SOURFACE<&>This downloader<&>the SOURFACE downloader<&>the SOURFACE downloader<&>SOURFACE<&>the SOURFACE downloader<&>SOURFACE<&>The SOURFACE downloader<&>SOURFACE<|>The backdoor<&>it<&>it<&>a second stage backdoor<&>EVILTOSS variants<&>a second stage backdoor<|>
+Candidate Event 3
+detect<|>detect<|>the name SOURFACE<&>This downloader<&>the SOURFACE downloader<&>the SOURFACE downloader<&>SOURFACE<&>the SOURFACE downloader<&>SOURFACE<&>The SOURFACE downloader<&>SOURFACE<|>hooks and debugger breakpoints which may be set by security software and monitoring tools<|>
+Candidate Event 4
+is deleted<|>is deleted<|>the name SOURFACE<&>This downloader<&>the SOURFACE downloader<&>the SOURFACE downloader<&>SOURFACE<&>the SOURFACE downloader<&>SOURFACE<&>The SOURFACE downloader<&>SOURFACE<|>a temporary new user “_DomainUser_” with password “Dom4!nU- serP4ss”<&>the user<|>
+Candidate Event 5
+using<|>use<|>the name SOURFACE<&>This downloader<&>the SOURFACE downloader<&>the SOURFACE downloader<&>SOURFACE<&>the SOURFACE downloader<&>SOURFACE<&>The SOURFACE downloader<&>SOURFACE<|>a wide range of off-the-shelf spyware, as well as publicly available third-party services, like iplogger.org<|>
+---
+Answer
+2
+Context Event 1
+installs<|>install<|>another dropper<&>this second dropper<|>The backdoor<&>it<&>it<&>a second stage backdoor<&>EVILTOSS variants<&>a second stage backdoor<|>
+Context Event 2
+provide<|>provide<|>The backdoor<&>it<&>it<&>a second stage backdoor<&>EVILTOSS variants<&>a second stage backdoor<|>access to the file system and registry<|>
+Context Event 3
+enumerate<|>enumerate<|>The backdoor<&>it<&>it<&>a second stage backdoor<&>EVILTOSS variants<&>a second stage backdoor<|>network resources<|>
+Context Event 4
+create<|>create<|>The backdoor<&>it<&>it<&>a second stage backdoor<&>EVILTOSS variants<&>a second stage backdoor<|>processes<|>
+Context Event 5
+log<|>log<|>The backdoor<&>it<&>it<&>a second stage backdoor<&>EVILTOSS variants<&>a second stage backdoor<|>keystrokes<|>
+Context Event 6
+access<|>access<|>The backdoor<&>it<&>it<&>a second stage backdoor<&>EVILTOSS variants<&>a second stage backdoor<|>stored credentials<|>
+Context Event 7
+execute<|>execute<|>The backdoor<&>it<&>it<&>a second stage backdoor<&>EVILTOSS variants<&>a second stage backdoor<|>shellcode<|>
+Context Event 8
+encrypts<|>encrypt<|>The backdoor<&>it<&>it<&>a second stage backdoor<&>EVILTOSS variants<&>a second stage backdoor<|>data<|>
+Context Event 9
+uploads<|>upload<|>The backdoor<&>it<&>it<&>a second stage backdoor<&>EVILTOSS variants<&>a second stage backdoor<|>data<|>
+Context Event 10
+use<|>use<|>The backdoor<&>it<&>it<&>a second stage backdoor<&>EVILTOSS variants<&>a second stage backdoor<|>he Simple Mail Transfer Protocol (SMTP)<|>
+Candidate Event 1
+using<|>use<|>The backdoor<&>it<&>it<&>a second stage backdoor<&>EVILTOSS variants<&>a second stage backdoor<|>the C&C tn1.linkpc.net<|>
+Candidate Event 2
+used<|>use<|>The backdoor<&>it<&>it<&>a second stage backdoor<&>EVILTOSS variants<&>a second stage backdoor<|>a lure (Figure 3) about hostilities surrounding a Malaysia Airlines flight downed in Ukraine<|>
+Candidate Event 3
+obtains<|>obtain<|>the name SOURFACE<&>This downloader<&>the SOURFACE downloader<&>the SOURFACE downloader<&>SOURFACE<&>the SOURFACE downloader<&>SOURFACE<&>The SOURFACE downloader<&>SOURFACE<|>The backdoor<&>it<&>it<&>a second stage backdoor<&>EVILTOSS variants<&>a second stage backdoor<|>
+Candidate Event 4
+upload<|>upload<|>The backdoor<&>it<&>it<&>a second stage backdoor<&>EVILTOSS variants<&>a second stage backdoor<|>arbitrary files<|>
+Candidate Event 5
+be used<|>be used<|>The backdoor<&>it<&>it<&>a second stage backdoor<&>EVILTOSS variants<&>a second stage backdoor<|>a post exploitation tool<&>itself<&>One sample<|>
+---
+Answer
+1
+Context Event 1
+routing<|>rout<|>CHOPSTICK<&>it<&>One variant of CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<|>messages<|>
+Context Event 2
+is<|>be<|>CHOPSTICK<&>it<&>One variant of CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<|>a backdoor<|>
+Context Event 3
+communicate<|>communicate<|>CHOPSTICK<&>it<&>One variant of CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<|><|>
+Context Event 4
+encrypt<|>encrypt<|>CHOPSTICK<&>it<&>One variant of CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<|>configuration data<&>The configuration block<|>
+Context Event 5
+collects<|>collect<|>CHOPSTICK<&>it<&>One variant of CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<|>detailed information<&>host information<|>
+Context Event 6
+collects<|>collect<|>CHOPSTICK<&>it<&>One variant of CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<|>the Windows version<|>
+Context Event 7
+collects<|>collect<|>CHOPSTICK<&>it<&>One variant of CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<|>CPU architecture<|>
+Context Event 8
+collects<|>collect<|>CHOPSTICK<&>it<&>One variant of CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<|>Windows Firewall state<|>
+Context Event 9
+collects<|>collect<|>CHOPSTICK<&>it<&>One variant of CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<|>User Account Control (UAC) configuration settings on Windows Vista and above<|>
+Candidate Event 1
+obfuscated<|>obfuscate<|>CHOPSTICK<&>it<&>One variant of CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<|>a custom backdoor<&>the backdoor<&>the backdoor<&>The main backdoor<&>the malware<|>
+Candidate Event 2
+collects<|>collect<|>CHOPSTICK<&>it<&>One variant of CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<|>Internet Explorer settings<|>
+Candidate Event 3
+write<|>write<|>CHOPSTICK<&>it<&>One variant of CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<|>a malicious payload<&>it<&>the malicious payload<&>the malicious payload<&>the newly created malicious  DLL<&>The malicious DLL file that is dropped<&>the file<&>the file<&>the dropped file<&>the dropped DLL<&>the DLL<|>
+Candidate Event 4
+restart<|>restart<|>CHOPSTICK<&>it<&>One variant of CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<|><|>
+Candidate Event 5
+deployed<|>deployed<|>CHOPSTICK<&>it<&>One variant of CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<|>malware<&>it<&>the malware<&>a file containing both the legitimate update and the malware<&>Gh0st RAT<|>
+---
+Answer
+4
+Context Event 1
+tests<|>test<|>CHOPSTICK<&>It<&>CHOPSTICK<&>CHOPSTICK<|><|>
+Context Event 2
+creates<|>create<|>CHOPSTICK<&>It<&>CHOPSTICK<&>CHOPSTICK<|>a hidden file that may be named %ALLUSERSPROFILE%\edg6EF885E2.tmp<&>an edg6EF885E2.tmp temporary file<&>the file contents of edg6EF885E2. tmp<&>the contents of edg6EF885E2.tmp<&>the file<&>a segment from edg6EF885E2.tmp<|>
+Context Event 3
+creates<|>create<|>CHOPSTICK<&>It<&>CHOPSTICK<&>CHOPSTICK<|>a Windows mailslot<&>the “check_mes_v5555” mailslot<&>the “check_mes_v5555” mailslot<&>the mailslot<|>
+Context Event 4
+collecting<|>collect<|>CHOPSTICK<&>It<&>CHOPSTICK<&>CHOPSTICK<|>detailed information<&>host information<|>
+Candidate Event 1
+targeted<|>target<|>CHOPSTICK<&>It<&>CHOPSTICK<&>CHOPSTICK<|>companies in the DIB<|>
+Candidate Event 2
+captured<|>capture<|>CHOPSTICK<&>It<&>CHOPSTICK<&>CHOPSTICK<|>Private signing certificates of one victim<|>
+Candidate Event 3
+reduce<|>reduce<|>CHOPSTICK<&>It<&>CHOPSTICK<&>CHOPSTICK<|>the visibility of malware on a network<|>
+Candidate Event 4
+compiles<|>compile<|>CHOPSTICK<&>It<&>CHOPSTICK<&>CHOPSTICK<|>a dirwalk – a complete listing of every file path – of each fixed drive<|>
+Candidate Event 5
+encrypt<|>encrypt<|>CHOPSTICK<&>It<&>CHOPSTICK<&>CHOPSTICK<|>output from other malware<|>
+---
+Answer
+0
+Context Event 1
+creates<|>create<|>CHOPSTICK<&>It<&>CHOPSTICK<&>CHOPSTICK<|>a thread<&>a thread<&>The thread<|>
+Context Event 2
+reads<|>read<|>CHOPSTICK<&>It<&>CHOPSTICK<&>CHOPSTICK<|>them<&>messages<|>
+Context Event 3
+encrypts<|>encrypt<|>CHOPSTICK<&>It<&>CHOPSTICK<&>CHOPSTICK<|>them<&>messages<|>
+Context Event 4
+stores<|>store<|>CHOPSTICK<&>It<&>CHOPSTICK<&>CHOPSTICK<|>the encrypted message<|>
+Candidate Event 1
+communicating<|>communicate<|>CHOPSTICK<&>It<&>CHOPSTICK<&>CHOPSTICK<|><|>
+Candidate Event 2
+obfuscate<|>obfuscate<|>CHOPSTICK<&>It<&>CHOPSTICK<&>CHOPSTICK<|>their code<|>
+Candidate Event 3
+zips<|>zip<|>CHOPSTICK<&>It<&>CHOPSTICK<&>CHOPSTICK<|>the contents of the win32.tmp folder<|>
+Candidate Event 4
+sending<|>send<|>CHOPSTICK<&>It<&>CHOPSTICK<&>CHOPSTICK<|>its Hello packet<|>to+its c&c server
+Candidate Event 5
+encrypted<|>encrypt<|>CHOPSTICK<&>It<&>CHOPSTICK<&>CHOPSTICK<|>The data following the header<|>
+---
+Answer
+2
+Context Event 1
+sending<|>send<|>CHOPSTICK<&>it<&>CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<|>an initial HTTP GET request<|>
+Context Event 2
+uploads<|>upload<|>CHOPSTICK<&>it<&>CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<|>a hidden file that may be named %ALLUSERSPROFILE%\edg6EF885E2.tmp<&>an edg6EF885E2.tmp temporary file<&>the file contents of edg6EF885E2. tmp<&>the contents of edg6EF885E2.tmp<&>the file<&>a segment from edg6EF885E2.tmp<|>
+Context Event 3
+deletes<|>delete<|>CHOPSTICK<&>it<&>CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<|>a hidden file that may be named %ALLUSERSPROFILE%\edg6EF885E2.tmp<&>an edg6EF885E2.tmp temporary file<&>the file contents of edg6EF885E2. tmp<&>the contents of edg6EF885E2.tmp<&>the file<&>a segment from edg6EF885E2.tmp<|>
+Context Event 4
+uploaded<|>upload<|>CHOPSTICK<&>it<&>CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<|>a hidden file that may be named %ALLUSERSPROFILE%\edg6EF885E2.tmp<&>an edg6EF885E2.tmp temporary file<&>the file contents of edg6EF885E2. tmp<&>the contents of edg6EF885E2.tmp<&>the file<&>a segment from edg6EF885E2.tmp<|>
+Context Event 5
+uses<|>use<|>CHOPSTICK<&>it<&>CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<|>a URL-safe Base64 encoding<|>
+Context Event 6
+encrypts<|>encrypt<|>CHOPSTICK<&>it<&>CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<|>an 11-byte sequence<|>
+Context Event 7
+uploading<|>upload<|>CHOPSTICK<&>it<&>CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<|>edg6EF885E2.tmp<|>
+Candidate Event 1
+re-enable<|>re-enable<|>CHOPSTICK<&>it<&>CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<|>its network drivers<|>
+Candidate Event 2
+seen<|>see<|>CHOPSTICK<&>it<&>CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<|>Nesha<&>Nesha<|>
+Candidate Event 3
+query<|>query<|>CHOPSTICK<&>it<&>CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<|>external servers<&>one of its C2 servers<&>the C2 server<&>the C2 server<&>its C2 servers<&>the C2 server<|>
+Candidate Event 4
+runs<|>run<|>CHOPSTICK<&>it<&>CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<|>rundl132<&>it<&>“rundl132.exe”<&>rundl132<&>rundl132<|>
+Candidate Event 5
+run<|>run<|>CHOPSTICK<&>it<&>CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<|>Commands such as GETINFO<&>they<|>
+---
+Answer
+2
+Context Event 1
+send<|>send<|>their implants<&>Several of APT28’s malware samples<&>malware<&>Some of APT28’s more commonly used tools<&>Many samples across the SOURFACE/ CORESHELL, CHOPSTICK, and EVILTOSS malware families<|>data<&>data<|>
+Context Event 2
+contain<|>contain<|>their implants<&>Several of APT28’s malware samples<&>malware<&>Some of APT28’s more commonly used tools<&>Many samples across the SOURFACE/ CORESHELL, CHOPSTICK, and EVILTOSS malware families<|>counter- analysis capabilities<&>runtime checks<&>obfuscated strings<&>inclusion of unused machine instructions<|>
+Context Event 3
+disguise<|>disguise<|>their implants<&>Several of APT28’s malware samples<&>malware<&>Some of APT28’s more commonly used tools<&>Many samples across the SOURFACE/ CORESHELL, CHOPSTICK, and EVILTOSS malware families<|>its activity<|>
+Context Event 4
+are<|>be<|>their implants<&>Several of APT28’s malware samples<&>malware<&>Some of APT28’s more commonly used tools<&>Many samples across the SOURFACE/ CORESHELL, CHOPSTICK, and EVILTOSS malware families<|>the name SOURFACE<&>This downloader<&>the SOURFACE downloader<&>the SOURFACE downloader<&>SOURFACE<&>the SOURFACE downloader<&>SOURFACE<&>The SOURFACE downloader<&>SOURFACE<|>
+Context Event 5
+are<|>be<|>their implants<&>Several of APT28’s malware samples<&>malware<&>Some of APT28’s more commonly used tools<&>Many samples across the SOURFACE/ CORESHELL, CHOPSTICK, and EVILTOSS malware families<|>a modular family of implants that we call CHOPSTICK<&>a backdoor developed using a modular framework<&>One CHOPSTICK v1 variant<&>It<&>One variant of CHOPSTICK<|>
+Context Event 6
+are<|>be<|>their implants<&>Several of APT28’s malware samples<&>malware<&>Some of APT28’s more commonly used tools<&>Many samples across the SOURFACE/ CORESHELL, CHOPSTICK, and EVILTOSS malware families<|>This backdoor<&>This backdoor<&>a second-stage backdoor<&>its second stage backdoor EVILTOSS<&>a second stage backdoor<|>
+Candidate Event 1
+executed<|>execute<|>their implants<&>Several of APT28’s malware samples<&>malware<&>Some of APT28’s more commonly used tools<&>Many samples across the SOURFACE/ CORESHELL, CHOPSTICK, and EVILTOSS malware families<|>the malware (TinyZbot)<&>the malware<&>the malware<|>
+Candidate Event 2
+overwriting<|>overwrite<|>their implants<&>Several of APT28’s malware samples<&>malware<&>Some of APT28’s more commonly used tools<&>Many samples across the SOURFACE/ CORESHELL, CHOPSTICK, and EVILTOSS malware families<|>the Master Boot Record<|>
+Candidate Event 3
+obfuscate<|>obfuscate<|>their implants<&>Several of APT28’s malware samples<&>malware<&>Some of APT28’s more commonly used tools<&>Many samples across the SOURFACE/ CORESHELL, CHOPSTICK, and EVILTOSS malware families<|>strings that are decoded at runtime<|>
+Candidate Event 4
+uninstall<|>uninstall<|>their implants<&>Several of APT28’s malware samples<&>malware<&>Some of APT28’s more commonly used tools<&>Many samples across the SOURFACE/ CORESHELL, CHOPSTICK, and EVILTOSS malware families<|>The Gen 1 Driver<&>The Driver<&>The first generation of Hikit (referred to as “Gen 1”)<&>the Gen 1 system<|>
+Candidate Event 5
+embedded<|>embed<|>their implants<&>Several of APT28’s malware samples<&>malware<&>Some of APT28’s more commonly used tools<&>Many samples across the SOURFACE/ CORESHELL, CHOPSTICK, and EVILTOSS malware families<|>the Flash objects<|>in+Korean documents titled “List of the latest Japanese AV wind and how to use torrents.docx” (loose English translation)
+---
+Answer
+1
+Context Event 1
+contain<|>contain<|>their implants<&>Several of APT28’s malware samples<&>malware<&>Some of APT28’s more commonly used tools<&>Many samples across the SOURFACE/ CORESHELL, CHOPSTICK, and EVILTOSS malware families<|>counter- analysis capabilities<&>runtime checks<&>obfuscated strings<&>inclusion of unused machine instructions<|>
+Context Event 2
+identify<|>identify<|>counter- analysis capabilities<&>runtime checks<&>obfuscated strings<&>inclusion of unused machine instructions<|>an analysis environment<|>
+Context Event 3
+unpacked<|>unpack<|><|>counter- analysis capabilities<&>runtime checks<&>obfuscated strings<&>inclusion of unused machine instructions<|>
+Candidate Event 1
+generating<|>generate<|>counter- analysis capabilities<&>runtime checks<&>obfuscated strings<&>inclusion of unused machine instructions<|>a new thread (“HikitThreadFunc”) which will service any request coming from the new channel<|>
+Candidate Event 2
+slow<|>slow<|>counter- analysis capabilities<&>runtime checks<&>obfuscated strings<&>inclusion of unused machine instructions<|>analysis<|>
+Candidate Event 3
+sends<|>send<|>counter- analysis capabilities<&>runtime checks<&>obfuscated strings<&>inclusion of unused machine instructions<|>the pseudonymous account a link to a webpage or an e-mail containing an embedded remote image<|>
+Candidate Event 4
+disabled<|>disable<|>counter- analysis capabilities<&>runtime checks<&>obfuscated strings<&>inclusion of unused machine instructions<|>Code Integrity verification<|>
+Candidate Event 5
+spread<|>spread<|>counter- analysis capabilities<&>runtime checks<&>obfuscated strings<&>inclusion of unused machine instructions<|><|>
+---
+Answer
+4
+Context Event 1
+steal<|>steal<|>They<&>APT28<&>the threat group<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>They<&>They<|>data<&>data<|>
+Context Event 2
+uses<|>use<|>They<&>APT28<&>the threat group<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>They<&>They<|>spearphishing emails<&>its emails<|>
+Context Event 3
+crafts<|>craft<|>They<&>APT28<&>the threat group<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>They<&>They<|>spearphishing emails<&>its emails<|>
+Context Event 4
+used<|>use<|>They<&>APT28<&>the threat group<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>They<&>They<|>lures written in Georgian<|>
+Context Event 5
+obtain<|>obtain<|>They<&>APT28<&>the threat group<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>They<&>They<|>data<|>
+Context Event 6
+limiting<|>limit<|>They<&>APT28<&>the threat group<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>They<&>They<|>the MIA network security department’s abilities to detect the traffic<|>
+Context Event 7
+crafted<|>craft<|>They<&>APT28<&>the threat group<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>They<&>They<|>this document<|>
+Context Event 8
+used<|>use<|>They<&>APT28<&>the threat group<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>They<&>They<|>a lure document<&>a lure document<|>
+Context Event 9
+used<|>use<|>They<&>APT28<&>the threat group<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>They<&>They<|>a lure that contained a letter addressing a journalist by his first name and claiming to originate from a “Chief Coordinator” in Reason Magazine’s “Caucasian Issues Department” - a division that does not appear to exist<&>the decoy document<|>
+Context Event 10
+register<|>register<|>They<&>APT28<&>the threat group<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>They<&>They<|>at least two domains mimicking the domains of legitimate organizations in the Caucasus<&>One APT28 domain<&>the other<|>
+Context Event 11
+used<|>use<|>They<&>APT28<&>the threat group<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>They<&>They<|>a lure (Figure 3) about hostilities surrounding a Malaysia Airlines flight downed in Ukraine<|>
+Context Event 12
+registered<|>register<|>They<&>APT28<&>the threat group<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>They<&>They<|>domains similar to those of legitimate Eastern European news sites and governments<|>
+Context Event 13
+used<|>use<|>They<&>APT28<&>the threat group<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>They<&>They<|>one domain for command and control sessions (baltichost[.]org) that was themed after the Baltic Host exercises<|>
+Context Event 14
+used<|>use<|>They<&>APT28<&>the threat group<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>They<&>They<|>a lure that contained an apparent non-public listing of contact information for defense attachés in the “Ankara Military Attaché Corps (AMAC),”<|>
+Context Event 15
+registered<|>register<|>They<&>APT28<&>the threat group<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>They<&>They<|>a domain (smigroup- online.co[.]uk) that appeared to mimic that for the SMi Group<|>
+Context Event 16
+obfuscate<|>obfuscate<|>They<&>APT28<&>the threat group<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>They<&>They<|>their code<|>
+Context Event 17
+implement<|>implement<|>They<&>APT28<&>the threat group<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>They<&>They<|>counter-analysis techniques<|>
+Context Event 18
+employed<|>employ<|>They<&>APT28<&>the threat group<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>They<&>They<|>RSA encryption<|>
+Context Event 19
+uses<|>use<|>They<&>APT28<&>the threat group<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>They<&>They<|>a modular family of implants that we call CHOPSTICK<&>a backdoor developed using a modular framework<&>One CHOPSTICK v1 variant<&>It<&>One variant of CHOPSTICK<|>
+Context Event 20
+send<|>send<|>They<&>APT28<&>the threat group<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>They<&>They<|>spear phishing emails<|>
+Context Event 21
+gain<|>gain<|>They<&>APT28<&>the threat group<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>They<&>They<|>access to their targets<|>
+Candidate Event 1
+double encoded<|>double encode<|>They<&>APT28<&>the threat group<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>They<&>They<|>SQL injection payloads<&>Double encoding SQL injection payloads<|>
+Candidate Event 2
+zips<|>zip<|>They<&>APT28<&>the threat group<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>They<&>They<|>the contents of the win32.tmp folder<|>
+Candidate Event 3
+created<|>create<|>They<&>APT28<&>the threat group<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>They<&>They<|>a mutex called “PittyTiger”<|>
+Candidate Event 4
+run<|>run<|>They<&>APT28<&>the threat group<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>They<&>They<|>the bash script ~pr1.tmp<&>The bash script<|>
+Candidate Event 5
+steal<|>steal<|>They<&>APT28<&>the threat group<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>They<&>They<|>data<|>
+---
+Answer
+3
+Context Event 1
+establish<|>establish<|>malware<&>The backdoor<&>APT28’s backdoor<&>This backdoor<|>a connection to a Georgian MIA mail server<|>
+Context Event 2
+communicate<|>communicate<|>malware<&>The backdoor<&>APT28’s backdoor<&>This backdoor<|><|>
+Context Event 3
+sent<|>send<|>malware<&>The backdoor<&>APT28’s backdoor<&>This backdoor<|>an email message using a subject line related to driver’s licenses (in Georgian)<|>
+Context Event 4
+attached<|>attach<|>malware<&>The backdoor<&>APT28’s backdoor<&>This backdoor<|>a file containing system reconnaissance information<|>
+Context Event 5
+gain<|>gain<|>malware<&>The backdoor<&>APT28’s backdoor<&>This backdoor<|>system access<|>
+Context Event 6
+gain<|>gain<|>malware<&>The backdoor<&>APT28’s backdoor<&>This backdoor<|>system access<|>
+Context Event 7
+gain<|>gain<|>malware<&>The backdoor<&>APT28’s backdoor<&>This backdoor<|>system access<|>
+Candidate Event 1
+points<|>point<|>malware<&>The backdoor<&>APT28’s backdoor<&>This backdoor<|><|>
+Candidate Event 2
+serve<|>serve<|>malware<&>The backdoor<&>APT28’s backdoor<&>This backdoor<|><|>
+Candidate Event 3
+includes<|>include<|>malware<&>The backdoor<&>APT28’s backdoor<&>This backdoor<|>file transfer<|>
+Candidate Event 4
+gain<|>gain<|>malware<&>The backdoor<&>APT28’s backdoor<&>This backdoor<|>system access<|>
+Candidate Event 5
+located<|>locate<|>malware<&>The backdoor<&>APT28’s backdoor<&>This backdoor<|>An ASPX backdoor named Zh0uSh311<|>
+---
+Answer
+4
+Context Event 1
+installed<|>instal<|>a lure document<&>a lure document<|>a SOURFACE downloader<&>a SOURFACE backdoor<&>A SOURFACE sample<&>the SOURFACE downloader<|>
+Context Event 2
+installed<|>instal<|>a lure that contained a letter addressing a journalist by his first name and claiming to originate from a “Chief Coordinator” in Reason Magazine’s “Caucasian Issues Department” - a division that does not appear to exist<&>the decoy document<|>a SOURFACE downloader<&>a SOURFACE backdoor<&>A SOURFACE sample<&>the SOURFACE downloader<|>
+Candidate Event 1
+encoded<|>encode<|>a SOURFACE downloader<&>a SOURFACE backdoor<&>A SOURFACE sample<&>the SOURFACE downloader<|>Payload information<|>
+Candidate Event 2
+load<|>load<|>a SOURFACE downloader<&>a SOURFACE backdoor<&>A SOURFACE sample<&>the SOURFACE downloader<|>a remote JavaScript<|>into+the victim's browser
+Candidate Event 3
+gathers<|>gather<|>a SOURFACE downloader<&>a SOURFACE backdoor<&>A SOURFACE sample<&>the SOURFACE downloader<|>user name<|>
+Candidate Event 4
+intercepts<|>intercept<|>a SOURFACE downloader<&>a SOURFACE backdoor<&>A SOURFACE sample<&>the SOURFACE downloader<|>that event<|>
+Candidate Event 5
+employed<|>employ<|><|>a SOURFACE downloader<&>a SOURFACE backdoor<&>A SOURFACE sample<&>the SOURFACE downloader<|>
+---
+Answer
+4
+Context Event 1
+used<|>use<|>They<&>APT28<&>the threat group<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>They<&>They<|>a lure document<&>a lure document<|>
+Context Event 2
+installed<|>instal<|>a lure document<&>a lure document<|>a SOURFACE downloader<&>a SOURFACE backdoor<&>A SOURFACE sample<&>the SOURFACE downloader<|>
+Candidate Event 1
+issued<|>issue<|>a lure document<&>a lure document<|>new instructions<|>to+their botnet
+Candidate Event 2
+copy<|>copy<|>a lure document<&>a lure document<|>files<|>
+Candidate Event 3
+spear-phished<|>spear-phished<|>a lure document<&>a lure document<|>a set of target systems connected to the Internet through Chinese ISPs<|>
+Candidate Event 4
+doing<|>do<|>a lure document<&>a lure document<|>a DNS query for windowsupdate.microsoft.com<|>
+Candidate Event 5
+contained<|>contain<|>a lure document<&>a lure document<|>a listing of birthdays for members of a working group between the Georgian MOD and the U.S. defense contractor<|>
+---
+Answer
+3
+Context Event 1
+register<|>register<|>They<&>APT28<&>the threat group<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>They<&>They<|>at least two domains mimicking the domains of legitimate organizations in the Caucasus<&>One APT28 domain<&>the other<|>
+Context Event 2
+imitated<|>imitate<|>at least two domains mimicking the domains of legitimate organizations in the Caucasus<&>One APT28 domain<&>the other<|>a key Chechen-focused news website<|>
+Candidate Event 1
+has<|>have<|>at least two domains mimicking the domains of legitimate organizations in the Caucasus<&>One APT28 domain<&>the other<|>multiple communication capabilities available<|>
+Candidate Event 2
+bundled<|>bundle<|>at least two domains mimicking the domains of legitimate organizations in the Caucasus<&>One APT28 domain<&>the other<|>a malicious executable (dropper)<&>The executable<&>These droppers<&>288c91d6c0197e99b92c06496921bf2f<|>
+Candidate Event 3
+fingerprint<|>fingerprint<|>at least two domains mimicking the domains of legitimate organizations in the Caucasus<&>One APT28 domain<&>the other<|>the victim machine<|>
+Candidate Event 4
+target<|>target<|>at least two domains mimicking the domains of legitimate organizations in the Caucasus<&>One APT28 domain<&>the other<|>members of the Armenian military<|>
+Candidate Event 5
+checking<|>checking<|>at least two domains mimicking the domains of legitimate organizations in the Caucasus<&>One APT28 domain<&>the other<|><|>
+---
+Answer
+4
+Context Event 1
+are<|>be<|>their implants<&>Several of APT28’s malware samples<&>malware<&>Some of APT28’s more commonly used tools<&>Many samples across the SOURFACE/ CORESHELL, CHOPSTICK, and EVILTOSS malware families<|>This backdoor<&>This backdoor<&>a second-stage backdoor<&>its second stage backdoor EVILTOSS<&>a second stage backdoor<|>
+Context Event 2
+obtains<|>obtain<|>the name SOURFACE<&>This downloader<&>the SOURFACE downloader<&>the SOURFACE downloader<&>SOURFACE<&>the SOURFACE downloader<&>SOURFACE<&>The SOURFACE downloader<&>SOURFACE<|>This backdoor<&>This backdoor<&>a second-stage backdoor<&>its second stage backdoor EVILTOSS<&>a second stage backdoor<|>
+Candidate Event 1
+target<|>target<|>This backdoor<&>This backdoor<&>a second-stage backdoor<&>its second stage backdoor EVILTOSS<&>a second stage backdoor<|>the same entity<|>
+Candidate Event 2
+gathers<|>gather<|>This backdoor<&>This backdoor<&>a second-stage backdoor<&>its second stage backdoor EVILTOSS<&>a second stage backdoor<|>locale ID’s<|>
+Candidate Event 3
+sending<|>send<|>This backdoor<&>This backdoor<&>a second-stage backdoor<&>its second stage backdoor EVILTOSS<&>a second stage backdoor<|>messages<|>into+the established inter-process communication pipes
+Candidate Event 4
+create<|>create<|>This backdoor<&>This backdoor<&>a second-stage backdoor<&>its second stage backdoor EVILTOSS<&>a second stage backdoor<|>archive files containing the content they want to exfiltrate<|>
+Candidate Event 5
+delivered<|>deliver<|><|>This backdoor<&>This backdoor<&>a second-stage backdoor<&>its second stage backdoor EVILTOSS<&>a second stage backdoor<|>
+---
+Answer
+4
+Context Event 1
+includes<|>include<|>One of the latest samples of CORESHELL<&>A number of CORESHELL droppers<&>the future CORESHELL samples<&>CORESHELL<&>the CORESHELL backdoor<|>counter-reverse engineering tactics<|>
+Context Event 2
+conduct<|>conduct<|>One of the latest samples of CORESHELL<&>A number of CORESHELL droppers<&>the future CORESHELL samples<&>CORESHELL<&>the CORESHELL backdoor<|>runtime checks<|>
+Context Event 3
+determine<|>determine<|>One of the latest samples of CORESHELL<&>A number of CORESHELL droppers<&>the future CORESHELL samples<&>CORESHELL<&>the CORESHELL backdoor<|>if they are executing in an analysis environment<|>
+Context Event 4
+use<|>use<|>One of the latest samples of CORESHELL<&>A number of CORESHELL droppers<&>the future CORESHELL samples<&>CORESHELL<&>the CORESHELL backdoor<|>domains<|>
+Candidate Event 1
+schedules<|>schedule<|>One of the latest samples of CORESHELL<&>A number of CORESHELL droppers<&>the future CORESHELL samples<&>CORESHELL<&>the CORESHELL backdoor<|>the copy<|>
+Candidate Event 2
+connect<|>connect<|>One of the latest samples of CORESHELL<&>A number of CORESHELL droppers<&>the future CORESHELL samples<&>CORESHELL<&>the CORESHELL backdoor<|>remote servers<|>
+Candidate Event 3
+taking control<|>take control<|>One of the latest samples of CORESHELL<&>A number of CORESHELL droppers<&>the future CORESHELL samples<&>CORESHELL<&>the CORESHELL backdoor<|><|>
+Candidate Event 4
+execute<|>execute<|>One of the latest samples of CORESHELL<&>A number of CORESHELL droppers<&>the future CORESHELL samples<&>CORESHELL<&>the CORESHELL backdoor<|>the data<|>
+Candidate Event 5
+uses<|>use<|>One of the latest samples of CORESHELL<&>A number of CORESHELL droppers<&>the future CORESHELL samples<&>CORESHELL<&>the CORESHELL backdoor<|>two threads<&>The first thread<&>The second thread<|>
+---
+Answer
+4
+Context Event 1
+are<|>be<|>their implants<&>Several of APT28’s malware samples<&>malware<&>Some of APT28’s more commonly used tools<&>Many samples across the SOURFACE/ CORESHELL, CHOPSTICK, and EVILTOSS malware families<|>a modular family of implants that we call CHOPSTICK<&>a backdoor developed using a modular framework<&>One CHOPSTICK v1 variant<&>It<&>One variant of CHOPSTICK<|>
+Context Event 2
+uses<|>use<|>They<&>APT28<&>the threat group<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>APT28<&>They<&>They<|>a modular family of implants that we call CHOPSTICK<&>a backdoor developed using a modular framework<&>One CHOPSTICK v1 variant<&>It<&>One variant of CHOPSTICK<|>
+Context Event 3
+collecting<|>collect<|>a modular family of implants that we call CHOPSTICK<&>a backdoor developed using a modular framework<&>One CHOPSTICK v1 variant<&>It<&>One variant of CHOPSTICK<|>keystroke logs<|>
+Context Event 4
+collecting<|>collect<|>a modular family of implants that we call CHOPSTICK<&>a backdoor developed using a modular framework<&>One CHOPSTICK v1 variant<&>It<&>One variant of CHOPSTICK<|>Microsoft Office documents<|>
+Context Event 5
+collecting<|>collect<|>a modular family of implants that we call CHOPSTICK<&>a backdoor developed using a modular framework<&>One CHOPSTICK v1 variant<&>It<&>One variant of CHOPSTICK<|>PGP files<|>
+Candidate Event 1
+loads<|>load<|>a modular family of implants that we call CHOPSTICK<&>a backdoor developed using a modular framework<&>One CHOPSTICK v1 variant<&>It<&>One variant of CHOPSTICK<|>Stage 3<&>an encrypted version of Stage 3<&>this file<&>Stage 3<&>Stage 3<|>
+Candidate Event 2
+listing<|>list<|>a modular family of implants that we call CHOPSTICK<&>a backdoor developed using a modular framework<&>One CHOPSTICK v1 variant<&>It<&>One variant of CHOPSTICK<|>running processes<|>
+Candidate Event 3
+spoof<|>spoof<|>a modular family of implants that we call CHOPSTICK<&>a backdoor developed using a modular framework<&>One CHOPSTICK v1 variant<&>It<&>One variant of CHOPSTICK<|>the appearance of the above applications<|>
+Candidate Event 4
+access<|>access<|>a modular family of implants that we call CHOPSTICK<&>a backdoor developed using a modular framework<&>One CHOPSTICK v1 variant<&>It<&>One variant of CHOPSTICK<|>the victim machine<|>
+Candidate Event 5
+used<|>use<|>a modular family of implants that we call CHOPSTICK<&>a backdoor developed using a modular framework<&>One CHOPSTICK v1 variant<&>It<&>One variant of CHOPSTICK<|>one of four embedded sender email addresses (@mia.gov.ge)<|>
+---
+Answer
+0
+Context Event 1
+uses<|>use<|>One of the latest samples of CORESHELL<&>A number of CORESHELL droppers<&>the future CORESHELL samples<&>CORESHELL<&>the CORESHELL backdoor<|>two threads<&>The first thread<&>The second thread<|>
+Context Event 2
+sends<|>send<|>two threads<&>The first thread<&>The second thread<|>beacons that contain the process listing of the compromised host<|>
+Context Event 3
+downloading<|>download<|>two threads<&>The first thread<&>The second thread<|>stage two payloads<|>
+Candidate Event 1
+executing<|>execute<|>two threads<&>The first thread<&>The second thread<|>stage two payloads<|>
+Candidate Event 2
+stores<|>store<|>two threads<&>The first thread<&>The second thread<|>the encrypted message<|>
+Candidate Event 3
+adds<|>add<|>two threads<&>The first thread<&>The second thread<|>a registry key: HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run\<|>
+Candidate Event 4
+spreading<|>spreading<|>two threads<&>The first thread<&>The second thread<|><|>
+Candidate Event 5
+install<|>install<|>two threads<&>The first thread<&>The second thread<|>a TDI filter driver<|>
+---
+Answer
+0
+Context Event 1
+creates<|>create<|>CHOPSTICK<&>It<&>CHOPSTICK<&>CHOPSTICK<|>a thread<&>a thread<&>The thread<|>
+Context Event 2
+records<|>record<|>a thread<&>a thread<&>The thread<|>user activity on the host<|>
+Context Event 3
+capturing<|>capture<|>a thread<&>a thread<&>The thread<|>desktop screenshots<|>
+Context Event 4
+tracks<|>track<|>a thread<&>a thread<&>The thread<|>current window focus<|>
+Context Event 5
+collects<|>collect<|>a thread<&>a thread<&>The thread<|>keystrokes<|>
+Context Event 6
+scrapes<|>scrap<|>a thread<&>a thread<&>The thread<|>window contents (text, context menus, etc.)<|>
+Candidate Event 1
+writes<|>write<|>a thread<&>a thread<&>The thread<|>user activity log messages<|>to+the “check_mes_v5555” mailslot
+Candidate Event 2
+registered<|>register<|>a thread<&>a thread<&>The thread<|>a domain (smigroup- online.co[.]uk) that appeared to mimic that for the SMi Group<|>
+Candidate Event 3
+uses<|>use<|>a thread<&>a thread<&>The thread<|>a hash<|>
+Candidate Event 4
+encrypted<|>encrypt<|>a thread<&>a thread<&>The thread<|>The data<|>
+Candidate Event 5
+support<|>support<|>a thread<&>a thread<&>The thread<|>specifying a specific C2<|>
+---
+Answer
+2
+Context Event 1
+creates<|>create<|>CHOPSTICK<&>It<&>CHOPSTICK<&>CHOPSTICK<|>a hidden file that may be named %ALLUSERSPROFILE%\edg6EF885E2.tmp<&>an edg6EF885E2.tmp temporary file<&>the file contents of edg6EF885E2. tmp<&>the contents of edg6EF885E2.tmp<&>the file<&>a segment from edg6EF885E2.tmp<|>
+Context Event 2
+uploads<|>upload<|>CHOPSTICK<&>it<&>CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<|>a hidden file that may be named %ALLUSERSPROFILE%\edg6EF885E2.tmp<&>an edg6EF885E2.tmp temporary file<&>the file contents of edg6EF885E2. tmp<&>the contents of edg6EF885E2.tmp<&>the file<&>a segment from edg6EF885E2.tmp<|>
+Context Event 3
+deletes<|>delete<|>CHOPSTICK<&>it<&>CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<|>a hidden file that may be named %ALLUSERSPROFILE%\edg6EF885E2.tmp<&>an edg6EF885E2.tmp temporary file<&>the file contents of edg6EF885E2. tmp<&>the contents of edg6EF885E2.tmp<&>the file<&>a segment from edg6EF885E2.tmp<|>
+Context Event 4
+uploaded<|>upload<|>CHOPSTICK<&>it<&>CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<&>CHOPSTICK<|>a hidden file that may be named %ALLUSERSPROFILE%\edg6EF885E2.tmp<&>an edg6EF885E2.tmp temporary file<&>the file contents of edg6EF885E2. tmp<&>the contents of edg6EF885E2.tmp<&>the file<&>a segment from edg6EF885E2.tmp<|>
+Candidate Event 1
+include<|>include<|>a hidden file that may be named %ALLUSERSPROFILE%\edg6EF885E2.tmp<&>an edg6EF885E2.tmp temporary file<&>the file contents of edg6EF885E2. tmp<&>the contents of edg6EF885E2.tmp<&>the file<&>a segment from edg6EF885E2.tmp<|>HTTP and SMB communications<|>
+Candidate Event 2
+utilized<|>utilize<|>a hidden file that may be named %ALLUSERSPROFILE%\edg6EF885E2.tmp<&>an edg6EF885E2.tmp temporary file<&>the file contents of edg6EF885E2. tmp<&>the contents of edg6EF885E2.tmp<&>the file<&>a segment from edg6EF885E2.tmp<|>a kernel mode driver<|>
+Candidate Event 3
+uploading<|>upload<|>an HTTP POST request<|>a hidden file that may be named %ALLUSERSPROFILE%\edg6EF885E2.tmp<&>an edg6EF885E2.tmp temporary file<&>the file contents of edg6EF885E2. tmp<&>the contents of edg6EF885E2.tmp<&>the file<&>a segment from edg6EF885E2.tmp<|>
+Candidate Event 4
+executed<|>execute<|>a hidden file that may be named %ALLUSERSPROFILE%\edg6EF885E2.tmp<&>an edg6EF885E2.tmp temporary file<&>the file contents of edg6EF885E2. tmp<&>the contents of edg6EF885E2.tmp<&>the file<&>a segment from edg6EF885E2.tmp<|>slightly different infection routines depending on the security software installed on the target<|>
+Candidate Event 5
+pull<|>pull<|>a hidden file that may be named %ALLUSERSPROFILE%\edg6EF885E2.tmp<&>an edg6EF885E2.tmp temporary file<&>the file contents of edg6EF885E2. tmp<&>the contents of edg6EF885E2.tmp<&>the file<&>a segment from edg6EF885E2.tmp<|>specific survey information<|>
+---

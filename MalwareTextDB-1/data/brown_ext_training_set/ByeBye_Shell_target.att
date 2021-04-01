@@ -1,0 +1,36 @@
+All Places > Information Security > Blog > 2013 > August > 19 Information Security Posted by Claudio Guarnieri in Information Security on Aug 19 , 2013 2:10:45 PM Asia and South Asia are a theater for daily attacks and numerous ongoing espionage campaigns between neighboring countries , so many campaigns that it 's hard to keep count . 
+Recently I stumbled on yet another one , which appears to have been active since at least the beginning of the year , and seems mostly directed at Pakistani targets . 
+In this article we 're going to analyze the nature of the attacks , the functionality of the backdoor - here labelled as ByeBye Shell - and the quick interaction I had with the operators behind this campaign . 
+No exploit was used in any of the attacks we attribute to this campaign - the attackers probably just relied on social engineering the victim through well-crafted spearphishing emails . 
+The malware first appears to the victim as a .scr 
+file . 
+In some cases the attackers make use of the Left-to-Right Override Unicode character in order to twist the .exe 
+file extension into something more credible . 
+Once executed it drops and launches a batch script in a % Temp % subfolder with the following content : As you can see , it enforces some configuration in the registry in order to hide file extensions and not show hidden folders . 
+Subsequently the malware creates and launches a Cabinet Self-Extractor , which drops two additional executable files : one embedding either a PDF or a Microsoft Office Word document , the other being the actual backdoor . 
+These are the hashes of the original droppers I inspected during this analysis : The embedded documents all show content revolving around internal or foreign Pakistan politics - following are some examples of such documents : Let 's face it : at the point where the attackers obtain control over the target computer , not much sophistication is left in day-to-day targeted attacks . 
+PoisonIvy , Gh0st and custom backdoors are daily business for threat analysts and malware researchers , in most cases being tedious work with little technical challenge . 
+This campaign is no exception . 
+The main backdoor installed and executed on the victims ' systems appears to be a custom reverse shell with just a handful of features . 
+Due to a lack of public literature about this case , I decided to dub this family as ByeByeShell . 
+When disassembling the binary you can quickly understand the mechanics of the backdoor . 
+After some quick initialization , the backdoor XORs an embedded string with 0x9D to extract the IP address of the C & C server . 
+Subsequently it establishes a connection to it ( generally on port 80 ) and checks in with some basic information about the system . 
+As you can see , it reports the computer name , the user name , the IP address and MAC address of the network adapter . 
+The [ P130813 ] line appears to be a constant value , possibly a target identifier . 
+Interestingly , in a specific malware sample belonging to this campaign , the backdoor also appends the string `` INS and AfPak '' at the end of the message - note that , as defined by Wikipedia , `` AfPak ( or Af-Pak ) is a neologism used within US foreign policy circles to designate Afghanistan and Pakistan as a single theater of operations '' . 
+After the check-in message is sent , the malware enters a continuous loop in which it will keep silently waiting for commands from the open socket connection . 
+From now on , it expects some manual interaction from the attacker . 
+The supported commands are : shell , comd , sleep , quit , kill You can see the switch block in the following screenshots . 
+In the following screenshot you can see how the reverse shell is implemented : it just launches a cmd.exe and pipes stdin , stdout and stderr to the opened socket so that the operator can directly interact with the Windows prompt . 
+The samples are also signed with an invalid Microsoft Windows certificate , which can be used for further fingerprinting : In all the cases presented in this blog post , the backdoors tried to connect to the C & C located at 46.165.207.134 , which appears to be a dedicated server hosted by Leaseweb : At the time of writing , the server appears to still be online . 
+However port 80 , which the backdoors try to contact , appears to be available only sporadically . 
+In order to get some fun out of an overall straightforward analysis , I quickly hacked together a Python script that emulates a ByeBye backdoor - following is the code : As you can see , this script simply tries to emulate the basic functionality of ByeBye : it performs the initial check-in and waits for incoming messages from the operator . 
+Yes - since , as previously said , the C & C comes online only at times - I instructed the script to play an extremely loud alarm . 
+Props to my flatmate for waking me up whenever the alarm went off . 
+Surprisingly the operator responded few moments later my first attempt , although he quickly tried to terminate me probably noticing an unexpected origin : Unfortunately at that time I did n't have the script completed , therefore he noticed something odd and closed my connection . 
+I let a few days pass , completed the script and prepared a more credible scenario : a legitimate looking system connecting out of South Asia . 
+This time it took a bit longer to get some response from the operator , who simply tried to search for documents on the system : Sadly no further activity was observed . 
+This is yet another case of poorly skilled attackers managing to run successful espionage campaigns for extended periods of time . 
+This is probably one of the most basic incidents I encountered so far , but we can safely assume that the operators behind this campaign are successful enough to maintain the operations running for at least the last 6 months , possibly even more . 
+No clear indicator is available to make an informed estimate on what could be the origin of the attacks . 

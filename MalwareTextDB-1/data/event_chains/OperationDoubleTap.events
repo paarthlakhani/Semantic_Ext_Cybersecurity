@@ -1,0 +1,41 @@
+---
+Answer
+3
+Context Event 1
+execute<|>execute<|>The first dropped file, doc.exe<|>test.exe<&>The malware component, test.exe<&>the malware<|>
+Context Event 2
+uses<|>use<|>test.exe<&>The malware component, test.exe<&>the malware<|>the Windows command "cmd.exe" /C whoami”<|>
+Context Event 3
+creates<|>create<|>test.exe<&>The malware component, test.exe<&>the malware<|>persistence<|>
+Candidate Event 1
+retrieves<|>retrieve<|>test.exe<&>The malware component, test.exe<&>the malware<|>Domain info<|>
+Candidate Event 2
+conducted<|>conduct<|>test.exe<&>The malware component, test.exe<&>the malware<|>Data exfiltration<|>
+Candidate Event 3
+contains<|>contain<|>test.exe<&>The malware component, test.exe<&>the malware<|>the internal IP address<|>
+Candidate Event 4
+establishes<|>establish<|>test.exe<&>The malware component, test.exe<&>the malware<|>a SOCKS5 connection<|>to+192.157.198.103
+Candidate Event 5
+exfiltrated<|>exfiltrated<|>test.exe<&>The malware component, test.exe<&>the malware<|>privileged information<|>
+---
+Answer
+0
+Context Event 1
+sends<|>send<|>the malware<&>The malware<&>The malware<&>the malware<|>the SOCKS5 connection request "05 01 00"<|>
+Context Event 2
+verifies<|>verify<|>the malware<&>The malware<&>The malware<&>the malware<|>the server response starts with "05 00"<|>
+Context Event 3
+requests<|>request<|>the malware<&>The malware<&>The malware<&>the malware<|>a connection to 192.184.60.229 on TCP port 81<|>
+Context Event 4
+verifies<|>verify<|>the malware<&>The malware<&>The malware<&>the malware<|><|>
+Candidate Event 1
+expects<|>expect<|>the malware<&>The malware<&>The malware<&>the malware<|>a message containing at least three bytes from the server<|>
+Candidate Event 2
+installs<|>install<|>the malware<&>The malware<&>The malware<&>the malware<|>a 32-bit driver<|>on+a 32-bit version of Windows XP
+Candidate Event 3
+used<|>use<|>the malware<&>The malware<&>The malware<&>the malware<|>the domain aerospace2014[.]org<|>
+Candidate Event 4
+infected<|>infect<|>the malware<&>The malware<&>The malware<&>the malware<|>Every visitor of the compromised third party<|>
+Candidate Event 5
+considered<|>consider<|>the malware<&>The malware<&>The malware<&>the malware<|>SOAP traffic<&>benign traffic<|>
+---

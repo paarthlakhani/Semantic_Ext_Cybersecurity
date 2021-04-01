@@ -1,0 +1,296 @@
+---
+Answer
+3
+Context Event 1
+download<|>download<|>The spyware<&>It<&>the spyware<&>the malware<|>additional modules<&>a module<|>
+Context Event 2
+probes<|>probe<|>The spyware<&>It<&>the spyware<&>the malware<|>this folder<|>
+Context Event 3
+sends<|>send<|>The spyware<&>It<&>the spyware<&>the malware<|>the files<&>them<&>them<&>them<|>to+the C&C server
+Context Event 4
+overwrites<|>overwrite<|>The spyware<&>It<&>the spyware<&>the malware<|>the files<&>them<&>them<&>them<|>
+Context Event 5
+renames<|>rename<|>The spyware<&>It<&>the spyware<&>the malware<|>the files<&>them<&>them<&>them<|>
+Context Event 6
+deletes<|>delete<|>The spyware<&>It<&>the spyware<&>the malware<|>the files<&>them<&>them<&>them<|>
+Context Event 7
+frustrate<|>frustrate<|>The spyware<&>It<&>the spyware<&>the malware<|>forensic analysis<|>
+Candidate Event 1
+use<|>use<|>The spyware<&>It<&>the spyware<&>the malware<|>the certificates<&>fraudulently<|>
+Candidate Event 2
+obtain<|>obtain<|>The spyware<&>It<&>the spyware<&>the malware<|>Administrator privileges<|>
+Candidate Event 3
+find<|>find<|>The spyware<&>It<&>the spyware<&>the malware<|>e-mails related to "NATO", "Energy Dialogue within European Unition" and so on<|>
+Candidate Event 4
+employed<|>employ<|>The spyware<&>It<&>the spyware<&>the malware<|>myriad known anti-debugging and anti-analysis techniques<|>
+Candidate Event 5
+maintain<|>maintain<|>The spyware<&>It<&>the spyware<&>the malware<|>a list of where each of these implants are installed, as well as what port and key each is configured to use<|>
+---
+Answer
+0
+Context Event 1
+sends<|>send<|>The spyware<&>It<&>the spyware<&>the malware<|>the files<&>them<&>them<&>them<|>to+the C&C server
+Context Event 2
+overwrites<|>overwrite<|>The spyware<&>It<&>the spyware<&>the malware<|>the files<&>them<&>them<&>them<|>
+Context Event 3
+renames<|>rename<|>The spyware<&>It<&>the spyware<&>the malware<|>the files<&>them<&>them<&>them<|>
+Candidate Event 1
+deletes<|>delete<|>The spyware<&>It<&>the spyware<&>the malware<|>the files<&>them<&>them<&>them<|>
+Candidate Event 2
+hijack<|>hijack<|>the files<&>them<&>them<&>them<|>the communication channels<|>
+Candidate Event 3
+monitors<|>monitor<|>the files<&>them<&>them<&>them<|>its execution<|>
+Candidate Event 4
+ensured<|>ensure<|>the files<&>them<&>them<&>them<|>an Internet connection<|>
+Candidate Event 5
+contains<|>contain<|>the files<&>them<&>them<&>them<|>the Language ID of the system<|>
+---
+Answer
+3
+Context Event 1
+thwarted<|>thwart<|>the malware<&>it<&>FinSpy<&>The samples<&>it<&>the FinSpy samples used in Bahrain<&>the spyware<&>the spyware<&>a version of FinSpy<|>our attempts to attach debuggers<|>
+Context Event 2
+encrypts<|>encrypt<|>the malware<&>it<&>FinSpy<&>The samples<&>it<&>the FinSpy samples used in Bahrain<&>the spyware<&>the spyware<&>a version of FinSpy<|>data<&>it<&>data<&>files that match a certain naming convention<|>
+Context Event 3
+communicated<|>communicate<|>the malware<&>it<&>FinSpy<&>The samples<&>it<&>the FinSpy samples used in Bahrain<&>the spyware<&>the spyware<&>a version of FinSpy<|><|>
+Context Event 4
+connect<|>connect<|>the malware<&>it<&>FinSpy<&>The samples<&>it<&>the FinSpy samples used in Bahrain<&>the spyware<&>the spyware<&>a version of FinSpy<|><|>to+the Bahrain C&C server
+Context Event 5
+overwrite<|>overwrite<|>the malware<&>it<&>FinSpy<&>The samples<&>it<&>the FinSpy samples used in Bahrain<&>the spyware<&>the spyware<&>a version of FinSpy<|>the hard disk’s boot sector<|>
+Context Event 6
+modify<|>modify<|>the malware<&>it<&>FinSpy<&>The samples<&>it<&>the FinSpy samples used in Bahrain<&>the spyware<&>the spyware<&>a version of FinSpy<|>the boot process<|>
+Context Event 7
+loaded<|>load<|><|>the malware<&>it<&>FinSpy<&>The samples<&>it<&>the FinSpy samples used in Bahrain<&>the spyware<&>the spyware<&>a version of FinSpy<|>
+Context Event 8
+injects<|>inject<|>the malware<&>it<&>FinSpy<&>The samples<&>it<&>the FinSpy samples used in Bahrain<&>the spyware<&>the spyware<&>a version of FinSpy<|>the spyware<&>itself<|>into+OS processes
+Candidate Event 1
+disrupted<|>disrupt<|>the malware<&>it<&>FinSpy<&>The samples<&>it<&>the FinSpy samples used in Bahrain<&>the spyware<&>the spyware<&>a version of FinSpy<|>the cascaded high frequency gas centrifuges<|>
+Candidate Event 2
+exfiltrates<|>exfiltrates<|>the malware<&>it<&>FinSpy<&>The samples<&>it<&>the FinSpy samples used in Bahrain<&>the spyware<&>the spyware<&>a version of FinSpy<|><|>to+an online e-mail account
+Candidate Event 3
+registered<|>register<|>the malware<&>it<&>FinSpy<&>The samples<&>it<&>the FinSpy samples used in Bahrain<&>the spyware<&>the spyware<&>a version of FinSpy<|>only 6/55 detections by anti virus scanners, or a 10% detection rate<|>
+Candidate Event 4
+uses<|>use<|>the malware<&>it<&>FinSpy<&>The samples<&>it<&>the FinSpy samples used in Bahrain<&>the spyware<&>the spyware<&>a version of FinSpy<|>a protocol based on HTTP POST requests<|>
+Candidate Event 5
+scanned<|>scan<|>the malware<&>it<&>FinSpy<&>The samples<&>it<&>the FinSpy samples used in Bahrain<&>the spyware<&>the spyware<&>a version of FinSpy<|>some other targets<|>
+---
+Answer
+0
+Context Event 1
+involve<|>involve<|>The attacks we have documented<&>attacks<&>some at- tacks<&>the attacks<&>the attacks<&>the attacks<&>The attacks<|>the use of malicious links or e-mail attachments<|>
+Context Event 2
+obtain<|>obtain<|>The attacks we have documented<&>attacks<&>some at- tacks<&>the attacks<&>the attacks<&>the attacks<&>The attacks<|>information<|>
+Context Event 3
+using<|>use<|>The attacks we have documented<&>attacks<&>some at- tacks<&>the attacks<&>the attacks<&>the attacks<&>The attacks<|>a wide range of off-the-shelf spyware, as well as publicly available third-party services, like iplogger.org<|>
+Context Event 4
+use<|>use<|>The attacks we have documented<&>attacks<&>some at- tacks<&>the attacks<&>the attacks<&>the attacks<&>The attacks<|>so-called “lawful intercept” trojans<|>
+Context Event 5
+social engineering<|>social engineer<|>The attacks we have documented<&>attacks<&>some at- tacks<&>the attacks<&>the attacks<&>the attacks<&>The attacks<|><|>
+Context Event 6
+not well-detected<|>not well-detect<|><|>The attacks we have documented<&>attacks<&>some at- tacks<&>the attacks<&>the attacks<&>the attacks<&>The attacks<|>
+Context Event 7
+include<|>include<|>The attacks we have documented<&>attacks<&>some at- tacks<&>the attacks<&>the attacks<&>the attacks<&>The attacks<|>fake or ma- liciously packaged security tools; intriguing, or ideological, or movement-relevant content (e.g. lists of wanted persons)<|>
+Context Event 8
+include<|>include<|>The attacks we have documented<&>attacks<&>some at- tacks<&>the attacks<&>the attacks<&>the attacks<&>The attacks<|>spyware for ongoing monitoring<|>
+Candidate Event 1
+include<|>include<|>The attacks we have documented<&>attacks<&>some at- tacks<&>the attacks<&>the attacks<&>the attacks<&>The attacks<|>the use of “IP spy” links to deanonymize those who voice dissent<|>
+Candidate Event 2
+collect<|>collect<|>The attacks we have documented<&>attacks<&>some at- tacks<&>the attacks<&>the attacks<&>the attacks<&>The attacks<|>system information<|>
+Candidate Event 3
+used<|>use<|>The attacks we have documented<&>attacks<&>some at- tacks<&>the attacks<&>the attacks<&>the attacks<&>The attacks<|>botnet style operations<&>botnet style operations<|>
+Candidate Event 4
+communicated<|>communicate<|>The attacks we have documented<&>attacks<&>some at- tacks<&>the attacks<&>the attacks<&>the attacks<&>The attacks<|><|>
+Candidate Event 5
+taking<|>take<|>The attacks we have documented<&>attacks<&>some at- tacks<&>the attacks<&>the attacks<&>the attacks<&>The attacks<|>pictures<|>
+---
+Answer
+0
+Context Event 1
+used<|>use<|>the attackers<&>attackers<&>the attacker<&>The at- tacker<&>the at- tacker<&>The attacker<&>Attackers<&>the attacker<&>the attackers<&>they<&>an operator of FinSpy<|>cheap and readily available RATs<|>
+Context Event 2
+employed<|>employ<|>the attackers<&>attackers<&>the attacker<&>The at- tacker<&>the at- tacker<&>The attacker<&>Attackers<&>the attacker<&>the attackers<&>they<&>an operator of FinSpy<|>expensive and “government exclusive” malware<|>
+Context Event 3
+discover<|>discover<|>the attackers<&>attackers<&>the attacker<&>The at- tacker<&>the at- tacker<&>The attacker<&>Attackers<&>the attacker<&>the attackers<&>they<&>an operator of FinSpy<|>the IP address of a victim who is typically the opera- tor of a pseudonymous social media or e-mail account<|>
+Context Event 4
+sends<|>send<|>the attackers<&>attackers<&>the attacker<&>The at- tacker<&>the at- tacker<&>The attacker<&>Attackers<&>the attacker<&>the attackers<&>they<&>an operator of FinSpy<|>the pseudonymous account a link to a webpage or an e-mail containing an embedded remote image<|>
+Context Event 5
+sent<|>send<|>the attackers<&>attackers<&>the attacker<&>The at- tacker<&>the at- tacker<&>The attacker<&>Attackers<&>the attacker<&>the attackers<&>they<&>an operator of FinSpy<|>the e-mails<|>
+Context Event 6
+used<|>use<|>the attackers<&>attackers<&>the attacker<&>The at- tacker<&>the at- tacker<&>The attacker<&>Attackers<&>the attacker<&>the attackers<&>they<&>an operator of FinSpy<|>(1) accounts of promi- nent or trusted but jailed individuals like “Red Sky,” (2) fake personas (e.g., attractive women or fake job seekers when tar- geting a labor union), or (3) impersonations of legitimate ac- counts<|>
+Context Event 7
+seeds<|>seed<|>the attackers<&>attackers<&>the attacker<&>The at- tacker<&>the at- tacker<&>The attacker<&>Attackers<&>the attacker<&>the attackers<&>they<&>an operator of FinSpy<|>mal- ware<|>
+Context Event 8
+use<|>use<|>the attackers<&>attackers<&>the attacker<&>The at- tacker<&>the at- tacker<&>The attacker<&>Attackers<&>the attacker<&>the attackers<&>they<&>an operator of FinSpy<|>compromised ac- counts (including those of arrested individuals) or fake iden- tities masquerading as pro-opposition<|>
+Context Event 9
+used<|>use<|>the attackers<&>attackers<&>the attacker<&>The at- tacker<&>the at- tacker<&>The attacker<&>Attackers<&>the attacker<&>the attackers<&>they<&>an operator of FinSpy<|>a secondary password<|>
+Candidate Event 1
+obscure<|>obscure<|>the attackers<&>attackers<&>the attacker<&>The at- tacker<&>the at- tacker<&>The attacker<&>Attackers<&>the attacker<&>the attackers<&>they<&>an operator of FinSpy<|>the location of the C&C server (called the mas- ter)<|>
+Candidate Event 2
+distributed<|>distribute<|>the attackers<&>attackers<&>the attacker<&>The at- tacker<&>the at- tacker<&>The attacker<&>Attackers<&>the attacker<&>the attackers<&>they<&>an operator of FinSpy<|>This file<&>The file<&>This<|>
+Candidate Event 3
+drop<|>drop<|>the attackers<&>attackers<&>the attacker<&>The at- tacker<&>the at- tacker<&>The attacker<&>Attackers<&>the attacker<&>the attackers<&>they<&>an operator of FinSpy<|>a variant of an older DDoS tool known as KernelBot<&>three files<&>The KernelBot implants<&>a KernelBot variant<&>a KernelBot variant<|>
+Candidate Event 4
+write<|>write<|>the attackers<&>attackers<&>the attacker<&>The at- tacker<&>the at- tacker<&>The attacker<&>Attackers<&>the attacker<&>the attackers<&>they<&>an operator of FinSpy<|><|>into+registry
+Candidate Event 5
+ensuring<|>ensure<|>the attackers<&>attackers<&>the attacker<&>The at- tacker<&>the at- tacker<&>The attacker<&>Attackers<&>the attacker<&>the attackers<&>they<&>an operator of FinSpy<|>the malware is launched on system start-up<|>
+---
+Answer
+2
+Context Event 1
+download<|>download<|>The spyware<&>It<&>the spyware<&>the malware<|>additional modules<&>a module<|>
+Context Event 2
+encrypts<|>encrypt<|>additional modules<&>a module<|>data<&>it<&>data<&>files that match a certain naming convention<|>
+Candidate Event 1
+move<|>move<|>additional modules<&>a module<|><|>
+Candidate Event 2
+gathering<|>gather<|>additional modules<&>a module<|>the same system information as described in the “Installation” section<|>
+Candidate Event 3
+writes<|>write<|>additional modules<&>a module<|>data<&>it<&>data<&>files that match a certain naming convention<|>to+disk in a special folder
+Candidate Event 4
+is<|>be<|>additional modules<&>a module<|>the other half of the command and control channel<|>
+Candidate Event 5
+served up<|>serve up<|>additional modules<&>a module<|>the exploit at www.[REDACTED].com/Data/img/img.html<&>It<&>a zero-day exploit (CVE-2014-0322)<&>it<&>this exploit<|>
+---
+Answer
+1
+Context Event 1
+exfiltrate<|>exfiltrate<|><|>data<&>it<&>data<&>files that match a certain naming convention<|>back to+the C&C server
+Context Event 2
+encrypts<|>encrypt<|>additional modules<&>a module<|>data<&>it<&>data<&>files that match a certain naming convention<|>
+Context Event 3
+writes<|>write<|>additional modules<&>a module<|>data<&>it<&>data<&>files that match a certain naming convention<|>to+disk in a special folder
+Candidate Event 1
+be used<|>be used<|>data<&>it<&>data<&>files that match a certain naming convention<|>a post exploitation tool<&>itself<&>One sample<|>
+Candidate Event 2
+encrypts<|>encrypt<|>the malware<&>it<&>FinSpy<&>The samples<&>it<&>the FinSpy samples used in Bahrain<&>the spyware<&>the spyware<&>a version of FinSpy<|>data<&>it<&>data<&>files that match a certain naming convention<|>
+Candidate Event 3
+uploaded<|>upload<|>data<&>it<&>data<&>files that match a certain naming convention<|>periodically<&>Recordings<|>to+the attackers
+Candidate Event 4
+overwriting<|>overwrite<|>data<&>it<&>data<&>files that match a certain naming convention<|>them<|>
+Candidate Event 5
+vetted<|>vet<|>data<&>it<&>data<&>files that match a certain naming convention<|>New victim systems<|>
+---
+Answer
+3
+Context Event 1
+downloaded<|>download<|>a second stage<|>an OS-appropriate version of RCS<&>RCS<&>the spyware<&>spyware<&>the RCS sample sent to Ahmed<&>The RCS samples we examined<&>The RCS samples<|>
+Context Event 2
+install<|>install<|>the vectors<|>an OS-appropriate version of RCS<&>RCS<&>the spyware<&>spyware<&>the RCS sample sent to Ahmed<&>The RCS samples we examined<&>The RCS samples<|>
+Context Event 3
+installs<|>install<|>a .jar file<|>an OS-appropriate version of RCS<&>RCS<&>the spyware<&>spyware<&>the RCS sample sent to Ahmed<&>The RCS samples we examined<&>The RCS samples<|>
+Context Event 4
+installed<|>instal<|>these<|>an OS-appropriate version of RCS<&>RCS<&>the spyware<&>spyware<&>the RCS sample sent to Ahmed<&>The RCS samples we examined<&>The RCS samples<|>
+Context Event 5
+adds<|>add<|>an OS-appropriate version of RCS<&>RCS<&>the spyware<&>spyware<&>the RCS sample sent to Ahmed<&>The RCS samples we examined<&>The RCS samples<|>a Run registry key<|>
+Context Event 6
+propagate<|>propagate<|>an OS-appropriate version of RCS<&>RCS<&>the spyware<&>spyware<&>the RCS sample sent to Ahmed<&>The RCS samples we examined<&>The RCS samples<|><|>
+Candidate Event 1
+used<|>use<|>an OS-appropriate version of RCS<&>RCS<&>the spyware<&>spyware<&>the RCS sample sent to Ahmed<&>The RCS samples we examined<&>The RCS samples<|>the C2 protocol<&>the C2 protocol<|>
+Candidate Event 2
+write<|>write<|>an OS-appropriate version of RCS<&>RCS<&>the spyware<&>spyware<&>the RCS sample sent to Ahmed<&>The RCS samples we examined<&>The RCS samples<|><|>into+files
+Candidate Event 3
+copied<|>copy<|>an OS-appropriate version of RCS<&>RCS<&>the spyware<&>spyware<&>the RCS sample sent to Ahmed<&>The RCS samples we examined<&>The RCS samples<|>the valuable information<|>
+Candidate Event 4
+communicated<|>communicate<|>an OS-appropriate version of RCS<&>RCS<&>the spyware<&>spyware<&>the RCS sample sent to Ahmed<&>The RCS samples we examined<&>The RCS samples<|><|>
+Candidate Event 5
+started<|>start<|>an OS-appropriate version of RCS<&>RCS<&>the spyware<&>spyware<&>the RCS sample sent to Ahmed<&>The RCS samples we examined<&>The RCS samples<|>producing the following traffic<|>
+---
+Answer
+3
+Context Event 1
+communicated<|>communicate<|>The SpyNet sample<&>a sam- ple of SpyNet<&>This sample of SpyNet<&>an instance of SpyNet<|><|>
+Context Event 2
+downloaded<|>download<|>a second stage<&>a second stage<|>The SpyNet sample<&>a sam- ple of SpyNet<&>This sample of SpyNet<&>an instance of SpyNet<|>
+Context Event 3
+communicated<|>communicate<|>The SpyNet sample<&>a sam- ple of SpyNet<&>This sample of SpyNet<&>an instance of SpyNet<|><|>
+Candidate Event 1
+modify<|>modify<|>The SpyNet sample<&>a sam- ple of SpyNet<&>This sample of SpyNet<&>an instance of SpyNet<|>files that the host app can write to<|>
+Candidate Event 2
+upload<|>upload<|>The SpyNet sample<&>a sam- ple of SpyNet<&>This sample of SpyNet<&>an instance of SpyNet<|>several tools that are used for lateral movement<|>
+Candidate Event 3
+writes<|>write<|>The SpyNet sample<&>a sam- ple of SpyNet<&>This sample of SpyNet<&>an instance of SpyNet<|>an encrypted Visual Basic Script<&>it<&>This VBScript<&>The VBS<|>
+Candidate Event 4
+used<|>use<|>The SpyNet sample<&>a sam- ple of SpyNet<&>This sample of SpyNet<&>an instance of SpyNet<|>the C&C storge.myftp.org<|>
+Candidate Event 5
+hide<|>hide<|>The SpyNet sample<&>a sam- ple of SpyNet<&>This sample of SpyNet<&>an instance of SpyNet<|>services<|>
+---
+Answer
+2
+Context Event 1
+downloaded<|>download<|>The attack<|>an instance of SpyNet<&>an instance of SpyNet<&>the sample<&>instances of SpyNet<|>
+Context Event 2
+arrived<|>arrive<|>an instance of SpyNet<&>an instance of SpyNet<&>the sample<&>instances of SpyNet<|><|>
+Candidate Event 1
+registered<|>register<|>an instance of SpyNet<&>an instance of SpyNet<&>the sample<&>instances of SpyNet<|>only 6/55 detections by anti virus scanners, or a 10% detection rate<|>
+Candidate Event 2
+adapts<|>adapt<|>an instance of SpyNet<&>an instance of SpyNet<&>the sample<&>instances of SpyNet<|>its behavior<|>
+Candidate Event 3
+communicated<|>communicate<|>an instance of SpyNet<&>an instance of SpyNet<&>the sample<&>instances of SpyNet<|><|>
+Candidate Event 4
+performed<|>perform<|>an instance of SpyNet<&>an instance of SpyNet<&>the sample<&>instances of SpyNet<|>The RAT communication<|>
+Candidate Event 5
+limiting<|>limit<|>an instance of SpyNet<&>an instance of SpyNet<&>the sample<&>instances of SpyNet<|>the MIA network security department’s abilities to detect the traffic<|>
+---
+Answer
+2
+Context Event 1
+report<|>report<|>a piece of malware<&>an FS- BSpy sample<&>A sample of FSBSpy<&>FSBSpy samples on Virus- Total uploaded from these countries<|>system information<|>
+Context Event 2
+upload<|>upload<|>a piece of malware<&>an FS- BSpy sample<&>A sample of FSBSpy<&>FSBSpy samples on Virus- Total uploaded from these countries<|>screenshots<|>
+Context Event 3
+drop<|>drop<|>a piece of malware<&>an FS- BSpy sample<&>A sample of FSBSpy<&>FSBSpy samples on Virus- Total uploaded from these countries<|>more malware<|>
+Context Event 4
+contained<|>contain<|>a piece of malware<&>an FS- BSpy sample<&>A sample of FSBSpy<&>FSBSpy samples on Virus- Total uploaded from these countries<|>an Arabic-language bait document about Omani poetry<&>an Arabic-language bait document about Omani poetry<|>
+Context Event 5
+talked<|>talk<|>a piece of malware<&>an FS- BSpy sample<&>A sample of FSBSpy<&>FSBSpy samples on Virus- Total uploaded from these countries<|><|>
+Candidate Event 1
+used<|>use<|>a piece of malware<&>an FS- BSpy sample<&>A sample of FSBSpy<&>FSBSpy samples on Virus- Total uploaded from these countries<|>a lure document<&>a lure document<|>
+Candidate Event 2
+padded<|>pad<|>a piece of malware<&>an FS- BSpy sample<&>A sample of FSBSpy<&>FSBSpy samples on Virus- Total uploaded from these countries<|>an appropriately named image file<&>the image file<|>
+Candidate Event 3
+communicated<|>communicate<|>a piece of malware<&>an FS- BSpy sample<&>A sample of FSBSpy<&>FSBSpy samples on Virus- Total uploaded from these countries<|><|>
+Candidate Event 4
+hiding<|>hide<|>a piece of malware<&>an FS- BSpy sample<&>A sample of FSBSpy<&>FSBSpy samples on Virus- Total uploaded from these countries<|>system modules<|>
+Candidate Event 5
+used<|>use<|>a piece of malware<&>an FS- BSpy sample<&>A sample of FSBSpy<&>FSBSpy samples on Virus- Total uploaded from these countries<|>the named pipes<|>
+---
+Answer
+3
+Context Event 1
+including<|>include<|>the same ba- sic functionality<|>screen capture<|>
+Context Event 2
+including<|>include<|>the same ba- sic functionality<|>keylogging<|>
+Context Event 3
+including<|>include<|>the same ba- sic functionality<|>remote monitoring of<&>webcams<|>
+Context Event 4
+including<|>include<|>the same ba- sic functionality<|>remote monitoring of<&>microphones<|>
+Context Event 5
+including<|>include<|>the same ba- sic functionality<|>remote shell<|>
+Candidate Event 1
+stolen<|>steal<|>the same ba- sic functionality<|>IntelliForms information<|>
+Candidate Event 2
+is<|>be<|>the same ba- sic functionality<|>a backdoor developed in C#<|>
+Candidate Event 3
+ensuring<|>ensure<|>the same ba- sic functionality<|>the malware is launched on system start-up<|>
+Candidate Event 4
+including<|>include<|>the same ba- sic functionality<|>file exfiltration<|>
+Candidate Event 5
+enables<|>enable<|>the same ba- sic functionality<|>an attacker<&>an attacker<&>attackers<&>the attackers<&>The attacker<&>the attacker<&>an attacker<&>the attacker<&>the attacker<&>an attacker<&>an attacker over the network<&>a remote attacker<&>an attacker over the network<&>attackers over the network<|>
+---
+Answer
+2
+Context Event 1
+entices<|>entice<|>The third attack<|>tar- gets<|>
+Context Event 2
+infecting<|>infect<|>The third attack<|>victims<|>
+Candidate Event 1
+resend<|>resend<|>The third attack<|>the IP address of target(s)<&>them<|>to+the attacker
+Candidate Event 2
+is loaded<|>is loaded<|>The third attack<|>the driver<&>it<&>an embedded/encrypted kernel driver<&>The driv- er<|>
+Candidate Event 3
+using<|>use<|>The third attack<|>the C&C tn1.linkpc.net<|>
+Candidate Event 4
+removed<|>remove<|>The third attack<|>the remote network share<|>
+Candidate Event 5
+including<|>include<|>The third attack<|>remote monitoring of<&>microphones<|>
+---

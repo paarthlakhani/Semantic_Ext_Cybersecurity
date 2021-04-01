@@ -1,0 +1,68 @@
+In the past thirty days ( 30 ) an increase attack activity has been observed using the `` njRAT '' malware . 
+This remote access trojan ( RAT ) has capabilities to log keystrokes , access the victim's camera , steal credentials stored in browsers , open a reverse shell , upload/download files , view the victim 's desktop , perform process , file , and registry manipulations , and capabilities to let the attacker update , uninstall , restart , close , disconnect the RAT and rename its campaign ID . 
+Through the Command & Control ( CnC ) server software , the attacker has capabilities to create and configure the malware to spread through USB drives . 
+`` njRAT '' is currently leveraged by advanced threat actors in the Middle East , in particular when delivered via HTTP ( i.e . 
+Phishing attack or Drive-by download ) . 
+It has also been observed that attackers are delivering `` njRAT '' embedded in other applications ( i.e . 
+L517 v.0.994 Word List Generator ) , and compressed with EZIRIZ .NET 
+Reactor/.NET protector . 
+Obfuscation with the use of compressors or protectors is a technique used by attackers to prevent detection by network- based and host-based security defenses . 
+We have observed the majority of the attacks leveraging `` njRAT '' to be against organizations based in or focused on the Middle East region in the government , telecom , and energy sectors . 
+However as this is a publicly available tool it can be attained and deployed with ease regardless of location or industry . 
+During the analysis of `` njRAT '' , it was observed that some of the top antivirus vendors were not currently detecting some variants of this threat . 
+Some of the file names of carrier files or njRAT samples observed were : L517 v0.994.exe , RealUpgrade.exe , password hotmail cracker 2013.exe , elisa.exe , Crack All Games.exe , fresh cc Users are granted permission to copy and/or distribute this document in its original electronic form and print copies for personal use . 
+This document can not be modified or converted to any other electronic or machine-readable form in whole or in part without prior written approval of Fidelis Security Systems , Inc . 
+While we have done our best to ensure that the material found in this document is accurate , Fidelis Security Systems , Inc. makes no guarantee that the information contained herein is error free . 
+cvv all info 2013_txt.scr , spoolsv.exe , Hack Origin Game's.exe , Authorization form may - 2013 - 115444.scr , and Authorization.exe . 
+This document will provide detailed information about the njRAT 's functionality , file system indicators , network indicators , some of the campaign IDs observed , MD5 hashes , and domains . 
+It will also go over a detailed analysis of one of the malware variants . 
+The `` njRAT '' is a robust remote access trojan that once it reaches and infects the end-point , allows the attacker to have full control over the Victim system . 
+With this access , the attacker can start scanning other systems in the victim network to perform lateral movement . 
+We will start this section by performing analysis on the following `` njRAT '' sample : - Filename : Authorization.exe - MD5 : 1d3baedd747f6f9bf92c81eb9f63b34b The `` Authorization.exe '' njRAT malware was embedded and dropped in the victim system by the following file : `` Authorization form may - 2013 - 115444.scr '' ( MD5 : 63781fe1932e612c6c29225d25515111 ) . 
+The next section ( Indicators & Mitigation Strategies ) , will provide information about other variants of the malware obtained . 
+The `` Authorization.exe '' malware sample was created with version V.0.5 of this RAT . 
+The njRAT application was developed with VB.NET ( Visual Basic .NET 
+) . 
+When the malware connects to the Command & Control ( CnC ) server , the attacker is able to perform the following actions from the njRAT CnC server GUI : The following is a screenshot of the `` njRAT '' v.0.5 CnC GUI when a Victim system connects to it : The following `` About '' information was observed in this version ( 0.5.0 ) of the C2 server software found online : The following screenshot shows the Builder interface and default parameters : The `` Authorization.exe '' malware has keylogger functionality . 
+It stores the logged keystrokes in the following file : `` [ CWD ] \.tmp '' . 
+When the malware is dropped by the `` Authorization form may - 2013 - 115444.scr '' carrier file , the logged keystrokes are stored in : `` C : \Extracted\.tmp '' . 
+The IP address used by the Command & Control ( C2 ) node appears to be under an IP range owned by : `` Palestinian Internet Services , P. O . 
+BOX 5111 Gaza City , Palestine '' . 
+Variants of this malware have been observed by the community since at least 2012 . 
+The malware appears to be known by the community as : njRAT , MSIL/Bladabindi , and Backdoor.LV . 
+When the `` Authorization.exe '' malware is executed it : - Creates a copy of itself in the following locations : o % APPDATA % \msnco.exe o C : \Documents and Settings\ % USERNAME % \Start Menu\Programs\Startup\b6554e5bcfef391ff7a7ffda58092e10.exe - Tries to open the following file : [ CWD ] \ Authorization.exe.config - Entrenches in the system for persistence in the following registry locations : o HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Ru n\b6554e5bcfef391ff7a7ffda58092e10 o HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\R un\b6554e5bcfef391ff7a7ffda58092e10 Makes the following modifications to the registry to bypass the Windows Firewall : o Key : HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAcc ess\Parameters\FirewallPolicy\StandardProfile\AuthorizedApplic ations\List\ [ % APPDATA % ] \msnco.exe o Value : [ % APPDATA % ] \msnco.exe : * : Enabled : msnco.exe - Beacons to the following C2 node over TCP port 1177 : `` 217.66.231.245 '' The attacker tries to make sure the malware will run in the system by making the second copy into the above mentioned directory ( C : \Documents and Settings\ % USERNAME % \Start Menu\Programs\Startup\b6554e5bcfef391ff7a7ffda58092e10.exe ) o This causes the malware to execute again when the system is rebooted and re-starts the infection in the system . 
+Once the system is infected again , it will beacon to the C2 node . 
+The attacker tries to trick the user by using different icons for the malware . 
+Various samples were observed with MS Word and PDF icons . 
+The following is a screenshot of how the file will look like to a normal user : When the system is configured to show file extensions , the EXE extension is now revealed : When the malware connects to the C2 node , it will send information about the victim system , malware version , open windows , etc . 
+The following is the network traffic observed : The following table provides information of some of the fields observed in the network traffic : Information sent by the attacker on opened windows in the system could inform him/her of his malware being analyzed and allowed to connect to the C2 node . 
+For example , if Wireshark , Filemon , Regmon , and IDA are opened in the system when the analyst executes the malware , this will quickly let the attacker know that someone is performing reverse engineering of his malicious code . 
+The following WHOIS information was found related to the C2 node ( 217.66.231.245 ) : The `` Authorization.exe '' variant in this report appears to have been available at some point through the following URL : `` hxxp : //bongdacongdong.vn/authorization.exe '' . 
+The domain currently resolves to the following IP address : `` 112.213.89.144 '' , but at some point , the domain was associated with the following IP address : `` 31.170.165.90 '' . 
+The following information was found at Virustotal for `` 31.170.165.90 '' : - Passive DNS replication The following domains resolved to the given IP address : 2013-04-18 abilkart.p.ht 2013-04-22 alexis.id1945.com 2013-04-27 aw.nation-sim.net 2013-06-04 bongdacongdong.vn 2013-04-11 cs-viewer.ru 2013-06-26 dota2mail.hol.es 2013-05-07 download.mikroonur.tk 2013-06-27 express.vv.si 2013-04-16 forumteam.ru 2013-04-25 hs.nation-sim.net - Latest detected URLs Latest URLs hosted in this IP address detected by at least one URL scanner or malicious URL dataset : 3/38 2013-06-09 08:16:23 hxxp : //www.saldo-dobrado.id1945.com/sodexo2013/dobro.htm 2/38 2013-06-05 15:15:03 hxxp : //yandload.besaba.com/ 3/38 2013-06-04 02:08:18 hxxp : //bongdacongdong.vn/authorization.exe 4/38 2013-05-30 21:34:09 hxxp : //yandload.besaba.com/index.php ? f=rubinrot.exe 5/39 2013-05-24 17:36:28 hxxp : //indonesiancode.p.ht/ 2/36 2013-05-10 04:50:52 hxxp : //yandload.besaba.com/index.php % 3F 2/37 2013-04-30 05:06:15 hxxp : //yandload.besaba.com/index.php % 5B % 2A % 2Aqmark % 2A % 2A % 5D 2/37 2013-04-29 22:23:55 hxxp : //php6.besaba.com/install_flashplayer11x32_mssd_aih.exe 2/36 2013-04-27 09:14:33 hxxp : //aw.nation-sim.net/ips_kernel/sabre/Sabre/DAV/FS/option.php 1/36 2013-04-22 21:56:09 hxxp//alexis.id1945.com/ - First submission : 2013-05-28 at 00:12:24 File Name : Authorization.exe File Size : 110080 bytes MD5 : 1d3baedd747f6f9bf92c81eb9f63b34b SHA1 : 328c12ba3e6e99e63968b066455b7575e7ee862b PE Time : 0x5197ACE1 [ Sat May 18 16:31:29 2013 UTC ] PEID Sig : Microsoft Visual C # / Basic .NET 
+PEID Sig : Microsoft Visual Studio .NET 
+Sections ( 4 ) : Name Entropy MD5 .text 
+5.09 dd1ed0314f376bad9786d08b53796a67 .sdata 
+7.99 f92654e72b03e352178cad42896f9662 .rsrc 
+5.65 03e4e092203078e7957cd7c164240f3d .reloc 
+0.08 3f2e9251bcd17a2cb17e9202d1b100d3 The following processes were started when the `` Authorization.exe '' malware was executed : C : \Windows\System32\netsh.exe % APPDATA % \msnco.exe The following files were created when the `` Authorization.exe '' malware was executed : % APPDATA % \msnco.exe C : \WINDOWS\Prefetch\AUTHORIZATION.EXE-0AD199D6.pf C : \Documents and Settings\ % USERNAME % \Start Menu\Programs\Startup\b6554e5bcfef391ff7a7ffda58092e10.exe C : \WINDOWS\Prefetch\NETSH.EXE-085CFFDE.pf C : \WINDOWS\Prefetch\MSNCO.EXE-1616CBE8.pf [ CWD ] \.tmp ( or when created by the original dropper : `` C : \Extracted\.tmp '' ) The following registry values were set by the `` Authorization.exe '' malware when it was executed : HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run\b6554e5 bcfef391ff7a7ffda58092e10 [ Value : `` [ % APPDATA % ] \msnco.exe '' .. 
+] HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run\b6554e 5bcfef391ff7a7ffda58092e10 [ Value : `` [ % APPDATA % ] \msnco.exe '' .. 
+] HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Para meters\FirewallPolicy\StandardProfile\AuthorizedApplications\List\ [ % APPDATA % ] \msnco.exe [ Value : [ % APPDATA % ] \msnco.exe : * : Enabled : msnco.exe ] Indicators & Mitigation Strategies : The following three ( 3 ) tables will provide information about some of the malware observed to be njRAT itself or carrier files that once executed dropped njRAT in the victim system . 
+The first table contains the MD5 hash , size , domain , port , njRat version , and campaign ID . 
+The second table contains information about the file system artifacts ( kelogger file location , files created ) . 
+The third table contains information about registry key entrenchment for persistence . 
+Then , a list of network indicators will be provided to assist network defenders with the creation of signatures to be deployed to the sensors . 
+The following will present the network traffic observed when different options were selected from the `` njRAT '' C2 server GUI ( YELLOW = Data sent by C2 . 
+TURQUOISE = Response from Victim ) . 
+These artifacts will hopefully assist the research community with generation of network signatures to detect this threat : The following table provides information about some of the encoded data which is files and directories in the folder browsed . 
+In this case , an application called BinText ( bintext.exe ) was selected in the Attacker's Machine . 
+This application was executed in the Victim 's machine . 
+The Victim system responded with the name of the new window opened : The other portion of the traffic between the text `` TRUNCATED BY THE EXAMINER '' is the encoded executable ( BinText ) uploaded to the Victim system . 
+Basically , the response from the directory listing ( date , time , file size , and file name ) is sent back to the attacker in Base64 encoded format . 
+The encoded data sent by the Victim system was the keystrokes collected into the keylogger file in the Victim . 
+The data decodes to : Fidelis XPS sensors detect the `` njRAT '' malware variants and domains observed throughout this report . 
+Fidelis XPS sensors detected the NJC242.exe/njRAT malware as `` Trojan.Win32.Jorik.Agent.rkp '' . 
+Fidelis XPS is capable of detecting this threat regardless of delivery method employed by the Threat Actors responsible . 
+Fidelis XPS can detect and alert on executables such as the `` njRAT '' malware multiple layers deep inside of archive files ( i.e . 
+ZIP ) , or even XOR'ed inside of a weaponized MS Office document or Adobe PDF File . 
+The Fidelis Threat Research and Network Forensics and Incident Response teams will continue to actively monitor the ever-evolving threat landscape for the latest threats to our customers ' network security . 

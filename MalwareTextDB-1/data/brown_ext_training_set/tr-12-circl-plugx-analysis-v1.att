@@ -1,0 +1,63 @@
+This report is the analysis of a Remote Access Tool ( RAT ) which we call a variant of Plugx1 . 
+Plugx is an interesting piece of malware for several reasons : This work has been done with utmost care , following best practices in software reversing , forensic investigations and/or information gathering . 
+However , the work is only covering small aspects ( based on the indicators given , lacking full context ) and not an exhaustive analysis , and hence the report is as-is , not giving any guarantees of completeness or claiming absolute accuracy . 
+This work is provided for information only . 
+The document is classiﬁed as TLP : WHITE , CIRCL authorizes everyone to share this analysis report as-is without modiﬁcation . 
+The analyzed malicious software is an exhaustive Remote Access Tool ( RAT ) that defeats several protection methods of modern Windows operating systems , including execution of signed code and defeating UAC in Windows 7 . 
+It comes with a multitude of functionalities that are well implemented . 
+The analysis has been done using a mixed-approach of dynamic analysis and static analysis in order to overcome some of the obfuscation and encryptions used by the malware . 
+Some of the techniques might have also an impact on the interpretation of the malware . 
+Unfortunately , when we started this investigation , the IP address is no longer accepting connections on the given ports when tested on 2013-03-26 . 
+An interaction following the protocol of this malware is therefore no longer possible . 
+Sample A is a self-extracting archive which contains three ﬁles , Sample B , Sample C and Sample D. It is assumed that Sample A is a part of another attack vector , like PDF or Oﬃce document attacks where the user just opens a crafted document which exploits the document reader , drops and opens both a readable document and a malicious ﬁle like Sample A. Executing the self-extracting archive extracts the ﬁles and runs mcvsmap.exe ( Sample B ) . 
+Sample B is a valid signed ﬁle that the author of the malware took from a software bundle from McAfee . 
+Sample B , when executed , attempts to load a ﬁle McUtil.DLL from the same directory , which usually is another component of McAfee . 
+The malware author instead bundled the valid McAfee ﬁle Sample B with a custom DLL ( Sample C ) . 
+Since the ﬁle will be loaded without hesitation ( there are no protection mechanisms implemented ; neither does McAfee check if the imported ﬁle meets any conditions nor is any protection implemented for loading unsigned libraries in signed code ) , the signed Sample B jumps into the beginning of the code section of Sample C ( via Push/Return ) : The code retrieves the ﬁlename of itself ( line 3 ) , which is McUtil.DLL , and appends .PPT 
+( line 4 ) . 
+A handle to the ﬁlename McUtil.DLL.PPT is created in line 5 . 
+In line 12 an exectuable memory region is created , which is ﬁlled with the content of the ﬁle McUtil.DLL.PPT ( line 13 ) . 
+After closing the handle to the ﬁle ( line 15 ) , the memory region is called ( line 16 ) . 
+The next screenshot shows that the memory contains only pure code without any overhead like MZ/PE headers . 
+The entropy of this ﬁle is 7.997904 bits per byte : The code , when executed , reveals the ﬁrst hint about what we found : It decompresses and decrypts itself , using the Microsoft API call RtlDecompressBuﬀer and the custom decryption routine : The decrypted and decompressed ﬁle is not written onto disk , it always remains in memory . 
+Sample E is the extracted version of this memory segment . 
+At this point it can be mentioned that neither the encrypted Sample D nor the decrypted memory segment Sample E are detected by Virus scanners . 
+After some initialisation work like adjusting tokens ( SeDebugPrivilege , SeTcbPrivileg6 , to act as part of the operating system ) , a new process is started , the original svchost.exe from Microsoft , and the code from Sample E is injected into the memory of that process . 
+In a next step , svchost.exe is instructed to execute the original msiexec.exe from Microsoft , where also memory is injected like it has been done for svchost.exe . 
+Special conditions apply when run under Window 7 , which is protected by User Account Control ( UAC ) . 
+UAC is supposed to protect the user better from running malware by requesting the administator for approval before running a potentially dangerous application . 
+In the environment of Windows 7 , the malware drops temporarily ﬁle Sample F , which it uses to evade or defeat the UAC mechanism . 
+After killing the parent processes , only two processes are left : svchost and msiexec . 
+Both are veriﬁed binaries , none of the includes a malicious DLL . 
+Nevertheless , they both contain the malicious code . 
+At this point in time the malware is already talking to the C & C , no user interaction was required , all standard security mechanisms were defeated . 
+The analysis of Sample B revealed the commands as shown in the table below : Table 1 : Implemented commands XPlugOption implements commands to lock the workstation , shut it down or reboot it . 
+In addition , XPlugOption can create a thread that calls MessageBoxW ( ) in order to present a message box to the user . 
+XPlugDisk is used to enumerate connected disk drives and can be used to ﬁnd and manipulate ﬁles and directories . 
+In addition , XPlugDisk can be used to create a process , optionally on a hidden Windows desktop with the name `` HH '' , as the code below illustrates : XPlugScreen is not only taking screenshots , it is also implementing remote desktop capabilities . 
+It is able to capture the screen ( internal command : ScreenT1 ) and can send mouse and keyboard events ( internal command : ScreenT2 ) . 
+XPlugProcess implements three commands and is able to enumerate , create and kill processes . 
+In the module XPlugService commands are available related to Windows services . 
+Code is implemented to query service conﬁgurations , change service conﬁguration , start , control and delete services . 
+A remote shell for the attacker is created in the module XPlugShell , by creating an asynchronous set of pipes ( \pipe\a and \pipe\b ) for cmd.exe and the console attached to it ( AttachConsole ( ) ) . 
+cmd.exe /Q is executed in the module XPlugTelnet in order to start a telnet server on the attacked machine . 
+XPlugRegedit implements a set of commands to process the Windows registry . 
+It is able to enumerate , create , delete and copy keys . 
+It is also able to enumerate , set , delete and get values from the registry . 
+XPlugNethood is the module to enumerate network resources like network shares . 
+XPlugPortMap indicates that it performs some port mapping , however , the code is not under- stood , yet . 
+XPlugSQL implements three functions to query SQL servers : a function to get data source information , a function to get the driver description and a function to execute SQL statements . 
+XPlugNetstat gets the TCP and UDP connection table and is able to set TCP table entries . 
+The keylogger implemented in XPlugKeyLogger catches Window titles , date , time and logs entered keys into the ﬁle It has the format following the example below : This function is called almost everywhere when the author expects that a functions returns an error , at 1036 places . 
+This is obviously done to ensure code quality . 
+Example log ﬁle entries from ﬁle In addition an exception ﬁlter is installed to fetch the circumstances of otherwise not caught errors : The three ﬁles Sample B , C and D are copied into the directory respectively in After that , a new registry entry is set : which calls mcvsmap.exe ( Sample B ) after login . 
+Another option is the installation as a service in The key `` Imagepath '' calls the same binary mcvsmap.exe ( Sample B ) . 
+The attacked computer uses TCP and UDP to connect to port 443 on help.yahoo-upgrade.com ( 122.199.194.197 ) . 
+Unfortunately , the machine at that IP address does n't seem to reply to our requests anymore on 2013-03-26 . 
+The Passive DNS showed some other associated domains and hostnames with this IP address : It 's highly probable that theses hostnames were also used for other campaigns . 
+You might use these as additional indicators for the detection of potential infections . 
+The IP address is located in the ASN 17877 and the ISP is not a known bulletproof hoster as you can see on its historical7 BGP ranking evolution . 
+A version string can be found in this binary : This could mean PlugX , version 7.0 codename fking , build for mcvsmap . 
+References can be found on the internet for previous versions of this malware family : This section summarizes the known indicators of compromise . 
+The list might not be exhaustive , but the existence of any or all of the following indicators might help to discover an infection . 
+( where $ PID is the process ID of the active malicious process ) • Static ﬁles ( dropped ﬁles ) – update.exe – mcvsmap.exe – McUtil.DLL – McUtil.DLL.PPT – UAC.TMP Files and/or directories might be hidden and carry the system ﬂag • WHITE PAPER : PLUG X - PAYLOAD EXTRACTION – http : //www.contextis.com/files/PlugX_-_Payload_Extraction_March_2013_1 . 

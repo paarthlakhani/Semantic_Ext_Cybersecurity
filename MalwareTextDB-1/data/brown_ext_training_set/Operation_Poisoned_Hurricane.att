@@ -1,0 +1,69 @@
+Introduction Our worldwide sensor network provides researchers at FireEye Labs with unique opportunities to detect innovative tactics employed by malicious actors and protects our clients from these tactics . 
+We recently uncovered a coordinated campaign targeting Internet infrastructure providers , a media organization , a financial services company , and an Asian government organization . 
+The actor responsible for this campaign utilized legitimate digital certificates to sign their tools and employed innovative techniques to cloak their command and control traffic . 
+Hurricane Electric Redirection In March of 2014 , we detected Kaba ( aka PlugX or SOGU ) callback traffic to legitimate domains and IP addresses . 
+Our initial conclusion was that this traffic was the result of malicious actors 'sleeping ' their implants , by pointing their command and control domains at legitimate IP addresses . 
+As this is a popular technique , we did not think much of this traffic at the time . 
+Further analysis revealed that the HTTP headers of the traffic in question contained a Host : entry for legitimate domains . 
+As we have previously observed malware families that forge their HTTP headers to include legitimate domains in callback traffic , we concluded that the malware in this case was configured in the same way . 
+An example of the observed traffic is as follows : POST /C542BB084F927229348B2A34 HTTP/1.1 Accept : */* CG100 : 0 CG103 : 0 CG107 : 61456 CG108 : 1 User-Agent : Mozilla/4.0 ( compatible ; MSIE 9.0 ; Windows NT 6.1 ; SLCC2 ; .NET 
+CLR 2.0.50727 ; .NET 
+CLR 3.5.30729 ; .NET 
+CLR 3.0.30729 ; Media Center PC 6.0 ; .NET4.0C 
+) Host : www.adobe.com Content-Length : 0 Cache-Control : no-cache As we continued to see this odd traffic throughout the summer we began a search for malware samples responsible for this behavior . 
+Via this research , we found a malware sample that we believe was responsible for at least some of the strange traffic that we had observed . 
+The identified sample had the following properties : MD5 : 52d2d1ab9b84303a585fb81e927b9e01 Size : 180296 Compile Time : 2013-10-15 05:17:37 Import Hash : b29eb78c7ec3f0e89bdd79e3f027c029 .rdata 
+: d7b6e412ba892e9751f845432625bbb0 .text 
+: ed0dd6825e3536d878f39009a7777edc .data 
+: 1bc25d2f0f3123bedea254ea7446dd50 .rsrc 
+: 91484aa628cc64dc8eba867a8493c859 .reloc 
+: f1df8fa77b5abb94563d5d97e5ccb8e2 RT_VERSION : 9dd9b7c184069135c23560f8fbaa829adc7af6d2047cf5742b5a1e7c5c923cb9 This sample was signed with a legitimate digital certificate from the 'Police Mutual Aid Association ' . 
+This certificate has a serial number of '06 55 69 a3 e2 61 40 91 28 a4 0a ff a9 0d 6d 10 ' . 
+Analysis of this Kaba sample revealed that it was configured to directly connect to both www.adobe.com and update.adobe.com . 
+Obviously , this configuration does not make a lot of sense , as the actor would not be able to control their implants from anywhere on the Internet since they did not have direct control over these domains – unless the attackers were able to re-route traffic destined for these domains from specific victims . 
+Indeed , further analysis of this Kaba variant revealed that it was also configured to use specific DNS resolvers . 
+This sample was configured to resolve DNS lookups via Hurricane Electric 's nameservers of 216.218.130.2 , 216.218.131.2 , 216.218.132.2 and 216.66.1.2 . 
+We found this interesting , so we investigated how these Hurricane Electric 's nameservers were configured . 
+Subsequently , we found that anyone could register for a free account with Hurricane Electric 's hosted DNS service . 
+Via this service , anyone with an account was able to register a zone and create A records for the registered zone and point those A records to any IP address they so desired . 
+The dangerous aspect of this service is that anyone was able to hijack legitimate domains such as adobe.com . 
+Although these nameservers are not recursors and were not designed to be queried directly by end users , they were returning results if queried directly for domains that were configured via Hurricane Electrics public DNS service . 
+Furthermore , Hurricane Electric did not check if zones created by their users were already been registered or are otherwise legitimately owned by other parties . 
+As we continued this research , we identified 21 legitimate fully qualified domain names that had been hijacked via this technique by at least one APT actor . 
+In addition to the adobe.com domain mentioned above , another one of the poisoned domains is www.outlook.com . 
+A lookup of this domain via Google's DNS resolvers returns expected results : A quick lookup of these addresses reveal that Microsoft owns them : However , as recently as August 4 , 2014 a lookup of the same www.outlook.com domain via Hurricane Electric 's resolvers returned entirely different results [ 1 ] : Passive DNS research on the 59.125.42.167 IP address revealed that multiple APT actors have previously used this IP address . 
+Additional researched uncovered more Kaba samples that were configured to leverage Hurricane Electric's public DNS resolvers . 
+Another sample has the following properties : This sample is signed with a recently expired digital certificate from 'MOCOMSYS INC ' . 
+This certificate has a serial number of '03 e5 a0 10 b0 5c 92 87 f8 23 c2 58 5f 54 7b 80 ' . 
+This sample used Hurricane Electric 's public DNS resolvers to route traffic to the hijacked domains of www.adobe.com and update.adobe.com . 
+We also noted that this sample was configured to connect directly to 59.125.42.168 – one IP address away from the IP that received traffic from the hijacked www.outlook.com domain . 
+Passive DNS research revealed that this IP hosted the same set of known APT domains listed above : While this problem does not directly impact users of www.adobe.com , www.outlook.com , or users of the other affected domains , it should not be dismissed as inconsequential . 
+Actors that adopt this tactic and obfuscate the destination of their traffic through localized DNS hijacks can significantly complicate the job of network defenders . 
+Via our sensor network , we observed the actor responsible for this activity conducting a focused campaign . 
+We observed this actor target : Google Code Command and Control Furthermore , we also discovered this same actor conducting a parallel campaign that leveraged Google Code for command and control . 
+On August 1 , 2014 we observed a malicious self-extracting executable ( aka sfxrar ) file downloaded from 211.125.81.203 . 
+This file had the following properties : A valid certificate from 'QTI INTERNATIONAL INC ' was used to sign this sfxrar . 
+This certificate had a serial number of '2e df b9 fd cf a0 0c cb 5a b0 09 ee 3a db 97 b9 ' . 
+The sfxrar contained the following files : Setup.exe is a legitimate executable from Kaspersky used to load the Kaba ( aka PlugX ) files – msi.dll and msi.dll.dat . 
+These Kaba files are configured to connect to Google Code – specifically code.google.com/p/udom/ . 
+On August 1 , this Google Code project contained the encoded command '' DZKSGAAALLBACDCDCDOCBDCDCDOCCDADIDOCBDADDZJS '' . 
+[ 2 ] These Kaba files are configured to connect to Google Code – specifically code.google.com/p/udom/ . 
+On August 1 , this Google Code project contained the encoded command '' DZKSGAAALLBACDCDCDOCBDCDCDOCCDADIDOCBDADDZJS '' . 
+The command 'DZKSGAAALLBACDCDCDOCBDCDCDOCCDADIDOCBDADDZJS ' decodes to 222.122.208.10 . 
+In a live environment , the Kaba implant would then connect to this IP address via UDP . 
+Further analysis of project at code.google.com/p/udom/ revealed the project owner , 0x916ftb691u , created a number of other projects . 
+We decoded the commands hosted at these linked projects and found that they issued the following decoded commands : It is likely that other yet to be discovered Kaba variants are configured to connect to these related Google Code projects and then redirect to this list of IP addresses . 
+Passive DNS analysis of these IP addresses revealed connections to the following known malicious infrastructure : Relationships Between Campaigns As mentioned above the Kaba variant eae0391e92a913e757ac78b14a6f079f shared a common import hash of f749528b1db6fe5aee61970813c7bc18 with many of the samples listed in this post . 
+This samples was to use Hurricane Electric 's nameservers as well as connect directly to the IP address 59.125.42.168 . 
+Note that we identified the same C2 IP 59.125.42.168 via our analysis of the malicious Google Code projects . 
+Specifically , the Google Project at code.google.com/p/tempzz/ , which is linked to the project at code.google.com/p/udom/ , issued an encoded command that decoded to 59.125.42.168 . 
+We also identified another related Kaba variant that connected to code.google.com/p/updata-server . 
+This variant had the following properties : This sample was signed with a valid digital certificate from 'PIXELPLUS CO. , LTD ' and had a serial number of '0f e7 df 6c 4b 9a 33 b8 3d 04 e2 3e 98 a7 7c ce ' . 
+In addition to sharing the same Import hash of f749528b1db6fe5aee61970813c7bc18 seen in other samples listed throughout this post , 50af349c69ae4dec74bc41c581b82459 contained a RT_VERSION resource of 9dd9b7c184069135c23560f8fbaa829adc7af6d2047cf5742b5a1e7c5c923cb9 . 
+This same RT_VERSION was used in a number of other related samples including : Conclusion These coordinated campaigns demonstrate that APT actors are determined to continue operations . 
+As computer network defenders increase their capabilities to identify and block these campaigns by deploying more advanced detection technologies , threat actors will continue to adopt creative evasion techniques . 
+We observed the following evasion techniques in these campaigns : While none of these techniques are necessarily new , in combination , they are certainly both creative and have been observed to be effective . 
+Although the resultant C2 traffic can be successfully detected and tracked , the fact that the malware appears to beacon to legitimate domains may lull defenders into a false sense of security . 
+Network defenders should continue to study the evolution of advanced threat actors , as these adversaries will continue to evolve in pursuit of their designated objectives . 
+This entry was posted in Targeted Attack , Threat Research and tagged advanced attack , APT , evasion techniques , kana , plugx by Ned Moran , Joshua Homan and Mike Scott . 
+Bookmark the permalink . 

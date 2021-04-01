@@ -1,0 +1,89 @@
+Maudi is a series of small malwares that share similar configuration and behaviour . 
+The naming of this family has not been very established , but some samples are detected by some vendors as Maudi or PoisonIvy . 
+This is partly accurate as Maudi trojans in almost all cases install the well known PoisonIvy remote access trojan . 
+These malwares are not particularly new - they have been in circulation for a long time , probably going back to at least 2009 . 
+Still , they provide a backdrop to other attacks that is interesting . 
+The malware itself is not very complex . 
+These are small installers that create two files – one library ( typically called msacm32.drv , ntshrui.dll or wdmaud.drv ) in the Windows folder , and a raw PoisonIvy shellcode blob called user.dat , user.db , temp.db or something along those lines . 
+The installer then spawns explorer.exe , which then automatically loads the malicious library through a mechanism called DLL hijacking aka DLL preloading . 
+There are innocent libraries with the same names in the Windows System folder , but since the malicious libraries are placed in the Windows folder , they sneak in the queue and Explorer loads them first . 
+The malicious library then reads and directly calls the PoisonIvy code in user.dat , which establishes an encrypted communication with the configured C & C server . 
+When communication is established , the attacker has unauthorized access to the computer . 
+PoisonIvy code blobs are preconfigured in the PoisonIvy builder program to contain information about which Command & Control server to contact , which port to establish connection on , and various other parameters . 
+The Maudi PoisonIvy droppers contain their own small xor-encoded configuration block which overrides the default settings stored in the PoisonIvy blob . 
+This usually contains the name of the C & C server , port and what corresponds to the PoisonIvy profile ID . 
+Example Maudi configuration : Profile ID : xfish C & C : 171088046.gnway.org port : 0x0D84 = 3460 The ID xfish is used in many of these malwares and may be a default value , but there are many others in use . 
+PoisonIvy uses the Camellia 256-bit block cipher for its encrypted communication . 
+The password for this communication is usually hardcoded in the malware itself ; the default value used by the builder is `` admin '' . 
+The passwords used by Maudi droppers vary . 
+Sometimes the default value is used , other times the password is set to longer strings . 
+There seems to be an affinity for passwords of length 11 ( 0x0b ) . 
+A few are shown below . 
+The interesting bit with these trojans is that practically all of them are digitally signed using self-made test certficates . 
+These certificates vary somewhat , but most contain the recognizable string `` WWW.CeleWare.NET '' or '' WWW.AeleWare.NET '' in their Organizational Unit ( OU ) section . 
+The CeleWare strings are default values left by the free code signing tool CeleSign.exe from Yonsm.NET . 
+Though the tool itself seems innocent enough , many files signed by it are malicious . 
+There were a number of different such certificates , and it may be that the varying certificates denote different campaigns , projects or other contexts – for example , all samples we have seen signed `` DataBase @ Hotmail.com '' are droppers that install Maudi components signed `` MogolSoft @ Hotmail.com '' or `` SoftSign @ HotMail.com '' . 
+Though by far most of these malwares use test certificates , not all follow this pattern . 
+A few are not signed at all , and in two cases we have seen the use of a stolen certificate . 
+The certificate in question belongs to YNK Japan Inc . 
+This is the configuration block from one of the YNK-signed Maudi samples . 
+C & C is p.hannmaill.net , port is 3460 ( 0xD84 ) , and tag is xfish . 
+These two trojans are configured to connect to p.hannmaill.net and s.hiinet.net , respectively . 
+These domains appear registered by the same entity ( sofoxman @ gmail.com ) . 
+Both the domains and the certificate have been connected to targeted attack campaigns before . 
+By combining certificates and command & control infrastructure we can construct a partial image of this malware operation In this diagram the samples are organized in clusters signed similarly . 
+What quickly becomes obvious is that most of the samples are connected ; either they use the same certificate , or their certificate cluster is connected with other clusters through common Command & Control servers . 
+Some clusters ( shown at the lower right and left side ) seem unconnected beyond the fact that they use the same malware . 
+The Command & Control servers used are in many cases organized through well-known dynamic DNS providers such as 3322.org , zapto.org and so on , but there are also a few seemingly directly registered second level domains . 
+A full list of these is provided in the appendix . 
+Local Chinese interests and human rights activists We do not have extensive data on which targets have been exposed to Maudi malware , but we have some examples which give decent hints . 
+Some Maudi droppers display images , like the ones below : These are classic examples of decoys used in targeted campaigns against activists working for the rights of ethnic minorities within the Chinese borders . 
+Other decoy documents contain small messages in Chinese ; and Chinese name listings . 
+This gives the general impression that this family is used mostly against domestic Chinese targets and human rights activists . 
+Other research has confirmed this impression . 
+In his 2010 article `` Human Rights and Malware Attacks '' , security researcher Nart Villeneuve documents the use of Maudi as the downloaded payload of spearphishing attacks . 
+The initial payload in that case was a mail attachment , an exploited PDF file ( readme.pdf , md5 72bdca7dd12ed04b21dfa60c5c2ab6c4 ) which downloaded and decoded an encoded blob ( md5 ec16143a14c091100e7af30de03fce1f ) from the site www.humanright-watch.org , not to be confused with the legitimate Human Rights ' Watch website hrw.org . 
+The decoded file was a Maudi dropper , self-signed using the name `` soft @ hotmail.com '' , and the dropped component belonged to the `` JinDiQIAO @ hotmail.com '' -signed cluster . 
+There are hints at other targets as well . 
+A group of Maudis use domain names and other strings that seem to indicate a focus on a specific region , namely Mongolia . 
+Mongolia is an interesting country . 
+It is democratic with a multi-party system , and has a market-driven economy . 
+It is squeezed between two very powerful nations – Russia to the North and China to the South . 
+It is also a country rich on geological natural resources . 
+The initial hints about this targeting are vague . 
+Some of the Maudi samples are signed using self-signed certificate issued to `` mogolsoft @ hotmail.com '' . 
+Others use the Command & Control domain `` mol-goverment.com '' . 
+This domain was registered by a known targeted attack actor , hlemonk @ 163.com , who has registered a string of other malware- connected domains – among others goodmongol.com . 
+However , when looking more closely , more solid ties to Mongolian targets can be found . 
+The Maudi domain bodologetee.com ( registered by the email entity mongolianews @ yahoo.com ) can be documented used in other attacks on apparent Mongolian targets . 
+For example , the malware dropper cc1a806d25982acdb35dd196ab8171bc , a WinRAR SFX executable installed through the use of the Word exploit CVE-2012-0158 , contained a PlugX component configured to connect to ppt.bodologetee.com . 
+This is documented in the Norman Shark blog post `` The Chinese Malware Complexes : PlugX Used against Mongolian Targets '' . 
+Indirectly , we see that the Maudi infrastructure shares parameters with several well known targeted attack campaigns . 
+o qwer.wekby.com - domain Three samples connect to qwer.wekby.com , known from the RSA breach in 2011 . 
+These samples are ( md5 , profile ID ) : 28b5241ca13603636dbf626792231161 , qwerw 6a83dc3f53079e17ecc49cbc0dacc8f5 , qwerw cf45dbdb3718b4b728c2dd894032464b , qwerw The malwares used in the RSA intrusion itself were also PoisonIvy , though used a different dropper mechanism and were signed using a different digital certificate . 
+o jeno_1980 @ hotmail.com – domain registration Two samples connect to ns2.adultstick.com . 
+This domain was registered by jeno_1980 @ hotmail.com , an email address also used to register domains used both in the Mirage and Sin Digoo malware campaigns . 
+7d36ad6aafbf1f9496ccc6ac1a8bb57e , Irqdz 64718689ee3ff695c55ea1ec213434d1 , Irqdz o enbtcd @ yahoo.com.co – domain registration Some Maudi samples connect to windows-liveupdate.com or windowsliveupdatecache.com , domains registered by the entity enbtcd @ yahoo.com.co . 
+This address has also registered domains used in Briba ( aka c0d0so0 ) malware , which has been used for many targeted attacks . 
+bd9a1fbd76c00015a59a3b5c93d4030e , zwdb c64aab79e5107fc8ffd4699288c2e3be , gzzx c9f33d544c5657d4ba55a92e06e38d06 , Qbxt 49c7cae0fda8e5089e993a169c6c4197 , krgqy 914fdaf7aa098ac00067a2b265fc91da , qq o hlemonk @ 163.com - domain registration This address was used to register the Maudi domains mol-government.com and newsyandex.com , used to host C & C for these samples : c93f8a7a899142db1e92138b76407588 227636fb88e19eca33a02cbb46f279fb 6e88c39c270e259c4472f6eceb8a241f 865fec48937686c2d0708847f30b1264 c07e857d2602d2a813fd23d711871571 a25e5bcc52c386eb046149799ed81b2b 3563c21cf5c46e8e39f17e733c2b9b1e , h511b0 e78d39d1862338e4c711238223618e44 , h511b0 This registrant has also registered a great deal of other dodgy domains . 
+Mol-government.com and these other domains have been used as C & C by Sogu/Thoper trojans in attacks on apparent Korean and Mongolian targets , as well as by other malwares like PcClient . 
+o yt.bodologetee.com – domain This domain has been used as Command & Control domain for a number of samples . 
+It has also been documented used by PlugX malware in campaigns apparently against Mongolian targets . 
+The same registration information was used to register yahoomesseges.com , which has been used by EvilGrab malware . 
+0cf15b88b18cdedfaae598e9498768e3 , beijingnew 1e60824de00ce3c1f62fddc54a9c5c93 , jiagu c64dd5393a17226b208b049a4b766bd6 , jiagu 646cfe960219f1948eac580e3bd836f8 , text1 ef404a76bd11e1d675b7686775ed7f1c , nsc01 o YNK JAPAN Inc – digital certificate As previously mentioned , two samples were digitally signed using a certificate belonging to YNK JAPAN Inc. ; a subsidiary of a Korean game producer . 
+This certificate has been used in several hundred samples spanning various campaigns and incidents . 
+One of these was the SK intrusion in 2011 , where one of the initial malwares - a Sogu/Thoper trojan - was signed with it . 
+771a376df6aba0ce31e0c8e43cdf0800 , xfish c3d14ee0bd01ebc9e5844578babe462f , xfish The Maudi malware family seems to have been mostly used against Chinese/South-East Asian targets . 
+However , it shares some indicators ( C & C domains , registration information ) with other , more high-profile attacks . 
+What these connections mean is unclear . 
+It might be just sharing of information between groups ; we know that there is quite a bit of sharing going on , particularly of malware and source code . 
+Less is known about how much is shared in terms of infrastructure ( ex . 
+domains ) . 
+It is our opinion , however , that the Maudi system hints at something else . 
+There is for example a large amount of samples that use the same self-signed certificates in addition to overlaps in other indicators . 
+Self-signed certificates have little value in the underground as they can be freely made ; so there is little reason for sharing these . 
+Instead the impression is that these malwares have been signed by the same malware creation system . 
+Another aspect is the architecture where default PoisonIvy shellcode blobs are overridden with configuration information from the dropper . 
+This also may indicate homegrown build tools , possibly to alleviate language issues with the PoisonIvy builder itself . 
+There is a possibility that this indicates a large group of attackers , but might also be a part of a Digital Quartermaster function , as recently postulated by FireEye . 

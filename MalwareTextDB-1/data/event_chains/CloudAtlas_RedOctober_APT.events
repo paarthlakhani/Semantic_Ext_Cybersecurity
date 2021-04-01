@@ -1,0 +1,77 @@
+---
+Answer
+1
+Context Event 1
+writes<|>write<|>it<|>an encrypted Visual Basic Script<&>it<&>This VBScript<&>The VBS<|>
+Context Event 2
+runs<|>run<|>it<|>an encrypted Visual Basic Script<&>it<&>This VBScript<&>The VBS<|>
+Context Event 3
+drops<|>drop<|>an encrypted Visual Basic Script<&>it<&>This VBScript<&>The VBS<|>a pair of files<&>The payload<|>on+disk
+Context Event 4
+adds<|>add<|>an encrypted Visual Basic Script<&>it<&>This VBScript<&>The VBS<|>a registry key: HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run\<|>
+Context Event 5
+setting<|>set<|>an encrypted Visual Basic Script<&>it<&>This VBScript<&>The VBS<|>the key "bookstore"<|>
+Candidate Event 1
+infected<|>infect<|>an encrypted Visual Basic Script<&>it<&>This VBScript<&>The VBS<|>they<|>
+Candidate Event 2
+ensures<|>ensure<|>an encrypted Visual Basic Script<&>it<&>This VBScript<&>The VBS<|><|>
+Candidate Event 3
+stealing<|>steal<|>an encrypted Visual Basic Script<&>it<&>This VBScript<&>The VBS<|>more information<|>
+Candidate Event 4
+impersonates<|>impersonate<|>an encrypted Visual Basic Script<&>it<&>This VBScript<&>The VBS<|>a Cydia installer<|>
+Candidate Event 5
+intercept<|>intercept<|>an encrypted Visual Basic Script<&>it<&>This VBScript<&>The VBS<|>the user’s private information<&>private information uploaded from ad libraries<|>
+---
+Answer
+2
+Context Event 1
+drop<|>drop<|>several different spear-phishing documents<&>E211C2BAD9A83A6A4247EC3959E2A730<&>some of the spear-phishing documents between Cloud Atlas and RedOctober<|>uniquely named payloads<&>the following files<|>
+Context Event 2
+drops<|>drop<|>several different spear-phishing documents<&>E211C2BAD9A83A6A4247EC3959E2A730<&>some of the spear-phishing documents between Cloud Atlas and RedOctober<|>uniquely named payloads<&>the following files<|>
+Context Event 3
+exploit<|>exploit<|>several different spear-phishing documents<&>E211C2BAD9A83A6A4247EC3959E2A730<&>some of the spear-phishing documents between Cloud Atlas and RedOctober<|>the same theme<|>
+Candidate Event 1
+executed<|>execute<|>several different spear-phishing documents<&>E211C2BAD9A83A6A4247EC3959E2A730<&>some of the spear-phishing documents between Cloud Atlas and RedOctober<|>The final two files<|>
+Candidate Event 2
+includes<|>include<|>several different spear-phishing documents<&>E211C2BAD9A83A6A4247EC3959E2A730<&>some of the spear-phishing documents between Cloud Atlas and RedOctober<|>file time matching<|>
+Candidate Event 3
+target<|>target<|>several different spear-phishing documents<&>E211C2BAD9A83A6A4247EC3959E2A730<&>some of the spear-phishing documents between Cloud Atlas and RedOctober<|>the same entity<|>
+Candidate Event 4
+are<|>be<|>several different spear-phishing documents<&>E211C2BAD9A83A6A4247EC3959E2A730<&>some of the spear-phishing documents between Cloud Atlas and RedOctober<|>This backdoor<&>This backdoor<&>a second-stage backdoor<&>its second stage backdoor EVILTOSS<&>a second stage backdoor<|>
+Candidate Event 5
+employed<|>employ<|>several different spear-phishing documents<&>E211C2BAD9A83A6A4247EC3959E2A730<&>some of the spear-phishing documents between Cloud Atlas and RedOctober<|>myriad known anti-debugging and anti-analysis techniques<|>
+---
+Answer
+1
+Context Event 1
+utilize<|>utilize<|>The Cloud Atlas implants<&>the implant<&>All the malware samples we've seen<|>a rather unusual C&C mechanism<|>
+Context Event 2
+communicate<|>communicate<|>The Cloud Atlas implants<&>the implant<&>All the malware samples we've seen<|><|>
+Candidate Event 1
+uploading<|>upload<|>The Cloud Atlas implants<&>the implant<&>All the malware samples we've seen<|>files<|>
+Candidate Event 2
+downloaded<|>download<|>The Cloud Atlas implants<&>the implant<&>All the malware samples we've seen<|>data<|>
+Candidate Event 3
+executed<|>execute<|>The Cloud Atlas implants<&>the implant<&>All the malware samples we've seen<|>The executable and DLL<&>Both the document and executable<&>The executable<|>
+Candidate Event 4
+start<|>start<|>The Cloud Atlas implants<&>the implant<&>All the malware samples we've seen<|>communicating with C&C directly<|>
+Candidate Event 5
+written<|>write<|>The Cloud Atlas implants<&>the implant<&>All the malware samples we've seen<|>The malware configuration file<&>the malware's configuration<|>to+the "SYSTEM" folder (as opposed to SYSTEM32)
+---
+Answer
+4
+Context Event 1
+contain<|>contain<|>The files stored in the randomly named folder<|>various things, such as system information, running processes and current username<&>The data<|>
+Context Event 2
+compressed<|>compress<|><|>various things, such as system information, running processes and current username<&>The data<|>
+Candidate Event 1
+employed<|>employ<|>various things, such as system information, running processes and current username<&>The data<|>myriad known anti-debugging and anti-analysis techniques<|>
+Candidate Event 2
+downloaded<|>download<|>various things, such as system information, running processes and current username<&>The data<|>The SpyNet sample<&>a sam- ple of SpyNet<&>This sample of SpyNet<&>an instance of SpyNet<|>
+Candidate Event 3
+limiting<|>limit<|>various things, such as system information, running processes and current username<&>The data<|>the MIA network security department’s abilities to detect the traffic<|>
+Candidate Event 4
+is<|>be<|>various things, such as system information, running processes and current username<&>The data<|>This sample<&>the DLL<&>it<&>a 'backdoor'<&>the malware<&>the backdoor<&>The backdoor<&>the backdoor<|>
+Candidate Event 5
+encrypted<|>encrypt<|><|>various things, such as system information, running processes and current username<&>The data<|>
+---

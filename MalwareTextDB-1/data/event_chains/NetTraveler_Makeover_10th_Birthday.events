@@ -1,0 +1,20 @@
+---
+Answer
+2
+Context Event 1
+drops<|>drop<|>it<|>the main module<&>the main module<&>The main C&C module<&>It<|>
+Context Event 2
+installs<|>install<|>the main module<&>the main module<&>The main C&C module<&>It<|>a number of other files<|>
+Context Event 3
+dumped<|>dump<|><|>the main module<&>the main module<&>The main C&C module<&>It<|>into+"%SystemRoot%\system32\Windowsupdataney.dll"
+Candidate Event 1
+gathers<|>gather<|>the main module<&>the main module<&>The main C&C module<&>It<|>system information<&>it<|>
+Candidate Event 2
+registers<|>register<|>the main module<&>the main module<&>The main C&C module<&>It<|>a callout driver for Windows Filtering Platform (WFP)<|>
+Candidate Event 3
+registered<|>register<|><|>the main module<&>the main module<&>The main C&C module<&>It<|>
+Candidate Event 4
+hide<|>hide<|>the main module<&>the main module<&>The main C&C module<&>It<|>its own files<|>
+Candidate Event 5
+overwriting<|>overwrite<|>the main module<&>the main module<&>The main C&C module<&>It<|>them<|>
+---

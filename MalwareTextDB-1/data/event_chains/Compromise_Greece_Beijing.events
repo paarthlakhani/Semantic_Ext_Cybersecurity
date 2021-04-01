@@ -1,0 +1,43 @@
+---
+Answer
+0
+Context Event 1
+creates<|>create<|>the sample<&>the malware sample<&>it<|>several registry entries<|>
+Context Event 2
+creates<|>create<|>the sample<&>the malware sample<&>it<|>an instance of the Internet Explorer<|>
+Context Event 3
+encode<|>encode<|>the sample<&>the malware sample<&>it<|>data<|>
+Context Event 4
+contacted<|>contact<|>the sample<&>the malware sample<&>it<|>its C&C server<&>the C&C server<&>the C&C server<|>
+Candidate Event 1
+contacting<|>contact<|>the sample<&>the malware sample<&>it<|>its C&C server<&>the C&C server<&>the C&C server<|>
+Candidate Event 2
+located<|>locate<|>the sample<&>the malware sample<&>it<|>a command and control server<&>The known command and control server<|>
+Candidate Event 3
+has<|>have<|>the sample<&>the malware sample<&>it<|>a variety of other features such as port mirroring as well as traffic redirecting<|>
+Candidate Event 4
+fingerprint<|>fingerprint<|>the sample<&>the malware sample<&>it<|>all network hosts<|>
+Candidate Event 5
+contains<|>contain<|>the sample<&>the malware sample<&>it<|>destructive hard drive tool<|>
+---
+Answer
+3
+Context Event 1
+adding<|>add<|>this malware<&>It<&>it<&>it<&>it<|>several registry keys<|>to+Internet Explorer
+Context Event 2
+retrieve<|>retrieve<|>this malware<&>It<&>it<&>it<&>it<|>possible AntiVirus information<|>
+Context Event 3
+launch<|>launch<|>this malware<&>It<&>it<&>it<&>it<|>an instance of Internet Explorer<|>
+Context Event 4
+contact<|>contact<|>this malware<&>It<&>it<&>it<&>it<|>its C&C server<&>the C&C server<&>the C&C server<|>
+Candidate Event 1
+loaded<|>load<|>this malware<&>It<&>it<&>it<&>it<|>Stage 4<&>The files for Stage 4<&>Stage 4<|>
+Candidate Event 2
+function<|>function<|>this malware<&>It<&>it<&>it<&>it<|><|>
+Candidate Event 3
+gain<|>gain<|>this malware<&>It<&>it<&>it<&>it<|>access to privleged areas of the operating system<|>
+Candidate Event 4
+downloads<|>download<|>this malware<&>It<&>it<&>it<&>it<|>some kind of data<|>
+Candidate Event 5
+loads<|>load<|>this malware<&>It<&>it<&>it<&>it<|>the next part of the toolkit<|>
+---

@@ -1,0 +1,321 @@
+---
+Answer
+1
+Context Event 1
+transfer<|>transfer<|>the malware<&>The binary<&>The malware<&>the malware<&>the malware<|>files<|>to+the command and control servers
+Context Event 2
+transfer<|>transfer<|>the malware<&>The binary<&>The malware<&>the malware<&>the malware<|>files<|>
+Context Event 3
+downloads<|>download<|>the malware<&>The binary<&>The malware<&>the malware<&>the malware<|>the new configuration file<&>it<|>
+Context Event 4
+checks<|>check<|>the malware<&>The binary<&>The malware<&>the malware<&>the malware<|>a separate folder on the cloud service designated to contain new configuration information<|>
+Context Event 5
+deletes<|>delete<|>the malware<&>The binary<&>The malware<&>the malware<&>the malware<|>the new configuration file<&>it<|>
+Context Event 6
+checks<|>check<|>the malware<&>The binary<&>The malware<&>the malware<&>the malware<|>configured subfolders<|>
+Candidate Event 1
+used<|>use<|>the malware<&>The binary<&>The malware<&>the malware<&>the malware<|>targeted email attacks<|>
+Candidate Event 2
+downloaded<|>download<|>the malware<&>The binary<&>The malware<&>the malware<&>the malware<|>another encrypted configuration file<|>
+Candidate Event 3
+create<|>create<|>the malware<&>The binary<&>The malware<&>the malware<&>the malware<|>archive files containing the content they want to exfiltrate<|>
+Candidate Event 4
+armed<|>arm<|>the malware<&>The binary<&>The malware<&>the malware<&>the malware<|>traditional malvertising<|>
+Candidate Event 5
+supported<|>support<|>the malware<&>The binary<&>The malware<&>the malware<&>the malware<|>The set of commands<|>
+---
+Answer
+2
+Context Event 1
+free<|>free<|>a call<|>The PE file<&>It<&>the encrypted file<&>the PE image allocation<|>
+Context Event 2
+load<|>load<|>This configuration information<|>The PE file<&>It<&>the encrypted file<&>the PE image allocation<|>into+memory
+Context Event 3
+designed<|>design<|><|>The PE file<&>It<&>the encrypted file<&>the PE image allocation<|>
+Context Event 4
+gathers<|>gather<|>The PE file<&>It<&>the encrypted file<&>the PE image allocation<|>system information<&>All of this<|>
+Context Event 5
+gathers<|>gather<|>The PE file<&>It<&>the encrypted file<&>the PE image allocation<|>OS version<|>
+Context Event 6
+gathers<|>gather<|>The PE file<&>It<&>the encrypted file<&>the PE image allocation<|>computer name<|>
+Context Event 7
+gathers<|>gather<|>The PE file<&>It<&>the encrypted file<&>the PE image allocation<|>user name<|>
+Context Event 8
+gathers<|>gather<|>The PE file<&>It<&>the encrypted file<&>the PE image allocation<|>user group membership<|>
+Context Event 9
+gathers<|>gather<|>The PE file<&>It<&>the encrypted file<&>the PE image allocation<|>the process it is running in<|>
+Context Event 10
+gathers<|>gather<|>The PE file<&>It<&>the encrypted file<&>the PE image allocation<|>locale ID’s<|>
+Candidate Event 1
+sends<|>send<|>The PE file<&>It<&>the encrypted file<&>the PE image allocation<|>an e-mail containing the victim’s IP address and miscellaneous system information<|>
+Candidate Event 2
+perform<|>perform<|>The PE file<&>It<&>the encrypted file<&>the PE image allocation<|>an HTTP GET request for the following URI<|>
+Candidate Event 3
+gathers<|>gather<|>The PE file<&>It<&>the encrypted file<&>the PE image allocation<|>system drive and volume information<|>
+Candidate Event 4
+delivering<|>deliver<|>The PE file<&>It<&>the encrypted file<&>the PE image allocation<|>targeted malware<|>
+Candidate Event 5
+written<|>write<|>The PE file<&>It<&>the encrypted file<&>the PE image allocation<|>the initial message queue file<|>into+the virtual volume
+---
+Answer
+1
+Context Event 1
+gathers<|>gather<|>The PE file<&>It<&>the encrypted file<&>the PE image allocation<|>system information<&>All of this<|>
+Context Event 2
+encrypted<|>encrypt<|><|>system information<&>All of this<|>
+Candidate Event 1
+infecting<|>infect<|>system information<&>All of this<|>the system<|>
+Candidate Event 2
+sent<|>send<|><|>system information<&>All of this<|>to+cloud storage
+Candidate Event 3
+implements<|>implement<|>system information<&>All of this<|>a generic TCP proxy<|>
+Candidate Event 4
+uses<|>use<|>system information<&>All of this<|>this method<|>
+Candidate Event 5
+transferring<|>transfer<|>system information<&>All of this<|>selected files<|>to+its command and control (C2) server
+---
+Answer
+4
+Context Event 1
+pull<|>pull<|>921.bin<&>They<&>922.bin<&>they<&>they<&>They<&>They<|>specific survey information<|>
+Context Event 2
+passed<|>pass<|><|>921.bin<&>They<&>922.bin<&>they<&>they<&>They<&>They<|>
+Context Event 3
+executed<|>execute<|><|>921.bin<&>They<&>922.bin<&>they<&>they<&>They<&>They<|>
+Context Event 4
+retrieves<|>retrieve<|>921.bin<&>They<&>922.bin<&>they<&>they<&>They<&>They<|>several datapoints<|>
+Context Event 5
+compiles<|>compile<|>921.bin<&>They<&>922.bin<&>they<&>they<&>They<&>They<|>a dirwalk – a complete listing of every file path – of each fixed drive<|>
+Context Event 6
+retrieves<|>retrieve<|>921.bin<&>They<&>922.bin<&>they<&>they<&>They<&>They<|>Domain info<|>
+Context Event 7
+retrieves<|>retrieve<|>921.bin<&>They<&>922.bin<&>they<&>they<&>They<&>They<|>a list of running processes with all loaded modules in each<|>
+Context Event 8
+retrieves<|>retrieve<|>921.bin<&>They<&>922.bin<&>they<&>they<&>They<&>They<|>the list of installed software<|>
+Candidate Event 1
+makes<|>make<|>921.bin<&>They<&>922.bin<&>they<&>they<&>They<&>They<|>its detection during that time<&>very difficult<|>
+Candidate Event 2
+is accomplished<|>is accomplished<|>921.bin<&>They<&>922.bin<&>they<&>they<&>They<&>They<|>Authentication<|>
+Candidate Event 3
+places<|>place<|>921.bin<&>They<&>922.bin<&>they<&>they<&>They<&>They<|>a number of the hooks<|>
+Candidate Event 4
+allowing<|>allow<|>921.bin<&>They<&>922.bin<&>they<&>they<&>They<&>They<|>The attackers<&>They<&>them<&>them<&>They<&>They<&>They<&>attackers<|>
+Candidate Event 5
+retrieves<|>retrieve<|>921.bin<&>They<&>922.bin<&>they<&>they<&>They<&>They<|>a complete hardware profile of the target machine<|>
+---
+Answer
+0
+Context Event 1
+serves<|>serve<|>tail-<&>the binary<&>the malware<|><|>
+Context Event 2
+retrieve<|>retrieve<|>tail-<&>the binary<&>the malware<|>the listening port<|>
+Context Event 3
+connect<|>connect<|>tail-<&>the binary<&>the malware<|><|>to+the domain name
+Candidate Event 1
+tunneling<|>tunnel<|>tail-<&>the binary<&>the malware<|>all traffic received from the SOCKSS port<|>
+Candidate Event 2
+generate<|>generate<|>tail-<&>the binary<&>the malware<|>malicious traffic<|>
+Candidate Event 3
+vetted<|>vet<|>tail-<&>the binary<&>the malware<|>New victim systems<|>
+Candidate Event 4
+used<|>use<|>tail-<&>the binary<&>the malware<|>a ZxShell backdoor (MD5: 8455bbb9a210ce603a1b646b0d951bce)<&>The ZxShell backdoor<&>This particular variant<|>
+Candidate Event 5
+reused<|>reuse<|>tail-<&>the binary<&>the malware<|>SmartAssembly<|>
+---
+Answer
+3
+Context Event 1
+initiated<|>initiate<|>Accessing the link from an Android User-Agent<|>a download of an Android installer package named WhatsAppUpdate.apk<&>this malware<&>The malware<&>this malware<&>the malware<|>
+Context Event 2
+record<|>record<|>a download of an Android installer package named WhatsAppUpdate.apk<&>this malware<&>The malware<&>this malware<&>the malware<|>Recordings<&>phone call audio<|>
+Candidate Event 1
+gathers<|>gather<|>a download of an Android installer package named WhatsAppUpdate.apk<&>this malware<&>The malware<&>this malware<&>the malware<|>system information<&>All of this<|>
+Candidate Event 2
+manage<|>manage<|>a download of an Android installer package named WhatsAppUpdate.apk<&>this malware<&>The malware<&>this malware<&>the malware<|>running processes<|>
+Candidate Event 3
+destroyed<|>destroy<|>a download of an Android installer package named WhatsAppUpdate.apk<&>this malware<&>The malware<&>this malware<&>the malware<|>data<|>
+Candidate Event 4
+collect<|>collect<|>a download of an Android installer package named WhatsAppUpdate.apk<&>this malware<&>The malware<&>this malware<&>the malware<|>a lot of other information<|>
+Candidate Event 5
+hooks<|>hook<|>a download of an Android installer package named WhatsAppUpdate.apk<&>this malware<&>The malware<&>this malware<&>the malware<|>both INT 0x01 and INT 0xff<|>
+---
+Answer
+0
+Context Event 1
+triggered<|>trigger<|>Using an IOS User-Agent<|>the download of a Debian installer package, WhatsAppUpdate.deb<&>This application<&>it<|>
+Context Event 2
+impersonates<|>impersonate<|>the download of a Debian installer package, WhatsAppUpdate.deb<&>This application<&>it<|>a Cydia installer<|>
+Candidate Event 1
+collect<|>collect<|>the download of a Debian installer package, WhatsAppUpdate.deb<&>This application<&>it<|><|>
+Candidate Event 2
+achieve<|>achieve<|>the download of a Debian installer package, WhatsAppUpdate.deb<&>This application<&>it<|>administrator privileges on the system<|>
+Candidate Event 3
+stay<|>stay<|>the download of a Debian installer package, WhatsAppUpdate.deb<&>This application<&>it<|>unnoticed<|>
+Candidate Event 4
+uses<|>use<|>the download of a Debian installer package, WhatsAppUpdate.deb<&>This application<&>it<|>The payload<&>the final Epic backdoor payload<&>The backdoor extracted from the Java exploits<&>The primary backdoor<&>a custom backdoor<|>
+Candidate Event 5
+install<|>install<|>the download of a Debian installer package, WhatsAppUpdate.deb<&>This application<&>it<|>the driver<&>the vulnerable VBox driver<|>
+---
+Answer
+1
+Context Event 1
+downloaded<|>download<|>The framework<&>The framework<&>the malware<&>the malware<&>Inception<|>dropper packages<&>These files<&>something unexpected and wholly different from what we have discussed until now<&>It<&>sccm.exe<|>
+Context Event 2
+downloaded<|>download<|><|>dropper packages<&>These files<&>something unexpected and wholly different from what we have discussed until now<&>It<&>sccm.exe<|>
+Context Event 3
+containing<|>contain<|>dropper packages<&>These files<&>something unexpected and wholly different from what we have discussed until now<&>It<&>sccm.exe<|>one dropper executable clearly created for the Inception framework, and one other, very different executable<|>
+Context Event 4
+is<|>be<|>dropper packages<&>These files<&>something unexpected and wholly different from what we have discussed until now<&>It<&>sccm.exe<|>a downloader<|>
+Context Event 5
+is<|>be<|>dropper packages<&>These files<&>something unexpected and wholly different from what we have discussed until now<&>It<&>sccm.exe<|>remote shell program<|>
+Context Event 6
+connect<|>connect<|>dropper packages<&>These files<&>something unexpected and wholly different from what we have discussed until now<&>It<&>sccm.exe<|><|>to+a C&C server
+Context Event 7
+download<|>download<|>dropper packages<&>These files<&>something unexpected and wholly different from what we have discussed until now<&>It<&>sccm.exe<|>more malware<|>
+Candidate Event 1
+received<|>receive<|>dropper packages<&>These files<&>something unexpected and wholly different from what we have discussed until now<&>It<&>sccm.exe<|>a command<|>
+Candidate Event 2
+connecting<|>connect<|>dropper packages<&>These files<&>something unexpected and wholly different from what we have discussed until now<&>It<&>sccm.exe<|><|>to+this server
+Candidate Event 3
+extracts<|>extract<|>dropper packages<&>These files<&>something unexpected and wholly different from what we have discussed until now<&>It<&>sccm.exe<|>information<|>
+Candidate Event 4
+establishing<|>establish<|>dropper packages<&>These files<&>something unexpected and wholly different from what we have discussed until now<&>It<&>sccm.exe<|>a presence<|>
+Candidate Event 5
+utilize<|>utilize<|>dropper packages<&>These files<&>something unexpected and wholly different from what we have discussed until now<&>It<&>sccm.exe<|>compromised embedded devices – typically routers- on the Internet as well as multiple dedicated hosting providers and VPN services<&>The same router botnet<|>
+---
+Answer
+0
+Context Event 1
+use<|>use<|>The framework<&>The framework<&>the malware<&>the malware<&>Inception<|>a cloud-based infrastructure<|>
+Context Event 2
+use<|>use<|>The framework<&>The framework<&>the malware<&>the malware<&>Inception<|>the WebDAV protocol<|>
+Context Event 3
+use<|>use<|>The framework<&>The framework<&>the malware<&>the malware<&>Inception<|>the WebDAV protocol<|>
+Context Event 4
+using<|>use<|>The framework<&>The framework<&>the malware<&>the malware<&>Inception<|>the services of a cloud service provider based in Sweden, CloudMe.com<&>the cloud service<|>
+Context Event 5
+downloaded<|>download<|>The framework<&>The framework<&>the malware<&>the malware<&>Inception<|>dropper packages<&>These files<&>something unexpected and wholly different from what we have discussed until now<&>It<&>sccm.exe<|>
+Context Event 6
+scouting<|>scout<|>The framework<&>The framework<&>the malware<&>the malware<&>Inception<|><|>
+Candidate Event 1
+exfiltrating<|>exfiltrating<|>The framework<&>The framework<&>the malware<&>the malware<&>Inception<|>data<|>
+Candidate Event 2
+obtain<|>obtain<|>The framework<&>The framework<&>the malware<&>the malware<&>Inception<|>the necessary credentials<|>
+Candidate Event 3
+inspect<|>inspect<|>The framework<&>The framework<&>the malware<&>the malware<&>Inception<|>the traffic<|>
+Candidate Event 4
+is<|>be<|>The framework<&>The framework<&>the malware<&>the malware<&>Inception<|>This sample<&>the DLL<&>it<&>a 'backdoor'<&>the malware<&>the backdoor<&>The backdoor<&>the backdoor<|>
+Candidate Event 5
+send<|>send<|>The framework<&>The framework<&>the malware<&>the malware<&>Inception<|>a legitimate SSL certificate<|>
+---
+Answer
+3
+Context Event 1
+had<|>have<|>we<&>we<&>We<|>the actual phishing email<|>
+Context Event 2
+have<|>have<|>we<&>we<&>We<|>the decoy documents<|>
+Candidate Event 1
+stealing<|>steal<|>we<&>we<&>We<|>data<|>
+Candidate Event 2
+sending<|>send<|>we<&>we<&>We<|>SMS<|>
+Candidate Event 3
+written out<|>write out<|>we<&>we<&>We<|>The resulting log<&>it<&>a file<|>
+Candidate Event 4
+have<|>have<|>we<&>we<&>We<|>a set of phishing mails<|>
+Candidate Event 5
+creates<|>create<|>we<&>we<&>We<|>The .LNKfile<&>a hidden .LNK file<|>in+the “Startup” directory
+---
+Answer
+3
+Context Event 1
+drops<|>drop<|>the shellcode<&>this code<|>the script<&>it<&>a Word document and a Visual Basic script<&>The VBScript<&>The one above<|>
+Context Event 2
+executed<|>execute<|><|>the script<&>it<&>a Word document and a Visual Basic script<&>The VBScript<&>The one above<|>
+Context Event 3
+drops<|>drop<|>the script<&>it<&>a Word document and a Visual Basic script<&>The VBScript<&>The one above<|>two files<&>This data file<&>The files<&>the DLLs<&>the DLL<&>ctfmonrc.dll<|>to+disk
+Context Event 4
+sets<|>set<|>the script<&>it<&>a Word document and a Visual Basic script<&>The VBScript<&>The one above<|>a startup key<&>a startup key<|>in+the “HKCU\Software\Microsoft\Windows\CurrentVersion\Run” registry path
+Candidate Event 1
+deleted<|>delete<|>the script<&>it<&>a Word document and a Visual Basic script<&>The VBScript<&>The one above<|>specific files<|>
+Candidate Event 2
+downloads<|>download<|>the script<&>it<&>a Word document and a Visual Basic script<&>The VBScript<&>The one above<|>some kind of data<|>
+Candidate Event 3
+encrypted<|>encrypt<|>the script<&>it<&>a Word document and a Visual Basic script<&>The VBScript<&>The one above<|>a configuration file %system%\vtmon.bin<&>This file<|>
+Candidate Event 4
+drops<|>drop<|>the script<&>it<&>a Word document and a Visual Basic script<&>The VBScript<&>The one above<|>two files<&>This data file<&>The files<&>the DLLs<&>the DLL<&>ctfmonrc.dll<|>
+Candidate Event 5
+execute<|>execute<|>the script<&>it<&>a Word document and a Visual Basic script<&>The VBScript<&>The one above<|>a copy of itself<&>the copy utilizing PsExec<&>This copy<|>
+---
+Answer
+2
+Context Event 1
+drops<|>drop<|>the script<&>it<&>a Word document and a Visual Basic script<&>The VBScript<&>The one above<|>two files<&>This data file<&>The files<&>the DLLs<&>the DLL<&>ctfmonrc.dll<|>to+disk
+Context Event 2
+encrypted<|>encrypt<|><|>two files<&>This data file<&>The files<&>the DLLs<&>the DLL<&>ctfmonrc.dll<|>
+Context Event 3
+installed<|>instal<|><|>two files<&>This data file<&>The files<&>the DLLs<&>the DLL<&>ctfmonrc.dll<|>in+several locations
+Context Event 4
+execute<|>execute<|>a startup key<&>a startup key<|>two files<&>This data file<&>The files<&>the DLLs<&>the DLL<&>ctfmonrc.dll<|>
+Context Event 5
+launched<|>launch<|><|>two files<&>This data file<&>The files<&>the DLLs<&>the DLL<&>ctfmonrc.dll<|>
+Candidate Event 1
+conducted<|>conduct<|>two files<&>This data file<&>The files<&>the DLLs<&>the DLL<&>ctfmonrc.dll<|>more advanced spear phishing campaigns<|>
+Candidate Event 2
+perform<|>perform<|>two files<&>This data file<&>The files<&>the DLLs<&>the DLL<&>ctfmonrc.dll<|>arbitrary code execution<|>
+Candidate Event 3
+drops<|>drop<|>the script<&>it<&>a Word document and a Visual Basic script<&>The VBScript<&>The one above<|>two files<&>This data file<&>The files<&>the DLLs<&>the DLL<&>ctfmonrc.dll<|>
+Candidate Event 4
+drops<|>drop<|>two files<&>This data file<&>The files<&>the DLLs<&>the DLL<&>ctfmonrc.dll<|>a variant of an older DDoS tool known as KernelBot<&>three files<&>The KernelBot implants<&>a KernelBot variant<&>a KernelBot variant<|>
+Candidate Event 5
+steal<|>steal<|>two files<&>This data file<&>The files<&>the DLLs<&>the DLL<&>ctfmonrc.dll<|>valuable information<|>
+---
+Answer
+1
+Context Event 1
+obtained<|>obtain<|>the attackers<&>the attackers<&>the probable attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>The attackers<|>This document<|>
+Context Event 2
+repurposed<|>repurposed<|>the attackers<&>the attackers<&>the probable attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>The attackers<|>This document<|>
+Context Event 3
+identify<|>identify<|>the attackers<&>the attackers<&>the probable attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>The attackers<|>every targeted attack<|>
+Context Event 4
+used<|>use<|>the attackers<&>the attackers<&>the probable attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>The attackers<|>a HTTP user-agent of “davfs2/1.4.6 neon/0.29.6”<|>
+Context Event 5
+compromise<|>compromise<|>the attackers<&>the attackers<&>the probable attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>The attackers<|>these devices<|>
+Context Event 6
+maintain<|>maintain<|>the attackers<&>the attackers<&>the probable attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>The attackers<|>a list of where each of these implants are installed, as well as what port and key each is configured to use<|>
+Context Event 7
+used<|>use<|>the attackers<&>the attackers<&>the probable attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>The attackers<|>two mail proxies<&>The mail proxy<|>
+Context Event 8
+issue<|>issue<|>the attackers<&>the attackers<&>the probable attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>The attackers<|>commands and binary updates<|>to+the malware
+Context Event 9
+using<|>use<|>the attackers<&>the attackers<&>the probable attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>The attackers<|>a known malicious C&C domain name<|>
+Candidate Event 1
+use<|>use<|>the attackers<&>the attackers<&>the probable attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>The attackers<|>widely available RATs<|>
+Candidate Event 2
+utilize<|>utilize<|>the attackers<&>the attackers<&>the probable attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>The attackers<|>compromised embedded devices – typically routers- on the Internet as well as multiple dedicated hosting providers and VPN services<&>The same router botnet<|>
+Candidate Event 3
+deploy<|>deploy<|>the attackers<&>the attackers<&>the probable attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>The attackers<|>the rootkit and other extreme persistence mechanisms<|>
+Candidate Event 4
+written out<|>write out<|>the attackers<&>the attackers<&>the probable attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>The attackers<|>The resulting log<&>it<&>a file<|>
+Candidate Event 5
+overwrite<|>overwrite<|>the attackers<&>the attackers<&>the probable attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>the attackers<&>The attackers<|>the vftable pointer of a Flash object<|>
+---
+Answer
+3
+Context Event 1
+downloaded<|>download<|><|>these<&>they<&>this malware<|>
+Context Event 2
+deleted<|>delete<|><|>these<&>they<&>this malware<|>
+Context Event 3
+injected<|>inject<|><|>these<&>they<&>this malware<|>
+Candidate Event 1
+encrypts<|>encrypt<|>these<&>they<&>this malware<|>gathered data<|>
+Candidate Event 2
+used<|>use<|>these<&>they<&>this malware<|>a lure that contained an apparent non-public listing of contact information for defense attachés in the “Ankara Military Attaché Corps (AMAC),”<|>
+Candidate Event 3
+retrieves<|>retrieve<|>these<&>they<&>this malware<|>all available disks<|>
+Candidate Event 4
+is<|>be<|>these<&>they<&>this malware<|>a more typical datastealer<|>
+Candidate Event 5
+probes<|>probe<|>these<&>they<&>this malware<|>this folder<|>
+---

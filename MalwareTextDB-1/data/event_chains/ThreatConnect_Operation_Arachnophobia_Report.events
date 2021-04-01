@@ -1,0 +1,95 @@
+---
+Answer
+2
+Context Event 1
+hosted<|>host<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|><|>
+Context Event 2
+communicating<|>communicate<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|><|>
+Context Event 3
+determined<|>determine<|>FireEye<&>we<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|>
+Context Event 4
+relies<|>rely<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|><|>
+Context Event 5
+exfiltrate<|>exfiltrate<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|>files with extensions such as .doc, .xls, .pdf, .ppt, .egm, and .xml<|>
+Context Event 6
+using<|>use<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|>a "leaked report" lure which contained a decoy document related to Pakistan's alleged inability to locate Osama Bin Laden<|>
+Context Event 7
+rely<|>rely<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|><|>
+Context Event 8
+use<|>use<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|>direct IPs<|>
+Context Event 9
+is<|>be<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|>a backdoor executable<|>
+Context Event 10
+uploading<|>upload<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|>files<|>
+Context Event 11
+downloading<|>download<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|>files<|>
+Context Event 12
+listing<|>list<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|>running processes<|>
+Context Event 13
+generating<|>generate<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|>file listings<|>
+Context Event 14
+transferring<|>transfer<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|>selected files<|>to+its command and control (C2) server
+Context Event 15
+appears<|>appear<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|><|>
+Context Event 16
+not execute<|>not execute<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|><|>
+Context Event 17
+installed<|>instal<|>a self-extracting RAR archive<&>the self-extracting RAR archive<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|>
+Context Event 18
+execute<|>execute<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|>the following Windows Management Instrumentation (WMI) command<|>
+Context Event 19
+open<|>open<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|>recovery.txt<|>
+Context Event 20
+check<|>check<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|><|>
+Context Event 21
+beacon<|>beacon<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|><|>
+Context Event 22
+perform<|>perform<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|>an HTTP GET request for the following URI<|>
+Context Event 23
+download<|>download<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|>the files listed in Table 1<|>
+Context Event 24
+scan<|>scan<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|><|>
+Context Event 25
+search<|>search<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|><|>
+Context Event 26
+creates<|>create<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|>a file list containing all documents (excluding those whose filename contains MediaUtils)<|>to+the following locations
+Context Event 27
+write<|>write<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|>a list of all running processes<|>
+Context Event 28
+uploads<|>upload<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|>the running process list, document file list, and all documents<|>to+the following URI
+Context Event 29
+create<|>create<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|>the following files<|>
+Context Event 30
+communicates<|>communicate<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|><|>
+Candidate Event 1
+stored<|>store<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|>the results<|>in+a central location on disk that the PVZ tools utilize
+Candidate Event 2
+encoded<|>encode<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|>Payload information<|>
+Candidate Event 3
+perform<|>perform<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|>HTTP requests<|>
+Candidate Event 4
+connect<|>connect<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|><|>to+intel-update[.]com and update-mirror[.]com
+Candidate Event 5
+embeds<|>embed<|>BITTERBUG<&>The backdoor<&>it<&>be a custom backdoor<&>BITTERBUG<&>this customized malware<&>One of these samples<&>BITTERBUG<&>many of the samples that we have observed<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>BITTERBUG<&>The malware<&>The malware<&>The malware<|>its own DNS server IP addresses<|>
+---
+Answer
+0
+Context Event 1
+used<|>use<|>BITTERBUG self-extracting RAR (SFXRAR) files<&>One from December<&>a SFXRAR file with a filename lure related to the March 2014 disappearance of Malaysis Airlines Flight 370 (cast as a Pakistan-related hijacking)<&>the self-extracting RAR archive<&>the self-extracting RAR<&>The self-extracting RAR<|>a decoy PDF document (Figure 12) related to the December arrest of Devyani Khobragade, an Indian diplomat in the United States<|>
+Context Event 2
+observed<|>observe<|>FireEye<&>we<|>BITTERBUG self-extracting RAR (SFXRAR) files<&>One from December<&>a SFXRAR file with a filename lure related to the March 2014 disappearance of Malaysis Airlines Flight 370 (cast as a Pakistan-related hijacking)<&>the self-extracting RAR archive<&>the self-extracting RAR<&>The self-extracting RAR<|>
+Context Event 3
+extract<|>extract<|>BITTERBUG self-extracting RAR (SFXRAR) files<&>One from December<&>a SFXRAR file with a filename lure related to the March 2014 disappearance of Malaysis Airlines Flight 370 (cast as a Pakistan-related hijacking)<&>the self-extracting RAR archive<&>the self-extracting RAR<&>The self-extracting RAR<|>configuration files, dependency DLLs, and the BITTERBUG executable<|>
+Context Event 4
+install<|>install<|>BITTERBUG self-extracting RAR (SFXRAR) files<&>One from December<&>a SFXRAR file with a filename lure related to the March 2014 disappearance of Malaysis Airlines Flight 370 (cast as a Pakistan-related hijacking)<&>the self-extracting RAR archive<&>the self-extracting RAR<&>The self-extracting RAR<|><BITTERBUG>.exe and the following DLLs<|>
+Candidate Event 1
+install<|>install<|>BITTERBUG self-extracting RAR (SFXRAR) files<&>One from December<&>a SFXRAR file with a filename lure related to the March 2014 disappearance of Malaysis Airlines Flight 370 (cast as a Pakistan-related hijacking)<&>the self-extracting RAR archive<&>the self-extracting RAR<&>The self-extracting RAR<|>the following benign configuration files<|>
+Candidate Event 2
+appear<|>appear<|>BITTERBUG self-extracting RAR (SFXRAR) files<&>One from December<&>a SFXRAR file with a filename lure related to the March 2014 disappearance of Malaysis Airlines Flight 370 (cast as a Pakistan-related hijacking)<&>the self-extracting RAR archive<&>the self-extracting RAR<&>The self-extracting RAR<|>less suspicious<|>
+Candidate Event 3
+executed<|>execute<|>BITTERBUG self-extracting RAR (SFXRAR) files<&>One from December<&>a SFXRAR file with a filename lure related to the March 2014 disappearance of Malaysis Airlines Flight 370 (cast as a Pakistan-related hijacking)<&>the self-extracting RAR archive<&>the self-extracting RAR<&>The self-extracting RAR<|>a ZxShell backdoor (MD5: 8455bbb9a210ce603a1b646b0d951bce)<&>The ZxShell backdoor<&>This particular variant<|>
+Candidate Event 4
+dump<|>dump<|>BITTERBUG self-extracting RAR (SFXRAR) files<&>One from December<&>a SFXRAR file with a filename lure related to the March 2014 disappearance of Malaysis Airlines Flight 370 (cast as a Pakistan-related hijacking)<&>the self-extracting RAR archive<&>the self-extracting RAR<&>The self-extracting RAR<|>local credentials<|>
+Candidate Event 5
+vetted<|>vet<|>BITTERBUG self-extracting RAR (SFXRAR) files<&>One from December<&>a SFXRAR file with a filename lure related to the March 2014 disappearance of Malaysis Airlines Flight 370 (cast as a Pakistan-related hijacking)<&>the self-extracting RAR archive<&>the self-extracting RAR<&>The self-extracting RAR<|>New victim systems<|>
+---

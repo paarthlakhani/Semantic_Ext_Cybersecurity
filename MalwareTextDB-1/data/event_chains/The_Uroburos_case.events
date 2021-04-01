@@ -1,0 +1,20 @@
+---
+Answer
+2
+Context Event 1
+install<|>install<|>The dropper<&>the dropper<&>the malware<&>the dropper<|>a second file<|>
+Context Event 2
+creates<|>create<|>The dropper<&>the dropper<&>the malware<&>the dropper<|>an additional file called winview.ocx<&>The file<|>
+Context Event 3
+checks<|>check<|>The dropper<&>the dropper<&>the malware<&>the dropper<|>if an older version is installed on the system<|>
+Candidate Event 1
+embeds<|>embed<|>The dropper<&>the dropper<&>the malware<&>the dropper<|>its own DNS server IP addresses<|>
+Candidate Event 2
+copied<|>copy<|>The dropper<&>the dropper<&>the malware<&>the dropper<|>another remote administration tool<&>The binary<&>The binary<&>The RAT<&>It<&>The bot<&>Our sample<&>this malware<|>to+the user’s “Application Data” directory
+Candidate Event 3
+removes<|>remove<|>The dropper<&>the dropper<&>the malware<&>the dropper<|>the older version<|>
+Candidate Event 4
+contains<|>contain<|>The dropper<&>the dropper<&>the malware<&>the dropper<|>a custom DNS client implementation<|>
+Candidate Event 5
+overwrites<|>overwrite<|>The dropper<&>the dropper<&>the malware<&>the dropper<|>the files<&>them<&>them<&>them<|>
+---

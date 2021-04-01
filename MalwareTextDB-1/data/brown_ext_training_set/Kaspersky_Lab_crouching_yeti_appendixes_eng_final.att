@@ -1,0 +1,406 @@
+C : \ProgramData\Mail\MailAg\scs.txt The 2nd stage modules are usually base64 encoded , bzip2 compressed and XORed using the recurrent `` 1312312 '' key . 
+In some cases , the malware can also use one 1024 bit RSA key which is embedded in the config section of the binary . 
+IMPORTANT : For versions 03-0E , 010 , 011 , 015 , 016 , 023 , 026-028 , 02A-02F , and 031-036 no samples are known at the moment . 
+It seems there are over 50 different versions of Havex malware , internally identified by hex numbers from 01 to 044 ( the latest known at the time of writing ) . 
+Versions 01 – 019 : Contain strings that may be related to password harvesting , even though the code that would actually search for the passwords was not identified inside this component . 
+It's possible that these strings are part of the configuration and are used by downloaded modules as a list of names of processes that the malware wants to hijack in order to steal passwords from the memory . 
+Versions 017 – 037 : Instead of the GET request , send a POST request to the C2 . 
+The contents of the POST differ between versions . 
+Versions 01A – 038 : Check proxy settings in the registry and use them if required . 
+Versions 01B – 044 : Use an asymmetric crypto algorithm ( RSA ) to decrypt the downloaded binaries . 
+( Previous versions use simple XOR based encryption ) . 
+Versions 020 – 025 : Check the Internet connection by trying to connect to google.com : CONNECT google.com:80 HTTP/1.0 Collect system information , write it to *.yls file . 
+Later , append these contents to the POST request string . 
+Version 025 : Contains a debugging symbols path , which may suggest that the project was internally called `` PhalangX '' : d : \Workspace\PhalangX 3D\Src\Build\Release\Phalanx-3d.ServerAgent.pdb Version 038 – 040 : Does not contain the routine that collects system info , yet the malware checks for potential previously created *.yls files , and appends the content of them to the POST request . 
+Instead of values hardcoded in the binary , this is a first version to use a resource to store encrypted config . 
+Detailed analysis of this version is included in this appendix . 
+Version 043 – 044 : Size similar to 037 and earlier versions ; dll name is now 0XX.dll ( where XX is version number ) , the < unk > value in config is now 29 bytes long . 
+Main characteristics : All currently known samples are completely identical in terms of code and differ only in the content of the resource . 
+This module looks for outlook.nk2 files , gets the contact data from inside them and writes it to the *.yls file . 
+Data is as always bzip2 compressed and 3DES encrypted . 
+Config is stored in the resource HYT 017D ( bzip2 compressed and encrypted with same xor key as always ) . 
+Config consists of an RSA key ID ( 29 bytes ) , base 64 bit encodedRSA key ( 1024 bit ) and nk2 file path ( 39 bytes ) . 
+outlook.nk2is the file where Outlook < = 2007 stores contacts details in order to use them in its AutoComplete feature . 
+This module collects the same type of information about the system as Havex versions 020 - 025 . 
+This functionality is not present in versions > =026 - it was probably moved into this separate module around that time . 
+This module is used to decrypt and execute the binary that comes in the resource . 
+The EXE file is saved in % TEMP % \ < rand > .exe 
+and run using ShellExecuteExW . 
+Besides the binary , resource HAJ 3A0 contains hex string : 30 0A 30 0A 34 38 36 34 30 0A This PE EXE file was dropped and run by EXE dropper module ( 2120c3a30870921ab5e0314 6a1a1a865dd24a2b5e6f0138bf9f2ebf02d490850 ) . 
+Its main functionality is to scan the local network looking for machines listening on specified ports . 
+All information is logged into a % TEMP % \~tracedscn.yls file in plain text . 
+This module is used to decompress ( bzip2 ) and drop a password dumping tool from resource DLL1 A8 409 to % TEMP % \bp.exe and run it with the following command : % TEMP % \bp.exe % TEMP % \~tmp1237.txt '' Saved log is then copied to % TEMP % \ < rand > .tmp.yls 
+file . 
+This file was dropped and executed by the PSW dropper module ( 71e05babc107f5e52f1a4c3ea6261 c472d2649c0b179395304c420eaa54e2062 ) . 
+This is a customized ( ? ) version of BrowserPasswordDecryptor 2.0 - a free password recovery tool , developed by SecurityXploded : Browser Password Decryptor is the FREE software to instantly recover website login passwords stored by popular web browsers . 
+Currently it can recover saved login passwords from following browsers : • Instantly decrypt and recover stored encrypted passwords from popular web browsers . 
+• Right Click Context Menu to quickly copy the password • Recover password of any length and complexity . 
+• Automatically discovers all supported Applications and recovers all the stored passwords . 
+• Sort feature to arrange the recovered passwords in various order to make it easier to search through 100 's of entries . 
+• Save the recovered password list to HTML/XML/Text/CSV file • Easier and faster to use with its enhanced user friendly GUI interface . 
+• Support for local Installation and uninstallation of the software . 
+Each module is capable of creating a log file ( .yls 
+) which is encrypted and stored on disk . 
+The encryption library used by the modules ( as well as the most recent versions of Havex ) is handled by the RSAeuro library . 
+They recompiled the library several times using different compiler settings and optimization ( depending of modules/Havex ) which makes fingerprinting the functions a bit tedious . 
+Once the log has been compressed using bzip2 , the modules use the library to generate a random 192 bit 3DES key ( 168 bit effective ) and a 64 bit Initialization Vector . 
+The function used to do so is R_GenerateBytes which is using the MD5 algorithm previously seeded by the R_RandomCreate function ( Also using MD5 ) : Once the key and the IV have been generated , the 3DES algorithm is initialized : Once 3DES is initialized , the next step is to RSA encrypt the 3DES KEY using the RSAPublicEncrypt function . 
+It is essentially creating the PKCS # 1 padding block around the key and then calling the rsapublicencrypt function . 
+Example of a layout where 0x42 is the PKCS # 1 padding block and 0x41 the 3DES key ( original values overwritten for clarification purpose ) : The rsapublicencrypt is basically a wrapper to various big num functions used to compute RSA : N parameter in one sample : The E parameter is the standard 0x10001 After the 3DES key is encrypted using RSA , the log files are encrypted . 
+The final encrypted log file layout looks like the following : ( important parameters overwritten for clarity ) : The YLS file format can be described as follows : • SIZE OF RSA Identifier : 0x29 in the figure above • RSA ID : `` 39ee448cf196304cfe9c6b1c2e436 '' . 
+( Used by attackers to identify which RSA key was used to encrypt the 3DES Key . 
+• BLOCKSIZE : 128 bytes ( 24 bytes from 3DES key and 104 from PKCS padding block ) • ENCRYPTED 3DES KEY : In yellow on the figure above , replaced by `` C '' • 3DES Initialization Vector : In red on the figure above , replaced by `` I '' . 
+Mandatory to decrypt logs . 
+• 3DES ENCRYPTED LOG bytes Only the attackers can decrypt such a log file . 
+They can identify which Public RSA Key was used from the identifier , and decrypt the 3DES key using their Private RSA Key . 
+From there , they can use the 3DES Key and the Initialization Vector which is present in clear form to decrypt the log file . 
+SHA-256 : 170e5eb004357dfce6b41de8637e1dbeb87fa58e8b54a2031aac33afb930f3c8 Size : 226304 Compiled : Wed , 28 Sep 2011 07:36:00 UTC C2 urls : onemillionfiles.com/server_package/system/application/controllers/list.php ? id= www.autoyoung.com/system/ext/Smarty/plugins/function.search.php ? id= All binaries have basically the same functionality - they serve as downloaders for other malicious code . 
+The ClientX backdoor binaries were found in an open directory on one of the C2 servers . 
+They consist of two .NET 
+files . 
+One of them is called client.exe , which is the main malware component . 
+The second is library.dll , which provides functions to client.exe . 
+The client.exe file has built-in debug messages , but the binary was compiled as a GUI application . 
+By editing the PE header , it is possible to change it back to console , and see real time debug messages as the malware operates : Here is what is displayed upon execution : Upon execution , client.exe starts by sleeping for 10 seconds . 
+It then creates a Mutext called `` clientX '' to check whether other instances of the malware are already running . 
+If no other instance of the malware is found , it will write `` One instance '' and continue execution . 
+Otherwise , it will print out '' More than one instance '' and terminate . 
+Immediately after creating the Mutex the `` cleaner '' method is called . 
+( Debug message : `` upd cleaner '' ) . 
+This method looks for all executables in the current folder and deletes files with names that do not match some file property criteria . 
+This is used to delete older versions of the RAT after a successful update ( See the commands UPD later described in this appendix ) The backdoor then starts the main loop , which is an infinite while loop . 
+( Debug message : `` main loop '' ) . 
+Some settings are checked by the backdoor . 
+( Debug message : `` setting check '' ) The Settings Check method from the check class is used . 
+After the debug message `` RegIeDir '' , the following registry key is opened `` HKEY_CURRENT_USER\\ SOFTWARE\\Microsoft\\Internet Explorer '' and the subkey `` InternetRegistry '' is checked . 
+If not found , a subkey is created . 
+That part is closed by a debug message : `` RegIeDir done '' . 
+The `` run-work '' debug message indicates that the malware is gathering two registry keys for later use . 
+There is a structure named `` prSettings '' with the following fields : The last two fields `` prSettings.KeyRun '' and `` prSettings.KeyWork '' are the one filled by `` run-work '' . 
+`` KeyRun '' will hold `` SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run '' , either from '' HKEY_LOCAL_MACHINE '' or `` HKEY_CURRENT_USER '' depending on access rights . 
+`` KeyWork '' will hold `` SOFTWARE\\Microsoft\\Windows\\CurrentVersion '' , either from `` HKEY_ LOCAL_MACHINE '' or `` HKEY_CURRENT_USER '' depending on access rights . 
+The `` CheckAccessLM '' and `` CheckAccessCU '' methods check for access to Local Machine and Current User , respectively . 
+If the LOCAL MACHINE is n't accessible the following error message is displayed `` LM error : error reason '' , otherwise `` LM no error '' . 
+If the CURRENT MACHINE is n't accessible the following error message is displayed `` CU error : error reason '' , otherwise `` CU no error '' . 
+If for some reason , neither `` SOFTWARE\\Microsoft\\Windows\\CurrentVersion '' from Local Machine nor Current User is accessible , the following '' HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Internet Explorer\\InternetRegistry '' will be used for `` KeyWork '' . 
+Once the registry keys are identified , the debug message `` run-work done '' is displayed . 
+The malware prints both KeyRun and Keywork and continues execution . 
+A subkey is added to KeyRun to automatically start the malware when Windows reboots . 
+The name of that subkey comes from the `` version information '' entry of the resource section where the internal and original file name can be found . 
+The full path of the malware is set and the malware can now survive reboot . 
+The debug message '' work '' is displayed . 
+The next step focuses on the Keywork registry key . 
+The following subkeys are checked and created if not present in Keywork\\ [ name_from_version_ information ] : `` done '' , `` doneEXT '' , `` work '' , `` settings '' and `` servers '' . 
+They hold not any value at this point . 
+This part is ended by a debug message : `` run-work done 2 '' Immediately after checking for special subkeys , the IDget method is called . 
+If the `` id '' subkey does n't exist , the method IDset is called and a new BOTID is created and stored as a Base64 encoded string . 
+Afterwards , the IDget method is called and the BOTID is Base64 decoded from the registry and saved for later use in prSettings.id . 
+It does the same for `` prSettings.priv '' , `` prSettings.pub '' , `` prSettings.timeout '' and `` prSettings . 
+servers '' , each time checking whether a value is already set , and creating one if not . 
+The developers made a mistake . 
+The `` prSettings.priv '' is set using the IDget method instead of the KeyPrivGet method . 
+However , this makes little difference since KeyPubGet , KeyPrivGet and IDget are wrappers to the GenerateID methods . 
+This could have introduced a serious flaw if those parameters were used in a secure scheme : Once it is done filling the prSettings structure , the debug message `` settingcheck done '' is displayed . 
+The next method called by our trojan is `` AnsSend '' . 
+It stands for `` Answer Send '' . 
+It starts with the debug message `` ANSWER '' . 
+This part of the code looks into the registry , specifically into the `` KeyWork\\ [ name_from_version_ information ] \\done '' and doneEXT subkeys to see if there is anything ready to be posted to the C & C server . 
+Those subkeys should be empty at this stage , since the Answers are only created after a task received from the C & C server is completed . 
+Should answers be available , their numbers would be printed as a debug message and processed and the following would be displayed as a debug message : This essentially does a POST request to the C & C server using the BOTID and the following User Agent : `` Mozilla/5.0 ( Windows NT 6.1 ; rv:5.0 ) Gecko/20100101 Firefox/5.0 '' On the C & C server side , a new file would be created named after the BOTID with the extension '' .ans 
+'' . 
+Here is an example of such a file : The date of the post can be found , the base64 encoded C & C server and the unicode string Answer , modified in this example . 
+This is how the attackers get an answer ( result ) from a given task . 
+The WorkReceive function essentially does a GET request on the C & C server in order to receive a task to complete on the infected computer . 
+The task to execute is encrypted and base64 encoded and returned between the `` havex '' tags . 
+Here is an example without any task between the tags : The trojan calls the DataParser to locate the task : The task is decrypted , decoded and stored in the `` KeyWork\\ [ name_from_version_information ] \\ work '' subkey . 
+Just before the WorkBegin method is called , the `` begin work '' debug message is displayed . 
+The first thing WorkBegin does is decrypt and unbase64 the answer returned from the DataParser . 
+Afterwards , two things are extracted : The command to execute and the data parameter for the command . 
+The final step calls the command dispatcher , which executes the command sent by the attackers . 
+The `` SCR '' command is used by the attacker to request a Screen Capture of the infected computer . 
+Typical GDI functions are used , including : CreateCompatibleDC , GetSystemMetrics and CreateCompatibleBitmap . 
+The screenshots are made as JPG files . 
+If a screenshot already exist , it is deleted prior the creation of a new one . 
+The `` DIR '' and `` DIS '' commands are used to generate Directory listings using the XML format . 
+The TIM command is responsible for updating the Timeout parameter in the registry . 
+The command finds where the KeyWork is located and updates the Time out with the parameter provided to the command . 
+The UPD command is used to run an updated version of the RAT . 
+The currently running RAT executes the update and exits . 
+Upon execution , the newly updated version will delete the old RAT using the Cleaner method described earlier . 
+Change Folder attributes . 
+The LIB command is used to load a DLL on the infected machine . 
+It simply uses LoadLibrary . 
+The FIR command is used to run an executable on the infected computer . 
+The process is created with hidden windows to stay unnoticed . 
+The UPS command is used to update the C & C server in the registry . 
+The FIS command is used to check if the file passed as parameter exists on the infected computer . 
+The FIT command is used to delete a file passed as parameter to the command if it exists on the infected computer . 
+The CMD command is used to execute a command on the infected machine using cmd.exe The KEY command is used to update the Priv and Pub key in the registry . 
+Once the commands have been executed , the debug message `` End work '' is displayed . 
+The malware then sleeps for a random amount of time and the main loop continues . 
+If the commands were executed , all results stored in the registry will be POSTED to the server via the AnsSend method . 
+The malware loops forever waiting for new orders from the attackers . 
+1st stage samples SHA-256 : 1b3cf050d626706d32c1c2c1cbd4975d519cfbdb9bca0f2e66b7e1120030b439 size : 538152 timestamp : Fri , 19 Jun 1992 22:22:17 UTC sources : hXXp : //lafollettewines.com/blog/wp-includes/pomo/inden2i.php ? dwl=fne hXXp : //kenzhebek.com/tiki/files/templates/listpages/inden2i.php ? dwl=fne dropped as : dxpserver.exe , corensys.exe , wbemmonitor.exe detected as : Trojan.Win32.Benban.yc SHA-256 : b1a3e67200a3837ecf45481885c2eca88f89509443a0bcec01b12aa737007a9b size : 248360 timestamp : Fri , 19 Jun 1992 22:22:17 UTC detected as : Trojan-Dropper.Win32.Clons.aqwj SHA-256 : fcf7bfe68ff302869475b73e4c605a099ed2e1074e79c7b3acb2a451cd2ea915 size : 271400 timestamp : Fri , 19 Jun 1992 22:22:17 UTC source : www.nahoonservices.com/wp-content/plugins/rss-poster/juch.php dropped as : searchindexer.exe detected as : Trojan-Dropper.Win32.Clons.ampw SHA : a553384eeadf4ad39e6c89bf16a146c01ebf627d042485844d75cd67b421afb8 size : 248360 timestamp : Fri , 19 Jun 1992 22:22:17 UTC signature : Trojan-Dropper.Win32.Clons.apvc This backdoor comes packed with UPX and a custom Delphi packer . 
+The Delphi packer contains anti- debugging tricks and code especially crafted to overrun sandbox mechanisms . 
+The packer unpacks and executes the main binary in several stages , creating multiple separated processes and threads . 
+Code flow : This EXE copies the additional MZ from its overlay to C : \ProgramData\Cap\Cap.exe and runs this file using following command : Then it deletes the directory C : \ProgramData\Cap and all the files in it , deletes itself and exits . 
+It uses encrypted strings - XOR with progressively incremented value . 
+3rd stage 3rd party screenshot tool Cap.exe is indeed the DuckLink CmdCapture tool - a 3rd party freeware AutoIt application ( AutoIt version 3.3.6.1 ) for capturing the screenshots , available here This application is dropped by the scs.exe module and run using following command line parameters : /d C : \ProgramData\Mail\MailAg /f scs.jpg > C : \ProgramData\Mail\MailAg\scs.txt The /d parameter specifies the destination directory The /f parameter specifies the filename for the screenshot file . 
+Text output produced by application is redirected to the C : \ProgramData\Mail\MailAg\scs.txt file and contains information such as : Description of the DuckLink CmdCapture functionalities from the README file that comes with the application : This freeware program designed to capture images of the screen . 
+Main Features : * Full Screen Capture ( display selection support ) . 
+* Window Capture . 
+* Selected area capture . 
+* Save captured image in silent mode . 
+* Open captured image in graphic editor . 
+* Print captured image . 
+* Put captured image to clipboard . 
+* Upload captured image ( to image hosting services ) . 
+* Images format support : PNG GIF JPG - Quality can be set . 
+BMP - Format can be set . 
+Example of part of the content of the scs.txt file : @ HOUR : Hours value of clock in 24-hour format . 
+Range is 00 to 23 Sample Value : 23 @ MDAY : Current day of month . 
+Range is 01 to 31 Sample Value : 22 @ MIN : Minutes value of clock . 
+Range is 00 to 59 Sample Value : 19 @ MON : Current month . 
+Range is 01 to 12 Sample Value : 07 @ MSEC : Milliseconds value of clock . 
+Range is 00 to 999 Sample Value : 050 @ SEC : Seconds value of clock . 
+Range is 00 to 59 Sample Value : 52 @ WDAY : Numeric day of week . 
+Range is 1 to 7 which corresponds to Sunday through Saturday . 
+Sample Value : 3 @ YDAY : Current day of year . 
+Range is 001 to 366 ( or 001 to 365 if not a leap year ) Sample Value : 203 @ YEAR : Current four-digit year Sample Value : 2014 @ ComputerName : Computer 's network name . 
+Sample Value : WINXP @ ComSpec : value of % comspec % , the SPECified secondary COMmand interpreter ; primarily for command line uses , e.g . 
+Run ( @ ComSpec & `` /k help | more '' ) Sample Value : C : \WINDOWS\system32\cmd.exe @ CPUArch : Returns `` X86 '' when the CPU is a 32-bit CPU and `` X64 '' when the CPU is 64-bit . 
+Sample Value : X64 @ HomeShare : Server and share name containing current user 's home directory . 
+Sample Value : @ IPAddress1 : IP address of first network adapter . 
+Tends to return 127.0.0.1 on some computers . 
+Sample Value : 192.168.56.11 @ IPAddress2 : IP address of second network adapter . 
+Returns 0.0.0.0 if not applicable . 
+Sample Value : 0.0.0.0 @ IPAddress3 : IP address of third network adapter . 
+Returns 0.0.0.0 if not applicable . 
+Sample Value : 0.0.0.0 @ IPAddress4 : IP address of fourth network adapter . 
+Returns 0.0.0.0 if not applicable . 
+Sample Value : 0.0.0.0 @ LogonDNSDomain : Logon DNS Domain . 
+Sample Value : @ LogonDomain : Logon Domain . 
+Sample Value : WINXP -- - snip -- - File listing module SHA-256 : 07bd08b07de611b2940e886f453872aa8d9b01f9d3c61d872d6cfe8cde3b50d4 Size : 15872 Timestamp : Tue , 02 Jul 2013 12:41:47 UTC Source : 91.203.6.71/check2/muees27jxt/fl.exe Detected as : HEUR : Trojan.Win32.Generic Module listing file . 
+Saves a list of documents that have specified extensions or contain specified strings in the file name to the C : \ ProgramData\Mail\MailAg\fls.txt file . 
+Saved information includes path , size and modification time . 
+The C & C Backend is written in PHP , consisting of 3 files . 
+`` log.php '' is a Web-Shell , used for file level operations . 
+`` testlog.php '' is not a PHP-script but it contains the C & C Server logfile of Backdoor-connections . 
+Please see `` source.php '' below for further information . 
+`` source.php '' The Backdoors interact with `` source.php '' , which is the control script . 
+Following the functions on execution : 1 . 
+Collects the following Information : 2 . 
+Writes the above information to `` testlog.php '' , separated by `` Tabulator '' and base64-encoded , with the following syntax : < timestamp > \t < victim ip-address > \t < proxy > \t < botID > \t < request-uri > \t < useragent > 3 . 
+Writes all transferred HTTP-GET Variables to `` < botID > .log 
+'' , separated by `` Tabulator '' and base64-encoded . 
+4 . 
+If the bot executed an HTTP-POST-request , the transferred data is written to the file `` < botID > . 
+ans '' , enclosed in `` xdata '' -Tag with timestamp . 
+( `` ans '' is the acronym for `` Answer '' ) 5 . 
+Checks for any file `` < botID > _*.txt '' a . 
+If found the timestamp , filename and Status `` sent '' are first appended to `` < botID > .log 
+'' . 
+Then the file content is transferred to the bot , embedded into HTML with HTML-Body `` No data ! '' and HTML-Comment `` Havex '' containing the data to be transferred . 
+Finally the file on the server will be removed . 
+If removal fails it 's logged to `` < botID > .log 
+'' . 
+b . 
+If no matching file is found , a HTML-Response is sent with an empty `` Havex '' HTML- Comment and HTML-Body text `` Sorry , no data corresponding to your request . 
+'' The page below shows a brief description of the identified victims including information about the company and the sector on which they operates . 
+A total of 101 victims have been identified . 
+Victim 1 Offers a complete range of manufacturing processes including precision injection molding , cleanroom molding and assembly , sheet metal fabrication , supply chain management and distribution . 
+Victim 2 Ukrainian wholesale suppliers for the pharmaceutical market . 
+Victim 3 General contracting , design build and construction management company ; based in Alabama . 
+Victim 4 Company performing web developing , hosting , consulting and content management . 
+Victim 5 University in Ukraine . 
+Victim 6 Develops larger machines for international manufacturers – Ireland . 
+Victim 7 School in Tennessee . 
+Victim 8 Special Purpose Machines . 
+Working in several sectors including the pharmaceutical , automotive , printing or plastic industry . 
+Victim 9 Corporation - Area of activity : Adult Internal Medicine , Infectious Disease , Pediatrics , OB/GYN , Dentistry , Psychology , Psychiatry , Social Services Victim 10 Faculty of Electrical Engineering , Mechanical Engineering and Naval Architecture . 
+Victim 11 Distributor for construction machinery , energy systems and Caterpillar brand equipment . 
+Victim 12 One of Northern Ireland 's most respected and innovative construction companies . 
+Victim 13 Supplier of IT services and products . 
+Victim 14 Multi-trade company providing high quality electrical , HVAC , IT , across the country ( US ) . 
+Victim 15 Area of activity : Packaging systems . 
+HQ in Switzerland . 
+Victim 16 Web development and hosting including ERP and commercial implementation and consulting services . 
+HQ : Chile Victim 17 Car dealer in Arizona Victim 18 IT Australia - provides systems to streamline management and governance processes . 
+Victim 19 Integrated online marketing agency . 
+Russia . 
+Victim 20 Design and manufacture of standard and custom leak test machines . 
+Victim 21 University in Spain . 
+Victim 22 Towing/hauling solutions to the commercial trucking industry . 
+Located coast to coast in the U.S. , Canada , Europe , Australia and Mexico . 
+Victim 23 University in Poland . 
+Victim 24 Areas of activity : recycling , mining and food sorting . 
+Victim 25 Systems integrator located in North Carolina . 
+Specializes in the design and implementation of SCADA systems . 
+Victim 26 City council - Poland . 
+Victim 27 University in China . 
+Victim 28 Cleaning solutions . 
+Victim 29 Manufacturer of flexible packaging and advanced laminate design solutions . 
+Victim 30 Custom manufacturing of complex three-dimensional sheet metal parts . 
+Victim 31 Specializes in mechanical engineering . 
+Area of activity : Laminating-Machines , Used-Machinery . 
+Victim 32 Structural engineering field in every major market sector and construction type . 
+California . 
+Victim 33 Courier services worldwide . 
+Greece . 
+Victim 34 Institute of Physics . 
+Croatia Victim 35 Supplies public sector organizations with products and contracts . 
+UK . 
+Victim 36 University in Spain . 
+Victim 37 University in Poland . 
+Victim 38 University in Poland . 
+Victim 39 Research & Education Network . 
+USA . 
+Victim 40 University in Germany . 
+Victim 41 American multinational technology and consulting corporation . 
+Victim 42 Creates and manages international private WANs for large multinational companies . 
+Victim 43 Informatics Centre in India . 
+Victim 42 Health authority in Canada . 
+Victim 43 County Government in USA . 
+Victim 44 University in USA . 
+Victim 45 American multinational conglomerate corporation . 
+Victim 46 Unit within University in USA . 
+Victim 47 Operates high speed computer network in Turkey . 
+Victim 48 University in Poland . 
+Victim 49 Telecommunications and computing services . 
+USA . 
+Victim 50 American multinational document management corporation . 
+Victim 51 Major electronic systems company based in France acting in areas such as defense , aerospace , airline security and safety , information technology , and transportation Victim 52 Swiss multinational pharmaceutical company . 
+Victim 53 American manufacturing conglomerate involved in aircraft , the space industry , defense-oriented and commercial electronics , automotive and truck components . 
+Victim 54 Industrial suburb in India . 
+Victim 55 Information Technology company . 
+Iran . 
+Victim 56 University in China . 
+Victim 57 Global payments and technology company . 
+USA . 
+Victim 58 College in USA . 
+Victim 59 University in Germany . 
+Victim 60 University in UK . 
+Victim 61 Supercomputing and Networking Center . 
+Poland . 
+Victim 62 University in Canada . 
+Victim 63 University in USA . 
+Victim 64 University in Spain . 
+Victim 65 Academic and Research Network . 
+Ukraine . 
+Victim 66 University in Canada . 
+Victim 67 Front , middle , and back office services for global financial markets . 
+Victim 68 Greek Public Administration Network Victim 69 University in the USA . 
+Victim 70 University in Russia . 
+Victim 71 Airport Authority in the USA . 
+Victim 72 Multinational manufacturer . 
+Germany . 
+Victim 73 Energy consumption analysis company . 
+Victim 74 University in the USA . 
+Victim 75 University in Taiwan . 
+Victim 76 University in Japan . 
+Victim 77 University in Taiwan . 
+Victim 78 University in the USA . 
+Victim 79 University in the USA . 
+Victim 80 University in Sweden . 
+Victim 81 University in Poland . 
+Victim 82 Pharma industry . 
+Victim 83 Digital content for education and research in the UK . 
+Victim 84 University – weather research . 
+Victim 85 University in South Korea . 
+Victim 86 Construction management services . 
+Victim 87 Education and Research Network , China . 
+Victim 88 Communications network for science and research , Germany . 
+Victim 89 University in the USA . 
+Victim 90 University in Spain . 
+Victim 91 University in South Korea . 
+Victim 92 Academic and Research Network , Croatia . 
+Victim 93 Encryption technology Institute . 
+Victim 94 University in the USA . 
+Victim 95 Chemical company , Germany . 
+Victim 96 School , USA . 
+Victim 97 University in Ukraine . 
+Victim 98 Liquefied natural gas , US energy demand . 
+Victim 99 University in Poland . 
+Victim 100 Academic and Research Network , Australia . 
+Victim 101 Space research institute , Russia . 
+SwissRanger camera driver ( sysmain dropper ) A hijacked installer of libMesaSR used by the `` SwissRanger '' camera driver , produced by Acroname : http : //www.acroname.com/ Files details : SHA-256 : 398a69b8be2ea2b4a6ed23a55459e0469f657e6c7703871f63da63fb04cefe90 Size : 1311927 Compiled : Sat , 28 May 2011 16:04:38 UTC Detected as : Trojan.Win32.Inject.hhwa Description : trojanized installer Path : % TEMP % \tmp687.dll and % APPDATA % \sydmain.dll SHA-256 : a8e6abaa0ddc34b9db6bda17b502be7f802fb880941ce2bd0473fd9569113599 Size : 133152 Compiled : Wed , 12 Jun 2013 04:31:14 UTC Detected as : Trojan.Win32.Inject.hhwa Description : Sysmain backdoor Path : % TEMP % \setup.exe SHA-256 : 7fa188fb3bfecbd0fbbb05cfa4a3078ac44f68c63b784b20046e470613e35f96 Size : 1181500 Compiled : Sat , 05 Dec 2009 22:50:52 UTC Description : original installer , version 1.0.14.706 Registry modification : [ HKCU\Software\Microsoft\Windows\CurrentVersion\Run ] load = C : \WINDOWS\system32\rundll32.exe `` c : \documents and settings\luser\application data\sydmain.dll '' , AGTwLoad eWon software ( Havex dropper ) A hijacked installer of eCatcher - a piece of legitimate software developed by a Belgian producer of SCADA and industrial network equipment : http : //www.ewon.be/en/home.html Files details : SHA-256 : 70103c1078d6eb28b665a89ad0b3d11c1cbca61a05a18f87f6a16c79b501dfa9 Size : 43971440 Compiled : Sat , 31 Mar 2007 15:09:46 UTC Detected as : ( not detected yet ) Description : trojanized installer Url : hxxp : //www.ewon.biz/software/eCatcher/eCatcherSetup.exe Path : % TEMP % \TmProvider.dll and % SYSTEM % \TMPProvider.dll SHA-256 : 401215e6ae0b80cb845c7e2910dddf08af84c249034d76e0cf1aa31f0cf2ea67 Size : 327168 Compiled : Mon , 30 Dec 2013 12:53:48 UTC Description : Havex version 038 Path : % TEMP % \eCatcherSetup.exe SHA-256 : c7caa7fa2a23508b0a024a6a4b2dcaad34ab11ea42dffc3a452901c007cdfc34 Size : 43785864 Compiled : Fri , 19 Jun 1992 22:22:17 UTC Description : original installer , version 4.0.0.13073 Path : % TEMP % \qln.dbx Size : 2 Description : text file with Havex version number Registry modification : [ HKCU/HKLM\Software\Microsoft\Windows\CurrentVersion\Run ] TmProvider = rundll32 `` % SYSTEM % \TMPprovider038.dll '' , RunDllEntry [ HKLM\Software\Microsoft\Internet Explorer\InternetRegistry ] fertger = 269684507736283195770098FD80-25 mbCheck software ( Havex dropper ) A hijacked installer of legitimate software for the remote maintenance of PLC systems - mbCHECK produced by MB Connect Line GmbH : http : //www.mbconnectline.com/index.php/en/ Files details : SHA-256 : 0b74282d9c03affb25bbecf28d5155c582e246f0ce21be27b75504f1779707f5 Size : 1141478 Compiled : Sun , 14 Jul 2013 20:09:51 UTC ) Detected as : Trojan-Dropper.Win32.Injector.kcnn Description : Trojanized installer Path : and % SYSTEM % \svcprocess043.dll % TEMP % \mbCHECK.dll SHA-256 : d5687b5c5cec11c851e84a1d40af3ef52607575487a70224f63458c24481076c Size : 437248 Compiled : Fri , 11 Apr 2014 05:37:36 UTC Description : Havex version 043 Resource : 12.MTMxMjMxMg==.5.havex.14400000.12.Explorer.EXE.0.2.66.sinfulce lebs.freesexycomics.com/wp05/wp-admin/includes/tmp/tmp.php.90.ra pidecharge.gigfa.com/blogs/wp-content/plugins/buddypress/bp-sett ings/bp-settings-src.php.354.AATXn+MiwLu+xCoMG7SqY1uQxAk1qLdyoED 9LxIVQr2Z/gsrHIsgTvK9AusdFo+9..fzAxf1zXj42880+kUmktmVb5HSYi8T27Q 54eQ4ZLUFKPKZstgHcwPVHGdwpmmRmk..09fL3KGd9SqR60Mv7QtJ4VwGDqrzOja +Ml4SI7e60C4qDQAAAAAAAAAAAAAAAAAA..AAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA..AAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA..AAAAAAAAAAAAAAAAAAAAAQAB . 
+29.c8a7af419640516616c342b13efab.29.45474bca5c3a10c8e94e56543c2b d.600000.2000.323000.10.svcprocess . 
+Path : % TEMP % \mbCHECK.exe SHA-256 : 34254c2decc973dbd8f28b47690f233f5c5d3e1735ee20a6b8dd1dbe80d16d81 Size : 1647104 Compiled : Thu , 25 Jul 2013 13:30:28 UTC Description : original software , version 1.1.1.0 Path : % TEMP % \qln.dbx Size : 2 Description : text file with Havex version number Registry modification : [ HKCU|HKLM ] \Software\Microsoft\Windows\CurrentVersion\Run ] svcprocess = rundll32 `` % SYSTEM % \svcprocess043.dll '' , RunDllEntry [ HKLM\Software\Microsoft\Internet Explorer\InternetRegistry ] fertger = 229182459113651166490098FD80-c8a7af419640516616c342b13efab Second stage tool delivery : kinoporno.org was a confirmed Yeti site . 
+It served Havex variant ( d532eb6835126e53e7ae491ae29f d8b3 ) at kinoporno.org/Provider.dll . 
+It also served up the well-known lateral movement utility 64bit Windows Credential Editor tool at kinoporno.org/wce64.exe Another example above included a credential and document stealing component , downloaded as a part of the attack chain from nahoonservices.com : 91.203.6.71/check2/muees27jxt/fl.exe CVE-2011-0611 - PDF exploit The exploit is delivered as an XDP file ( XML Data Package ) which is actually a PDF file packaged within an XML container . 
+This is a known PDF obfuscation method which serves as an additional anti-detection layer . 
+The XDP file contains an SWF exploit and two files ( encrypted with XOR 0x04 ) stored in the invalid section of the PDF . 
+One of the files is Havex DLL ( version 038 ) , the other is a small JAR file , which is used to copy and run the DLL by executing the following command : cmd /c copy < fname_passed_as_param > % TEMP % \\explore.dll /y & rundll32.exe % TEMP % \\ explore.dll , RunDllEntry The SWF executes the action script , which contains a shellcode ( encrypted with XOR 0x96 ) and another SWF file ( encrypted with XOR 0x7D ) which uses the CVE-2011-0611 vulnerability to run the shellcode . 
+The shellcode then looks for the signature S18t in the memory ( which signs the start of encrypted DLL ) , decrypts and loads it . 
+Files summary : In relation to the Yeti infections , we have discovered a malicious JAVA applet - named googlea . 
+jar - which was part of the malicious HTML file . 
+It uses either CVE-2012-1723 or CVE-2012-4681 , depending on which Java version is running on the victim 's machine . 
+It downloads payloads to % JAVATMP % \roperXdun.exe ( where X is the sequential number starting from 0 for the payload from the first URL from the list ) and executes them . 
+The URL list is stored in the `` uid '' parameter in HTML file , so there is no way of checking what the payload was and where it came from without having the original HTML that embedded the malicious applet . 
+The URLs in the parameter are encrypted in the form of a string composed from numbers from 0 to 71 separated by colons . 
+Each number represents a different ASCII character . 
+Almost predictably , this early Yeti pdf exploit is yet another metasploit rip . 
+The ROP used in this Yeti exploit matches the msf code instruction for instruction . 
+The pdf stores the Havex downloader in its content , which it writes to % temp % and executes after obtaining control flow from Adobe Reader . 
+The significant stages of this exploit start by setting up parameters for the vulnerable strcat call in the CoolType SING table parsing library here , in order to overwrite the stack with an appropriate ROP blob . 
+The code is paused here at the vulnerable strcat call : After the strcat call values smash the stack , an exact copy of the metasploit ROP code delivered by the Yeti exploit pivots from the ( msf-selected ) icucnv36.dll library into the microsoft c runtime to make a memcpy call here : The original 0-day exploiting this Adobe Reader vulnerability targeted icucnv34.dll . 
+Function call chains for both the Yeti ROP and the msf ROP are as follows : CreateFileA CreateFileMappingA MapViewOfFile save and load the saved mapping ptr memcpy ret back into shellcode for Havex file write to % temp % and execute This work is clearly a rip from metasploit . 
+CVE-2012-5076 - Java exploit www.nahoonservices.com/wp-content/plugins/rss-poster/dgoat.jar → www.nahoonservices.com/wp- content/plugins/rss-poster/jungle.php ( TmpProvider0.dll , 2e39e7bd5d566893fe3df0c7e145d83a ) dgoat.jar │ └───dgoat │ EvilPolicy.class , 761 bytes │ Mosdef.class , 2176 bytes │ SiteError $ 1.class , 1976 bytes │ SiteError.class , 4347 bytes │ └───META-INF MANIFEST.MF , `` Manifest-Version : 1.0 '' Another exploit ripping metasploit code . 
+This exploit was first seen on a large scale when exploit code targeting cve-2012-5076 was included in the `` Cool Exploit '' pack . 
+The flaw lies in the configuration of the JRE itself and enables untrusted applets to access dangerous packages . 
+In other words , `` com.sun.org.glassfish. , \ '' was left out of the checkPackageAccess list in the java.security file . 
+From the unrestricted com.sun.org.glassfish . 
+* package , the untrusted applets can create a class with elevated privilege . 
+In this case , one of the exposed `` dangerous '' packages happens to be com.sun . 
+org.glassfish.gmbal , which you can see imported by `` SiteError.class '' : Also in that class file is the trigger itself , where a malicious class is loaded on the fly by the unrestricted `` GenericConstructor '' code that should not have been available to an untrusted applet . 
+The new instance of localClass created from smd_bytes is nothing more than a call to set the SecurityManager value to null , effectively turning off the JRE sandbox security access features . 
+The exploit maintains a class in the byte array : And when decoded , the contents of this smd_bytes array are in fact `` SecurityManagerDisabler . 
+class '' : After SecurityManagerDisabler.class disables the JRE SecurityManager , SiteError.class code loads the Mosdef.class , which downloads and runs another Havex backdoor . 
+It downloads www.nahoonservices.com/wp-content/plugins/rss-poster/jungle.php to % temp % , renames it to TMPprovider0.dll and executes the Havex code : This exploit is ripped almost directly from the metasploit framework - it 's simply modified with an additional string obfuscation handling method . 
+The obfuscation code in this java exploit is fairly weak but effective in modifying the metasploit code just enough to cover up similarities . 
+The exploit code was only slightly modified here to demonstrate the crypto routine and hardcoded string values for the payload url and filepath : Output here : The exploit itself is finicky . 
+It is another rip of the corresponding metasploit code , with minor modifications . 
+See `` Obvious Metasploit Rips '' below . 
+The shellcode delivered with the exploit is nothing out of the ordinary , using expected thread environment variables to identify module locations in the memory ... 
+The shellcode gets more interesting due to the manner in which the download url string was built . 
+The encoding algo was a simple additive 0x1010101 against every four bytes of the reversed string '' kenzhebek.com/tiki/files/templates/listpages/hoem.php '' , which was downloaded as a Havex backdoor . 
+The decoder looks like this ... 
+Identifying the clsid used in this script is a giveaway on the targeted MS XML Core Services software : Of course , most of this code appears to be ripped from the corresponding metasploit exploit code . 
+Interestingly , the metasploit code was derived from 0day Itw at the time in June 2013 . 
+But the attackers did n't use it until after the vulnerability was patched . 
+The Yeti attackers simply did not need a 0-day arsenal . 
+The attackers must have known or expected that they were targeting Internet Explorer 7 on the victims ' systems . 
+The later , updated versions of the corresponding metasploit code maintain ROP to evade problems with attacking IE 8+ ASLR/DEP protections , but the Yeti code does not . 
+This absence is somewhat odd , because KSN events indicate the code was active in August 2013 , and the metasploit dev added ROP to their code in June 2013 . 
+The shellcode delivered from this exploit also includes an unusual url and filename string build routine : The decoded strings here : The Yeti exploits are ripped line-for-line from the metasploit framework . 
+For example , class files served from www.nahoonservices.com/wp-content/plugins/rss-poster/start . 
+jar include code pulled from the msf . 
+From the Yeti LyvAGalW.class file : And for comparison , here is the java exploit code from metasploit framework : github.com/rapid7/ metasploit-framework/blob/master/external/source/exploits/cve-2013-1488/Exploit.java : Yeti 's delivery of CVE-2013-1347 from nahoonservices.com/wp-content/plugins/rss-poster/negc . 
+html displays much the same level of technical originality . 
+From negc.html The matching CVE-2013-1347 code pulled from msf https : //github.com/rapid7/metasploit-framework/blob/master/modules/exploits/windows/ browser/ie_cgenericelement_uaf.rb ( minor modifications made to its shellcode build algorithm . 
+Actually , the Yeti version is dumbed down , when compared to the metasploit framework version ) : In earlier cases ( July 2013 ) , successful Java exploitation served from nahoonservices.com would cascade into more Yeti components planted on victim systems . 
+The java exploit in turn downloaded Karagany backdoors , which in turn downloaded stealers from 91.203.6.71 : User visits utilico.co.uk → redirected to → nahoonservices.com → Java Exploits → www.nahoonservices.com/wp-content/plugins/rss-poster/start.jar www.nahoonservices.com/wp-content/plugins/rss-poster/juch.php a615d71af0c856c89bb8ebb5c6e7644d fcf7bfe68ff302869475b73e4c605a099ed2e1074e79c7b3acb2a451cd2ea915 juch.php saved as `` searchindexer.exe '' , or `` coresyns.exe '' and run , then downloads and runs ... 
+→ 91.203.6.71/check2/muees27jxt/fl.exe 4bfdda1a5f21d56afdc2060b9ce5a170 07bd08b07de611b2940e886f453872aa8d9b01f9d3c61d872d6cfe8cde3b50d4 → 91.203.6.71/check2/muees27jxt/scs.exe da94235635f61a06a35882d30c7b62b3 05fb04474a3785995508101eca7affd8c89c658f7f9555de6d6d4db40583ac53 In a later incident , KSN data recorded one origin of these exploits as : hxxp : //keeleux.com/sfreg/img/nav/gami.jar and hxxp : //keeleux.com/sfreg/img/nav/stoh.jar ( ab580bd7a1193fe01855a6b8bd8f456b ) The file `` stoh.jar '' includes `` DownloadExec.class '' , which maintains a hardcoded string to the URL . 
+This string appears to be more commonly implemented at the active exploit sites : hxxp : //keeleux.com/sfreg/img/nav/iden21php ? dwl=fne It writes out the TmpProvider.dll Havex loader downloaded from this resource and runs it using '' rundll32.exe '' . 
+eWON trojanized installer detail : hxxp : //www.ewon.biz/software/eCatcher/eCatcherSetup.exe ( eb0dacdc8b346f44c8c370408bad43 06,70103c1078d6eb28b665a89ad0b3d11c1cbca61a05a18f87f6a16c79b501dfa9 ) Havex loader version 038 ( 401215e6ae0b80cb845c7e2910dddf08af84c249034d76e0cf1aa31f0cf2ea67 ) dropped as TmpProvider.dll . 
+Internet Explorer CVE-2013-1347 http : //www.cve.mitre.org/cgi-bin/cvename.cgi ? name=CVE-2013-1347 '' Microsoft Internet Explorer 8 does not properly handle objects in memory , which allows remote attackers to execute arbitrary code by accessing an object that ( 1 ) was not properly allocated or ( 2 ) is deleted , as exploited in the wild in May 2013 . 
+'' CVE-2012-1889 http : //www.cve.mitre.org/cgi-bin/cvename.cgi ? name=CVE-2012-1889 '' Microsoft XML Core Services 3.0 , 4.0 , 5.0 , and 6.0 accesses uninitialized memory locations , which allows remote attackers to execute arbitrary code or cause a denial of service ( memory corruption ) via a crafted web site . 
+'' Java CVE-2013-1488 https : //cve.mitre.org/cgi-bin/cvename.cgi ? name=CVE-2013-1488 '' The Java Runtime Environment ( JRE ) component in Oracle Java SE 7 Update 17 and earlier , and OpenJDK 6 and 7 , allows remote attackers to execute arbitrary code via unspecified vectors involving reflection , Libraries , `` improper toString calls , '' and the JDBC driver manager , as demonstrated by James Forshaw during a Pwn2Own competition at CanSecWest 2013 . 
+'' CVE-2012-1723 https : //cve.mitre.org/cgi-bin/cvename.cgi ? name=CVE-2012-1723 '' Unspecified vulnerability in the Java Runtime Environment ( JRE ) component in Oracle Java SE 7 update 4 and earlier , 6 update 32 and earlier , 5 update 35 and earlier , and 1.4.2_37 and earlier allows remote attackers to affect confidentiality , integrity , and availability via unknown vectors related to Hotspot . 
+'' CVE-2012-5076 https : //cve.mitre.org/cgi-bin/cvename.cgi ? name=cve-cve-2012-5076 Unspecified vulnerability in the Java Runtime Environment ( JRE ) component in Oracle Java SE 7 Update 7 and earlier allows remote attackers to affect confidentiality , integrity , and availability , related to JAX-WS . 
+CVE-2013-2465 https : //cve.mitre.org/cgi-bin/cvename.cgi ? name=cve-2013-2465 '' Unspecified vulnerability in the Java Runtime Environment ( JRE ) component in Oracle Java SE 7 Update 21 and earlier , 6 Update 45 and earlier , and 5.0 Update 45 and earlier , and OpenJDK 7 , allows remote attackers to affect confidentiality , integrity , and availability via unknown vectors related to 2D . 
+NOTE : the previous information is from the June 2013 CPU . 
+Oracle has not commented on claims from another vendor that this issue allows remote attackers to bypass the Java sandbox via vectors related to `` Incorrect image channel verification '' in 2D . 
+'' CVE-2013-2423 https : //cve.mitre.org/cgi-bin/cvename.cgi ? name=cve-2013-2423 '' Unspecified vulnerability in the Java Runtime Environment ( JRE ) component in Oracle Java SE 7 Update 17 and earlier , and OpenJDK 7 , allows remote attackers to affect integrity via unknown vectors related to HotSpot . 
+NOTE : the previous information is from the April 2013 CPU . 
+Oracle has not commented on claims from the original researcher that this vulnerability allows remote attackers to bypass permission checks by the MethodHandles method and modify arbitrary public final fields using reflection and type confusion , as demonstrated using integer and double fields to disable the security manager . 
+'' CVE-2012-4681 https : //cve.mitre.org/cgi-bin/cvename.cgi ? name=cve-2012-4681 Multiple vulnerabilities in the Java Runtime Environment ( JRE ) component in Oracle Java SE 7 Update 6 and earlier allow remote attackers to execute arbitrary code via a crafted applet that bypasses SecurityManager restrictions by ( 1 ) using com.sun.beans.finder.ClassFinder.findClass and leveraging an exception with the forName method to access restricted classes from arbitrary packages such as sun.awt.SunToolkit , then ( 2 ) using `` reflection with a trusted immediate caller '' to leverage the getField method to access and modify private fields , as exploited in the wild in August 2012 using Gondzz.class and Gondvv.class . 
+CVE-2013-0422 https : //cve.mitre.org/cgi-bin/cvename.cgi ? name=cve-cve-2013-0422 Multiple vulnerabilities in Oracle Java 7 before Update 11 allow remote attackers to execute arbitrary code by ( 1 ) using the public getMBeanInstantiator method in the JmxMBeanServer class to obtain a reference to a private MBeanInstantiator object , then retrieving arbitrary Class references using the findClass method , and ( 2 ) using the Reflection API with recursion in a way that bypasses a security check by the java.lang.invoke.MethodHandles.Lookup.checkSecurityManager method due to the inability of the sun.reflect.Reflection.getCallerClass method to skip frames related to the new reflection API , as exploited in the wild in January 2013 , as demonstrated by Blackhole and Nuclear Pack , and a different vulnerability than CVE-2012-4681 and CVE-2012-3174 . 
+NOTE : some parties have mapped the recursive Reflection API issue to CVE-2012-3174 , but CVE-2012-3174 is for a different vulnerability whose details are not public as of 20130114 . 
+CVE-2013-0422 covers both the JMX/MBean and Reflection API issues . 
+NOTE : it was originally reported that Java 6 was also vulnerable , but the reporter has retracted this claim , stating that Java 6 is not exploitable because the relevant code is called in a way that does not bypass security checks . 
+NOTE : as of 20130114 , a reliable third party has claimed that the findClass/MBeanInstantiator vector was not fixed in Oracle Java 7 Update 11 . 
+If there is still a vulnerable condition , then a separate CVE identifier might be created for the unfixed issue . 
+Mozilla Firefox CVE-2013-1690 https : //cve.mitre.org/cgi-bin/cvename.cgi ? name=cve-2013-1690 '' Mozilla Firefox before 22.0 , Firefox ESR 17.x before 17.0.7 , Thunderbird before 17.0.7 , and Thunderbird ESR 17.x before 17.0.7 do not properly handle onreadystatechange events in conjunction with page reloading , which allows remote attackers to cause a denial of service ( application crash ) or possibly execute arbitrary code via a crafted web site that triggers an attempt to execute data at an unmapped memory location . 
+'' Adobe Reader CVE-2010-2883 https : //cve.mitre.org/cgi-bin/cvename.cgi ? name=cve-2010-2883 Stack-based buffer overflow in CoolType.dll in Adobe Reader and Acrobat 9.x before 9.4 , and 8.x before 8.2.5 on Windows and Mac OS X , allows remote attackers to execute arbitrary code or cause a denial of service ( application crash ) via a PDF document with a long field in a Smart INdependent Glyphlets ( SING ) table in a TTF font , as exploited in the wild in September 2010 . 
+NOTE : some of these details are obtained from third party information . 

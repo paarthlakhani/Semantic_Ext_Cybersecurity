@@ -1,0 +1,95 @@
+---
+Answer
+0
+Context Event 1
+steals<|>steal<|>The malware<&>itself<&>malware<&>The implants<&>a malware attack<|>data<|>
+Context Event 2
+disguises<|>disguise<|>The malware<&>itself<&>malware<&>The implants<&>a malware attack<|>The malware<&>itself<&>malware<&>The implants<&>a malware attack<|>
+Context Event 3
+infecting<|>infect<|>The malware<&>itself<&>malware<&>The implants<&>a malware attack<|>the employees’ computers<|>
+Context Event 4
+giving<|>give<|>The malware<&>itself<&>malware<&>The implants<&>a malware attack<|>total control of their systems<|>
+Context Event 5
+conduct<|>conduct<|>The malware<&>itself<&>malware<&>The implants<&>a malware attack<|>surveillance of internal Belgacom company communications<|>
+Context Event 6
+gather<|>gather<|>The malware<&>itself<&>malware<&>The implants<&>a malware attack<|>data<|>
+Context Event 7
+avoid<|>avoid<|>The malware<&>itself<&>malware<&>The implants<&>a malware attack<|>detection<|>
+Candidate Event 1
+frustrate<|>frustrate<|>The malware<&>itself<&>malware<&>The implants<&>a malware attack<|>analysis<|>
+Candidate Event 2
+hide<|>hide<|>The malware<&>itself<&>malware<&>The implants<&>a malware attack<|>its components<|>
+Candidate Event 3
+intercepted<|>intercept<|>The malware<&>itself<&>malware<&>The implants<&>a malware attack<|>it<|>
+Candidate Event 4
+stored<|>store<|>The malware<&>itself<&>malware<&>The implants<&>a malware attack<|>The command and control server information<|>in+the registry
+Candidate Event 5
+iterates<|>iterate<|>The malware<&>itself<&>malware<&>The implants<&>a malware attack<|><|>
+---
+Answer
+4
+Context Event 1
+cleans<|>clean<|>it<&>Stage 2<&>The malware<|>traces of the initial loader<|>
+Context Event 2
+loads<|>load<|>it<&>Stage 2<&>The malware<|>the next part of the toolkit<|>
+Context Event 3
+monitors<|>monitor<|>it<&>Stage 2<&>The malware<|>its execution<|>
+Context Event 4
+disinfect<|>disinfect<|>it<&>Stage 2<&>The malware<|>the compromised device<|>
+Context Event 5
+zeroes out<|>zero out<|>it<&>Stage 2<&>The malware<|>its PE (Portable Executable, the Windows executable format) headers in memory<|>
+Candidate Event 1
+listens<|>listen<|>it<&>Stage 2<&>The malware<|><|>
+Candidate Event 2
+keep<|>keep<|>it<&>Stage 2<&>The malware<|>its data<|>
+Candidate Event 3
+collect<|>collect<|>it<&>Stage 2<&>The malware<|>information<|>
+Candidate Event 4
+spread<|>spread<|>it<&>Stage 2<&>The malware<|><|>
+Candidate Event 5
+replacing<|>replace<|>it<&>Stage 2<&>The malware<|>“MZ”<|>
+---
+Answer
+4
+Context Event 1
+act as<|>act as<|>The first stage<&>this stage<&>The Regin loaders<&>the loaders<|>loaders for a second stage<|>
+Context Event 2
+executes<|>execute<|>The first stage<&>this stage<&>The Regin loaders<&>the loaders<|>Stage 2<|>
+Context Event 3
+disguised as<|>disguise as<|>The first stage<&>this stage<&>The Regin loaders<&>the loaders<|>Microsoft drivers<|>
+Context Event 4
+mimicking<|>mimicking<|>The first stage<&>this stage<&>The Regin loaders<&>the loaders<|>Microsoft drivers<|>
+Context Event 5
+disguise<|>disguise<|>The first stage<&>this stage<&>The Regin loaders<&>the loaders<|>their presence on the system<|>
+Candidate Event 1
+start<|>start<|>The first stage<&>this stage<&>The Regin loaders<&>the loaders<|>system services<|>
+Candidate Event 2
+identify<|>identify<|>The first stage<&>this stage<&>The Regin loaders<&>the loaders<|>the particular instance of the backdoor<|>
+Candidate Event 3
+call<|>call<|>The first stage<&>this stage<&>The Regin loaders<&>the loaders<|>the StopServer function<|>
+Candidate Event 4
+load<|>load<|>The first stage<&>this stage<&>The Regin loaders<&>the loaders<|>itself<&>the DLL<&>the DLL<&>The DLL<&>individual instances of Gen 2 DLL<|>into+memory
+Candidate Event 5
+appear<|>appear<|>The first stage<&>this stage<&>The Regin loaders<&>the loaders<|>less suspicious<|>
+---
+Answer
+1
+Context Event 1
+detects<|>detect<|>a self-defense engine<&>These modules<|>attempts to detect the toolkit<|>
+Context Event 2
+encrypted<|>encrypt<|>a self-defense engine<&>These modules<|>communications<|>
+Context Event 3
+include<|>include<|>a self-defense engine<&>These modules<|>data collectors<&>remote controllers of different kinds<|>
+Context Event 4
+include<|>include<|>a self-defense engine<&>These modules<|>network capture programs<|>
+Candidate Event 1
+installed<|>instal<|>a self-defense engine<&>These modules<|>EVILTOSS variants<&>The backdoor<&>The backdoor<|>
+Candidate Event 2
+include<|>include<|>a self-defense engine<&>These modules<|><|>
+Candidate Event 3
+installs<|>install<|>a self-defense engine<&>These modules<|>the version of the Driver found within the DLL’s resource section (under the BIN resource tree)<|>
+Candidate Event 4
+include<|>include<|>a self-defense engine<&>These modules<|>the use of “IP spy” links to deanonymize those who voice dissent<|>
+Candidate Event 5
+observed<|>observe<|>a self-defense engine<&>These modules<|>The following command and control servers for Logger Module<|>
+---

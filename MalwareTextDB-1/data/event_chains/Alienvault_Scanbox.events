@@ -1,0 +1,34 @@
+---
+Answer
+2
+Context Event 1
+configures<|>configure<|>Scanbox<&>the framework<&>It<&>The Scanbox framework<|>the remote C&C server that it will use<|>
+Context Event 2
+collects<|>collect<|>Scanbox<&>the framework<&>It<&>The Scanbox framework<|>a small amount of information<|>
+Context Event 3
+sending<|>send<|>Scanbox<&>the framework<&>It<&>The Scanbox framework<|>the information<|>to+the C&C server
+Context Event 4
+encodes<|>encode<|>Scanbox<&>the framework<&>It<&>The Scanbox framework<|>the data<|>
+Context Event 5
+encrypts<|>encrypt<|>Scanbox<&>the framework<&>It<&>The Scanbox framework<|>the data<|>
+Context Event 6
+extract<|>extract<|>Scanbox<&>the framework<&>It<&>The Scanbox framework<|>different information<|>
+Context Event 7
+implements<|>implements<|>Scanbox<&>the framework<&>It<&>The Scanbox framework<|>a “keylogger” functionality<|>
+Context Event 8
+logs<|>log<|>Scanbox<&>the framework<&>It<&>The Scanbox framework<|>all keystrokes<&>keystrokes<&>all the keystrokes the victim is typing inside the compromised website<|>
+Context Event 9
+recorded<|>record<|>Scanbox<&>the framework<&>It<&>The Scanbox framework<|>all keystrokes<&>keystrokes<&>all the keystrokes the victim is typing inside the compromised website<|>
+Context Event 10
+sent<|>send<|>Scanbox<&>the framework<&>It<&>The Scanbox framework<|>all keystrokes<&>keystrokes<&>all the keystrokes the victim is typing inside the compromised website<|>to+the C&C
+Candidate Event 1
+launching<|>launch<|>Scanbox<&>the framework<&>It<&>The Scanbox framework<|>DDoS attacks<|>on+hostile parties
+Candidate Event 2
+kill<|>kill<|>Scanbox<&>the framework<&>It<&>The Scanbox framework<|>the processes pasvc.exe and clisvc.exe<|>
+Candidate Event 3
+send<|>send<|>Scanbox<&>the framework<&>It<&>The Scanbox framework<|>all keystrokes<&>keystrokes<&>all the keystrokes the victim is typing inside the compromised website<|>
+Candidate Event 4
+exfiltrate<|>exfiltrate<|>Scanbox<&>the framework<&>It<&>The Scanbox framework<|>data<&>it<&>data<&>files that match a certain naming convention<|>back to+the C&C server
+Candidate Event 5
+load<|>load<|>Scanbox<&>the framework<&>It<&>The Scanbox framework<|>a remote JavaScript<|>into+the victim's browser
+---

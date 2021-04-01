@@ -1,0 +1,89 @@
+↑ Back to Publications and Presentations You can report incidents via our oﬀicial contact including e-mail , phone or use the Anonymous reporting form . 
+During the last weeks , various samples of Uroburos ( also named Urob , Turla , Sengoku , Snark and Pﬁnet ) were analyzed and reports have been published 1234 , also analyses about a suspected predecessor , Agent.btz , are public 5 . 
+CIRCL analyzed an older version of Turla , known as a representative of the Pﬁnet malware family . 
+The objective of this analysis is to gather additional Indicators of Compromise or behaviors in order to improve detection and to discover additional insights into the malware . 
+This document is not considered a ﬁnal release but a work-in- progress document . 
+Scanned : 2014-03-16 01:12:54 - 49 scans - 37 detections ( 75.0 % ) No version information included . 
+SECTION 1 ( .text 
+) : SECTION 2 ( .rdata 
+) : SECTION 3 ( .data 
+) : SECTION 4 ( .rsrc 
+) : SECTION 5 ( .reloc 
+) : The order of strings embedded in clear text in Sample A indicate that this ﬁle contains several other ﬁles , because the DOS stub ( ! This program can not be run in DOS mode . 
+) is present multiple times . 
+We include interesting strings in the corresponding subsection . 
+Sample A can be considered an installer or dropper . 
+It drops ﬁles into the system and initializes the environment for production . 
+First , it probes if a virtual disk is present on the system . 
+If not , the virtual disk is being created with ﬁle system NTFS , using FormatEx from Microsofts fmifs.dll . 
+The presence of the malware 's conﬁguration ﬁle is tested : If not found , it is dropped from the resource section 0x88d90 . 
+The following ﬁles are dropped depending on whether Windows is running in 32 bit or 64 bit . 
+Independently from the architecture , the ﬁle names of the dropped ﬁles are the same , but a speciﬁc version of the ﬁle is dropped according to the operating system architecture . 
+This is achieved by a logic similar to the following one . 
+This is done for all ﬁles except the conﬁguration ﬁle . 
+The function create_from_resources ( ) looks like : Subsequently , after dropping the correct ﬁles , the malware makes itself persistent on the system and creates a service with the following parameters , which loads the ﬁle usbdev.sys as a kernel driver : If during installation anything goes wrong , the registry keys are deleted . 
+The ﬁles however are not . 
+During the installation process , extensive logging is ensuring good visibility on potential installation problems . 
+The attacker uses english language for the logging , although he is lacking attention to detail when it comes to correct usage of the language , as the following examples demonstrate : Language deﬁcits are also demonstrated in other ﬁles of this collection . 
+We show them in a separate chapter . 
+A list of dropped ﬁles is given in the next chapter . 
+Scanned : 2014-03-23 21:28:41 - 51 scans - 36 detections ( 70.0 % ) Scanned : 2011-07-07 04:43:10 - 43 scans - 19 detections ( 44.0 % ) Flags : 00000000 Time stamp : Fri Oct 2 09:07:16 2009 Version : 0.0 DLL name : CARBON.dll Ordinals base : 1 . 
+( 00000001 ) # of Addresses : 2 . 
+( 00000002 ) # of Names : 2 . 
+( 00000002 ) 1 . 
+00002CB9 ModuleStart 2 . 
+0000266C ModuleStop Scanned : 2011-05-08 11:16:36 - 42 scans - 23 detections ( 54.0 % ) Size : 135168 bytes Type : PE32 executable ( DLL ) ( GUI ) Intel 80386 , for MS Windows Date : 0x4AC5A662 [ Fri Oct 2 07:06:10 2009 UTC ] EP : 0x20015d85 .text 
+0/5 CRC : Claimed : 0x0 , Actual : 0x2ccd6 [ SUSPICIOUS ] 1 . 
+00002655 ModuleStart Scanned : 2009-12-27 12:15:01 - 40 scans - 24 detections ( 60.0 % ) Size : 228352 bytes Type : PE32+ executable ( DLL ) ( native ) x86-64 , for MS Windows Date : 0x4AC48FE7 [ Thu Oct 1 11:17:59 2009 UTC ] EP : 0x21454 .text 
+0/6 CRC : Claimed : 0x397f7 , Actual : 0x397f7 The strings correspond mostly to the ones of Sample B. Scanned : 2014-03-23 21:27:06 - 51 scans - 1 detections ( 1.0 % ) The strings correspond mostly to the ones of Sample C. Scanned : 2014-03-23 21:26:59 - 51 scans - 2 detections ( 3.0 % ) Size : 147968 bytes Type : PE32+ executable ( DLL ) ( GUI ) x86-64 , for MS Windows Date : 0x4AC5A685 [ Fri Oct 2 07:06:45 2009 UTC ] EP : 0x2001bd80 .text 
+0/6 CRC : Claimed : 0x0 , Actual : 0x32c9f [ SUSPICIOUS ] The strings correspond mostly to the ones of Sample D. A very extensive analysis of a similar kernel module of Sample B ( usbdev.sys ) has been documented in 'Uroburos : the snake rootkit ' 2 by deresz and tecamac . 
+Sample B also checks for the presence of infection markers in form of events : or as pseudo-code : That means , the famous Agent.btz marker \BaseNamedObjects\ { B93DFED5-9A3B-459b-A617-59FD9FAD693E } is checked directly using a UNICODE_STRING structure without using RtlInitUnicodeString ( ) . 
+A brief comparison with other samples , like or shows , that this marker is checked in the same way . 
+The analysis of this kernel module by deresz and tecamac is very detailed . 
+We advise the interested reader to work through their document to understand all the details . 
+In this module , the following transport or communication modules are present : Type 1 : tcp Type 2 : np , m2b - > TODO : Compare this with the observed transports in userland modules modules described in other reports This sample contains a large chunk of code taken from the Udis86 Disassembler Library for x86 / x86-64 project 6 The devices \Device\RawDisk1 \Device\RawDisk2 and the ﬁle \SystemRoot\ $ NtUninstallQ722833 $ \ﬁxdata.dat are already known from other reports . 
+If the ﬁle ﬁxdata.dat could successfully be created within the function also the devices are created within this function : The authors demonstrate that they have a sense of humor . 
+In the following example , they decrypt ( XOR ) the strings used to assemble the locations of where to drop the other components of the malware to . 
+The ﬁnal destinations are : \.\IdeDrive1\cryptoapi.dll \.\IdeDrive1\inetpub.dll But have a closer look at how they decrypt the string : They are seriously using a key 0x4E415341 to decrypt the string . 
+0x4E415341 is ASCII for 'NASA ' . 
+That 's how they decrypt and assemble the string IdeDrive , appending a '1 ' in the next step and using if for creating the destination . 
+Full excerpt below : \Registry\Machine\usblink_export HKEY_LOCAL_MACHINE\usblink_export ( also LEGACY_usblink and usblink ? ) The malware checks if the queried process has one of the following names and if so , it would call pulse_event_wininet_activate ( ) . 
+The event \BaseNamedObjects\wininet_activate is then created and pulsed . 
+There are no references to this event , neither in this module nor in the other analyzed modules . 
+Microsoft mentions in the documentation of the PulseEvent function 7 : Note This function is unreliable and should not be used . 
+It exists mainly for backward compatibility . 
+For more information , see Remarks . 
+So it could well be that this part is old code and was forgotten to be removed . 
+From Microsoft Support article AGP program may hang when using page size extension on Athlon processor 8 the following excerpt : The following workaround for this issue prevents Memory Manager from using the processor 's Page Size Extension feature and may aﬀect the performance of some programs , depending on the paging behavior . 
+This registry value also limits non-paged pool to a maximum of 128 megabytes ( MB ) instead of 256 MB . 
+Original ﬁlename : carbon_system.dll Internal name : Carbon v3.61 This component ﬁrst initializes the winsock subsystem by calling WSAStartup . 
+Right after it creates directories on the VFS : CreateDirectoryA ( `` \\\\.\\IdeDrive1\\\\Tasks\\ '' , ( LPSECURITY_ATTRIBUTES ) & Dst ) ; CreateDirectoryA ( `` \\\\.\\IdeDrive1\\\\Results\\ '' , ( LPSECURITY_ATTRIBUTES ) & Dst ) ; Sample D is the next ﬁle in the logical execution order , as it creates the following mutexes , which are also accessed by Sample E. Sample D can be considered the main userland module , a control unit that sets up the communication with the kernel module and has the ability to load plugins dynamically during runtime . 
+The internal name of this module , carbon_system.dll , supports this observation . 
+Global\\MSMMC.StartupEnvironment.PPT Global\\411A5195CD73A8a710E4BB16842FA42C Global\\881F0621AC59C4c035A5DC92158AB85E Global\\MSCTF.Shared.MUTEX.RPM Global\\WindowsShellHWDetection Global\\MSDBG.Global.MUTEX.ATF For reading or writing operations on ﬁles , exclusive access is ensured by locking them with mutexes : Global\MSMMC.StartupEnvironment.PPT is used for operations on the conﬁguration ﬁle . 
+Global\411A5195CD73A8a710E4BB16842FA42C is used to exclusively access temporary ﬁles Global\MSDBG.Global.MUTEX.ATF is used to exclusively access \.\IdeDrive1\log.txt Global\WindowsShellHWDetection is used to exclusively access \.\IdeDrive1\Results\result.txt Global\MSCTF.Shared.MUTEX.RPM is used to exclusively access \.\IdeDrive1\Tasks\task.txt Global\881F0621AC59C4c035A5DC92158AB85E is used to exclusively access \.\IdeDrive1\Tasks \task_system.txt During the startup of the ModuleStart ( ) function , 6 threads are being started . 
+The ﬁrst two are : get_initialization_parameters_create_GUID_and_check_Packet_Capturing ( ) periodic_free_space_check_and_write_log ( ) These serve the purpose of initializing the environment for the malware and running maintenance and log tasks . 
+Then a function load_transports ( ) is called ( more later ) , and then four more threads are started : read_conﬁg_start_thread_start ( ) thread 5 - handles frag.np/frag.tcp requests thread 6 - handles frag.np/frag.tcp requests execute_plugin ( ) - starts a new thread , calling a DLLs export ModuleStart from the \.\IdeDrive1\\Plugins\ directory In this module , the following transport or communication modules are present : Type 1 : tcp , b2m Type 2 : np , frag , m2b each associated with a bunch of functions : TODO : these functions need to be analyzed and described Other reports mention diﬀerent other transports that are not present in this collection . 
+frag.np and frag.tcp replies : SEND AUTH RECV AUTH AUTH FAILED SEND WHO SEND OBJECT_ID frag.np/frag.tcp options : frag_size=32768 frag_no_scrambling=1 allow=*everyone active_con net_user= net_password= write_peer_nfo= % c % s % c nodelay=N \\.\IdeDrive1\ \\.\IdeDrive1\log.txt \\.\IdeDrive1\*.bak \\.\IdeDrive1\Tasks\\task.txt \\.\IdeDrive1\Tasks\\task_system.txt \\.\IdeDrive1\Tasks\\*.tmp \\.\IdeDrive1\config.txt \\.\IdeDrive1\restrans.txt \\.\IdeDrive1\Tasks\\ \\.\IdeDrive1\Results\\ \\.\IdeDrive1\logtrans.txt \\.\IdeDrive1\usbdev.bak \\.\IdeDrive1\inetpub.bak \\.\IdeDrive1\inetpub.dll \\.\IdeDrive1\cryptoapi.bak \\.\IdeDrive1\cryptoapi.dll \\.\IdeDrive1\Plugins\\ \\\\.\\Global\\PIPE\\comnode \\\\ % s\\pipe\\comnode \\\\ % s\\pipe\\ % s CUSTOM_ERROR_01 = 21590001h CUSTOM_ERROR_02 = 21590002h ; WAIT_TIMEOUT ? CUSTOM_ERROR_03 = 21590003h ; BROKEN_PIPE ? CUSTOM_ERROR_04 = 21590004h CUSTOM_ERROR_05 = 21590005h CUSTOM_ERROR_06 = 21590006h CUSTOM_ERROR_07 = 21590007h CUSTOM_ERROR_08 = 21590008h CUSTOM_ERROR_09 = 21590009h CUSTOM_ERROR_0A = 2159000Ah CUSTOM_ERROR_0B = 2159000Bh ; INVALID_USER_BUFFER ? CUSTOM_ERROR_0D = 2159000Dh CUSTOM_ERROR_64 = 21590064h CUSTOM_ERROR_65 = 21590065h CUSTOM_ERROR_66 = 21590066h CUSTOM_ERROR_67 = 21590067h CUSTOM_ERROR_68 = 21590068h CUSTOM_ERROR_69 = 21590069h CUSTOM_ERROR_C9 = 215900C9h ; NO_VALID_ADDR ? CUSTOM_ERROR_CA = 215900CAh ; NO_VALID_PORT ? CUSTOM_ERROR_CB = 215900CBh CUSTOM_ERROR_CC = 215900CCh Original ﬁlename : CARBON.dll Internal name : Carbon v3.51 \\.\IdeDrive1\config.txt \\.\IdeDrive1\Tasks\\task.txt \\.\IdeDrive1\Tasks\\task_system.txt \\.\IdeDrive1\log.txt \\.\IdeDrive1\Results\result.txt Global\\MSMMC.StartupEnvironment.PPT Global\\411A5195CD73A8a710E4BB16842FA42C Global\\881F0621AC59C4c035A5DC92158AB85E Global\\MSCTF.Shared.MUTEX.RPM Global\\WindowsShellHWDetection Global\\MSDBG.Global.MUTEX.ATF thread 2 : In a 10 minutes loop check server availability by doing a HTTP POST ( HTTP/1.0 ) to a server/port conﬁgured in \\.\IdeDrive1\config.txt in CW_INET section address with user agent Mozilla/4.0 ( compatible ; MSIE 6.0 ) but only if a valid internet connection was successfully probed : thread 3 : The actions described below are only taken if the following programs are not running tcpdump.exe windump.exe ethereal.exe wireshark.exe ettercap.exe snoop.exe The following is the main ( endless ) loop of this thread : It starts in do_HTTP_GET ( ) with a HTTP GET ( HTTP/1.1 ) to server/port taken from \\.\IdeDrive1\config.txt in CW_INET section address with user agent Mozilla/4.0 ( compatible ; MSIE 6.0 ) with script name and query as follows : auth.cgi ? mode=query & id= % u : % u : % u : % u & serv= % s & lang=en & q= % u- % u & date= % s where the format strings are ﬁlled in accordingly . 
+serv= is ﬁlled pseudorandomly with a host from the following list : www.yahoo.com www.bbc.com www.astalavista.com www.google.com www.eagames.com www.asus.com www.microsoft.com windowsupdate.microsoft.com search.microsoft.com www.hp.com www.altavista.com www.3com.com www.dell.com www.sun.com www.easports.com search.google.com perhaps to make a reasonable appearance or to mislead log analysts who ﬁlter out common domain names . 
+When a successful handle is returned , a ﬁle is being downloaded and stored in the virtual ﬁle system . 
+What follows is a GET in HTTP/1.0 on default.asp ? act= % u & id= % u & item= % u & event_id= % u & cln= % u & flt= % u & serv= % s & t= % ld & mode=query & lang=en & date= % s This code is part of sub_20009871 , which continues to serve the frag.np/frag.tcp part . 
+In sub_200075C0 another POST in HTTP/1.0 to default.asp ? act= % u & id= % u & item= % u & event_id= % u & cln= % u & flt= % u & serv= % s & t= % ld & mode=query & lang=en & date= % s follows . 
+The purpose of the two functions is not clear , yet . 
+In this module , the following transport or communication modules are present : Type 1 : tcp , b2m Type 2 : np , frag , m2b This corresponds to the transports found in Sample D. The compiled code of bzip2/libbzip2 , a program and library for lossless block-sorting data compression , was identiﬁed , coming from http : //svn.apache.org/repos/asf/labs/axmake/trunk/src/libuc++/srclib/bzip2/compress.c . 
+Using the source code without including the author 's Copyright statement , the conditions and the disclaimer is an infringement of the software license : Sample C and D contain author names of three people : vlad gilg urik Newer samples , for instance the one from BAE , contain only two : vlad gilg First check-in : 2006-03-20 Last check-in : 2008-11-25 When incorporating the check-in dates of the BAE sample , the following graph shows that someone checked-in a ﬁle once during a Saturday . 
+A small collection of strings demonstrates the language deﬁcits , mainly distinguishable as : Use of backticks instead of apostrophes by some of the developers Problems using past tense by some developers Spelling Mistranslated terms Oversights Examples : win32 detect ... 
+x64 detect ... 
+CretaFileA ( % s ) : Ca n't open SERVICES key error has been suddenly occured timeout condition has been occured inside call of function OPER|Survive me , i 'm close to death ... 
+free space less than 5 % % ... 
+|\n OPER|Sniffer ' % s ' running ... 
+ooopppsss ... 
+|\n Task not execute . 
+Arg file failed . 
+Update failed = ( ( Ca n't create file . 
+ca n't get characs.\n Internal command not support = ( ( \n L|-1|ca n't get characs % s|\n CIRCL recommends to review the IOCs of this report and compare them with servers in the infrastructure of your organization which produce log ﬁles including proxies , A/V and system logs . 
+As this family of malware might be diﬀicult to detect from a network perspective , we recommend to perform check of the indicators at the system level . 
+TLP : WHITE information may be distributed without restriction , subject to copyright controls . 
+Version 0.9 July 10 , 2014 work-in-progress ( not a ﬁnal release ) ( TLP : WHITE ) 1. http : //info.baesystemsdetica.com/rs/baesystems/images/snake_whitepaper.pdf ↩ 2. http : //artemonsecurity.com/uroburos.pdf ↩ ↩2 3. http : //blogs.avg.com/news-threats/turla-rootkit-analysed/ ↩ 4. http : //www.symantec.com/security_response/writeup.jsp ? docid=2009-110919-1741-99 & tabid=2 ↩ 5. http : //blog.threatexpert.com/2008/11/agentbtz-threat-that-hit-pentagon.html ↩ 6. http : //udis86.sourceforge.net ↩ 7. http : //msdn.microsoft.com/en-us/library/windows/desktop/ms684914 ( v=vs.85 ) .aspx 
+↩ 8. http : //support.microsoft.com/kb/Q270715 ↩ Mission News RFC2350 Team Members Contact Services Dynamic Malware Analysis Platform Malware Information Sharing Platform Projects Software Publications Presentations BGP Ranking Common vulnerability exposure PGP key server Map of attacks against Luxembourg Free software CIRCL is the national CERT/CSIRT ( Computer Emergency Response Team/Computer Security Incident Response Team ) for Luxembourg . 
+Content from this website is classiﬁed as TLP : WHITE information may be distributed without restriction , subject to copyright controls . 
+Copyright 2008 - 2014 CIRCL Computer Incident Response Center Luxembourg ( smile gie ) , national CERT . 

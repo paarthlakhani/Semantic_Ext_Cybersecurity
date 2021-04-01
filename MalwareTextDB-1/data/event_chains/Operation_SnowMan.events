@@ -1,0 +1,81 @@
+---
+Answer
+3
+Context Event 1
+served up<|>serve up<|><|>the exploit at www.[REDACTED].com/Data/img/img.html<&>It<&>a zero-day exploit (CVE-2014-0322)<&>it<&>this exploit<|>
+Context Event 2
+aborts<|>abort<|>the exploit at www.[REDACTED].com/Data/img/img.html<&>It<&>a zero-day exploit (CVE-2014-0322)<&>it<&>this exploit<|>exploitation<|>
+Context Event 3
+use<|>use<|>the attacker<&>The attacker<&>attackers<&>the attacker<&>The attacker<&>this actor(s)<|>the exploit at www.[REDACTED].com/Data/img/img.html<&>It<&>a zero-day exploit (CVE-2014-0322)<&>it<&>this exploit<|>
+Candidate Event 1
+parse<|>parse<|>the exploit at www.[REDACTED].com/Data/img/img.html<&>It<&>a zero-day exploit (CVE-2014-0322)<&>it<&>this exploit<|>all incoming traffic<|>
+Candidate Event 2
+reads<|>read<|>the exploit at www.[REDACTED].com/Data/img/img.html<&>It<&>a zero-day exploit (CVE-2014-0322)<&>it<&>this exploit<|>the main implant code<&>the main implant code<|>
+Candidate Event 3
+encrypted<|>encrypt<|>the exploit at www.[REDACTED].com/Data/img/img.html<&>It<&>a zero-day exploit (CVE-2014-0322)<&>it<&>this exploit<|>communications<|>
+Candidate Event 4
+dropped<|>drop<|>the exploit at www.[REDACTED].com/Data/img/img.html<&>It<&>a zero-day exploit (CVE-2014-0322)<&>it<&>this exploit<|>a file containing the dropped malware payload<&>the malware<&>an XOR (0×95) payload<&>an XOR (0×95) payload<|>
+Candidate Event 5
+contacted<|>contact<|>the exploit at www.[REDACTED].com/Data/img/img.html<&>It<&>a zero-day exploit (CVE-2014-0322)<&>it<&>this exploit<|>its C&C server<&>the C&C server<&>the C&C server<|>
+---
+Answer
+1
+Context Event 1
+modify<|>modify<|>the attacker<&>The attacker<&>attackers<&>the attacker<&>The attacker<&>this actor(s)<|>one byte of memory<|>
+Context Event 2
+modify<|>modify<|>the attacker<&>The attacker<&>attackers<&>the attacker<&>The attacker<&>this actor(s)<|>memory<|>
+Context Event 3
+use<|>use<|>the attacker<&>The attacker<&>attackers<&>the attacker<&>The attacker<&>this actor(s)<|>the exploit at www.[REDACTED].com/Data/img/img.html<&>It<&>a zero-day exploit (CVE-2014-0322)<&>it<&>this exploit<|>
+Context Event 4
+uses<|>use<|>the attacker<&>The attacker<&>attackers<&>the attacker<&>The attacker<&>this actor(s)<|>the Microsoft.XMLDOM ActiveX control<|>
+Context Event 5
+overwrites<|>overwrite<|>the attacker<&>The attacker<&>attackers<&>the attacker<&>The attacker<&>this actor(s)<|>the vftable pointer of a flash.Media.Sound() object<|>
+Context Event 6
+begin<|>begin<|>the attacker<&>The attacker<&>attackers<&>the attacker<&>The attacker<&>this actor(s)<|>ROP<|>
+Candidate Event 1
+hiding<|>hide<|>the attacker<&>The attacker<&>attackers<&>the attacker<&>The attacker<&>this actor(s)<|>listening ports<|>
+Candidate Event 2
+deploy<|>deploy<|>the attacker<&>The attacker<&>attackers<&>the attacker<&>The attacker<&>this actor(s)<|>a number of different private and public RATs<|>
+Candidate Event 3
+configures<|>configure<|>the attacker<&>The attacker<&>attackers<&>the attacker<&>The attacker<&>this actor(s)<|>the remote C&C server that it will use<|>
+Candidate Event 4
+bind<|>bind<|>the attacker<&>The attacker<&>attackers<&>the attacker<&>The attacker<&>this actor(s)<|>the implant IntelRS.exe<&>This implant<&>it<&>It<&>IntelRS.exe<&>IntelRS.exe<&>The Stealer component<&>a new Stealer backdoor<&>the new backdoor<&>the backdoor<&>This sample (MD5 1823b77b9ee6296a8b997ffb64d32d21)<&>The majority of the samples we analyzed<&>a sample<&>This sample<|>
+Candidate Event 5
+identify<|>identify<|>the attacker<&>The attacker<&>attackers<&>the attacker<&>The attacker<&>this actor(s)<|>potential victims<|>
+---
+Answer
+1
+Context Event 1
+downloads<|>download<|>the code<&>the malicious Flash code<|>a file containing the dropped malware payload<&>the malware<&>an XOR (0×95) payload<&>an XOR (0×95) payload<|>
+Context Event 2
+creates<|>create<|>a file containing the dropped malware payload<&>the malware<&>an XOR (0×95) payload<&>an XOR (0×95) payload<|>these files<&>files “sqlrenew.txt” and “stream.exe”<|>
+Context Event 3
+dropped<|>drop<|>the exploit at www.[REDACTED].com/Data/img/img.html<&>It<&>a zero-day exploit (CVE-2014-0322)<&>it<&>this exploit<|>a file containing the dropped malware payload<&>the malware<&>an XOR (0×95) payload<&>an XOR (0×95) payload<|>
+Candidate Event 1
+routing<|>rout<|>a file containing the dropped malware payload<&>the malware<&>an XOR (0×95) payload<&>an XOR (0×95) payload<|>requests from other infected hosts<|>to+a remote C&C server
+Candidate Event 2
+executed<|>execute<|>a file containing the dropped malware payload<&>the malware<&>an XOR (0×95) payload<&>an XOR (0×95) payload<|>a ZxShell backdoor (MD5: 8455bbb9a210ce603a1b646b0d951bce)<&>The ZxShell backdoor<&>This particular variant<|>
+Candidate Event 3
+hide<|>hide<|>a file containing the dropped malware payload<&>the malware<&>an XOR (0×95) payload<&>an XOR (0×95) payload<|>services<|>
+Candidate Event 4
+had<|>have<|>a file containing the dropped malware payload<&>the malware<&>an XOR (0×95) payload<&>an XOR (0×95) payload<|>the actual phishing email<|>
+Candidate Event 5
+gather<|>gather<|>a file containing the dropped malware payload<&>the malware<&>an XOR (0×95) payload<&>an XOR (0×95) payload<|>information<|>
+---
+Answer
+4
+Context Event 1
+executed<|>execute<|>a file containing the dropped malware payload<&>the malware<&>an XOR (0×95) payload<&>an XOR (0×95) payload<|>a ZxShell backdoor (MD5: 8455bbb9a210ce603a1b646b0d951bce)<&>The ZxShell backdoor<&>This particular variant<|>
+Context Event 2
+used<|>use<|>multiple threat actors linked to cyber espionage operations<|>a ZxShell backdoor (MD5: 8455bbb9a210ce603a1b646b0d951bce)<&>The ZxShell backdoor<&>This particular variant<|>
+Candidate Event 1
+used<|>use<|>a ZxShell backdoor (MD5: 8455bbb9a210ce603a1b646b0d951bce)<&>The ZxShell backdoor<&>This particular variant<|>botnet style operations<&>botnet style operations<|>
+Candidate Event 2
+allowing<|>allow<|>a ZxShell backdoor (MD5: 8455bbb9a210ce603a1b646b0d951bce)<&>The ZxShell backdoor<&>This particular variant<|>remote access to the computer<|>
+Candidate Event 3
+encrypted<|>encrypt<|>a ZxShell backdoor (MD5: 8455bbb9a210ce603a1b646b0d951bce)<&>The ZxShell backdoor<&>This particular variant<|>These data<|>
+Candidate Event 4
+sends<|>send<|>a ZxShell backdoor (MD5: 8455bbb9a210ce603a1b646b0d951bce)<&>The ZxShell backdoor<&>This particular variant<|>beacons that contain the process listing of the compromised host<|>
+Candidate Event 5
+called<|>call<|>a ZxShell backdoor (MD5: 8455bbb9a210ce603a1b646b0d951bce)<&>The ZxShell backdoor<&>This particular variant<|><|>back to+a command and control server located at newss[.]effers[.]com
+---

@@ -1,0 +1,226 @@
+---
+Answer
+3
+Context Event 1
+use<|>use<|>the PUTTER PANDA actors<&>They<&>the actors<&>They<&>PUTTER PANDA<&>PUTTER PANDA<|>a wide set of tools<&>several Remote Access Tools (RATs)<&>The RATs<&>This toolset<&>Several RATs<&>the PUTTER PANDA toolset<&>their toolset<|>
+Context Event 2
+used<|>use<|>the PUTTER PANDA actors<&>They<&>the actors<&>They<&>PUTTER PANDA<&>PUTTER PANDA<|>a wide set of tools<&>several Remote Access Tools (RATs)<&>The RATs<&>This toolset<&>Several RATs<&>the PUTTER PANDA toolset<&>their toolset<|>
+Context Event 3
+conduct<|>conduct<|>the PUTTER PANDA actors<&>They<&>the actors<&>They<&>PUTTER PANDA<&>PUTTER PANDA<|>intelligence-gathering operations<|>
+Context Event 4
+deploy<|>deploy<|>the PUTTER PANDA actors<&>They<&>the actors<&>They<&>PUTTER PANDA<&>PUTTER PANDA<|>custom malware<|>
+Context Event 5
+deploy<|>deploy<|>the PUTTER PANDA actors<&>They<&>the actors<&>They<&>PUTTER PANDA<&>PUTTER PANDA<|>custom malware<|>
+Context Event 6
+used<|>use<|>the PUTTER PANDA actors<&>They<&>the actors<&>They<&>PUTTER PANDA<&>PUTTER PANDA<|>a wide set of tools<&>several Remote Access Tools (RATs)<&>The RATs<&>This toolset<&>Several RATs<&>the PUTTER PANDA toolset<&>their toolset<|>
+Candidate Event 1
+converted<|>convert<|>the PUTTER PANDA actors<&>They<&>the actors<&>They<&>PUTTER PANDA<&>PUTTER PANDA<|>the host<|>
+Candidate Event 2
+detects<|>detect<|>the PUTTER PANDA actors<&>They<&>the actors<&>They<&>PUTTER PANDA<&>PUTTER PANDA<|>what Windows RPC services are enabled at the endpoints<|>
+Candidate Event 3
+focused<|>focus<|>the PUTTER PANDA actors<&>They<&>the actors<&>They<&>PUTTER PANDA<&>PUTTER PANDA<|><|>
+Candidate Event 4
+used<|>use<|>the PUTTER PANDA actors<&>They<&>the actors<&>They<&>PUTTER PANDA<&>PUTTER PANDA<|>a dropper<&>a dropper<&>This dropper<|>
+Candidate Event 5
+transferred<|>transfer<|>the PUTTER PANDA actors<&>They<&>the actors<&>They<&>PUTTER PANDA<&>PUTTER PANDA<|>it<&>collect information on the newly infected host<&>it<&>this data<|>to+the c&c server
+---
+Answer
+1
+Context Event 1
+use<|>use<|>the RAT<&>it<&>The RAT<&>the RAT<&>the 3PARA RAT<&>the RAT<&>the RAT<&>the RAT<|>a byte-wise subtraction- based algorithm (using a hard-coded modulo value)<|>
+Context Event 2
+load<|>load<|>the RAT<&>it<&>The RAT<&>the RAT<&>the 3PARA RAT<&>the RAT<&>the RAT<&>the RAT<|>a binary representation of a date/time value<|>
+Context Event 3
+sleep<|>sleep<|>the RAT<&>it<&>The RAT<&>the RAT<&>the 3PARA RAT<&>the RAT<&>the RAT<&>the RAT<|><|>
+Context Event 4
+remain<|>remain<|>the RAT<&>it<&>The RAT<&>the RAT<&>the 3PARA RAT<&>the RAT<&>the RAT<&>the RAT<|>dormant<|>
+Context Event 5
+used<|>use<|>the RAT<&>it<&>The RAT<&>the RAT<&>the 3PARA RAT<&>the RAT<&>the RAT<&>the RAT<|>the C2 protocol<&>the C2 protocol<|>
+Context Event 6
+transmit<|>transmit<|>the RAT<&>it<&>The RAT<&>the RAT<&>the 3PARA RAT<&>the RAT<&>the RAT<&>the RAT<|>some basic victim information to the C2 server<|>
+Context Event 7
+retrieve<|>retrieve<|>the RAT<&>it<&>The RAT<&>the RAT<&>the 3PARA RAT<&>the RAT<&>the RAT<&>the RAT<|>tasking<|>
+Context Event 8
+supported<|>support<|>the RAT<&>it<&>The RAT<&>the RAT<&>the 3PARA RAT<&>the RAT<&>the RAT<&>the RAT<|>The set of commands<|>
+Candidate Event 1
+spread<|>spread<|>the RAT<&>it<&>The RAT<&>the RAT<&>the 3PARA RAT<&>the RAT<&>the RAT<&>the RAT<|>a part of a large (approximately 900mb) rar archive<&>The archive<|>
+Candidate Event 2
+sleeping<|>sleep<|>the RAT<&>it<&>The RAT<&>the RAT<&>the 3PARA RAT<&>the RAT<&>the RAT<&>the RAT<|><|>
+Candidate Event 3
+interprets<|>interpret<|>the RAT<&>it<&>The RAT<&>the RAT<&>the 3PARA RAT<&>the RAT<&>the RAT<&>the RAT<|>The command<&>it<&>the received command<|>
+Candidate Event 4
+write<|>write<|>the RAT<&>it<&>The RAT<&>the RAT<&>the 3PARA RAT<&>the RAT<&>the RAT<&>the RAT<|>a message<|>to+the associated named pipes
+Candidate Event 5
+launched<|>launch<|>the RAT<&>it<&>The RAT<&>the RAT<&>the 3PARA RAT<&>the RAT<&>the RAT<&>the RAT<|>the installer component (0ae82fd94836815a1e8d284ccb75109d)<&>The installer<&>The installer<|>
+---
+Answer
+0
+Context Event 1
+download<|>download<|>the malware<&>it<&>The malware<|>content<|>to+the filename within the user’s temporary directory
+Context Event 2
+execute<|>execute<|>the malware<&>it<&>The malware<|>this file<|>
+Context Event 3
+delete<|>delete<|>the malware<&>it<&>The malware<|>the content saved from the first request<|>
+Candidate Event 1
+used<|>use<|><|>the malware<&>it<&>The malware<|>
+Candidate Event 2
+executing<|>execute<|>the malware<&>it<&>The malware<|>batch scripts<|>
+Candidate Event 3
+distributed<|>distribute<|>the malware<&>it<&>The malware<|>This file<&>The file<&>This<|>
+Candidate Event 4
+connect<|>connect<|>the malware<&>it<&>The malware<|><|>back to+srv01.microsoftwindowsupdate(dot)net (a deceptive domain owned by this group with falsified Whois data attributing to Microsoft Investor Relations)
+Candidate Event 5
+drops<|>drop<|>the malware<&>it<&>The malware<|>a DLL<&>it<&>the DLL<&>this DLL<&>DLL modules<&>the malicious DLL module<&>the module<&>a malicious DLL module<&>that module<|>into+the %windows% directory
+---
+Answer
+2
+Context Event 1
+use<|>use<|>the PUTTER PANDA actors<&>They<&>the actors<&>They<&>PUTTER PANDA<&>PUTTER PANDA<|>a wide set of tools<&>several Remote Access Tools (RATs)<&>The RATs<&>This toolset<&>Several RATs<&>the PUTTER PANDA toolset<&>their toolset<|>
+Context Event 2
+used<|>use<|>the PUTTER PANDA actors<&>They<&>the actors<&>They<&>PUTTER PANDA<&>PUTTER PANDA<|>a wide set of tools<&>several Remote Access Tools (RATs)<&>The RATs<&>This toolset<&>Several RATs<&>the PUTTER PANDA toolset<&>their toolset<|>
+Context Event 3
+provides<|>provide<|>a wide set of tools<&>several Remote Access Tools (RATs)<&>The RATs<&>This toolset<&>Several RATs<&>the PUTTER PANDA toolset<&>their toolset<|>a wide degree of control over a victim system<|>
+Context Event 4
+deploy<|>deploy<|>a wide set of tools<&>several Remote Access Tools (RATs)<&>The RATs<&>This toolset<&>Several RATs<&>the PUTTER PANDA toolset<&>their toolset<|>additional tools<|>
+Context Event 5
+used<|>use<|>the PUTTER PANDA actors<&>They<&>the actors<&>They<&>PUTTER PANDA<&>PUTTER PANDA<|>a wide set of tools<&>several Remote Access Tools (RATs)<&>The RATs<&>This toolset<&>Several RATs<&>the PUTTER PANDA toolset<&>their toolset<|>
+Context Event 6
+provides<|>provide<|>a wide set of tools<&>several Remote Access Tools (RATs)<&>The RATs<&>This toolset<&>Several RATs<&>the PUTTER PANDA toolset<&>their toolset<|>a wide degree of control over a victim system<|>
+Candidate Event 1
+uses<|>use<|>a wide set of tools<&>several Remote Access Tools (RATs)<&>The RATs<&>This toolset<&>Several RATs<&>the PUTTER PANDA toolset<&>their toolset<|>the Windows command "cmd.exe" /C whoami”<|>
+Candidate Event 2
+deobfuscate<|>deobfuscate<|>a wide set of tools<&>several Remote Access Tools (RATs)<&>The RATs<&>This toolset<&>Several RATs<&>the PUTTER PANDA toolset<&>their toolset<|>the relevant loader DLL to the path ‘C:\Windows\temp\install.ocx’<|>
+Candidate Event 3
+deploy<|>deploy<|>a wide set of tools<&>several Remote Access Tools (RATs)<&>The RATs<&>This toolset<&>Several RATs<&>the PUTTER PANDA toolset<&>their toolset<|>additional tools<|>
+Candidate Event 4
+communicated<|>communicate<|>a wide set of tools<&>several Remote Access Tools (RATs)<&>The RATs<&>This toolset<&>Several RATs<&>the PUTTER PANDA toolset<&>their toolset<|><|>
+Candidate Event 5
+installing<|>instal<|>a wide set of tools<&>several Remote Access Tools (RATs)<&>The RATs<&>This toolset<&>Several RATs<&>the PUTTER PANDA toolset<&>their toolset<|>the appropriate Driver<|>
+---
+Answer
+2
+Context Event 1
+used<|>use<|>the RAT<&>it<&>The RAT<&>the RAT<&>the 3PARA RAT<&>the RAT<&>the RAT<&>the RAT<|>the C2 protocol<&>the C2 protocol<|>
+Context Event 2
+is<|>be<|>the C2 protocol<&>the C2 protocol<|>HTTP based<|>
+Context Event 3
+using<|>use<|>the C2 protocol<&>the C2 protocol<|>GET<|>
+Candidate Event 1
+utilized<|>utilize<|>the C2 protocol<&>the C2 protocol<|>FTP servers<&>These FTP servers<&>these FTP servers<&>FTP servers<|>
+Candidate Event 2
+destroyed<|>destroy<|>the C2 protocol<&>the C2 protocol<|>data<|>
+Candidate Event 3
+using<|>use<|>the C2 protocol<&>the C2 protocol<|>POST requests<|>
+Candidate Event 4
+restart<|>restart<|>the C2 protocol<&>the C2 protocol<|><|>
+Candidate Event 5
+detect<|>detect<|>the C2 protocol<&>the C2 protocol<|>hooks and debugger breakpoints which may be set by security software and monitoring tools<|>
+---
+Answer
+2
+Context Event 1
+perform<|>perform<|>the malware<&>the malware<&>The malware<&>the pngdowner malware (example MD5 hash 4c50457c35e2033b3a03fcbb4adac7b7)<|>a connectivity check<|>
+Context Event 2
+extract<|>extract<|>the malware<&>the malware<&>The malware<&>the pngdowner malware (example MD5 hash 4c50457c35e2033b3a03fcbb4adac7b7)<|>proxy details and credentials<|>
+Candidate Event 1
+is encrypted<|>is encrypted<|>the malware<&>the malware<&>The malware<&>the pngdowner malware (example MD5 hash 4c50457c35e2033b3a03fcbb4adac7b7)<|>the driver<&>it<&>an embedded/encrypted kernel driver<&>The driv- er<|>
+Candidate Event 2
+writing<|>write<|>the malware<&>the malware<&>The malware<&>the pngdowner malware (example MD5 hash 4c50457c35e2033b3a03fcbb4adac7b7)<|>the driver<&>it<&>an embedded/encrypted kernel driver<&>The driv- er<|>
+Candidate Event 3
+installing<|>instal<|>Another dropper<&>the dropper<&>itself<&>these droppers<|>the malware<&>the malware<&>The malware<&>the pngdowner malware (example MD5 hash 4c50457c35e2033b3a03fcbb4adac7b7)<|>
+Candidate Event 4
+connects<|>connect<|>the malware<&>the malware<&>The malware<&>the pngdowner malware (example MD5 hash 4c50457c35e2033b3a03fcbb4adac7b7)<|><|>to+www.dicemention.com
+Candidate Event 5
+loads<|>load<|>the malware<&>the malware<&>The malware<&>the pngdowner malware (example MD5 hash 4c50457c35e2033b3a03fcbb4adac7b7)<|>a Delphi component called DelphiNative.DLL<&>a Delphi component called DelphiNative.DLL<|>
+---
+Answer
+4
+Context Event 1
+uses<|>use<|>the httpclient malware<&>This malware<&>The malware<|>HTTP<|>
+Context Event 2
+performs<|>perform<|>the httpclient malware<&>This malware<&>The malware<|>a connectivity check<|>
+Context Event 3
+connect<|>connect<|>the httpclient malware<&>This malware<&>The malware<|><|>to+its configured C2 infrastructure (file.anyoffice.info)
+Candidate Event 1
+intercepted<|>intercept<|>the httpclient malware<&>This malware<&>The malware<|>it<|>
+Candidate Event 2
+contacting<|>contact<|>the httpclient malware<&>This malware<&>The malware<|>its C&C server<&>the C&C server<&>the C&C server<|>
+Candidate Event 3
+used<|>use<|>the httpclient malware<&>This malware<&>The malware<|>the C&C storge.myftp.org<|>
+Candidate Event 4
+deletes<|>delete<|>the httpclient malware<&>This malware<&>The malware<|>the new configuration file<&>it<|>
+Candidate Event 5
+perform<|>perform<|>the httpclient malware<&>This malware<&>The malware<|>a HTTP request of the form shown in Figure 14 below<|>
+---
+Answer
+3
+Context Event 1
+install<|>install<|>a dropper<&>a dropper<&>This dropper<|>the RAT<&>the 4H RAT<|>
+Context Event 2
+used<|>use<|>the PUTTER PANDA actors<&>They<&>the actors<&>They<&>PUTTER PANDA<&>PUTTER PANDA<|>a dropper<&>a dropper<&>This dropper<|>
+Context Event 3
+writing<|>write<|>a dropper<&>a dropper<&>This dropper<|>the payload<&>it<|>to+disk
+Candidate Event 1
+execute<|>execute<|>a dropper<&>a dropper<&>This dropper<|>The dropper component<&>itself<&>It<&>itself<&>itself<|>
+Candidate Event 2
+redirect<|>redirect<|>a dropper<&>a dropper<&>This dropper<|>other app icons (e.g., bank or email app icons)<|>to+the phishing app
+Candidate Event 3
+contains<|>contain<|>a dropper<&>a dropper<&>This dropper<|>a custom DNS client implementation<|>
+Candidate Event 4
+executing<|>execute<|>a dropper<&>a dropper<&>This dropper<|>the payload<&>it<|>
+Candidate Event 5
+inject<|>inject<|>a dropper<&>a dropper<&>This dropper<|>malicious DEX files<|>
+---
+Answer
+4
+Context Event 1
+obfuscated<|>obfuscate<|><|>The executable and DLL<&>Both the document and executable<&>The executable<|>
+Context Event 2
+written<|>write<|><|>The executable and DLL<&>Both the document and executable<&>The executable<|>to+disk
+Context Event 3
+executed<|>execute<|><|>The executable and DLL<&>Both the document and executable<&>The executable<|>
+Candidate Event 1
+spread<|>spread<|>The executable and DLL<&>Both the document and executable<&>The executable<|>The malware<&>The malware used in the March 20, 2013 attacks<&>The attack<&>the March 20 attacks<&>these actors<&>the malware<|>
+Candidate Event 2
+obtained<|>obtain<|>The executable and DLL<&>Both the document and executable<&>The executable<|>This document<|>
+Candidate Event 3
+sent<|>send<|>The executable and DLL<&>Both the document and executable<&>The executable<|>944 emails<|>to+targets in nine different sectors
+Candidate Event 4
+adds<|>adds<|>The executable and DLL<&>Both the document and executable<&>The executable<|>This sample<&>It<&>it<&>itself<&>it<&>itself<&>itself<&>a DLL<&>The sample<&>the backdoor<|>
+Candidate Event 5
+installed<|>instal<|><|>The executable and DLL<&>Both the document and executable<&>The executable<|>into+the ASEP registry key HKCU\Software\Microsoft\Windows\ CurrentVersion\Run
+---
+Answer
+0
+Context Event 1
+installing<|>instal<|>Another dropper<&>the dropper<&>itself<&>these droppers<|>the malware<&>the malware<&>The malware<&>the pngdowner malware (example MD5 hash 4c50457c35e2033b3a03fcbb4adac7b7)<|>
+Context Event 2
+deletes<|>delete<|>Another dropper<&>the dropper<&>itself<&>these droppers<|>Another dropper<&>the dropper<&>itself<&>these droppers<|>
+Candidate Event 1
+using<|>use<|>Another dropper<&>the dropper<&>itself<&>these droppers<|>a mixture of decoy PDF and Microsoft Word documents<|>
+Candidate Event 2
+prompted<|>prompt<|>Another dropper<&>the dropper<&>itself<&>these droppers<|>visitors connecting to the hotel’s Wi-Fi<|>
+Candidate Event 3
+spreading<|>spread<|>Another dropper<&>the dropper<&>itself<&>these droppers<|>This one<&>It<&>The payload<&>this malware<&>the exploit<|>
+Candidate Event 4
+executes<|>execute<|>Another dropper<&>the dropper<&>itself<&>these droppers<|>The payload<&>it<|>
+Candidate Event 5
+wiping<|>wipe<|>Another dropper<&>the dropper<&>itself<&>these droppers<|>the master boot record<|>
+---
+Answer
+0
+Context Event 1
+inject<|>inject<|>The dropped executable (MD5 hash 38a2a6782e1af29ca8cb691cf0d29a0d)<&>the malware<|>the specified DLL (McUpdate.dll, MD5 hash 08c7b5501df060ccfc3aa5c8c41b452f)<|>into+a process that would normally be accessing the network
+Context Event 2
+disguise<|>disguise<|>The dropped executable (MD5 hash 38a2a6782e1af29ca8cb691cf0d29a0d)<&>the malware<|>the malicious activity<|>
+Candidate Event 1
+terminate<|>terminate<|>The dropped executable (MD5 hash 38a2a6782e1af29ca8cb691cf0d29a0d)<&>the malware<|>processes corresponding to two components of Sophos Anti-Virus (SAVAdminService.exe and SavService.exe)<|>
+Candidate Event 2
+hooks<|>hook<|>The dropped executable (MD5 hash 38a2a6782e1af29ca8cb691cf0d29a0d)<&>the malware<|>the API function<|>
+Candidate Event 3
+issues<|>issue<|>The dropped executable (MD5 hash 38a2a6782e1af29ca8cb691cf0d29a0d)<&>the malware<|>another HTTP request<|>
+Candidate Event 4
+micro-target<|>micro-target<|>The dropped executable (MD5 hash 38a2a6782e1af29ca8cb691cf0d29a0d)<&>the malware<|>companies<|>
+Candidate Event 5
+controlling<|>control<|>The dropped executable (MD5 hash 38a2a6782e1af29ca8cb691cf0d29a0d)<&>the malware<|>backdoors<|>
+---

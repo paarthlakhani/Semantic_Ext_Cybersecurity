@@ -1,0 +1,28 @@
+File name : varies MD5 : a3cbf6179d437909eb532b7319b3dafe Compilation timestamp : 2012.10.02 10:51:50 ( GMT ) Compiler : Microsoft Visual Studio 2010 File format : PE32 DLL Exports : _LowLevelKeyboardProc @ 12 Creates the log file : % TEMP % \~DFD3O8.tmp . 
+If failed , tries to write to the file f : \keyhook.log Each time the keylogger starts , it appends the following header to the log file : -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- New Session : % fully qualified computer name % % timestamp % -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- It then creates a hidden console window and registers its only export _LowLevelKeyboardProc @ 12 as a hook procedure for low-level keyboard input events ( WH_KEYBOARD_LL hook ) . 
+Depending on the results , it writes a line to its log file . 
+In case the hook was installed , the line is '' Started ... 
+'' , else `` LoadLibrary ' % path to its file % ' failed , % error code % '' . 
+It also starts a thread that retrieves the current foreground window handle every 100 milliseconds . 
+This handle is then used in the keyboard hook procedure . 
+The low-level keyboard hook procedure intercepts WM_KEYDOWN , WM_KEYUP and WM_ SYSKEYDOWN system messages and writes information about each keystroke to the log file . 
+Every time a new window becomes active , it retrieves its name and the path to its application and writes this information to the log file : [ % path to the application 's executable file % : `` % window title % '' ] Analyzed file ( others are similar ) : Compilation timestamp : 2013.10.15 10:43:09 ( GMT ) File format : PE32 DLL , modified ( the file is supposed to be started by a custom loader ) Exports : The main functionality is implemented in a single function that is called by the DllMain entry point . 
+The exported functions allow to call the same function directly ( exported as `` start '' ) or to start/stop it in a separate thread ( `` ModuleStart '' / '' ModuleStop '' ) and with slightly different parameters . 
+This indicates the backdoor can also function as a plugin for the Turla Carbon system . 
+The main function executes in an infinite loop . 
+It collects most of the available information about the system , transmits it to the C & C server and executes the commands it receives back . 
+The module delays execution for random periods while it discovers running processes with one of the following filenames : The following system information is collected : The retrieved information is compressed using bzip2 , encrypted with AES and then encoded using Base64 before being transmitted to the C & C server . 
+When there is a file waiting for upload ( usually , this is file that contains the results of the previously received and executed command ) , it is read from disk and uploaded to the server instead of the system information . 
+The C & C communication is implemented on top of the standard HTTP/HTTPS protocols . 
+The list of the C & C URLs is hardcoded in the binary but may be overridden by further commands . 
+The module uses Wininet API functions for issuing HTTP POST requests to the server . 
+The module transmits the collected information in the body of the POST request and gets new commands from the server 's response . 
+The request body can be empty if there is no new information to upload . 
+The response is usually an HTML document and the commands are Base64-encoded strings enclosed in < div > / < /div > tags . 
+Every command is encrypted using asymmetric encryption with temporary AES session keys . 
+Each command is a mixed text/binary buffer . 
+It consists of two parts : payload and configuration . 
+The configuration is an INI file that controls the further behavior of the module . 
+It is extracted into a temporary file named % TEMP % \~D % random % .tmp 
+. 
+The payload , if exists , is supposed to be an executable file and may be executed if there is a corresponding command present in the INI part . 

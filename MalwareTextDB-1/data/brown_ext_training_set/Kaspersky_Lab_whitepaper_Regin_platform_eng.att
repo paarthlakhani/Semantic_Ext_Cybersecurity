@@ -1,0 +1,162 @@
+In the spring of 2012 , following a Kaspersky Lab presentation on the unusual facts surrounding the Duqu malware ( http : //www.kaspersky.com/about/press/major_malware_outbreaks/duqu ) , a security researcher contacted us and mentioned that Duqu reminded him of another high-end malware incident . 
+Although he could n't share a sample , the researcher mentioned 'Regin ' , a type of malware attack that is now dreaded by security administrators in many government agencies around the world . 
+For the past three years we have been tracking this most elusive malware all around the world . 
+From time to time samples would appear on various multi-scanner services , but they were all unrelated to each other , cryptic in functionality , and lacking in context . 
+It is unknown exactly when the first samples of Regin appeared in the wild . 
+Some of them have timestamps dating back to 2003 . 
+The victims of Regin fall into the following categories : • Telecom operators • Government institutions • Multinational political bodies • Financial institutions • Research institutions • Individuals involved in advanced mathematical/cryptographic research So far , we 've observed two main objectives of the attackers : • Intelligence gathering • Facilitating other types of attacks While in most cases the attackers were focused on extracting sensitive information such as emails and other elec- tronic documents , we have observed cases where the attackers compromised telecom operators to enable the launch of additional sophisticated attacks . 
+This is discussed in detail in the GSM attacks section , below . 
+Perhaps one of the most well-known victims of Regin was Jean Jacques Quisquater ( https : //en.wikipedia.org/ wiki/Jean-Jacques_Quisquater ) , a well-known Belgian cryptographer . 
+In February 2014 , Quisquater announced he was the victim of a sophisticated cyber-intrusion incident . 
+We were able to obtain samples from the Quisquater case and confirm they belong to the Regin platform . 
+Another victim of Regin was a computer we call the 'Magnet of Threats ' . 
+The computer belongs to a certain research institution and , besides Regin , it has been attacked by Animal Farm , Itaduke , Mask/Careto , Turla , and some other advanced threats that do not have public names , all co-existing happily on the same computer at some point . 
+The exact method used for the initial compromise remains a mystery , although several theories exist , including use of man-in-the-middle attacks with browser zero-day exploits . 
+For some of the victims we observed tools and modules designed for lateral movement . 
+So far we have not encountered any exploits . 
+The replication modules are copied to remote computers using Windows administrative shares and then executed . 
+Obviously this tech- nique requires administrative privileges inside the victim 's network . 
+In several cases the infected machines were also Windows domain controllers . 
+Targeting of system administrators via web-based exploits is a simple way of achieving immediate administrative access to the entire network . 
+Although some private research groups refer to it as the 'Regin malware ' , it is not entirely accurate to use the term malware in this case . 
+In essence , Regin is a cyberattack platform , which the attackers deploy in victim networks for total remote control at all levels . 
+The platform is extremely modular in nature and has multiple stages . 
+In general , the first samples victims detect in their networks are stage 1 loaders . 
+These are the easiest to notice because they are the only executables that exist directly on the victim 's computer . 
+These samples use an odd technique to load the next stages , which until recently was unique to Regin . 
+Inter- estingly , in mid-2012 , the ZeroAccess gang implemented a very similar loading mechanism , which possibly suggests it learned about Regin and its unique features . 
+( See http : //www.symantec.com/connect/blogs/ trojanzeroaccessc-hidden-ntfs-ea ) . 
+The particular feature used ( or abused ) by Regin to hide its next stages is called NTFS Extended Attributes ( EA ) . 
+Originally , these were implemented in Windows NT for compatibility with OS/2 applications ; however , they made their way into later versions of Windows , namely 2000 , XP and Vista . 
+The malware hides its modules in NTFS EAs , splitting large files into several blocks of limited size . 
+These are dynamically joined , decrypted and executed in memory . 
+Most of the stage 1 samples we have seen appear to have been built on top of other source code projects , which are 'piggybacked ' ; for instance , the Ser8UART project : http : //www.mirrorservice.org/sites/downloads.sourceforge.net/s/se/ser8uart-driver/ser8uart-driver/ Ser8UART % 20 % 201.1.2.1/ . 
+For instance , the Regin loader with md5 01c2f321b6bfdb9473c079b0797567ba was built on top of the Ser8UART source code . 
+A careful examination however spots the encrypted configuration block at offset 0x5600 . 
+We can assume the attackers take various low-level open-source projects or Windows DDK source codes and merge them together with their malicious loader . 
+Hence , each stage 1 loader looks very different from others , as it contains random useless code from various other programs . 
+This technique makes it more difficult to build reliable detection for the loaders . 
+Despite the differences , all stage 1 samples are similar in functionality . 
+They contain an encrypted config block that points to the next stages : Once decrypted , the block contains several folder names and registry key names : In the example above , the stage 1 tries to load a second stage from the extended attributes of the system direc- tory specified in the configuration block ( in our case , the WINDOWS folder ) . 
+It also tries to read additional data from the EAs of the second directory ( in our case , the WINDOWS\fonts directory ) . 
+The second attribute value is optional and may have been used to overcome size limitations . 
+If the first EA data block is missing , the module also tries to read the complete body of the 2nd stage from a registry value using the key and value names from the configuration block . 
+The body of the second stage is encrypted with one of two algorithms that are simple variations of XOR , and is supposed to be a PE file . 
+The first stage loads that file in memory and calls its entry point function . 
+The 64-bit variant works in a slightly different way . 
+Instead of storing the 2nd stage in the registry or extended attributes , the attackers preferred to store it after the end of the last partition on disk . 
+Known filenames for the 64-bit stage 1 : • system32\wsharp.dll – detected on a victim machine in Germany • system32\wshnetc.dll – detected on a victim machine in Belgium All the stage 1 modules for 64-bit systems were signed with fake digital certificates . 
+The two fake certificates we identified are supposed to belong to Microsoft Corporation and Broadcom Corporation . 
+During the infection phase , the attackers inject a trusted CA in the certificates chain , which instructs the system to trust their signatures . 
+Here is what the hard drive of a 64-bit system infected with Regin looks like : Interestingly , while the 32-bit Regin stage 1 runs in kernel mode , on 64-bit systems the attacker code starts in user mode . 
+This is perhaps due to the fact that it is more difficult to run kernel mode on modern Windows 64-bit systems . 
+The second stage for 32-bit systems is implemented as a driver module . 
+It has a configuration block encrypted in a similar way to the first stage module . 
+The configuration block contains the names of two system directories that hold the encrypted third stage in their extended attributes . 
+It also has the name of a registry value that may hold the body of the third stage in case the EAs are missing ( for computers with a FAT/FAT32-formatted system disk ) . 
+Once the encrypted third stage is read from the registry or NTFS EAs , it is decrypted using the RC5 algorithm and a fixed 16-byte key that is hardcoded in the second stage . 
+Then , it is decompressed using the NRV2e algo- rithm from the open-source UCL library . 
+The second stage module loads the resulting binary in memory , vali- dates that it is a valid PE file , and calls its entry point in a system thread . 
+The second stage also creates a marker file that can be used to identify the infected machine . 
+Known filenames for this marker are : • % SYSTEMROOT % \system32\nsreg1.dat • % SYSTEMROOT % \system32\bssec3.dat • % SYSTEMROOT % \system32\msrdc64.dat These files have their timestamp set to the timestamp of the system file ' % SYSTEMROOT % \system32\lsass.exe' The second stage has additional code for removing the startup code of Regin if signaled by the third stage . 
+Its configuration data contains the locations of the first three stages , including registry keys , names of the directo- ries that hold the encrypted EAs , and the location of the initial driver . 
+Essentially , the second stage can remove all the Regin stages from the system , effectively cleaning the machine and leaving only the encrypted VFS behind . 
+The 64-bit version of the second stage loader is a PE DLL module , since the 64-bit bootstrap chain operates in user mode . 
+Just like the first stage , it loads the encrypted body of the next stage from the end of the physical disk and decrypts it with a hardcoded RC5 key , then decompresses it using the nrv2 algorithm from the UCL library . 
+After decryption and decompression , the code checks if the next stage is a Windows PE DLL module , and if it is , it loads and executes it . 
+On 32-bit systems , the third stage is implemented as a driver module and provides the basic functionality of the malicious framework . 
+It is responsible for operating the encrypted virtual file system and loading additional plugins , and also provides several built-in plugins for the entire framework . 
+The module initializes the framework , sets up the plugin system and starts the actual work cycle of the malware . 
+It also passes execution to the plugin id 50221 that is loaded from the VFS . 
+Built-in plugins provided by this module are : On 64-bit Windows systems , stage 3 is missing . 
+Stage 2 loads the dispatcher directly from the disk and runs it . 
+32-bit 64-bit The dispatcher library is the user-mode core of the framework . 
+It is loaded directly as the third stage of the 64-bit bootstrap process , or extracted and loaded from the VFS as module 50221 as the fourth stage on 32-bit systems . 
+It implements a set of internal plugins : The dispatcher takes care of the most complicated tasks of the Regin platform , such as providing an API to access virtual file systems , basic communications and storage functions , as well as network transport sub- routines . 
+In essence , the dispatcher is the brain that runs the entire platform . 
+The most interesting code from the Regin platform is stored in encrypted file storages , known as Virtual File Systems ( VFSes ) . 
+During our analysis we were able to obtain 24 VFSes from multiple victims around the world . 
+Generally , these have random names and can be located in several places in the infected system : Each VFS has a structure that is very similar to a real disk file system such as FAT . 
+The VFS files start with a header that provides basic information required to operate the file system . 
+The header is followed by the bitmap of used/ free sectors and then by the file table . 
+Files are described by file table entries : Each sector starts with a 32-bit integer that is the offset of the next sector of the file . 
+• File record at offset 0x122 , file ID 50221 , offset of the first sector 0x7B13 • Sector at 0x7B13 , next sector at 0x7D13 • Sector at 0x7D13 , next sector at 0x7F13 , • Sector at 0x7F13 , next sector at 0x8113 , etc . 
+Although the structures of the file system are unencrypted , the file entries are encrypted . 
+The encryption algo- rithm used is RC5 , and many records are also compressed using the nrv2e algorithm from the UCL library . 
+UCL is an open source implementation of the proprietary NRV ( 'Not Really Vanished ' ) compression algorithm , and was originally used by the UPX tool . 
+The reason why the attackers chose UCL is simple : it 's small , compact and requires little to no additional memory for decompression . 
+Each VFS we encountered was encrypted with a 16 bytes key , which can vary from victim to victim . 
+Based on our experience , most files were however encrypted with the same key , { 73 23 1F 43 93 E1 9F 2F 99 0C 17 81 5C FF B4 01 } stored in the dispatcher module or VMEM.sys kernel core . 
+In all , we observed about a dozen different VFS keys . 
+The following plugins were observed inside the VFSes we collected . 
+These are all identified by a 16-bit number . 
+The plugins are referenced by these numbers ; they are like filenames on a normal file system and allow the dispatcher to easily load or reference them . 
+The binary modules are referenced by these numbers as plugin identifiers and usually have similar internal DLL names ; e.g. , the plugin with ID '50121 ' will have the internal name '50121.dll ' in its export table . 
+Compressed binary modules are accompanied by binary files with the same ID . 
+These files contain the size of the decom- pressed module and are not included in the description . 
+Known data blocks and their configuration IDs : Known executable modules and their plugin IDs : The attackers can dynamically add and delete plugins inside the VFS and each victim installation has a different set of plugins depending on the type of activity the attackers need to execute . 
+For example , only some of the VFSes we have seen had lateral movement modules , designed for infecting other computers in the network . 
+In this section we describe some of the most interesting findings about Regin . 
+With high-end APT groups such as the one behind Regin , mistakes are very rare . 
+Nevertheless , they do happen . 
+Some of the VFSes we analyzed contain words that appear to be the respective codenames of the modules deployed on the victim : • legspinv2.6 and LEGSPINv2.6 • WILLISCHECKv2.0 • HOPSCOTCH Another module we found , which is a plugin type 55001.0 , references U_STARBUCKS : Finally , the word 'shit ' appears in many places throughout the code and modules . 
+The most interesting aspect we have found so far regarding Regin relates to an infection of a large GSM operator . 
+One VFS encrypted entry we located had internal id 50049.2 , and appears to be an activity log on a GSM Base Station Controller . 
+According to the GSM documentation ( http : //www.telecomabc.com/b/bsc.html ) : 'The Base Station Controller ( BSC ) is in control of and supervises a number of Base Transceiver Stations ( BTS ) . 
+The BSC is responsible for the allocation of radio resources to a mobile call and for the handovers that are made between base stations under his control . 
+Other handovers are under the control of the MSC . 
+' Here 's a look at the decoded Regin GSM activity log : This log is about 70KB in size and contains hundreds of entries like the ones above . 
+It also includes timestamps that indicate exactly when the command was executed . 
+The entries in the log appear to contain Ericsson OSS MML ( Man-Machine Language as defined by ITU-T ) commands ( see https : //en.wikipedia.org/wiki/Operations_support_system ) . 
+Here 's a list of some commands issued on the Base Station Controller , together with some of their timestamps : Descriptions for the commands : In total , the log indicates that commands were executed on 136 different cells . 
+Some of the cell names include 'prn021a , gzn010a , wdk004 , kbl027a , etc ... 
+' . 
+The command log we obtained covers a period of about one month , from April 25 , 2008 through May 27 , 2008 . 
+It is unknown why the commands stopped in May 2008 though ; perhaps the infection was removed or the attackers achieved their objective and moved on . 
+Another explanation is that the attackers improved or changed the malware to stop saving logs locally and that is why only some older logs were discovered . 
+The C & C mechanism implemented in Regin is extremely sophisticated and relies on communication drones deployed by the attackers throughout the victim networks . 
+Most victims communicate with another machine in their own internal network through various protocols as specified in the config file . 
+These include HTTP and Windows network pipes . 
+The purpose of such a complex infrastructure is to achieve two goals : ( i ) to give attackers access deep into the network , potentially bypassing air gaps ; and ( ii ) to restrict as much as possible the traffic to the C & C . 
+Here 's a look at the decoded configurations : : In the above table we see configurations extracted from several victims that bridge together infected machines in what appears to be virtual networks : 17.3.40.x , 50.103.14.x , 51.9.1.x , 18.159.0.x . 
+One of these routes reaches out to the 'external ' C & C server at 203.199.89.80 . 
+The numbers right after the 'transport ' indicate the plugin that handles the communication . 
+These are in our case : • 27 - ICMP network listener using raw sockets • 50035 - Winsock-based network transport • 50037 - Network transport over HTTP • 50051 - Network transport over HTTPS • 50271 - Network transport over SMB ( named pipes ) The machines located on the border of the network act as routers , effectively connecting victims from inside the network with C & Cs on the Internet . 
+After decoding all the configurations we have collected , we were able to identify the following external C & Cs . 
+One particular case includes a country in the Middle East . 
+It was rather astonishing , so we thought it should be mentioned . 
+In this country all the victims we identified communicate with each other , forming a peer-to-peer network . 
+The P2P network includes the president 's office , a research center , an educational institution network and a bank . 
+Spread across the country , these victims are all interconnected with each other . 
+One of the victims contains a translation drone , which has the ability to forward packets outside the country , to the C & C in India . 
+This represents a rather interesting command-and-control mechanism , which is guaranteed to raise little suspi- cion . 
+For instance , if all commands to the president 's office are sent through the bank 's network , then all the malicious traffic visible to the president 's office sysadmins will only be with the bank , in the same country . 
+Over the past two years we have been collecting statistics on the attacks and victims of Regin . 
+These were aided by the fact that even after the malware is uninstalled , certain artifacts are left behind , which can help identify an infected ( but cleaned ) system . 
+For instance , we have seen several cases where the systems were cleaned but the 'msrdc64.dat ' infection marker was left behind . 
+So far , victims of Regin have been identified in 14 countries : • Afghanistan • Indonesia • Algeria • Iran • Belgium • Kiribati • Brazil • Malaysia • Fiji • Pakistan • Germany • Russia • India • Syria In total , we counted 27 different victims , although it should be pointed out that the definition of a victim here refers to a full entity , including its entire network . 
+The number of unique PCs infected with Regin is of course much , much higher . 
+From the map above , Fiji and Kiribati are unusual , because we rarely see such advanced malware in such remote , tiny countries . 
+In particular , the victim in Kiribati is most unusual . 
+To put this into context , Kiribati is a small island in the Pacific with a population around 100,000 . 
+According to experts , Kiribati is probably going to become one of the first victims of global warming , as it will be under water by 2050 . 
+( http : //www.businessin- sider.com/pacific-island-nation-kiribati-sinking-2014-5 ? op=1 ) Considering the complexity and cost of Regin 's development , it is likely that this operation is supported by a nation state . 
+While attribution remains a very difficult problem when it comes to professional attackers such as the ones behind Regin , certain metadata extracted from the samples is still worth a look . 
+We have collected timestamps from samples , which are normally put automatically by the development software : As this information could be easily altered by the developers , it is up to the reader to attempt to interpret this : as an intentional false flag , or a non-critical indicator left by the developers . 
+More information about Regin is available to Kaspersky Intelligent Services ' clients . 
+Contact : intelreports @ kaspersky.com For more than a decade , a sophisticated group known as Regin has targeted high-profile entities around the world with an advanced malware platform . 
+As far as we can tell , the operation is still active , although the malware may have been upgraded to more sophisticated versions . 
+The most recent sample we have seen was from a 64-bit infection . 
+This infection was still active in the spring of 2014 . 
+The name Regin is apparently a switched around 'In Reg ' , short for 'In Registry ' , as the malware can store its modules in the registry . 
+This name and the detections first appeared in anti-malware products around March 2011 . 
+In some ways the platform reminds us of another sophisticated malware : Turla ( http : //securelist.com/analysis/ publications/65545/the-epic-turla-operation/ ) . 
+Some similarities include the use of virtual file systems and the deployment of communication drones to bridge networks together . 
+Yet through their implementation , coding methods , plugins , hiding techniques and flexibility , Regin surpasses Turla as one of the most sophisticated attack platforms we have ever analyzed . 
+The ability of this group to penetrate and monitor GSM networks is perhaps the most unusual and interesting aspect of these operations . 
+In today 's world , we have become too dependent on cellphone networks that rely on ancient communication protocols with little or no security available for the end user . 
+Although all GSM networks have mechanisms embedded that allow entities such as law enforcement to track suspects , there are other parties which can gain this ability and then abuse it to launch other types of attacks against mobile users . 
+Kaspersky Lab products detect modules from the Regin platform as : Trojan.Win32.Regin.gen and Rootkit.Win32.Regin . 
+If you detect a Regin infection in your network , contact us at : intelservices @ kaspersky.com Stage 1 files , 32 bit : 06665b96e293b23acc80451abb413e50 187044596bc1328efa0ed636d8aa4a5c 1c024e599ac055312a4ab75b3950040a 2c8b9d2885543d7ade3cae98225e263b 4b6b86c7fec1c574706cecedf44abded 6662c390b2bbbd291ec7987388fc75d7 b269894f434657db2b15949641a67532 b29ca4f22ae7b7b25f79c1d4a421139d b505d65721bb2453d5039a389113b566 26297dc3cd0b688de3b846983c5385e5 ba7bb65634ce1e30c1e5415be3d1db1d bfbe8c3ee78750c3a520480700e440f8 d240f06e98c8d3e647cbf4d442d79475 ffb0b9b5b610191051a7bdf0806e1e47 Unusual stage 1 files apparently compiled from various public source codes merged with malicious code : 01c2f321b6bfdb9473c079b0797567ba 47d0e8f9d7a6429920329207a32ecc2e 744c07e886497f7b68f6f7fe57b7ab54 db405ad775ac887a337b02ea8b07fddc Stage 1 , 64-bit system infection : bddf5afbea2d0eed77f2ad4e9a4f044d c053a0a3f1edcbbfc9b51bc640e808ce e63422e458afdfe111bd0b87c1e9772c Stage 2 , 32 bit : 18d4898d82fcb290dfed2a9f70d66833 b9e4f9d32ce59e7c4daf6b237c330e25 Stage 2 , 64 bit : d446b1ed24dad48311f287f3c65aeb80 Stage 3 , 32 bit : 8486ec3112e322f9f468bdea3005d7b5 da03648948475b2d0e3e2345d7a9bbbb Stage 4 32 bit : 1e4076caa08e41a5befc52efd74819ea 68297fde98e9c0c29cecc0ebf38bde95 6cf5dc32e1f6959e7354e85101ec219a 885dcd517faf9fac655b8da66315462d a1d727340158ec0af81a845abd3963c1 Stage 4 64 bit : de3547375fbf5f4cb4b14d53f413c503 Note : Stages 2,3 and 4 do not appear on infected systems as real files on disk . 
+Hashes are provided for research purposes only . 
+• \REGISTRY\Machine\System\CurrentControlSet\Control\RestoreList • \REGISTRY\Machine\System\CurrentControlSet\Control\Class\ { 39399744-44FC-AD65-474B-E4DDF- 8C7FB97 } • \REGISTRY\Machine\System\CurrentControlSet\Control\Class\ { 3F90B1B4-58E2-251E-6FFE- 4D38C5631A04 } • \REGISTRY\Machine\System\CurrentControlSet\Control\Class\ { 4F20E605-9452-4787-B793- D0204917CA58 } • \REGISTRY\Machine\System\CurrentControlSet\Control\Class\ { 9B9A8ADB-8864-4BC4-8AD5- B17DFDBB9F58 } This algorithm is used throughout the code and is referenced as RC5 in the document , although the implemen- tation and the way the cipher is invoked is specific to Regin . 

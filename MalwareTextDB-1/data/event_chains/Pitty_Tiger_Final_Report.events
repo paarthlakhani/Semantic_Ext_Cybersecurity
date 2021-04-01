@@ -1,0 +1,384 @@
+---
+Answer
+3
+Context Event 1
+compromise<|>compromise<|>Attackers<&>They<&>attackers<&>They<&>they<&>the attackers<&>They<&>the attackers<&>The attackers<&>this group of attackers<&>Pitty Tiger<|>the website of a third party, generally a supplier of the target, which is typically visited by a specific group of professionals and very likely by the target<|>
+Context Event 2
+gained<|>gain<|>Attackers<&>They<&>attackers<&>They<&>they<&>the attackers<&>They<&>the attackers<&>The attackers<&>this group of attackers<&>Pitty Tiger<|>access to one or several machines inside the target’s corporate network<|>
+Context Event 3
+install<|>install<|>Attackers<&>They<&>attackers<&>They<&>they<&>the attackers<&>They<&>the attackers<&>The attackers<&>this group of attackers<&>Pitty Tiger<|>several different backdoors<|>
+Context Event 4
+looking<|>look<|>Attackers<&>They<&>attackers<&>They<&>they<&>the attackers<&>They<&>the attackers<&>The attackers<&>this group of attackers<&>Pitty Tiger<|><|>
+Context Event 5
+looking<|>look<|>Attackers<&>They<&>attackers<&>They<&>they<&>the attackers<&>They<&>the attackers<&>The attackers<&>this group of attackers<&>Pitty Tiger<|><|>
+Context Event 6
+gain<|>gain<|>Attackers<&>They<&>attackers<&>They<&>they<&>the attackers<&>They<&>the attackers<&>The attackers<&>this group of attackers<&>Pitty Tiger<|>domain administrator privileges<|>
+Context Event 7
+dump<|>dump<|>Attackers<&>They<&>attackers<&>They<&>they<&>the attackers<&>They<&>the attackers<&>The attackers<&>this group of attackers<&>Pitty Tiger<|>all the Active Directory content<|>
+Context Event 8
+create<|>create<|>Attackers<&>They<&>attackers<&>They<&>they<&>the attackers<&>They<&>the attackers<&>The attackers<&>this group of attackers<&>Pitty Tiger<|>archive files containing the content they want to exfiltrate<|>
+Context Event 9
+stealing<|>steal<|>Attackers<&>They<&>attackers<&>They<&>they<&>the attackers<&>They<&>the attackers<&>The attackers<&>this group of attackers<&>Pitty Tiger<|>more information<|>
+Context Event 10
+stay<|>stay<|>Attackers<&>They<&>attackers<&>They<&>they<&>the attackers<&>They<&>the attackers<&>The attackers<&>this group of attackers<&>Pitty Tiger<|><|>
+Context Event 11
+used<|>use<|>Attackers<&>They<&>attackers<&>They<&>they<&>the attackers<&>They<&>the attackers<&>The attackers<&>this group of attackers<&>Pitty Tiger<|>three c&c servers<|>
+Candidate Event 1
+dropped<|>drop<|>Attackers<&>They<&>attackers<&>They<&>they<&>the attackers<&>They<&>the attackers<&>The attackers<&>this group of attackers<&>Pitty Tiger<|>hotel installers<&>hotel installers<|>
+Candidate Event 2
+disguised<|>disguise<|>Attackers<&>They<&>attackers<&>They<&>they<&>the attackers<&>They<&>the attackers<&>The attackers<&>this group of attackers<&>Pitty Tiger<|>This sample<&>the sample<&>malware samples<&>malware<|>
+Candidate Event 3
+ensures<|>ensure<|>Attackers<&>They<&>attackers<&>They<&>they<&>the attackers<&>They<&>the attackers<&>The attackers<&>this group of attackers<&>Pitty Tiger<|><|>
+Candidate Event 4
+use<|>use<|>Attackers<&>They<&>attackers<&>They<&>they<&>the attackers<&>They<&>the attackers<&>The attackers<&>this group of attackers<&>Pitty Tiger<|>spear phishing e-mails<&>extensively<|>
+Candidate Event 5
+upload<|>upload<|>Attackers<&>They<&>attackers<&>They<&>they<&>the attackers<&>They<&>the attackers<&>The attackers<&>this group of attackers<&>Pitty Tiger<|>a copy of the wiper<&>the wiper<&>a copy of the wiper file “taskhostXX.exe”<|>
+---
+Answer
+4
+Context Event 1
+use<|>use<|>the Pitty Tiger group<&>The attackers<&>Pitty Tiger<&>attackers<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger crew<&>the Pitty Tiger group<&>Pitty Tiger<&>the attackers<&>the attackers<&>a user “Toot”<|>fake Microsoft Office Excel content<|>
+Context Event 2
+using<|>use<|>the Pitty Tiger group<&>The attackers<&>Pitty Tiger<&>attackers<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger crew<&>the Pitty Tiger group<&>Pitty Tiger<&>the attackers<&>the attackers<&>a user “Toot”<|>different vulnerability scanners aimed at their targets<&>“generic” vulnerability scanning tools like HScan or Fluxay and port scanners like Nmap<|>
+Context Event 3
+collect<|>collect<|>the Pitty Tiger group<&>The attackers<&>Pitty Tiger<&>attackers<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger crew<&>the Pitty Tiger group<&>Pitty Tiger<&>the attackers<&>the attackers<&>a user “Toot”<|>data<|>
+Context Event 4
+collected<|>collect<|>the Pitty Tiger group<&>The attackers<&>Pitty Tiger<&>attackers<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger crew<&>the Pitty Tiger group<&>Pitty Tiger<&>the attackers<&>the attackers<&>a user “Toot”<|>information on some of their targets<|>
+Context Event 5
+get<|>get<|>the Pitty Tiger group<&>The attackers<&>Pitty Tiger<&>attackers<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger crew<&>the Pitty Tiger group<&>Pitty Tiger<&>the attackers<&>the attackers<&>a user “Toot”<|>admin credentials<|>
+Context Event 6
+use<|>use<|>the Pitty Tiger group<&>The attackers<&>Pitty Tiger<&>attackers<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger crew<&>the Pitty Tiger group<&>Pitty Tiger<&>the attackers<&>the attackers<&>a user “Toot”<|>a Microsoft Office Word document which exploits a specific vulnerability<|>
+Context Event 7
+used<|>use<|>the Pitty Tiger group<&>The attackers<&>Pitty Tiger<&>attackers<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger crew<&>the Pitty Tiger group<&>Pitty Tiger<&>the attackers<&>the attackers<&>a user “Toot”<|>This remote administration tool<&>The binary<&>the RAT<&>The RAT<&>our sample<|>
+Context Event 8
+used<|>use<|>the Pitty Tiger group<&>The attackers<&>Pitty Tiger<&>attackers<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger crew<&>the Pitty Tiger group<&>Pitty Tiger<&>the attackers<&>the attackers<&>a user “Toot”<|>another remote administration tool<&>The binary<&>The binary<&>The RAT<&>It<&>The bot<&>Our sample<&>this malware<|>
+Context Event 9
+used<|>use<|>the Pitty Tiger group<&>The attackers<&>Pitty Tiger<&>attackers<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger crew<&>the Pitty Tiger group<&>Pitty Tiger<&>the attackers<&>the attackers<&>a user “Toot”<|>another remote administration tool<&>The binary we found<&>The shellcode contained in the Word file<|>
+Context Event 10
+spear phish<|>spear phish<|>the Pitty Tiger group<&>The attackers<&>Pitty Tiger<&>attackers<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger crew<&>the Pitty Tiger group<&>Pitty Tiger<&>the attackers<&>the attackers<&>a user “Toot”<|>other companies which are in commercial relation with this web development company<|>
+Context Event 11
+launched<|>launch<|>the Pitty Tiger group<&>The attackers<&>Pitty Tiger<&>attackers<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger crew<&>the Pitty Tiger group<&>Pitty Tiger<&>the attackers<&>the attackers<&>a user “Toot”<|>vulnerability scanners<|>
+Context Event 12
+extracted<|>extract<|>the Pitty Tiger group<&>The attackers<&>Pitty Tiger<&>attackers<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger crew<&>the Pitty Tiger group<&>Pitty Tiger<&>the attackers<&>the attackers<&>a user “Toot”<|>it<|>
+Candidate Event 1
+upload<|>upload<|>the Pitty Tiger group<&>The attackers<&>Pitty Tiger<&>attackers<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger crew<&>the Pitty Tiger group<&>Pitty Tiger<&>the attackers<&>the attackers<&>a user “Toot”<|>the files<&>them<&>the data<&>the data<&>the data<|>
+Candidate Event 2
+target<|>target<|>the Pitty Tiger group<&>The attackers<&>Pitty Tiger<&>attackers<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger crew<&>the Pitty Tiger group<&>Pitty Tiger<&>the attackers<&>the attackers<&>a user “Toot”<|>the right victim<&>they<|>
+Candidate Event 3
+collecting<|>collect<|>the Pitty Tiger group<&>The attackers<&>Pitty Tiger<&>attackers<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger crew<&>the Pitty Tiger group<&>Pitty Tiger<&>the attackers<&>the attackers<&>a user “Toot”<|>PGP files<|>
+Candidate Event 4
+used<|>use<|>the Pitty Tiger group<&>The attackers<&>Pitty Tiger<&>attackers<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger crew<&>the Pitty Tiger group<&>Pitty Tiger<&>the attackers<&>the attackers<&>a user “Toot”<|>the named pipes<|>
+Candidate Event 5
+executing<|>execute<|>the Pitty Tiger group<&>The attackers<&>Pitty Tiger<&>attackers<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger crew<&>the Pitty Tiger group<&>Pitty Tiger<&>the attackers<&>the attackers<&>a user “Toot”<|>some commands<|>
+---
+Answer
+4
+Context Event 1
+crafted<|>craft<|>the Pitty Tiger group<&>the group<&>the attackers<&>Pitty Tiger<|>a spear phishing e-mail<&>This e-mail<|>
+Context Event 2
+conducted<|>conduct<|>the Pitty Tiger group<&>the group<&>the attackers<&>Pitty Tiger<|>more advanced spear phishing campaigns<|>
+Candidate Event 1
+registered<|>register<|>the Pitty Tiger group<&>the group<&>the attackers<&>Pitty Tiger<|>domains similar to those of legitimate Eastern European news sites and governments<|>
+Candidate Event 2
+executing<|>execute<|>the Pitty Tiger group<&>the group<&>the attackers<&>Pitty Tiger<|>the payload<&>it<|>
+Candidate Event 3
+encrypted<|>encrypt<|>the Pitty Tiger group<&>the group<&>the attackers<&>Pitty Tiger<|>The data following the header<|>
+Candidate Event 4
+using<|>use<|>the Pitty Tiger group<&>the group<&>the attackers<&>Pitty Tiger<|>content<&>stolen material<|>
+Candidate Event 5
+using<|>use<|>the Pitty Tiger group<&>the group<&>the attackers<&>Pitty Tiger<|>content<&>stolen material<|>
+---
+Answer
+4
+Context Event 1
+infects<|>infect<|>The binary<&>a copy of itself<&>The malware<&>the exploit<&>the malware<&>the malware<|>the host<|>
+Context Event 2
+dropping<|>drop<|>The binary<&>a copy of itself<&>The malware<&>the exploit<&>the malware<&>the malware<|>a file named “svohost.exe”<|>in+the temporary folder of the currently logged-in user
+Context Event 3
+executing<|>execute<|>The binary<&>a copy of itself<&>The malware<&>the exploit<&>the malware<&>the malware<|>a file named “svohost.exe”<|>in+the temporary folder of the currently logged-in user
+Context Event 4
+drops<|>drop<|>The binary<&>a copy of itself<&>The malware<&>the exploit<&>the malware<&>the malware<|>The binary<&>a copy of itself<&>The malware<&>the exploit<&>the malware<&>the malware<|>in+the Application Data folder of the currently logged-in user
+Context Event 5
+initiates<|>initiate<|>The binary<&>a copy of itself<&>The malware<&>the exploit<&>the malware<&>the malware<|>a communication<|>
+Context Event 6
+check<|>check<|>The binary<&>a copy of itself<&>The malware<&>the exploit<&>the malware<&>the malware<|><|>
+Context Event 7
+communicates<|>communicate<|>The binary<&>a copy of itself<&>The malware<&>the exploit<&>the malware<&>the malware<|><|>
+Context Event 8
+used<|>use<|>The binary<&>a copy of itself<&>The malware<&>the exploit<&>the malware<&>the malware<|>The persistence mechanism<&>The persistence mechanism<|>
+Candidate Event 1
+installs<|>install<|>The binary<&>a copy of itself<&>The malware<&>the exploit<&>the malware<&>the malware<|>NDIS filter intermediate driver<&>This driver<&>The driver<&>NDIS filter driver for NDIS 6.0 and above<&>The driver<&>it<&>it<|>
+Candidate Event 2
+carried out<|>carry out<|>The binary<&>a copy of itself<&>The malware<&>the exploit<&>the malware<&>the malware<|>the network communications<|>
+Candidate Event 3
+hijacking<|>hijack<|>The binary<&>a copy of itself<&>The malware<&>the exploit<&>the malware<&>the malware<|>the HTTP traffic<|>
+Candidate Event 4
+issues<|>issue<|>The binary<&>a copy of itself<&>The malware<&>the exploit<&>the malware<&>the malware<|>another HTTP request<|>
+Candidate Event 5
+collected<|>collect<|>The binary<&>a copy of itself<&>The malware<&>the exploit<&>the malware<&>the malware<|>information<|>
+---
+Answer
+2
+Context Event 1
+used<|>use<|><|>The payload of this malware<&>It<&>The payload of this malware<|>
+Context Event 2
+send<|>send<|>The payload of this malware<&>It<&>The payload of this malware<|>it<&>collect information on the newly infected host<&>it<&>this data<|>back to+the c&c server
+Context Event 3
+download<|>download<|>The payload of this malware<&>It<&>The payload of this malware<|>binaries<|>
+Candidate Event 1
+check<|>check<|>The payload of this malware<&>It<&>The payload of this malware<|><|>
+Candidate Event 2
+target<|>target<|>The payload of this malware<&>It<&>The payload of this malware<|>visitors<|>
+Candidate Event 3
+execute<|>execute<|>The payload of this malware<&>It<&>The payload of this malware<|>binaries<|>
+Candidate Event 4
+puts<|>put<|>The payload of this malware<&>It<&>The payload of this malware<|>its main payload<|>in+the overlay
+Candidate Event 5
+including<|>include<|>The payload of this malware<&>It<&>The payload of this malware<|>remote shell<|>
+---
+Answer
+0
+Context Event 1
+drops<|>drop<|>The “qmgrxp.exe” binary<&>It<|>it<&>the “packet64.dll”<&>it<|>
+Context Event 2
+injects<|>inject<|>The “qmgrxp.exe” binary<&>It<|>it<&>the “packet64.dll”<&>it<|>in+“explorer.exe”
+Candidate Event 1
+sending<|>send<|>it<&>the “packet64.dll”<&>it<|>its Hello packet<|>to+its c&c server
+Candidate Event 2
+view<|>view<|>it<&>the “packet64.dll”<&>it<|>the main desktop<&>graphically<|>
+Candidate Event 3
+install<|>install<|>it<&>the “packet64.dll”<&>it<|>a TDI filter driver<|>
+Candidate Event 4
+compromise<|>compromise<|>it<&>the “packet64.dll”<&>it<|>the entirety of their organization<|>
+Candidate Event 5
+compromise<|>compromise<|>it<&>the “packet64.dll”<&>it<|>these devices<|>
+---
+Answer
+1
+Context Event 1
+drops<|>drop<|>The “qmgrxp.exe” binary<&>It<|>it<&>the “packet64.dll”<&>it<|>
+Context Event 2
+injects<|>inject<|>The “qmgrxp.exe” binary<&>It<|>it<&>the “packet64.dll”<&>it<|>in+“explorer.exe”
+Candidate Event 1
+dropped<|>drop<|>The “qmgrxp.exe” binary<&>It<|>The “release.tmp” file<&>the “release.tmp” file<|>on+the system
+Candidate Event 2
+is<|>be<|>The “qmgrxp.exe” binary<&>It<|>a simple copy of the original binary<|>
+Candidate Event 3
+pull<|>pull<|>The “qmgrxp.exe” binary<&>It<|>specific survey information<|>
+Candidate Event 4
+bypassing<|>bypass<|>The “qmgrxp.exe” binary<&>It<|><|>
+Candidate Event 5
+perform<|>perform<|>The “qmgrxp.exe” binary<&>It<|>POST requests<|>
+---
+Answer
+1
+Context Event 1
+drops<|>drop<|>another remote administration tool<&>The binary we found<&>The shellcode contained in the Word file<|>the following file<&>it<&>This one<|>
+Context Event 2
+executes<|>execute<|>another remote administration tool<&>The binary we found<&>The shellcode contained in the Word file<|>the following file<&>it<&>This one<|>
+Candidate Event 1
+checks<|>check<|>the following file<&>it<&>This one<|>if the process being shut down is svchost.exe<|>
+Candidate Event 2
+drops<|>drop<|>the following file<&>it<&>This one<|><|>
+Candidate Event 3
+acts<|>act<|>the following file<&>it<&>This one<|><|>
+Candidate Event 4
+seeds<|>seed<|>the following file<&>it<&>This one<|>Japanese p2p sharing sites<|>
+Candidate Event 5
+dropped<|>drop<|>the following file<&>it<&>This one<|>the malware (TinyZbot)<&>the malware<&>the malware<|>
+---
+Answer
+0
+Context Event 1
+has<|>have<|>the attacker<&>he<&>He<&>a user “Toot”<&>the attackers<&>Pitty Tiger<|><|>
+Context Event 2
+write<|>write<|>the attacker<&>he<&>He<&>a user “Toot”<&>the attackers<&>Pitty Tiger<|>content<|>in+the system32 folder of a Windows XP system
+Context Event 3
+gain<|>gain<|>the attacker<&>he<&>He<&>a user “Toot”<&>the attackers<&>Pitty Tiger<|>the credentials to a sensitive e-mail account<|>
+Context Event 4
+used<|>use<|>the attacker<&>he<&>He<&>a user “Toot”<&>the attackers<&>Pitty Tiger<|>The c&c servers<|>
+Candidate Event 1
+infect<|>infect<|>the attacker<&>he<&>He<&>a user “Toot”<&>the attackers<&>Pitty Tiger<|>computers<|>
+Candidate Event 2
+ensured<|>ensure<|>the attacker<&>he<&>He<&>a user “Toot”<&>the attackers<&>Pitty Tiger<|>The registration<|>
+Candidate Event 3
+sent<|>send<|>the attacker<&>he<&>He<&>a user “Toot”<&>the attackers<&>Pitty Tiger<|>Email<|>
+Candidate Event 4
+drops<|>drop<|>the attacker<&>he<&>He<&>a user “Toot”<&>the attackers<&>Pitty Tiger<|>two files<&>This data file<&>The files<&>the DLLs<&>the DLL<&>ctfmonrc.dll<|>
+Candidate Event 5
+obtains<|>obtain<|>the attacker<&>he<&>He<&>a user “Toot”<&>the attackers<&>Pitty Tiger<|>The backdoor<&>it<&>it<&>a second stage backdoor<&>EVILTOSS variants<&>a second stage backdoor<|>
+---
+Answer
+2
+Context Event 1
+establish<|>establish<|>The attackers<&>The attackers<&>attackers<&>Some groups of attackers<|>one or several permanent backdoors<|>
+Context Event 2
+rely<|>rely<|>The attackers<&>The attackers<&>attackers<&>Some groups of attackers<|><|>
+Context Event 3
+send<|>send<|>The attackers<&>The attackers<&>attackers<&>Some groups of attackers<|>very few e-mails<|>to+targeted people
+Candidate Event 1
+submits<|>submit<|>The attackers<&>The attackers<&>attackers<&>Some groups of attackers<|>collected information<|>to+the C&C server
+Candidate Event 2
+copy<|>copy<|>The attackers<&>The attackers<&>attackers<&>Some groups of attackers<|>The dropper component<&>itself<&>It<&>itself<&>itself<|>to+accessible network shares
+Candidate Event 3
+use<|>use<|>The attackers<&>The attackers<&>attackers<&>Some groups of attackers<|>“watering hole” techniques<&>build a watering hole attack<|>
+Candidate Event 4
+deobfuscates<|>deobfuscates<|>The attackers<&>The attackers<&>attackers<&>Some groups of attackers<|>the main implant code<&>the main implant code<|>
+Candidate Event 5
+detected<|>detect<|>The attackers<&>The attackers<&>attackers<&>Some groups of attackers<|>Catch.exe<&>Catch.exe<&>this Darkhotel backdoor<&>The associated Darkhotel backdoor<|>
+---
+Answer
+3
+Context Event 1
+click<|>click<|>the right victim<&>they<|><|>
+Context Event 2
+open<|>open<|>the right victim<&>they<|>an attached file which will infect their computer<|>
+Candidate Event 1
+capturing<|>capture<|>the right victim<&>they<|>screenshots<|>
+Candidate Event 2
+spread<|>spread<|>the right victim<&>they<|>The malware<&>The malware used in the March 20, 2013 attacks<&>The attack<&>the March 20 attacks<&>these actors<&>the malware<|>
+Candidate Event 3
+know<|>know<|>the right victim<&>they<|>the internals of the infected networks<|>
+Candidate Event 4
+target<|>target<|><|>the right victim<&>they<|>
+Candidate Event 5
+scanned<|>scan<|>the right victim<&>they<|>some targets<|>
+---
+Answer
+3
+Context Event 1
+infect<|>infect<|>This one<&>It<&>The payload<&>this malware<&>the exploit<|>workstations<|>
+Context Event 2
+collect<|>collect<|>This one<&>It<&>The payload<&>this malware<&>the exploit<|>system information<|>
+Context Event 3
+install<|>install<|>This one<&>It<&>The payload<&>this malware<&>the exploit<|>more malware<|>on+the infected computer
+Context Event 4
+acts<|>act<|>This one<&>It<&>The payload<&>this malware<&>the exploit<|><|>
+Context Event 5
+acts<|>act<|>This one<&>It<&>The payload<&>this malware<&>the exploit<|><|>
+Context Event 6
+embedded<|>embed<|>This one<&>It<&>The payload<&>this malware<&>the exploit<|><|>in+Microsoft Office documents
+Context Event 7
+infecting<|>infect<|>This one<&>It<&>The payload<&>this malware<&>the exploit<|>the system<|>
+Candidate Event 1
+upload<|>upload<|>This one<&>It<&>The payload<&>this malware<&>the exploit<|>the bash script ~pr1.tmp<&>The bash script<|>
+Candidate Event 2
+enumerate<|>enumerate<|>This one<&>It<&>The payload<&>this malware<&>the exploit<|>network resources<|>
+Candidate Event 3
+stored<|>store<|>This one<&>It<&>The payload<&>this malware<&>the exploit<|>The malicious content<&>this<|>inside+the document
+Candidate Event 4
+spreading<|>spread<|>several different documents<|>This one<&>It<&>The payload<&>this malware<&>the exploit<|>
+Candidate Event 5
+used<|>use<|>This one<&>It<&>The payload<&>this malware<&>the exploit<|>Payloads from the exploit<&>all payloads<&>the payload<&>a payload<&>variants of Backdoor.Emdivi<&>The malicious payload<&>a threat<|>
+---
+Answer
+1
+Context Event 1
+send<|>send<|>The payload of this malware<&>It<&>The payload of this malware<|>it<&>collect information on the newly infected host<&>it<&>this data<|>back to+the c&c server
+Context Event 2
+shows<|>show<|>it<&>collect information on the newly infected host<&>it<&>this data<|>all software installed on the system<|>
+Context Event 3
+shows<|>show<|>it<&>collect information on the newly infected host<&>it<&>this data<|>running services<|>
+Candidate Event 1
+save<|>save<|>it<&>collect information on the newly infected host<&>it<&>this data<|>configuration data<|>into+the registry
+Candidate Event 2
+transferred<|>transfer<|><|>it<&>collect information on the newly infected host<&>it<&>this data<|>to+the c&c server
+Candidate Event 3
+identify<|>identify<|>it<&>collect information on the newly infected host<&>it<&>this data<|>every targeted attack<|>
+Candidate Event 4
+sends<|>send<|>it<&>collect information on the newly infected host<&>it<&>this data<|>an e-mail containing the victim’s IP address and miscellaneous system information<|>
+Candidate Event 5
+transmitting<|>transmitting<|>it<&>collect information on the newly infected host<&>it<&>this data<|>custom malware<&>The custom malware used in this attack<&>it<&>the malware<&>The malware<&>The malware<&>this malware<&>the program<&>It<&>the malware<&>The malware<&>the malware<&>the malware<&>it<&>The malware<&>The malware<|>
+---
+Answer
+3
+Context Event 1
+used<|>use<|>the Pitty Tiger group<&>The attackers<&>Pitty Tiger<&>attackers<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger crew<&>the Pitty Tiger group<&>Pitty Tiger<&>the attackers<&>the attackers<&>a user “Toot”<|>This remote administration tool<&>The binary<&>the RAT<&>The RAT<&>our sample<|>
+Context Event 2
+drops<|>drop<|>This remote administration tool<&>The binary<&>the RAT<&>The RAT<&>our sample<|>two files<|>in+“C:\Program Files\Internet Explorer”
+Context Event 3
+sends<|>send<|>This remote administration tool<&>The binary<&>the RAT<&>The RAT<&>our sample<|>a first login packet<|>to+its c&c
+Context Event 4
+receive<|>receive<|>This remote administration tool<&>The binary<&>the RAT<&>The RAT<&>our sample<|>commands<|>
+Candidate Event 1
+logging<|>log<|>This remote administration tool<&>The binary<&>the RAT<&>The RAT<&>our sample<|>their keystrokes<|>
+Candidate Event 2
+injects<|>inject<|>This remote administration tool<&>The binary<&>the RAT<&>The RAT<&>our sample<|>it<&>the “packet64.dll”<&>it<|>in+“explorer.exe”
+Candidate Event 3
+is<|>be<|>This remote administration tool<&>The binary<&>the RAT<&>The RAT<&>our sample<|>the other half of the command and control channel<|>
+Candidate Event 4
+communicates<|>communicate<|>This remote administration tool<&>The binary<&>the RAT<&>The RAT<&>our sample<|><|>
+Candidate Event 5
+collects<|>collect<|>This remote administration tool<&>The binary<&>the RAT<&>The RAT<&>our sample<|>keystrokes<|>
+---
+Answer
+0
+Context Event 1
+sent<|>send<|><|>The data<&>It<|>
+Context Event 2
+contains<|>contain<|>The data<&>It<|>the internal IP address<|>
+Context Event 3
+contains<|>contain<|>The data<&>It<|>the OS version<|>
+Context Event 4
+contains<|>contain<|>The data<&>It<|>the Language ID of the system<|>
+Candidate Event 1
+contains<|>contain<|>The data<&>It<|>the computer name<&>the user name<&>the RAT internal version<|>
+Candidate Event 2
+identify<|>identify<|>The data<&>It<|>potential victims<|>
+Candidate Event 3
+decoded<|>decode<|>The data<&>It<|>The tail of the image file<|>to+these files
+Candidate Event 4
+acting<|>act<|>The data<&>It<|><|>
+Candidate Event 5
+use<|>use<|>The data<&>It<|>spear phishing e-mails<&>extensively<|>
+---
+Answer
+0
+Context Event 1
+used<|>use<|>the Pitty Tiger group<&>The attackers<&>Pitty Tiger<&>attackers<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger crew<&>the Pitty Tiger group<&>Pitty Tiger<&>the attackers<&>the attackers<&>a user “Toot”<|>another remote administration tool<&>The binary<&>The binary<&>The RAT<&>It<&>The bot<&>Our sample<&>this malware<|>
+Context Event 2
+copied<|>copy<|><|>another remote administration tool<&>The binary<&>The binary<&>The RAT<&>It<&>The bot<&>Our sample<&>this malware<|>to+the user’s “Application Data” directory
+Context Event 3
+injects<|>inject<|>another remote administration tool<&>The binary<&>The binary<&>The RAT<&>It<&>The bot<&>Our sample<&>this malware<|>The “release.tmp” file<&>the “release.tmp” file<|>in+“explorer.exe”
+Context Event 4
+embeds<|>embed<|>another remote administration tool<&>The binary<&>The binary<&>The RAT<&>It<&>The bot<&>Our sample<&>this malware<|>its own DNS server IP addresses<|>
+Context Event 5
+resolving<|>resolve<|>another remote administration tool<&>The binary<&>The binary<&>The RAT<&>It<&>The bot<&>Our sample<&>this malware<|>its domains<|>
+Context Event 6
+sends<|>send<|>another remote administration tool<&>The binary<&>The binary<&>The RAT<&>It<&>The bot<&>Our sample<&>this malware<|>requests<|>
+Context Event 7
+sends<|>send<|>another remote administration tool<&>The binary<&>The binary<&>The RAT<&>It<&>The bot<&>Our sample<&>this malware<|>GET requests<&>GET requests<|>
+Context Event 8
+retrieve<|>retrieve<|>another remote administration tool<&>The binary<&>The binary<&>The RAT<&>It<&>The bot<&>Our sample<&>this malware<|>remote commands<|>
+Context Event 9
+uses<|>use<|>another remote administration tool<&>The binary<&>The binary<&>The RAT<&>It<&>The bot<&>Our sample<&>this malware<|>“mca.avstore.com.tw”, “star.yamn.net” and “bz.kimoo.com.tw”<|>
+Candidate Event 1
+uses<|>use<|>another remote administration tool<&>The binary<&>The binary<&>The RAT<&>It<&>The bot<&>Our sample<&>this malware<|>the same patterns<|>
+Candidate Event 2
+is<|>be<|>another remote administration tool<&>The binary<&>The binary<&>The RAT<&>It<&>The bot<&>Our sample<&>this malware<|>HTTP based<|>
+Candidate Event 3
+is received<|>is received<|>another remote administration tool<&>The binary<&>The binary<&>The RAT<&>It<&>The bot<&>Our sample<&>this malware<|>This inbound payload<|>
+Candidate Event 4
+infect<|>infect<|>another remote administration tool<&>The binary<&>The binary<&>The RAT<&>It<&>The bot<&>Our sample<&>this malware<|>computers<|>
+Candidate Event 5
+communicated<|>communicate<|>another remote administration tool<&>The binary<&>The binary<&>The RAT<&>It<&>The bot<&>Our sample<&>this malware<|><|>
+---
+Answer
+1
+Context Event 1
+used<|>use<|>the Pitty Tiger group<&>The attackers<&>Pitty Tiger<&>attackers<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger group<&>the Pitty Tiger crew<&>the Pitty Tiger group<&>Pitty Tiger<&>the attackers<&>the attackers<&>a user “Toot”<|>another remote administration tool<&>The binary we found<&>The shellcode contained in the Word file<|>
+Context Event 2
+dropped<|>drop<|>a malicious Word document<|>another remote administration tool<&>The binary we found<&>The shellcode contained in the Word file<|>
+Context Event 3
+drops<|>drop<|>another remote administration tool<&>The binary we found<&>The shellcode contained in the Word file<|>the following file<&>it<&>This one<|>
+Candidate Event 1
+sending<|>send<|>another remote administration tool<&>The binary we found<&>The shellcode contained in the Word file<|>an initial HTTP GET request<|>
+Candidate Event 2
+executes<|>execute<|>another remote administration tool<&>The binary we found<&>The shellcode contained in the Word file<|>the following file<&>it<&>This one<|>
+Candidate Event 3
+including<|>include<|>another remote administration tool<&>The binary we found<&>The shellcode contained in the Word file<|>file exfiltration<|>
+Candidate Event 4
+spoof<|>spoof<|>another remote administration tool<&>The binary we found<&>The shellcode contained in the Word file<|>the appearance of the above applications<|>
+Candidate Event 5
+played<|>play<|>another remote administration tool<&>The binary we found<&>The shellcode contained in the Word file<|>those back in a loop<|>
+---

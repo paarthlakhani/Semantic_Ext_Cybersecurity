@@ -1,0 +1,83 @@
+---
+Answer
+3
+Context Event 1
+is<|>be<|>The malware<&>it<&>The malicious payload<&>Emdivi<&>Backdoor.Emdivi<&>a back door<|>Backdoor.Emdivi<|>
+Context Event 2
+generates<|>generate<|>The malware<&>it<&>The malicious payload<&>Emdivi<&>Backdoor.Emdivi<&>a back door<|>a hash<|>
+Context Event 3
+uses<|>use<|>The malware<&>it<&>The malicious payload<&>Emdivi<&>Backdoor.Emdivi<&>a back door<|>a hash<|>
+Context Event 4
+connects<|>connect<|>The malware<&>it<&>The malicious payload<&>Emdivi<&>Backdoor.Emdivi<&>a back door<|><|>to+hardcoded C&C servers
+Context Event 5
+installed<|>instal<|>a Microsoft Word file containing a maliciously crafted SWF file that exploited the vulnerability<&>the file<|>The malware<&>it<&>The malicious payload<&>Emdivi<&>Backdoor.Emdivi<&>a back door<|>
+Candidate Event 1
+dump<|>dump<|>The malware<&>it<&>The malicious payload<&>Emdivi<&>Backdoor.Emdivi<&>a back door<|>local credentials<|>
+Candidate Event 2
+used<|>use<|>The malware<&>it<&>The malicious payload<&>Emdivi<&>Backdoor.Emdivi<&>a back door<|>The files within that directory<|>
+Candidate Event 3
+takes<|>take<|>The malware<&>it<&>The malicious payload<&>Emdivi<&>Backdoor.Emdivi<&>a back door<|>advantage<&>social engineering<|>
+Candidate Event 4
+install<|>install<|>an Adobe Flash zero-day exploit<|>The malware<&>it<&>The malicious payload<&>Emdivi<&>Backdoor.Emdivi<&>a back door<|>
+Candidate Event 5
+target<|>target<|>The malware<&>it<&>The malicious payload<&>Emdivi<&>Backdoor.Emdivi<&>a back door<|>the right victim<&>they<|>
+---
+Answer
+2
+Context Event 1
+steal<|>steal<|>Payloads from the exploit<&>all payloads<&>the payload<&>a payload<&>variants of Backdoor.Emdivi<&>The malicious payload<&>a threat<|>confidential information<|>
+Context Event 2
+include<|>include<|>Payloads from the exploit<&>all payloads<&>the payload<&>a payload<&>variants of Backdoor.Emdivi<&>The malicious payload<&>a threat<|>Backdoor.Emdivi, Backdoor.Korplug, and Backdoor.ZXshell<|>
+Context Event 3
+drop<|>drop<|>Opening the malicious attachment with Ichitaro<|>Payloads from the exploit<&>all payloads<&>the payload<&>a payload<&>variants of Backdoor.Emdivi<&>The malicious payload<&>a threat<|>
+Context Event 4
+used<|>use<|><|>Payloads from the exploit<&>all payloads<&>the payload<&>a payload<&>variants of Backdoor.Emdivi<&>The malicious payload<&>a threat<|>
+Candidate Event 1
+collects<|>collect<|>Payloads from the exploit<&>all payloads<&>the payload<&>a payload<&>variants of Backdoor.Emdivi<&>The malicious payload<&>a threat<|>the external IP of the infected machine<|>
+Candidate Event 2
+recording<|>record<|>Payloads from the exploit<&>all payloads<&>the payload<&>a payload<&>variants of Backdoor.Emdivi<&>The malicious payload<&>a threat<|>audio/video<|>
+Candidate Event 3
+opens<|>open<|>Payloads from the exploit<&>all payloads<&>the payload<&>a payload<&>variants of Backdoor.Emdivi<&>The malicious payload<&>a threat<|>a back door<|>
+Candidate Event 4
+compromise<|>compromise<|>Payloads from the exploit<&>all payloads<&>the payload<&>a payload<&>variants of Backdoor.Emdivi<&>The malicious payload<&>a threat<|>the website of a third party, generally a supplier of the target, which is typically visited by a specific group of professionals and very likely by the target<|>
+Candidate Event 5
+install<|>install<|>Payloads from the exploit<&>all payloads<&>the payload<&>a payload<&>variants of Backdoor.Emdivi<&>The malicious payload<&>a threat<|>a main DLL (referred to as “the DLL”)<&>The DLL<&>the DLL<&>the DLL<&>the DLL<&>the DLL<&>the DLL<|>
+---
+Answer
+2
+Context Event 1
+steal<|>steal<|>This group<&>the remote attacker<&>the attacker<&>The attackers<|>confidential information<|>
+Context Event 2
+executing<|>execute<|>This group<&>the remote attacker<&>the attacker<&>The attackers<|>the commands<|>
+Context Event 3
+send<|>send<|>This group<&>the remote attacker<&>the attacker<&>The attackers<|>the results<|>back to+the command-and-control (C&C) server
+Context Event 4
+turned<|>turn<|>This group<&>the remote attacker<&>the attacker<&>The attackers<|>the websites<|>
+Candidate Event 1
+accesses<|>access<|>This group<&>the remote attacker<&>the attacker<&>The attackers<|><|>
+Candidate Event 2
+infect<|>infect<|>This group<&>the remote attacker<&>the attacker<&>The attackers<|>visitors to foreign and public policy websites<|>
+Candidate Event 3
+sent<|>send<|>This group<&>the remote attacker<&>the attacker<&>The attackers<|>a Microsoft Word file containing a maliciously crafted SWF file that exploited the vulnerability<&>the file<|>
+Candidate Event 4
+uses<|>use<|>This group<&>the remote attacker<&>the attacker<&>The attackers<|>PLink<|>
+Candidate Event 5
+hosted<|>host<|>This group<&>the remote attacker<&>the attacker<&>The attackers<|><|>
+---
+Answer
+0
+Context Event 1
+employs<|>employ<|>Type T<&>Type T<|>techniques<|>
+Context Event 2
+detects<|>detect<|>Type T<&>Type T<|>the presence of automatic analysis systems<|>
+Candidate Event 1
+detects<|>detect<|>Type T<&>Type T<|>debuggers<|>
+Candidate Event 2
+bypassing<|>bypass<|>Type T<&>Type T<|>the firewalls<|>
+Candidate Event 3
+include<|>include<|>Type T<&>Type T<|>Backdoor.Emdivi, Backdoor.Korplug, and Backdoor.ZXshell<|>
+Candidate Event 4
+encrypts<|>encrypt<|>Type T<&>Type T<|>data<&>it<&>data<&>files that match a certain naming convention<|>
+Candidate Event 5
+include<|>include<|>Type T<&>Type T<|>encryption<|>
+---

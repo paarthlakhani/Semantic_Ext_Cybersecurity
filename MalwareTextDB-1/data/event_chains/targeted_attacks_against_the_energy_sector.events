@@ -1,0 +1,367 @@
+---
+Answer
+1
+Context Event 1
+target<|>target<|>Stuxnet<&>it<&>Stuxnet<&>the worm<|>industrial control systems<|>
+Context Event 2
+uses<|>use<|>Stuxnet<&>it<&>Stuxnet<&>the worm<|>seven vulnerabilities<|>
+Context Event 3
+spreading<|>spreading<|>Stuxnet<&>it<&>Stuxnet<&>the worm<|><|>
+Context Event 4
+infect<|>infect<|>Stuxnet<&>it<&>Stuxnet<&>the worm<|>networks isolated by air gaps that are unreachable from the Internet<|>
+Candidate Event 1
+deobfuscate<|>deobfuscate<|>Stuxnet<&>it<&>Stuxnet<&>the worm<|>the relevant loader DLL to the path ‘C:\Windows\temp\install.ocx’<|>
+Candidate Event 2
+infect<|>infect<|>Stuxnet<&>it<&>Stuxnet<&>the worm<|>computers<|>
+Candidate Event 3
+uploaded<|>upload<|>Stuxnet<&>it<&>Stuxnet<&>the worm<|>Collected data<|>to+a DynDNS domain currently hosted on a US webhosting service
+Candidate Event 4
+encode<|>encode<|>Stuxnet<&>it<&>Stuxnet<&>the worm<|>data<|>
+Candidate Event 5
+communicates<|>communicate<|>Stuxnet<&>it<&>Stuxnet<&>the worm<|><|>
+---
+Answer
+2
+Context Event 1
+infect<|>infect<|>the worm<&>it<&>it<&>Stuxnet<&>the malware<&>The early version of Stuxnet<&>The sabotage payload<&>The later version of the threat<&>The payload<&>the threat<|>Step7 project files, which are used to control Programmable Logic Controllers (PLCs)<|>
+Context Event 2
+spread<|>spread<|>the worm<&>it<&>it<&>Stuxnet<&>the malware<&>The early version of Stuxnet<&>The sabotage payload<&>The later version of the threat<&>The payload<&>the threat<|><|>
+Context Event 3
+executed<|>execute<|>the worm<&>it<&>it<&>Stuxnet<&>the malware<&>The early version of Stuxnet<&>The sabotage payload<&>The later version of the threat<&>The payload<&>the threat<|>slightly different infection routines depending on the security software installed on the target<|>
+Context Event 4
+hide<|>hide<|>the worm<&>it<&>it<&>Stuxnet<&>the malware<&>The early version of Stuxnet<&>The sabotage payload<&>The later version of the threat<&>The payload<&>the threat<|>its own files<|>
+Context Event 5
+delete<|>delete<|>the worm<&>it<&>it<&>Stuxnet<&>the malware<&>The early version of Stuxnet<&>The sabotage payload<&>The later version of the threat<&>The payload<&>the threat<|>itself<&>the malware<|>
+Context Event 6
+disrupted<|>disrupt<|>the worm<&>it<&>it<&>Stuxnet<&>the malware<&>The early version of Stuxnet<&>The sabotage payload<&>The later version of the threat<&>The payload<&>the threat<|>the cascaded high frequency gas centrifuges<|>
+Context Event 7
+targeted<|>target<|>the worm<&>it<&>it<&>Stuxnet<&>the malware<&>The early version of Stuxnet<&>The sabotage payload<&>The later version of the threat<&>The payload<&>the threat<|>the S7- 417 PLCs<|>
+Context Event 8
+modified<|>modify<|>the worm<&>it<&>it<&>Stuxnet<&>the malware<&>The early version of Stuxnet<&>The sabotage payload<&>The later version of the threat<&>The payload<&>the threat<|>its valve settings<|>
+Context Event 9
+focused<|>focus<|>the worm<&>it<&>it<&>Stuxnet<&>the malware<&>The early version of Stuxnet<&>The sabotage payload<&>The later version of the threat<&>The payload<&>the threat<|><|>
+Context Event 10
+manipulating<|>manipulate<|>the worm<&>it<&>it<&>Stuxnet<&>the malware<&>The early version of Stuxnet<&>The sabotage payload<&>The later version of the threat<&>The payload<&>the threat<|>the spinning frequency of the rotating motors<|>
+Context Event 11
+become<|>become<|>the worm<&>it<&>it<&>Stuxnet<&>the malware<&>The early version of Stuxnet<&>The sabotage payload<&>The later version of the threat<&>The payload<&>the threat<|>active<|>
+Context Event 12
+recorded<|>record<|>the worm<&>it<&>it<&>Stuxnet<&>the malware<&>The early version of Stuxnet<&>The sabotage payload<&>The later version of the threat<&>The payload<&>the threat<|>measurement readings during normal operation<|>
+Candidate Event 1
+delegated<|>delegate<|>the worm<&>it<&>it<&>Stuxnet<&>the malware<&>The early version of Stuxnet<&>The sabotage payload<&>The later version of the threat<&>The payload<&>the threat<|>the task of communication with C&C<|>to+the pipe server
+Candidate Event 2
+stay<|>stay<|>the worm<&>it<&>it<&>Stuxnet<&>the malware<&>The early version of Stuxnet<&>The sabotage payload<&>The later version of the threat<&>The payload<&>the threat<|><|>
+Candidate Event 3
+played<|>play<|>the worm<&>it<&>it<&>Stuxnet<&>the malware<&>The early version of Stuxnet<&>The sabotage payload<&>The later version of the threat<&>The payload<&>the threat<|>those back in a loop<|>
+Candidate Event 4
+received<|>receive<|>the worm<&>it<&>it<&>Stuxnet<&>the malware<&>The early version of Stuxnet<&>The sabotage payload<&>The later version of the threat<&>The payload<&>the threat<|>The remote commands<|>
+Candidate Event 5
+obtains<|>obtain<|>the worm<&>it<&>it<&>Stuxnet<&>the malware<&>The early version of Stuxnet<&>The sabotage payload<&>The later version of the threat<&>The payload<&>the threat<|>The backdoor<&>it<&>it<&>a second stage backdoor<&>EVILTOSS variants<&>a second stage backdoor<|>
+---
+Answer
+4
+Context Event 1
+compromising<|>compromise<|>The attackers<&>they<&>them<&>the attacker<|>public facing Web servers<|>
+Context Event 2
+harvest<|>harvest<|>The attackers<&>they<&>them<&>the attacker<|>local passwords<|>
+Context Event 3
+dump<|>dump<|>The attackers<&>they<&>them<&>the attacker<|>password hashes<|>
+Context Event 4
+sniff<|>sniff<|>The attackers<&>they<&>them<&>the attacker<|>authentication messages<|>
+Context Event 5
+move<|>move<|>The attackers<&>they<&>them<&>the attacker<|><|>
+Context Event 6
+find<|>find<|>The attackers<&>they<&>them<&>the attacker<|>valuable information<|>
+Candidate Event 1
+use<|>use<|>The attackers<&>they<&>them<&>the attacker<|>domains<|>
+Candidate Event 2
+used<|>use<|>The attackers<&>they<&>them<&>the attacker<|>the C&C domain<|>
+Candidate Event 3
+uses<|>use<|>The attackers<&>they<&>them<&>the attacker<|>Windows Sockets 2 (Winsock) APIs, such as WSAStartup(), socket(), connect(), send(), etc<|>
+Candidate Event 4
+obfuscated<|>obfuscate<|>The attackers<&>they<&>them<&>the attacker<|>The executable and DLL<&>Both the document and executable<&>The executable<|>
+Candidate Event 5
+extract<|>extract<|>The attackers<&>they<&>them<&>the attacker<|>valuable information<|>
+---
+Answer
+2
+Context Event 1
+installed<|>instal<|><|>a common Backdoor.Trojan<&>a common Backdoor.Trojan<|>On+compromised computers
+Context Event 2
+communicated<|>communicate<|>a common Backdoor.Trojan<&>a common Backdoor.Trojan<|><|>back to+the C&C server
+Candidate Event 1
+scan<|>scan<|>a common Backdoor.Trojan<&>a common Backdoor.Trojan<|>a set of configured IP addresses<|>
+Candidate Event 2
+injects<|>inject<|>a common Backdoor.Trojan<&>a common Backdoor.Trojan<|>The “release.tmp” file<&>the “release.tmp” file<|>in+“explorer.exe”
+Candidate Event 3
+allowing<|>allow<|>a common Backdoor.Trojan<&>a common Backdoor.Trojan<|>remote access to the computer<|>
+Candidate Event 4
+execute<|>execute<|>a common Backdoor.Trojan<&>a common Backdoor.Trojan<|>them<|>
+Candidate Event 5
+includes<|>include<|>a common Backdoor.Trojan<&>a common Backdoor.Trojan<|>proxy capability<|>
+---
+Answer
+1
+Context Event 1
+creating<|>create<|>The dropper component<&>itself<&>It<&>itself<&>itself<|>all the required files on the system<|>
+Context Event 2
+registering<|>register<|>The dropper component<&>itself<&>It<&>itself<&>itself<|>a service called “TrkSvr”<|>
+Context Event 3
+start<|>start<|>The dropper component<&>itself<&>It<&>itself<&>itself<|>The dropper component<&>itself<&>It<&>itself<&>itself<|>
+Context Event 4
+copy<|>copy<|>The dropper component<&>itself<&>It<&>itself<&>itself<|>The dropper component<&>itself<&>It<&>itself<&>itself<|>to+accessible network shares
+Candidate Event 1
+collect<|>collect<|>The dropper component<&>itself<&>It<&>itself<&>itself<|>their login credentials<|>
+Candidate Event 2
+execute<|>execute<|>The dropper component<&>itself<&>It<&>itself<&>itself<|>The dropper component<&>itself<&>It<&>itself<&>itself<|>
+Candidate Event 3
+makes sure<|>make sure<|>The dropper component<&>itself<&>It<&>itself<&>itself<|>only one instance of current code is running<|>
+Candidate Event 4
+drops<|>drop<|>The dropper component<&>itself<&>It<&>itself<&>itself<|>MiniDuke<&>it<&>the payload<&>the encrypted version of the malware<&>the malware<&>the malware<&>the malware<&>MiniDuke<&>MiniDuke<&>it<&>MiniDuke<&>MiniDuke<|>in+the %TEMP% directory in a file named “a.l”
+Candidate Event 5
+executed<|>execute<|>The dropper component<&>itself<&>It<&>itself<&>itself<|>the malware<|>
+---
+Answer
+0
+Context Event 1
+collects<|>collect<|>The malware<&>Disttrack<&>Disttrack<|>file names<|>
+Context Event 2
+overwriting<|>overwrite<|>The malware<&>Disttrack<&>Disttrack<|>them<|>
+Context Event 3
+wiping<|>wipe<|>The malware<&>Disttrack<&>Disttrack<|>the master boot record<|>
+Context Event 4
+steal<|>steal<|>The malware<&>Disttrack<&>Disttrack<|>valuable information<|>
+Context Event 5
+render<|>render<|>The malware<&>Disttrack<&>Disttrack<|>the computers unusable<|>
+Candidate Event 1
+wiping<|>wipe<|>The malware<&>Disttrack<&>Disttrack<|>the operating system and master boot record<|>
+Candidate Event 2
+use<|>use<|>The malware<&>Disttrack<&>Disttrack<|>the certificates<&>fraudulently<|>
+Candidate Event 3
+include<|>include<|>The malware<&>Disttrack<&>Disttrack<|>fake or ma- liciously packaged security tools; intriguing, or ideological, or movement-relevant content (e.g. lists of wanted persons)<|>
+Candidate Event 4
+use<|>use<|>The malware<&>Disttrack<&>Disttrack<|>a special loader<|>
+Candidate Event 5
+written<|>write<|>The malware<&>Disttrack<&>Disttrack<|>The executable and DLL<&>Both the document and executable<&>The executable<|>to+disk
+---
+Answer
+1
+Context Event 1
+contained<|>contain<|>A wave of spear phishing emails<&>All of the emails<|>the same Trojan.Dropper<&>the same Trojan.Dropper<&>The malware itself<&>The back door<&>other back door Trojans<|>
+Context Event 2
+disguised<|>disguise<|>the same Trojan.Dropper<&>the same Trojan.Dropper<&>The malware itself<&>The back door<&>other back door Trojans<|><|>
+Context Event 3
+drops<|>drop<|>the same Trojan.Dropper<&>the same Trojan.Dropper<&>The malware itself<&>The back door<&>other back door Trojans<|>a malicious Downloader “clbcatq.dll”<&>a malicious Downloader “clbcatq.dll”<|>into+a newly created “wuauclt” directory
+Context Event 4
+provided<|>provide<|>the same Trojan.Dropper<&>the same Trojan.Dropper<&>The malware itself<&>The back door<&>other back door Trojans<|>full access to the compromised computers<|>
+Candidate Event 1
+re-enable<|>re-enable<|>the same Trojan.Dropper<&>the same Trojan.Dropper<&>The malware itself<&>The back door<&>other back door Trojans<|>its network drivers<|>
+Candidate Event 2
+installed<|>instal<|>they<|>the same Trojan.Dropper<&>the same Trojan.Dropper<&>The malware itself<&>The back door<&>other back door Trojans<|>
+Candidate Event 3
+installs<|>install<|>the same Trojan.Dropper<&>the same Trojan.Dropper<&>The malware itself<&>The back door<&>other back door Trojans<|>The backdoor<&>it<&>it<&>a second stage backdoor<&>EVILTOSS variants<&>a second stage backdoor<|>
+Candidate Event 4
+implements<|>implements<|>the same Trojan.Dropper<&>the same Trojan.Dropper<&>The malware itself<&>The back door<&>other back door Trojans<|>a “keylogger” functionality<|>
+Candidate Event 5
+call<|>call<|>the same Trojan.Dropper<&>the same Trojan.Dropper<&>The malware itself<&>The back door<&>other back door Trojans<|>the StopServer function<|>
+---
+Answer
+0
+Context Event 1
+drops<|>drop<|>the same Trojan.Dropper<&>the same Trojan.Dropper<&>The malware itself<&>The back door<&>other back door Trojans<|>a malicious Downloader “clbcatq.dll”<&>a malicious Downloader “clbcatq.dll”<|>into+a newly created “wuauclt” directory
+Context Event 2
+posing<|>pose<|>a malicious Downloader “clbcatq.dll”<&>a malicious Downloader “clbcatq.dll”<|><|>
+Candidate Event 1
+load<|>load<|>a malicious Downloader “clbcatq.dll”<&>a malicious Downloader “clbcatq.dll”<|>the malicious code<|>in+Windows
+Candidate Event 2
+create<|>create<|>a malicious Downloader “clbcatq.dll”<&>a malicious Downloader “clbcatq.dll”<|>processes<|>
+Candidate Event 3
+sent<|>send<|>a malicious Downloader “clbcatq.dll”<&>a malicious Downloader “clbcatq.dll”<|>archive files containing the content they want to exfiltrate<|>to+the attackers
+Candidate Event 4
+obfuscated<|>obfuscate<|>a malicious Downloader “clbcatq.dll”<&>a malicious Downloader “clbcatq.dll”<|>some Windows samples<|>
+Candidate Event 5
+avoid<|>avoid<|>a malicious Downloader “clbcatq.dll”<&>a malicious Downloader “clbcatq.dll”<|>detection from solutions like DNS blacklisting and RFC protocol enforcement<|>
+---
+Answer
+4
+Context Event 1
+came<|>come<|>The spear phishing emails<&>They<&>The emails all<|><|>
+Context Event 2
+made<|>make<|><|>The spear phishing emails<&>They<&>The emails all<|>
+Candidate Event 1
+stores<|>store<|>The spear phishing emails<&>They<&>The emails all<|>gathered data<|>in+a log file
+Candidate Event 2
+intercepts<|>intercept<|>The spear phishing emails<&>They<&>The emails all<|>that event<|>
+Candidate Event 3
+including<|>include<|>The spear phishing emails<&>They<&>The emails all<|>password cap- ture (from over 20 applications)<|>
+Candidate Event 4
+sent<|>send<|>The spear phishing emails<&>They<&>The emails all<|>A Hello packet<|>
+Candidate Event 5
+contained<|>contain<|>The spear phishing emails<&>They<&>The emails all<|>malicious attachments<&>The malware chosen<&>Trojan droppers<&>a variant of the Poison Ivy Trojan Backdoor.Darkmoon<|>
+---
+Answer
+0
+Context Event 1
+contained<|>contain<|>The spear phishing emails<&>They<&>The emails all<|>malicious attachments<&>The malware chosen<&>Trojan droppers<&>a variant of the Poison Ivy Trojan Backdoor.Darkmoon<|>
+Context Event 2
+download<|>download<|>malicious attachments<&>The malware chosen<&>Trojan droppers<&>a variant of the Poison Ivy Trojan Backdoor.Darkmoon<|>additional malware<|>
+Candidate Event 1
+was<|>be<|>malicious attachments<&>The malware chosen<&>Trojan droppers<&>a variant of the Poison Ivy Trojan Backdoor.Darkmoon<|>malicious attachments<&>The malware chosen<&>Trojan droppers<&>a variant of the Poison Ivy Trojan Backdoor.Darkmoon<|>
+Candidate Event 2
+registering<|>register<|>malicious attachments<&>The malware chosen<&>Trojan droppers<&>a variant of the Poison Ivy Trojan Backdoor.Darkmoon<|>a service called “TrkSvr”<|>
+Candidate Event 3
+monitors<|>monitor<|>malicious attachments<&>The malware chosen<&>Trojan droppers<&>a variant of the Poison Ivy Trojan Backdoor.Darkmoon<|>network shares<|>
+Candidate Event 4
+transferred<|>transfer<|>malicious attachments<&>The malware chosen<&>Trojan droppers<&>a variant of the Poison Ivy Trojan Backdoor.Darkmoon<|>it<&>collect information on the newly infected host<&>it<&>this data<|>to+the c&c server
+Candidate Event 5
+used<|>use<|>malicious attachments<&>The malware chosen<&>Trojan droppers<&>a variant of the Poison Ivy Trojan Backdoor.Darkmoon<|>SQL injection payloads<&>Double encoding SQL injection payloads<|>
+---
+Answer
+0
+Context Event 1
+installed<|>instal<|><|>a variant of the Poison Ivy Trojan Backdoor.Darkmoon<&>the back door<&>the back door<&>The back door<|>
+Context Event 2
+create<|>create<|>a variant of the Poison Ivy Trojan Backdoor.Darkmoon<&>the back door<&>the back door<&>The back door<|>a registry run key<|>
+Context Event 3
+restart<|>restart<|>a variant of the Poison Ivy Trojan Backdoor.Darkmoon<&>the back door<&>the back door<&>The back door<|><|>
+Context Event 4
+connect<|>connect<|>a variant of the Poison Ivy Trojan Backdoor.Darkmoon<&>the back door<&>the back door<&>The back door<|><|>to+one of three C&C servers located in Greece
+Context Event 5
+provides<|>provide<|>a variant of the Poison Ivy Trojan Backdoor.Darkmoon<&>the back door<&>the back door<&>The back door<|>full remote access<|>
+Candidate Event 1
+allowing<|>allow<|>a variant of the Poison Ivy Trojan Backdoor.Darkmoon<&>the back door<&>the back door<&>The back door<|><|>
+Candidate Event 2
+execute<|>execute<|>a variant of the Poison Ivy Trojan Backdoor.Darkmoon<&>the back door<&>the back door<&>The back door<|>two files<&>This data file<&>The files<&>the DLLs<&>the DLL<&>ctfmonrc.dll<|>
+Candidate Event 3
+runs<|>run<|>a variant of the Poison Ivy Trojan Backdoor.Darkmoon<&>the back door<&>the back door<&>The back door<|>the Control panel software<&>the Control panel software<|>
+Candidate Event 4
+remove<|>remove<|>a variant of the Poison Ivy Trojan Backdoor.Darkmoon<&>the back door<&>the back door<&>The back door<|>log data<|>
+Candidate Event 5
+uploaded<|>upload<|>a variant of the Poison Ivy Trojan Backdoor.Darkmoon<&>the back door<&>the back door<&>The back door<|>another tool<&>"winrs.exe"<|>to+the victim's machine
+---
+Answer
+2
+Context Event 1
+compromises<|>compromise<|>The attacker<&>the attacker<&>the attacker<&>Some groups<&>the group<&>the attacker<&>the attacker<&>attackers<&>the attacker<&>they<&>they<&>the attackers<&>the attackers<&>More sophisticated attackers<&>The simple attacks<|>the network<|>
+Context Event 2
+delivering<|>deliver<|>The attacker<&>the attacker<&>the attacker<&>Some groups<&>the group<&>the attacker<&>the attacker<&>attackers<&>the attacker<&>they<&>they<&>the attackers<&>the attackers<&>More sophisticated attackers<&>The simple attacks<|>targeted malware<|>
+Context Event 3
+infects<|>infect<|>The attacker<&>the attacker<&>the attacker<&>Some groups<&>the group<&>the attacker<&>the attacker<&>attackers<&>the attacker<&>they<&>they<&>the attackers<&>the attackers<&>More sophisticated attackers<&>The simple attacks<|>a website that has a high likelihood of being visited by the intended victim<|>
+Context Event 4
+using<|>use<|>The attacker<&>the attacker<&>the attacker<&>Some groups<&>the group<&>the attacker<&>the attacker<&>attackers<&>the attacker<&>they<&>they<&>the attackers<&>the attackers<&>More sophisticated attackers<&>The simple attacks<|>IP address filters<|>
+Context Event 5
+plan<|>plan<|>The attacker<&>the attacker<&>the attacker<&>Some groups<&>the group<&>the attacker<&>the attacker<&>attackers<&>the attacker<&>they<&>they<&>the attackers<&>the attackers<&>More sophisticated attackers<&>The simple attacks<|>watering hole attacks<|>
+Context Event 6
+resumed<|>resume<|>The attacker<&>the attacker<&>the attacker<&>Some groups<&>the group<&>the attacker<&>the attacker<&>attackers<&>the attacker<&>they<&>they<&>the attackers<&>the attackers<&>More sophisticated attackers<&>The simple attacks<|>the watering hole attack<|>
+Context Event 7
+swap<|>swap<|>The attacker<&>the attacker<&>the attacker<&>Some groups<&>the group<&>the attacker<&>the attacker<&>attackers<&>the attacker<&>they<&>they<&>the attackers<&>the attackers<&>More sophisticated attackers<&>The simple attacks<|>an update of legitimate software<|>
+Context Event 8
+gains<|>gain<|>The attacker<&>the attacker<&>the attacker<&>Some groups<&>the group<&>the attacker<&>the attacker<&>attackers<&>the attacker<&>they<&>they<&>the attackers<&>the attackers<&>More sophisticated attackers<&>The simple attacks<|>control over the computer<|>
+Context Event 9
+install<|>install<|>The attacker<&>the attacker<&>the attacker<&>Some groups<&>the group<&>the attacker<&>the attacker<&>attackers<&>the attacker<&>they<&>they<&>the attackers<&>the attackers<&>More sophisticated attackers<&>The simple attacks<|>key loggers<|>
+Context Event 10
+dump<|>dump<|>The attacker<&>the attacker<&>the attacker<&>Some groups<&>the group<&>the attacker<&>the attacker<&>attackers<&>the attacker<&>they<&>they<&>the attackers<&>the attackers<&>More sophisticated attackers<&>The simple attacks<|>local credentials<|>
+Context Event 11
+search<|>search<|>The attacker<&>the attacker<&>the attacker<&>Some groups<&>the group<&>the attacker<&>the attacker<&>attackers<&>the attacker<&>they<&>they<&>the attackers<&>the attackers<&>More sophisticated attackers<&>The simple attacks<|>local storage<|>
+Context Event 12
+sniff<|>sniff<|>The attacker<&>the attacker<&>the attacker<&>Some groups<&>the group<&>the attacker<&>the attacker<&>attackers<&>the attacker<&>they<&>they<&>the attackers<&>the attackers<&>More sophisticated attackers<&>The simple attacks<|>the network<|>
+Context Event 13
+learn<|>learn<|>The attacker<&>the attacker<&>the attacker<&>Some groups<&>the group<&>the attacker<&>the attacker<&>attackers<&>the attacker<&>they<&>they<&>the attackers<&>the attackers<&>More sophisticated attackers<&>The simple attacks<|><|>
+Context Event 14
+use<|>use<|>The attacker<&>the attacker<&>the attacker<&>Some groups<&>the group<&>the attacker<&>the attacker<&>attackers<&>the attacker<&>they<&>they<&>the attackers<&>the attackers<&>More sophisticated attackers<&>The simple attacks<|>zero-day vulnerabilities<|>
+Context Event 15
+infect<|>infect<|>The attacker<&>the attacker<&>the attacker<&>Some groups<&>the group<&>the attacker<&>the attacker<&>attackers<&>the attacker<&>they<&>they<&>the attackers<&>the attackers<&>More sophisticated attackers<&>The simple attacks<|>all connected systems<|>
+Context Event 16
+know<|>know<|>The attacker<&>the attacker<&>the attacker<&>Some groups<&>the group<&>the attacker<&>the attacker<&>attackers<&>the attacker<&>they<&>they<&>the attackers<&>the attackers<&>More sophisticated attackers<&>The simple attacks<|>the internals of the infected networks<|>
+Context Event 17
+identified<|>identify<|>The attacker<&>the attacker<&>the attacker<&>Some groups<&>the group<&>the attacker<&>the attacker<&>attackers<&>the attacker<&>they<&>they<&>the attackers<&>the attackers<&>More sophisticated attackers<&>The simple attacks<|>systems with interesting data or with connected industrial control systems<|>
+Context Event 18
+compress<|>compress<|>The attacker<&>the attacker<&>the attacker<&>Some groups<&>the group<&>the attacker<&>the attacker<&>attackers<&>the attacker<&>they<&>they<&>the attackers<&>the attackers<&>More sophisticated attackers<&>The simple attacks<|>the files<&>them<&>the data<&>the data<&>the data<|>
+Context Event 19
+upload<|>upload<|>The attacker<&>the attacker<&>the attacker<&>Some groups<&>the group<&>the attacker<&>the attacker<&>attackers<&>the attacker<&>they<&>they<&>the attackers<&>the attackers<&>More sophisticated attackers<&>The simple attacks<|>the files<&>them<&>the data<&>the data<&>the data<|>
+Context Event 20
+upload<|>upload<|>The attacker<&>the attacker<&>the attacker<&>Some groups<&>the group<&>the attacker<&>the attacker<&>attackers<&>the attacker<&>they<&>they<&>the attackers<&>the attackers<&>More sophisticated attackers<&>The simple attacks<|>the files<&>them<&>the data<&>the data<&>the data<|>
+Candidate Event 1
+drops<|>drop<|>The attacker<&>the attacker<&>the attacker<&>Some groups<&>the group<&>the attacker<&>the attacker<&>attackers<&>the attacker<&>they<&>they<&>the attackers<&>the attackers<&>More sophisticated attackers<&>The simple attacks<|>two files<&>This data file<&>The files<&>the DLLs<&>the DLL<&>ctfmonrc.dll<|>to+disk
+Candidate Event 2
+installed<|>instal<|>The attacker<&>the attacker<&>the attacker<&>Some groups<&>the group<&>the attacker<&>the attacker<&>attackers<&>the attacker<&>they<&>they<&>the attackers<&>the attackers<&>More sophisticated attackers<&>The simple attacks<|>a PlugX/Kaba remote access tool (RAT) payload with the MD5 hash 507aed81e3106da8c50efb3a045c5e2b<&>This PlugX payload<|>on+the compromised endpoint
+Candidate Event 3
+obfuscate<|>obfuscate<|>The attacker<&>the attacker<&>the attacker<&>Some groups<&>the group<&>the attacker<&>the attacker<&>attackers<&>the attacker<&>they<&>they<&>the attackers<&>the attackers<&>More sophisticated attackers<&>The simple attacks<|>the files<&>them<&>the data<&>the data<&>the data<|>
+Candidate Event 4
+encoded<|>encode<|>The attacker<&>the attacker<&>the attacker<&>Some groups<&>the group<&>the attacker<&>the attacker<&>attackers<&>the attacker<&>they<&>they<&>the attackers<&>the attackers<&>More sophisticated attackers<&>The simple attacks<|>The communication between the attacker and the SOCKSS<|>
+Candidate Event 5
+perform<|>perform<|>The attacker<&>the attacker<&>the attacker<&>Some groups<&>the group<&>the attacker<&>the attacker<&>attackers<&>the attacker<&>they<&>they<&>the attackers<&>the attackers<&>More sophisticated attackers<&>The simple attacks<|>arbitrary code execution<|>
+---
+Answer
+4
+Context Event 1
+infect<|>infect<|>the malware<&>the malware<|>removable drives, like USB sticks, or project files for PLCs<|>
+Context Event 2
+introduced<|>introduce<|>the malware<&>the malware<|><|>
+Candidate Event 1
+trick<|>trick<|>the malware<&>the malware<|>the user<|>
+Candidate Event 2
+used<|>use<|>the malware<&>the malware<|>the same collection keywords and encryption keys<|>
+Candidate Event 3
+execute<|>execute<|>the malware<&>the malware<|>binaries<|>
+Candidate Event 4
+records<|>record<|>the malware<&>the malware<|>user activity on the host<|>
+Candidate Event 5
+jumping<|>jump<|>the malware<&>the malware<|>air gaps<|>
+---
+Answer
+2
+Context Event 1
+compress<|>compress<|>The attacker<&>the attacker<&>the attacker<&>Some groups<&>the group<&>the attacker<&>the attacker<&>attackers<&>the attacker<&>they<&>they<&>the attackers<&>the attackers<&>More sophisticated attackers<&>The simple attacks<|>the files<&>them<&>the data<&>the data<&>the data<|>
+Context Event 2
+upload<|>upload<|>The attacker<&>the attacker<&>the attacker<&>Some groups<&>the group<&>the attacker<&>the attacker<&>attackers<&>the attacker<&>they<&>they<&>the attackers<&>the attackers<&>More sophisticated attackers<&>The simple attacks<|>the files<&>them<&>the data<&>the data<&>the data<|>
+Context Event 3
+upload<|>upload<|>The attacker<&>the attacker<&>the attacker<&>Some groups<&>the group<&>the attacker<&>the attacker<&>attackers<&>the attacker<&>they<&>they<&>the attackers<&>the attackers<&>More sophisticated attackers<&>The simple attacks<|>the files<&>them<&>the data<&>the data<&>the data<|>
+Context Event 4
+obfuscate<|>obfuscate<|>The attacker<&>the attacker<&>the attacker<&>Some groups<&>the group<&>the attacker<&>the attacker<&>attackers<&>the attacker<&>they<&>they<&>the attackers<&>the attackers<&>More sophisticated attackers<&>The simple attacks<|>the files<&>them<&>the data<&>the data<&>the data<|>
+Context Event 5
+send<|>send<|>some malware samples<&>the malware<|>the files<&>them<&>the data<&>the data<&>the data<|>
+Candidate Event 1
+load<|>load<|>the files<&>them<&>the data<&>the data<&>the data<|>the driver<|>
+Candidate Event 2
+sent<|>send<|>the files<&>them<&>the data<&>the data<&>the data<|>A Hello packet<|>
+Candidate Event 3
+send<|>send<|>some malware samples<&>the malware<|>the files<&>them<&>the data<&>the data<&>the data<|>
+Candidate Event 4
+send<|>send<|>the files<&>them<&>the data<&>the data<&>the data<|>waves of spearphishing messages<|>
+Candidate Event 5
+spread<|>spread<|>the files<&>them<&>the data<&>the data<&>the data<|>a part of a large (approximately 900mb) rar archive<&>The archive<|>
+---
+Answer
+3
+Context Event 1
+send<|>send<|>some malware samples<&>the malware<|>the files<&>them<&>the data<&>the data<&>the data<|>
+Context Event 2
+use<|>use<|>some malware samples<&>the malware<|>location awareness<|>
+Candidate Event 1
+deliver<|>deliver<|>some malware samples<&>the malware<|>malware<&>it<&>the malware<&>a file containing both the legitimate update and the malware<&>Gh0st RAT<|>to+the victim
+Candidate Event 2
+using<|>use<|>some malware samples<&>the malware<|>IP address filters<|>
+Candidate Event 3
+used<|>use<|>some malware samples<&>the malware<|>the key<|>
+Candidate Event 4
+send<|>send<|>some malware samples<&>the malware<|>the files<&>them<&>the data<&>the data<&>the data<|>
+Candidate Event 5
+routed<|>rout<|>some malware samples<&>the malware<|>The traffic<|>
+---
+Answer
+4
+Context Event 1
+deletes<|>delete<|>The malware<|>all files on a computer<|>
+Context Event 2
+deletes<|>delete<|>The malware<|>the master boot record<|>
+Candidate Event 1
+run<|>run<|>The malware<|>file<|>
+Candidate Event 2
+gathering<|>gather<|>The malware<|>drive information and operating system version<|>
+Candidate Event 3
+receive<|>receive<|>The malware<|>commands<|>
+Candidate Event 4
+uploaded<|>upload<|>The malware<|>another tool<&>"winrs.exe"<|>to+the victim's machine
+Candidate Event 5
+rendering<|>render<|>The malware<|>the computer<&>unusable<|>
+---

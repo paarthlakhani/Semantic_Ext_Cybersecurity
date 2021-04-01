@@ -1,0 +1,20 @@
+---
+Answer
+3
+Context Event 1
+direct<|>direct<|>an iframe<&>malicious iframes<&>the iframe<&>The iframes on these websites<|>site visitors<&>visitors<|>to+a threat actor-controlled IP address
+Context Event 2
+obfuscated<|>obfuscate<|>The threat group<&>The group<|>an iframe<&>malicious iframes<&>the iframe<&>The iframes on these websites<|>
+Context Event 3
+directed<|>direct<|>an iframe<&>malicious iframes<&>the iframe<&>The iframes on these websites<|>site visitors<&>visitors<|>to+Java exploits hosted at 103.27.108.45
+Candidate Event 1
+hide<|>hide<|>an iframe<&>malicious iframes<&>the iframe<&>The iframes on these websites<|>services<|>
+Candidate Event 2
+compromise<|>compromise<|>an iframe<&>malicious iframes<&>the iframe<&>The iframes on these websites<|>these devices<|>
+Candidate Event 3
+‘inject’<|>‘inject’<|>an iframe<&>malicious iframes<&>the iframe<&>The iframes on these websites<|>the traffic<|>
+Candidate Event 4
+insert<|>insert<|>The threat group<&>The group<|>an iframe<&>malicious iframes<&>the iframe<&>The iframes on these websites<|>
+Candidate Event 5
+attack<|>attack<|>an iframe<&>malicious iframes<&>the iframe<&>The iframes on these websites<|>targets<|>
+---

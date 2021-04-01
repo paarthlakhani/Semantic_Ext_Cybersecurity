@@ -1,0 +1,183 @@
+---
+Answer
+1
+Context Event 1
+searches<|>search<|>the dropper<&>it<&>the dropper<&>the malware<&>the dropper<|>these directories<|>
+Context Event 2
+reads<|>read<|>the dropper<&>it<&>the dropper<&>the malware<&>the dropper<|>the configuration file<|>
+Context Event 3
+extracts<|>extract<|>the dropper<&>it<&>the dropper<&>the malware<&>the dropper<|>the information<|>
+Context Event 4
+extracts<|>extract<|>the dropper<&>it<&>the dropper<&>the malware<&>the dropper<|>information<|>
+Context Event 5
+connect<|>connect<|>the dropper<&>it<&>the dropper<&>the malware<&>the dropper<|>remote servers<|>
+Context Event 6
+upload<|>upload<|>the dropper<&>it<&>the dropper<&>the malware<&>the dropper<|>the bash script ~pr1.tmp<&>The bash script<|>
+Candidate Event 1
+collecting<|>collect<|>the dropper<&>it<&>the dropper<&>the malware<&>the dropper<|>detailed information<&>host information<|>
+Candidate Event 2
+run<|>run<|>the dropper<&>it<&>the dropper<&>the malware<&>the dropper<|>the bash script ~pr1.tmp<&>The bash script<|>
+Candidate Event 3
+manipulating<|>manipulate<|>the dropper<&>it<&>the dropper<&>the malware<&>the dropper<|>the spinning frequency of the rotating motors<|>
+Candidate Event 4
+obfuscated<|>obfuscate<|>the dropper<&>it<&>the dropper<&>the malware<&>the dropper<|>Both the internal strings and logic<|>
+Candidate Event 5
+uploaded<|>upload<|>the dropper<&>it<&>the dropper<&>the malware<&>the dropper<|>a configuration file %system%\vtmon.bin<&>This file<|>to+the C&C server
+---
+Answer
+3
+Context Event 1
+performed<|>perform<|>the wiper<&>It<&>The wiper<|>system reconnaissance<|>
+Context Event 2
+gathering<|>gather<|>the wiper<&>It<&>The wiper<|>drive information and operating system version<|>
+Context Event 3
+deleted<|>delete<|>the wiper<&>It<&>The wiper<|>files on the file system<|>
+Context Event 4
+deleting<|>delete<|>the wiper<&>It<&>The wiper<|>the Windows folder<|>
+Candidate Event 1
+receives<|>receive<|>the wiper<&>It<&>The wiper<|>another dropper<&>this second dropper<|>
+Candidate Event 2
+unpacked<|>unpack<|>the wiper<&>It<&>The wiper<|>counter- analysis capabilities<&>runtime checks<&>obfuscated strings<&>inclusion of unused machine instructions<|>
+Candidate Event 3
+spread<|>spread<|>the wiper<&>It<&>The wiper<|><|>
+Candidate Event 4
+overwrote<|>overwrite<|>the wiper<&>It<&>The wiper<|>the MBR<|>
+Candidate Event 5
+launched<|>launch<|>the wiper<&>It<&>The wiper<|>vulnerability scanning<|>
+---
+Answer
+4
+Context Event 1
+stop<|>stop<|>it<&>the AgentBase.exe component<&>It<&>It<|>pasvc.exe<&>policy agent from AhnLab<&>the following processes<&>clisvc.exe<|>
+Context Event 2
+evade<|>evade<|>it<&>the AgentBase.exe component<&>It<&>It<|>detection<|>
+Context Event 3
+enumerates<|>enumerate<|>it<&>the AgentBase.exe component<&>It<&>It<|>all physical drives<|>
+Context Event 4
+overwrites<|>overwrite<|>it<&>the AgentBase.exe component<&>It<&>It<|>the first 512 bytes<|>
+Context Event 5
+destroying<|>destroy<|>it<&>the AgentBase.exe component<&>It<&>It<|>the MBR (master boot record) of the affected drive<|>
+Context Event 6
+locates<|>locate<|>it<&>the AgentBase.exe component<&>It<&>It<|>the root directory on these drives<|>
+Context Event 7
+delete<|>delete<|>it<&>the AgentBase.exe component<&>It<&>It<|>all files and folders in this directory<|>
+Context Event 8
+rebooted<|>reboot<|>it<&>the AgentBase.exe component<&>It<&>It<|>the affected computer<|>
+Context Event 9
+executed<|>execute<|><|>it<&>the AgentBase.exe component<&>It<&>It<|>
+Candidate Event 1
+connected<|>connect<|>it<&>the AgentBase.exe component<&>It<&>It<|><|>to+a CnC server at windows.ddns[.]us
+Candidate Event 2
+sends<|>send<|>it<&>the AgentBase.exe component<&>It<&>It<|>GET requests<&>GET requests<|>
+Candidate Event 3
+avoid<|>avoid<|>it<&>the AgentBase.exe component<&>It<&>It<|>detection from solutions like DNS blacklisting and RFC protocol enforcement<|>
+Candidate Event 4
+hooks<|>hook<|>it<&>the AgentBase.exe component<&>It<&>It<|>Major Function 14 the IRP_MJ_DEVICE_CONTROL<|>
+Candidate Event 5
+look<|>look<|>it<&>the AgentBase.exe component<&>It<&>It<|><|>
+---
+Answer
+4
+Context Event 1
+exfiltrated<|>exfiltrated<|>The malware used in these attacks<&>the malware<|>data<&>certain types of data<|>
+Context Event 2
+exfiltrate<|>exfiltrate<|>The malware used in these attacks<&>the malware<|>data<&>certain types of data<|>
+Context Event 3
+sought out<|>seek out<|>The malware used in these attacks<&>the malware<|>data<&>certain types of data<|>
+Candidate Event 1
+executed<|>execute<|>The malware used in these attacks<&>the malware<|>The executable and DLL<&>Both the document and executable<&>The executable<|>
+Candidate Event 2
+stealing<|>steal<|>The malware used in these attacks<&>the malware<|>data<|>
+Candidate Event 3
+communicates<|>communicate<|>The malware used in these attacks<&>the malware<|><|>
+Candidate Event 4
+gather<|>gather<|>The malware used in these attacks<&>the malware<|>information on processes and memory utilization<|>
+Candidate Event 5
+search<|>search<|>The malware used in these attacks<&>the malware<|><|>
+---
+Answer
+1
+Context Event 1
+exfiltrated<|>exfiltrated<|>The malware used in these attacks<&>the malware<|>data<&>certain types of data<|>
+Context Event 2
+exfiltrate<|>exfiltrate<|>The malware used in these attacks<&>the malware<|>data<&>certain types of data<|>
+Candidate Event 1
+open<|>open<|>data<&>certain types of data<|>an attached file which will infect their computer<|>
+Candidate Event 2
+sought out<|>seek out<|>The malware used in these attacks<&>the malware<|>data<&>certain types of data<|>
+Candidate Event 3
+executes<|>execute<|>data<&>certain types of data<|>incoming commands<&>them<|>
+Candidate Event 4
+using<|>use<|>data<&>certain types of data<|>an anti-censorship tool that is primarily used by Internet users in Iran<&>malware-laden versions of legitimate anti-censorship software, such as Psiphon and Ultrasurf<&>anti-censorship tools<&>anti-censorship tools<|>
+Candidate Event 5
+routing<|>rout<|>data<&>certain types of data<|>requests from other infected hosts<|>to+a remote C&C server
+---
+Answer
+2
+Context Event 1
+included<|>include<|>The malware<&>The malware used in the March 20, 2013 attacks<&>The attack<&>the March 20 attacks<&>these actors<&>the malware<|>disruption of service at financial institutions<|>
+Context Event 2
+disable<|>disable<|>The malware<&>The malware used in the March 20, 2013 attacks<&>The attack<&>the March 20 attacks<&>these actors<&>the malware<|>AhnLab and Hauri AV antivirus products<|>
+Context Event 3
+overwrite<|>overwrite<|>The malware<&>The malware used in the March 20, 2013 attacks<&>The attack<&>the March 20 attacks<&>these actors<&>the malware<|>the master boot record (MBR)<|>
+Context Event 4
+included<|>include<|>The malware<&>The malware used in the March 20, 2013 attacks<&>The attack<&>the March 20 attacks<&>these actors<&>the malware<|>data deletion<|>
+Context Event 5
+were<|>be<|>The malware<&>The malware used in the March 20, 2013 attacks<&>The attack<&>the March 20 attacks<&>these actors<&>the malware<|>wiper malware<|>
+Context Event 6
+wiping<|>wipe<|>The malware<&>The malware used in the March 20, 2013 attacks<&>The attack<&>the March 20 attacks<&>these actors<&>the malware<|>both Linux and Windows machines<|>
+Context Event 7
+used<|>use<|>The malware<&>The malware used in the March 20, 2013 attacks<&>The attack<&>the March 20 attacks<&>these actors<&>the malware<|>the same 16-digit password<|>
+Context Event 8
+used<|>use<|>The malware<&>The malware used in the March 20, 2013 attacks<&>The attack<&>the March 20 attacks<&>these actors<&>the malware<|>the same stage 1 C2 protocol<|>
+Context Event 9
+used<|>use<|>The malware<&>The malware used in the March 20, 2013 attacks<&>The attack<&>the March 20 attacks<&>these actors<&>the malware<|>the same collection keywords and encryption keys<|>
+Candidate Event 1
+opens<|>open<|>The malware<&>The malware used in the March 20, 2013 attacks<&>The attack<&>the March 20 attacks<&>these actors<&>the malware<|>a back door<|>
+Candidate Event 2
+checks<|>check<|>The malware<&>The malware used in the March 20, 2013 attacks<&>The attack<&>the March 20 attacks<&>these actors<&>the malware<|>if an older version is installed on the system<|>
+Candidate Event 3
+spread<|>spread<|>the Chinese exploit kit GonDad<|>The malware<&>The malware used in the March 20, 2013 attacks<&>The attack<&>the March 20 attacks<&>these actors<&>the malware<|>
+Candidate Event 4
+reads<|>read<|>The malware<&>The malware used in the March 20, 2013 attacks<&>The attack<&>the March 20 attacks<&>these actors<&>the malware<|>them<&>messages<|>
+Candidate Event 5
+replace<|>replace<|>The malware<&>The malware used in the March 20, 2013 attacks<&>The attack<&>the March 20 attacks<&>these actors<&>the malware<|>the redirection code<|>
+---
+Answer
+3
+Context Event 1
+kill<|>kill<|>the wiper<&>The wiper<&>the wiper malware<&>The wiper<|>the processes pasvc.exe and clisvc.exe<|>
+Context Event 2
+target<|>target<|>the wiper<&>The wiper<&>the wiper malware<&>The wiper<|>a large number of systems<|>
+Candidate Event 1
+write<|>write<|>the wiper<&>The wiper<&>the wiper malware<&>The wiper<|>content<|>in+the system32 folder of a Windows XP system
+Candidate Event 2
+connects<|>connect<|>the wiper<&>The wiper<&>the wiper malware<&>The wiper<|><|>to+the new C&C
+Candidate Event 3
+installed<|>instal<|>the wiper<&>The wiper<&>the wiper malware<&>The wiper<|>Darkhotel<&>it<&>the malware<&>Digitally signed Darkhotel backdoors<&>This Darkhotel package<&>the trojan<&>Catch.exe<|>on+the victim system
+Candidate Event 4
+dropped<|>drop<|><|>the wiper<&>The wiper<&>the wiper malware<&>The wiper<|>on+the systems
+Candidate Event 5
+added<|>add<|>the wiper<&>The wiper<&>the wiper malware<&>The wiper<|>The ability to extract Internet Explorer passwords<|>
+---
+Answer
+2
+Context Event 1
+upload<|>upload<|>the dropper<&>it<&>the dropper<&>the malware<&>the dropper<|>the bash script ~pr1.tmp<&>The bash script<|>
+Context Event 2
+run<|>run<|>the dropper<&>it<&>the dropper<&>the malware<&>the dropper<|>the bash script ~pr1.tmp<&>The bash script<|>
+Context Event 3
+checks<|>check<|>the bash script ~pr1.tmp<&>The bash script<|>UNIX<|>
+Context Event 4
+wipe<|>wipe<|>the bash script ~pr1.tmp<&>The bash script<|>the /kernel, /usr /etc and /home directories<|>
+Candidate Event 1
+deliver<|>deliver<|>the bash script ~pr1.tmp<&>The bash script<|>this malware<|>
+Candidate Event 2
+infecting<|>infect<|>the bash script ~pr1.tmp<&>The bash script<|>the employees’ computers<|>
+Candidate Event 3
+rendering<|>render<|>the bash script ~pr1.tmp<&>The bash script<|>the machine inoperative<|>
+Candidate Event 4
+used<|>use<|>the bash script ~pr1.tmp<&>The bash script<|>one of four embedded sender email addresses (@mia.gov.ge)<|>
+Candidate Event 5
+including<|>include<|>the bash script ~pr1.tmp<&>The bash script<|>webcam<&>input from<|>
+---

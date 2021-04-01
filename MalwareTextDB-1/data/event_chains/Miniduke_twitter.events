@@ -1,0 +1,78 @@
+---
+Answer
+1
+Context Event 1
+executed<|>execute<|><|>the shellcode<&>it<&>it<|>
+Context Event 2
+drops<|>drop<|>the shellcode<&>it<&>it<|>MiniDuke<&>it<&>the payload<&>the encrypted version of the malware<&>the malware<&>the malware<&>the malware<&>MiniDuke<&>MiniDuke<&>it<&>MiniDuke<&>MiniDuke<|>in+the %TEMP% directory in a file named “a.l”
+Candidate Event 1
+encrypts<|>encrypt<|>the shellcode<&>it<&>it<|>an 11-byte sequence<|>
+Candidate Event 2
+detect<|>detect<|>the shellcode<&>it<&>it<|>hooks and debugger breakpoints which may be set by security software and monitoring tools<|>
+Candidate Event 3
+sent<|>send<|>the shellcode<&>it<&>it<|>All the requests<|>to+the c&c
+Candidate Event 4
+places<|>place<|>the shellcode<&>it<&>it<|>a number of the hooks<|>
+Candidate Event 5
+exfiltrating<|>exfiltrating<|>the shellcode<&>it<&>it<|>information<|>
+---
+Answer
+0
+Context Event 1
+drops<|>drop<|>the shellcode<&>it<&>it<|>MiniDuke<&>it<&>the payload<&>the encrypted version of the malware<&>the malware<&>the malware<&>the malware<&>MiniDuke<&>MiniDuke<&>it<&>MiniDuke<&>MiniDuke<|>in+the %TEMP% directory in a file named “a.l”
+Context Event 2
+loaded<|>load<|><|>MiniDuke<&>it<&>the payload<&>the encrypted version of the malware<&>the malware<&>the malware<&>the malware<&>MiniDuke<&>MiniDuke<&>it<&>MiniDuke<&>MiniDuke<|>
+Context Event 3
+proceeds<|>proceed<|>MiniDuke<&>it<&>the payload<&>the encrypted version of the malware<&>the malware<&>the malware<&>the malware<&>MiniDuke<&>MiniDuke<&>it<&>MiniDuke<&>MiniDuke<|><|>
+Context Event 4
+gathers<|>gather<|>MiniDuke<&>it<&>the payload<&>the encrypted version of the malware<&>the malware<&>the malware<&>the malware<&>MiniDuke<&>MiniDuke<&>it<&>MiniDuke<&>MiniDuke<|>information about the system<&>that information<|>
+Context Event 5
+encrypts<|>encrypt<|>MiniDuke<&>it<&>the payload<&>the encrypted version of the malware<&>the malware<&>the malware<&>the malware<&>MiniDuke<&>MiniDuke<&>it<&>MiniDuke<&>MiniDuke<|>its configuration<|>
+Context Event 6
+created<|>create<|><|>MiniDuke<&>it<&>the payload<&>the encrypted version of the malware<&>the malware<&>the malware<&>the malware<&>MiniDuke<&>MiniDuke<&>it<&>MiniDuke<&>MiniDuke<|>
+Context Event 7
+persist<|>persist<|>MiniDuke<&>it<&>the payload<&>the encrypted version of the malware<&>the malware<&>the malware<&>the malware<&>MiniDuke<&>MiniDuke<&>it<&>MiniDuke<&>MiniDuke<|><|>
+Context Event 8
+creates<|>create<|>MiniDuke<&>it<&>the payload<&>the encrypted version of the malware<&>the malware<&>the malware<&>the malware<&>MiniDuke<&>MiniDuke<&>it<&>MiniDuke<&>MiniDuke<|>The .LNKfile<&>a hidden .LNK file<|>in+the “Startup” directory
+Context Event 9
+loaded<|>load<|>rundll32.exe<|>MiniDuke<&>it<&>the payload<&>the encrypted version of the malware<&>the malware<&>the malware<&>the malware<&>MiniDuke<&>MiniDuke<&>it<&>MiniDuke<&>MiniDuke<|>
+Context Event 10
+gathering<|>gather<|>MiniDuke<&>it<&>the payload<&>the encrypted version of the malware<&>the malware<&>the malware<&>the malware<&>MiniDuke<&>MiniDuke<&>it<&>MiniDuke<&>MiniDuke<|>the same system information as described in the “Installation” section<|>
+Context Event 11
+retrieves<|>retrieve<|>MiniDuke<&>it<&>the payload<&>the encrypted version of the malware<&>the malware<&>the malware<&>the malware<&>MiniDuke<&>MiniDuke<&>it<&>MiniDuke<&>MiniDuke<|>the Twitter page of @FloydLSchwartz<|>
+Context Event 12
+gathers<|>gather<|>MiniDuke<&>it<&>the payload<&>the encrypted version of the malware<&>the malware<&>the malware<&>the malware<&>MiniDuke<&>MiniDuke<&>it<&>MiniDuke<&>MiniDuke<|>the following information<|>
+Context Event 13
+verifies<|>verify<|>MiniDuke<&>it<&>the payload<&>the encrypted version of the malware<&>the malware<&>the malware<&>the malware<&>MiniDuke<&>MiniDuke<&>it<&>MiniDuke<&>MiniDuke<|>the integrity of the file<|>
+Context Event 14
+executes<|>execute<|>MiniDuke<&>it<&>the payload<&>the encrypted version of the malware<&>the malware<&>the malware<&>the malware<&>MiniDuke<&>MiniDuke<&>it<&>MiniDuke<&>MiniDuke<|>The payload<&>it<|>
+Context Event 15
+install<|>install<|>MiniDuke<&>it<&>the payload<&>the encrypted version of the malware<&>the malware<&>the malware<&>the malware<&>MiniDuke<&>MiniDuke<&>it<&>MiniDuke<&>MiniDuke<|>TwitterJS module<|>onto+the system
+Candidate Event 1
+applies<|>apply<|>MiniDuke<&>it<&>the payload<&>the encrypted version of the malware<&>the malware<&>the malware<&>the malware<&>MiniDuke<&>MiniDuke<&>it<&>MiniDuke<&>MiniDuke<|>a light encoding<|>
+Candidate Event 2
+attack<|>attack<|>MiniDuke<&>it<&>the payload<&>the encrypted version of the malware<&>the malware<&>the malware<&>the malware<&>MiniDuke<&>MiniDuke<&>it<&>MiniDuke<&>MiniDuke<|>targets<|>
+Candidate Event 3
+upload<|>upload<|>MiniDuke<&>it<&>the payload<&>the encrypted version of the malware<&>the malware<&>the malware<&>the malware<&>MiniDuke<&>MiniDuke<&>it<&>MiniDuke<&>MiniDuke<|>a copy of the wiper<&>the wiper<&>a copy of the wiper file “taskhostXX.exe”<|>
+Candidate Event 4
+execute<|>execute<|>MiniDuke<&>it<&>the payload<&>the encrypted version of the malware<&>the malware<&>the malware<&>the malware<&>MiniDuke<&>MiniDuke<&>it<&>MiniDuke<&>MiniDuke<|>any shell code returned by the remote server<|>
+Candidate Event 5
+implemented<|>implement<|>MiniDuke<&>it<&>the payload<&>the encrypted version of the malware<&>the malware<&>the malware<&>the malware<&>MiniDuke<&>MiniDuke<&>it<&>MiniDuke<&>MiniDuke<|>The authentication<|>
+---
+Answer
+2
+Context Event 1
+creating<|>create<|><|>a copy of the Windows DLL cryptdll.dll<&>This file<&>this DLL<|>
+Context Event 2
+stored<|>store<|>a copy of the Windows DLL cryptdll.dll<&>This file<&>this DLL<|><|>in+an Alternate Data Stream (ADS) in NTUSER.DAT in the %USERPROFILE% folder
+Candidate Event 1
+created<|>create<|>a copy of the Windows DLL cryptdll.dll<&>This file<&>this DLL<|>The .LNKfile<&>a hidden .LNK file<|>
+Candidate Event 2
+deobfuscate<|>deobfuscate<|>a copy of the Windows DLL cryptdll.dll<&>This file<&>this DLL<|>the relevant loader DLL to the path ‘C:\Windows\temp\install.ocx’<|>
+Candidate Event 3
+registered<|>register<|><|>a copy of the Windows DLL cryptdll.dll<&>This file<&>this DLL<|>
+Candidate Event 4
+transferred<|>transfer<|>a copy of the Windows DLL cryptdll.dll<&>This file<&>this DLL<|>The commands as well as infected computer information<|>
+Candidate Event 5
+obtains<|>obtain<|>a copy of the Windows DLL cryptdll.dll<&>This file<&>this DLL<|>This backdoor<&>This backdoor<&>a second-stage backdoor<&>its second stage backdoor EVILTOSS<&>a second stage backdoor<|>
+---

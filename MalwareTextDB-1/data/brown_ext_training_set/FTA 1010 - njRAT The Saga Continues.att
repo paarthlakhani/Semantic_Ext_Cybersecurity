@@ -1,0 +1,15 @@
+In June 2013 , we released a paper containing information about the njRAT malware that included its functionality , indicators of compromise , and campaign codes used on the variants we had identified . 
+( http : //www.fidelissecurity.com/threatadvisory ) . 
+To this day , we continue to observe waves of blunt phishing attacks from compromised hosts in the Middle East , showing threat actors using multiple tools ( including njRAT , AdwindRAT , Xtreme RAT , and H-Worm ) in clustered phishing attacks against the same targets . 
+Some of these attacks continue to target the U.S. telecommunications sector with threat actors sending phishing emails using business-oriented lures containing the aforementioned tools or links to websites that serve these tools . 
+Additionally , we continue to directly observe significant activity from threat actors sending commands to the victim systems in the Middle East . 
+Further , we are observing attackers using the following obfuscators to make detection of this malware specimen more difficult for security analysts : -­‐ .NetShrink 
+( http : //www.pelock.com/products/netshrink ) -­‐ Confuser v1.9.0.0 ( http : //confuser.codeplex.com/ ) -­‐ .NET 
+Reactor ( http : //www.eziriz.com/ ) This document provides details of the njRAT campaign codes used , versions , ports , and CnC nodes currently observed sending commands to victim systems . 
+It 's also clear that threat actors are actively using the following version of njRAT : 0.3.6 , 0.4.1a , 0.5.0E , 0.6.4 . 
+`` njRAT '' is a robust remote access trojan ( RAT ) which upon reaching and infecting an end-point , allows the attacker to have full control over the victim system . 
+Among other things , with this access , the attacker could start scanning other systems in the victim network to perform lateral movement . 
+The following table contains information about the observed CnC nodes , ports , campaign codes , and njRAT versions : It 's clear from this paper that there continues to be considerable global activity involving threat actors using njRAT and associated tools . 
+We 're publishing these indicators so that others in the security research community can monitor for this activity and potentially correlate against other campaigns and tools that are being investigated . 
+Fidelis XPS™ detects all of the activity documented in this paper . 
+The Fidelis Threat Research Team will continue to actively monitor the ever-evolving threat landscape for the latest threats to our customers ' security . 

@@ -1,0 +1,8 @@
+This document contains additional Comment Crew indicators of compromise that were seen in the past year . 
+See our accompanying blog for more information . 
+This document details the following types of indictors : - Network - File - System - Email The contents of this document are indicators only and may match legitimate services or applications . 
+Additional verification is required to confirm an actual compromise . 
+Network based indications of possible compromise by the comment crew attackers . 
+File based indications of possible compromise by the comment crew attackers . 
+- % TEMP % \AdobeARM.exe - % TEMP % \iTunesHelper.exe - % PROGRAMS % \Startup\AdobeRe.exe - rouj.exe - % USERPROFILE % \Local Settings\iexplore.exe - % USERAPPDATA % \Microsoft\wuauclt.exe - % PROGRAMS % \Startup\adobeup.exe - % TEMP % \AdobeUpdater.exe - NTLMSVC.DLL - % PROGRAMS % \Startup\adobe_sl.lnk - % TEMP % \runinfo.exe Product : SoundMAX service agent Description : Microsoft NTLM Service Holder Product & Description : JpgAsp System based indications of possible compromise by the comment crew attackers . 
+Email based indications of possible compromise by the comment crew attackers . 

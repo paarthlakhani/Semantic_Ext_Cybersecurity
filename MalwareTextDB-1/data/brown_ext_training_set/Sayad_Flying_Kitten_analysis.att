@@ -1,0 +1,115 @@
+Information stealing malware has become increasingly popular among malware authors targeting not just typical end-users , but also specific organizations and states . 
+We have come across an intriguing piece of malware ( dubbed Sayad ) that implements multiple host data collection methods and wraps them up into a single .NET 
+DLL . 
+Sayad malware is typically distributed through phishing emails . 
+Introduction This week I got hold of a sample of `` Sayad '' , so I ran it through our Vinsula Execution Engine ( VEE ) to find out what it does and how it works . 
+Credit for sharing the sample of the malware goes to @ MalwareChannel . 
+The information this malware is able to steal and upload to a Web server controlled by the hackers is highly sensitive and would have an enormous impact on compromised individuals , businesses , and governments . 
+Some of the tasks Sayad is designed to accomplish include : At the time of writing of this post , the detection rate for Sayad malware binary ( SHA2:8904836017bc20972a769f8d4d6bee08388da3d0f83e362e67f9f0b6b1ae5c12 ) at VirusTotal is zero . 
+There are several interesting aspects of Sayad malware , and after running the malicious executable through the Vinsula Execution Engine to analyze its behavior , I discovered that the initial executable titled WEXTRACT.exe ( SHA1:1c52b749403d3f229636f07b0040eb17beba28e4 ) was in fact a self extracting EXE that dropped and launched the Binder executable malware , ~8f60957b3689075fa093b047242c0255.exe ( SHA1:69fd05ca3a7514ea79480d1dbb358fab391e738d ) . 
+Once the Binder executable malware is launched , it checks the .NET 
+version installed on the machine and drops the information stealer DLL component , Sayad ( aka Client ) – DiagnosticsService.dll ( SHA1:8521eefbf7336df5c275c3da4b61c94062fafdda ) . 
+Sayad has some characteristics that make it unique : Our collegues from NCC Group 's Cyber Defence Operations published an article titled `` A new Flying Kitten ? '' with some details around Sayad malware and its possible link to the activities of the Iranian hacking group '' Ajax Security Team . 
+'' Attack Overview The diagram below outlines the key elements of the attack . 
+The malware executable is delivered by a phishing email or the user is somehow tricked into downloading it and executing it . 
+Once the user clicks on the malware , it extracts the actual malware executable and launches it . 
+Analysis Our first step was to run the `` Sayad '' binary through our Vinsula Execution Engine to find out just what it does . 
+The process tree below as reported by our engine allows us to visually present the parent/child relationship between all the processes and their command lines related to the execution for this specific malware . 
+For the sake of shortness , in this post we omit the command line details in the process tree above for the csc.exe and cvtres.exe instances . 
+For the same reason , we also do n't show the complete command line of the rundll32.exe . 
+Because this is an important detail , here is how it shows up in our Vinsula malware report : Sayad malware is a self-contained executable that embeds within itself all the required malicious components , meaning that it does n't need to download any additional malicious content from the C2 server , which may appear suspicious . 
+Its three core components are structured as `` Russian Dolls , '' i.e. , one wrapped within the next in layers . 
+Here is the list with the key components starting from the outermost one . 
+Hashes of all investigated components are provided at the end of this post . 
+Further down , I will go into greater detail and provide more information about the behavior and static building blocks of each of these components . 
+For now , I am just aiming to capture the scope of each executable involved in the orchestration of the Sayad malware . 
+As we can see in the cascade tree above , the main malware WEXTRACT.exe is a self-extracting executable which extracts the Binder ~8f60957b3689075fa093b047242c0255.exe , and it then launches it . 
+The Binder is responsible for checking the installed .NET 
+version and extracting the relevant .NET 
+Client – DiagnosticsService.dll . 
+This .NET 
+DLL implements the data collecting logic and sends the collected data to the C2 server . 
+The following diagram captures a bit more of the detail of the malware workflow . 
+The main self-extracting binary WEXTRACT.exe drops two files in the user 's appdata temp directory as shown in the following entries from our Vinsula report . 
+These two files are the two parts of the Binder – a .NET 
+executable ( ~8f60957b3689075fa093b047242c0255.exe ) and its configuration file ( ~8f60957b3689075fa093b047242c0255.exe.config ) . 
+Details along with snippets from Binder 's source code are provided in the next sections . 
+This is what the two files dropped by the self-extracting malware look like in Windows Explorer . 
+They are stored in a temporary location C : \Users\ [ User ] \AppData\Local\Temp\IXP000.TMP . 
+After dropping the Binder and its configuration file , the main self-extracting binary launches the Binder ( ~8f60957b3689075fa093b047242c0255.exe ) . 
+Similar to the process tree from our Vinsula report above , the below screenshot from Process Explorer shows the Binder being launched by the self-extracting binary . 
+The purpose of the Binder is to create and drop the core malware component ( also titled Client – DiagnosticsService.dll ) and its configuration disguised as a DLL file , base.dll . 
+Below is a snippet from our Vinsula report capturing the relevant event entries that show the Client and its configuration being created . 
+These are the hashes of the two core Client related files : Before digging into the details of the Client , lets have a look at the Binder's ( ~8f60957b3689075fa093b047242c0255.exe ) implementation . 
+The Binder is a .NET 
+executable whose purpose is to find out what version of .NET 
+is currently installed , and then drop the relevant .NET 
+Client DLL accordingly . 
+There are two versions of the Client DLL that are stored as embedded resources in Binder's executable . 
+That makes the malware less chattier and allows it to drop the correct .NET 
+version DLL without the need to download it from a malicious Web location . 
+As shown in the above screenshot , in the Binder 's main entry point , the Sayad malware : gets the installed .NET 
+versions modifies the registry so that it will run at startup using rundll32.exe Windows utility to load the Client ( DiagnosticsService.dll ) extracts the relevant .NET 
+Client version from the embedded resource depending on the installed .NET 
+version , it copies the Client ( CopySayad method ) to a user 's directory extract the configuration information from the end of the Binder 's image using the method ReadExtraDataFromEndOfBuffer starts up the Client using the command rundll32.exe `` C : \Users\ [ User ] \AppData\Roaming\Client\DiagnosticsService.dll '' ,7812 The following diagram reflects the code paths in Binder 's Main entry point as described in the section above . 
+The Binder ensures that the malware will survive reboots by registering the command for loading and executing the Client DLL ( DiagnosticsService.dll ) to run at startup as shown below . 
+The following shows the registry modification that comes as a result of the executing the code above . 
+And here is the corresponding registry modification entries from Vinsula 's report . 
+More on the details regarding the rundll32.exe command will be provided in the following sections . 
+An interesting aspect of the implementation of the Binder assembly is the way the malware authors decided to launch the Client by executing the command rundll32.exe `` DiagnosticsService.dll '' ,7812 and utilizing WinExec API to launch the rundll32.exe process as shown below . 
+The WinExec API has been provided only for backward compatibility with 16-bit Windows . 
+A quick Googling of the method names of the two methods FromUrlSafeBase64String ToUrlSafeBase64String from the Base64.cs file shows that the code has been copied from the following stackoverflow post `` .NET 
+MVC Routing w/ Url Encoding Problems '' . 
+The following screenshot shows the Binder project in Visual Studio . 
+As previously mentioned , the Binder extracts the relevant Client DLL according to the installed .NET 
+version . 
+There are two copies of the Client DLL , targeting .NET2 
+and .NET4 
+, both stored as embedded resources inside the Binder file image . 
+The Binder is also responsible for extracting the configuration data located at the end of the Binder 's file image and storing it in the base.dll file . 
+The configuration data is stored as plain text and Base64 encoded data and holds following configuration attributes : Here is a sample configuration file base.dll The most interesting aspect of this malware is surely the Sayad Client ( DiagnosticsService.dll ) . 
+The malware authors decided to implement the core data collection and transmission into a single .NET 
+DLL . 
+Typically , unknown .NET 
+DLLs do not look as suspicious as a native Win32 DLL or an executable . 
+Also , a DLL requires an executable to load it in order to execute any code implemented by the DLL . 
+Sayad leverages rundll32.exe , which is a shell that allows the loading of 32-bit DLLs and the execution of exported APIs . 
+Basically , Sayad Client is a 32-bit .NET 
+DLL . 
+Rundll32.exe would be able to load Sayad Client DLL , but as it is a .NET 
+managed DLL it does n't support exporting of native unmanaged APIs , thus Rundll32.exe can not execute any of the .NET/C 
+# public methods implemented in the Sayad Client DLL . 
+Going back to the malware process tree we can see that Binder launches the following command , which is instructing Windows utility rundll32.exe to load Sayad Client DiagnosticsService.dll , obtain the function address of the native API named `` 78121 '' via GetProcAddress ( ) , and call the function pointer of the entry point `` 78121 '' . 
+rundll32.exe `` C : \Users\ [ User ] \AppData\Roaming\Client\DiagnosticsService.dll '' ,78121 Microsoft C # compiler does not support interop via the export of unmanaged native APIs from within a .NET/C 
+# DLL . 
+However , if we open Sayad Client DLL it is clear that the DLL does export a native unmanaged API function titled `` 78121 '' . 
+How have the malware authors managed to export a native API from a C # DLL ? Although not supported by Microsoft , this is not impossible if after building the executable , the MSIL is modified to map a managed static method to the name of a native unmanaged API and then export the API so that it appears in the Export Address Table of the managed PE ( Portable Executable ) image . 
+In this case , a static method Main ( ) of Program class located in Program.cs of the Sayad Client DLL ( DiagnosticsService.dll ) maps to the native API '' 78121 '' . 
+As shown below , a special declaration is applied to ensure that the caller ( rundll32.exe ) executes a method matching the required __stdcall calling convention . 
+Here is the MSIL of the static Main ( ) method . 
+And below is the corresponding disassmebled C # version . 
+Sayad Client DLL 's main entry point initializes and starts up all data collection methods that the assembly implements . 
+The code below is executed by using the command rundll32.exe `` C : \Users\ [ User ] \AppData\Roaming\Client\DiagnosticsService.dll '' ,7812 The malware authors left some debugging messages that indicate the different stages of the Sayad Client initialization . 
+The code also handles and collects all uncaught exceptions thrown during the execution of the malware by attaching to AppDomain.UnhandledException and Application.ThreadException events . 
+In the next step , the client loads the configuration discussed in a previous section and then proceeds to start up all data collection components , as shown in the snippet below . 
+The Sayad Client uses a very trivial method for uploading the encrypted user and host data to the malicious server . 
+Here is the UploadBuffer method that uses .NET 
+WebClient class to upload the data . 
+Both the Binder and the Sayad Client have been built with debugging information which reveals some details about the source code locations for these two .NET 
+projects . 
+f : \Projects\C # \Sayad\Source\Binder\obj\Debug\Binder.pdb F : \Projects\C # \Sayad\Source\Client\bin\x86\Debug\Client.pdb Network Activity Communication with the C2 server is limited to transferring collected data from the user and the host to the C2 server . 
+The stolen data being uploaded to the malicious server is encrypted first using a RSA public key which is stored in the malware configuration file . 
+The Sayad Client ( DiagnosticsService.dll ) implements an HTTP client that uploads the encrypted data to the malicious Web server with host name '' 0o0o0o0o0 [ dot ] com '' and IP address 107.6.182.179 . 
+The Binder component does n't implement any communication features . 
+The following is a short segment from Vinsula network activity report . 
+According to the http : //www.ipligence.com/geolocation service , the malicious Web server is located in the Netherlands . 
+Below is the WHOIS information for the malicious host 0o0o0o0o0 [ dot ] com ( IP 107.6.182.179 ) . 
+The domain was registered on June 30 , 2014 . 
+Interestingly , the registrant , admin and tech email addresses are domain @ microsofts.com . 
+One wonders if the registrar , OnlineNIC , Inc , is verifying whether or not these are real email addresses . 
+YARA detection rule Based on the details that have been identified , we can create two simple YARA rules for detection of the Sayad Binder and Sayad Client . 
+Hopefully this will help other malware researchers and security companies . 
+Tools used for dissecting Sayad ( Update 24th of July , 2014 ) We 've received a request to list the tools used for analyzing Sayad malware . 
+Hope that would help other researchers . 
+Summary With this particular sample , the malicious server – as of this writing – is up and running . 
+The Sayad malware does n't seem to be implementing any sophisticated mechanisms for collecting and transmitting the stolen data . 

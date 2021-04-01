@@ -1,0 +1,208 @@
+---
+Answer
+2
+Context Event 1
+drops<|>drop<|>a malicious executable (dropper)<&>The executable<&>These droppers<&>288c91d6c0197e99b92c06496921bf2f<|>the implant IntelRS.exe<&>This implant<&>it<&>It<&>IntelRS.exe<&>IntelRS.exe<&>The Stealer component<&>a new Stealer backdoor<&>the new backdoor<&>the backdoor<&>This sample (MD5 1823b77b9ee6296a8b997ffb64d32d21)<&>The majority of the samples we analyzed<&>a sample<&>This sample<|>
+Context Event 2
+bundled<|>bundle<|><|>a malicious executable (dropper)<&>The executable<&>These droppers<&>288c91d6c0197e99b92c06496921bf2f<|>
+Candidate Event 1
+installed<|>instal<|>a malicious executable (dropper)<&>The executable<&>These droppers<&>288c91d6c0197e99b92c06496921bf2f<|>The malware<&>it<&>The malicious payload<&>Emdivi<&>Backdoor.Emdivi<&>a back door<|>
+Candidate Event 2
+using<|>use<|>a malicious executable (dropper)<&>The executable<&>These droppers<&>288c91d6c0197e99b92c06496921bf2f<|>"JPG" files<|>
+Candidate Event 3
+spoof<|>spoof<|>a malicious executable (dropper)<&>The executable<&>These droppers<&>288c91d6c0197e99b92c06496921bf2f<|>the appearance of the above applications<|>
+Candidate Event 4
+generate<|>generate<|>a malicious executable (dropper)<&>The executable<&>These droppers<&>288c91d6c0197e99b92c06496921bf2f<|>outbound requests<|>
+Candidate Event 5
+started<|>start<|>a malicious executable (dropper)<&>The executable<&>These droppers<&>288c91d6c0197e99b92c06496921bf2f<|>This sample<&>It<&>The dropper above<&>the original dropper<|>
+---
+Answer
+0
+Context Event 1
+drops<|>drop<|>a malicious executable (dropper)<&>The executable<&>These droppers<&>288c91d6c0197e99b92c06496921bf2f<|>the implant IntelRS.exe<&>This implant<&>it<&>It<&>IntelRS.exe<&>IntelRS.exe<&>The Stealer component<&>a new Stealer backdoor<&>the new backdoor<&>the backdoor<&>This sample (MD5 1823b77b9ee6296a8b997ffb64d32d21)<&>The majority of the samples we analyzed<&>a sample<&>This sample<|>
+Context Event 2
+drops<|>drop<|>the implant IntelRS.exe<&>This implant<&>it<&>It<&>IntelRS.exe<&>IntelRS.exe<&>The Stealer component<&>a new Stealer backdoor<&>the new backdoor<&>the backdoor<&>This sample (MD5 1823b77b9ee6296a8b997ffb64d32d21)<&>The majority of the samples we analyzed<&>a sample<&>This sample<|>various other components<&>The following files<|>into+C:\ Documents and Settings\{USER}\Application Data\IntelRapidStart\
+Context Event 3
+has<|>have<|>the implant IntelRS.exe<&>This implant<&>it<&>It<&>IntelRS.exe<&>IntelRS.exe<&>The Stealer component<&>a new Stealer backdoor<&>the new backdoor<&>the backdoor<&>This sample (MD5 1823b77b9ee6296a8b997ffb64d32d21)<&>The majority of the samples we analyzed<&>a sample<&>This sample<|>various data collection modules<|>
+Context Event 4
+drops<|>drop<|>the implant IntelRS.exe<&>This implant<&>it<&>It<&>IntelRS.exe<&>IntelRS.exe<&>The Stealer component<&>a new Stealer backdoor<&>the new backdoor<&>the backdoor<&>This sample (MD5 1823b77b9ee6296a8b997ffb64d32d21)<&>The majority of the samples we analyzed<&>a sample<&>This sample<|>AppTransferWiz.dll<&>AppTransferWiz.dll<|>
+Context Event 5
+launches<|>launch<|>the implant IntelRS.exe<&>This implant<&>it<&>It<&>IntelRS.exe<&>IntelRS.exe<&>The Stealer component<&>a new Stealer backdoor<&>the new backdoor<&>the backdoor<&>This sample (MD5 1823b77b9ee6296a8b997ffb64d32d21)<&>The majority of the samples we analyzed<&>a sample<&>This sample<|>AppTransferWiz.dll<&>AppTransferWiz.dll<|>
+Context Event 6
+collect<|>collect<|>the implant IntelRS.exe<&>This implant<&>it<&>It<&>IntelRS.exe<&>IntelRS.exe<&>The Stealer component<&>a new Stealer backdoor<&>the new backdoor<&>the backdoor<&>This sample (MD5 1823b77b9ee6296a8b997ffb64d32d21)<&>The majority of the samples we analyzed<&>a sample<&>This sample<|>data<|>
+Context Event 7
+loads<|>load<|>the implant IntelRS.exe<&>This implant<&>it<&>It<&>IntelRS.exe<&>IntelRS.exe<&>The Stealer component<&>a new Stealer backdoor<&>the new backdoor<&>the backdoor<&>This sample (MD5 1823b77b9ee6296a8b997ffb64d32d21)<&>The majority of the samples we analyzed<&>a sample<&>This sample<|>a Delphi component called DelphiNative.DLL<&>a Delphi component called DelphiNative.DLL<|>
+Context Event 8
+uses<|>use<|>the implant IntelRS.exe<&>This implant<&>it<&>It<&>IntelRS.exe<&>IntelRS.exe<&>The Stealer component<&>a new Stealer backdoor<&>the new backdoor<&>the backdoor<&>This sample (MD5 1823b77b9ee6296a8b997ffb64d32d21)<&>The majority of the samples we analyzed<&>a sample<&>This sample<|>common techniques<|>
+Context Event 9
+configure<|>configure<|>The attacker<&>they<&>an attacker<&>attackers<&>the Ajax Security Team<|>the implant IntelRS.exe<&>This implant<&>it<&>It<&>IntelRS.exe<&>IntelRS.exe<&>The Stealer component<&>a new Stealer backdoor<&>the new backdoor<&>the backdoor<&>This sample (MD5 1823b77b9ee6296a8b997ffb64d32d21)<&>The majority of the samples we analyzed<&>a sample<&>This sample<|>
+Context Event 10
+connect<|>connect<|>the implant IntelRS.exe<&>This implant<&>it<&>It<&>IntelRS.exe<&>IntelRS.exe<&>The Stealer component<&>a new Stealer backdoor<&>the new backdoor<&>the backdoor<&>This sample (MD5 1823b77b9ee6296a8b997ffb64d32d21)<&>The majority of the samples we analyzed<&>a sample<&>This sample<|><|>to+a specific CnC server
+Context Event 11
+bind<|>bind<|>The attacker<&>they<&>an attacker<&>attackers<&>the Ajax Security Team<|>the implant IntelRS.exe<&>This implant<&>it<&>It<&>IntelRS.exe<&>IntelRS.exe<&>The Stealer component<&>a new Stealer backdoor<&>the new backdoor<&>the backdoor<&>This sample (MD5 1823b77b9ee6296a8b997ffb64d32d21)<&>The majority of the samples we analyzed<&>a sample<&>This sample<|>
+Context Event 12
+exfiltrate<|>exfiltrate<|>the implant IntelRS.exe<&>This implant<&>it<&>It<&>IntelRS.exe<&>IntelRS.exe<&>The Stealer component<&>a new Stealer backdoor<&>the new backdoor<&>the backdoor<&>This sample (MD5 1823b77b9ee6296a8b997ffb64d32d21)<&>The majority of the samples we analyzed<&>a sample<&>This sample<|>data<|>to+ultrasms[.]ir
+Context Event 13
+connect<|>connect<|>the implant IntelRS.exe<&>This implant<&>it<&>It<&>IntelRS.exe<&>IntelRS.exe<&>The Stealer component<&>a new Stealer backdoor<&>the new backdoor<&>the backdoor<&>This sample (MD5 1823b77b9ee6296a8b997ffb64d32d21)<&>The majority of the samples we analyzed<&>a sample<&>This sample<|><|>to+intel-update[.]com and update-mirror[.]com
+Context Event 14
+connected<|>connect<|>the implant IntelRS.exe<&>This implant<&>it<&>It<&>IntelRS.exe<&>IntelRS.exe<&>The Stealer component<&>a new Stealer backdoor<&>the new backdoor<&>the backdoor<&>This sample (MD5 1823b77b9ee6296a8b997ffb64d32d21)<&>The majority of the samples we analyzed<&>a sample<&>This sample<|><|>to+both intel- update[.]com and ultrasms[.]ir
+Candidate Event 1
+connects<|>connect<|>the implant IntelRS.exe<&>This implant<&>it<&>It<&>IntelRS.exe<&>IntelRS.exe<&>The Stealer component<&>a new Stealer backdoor<&>the new backdoor<&>the backdoor<&>This sample (MD5 1823b77b9ee6296a8b997ffb64d32d21)<&>The majority of the samples we analyzed<&>a sample<&>This sample<|><|>to+the aforementioned intel-update[.]com as well as plugin-adobe[.]com
+Candidate Event 2
+loads<|>load<|>the implant IntelRS.exe<&>This implant<&>it<&>It<&>IntelRS.exe<&>IntelRS.exe<&>The Stealer component<&>a new Stealer backdoor<&>the new backdoor<&>the backdoor<&>This sample (MD5 1823b77b9ee6296a8b997ffb64d32d21)<&>The majority of the samples we analyzed<&>a sample<&>This sample<|>the next part of the toolkit<|>
+Candidate Event 3
+used<|>use<|>the implant IntelRS.exe<&>This implant<&>it<&>It<&>IntelRS.exe<&>IntelRS.exe<&>The Stealer component<&>a new Stealer backdoor<&>the new backdoor<&>the backdoor<&>This sample (MD5 1823b77b9ee6296a8b997ffb64d32d21)<&>The majority of the samples we analyzed<&>a sample<&>This sample<|>a secondary password<|>
+Candidate Event 4
+infect<|>infect<|>the implant IntelRS.exe<&>This implant<&>it<&>It<&>IntelRS.exe<&>IntelRS.exe<&>The Stealer component<&>a new Stealer backdoor<&>the new backdoor<&>the backdoor<&>This sample (MD5 1823b77b9ee6296a8b997ffb64d32d21)<&>The majority of the samples we analyzed<&>a sample<&>This sample<|>all connected systems<|>
+Candidate Event 5
+contains<|>contain<|>the implant IntelRS.exe<&>This implant<&>it<&>It<&>IntelRS.exe<&>IntelRS.exe<&>The Stealer component<&>a new Stealer backdoor<&>the new backdoor<&>the backdoor<&>This sample (MD5 1823b77b9ee6296a8b997ffb64d32d21)<&>The majority of the samples we analyzed<&>a sample<&>This sample<|>the computer name<&>the user name<&>the RAT internal version<|>
+---
+Answer
+2
+Context Event 1
+configure<|>configure<|>The attacker<&>they<&>an attacker<&>attackers<&>the Ajax Security Team<|>the implant IntelRS.exe<&>This implant<&>it<&>It<&>IntelRS.exe<&>IntelRS.exe<&>The Stealer component<&>a new Stealer backdoor<&>the new backdoor<&>the backdoor<&>This sample (MD5 1823b77b9ee6296a8b997ffb64d32d21)<&>The majority of the samples we analyzed<&>a sample<&>This sample<|>
+Context Event 2
+bind<|>bind<|>The attacker<&>they<&>an attacker<&>attackers<&>the Ajax Security Team<|>the implant IntelRS.exe<&>This implant<&>it<&>It<&>IntelRS.exe<&>IntelRS.exe<&>The Stealer component<&>a new Stealer backdoor<&>the new backdoor<&>the backdoor<&>This sample (MD5 1823b77b9ee6296a8b997ffb64d32d21)<&>The majority of the samples we analyzed<&>a sample<&>This sample<|>
+Context Event 3
+cloak<|>cloak<|>The attacker<&>they<&>an attacker<&>attackers<&>the Ajax Security Team<|>the backdoor<&>it<|>
+Context Event 4
+disguised<|>disguise<|>The attacker<&>they<&>an attacker<&>attackers<&>the Ajax Security Team<|>This sample<&>the sample<&>malware samples<&>malware<|>
+Candidate Event 1
+encrypted<|>encrypt<|>The attacker<&>they<&>an attacker<&>attackers<&>the Ajax Security Team<|>configuration data<&>The configuration block<|>
+Candidate Event 2
+started<|>start<|>The attacker<&>they<&>an attacker<&>attackers<&>the Ajax Security Team<|>producing the following traffic<|>
+Candidate Event 3
+using<|>use<|>The attacker<&>they<&>an attacker<&>attackers<&>the Ajax Security Team<|>an anti-censorship tool that is primarily used by Internet users in Iran<&>malware-laden versions of legitimate anti-censorship software, such as Psiphon and Ultrasurf<&>anti-censorship tools<&>anti-censorship tools<|>
+Candidate Event 4
+searches<|>search<|>The attacker<&>they<&>an attacker<&>attackers<&>the Ajax Security Team<|><|>
+Candidate Event 5
+inserts<|>insert<|>The attacker<&>they<&>an attacker<&>attackers<&>the Ajax Security Team<|>a small loader<|>in+the section
+---
+Answer
+0
+Context Event 1
+committed<|>commit<|>Iranian actors<&>suspected Iranian actors<&>his group<&>the Ajax Security Team<&>these attackers<&>the attackers<&>The attackers<&>The attackers<&>they<&>The attackers<&>the attackers<&>They<&>an attacker<|>DDoS attacks<|>
+Context Event 2
+destroyed<|>destroy<|>Iranian actors<&>suspected Iranian actors<&>his group<&>the Ajax Security Team<&>these attackers<&>the attackers<&>The attackers<&>The attackers<&>they<&>The attackers<&>the attackers<&>They<&>an attacker<|>data<|>
+Context Event 3
+leverage<|>leverage<|>Iranian actors<&>suspected Iranian actors<&>his group<&>the Ajax Security Team<&>these attackers<&>the attackers<&>The attackers<&>The attackers<&>they<&>The attackers<&>the attackers<&>They<&>an attacker<|>varied social engineering tactics<|>
+Context Event 4
+lure<|>lure<|>Iranian actors<&>suspected Iranian actors<&>his group<&>the Ajax Security Team<&>these attackers<&>the attackers<&>The attackers<&>The attackers<&>they<&>The attackers<&>the attackers<&>They<&>an attacker<|>their targets<|>
+Context Event 5
+lure<|>lure<|>Iranian actors<&>suspected Iranian actors<&>his group<&>the Ajax Security Team<&>these attackers<&>the attackers<&>The attackers<&>The attackers<&>they<&>The attackers<&>the attackers<&>They<&>an attacker<|>targets<|>
+Context Event 6
+sent<|>send<|>Iranian actors<&>suspected Iranian actors<&>his group<&>the Ajax Security Team<&>these attackers<&>the attackers<&>The attackers<&>The attackers<&>they<&>The attackers<&>the attackers<&>They<&>an attacker<|>targeted emails, as well as private messages<|>
+Context Event 7
+targeted<|>target<|>Iranian actors<&>suspected Iranian actors<&>his group<&>the Ajax Security Team<&>these attackers<&>the attackers<&>The attackers<&>The attackers<&>they<&>The attackers<&>the attackers<&>They<&>an attacker<|>companies in the DIB<|>
+Context Event 8
+registered<|>register<|>Iranian actors<&>suspected Iranian actors<&>his group<&>the Ajax Security Team<&>these attackers<&>the attackers<&>The attackers<&>The attackers<&>they<&>The attackers<&>the attackers<&>They<&>an attacker<|>the domain “aeroconf2014[.]org”<|>
+Context Event 9
+sent<|>send<|>Iranian actors<&>suspected Iranian actors<&>his group<&>the Ajax Security Team<&>these attackers<&>the attackers<&>The attackers<&>The attackers<&>they<&>The attackers<&>the attackers<&>They<&>an attacker<|><|>
+Context Event 10
+used<|>use<|>Iranian actors<&>suspected Iranian actors<&>his group<&>the Ajax Security Team<&>these attackers<&>the attackers<&>The attackers<&>The attackers<&>they<&>The attackers<&>the attackers<&>They<&>an attacker<|>phishing attacks<|>
+Context Event 11
+set up<|>set up<|>Iranian actors<&>suspected Iranian actors<&>his group<&>the Ajax Security Team<&>these attackers<&>the attackers<&>The attackers<&>The attackers<&>they<&>The attackers<&>the attackers<&>They<&>an attacker<|>Web pages<&>these login pages<|>
+Context Event 12
+tailored<|>tailor<|>Iranian actors<&>suspected Iranian actors<&>his group<&>the Ajax Security Team<&>these attackers<&>the attackers<&>The attackers<&>The attackers<&>they<&>The attackers<&>the attackers<&>They<&>an attacker<|>Web pages<&>these login pages<|>
+Context Event 13
+spoofed<|>spoof<|>Iranian actors<&>suspected Iranian actors<&>his group<&>the Ajax Security Team<&>these attackers<&>the attackers<&>The attackers<&>The attackers<&>they<&>The attackers<&>the attackers<&>They<&>an attacker<|>a variety of services such as Outlook Web Access and VPN login pages<|>
+Context Event 14
+collect<|>collect<|>Iranian actors<&>suspected Iranian actors<&>his group<&>the Ajax Security Team<&>these attackers<&>the attackers<&>The attackers<&>The attackers<&>they<&>The attackers<&>the attackers<&>They<&>an attacker<|>their login credentials<|>
+Candidate Event 1
+deliver<|>deliver<|>Iranian actors<&>suspected Iranian actors<&>his group<&>the Ajax Security Team<&>these attackers<&>the attackers<&>The attackers<&>The attackers<&>they<&>The attackers<&>the attackers<&>They<&>an attacker<|>this malware<|>
+Candidate Event 2
+use<|>use<|>Iranian actors<&>suspected Iranian actors<&>his group<&>the Ajax Security Team<&>these attackers<&>the attackers<&>The attackers<&>The attackers<&>they<&>The attackers<&>the attackers<&>They<&>an attacker<|>zhCat<&>Its main purpose<&>zhCat<&>a server instance of zhCat<&>zhCat<&>zhCat<|>
+Candidate Event 3
+includes<|>include<|>Iranian actors<&>suspected Iranian actors<&>his group<&>the Ajax Security Team<&>these attackers<&>the attackers<&>The attackers<&>The attackers<&>they<&>The attackers<&>the attackers<&>They<&>an attacker<|>process manipulation<|>
+Candidate Event 4
+responds<|>respond<|>Iranian actors<&>suspected Iranian actors<&>his group<&>the Ajax Security Team<&>these attackers<&>the attackers<&>The attackers<&>The attackers<&>they<&>The attackers<&>the attackers<&>They<&>an attacker<|><|>
+Candidate Event 5
+recording<|>record<|>Iranian actors<&>suspected Iranian actors<&>his group<&>the Ajax Security Team<&>these attackers<&>the attackers<&>The attackers<&>The attackers<&>they<&>The attackers<&>the attackers<&>They<&>an attacker<|>audio/video<|>
+---
+Answer
+4
+Context Event 1
+bundled<|>bundle<|><|>an anti-censorship tool that is primarily used by Internet users in Iran<&>malware-laden versions of legitimate anti-censorship software, such as Psiphon and Ultrasurf<&>anti-censorship tools<&>anti-censorship tools<|>
+Context Event 2
+distributed<|>distribute<|><|>an anti-censorship tool that is primarily used by Internet users in Iran<&>malware-laden versions of legitimate anti-censorship software, such as Psiphon and Ultrasurf<&>anti-censorship tools<&>anti-censorship tools<|>to+users Iran and Persian speaking people around the world
+Candidate Event 1
+targeting<|>target<|>an anti-censorship tool that is primarily used by Internet users in Iran<&>malware-laden versions of legitimate anti-censorship software, such as Psiphon and Ultrasurf<&>anti-censorship tools<&>anti-censorship tools<|><|>
+Candidate Event 2
+performed<|>perform<|>an anti-censorship tool that is primarily used by Internet users in Iran<&>malware-laden versions of legitimate anti-censorship software, such as Psiphon and Ultrasurf<&>anti-censorship tools<&>anti-censorship tools<|>system reconnaissance<|>
+Candidate Event 3
+attempts<|>attempt<|>an anti-censorship tool that is primarily used by Internet users in Iran<&>malware-laden versions of legitimate anti-censorship software, such as Psiphon and Ultrasurf<&>anti-censorship tools<&>anti-censorship tools<|>the different C2 protocols<|>
+Candidate Event 4
+communicated<|>communicate<|>an anti-censorship tool that is primarily used by Internet users in Iran<&>malware-laden versions of legitimate anti-censorship software, such as Psiphon and Ultrasurf<&>anti-censorship tools<&>anti-censorship tools<|><|>
+Candidate Event 5
+using<|>use<|>The attacker<&>they<&>an attacker<&>attackers<&>the Ajax Security Team<|>an anti-censorship tool that is primarily used by Internet users in Iran<&>malware-laden versions of legitimate anti-censorship software, such as Psiphon and Ultrasurf<&>anti-censorship tools<&>anti-censorship tools<|>
+---
+Answer
+4
+Context Event 1
+drops<|>drop<|>the implant IntelRS.exe<&>This implant<&>it<&>It<&>IntelRS.exe<&>IntelRS.exe<&>The Stealer component<&>a new Stealer backdoor<&>the new backdoor<&>the backdoor<&>This sample (MD5 1823b77b9ee6296a8b997ffb64d32d21)<&>The majority of the samples we analyzed<&>a sample<&>This sample<|>AppTransferWiz.dll<&>AppTransferWiz.dll<|>
+Context Event 2
+launches<|>launch<|>the implant IntelRS.exe<&>This implant<&>it<&>It<&>IntelRS.exe<&>IntelRS.exe<&>The Stealer component<&>a new Stealer backdoor<&>the new backdoor<&>the backdoor<&>This sample (MD5 1823b77b9ee6296a8b997ffb64d32d21)<&>The majority of the samples we analyzed<&>a sample<&>This sample<|>AppTransferWiz.dll<&>AppTransferWiz.dll<|>
+Candidate Event 1
+load<|>load<|>AppTransferWiz.dll<&>AppTransferWiz.dll<|>the DLL module<&>that module<|>into+the usermode processes
+Candidate Event 2
+including<|>include<|>AppTransferWiz.dll<&>AppTransferWiz.dll<|>remote monitoring of<&>microphones<|>
+Candidate Event 3
+install<|>install<|>AppTransferWiz.dll<&>AppTransferWiz.dll<|><|>
+Candidate Event 4
+reads<|>read<|>AppTransferWiz.dll<&>AppTransferWiz.dll<|>configuration parameters<|>
+Candidate Event 5
+conducted<|>conduct<|>AppTransferWiz.dll<&>AppTransferWiz.dll<|>Data exfiltration<|>
+---
+Answer
+1
+Context Event 1
+encrypted<|>encrypt<|><|>Harvested data<&>the data<|>
+Context Event 2
+written<|>write<|><|>Harvested data<&>the data<|>to+disk
+Candidate Event 1
+download<|>download<|>Harvested data<&>the data<|>more advanced stealing tools<|>
+Candidate Event 2
+encrypted<|>encrypt<|><|>Harvested data<&>the data<|>
+Candidate Event 3
+gained<|>gain<|>Harvested data<&>the data<|>access to PayPal and Go Daddy credentials<|>
+Candidate Event 4
+maintain<|>maintain<|>Harvested data<&>the data<|>access into a compromised network<|>
+Candidate Event 5
+compiles<|>compile<|>Harvested data<&>the data<|>a dirwalk – a complete listing of every file path – of each fixed drive<|>
+---
+Answer
+4
+Context Event 1
+bundled<|>bundle<|><|>Many of the malicious executables (droppers) that we collected<&>6dc7cc33a3cdcfee6c4edb6c085b869d<&>3d26442f06b34df3d5921f89bf680ee9<&>3efd971db6fbae08e96535478888cff9<&>288c91d6c0197e99b92c06496921bf2f<|>
+Context Event 2
+bundled<|>bundle<|><|>Many of the malicious executables (droppers) that we collected<&>6dc7cc33a3cdcfee6c4edb6c085b869d<&>3d26442f06b34df3d5921f89bf680ee9<&>3efd971db6fbae08e96535478888cff9<&>288c91d6c0197e99b92c06496921bf2f<|>
+Context Event 3
+bundled<|>bundle<|><|>Many of the malicious executables (droppers) that we collected<&>6dc7cc33a3cdcfee6c4edb6c085b869d<&>3d26442f06b34df3d5921f89bf680ee9<&>3efd971db6fbae08e96535478888cff9<&>288c91d6c0197e99b92c06496921bf2f<|>
+Candidate Event 1
+combined<|>combine<|>Many of the malicious executables (droppers) that we collected<&>6dc7cc33a3cdcfee6c4edb6c085b869d<&>3d26442f06b34df3d5921f89bf680ee9<&>3efd971db6fbae08e96535478888cff9<&>288c91d6c0197e99b92c06496921bf2f<|>PsExec<&>this technique<&>it<|>
+Candidate Event 2
+controlling<|>control<|>Many of the malicious executables (droppers) that we collected<&>6dc7cc33a3cdcfee6c4edb6c085b869d<&>3d26442f06b34df3d5921f89bf680ee9<&>3efd971db6fbae08e96535478888cff9<&>288c91d6c0197e99b92c06496921bf2f<|>backdoors<|>
+Candidate Event 3
+used<|>use<|>Many of the malicious executables (droppers) that we collected<&>6dc7cc33a3cdcfee6c4edb6c085b869d<&>3d26442f06b34df3d5921f89bf680ee9<&>3efd971db6fbae08e96535478888cff9<&>288c91d6c0197e99b92c06496921bf2f<|>the same 16-digit password<|>
+Candidate Event 4
+employs<|>employ<|>Many of the malicious executables (droppers) that we collected<&>6dc7cc33a3cdcfee6c4edb6c085b869d<&>3d26442f06b34df3d5921f89bf680ee9<&>3efd971db6fbae08e96535478888cff9<&>288c91d6c0197e99b92c06496921bf2f<|>techniques<|>
+Candidate Event 5
+bundled<|>bundle<|><|>Many of the malicious executables (droppers) that we collected<&>6dc7cc33a3cdcfee6c4edb6c085b869d<&>3d26442f06b34df3d5921f89bf680ee9<&>3efd971db6fbae08e96535478888cff9<&>288c91d6c0197e99b92c06496921bf2f<|>
+---
+Answer
+4
+Context Event 1
+connecting<|>connect<|>This sample<&>the sample<&>malware samples<&>malware<|><|>to+plugin- adobe[.]com
+Context Event 2
+disguised<|>disguise<|><|>This sample<&>the sample<&>malware samples<&>malware<|>
+Candidate Event 1
+verifies<|>verify<|>This sample<&>the sample<&>malware samples<&>malware<|>the integrity of the file<|>
+Candidate Event 2
+executing<|>execute<|>This sample<&>the sample<&>malware samples<&>malware<|>batch scripts<|>
+Candidate Event 3
+hide<|>hide<|>This sample<&>the sample<&>malware samples<&>malware<|>its own files<|>
+Candidate Event 4
+generating<|>generate<|>This sample<&>the sample<&>malware samples<&>malware<|>a new thread (“HikitThreadFunc”) which will service any request coming from the new channel<|>
+Candidate Event 5
+disguised<|>disguise<|>The attacker<&>they<&>an attacker<&>attackers<&>the Ajax Security Team<|>This sample<&>the sample<&>malware samples<&>malware<|>
+---

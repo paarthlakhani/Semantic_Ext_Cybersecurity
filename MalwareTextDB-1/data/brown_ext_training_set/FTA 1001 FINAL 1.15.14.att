@@ -1,0 +1,56 @@
+The General Dynamics Fidelis Cybersecurity forensics team analyzed several related malware samples that together provide a sophisticated mechanism to gather data from individual computer systems . 
+The malware appears to be part of a system that may be optimized for use by an insider agent and/or for collecting data from disparate networks or air-­‐gapped systems . 
+The malware includes features to clean up after itself by deleting key indicators that it was present . 
+The malware system apparently includes additional components that have not been identified . 
+These components would potentially perform additional command and control functions and potentially exfiltration from the central host . 
+The sophistication of the malware and the effort involved in its development would indicate that it was developed for a high value target . 
+However , the specific targeting of this malware is not clear at this time . 
+We are concerned that while the malware system was probably developed for a specific target or family of targets , it could be employed with little adaptation against virtually any target . 
+This threat advisory describes the functionality of the three malware files to include command inputs and the resulting behavior of the malware . 
+The Fidelis XPS™ advanced threat defense system has been updated with rules to detect various components of this malware system . 
+However , the fact there are still unanswered questions about the components of the malware system and its intended targeting , emphasizes the importance of employing that best practices such as denying use of removable media on sensitive systems and disabling autorun ! This is particularly true for systems that are not protected by Fidelis XPS . 
+Additional reverse engineering and analysis is on-­going at this time . 
+On 8 Jan 2014 , The Fidelis Network Defense and Forensics team received three files : netsat.exe , netui3.dll and winmgt.dll . 
+All three files were 32 bit executable files . 
+Preliminary analysis disclosed netsat.exe would terminate when run if the system date was on or after 21 Jun 2013 . 
+The submitted files appeared to represent two parts of a suspected data collection scheme . 
+Essentially , netsat.exe appeared to operate as a master program that infected removable media connected to the system whereon it was running and collected data from infected drives when the drives returned . 
+netsat.exe received commands from an encrypted file stored on the local system . 
+The infection was in the form of a renamed netui3.dll or winmgt.dll file along with an Autorun.inf file set to run the renamed netui3.dll/winmgt.dll when the infected drive was connected to a target host . 
+There could be many iterations of netsat.exe running on enterprise or targeted entity systems . 
+Based on available analysis results , netsat.exe could collect surreptitiously gathered data from any infected drive connected to the system whereon netsat.exe was running , e.g. , the infected drive would not have to be processed by the same system whereon it became infected . 
+Data , in the form of files , destined for exfiltration may be obfuscated via a custom XOR operation . 
+The gathered data would ostensibly be exfiltrated via other means . 
+Some components of the malware 's behavior are possibly remarkable . 
+Quickly considering these results in cursory questions reflected as follows : • Command and Control ( C2 ) appears to be accomplished via providing commands in an encrypted file stored on the local 'master ' system ( re : netsat.exe ) . 
+This C2 scheme would seem to dictate : o Intruder remote access to the 'master ' system o Intruder local access to the 'master ' system o a C2 delivery/retrieval component , such as another piece of code that downloads a C2 file • Available information precludes determination of the means of exfiltration . 
+netsat.exe's data collection functionality suggested data destined for exfiltration might be collected by the 'master ' system . 
+This possibility suggests : o Intruder remote access to the 'master ' system o Intruder local access to the 'master ' system o An exfiltration mechanism in the form of another piece of code Scanning with several select third party malware detection applications resulted in zero detections . 
+Cursory online research disclosed a file named netui3.dll was possibly submitted to VirSCAN.org on or before 2 Dec 2013 . 
+The name netui3.dll appears to have been used for malware in the past and was likely associated with a backdoor . 
+The name may be a play on the name netui2.dll , a legitimate Windows file name . 
+All three submitted files compared the system date and time to hard coded dates upon execution . 
+If the system date was after the hard coded dates , the malware would delete itself and terminate . 
+The following table illustrates the hard coded dates in relation to the affected files ' PE dates : The following version information was recorded in the netsat.exe executable : The Language/Code Page code 1033 denotes U.S. English . 
+This versioning information appears contrived . 
+However , it looks convincing enough to pass cursory inspection , i.e. , the format appears legitimate and the appearance does not engender suspicion . 
+Cursory online searches failed to disclose what , if anything Cdto might be associated with . 
+Scanning disclosed the file contained a function possibly associated with TEAN encryption . 
+This appeared to indicate TEA ( Tiny Encryption Algorithm ) involvement . 
+( Note : The encryption is used to encrypt commands stored in a file on the local system . 
+) The submitted files named netui3.dll and winmgt.dll did not have embedded versioning Information like netsat.exe did . 
+The presence of the following files may indicate netsat.exe , et al , involvement : The presence of the following , specifically on removable media , may indicate netsat.exe , et al , involvement : Cursory analysis did not disclose entrenchment data , such as a Registry entry to ensure persistence . 
+This cursory analysis disclosed no network artifacts specific to the malware's operation . 
+However , evidence of any of the files involved ( MD5 , strings , file names ) traversing the network , e.g. , on the move , may be indicative of netsat.exe , et al presence . 
+Given what was revealed during this cursory analysis , finding string and or hash artifacts in SMB traffic seemed the most likely possibility with regard to network detection . 
+netsat.exe The following interesting strings were noted in the raw netsat.exe file : The following interesting strings were noted in the raw netui3.dll file : The following interesting strings were noted in the raw winmgt.dll file : Based on netsat.exe manipulating a file named netui3.dll , the submitted netsat.exe and netui3.dll appeared associated . 
+Versioning is possible . 
+For example , the submitted netui3.dll sample may not match the submitted netsat.exe sample in terms of versioning . 
+However , analysis assumed , for the sake of efficiency , that the submitted netui3.dll and submitted netsat.exe file were associated . 
+The submitted winmgt.dll file appeared very similar to netui3.dll . 
+However , some differences suggested the two files represented disparate versions . 
+Analysis disclosed date sensitivity built into the submitted files . 
+If the sample was run after a particular date , it would effectively terminate and delete itself : Analysis disclosed netsat.exe probably serves as the headquarters of malicious activity by : Analysis disclosed netui3.dll/winmgt.dll probably serve as the field units of malicious activity by : The following commands and their descriptions , listed by executable file , illustrate the submitted malware 's functionality : This advisory is based on preliminary information . 
+It is important to note that reverse engineering and analysis of the malware system is still underway . 
+We expect to provide additional data , and some of this information may change as a result of continued research . 
+However , due to the unique functionality of malware system and its potential for employment against targets beyond the initially intended victim , the network security community should be concerned and track this malware closely . 

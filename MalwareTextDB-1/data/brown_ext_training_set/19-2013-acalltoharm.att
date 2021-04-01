@@ -1,0 +1,98 @@
+# footnote number 8 missing . 
+- Malware masquerading as the circumvention tool Freegate . 
+- A campaign masquerading as a call to arms by a pro-opposition cleric . 
+Syria 's opposition has faced persistent targeting by Pro-Government Electronic Actors ( PGEAs ) throughout the Syrian civil war . 
+A pro-government group calling itself the Syrian Electronic Army has gained visibility in recent months with high profile attacks against news organizations . 
+Meanwhile , Syrian activists continue to be targeted with online attacks apparently for the purposes of accessing their private communications and stealing their secrets . 
+Throughout 2012 , attacks against the Syrian opposition were documented in an extensive series of blog posts by Morgan Marquis-Boire and Eva Galperin with the help of the Electronic Frontier Foundation . 
+Many others have also contributed to research on Syrian malware , from Telecomix to a range of security companies . 
+Meanwhile , the Syrian opposition , and several groups working closely with it , such as Cyber Arabs , have been active in attempting to identify potential threats and warn users . 
+Researchers have identified a common theme among the attacks against the Syrian opposition : sophisticated social engineering that is grounded in an awareness of the needs , interests , and weaknesses of the opposition . 
+Attacks often play on curiosity or ideology to encourage users to enter passwords or click on enticing files , or exploit fears of hacking and surveillance with fake security tools . 
+Attacks are often transmitted to potential victims from the accounts of people with whom they are familiar . 
+The two attacks that are described in this blogpost follow this theme . 
+One is a malicious installer of the circumvention tool Freegate . 
+The other is an e-mail attachment calling for jihad against Hezbollah and the Assad regime or promising interesting regional news . 
+In this attack , which we first observed in the second week of June , the potential victim is encouraged to visit a download link containing a malicious installer of Freegate . 
+Freegate is a standalone circumvention-bypassing Virtual Private Network ( VPN ) client for Windows . 
+Legitimate versions of the Freegate software are available for download on its website . 
+While initially developed for mainland Chinese users , the software is used in a number of other countries . 
+While Freegate was erroneously labelled a Trojan by one anti-virus company nearly a decade ago , in this attack , attackers packaged what appears to be a legitimate version of Freegate with a malicious implant . 
+The targeted group were members of the Syrian opposition in a private social media group . 
+http : //www.mediafire.com/download/ [ REDACTED ] /VPN-Pro.zip When a potential victim visits the link , they are offered the download of a file which MediaFire lists as uploaded on June 15 , 2013 : VPN-PRO.zip ; Uploaded : 2013-06-15 16:54:31 The zip file extracts to a MS Windows executable file : VPN-Pro.exe The binary was compiled at 2013-06-15 22:41:31 UTC and has the following properties : Similar to previously observed malware attacks targeting the Syrian opposition , this was written in .NET 
+and appears to require the .NET 
+3.5 framework to execute . 
+When VPN-Pro.exe is run , the victim is shown the Freegate end-user license agreement ( EULA ) dialogue box . 
+Upon agreeing to the EULA , an operational copy of Freegate proxy is launched , which includes a request to unblock the firewall . 
+The copy of Freegate launched is listed as `` Freegate 7.35 Professional Edition . 
+'' The Freegate software begins operating , and quickly prompts the user for an update . 
+In addition to running a legitimate copy of Freegate 7.35 , the malware installs an implant . 
+A fake `` svchost.exe '' is installed in the victim 's Application Data directory : C : \Documents and Settings\ < Username > \Application Data\svchost.exe Dropped files on execution of VPN-Pro.exe : Examination of the `` svchost.exe '' binary shows multiple references to `` ShadowTech Rat . 
+'' Examination of network traffic also identifies the implant as ShadowTech RAT . 
+Packet capture on port 1321/tcp : ShadowTech Rat is a Remote Access Trojan which appears to be widely available for download on both English and Arabic language sites . 
+Videos can be found on YouTube demonstrating its functionality . 
+The tool offers a range of options to the attacker , from keylogging and remote activation of the webcam to file exfiltration . 
+ShadowTech RAT control console : Both VPN-Pro.exe and svhost.exe have been submitted to VirusTotal : Both have relatively low detection rates by anti-virus software . 
+As of June 20 , 2013 , svchost.exe was only detected by four out of 47 tested anti-virus programs , while VPN-Pro.exe was only detected by five out of 46 . 
+The svchost.exe initiates an outbound connection to a command and control ( C2 ) server hosted at thejoe.publicvm.com . 
+This domain resolves to an address inside Syrian IP space : 31.9.48.119 . 
+This is not the first time that malicious installer packages have been created for circumvention tools . 
+In 2012 , malicious installers for Green Simurgh-a standalone proxy intended for Iranian users but also used by some Syrians-were found in circulation . 
+The creators of Green Simurgh responded by posting a prominent warning on their website highlighting the presence of these malicious installers . 
+Last year , malware which purported to be the Tor Browser Bundle was found in the wild . 
+It was found to be backdoored by Gh0st RAT and exfiltrated data to an IP in China . 
+An attack using a malicious installer of a working and reputable security or proxy tool is especially pernicious as it targets users who likely recognize the importance of privacy and circumvention , and may believe that they have increased their privacy and security by installing the tool . 
+In this campaign , contact with targets was initiated through phishing e-mails , chat messages and Facebook posts . 
+Although we became aware of this campaign in early June , we have evidence that it may have started as early as January 2013 . 
+We believe that this campaign targeted-at least in part-high-profile members of the Syrian opposition . 
+Interestingly , the attack included targeting of at least one non-public address associated with internal opposition communications . 
+This indicates some degree of prior penetration of the opposition - either through computer network intrusion or other intelligence gathering activities . 
+The potential victim in this attack first receives a message from an unknown source , in this case , a Gmail account with a nondescript name . 
+Example e-mail : The e-mail contains text , an image ( not shown ) , and an attachment . 
+The text refers to a video of Sheikh Adnan al-Arour-a Sunni pro-opposition cleric-based in Saudi Arabia , calling for holy war against Assad and Hezbollah . 
+The user is led to believe that opening the zip file , which is descriptively titled as being the Sheikh 's opinion , will provide access to the video . 
+While we have identified multiple different attacks with different zip files , the structure of all of these is consistent with the example described here . 
+Example zip files : The zip file extracts to a Windows Shortcut file with the same name and a .lnk 
+extension . 
+Example .lnk 
+file `` Sample A '' : Parsing these files reveals a URL embedded in the the file ( bolded below ) . 
+Parsing `` Sample A '' : When the victim executes the Windows shortcut , they are directed to one of several malicious links depending on the zipfile that they were sent . 
+These are visible in the link parsing . 
+Links embedded in the Windows shortcut : The victim is then shown either a YouTube video featuring Sheikh Adnan al-Arour , or a story on http : //www.alkalimaonline.com , a Lebanese news site . 
+Example of YouTube video shown to victim : While the victim sees the decoy YouTube video or news website , a php file ( g.php ) that contains a hex-encoded malicious binary is fetched . 
+Excerpt from G.php : Once extracted , the binary of `` Sample A '' has the following properties : The malware also adds a registry key to make it persistent across reboots : The malware contains strings referring to `` Data Protector v2 '' which appears to refer a crypter that is compatible with a range of RATs and advertised for download in a number of forums . 
+Once the malware is successfully installed on the victim 's computer , it communicates with a C2 server at : tn5.linkpc.net On June 11 , this pointed to the following SyriaTel address : This domain has been active since at least October 2012 and has pointed to many different addresses in Syrian IP space on both the SyriaTel and Tarassul ISPs , as well as AnchorFree VPN addresses . 
+The malware attempts to download a remote file called `` 123.functions '' : It was not possible to retrieve the remote file at the time of analysis . 
+As the conflict in Syria drags on , digital campaigns targeting Syrian opposition have persisted . 
+We have chosen to highlight two attacks that are part of recent efforts by Pro-Government Electronic Actors to compromise opposition communications and steal their secrets . 
+These attacks cater to the opposition 's communication behaviors and tactics . 
+They are indicative of a combination of prior intelligence about the opposition , and ingenuity in social engineering . 
+For example , many in the Syrian opposition are now aware of the electronic threats they face and seek out tools to increase their communications security and privacy . 
+Tools and information about security and communications are in constant circulation . 
+Some of this material addresses well-defined vulnerabilities . 
+We have observed a greater degree of care among many in the opposition when facing certain situations that were common attack modalities in 2012 . 
+As awareness grows and behavior evolves , we suspect that some of the attacks that we regularly observed in 2012 are much less successful today . 
+Some of the information and practices that are shared between users , however , are much less appropriate , even inadvertently dangerous . 
+For example , many legitimate tools are shared via third party file sharing sites or over social media . 
+This situation presents a rich variety of targets for attackers in which to seed malicious binaries and links masquerading as familiar or desirable tools . 
+We infer that from the point of view of these attackers , not all attacks need to have sophisticated malware in order to be successful enough to be worth doing . 
+Yet , perhaps in response to the growing awareness of previous and often widely targeted attacks against the Syrian opposition , attackers continue to innovate and experiment with new techniques that blend social engineering with new attack styles . 
+The experiments are sometimes clearly successful . 
+For example , in the case of Attack 2 , the Windows shortcut files were not conclusively identified as malicious by even savvy opposition members for an extended period of time . 
+We hope that this post will increase awareness of the two attacks among potential targets . 
+In the meantime , users who have executed either the fake Freegate file or clicked on one of the Windows shortcut files should consider their computers and accounts compromised . 
+The Freegate website is blocked in China ( its primary target market ) , as is the case with other similar circumvention tools . 
+To get around blocking , tools are often distributed between individuals , or through untrusted downloads from third party sites . 
+This is an unfortunate vector for attackers to distribute malicious installers and bundles that also contain functional versions of the program . 
+As demonstrated by our work on the Freegate malware , as well as the Green Simurgh case , these vulnerabilities are exploited with serious consequences for high-risk users . 
+We understand the resource constraints that developers of free security and circumvention software often face . 
+As such , we propose two simple steps that Freegate could take to help mitigate the current and similar future threats . 
+1 ) Freegate should take steps to make their users aware of the threat . 
+We provided Freegate developers with details of the attack , copies of the malicious binary , and other details prior to publication . 
+We would like to point them towards the example established by Green Simurgh , who promptly posted a multilingual warning to their website when a malicious repackaging of their tool was found to be targeting Syrian users . 
+We have offered to help them translate any warning materials into Arabic . 
+2 ) Freegate should implement by-default HTTPS on their website . 
+Currently , visitors to the Freegate website follow non-HTTPS links to an unencrypted download . 
+We believe that this presents a clear risk for man-in-the-middle attacks . 
+Most developers of similar anti-censorship , circumvention , and security tools have implemented this security measure . 
+We encourage Freegate to follow suit . 

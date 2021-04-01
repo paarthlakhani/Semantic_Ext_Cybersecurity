@@ -1,0 +1,165 @@
+---
+Answer
+2
+Context Event 1
+runs<|>run<|>nvidrv<&>It<&>It<&>It<&>It<|>GooglUpd<&>GooglUpd<|>
+Context Event 2
+runs<|>run<|>nvidrv<&>It<&>It<&>It<&>It<|>AdbrRader<&>AdbrRader<|>
+Context Event 3
+runs<|>run<|>nvidrv<&>It<&>It<&>It<&>It<|>svhosts<&>svhosts<|>
+Context Event 4
+runs<|>run<|>nvidrv<&>It<&>It<&>It<&>It<|>rundl132<&>it<&>“rundl132.exe”<&>rundl132<&>rundl132<|>
+Context Event 5
+checking<|>check<|>nvidrv<&>It<&>It<&>It<&>It<|>whether registry key name “6” is present<|>
+Context Event 6
+sets<|>set<|>nvidrv<&>It<&>It<&>It<&>It<|>the key<|>
+Candidate Event 1
+executed<|>execute<|>nvidrv<&>It<&>It<&>It<&>It<|>These tools<&>one of these implants<&>these backdoors<&>backdoors<&>These tools<|>
+Candidate Event 2
+uses<|>use<|>nvidrv<&>It<&>It<&>It<&>It<|>a loader application<&>both variants of the Loader<&>Both versions of the Loader<&>the Loader<&>The Loaders<|>
+Candidate Event 3
+runs<|>run<|>nvidrv<&>It<&>It<&>It<&>It<|>rundl132<&>it<&>“rundl132.exe”<&>rundl132<&>rundl132<|>
+Candidate Event 4
+made<|>make<|>nvidrv<&>It<&>It<&>It<&>It<|>An initial request<|>
+Candidate Event 5
+sending<|>send<|>nvidrv<&>It<&>It<&>It<&>It<|>the information<|>to+the C&C server
+---
+Answer
+3
+Context Event 1
+sent<|>send<|><|>a highly targeted attack<&>The attack<&>This attack<&>it<&>This attack<|>to+an e-mail address belonging to RSS
+Context Event 2
+took<|>take<|>a highly targeted attack<&>The attack<&>This attack<&>it<&>This attack<|>The unsolicited message below<&>the form of an unsolicited e-mail containing a download link to a decoy file<|>
+Context Event 3
+developed<|>develop<|>a highly targeted attack<&>The attack<&>This attack<&>it<&>This attack<|>social engineering<|>
+Context Event 4
+is<|>be<|>a highly targeted attack<&>The attack<&>This attack<&>it<&>This attack<|>exceptionally targeted<|>
+Candidate Event 1
+calls<|>call<|>a highly targeted attack<&>The attack<&>This attack<&>it<&>This attack<|>PsSetCreateProcessNotifyRoutine()<|>
+Candidate Event 2
+download<|>download<|>a highly targeted attack<&>The attack<&>This attack<&>it<&>This attack<|>more advanced stealing tools<|>
+Candidate Event 3
+send<|>send<|>a highly targeted attack<&>The attack<&>This attack<&>it<&>This attack<|>commands<|>to+the c&c
+Candidate Event 4
+targeted<|>target<|><|>a highly targeted attack<&>The attack<&>This attack<&>it<&>This attack<|>
+Candidate Event 5
+updated<|>update<|>a highly targeted attack<&>The attack<&>This attack<&>it<&>This attack<|>The configuration<|>
+---
+Answer
+3
+Context Event 1
+beaconed<|>beacon<|>custom malware<&>The custom malware used in this attack<&>it<&>the malware<&>The malware<&>The malware<&>this malware<&>the program<&>It<&>the malware<&>The malware<&>the malware<&>the malware<&>it<&>The malware<&>The malware<|>its IP address<|>to+an e-mail account under the attacker’s control
+Context Event 2
+profiled<|>profile<|>custom malware<&>The custom malware used in this attack<&>it<&>the malware<&>The malware<&>The malware<&>this malware<&>the program<&>It<&>the malware<&>The malware<&>the malware<&>the malware<&>it<&>The malware<&>The malware<|>the victim’s computer<|>
+Context Event 3
+infects<|>infect<|>custom malware<&>The custom malware used in this attack<&>it<&>the malware<&>The malware<&>The malware<&>this malware<&>the program<&>It<&>the malware<&>The malware<&>the malware<&>the malware<&>it<&>The malware<&>The malware<|>a user who views the decoy “slideshow,”<|>
+Context Event 4
+beacons<|>beacon<|>custom malware<&>The custom malware used in this attack<&>it<&>the malware<&>The malware<&>The malware<&>this malware<&>the program<&>It<&>the malware<&>The malware<&>the malware<&>the malware<&>it<&>The malware<&>The malware<|>home<|>
+Context Event 5
+beacons<|>beacon<|>custom malware<&>The custom malware used in this attack<&>it<&>the malware<&>The malware<&>The malware<&>this malware<&>the program<&>It<&>the malware<&>The malware<&>the malware<&>the malware<&>it<&>The malware<&>The malware<|>home<|>
+Context Event 6
+identifying<|>identify<|>custom malware<&>The custom malware used in this attack<&>it<&>the malware<&>The malware<&>The malware<&>this malware<&>the program<&>It<&>the malware<&>The malware<&>the malware<&>the malware<&>it<&>The malware<&>The malware<|>a target<|>
+Context Event 7
+sends<|>send<|>custom malware<&>The custom malware used in this attack<&>it<&>the malware<&>The malware<&>The malware<&>this malware<&>the program<&>It<&>the malware<&>The malware<&>the malware<&>the malware<&>it<&>The malware<&>The malware<|>data captured by the malware<|>to+an e-mail address
+Context Event 8
+sends<|>send<|>custom malware<&>The custom malware used in this attack<&>it<&>the malware<&>The malware<&>The malware<&>this malware<&>the program<&>It<&>the malware<&>The malware<&>the malware<&>the malware<&>it<&>The malware<&>The malware<|>an e-mail containing the victim’s IP address and miscellaneous system information<|>
+Context Event 9
+resends<|>resends<|>custom malware<&>The custom malware used in this attack<&>it<&>the malware<&>The malware<&>The malware<&>this malware<&>the program<&>It<&>the malware<&>The malware<&>the malware<&>the malware<&>it<&>The malware<&>The malware<|>the information<|>
+Context Event 10
+serve<|>serve<|>custom malware<&>The custom malware used in this attack<&>it<&>the malware<&>The malware<&>The malware<&>this malware<&>the program<&>It<&>the malware<&>The malware<&>the malware<&>the malware<&>it<&>The malware<&>The malware<|><|>
+Context Event 11
+attract<|>attract<|>custom malware<&>The custom malware used in this attack<&>it<&>the malware<&>The malware<&>The malware<&>this malware<&>the program<&>It<&>the malware<&>The malware<&>the malware<&>the malware<&>it<&>The malware<&>The malware<|>less attention<|>
+Context Event 12
+looks<|>look<|>custom malware<&>The custom malware used in this attack<&>it<&>the malware<&>The malware<&>The malware<&>this malware<&>the program<&>It<&>the malware<&>The malware<&>the malware<&>the malware<&>it<&>The malware<&>The malware<|>less like malware<|>
+Context Event 13
+registered<|>register<|>custom malware<&>The custom malware used in this attack<&>it<&>the malware<&>The malware<&>The malware<&>this malware<&>the program<&>It<&>the malware<&>The malware<&>the malware<&>the malware<&>it<&>The malware<&>The malware<|>only 6/55 detections by anti virus scanners, or a 10% detection rate<|>
+Context Event 14
+transmitting<|>transmitting<|><|>custom malware<&>The custom malware used in this attack<&>it<&>the malware<&>The malware<&>The malware<&>this malware<&>the program<&>It<&>the malware<&>The malware<&>the malware<&>the malware<&>it<&>The malware<&>The malware<|>
+Context Event 15
+transmits<|>transmit<|>custom malware<&>The custom malware used in this attack<&>it<&>the malware<&>The malware<&>The malware<&>this malware<&>the program<&>It<&>the malware<&>The malware<&>the malware<&>the malware<&>it<&>The malware<&>The malware<|><|>
+Context Event 16
+leaving<|>leave<|>custom malware<&>The custom malware used in this attack<&>it<&>the malware<&>The malware<&>The malware<&>this malware<&>the program<&>It<&>the malware<&>The malware<&>the malware<&>the malware<&>it<&>The malware<&>The malware<|>the material<|>
+Context Event 17
+uses<|>use<|>custom malware<&>The custom malware used in this attack<&>it<&>the malware<&>The malware<&>The malware<&>this malware<&>the program<&>It<&>the malware<&>The malware<&>the malware<&>the malware<&>it<&>The malware<&>The malware<|>the old PKWARE implementation of zip encryption<|>
+Context Event 18
+identify<|>identify<|>custom malware<&>The custom malware used in this attack<&>it<&>the malware<&>The malware<&>The malware<&>this malware<&>the program<&>It<&>the malware<&>The malware<&>the malware<&>the malware<&>it<&>The malware<&>The malware<|>the IP address of target(s)<&>them<|>
+Context Event 19
+resend<|>resend<|>custom malware<&>The custom malware used in this attack<&>it<&>the malware<&>The malware<&>The malware<&>this malware<&>the program<&>It<&>the malware<&>The malware<&>the malware<&>the malware<&>it<&>The malware<&>The malware<|>the IP address of target(s)<&>them<|>to+the attacker
+Context Event 20
+drop<|>drop<|>custom malware<&>The custom malware used in this attack<&>it<&>the malware<&>The malware<&>The malware<&>this malware<&>the program<&>It<&>the malware<&>The malware<&>the malware<&>the malware<&>it<&>The malware<&>The malware<|>a second stage<|>
+Context Event 21
+exfiltrating<|>exfiltrating<|>custom malware<&>The custom malware used in this attack<&>it<&>the malware<&>The malware<&>The malware<&>this malware<&>the program<&>It<&>the malware<&>The malware<&>the malware<&>the malware<&>it<&>The malware<&>The malware<|>credentials from Facebook and hooking programs like Skype<|>
+Context Event 22
+beacons<|>beacon<|>custom malware<&>The custom malware used in this attack<&>it<&>the malware<&>The malware<&>The malware<&>this malware<&>the program<&>It<&>the malware<&>The malware<&>the malware<&>the malware<&>it<&>The malware<&>The malware<|>location<|>
+Candidate Event 1
+drops<|>drop<|>custom malware<&>The custom malware used in this attack<&>it<&>the malware<&>The malware<&>The malware<&>this malware<&>the program<&>It<&>the malware<&>The malware<&>the malware<&>the malware<&>it<&>The malware<&>The malware<|>the igfxext.exe “selective infector” component<&>it<|>to+disk
+Candidate Event 2
+including<|>include<|>custom malware<&>The custom malware used in this attack<&>it<&>the malware<&>The malware<&>The malware<&>this malware<&>the program<&>It<&>the malware<&>The malware<&>the malware<&>the malware<&>it<&>The malware<&>The malware<|>stolen VPN credentials<|>
+Candidate Event 3
+write<|>write<|>custom malware<&>The custom malware used in this attack<&>it<&>the malware<&>The malware<&>The malware<&>this malware<&>the program<&>It<&>the malware<&>The malware<&>the malware<&>the malware<&>it<&>The malware<&>The malware<|>content<|>in+the system32 folder of a Windows XP system
+Candidate Event 4
+exfiltrates<|>exfiltrates<|>custom malware<&>The custom malware used in this attack<&>it<&>the malware<&>The malware<&>The malware<&>this malware<&>the program<&>It<&>the malware<&>The malware<&>the malware<&>the malware<&>it<&>The malware<&>The malware<|><|>to+an online e-mail account
+Candidate Event 5
+uses<|>use<|>custom malware<&>The custom malware used in this attack<&>it<&>the malware<&>The malware<&>The malware<&>this malware<&>the program<&>It<&>the malware<&>The malware<&>the malware<&>the malware<&>it<&>The malware<&>The malware<|>HTTP<|>
+---
+Answer
+1
+Context Event 1
+runs<|>run<|>nvidrv<&>It<&>It<&>It<&>It<|>svhosts<&>svhosts<|>
+Context Event 2
+tests<|>test<|>svhosts<&>svhosts<|>Internet connectivity<|>
+Candidate Event 1
+deployed<|>deploy<|>svhosts<&>svhosts<|>0-day spear-phishing attacks<&>0-day spear-phishing attacks<|>
+Candidate Event 2
+doing<|>do<|>svhosts<&>svhosts<|>a DNS query for windowsupdate.microsoft.com<|>
+Candidate Event 3
+support<|>support<|>svhosts<&>svhosts<|>forensic mitigation<|>
+Candidate Event 4
+reads<|>read<|>svhosts<&>svhosts<|>the configuration file<|>
+Candidate Event 5
+decrypting<|>decrypt<|>svhosts<&>svhosts<|>data<|>
+---
+Answer
+3
+Context Event 1
+runs<|>run<|>nvidrv<&>It<&>It<&>It<&>It<|>rundl132<&>it<&>“rundl132.exe”<&>rundl132<&>rundl132<|>
+Context Event 2
+runs<|>run<|>nvidrv<&>It<&>It<&>It<&>It<|>rundl132<&>it<&>“rundl132.exe”<&>rundl132<&>rundl132<|>
+Context Event 3
+performs<|>perform<|>rundl132<&>it<&>“rundl132.exe”<&>rundl132<&>rundl132<|>an HTTP GET request<|>
+Context Event 4
+collects<|>collect<|>rundl132<&>it<&>“rundl132.exe”<&>rundl132<&>rundl132<|>the external IP of the infected machine<|>
+Context Event 5
+writes<|>write<|>rundl132<&>it<&>“rundl132.exe”<&>rundl132<&>rundl132<|>the external IP<|>
+Candidate Event 1
+execute<|>execute<|>rundl132<&>it<&>“rundl132.exe”<&>rundl132<&>rundl132<|>binaries<|>
+Candidate Event 2
+determine<|>determine<|>rundl132<&>it<&>“rundl132.exe”<&>rundl132<&>rundl132<|>the system architecture (32- or 64-bit)<|>
+Candidate Event 3
+targeted<|>target<|>rundl132<&>it<&>“rundl132.exe”<&>rundl132<&>rundl132<|>this site<|>
+Candidate Event 4
+runs<|>run<|>rundl132<&>it<&>“rundl132.exe”<&>rundl132<&>rundl132<|>AdobeIns<&>AdobeIns<&>Program “AdobeIns.exe”<&>AdobeIns<&>The malware<|>
+Candidate Event 5
+execute<|>execute<|>rundl132<&>it<&>“rundl132.exe”<&>rundl132<&>rundl132<|>shellcode<|>
+---
+Answer
+3
+Context Event 1
+runs<|>run<|>rundl132<&>it<&>“rundl132.exe”<&>rundl132<&>rundl132<|>AdobeIns<&>AdobeIns<&>Program “AdobeIns.exe”<&>AdobeIns<&>The malware<|>
+Context Event 2
+zips<|>zip<|>AdobeIns<&>AdobeIns<&>Program “AdobeIns.exe”<&>AdobeIns<&>The malware<|>the contents of the win32.tmp folder<|>
+Context Event 3
+zips<|>zip<|>AdobeIns<&>AdobeIns<&>Program “AdobeIns.exe”<&>AdobeIns<&>The malware<|>them<|>
+Context Event 4
+sends<|>send<|>AdobeIns<&>AdobeIns<&>Program “AdobeIns.exe”<&>AdobeIns<&>The malware<|>an e-mail<|>to+the same inbox
+Candidate Event 1
+executed<|>execute<|>AdobeIns<&>AdobeIns<&>Program “AdobeIns.exe”<&>AdobeIns<&>The malware<|>921.bin<&>They<&>922.bin<&>they<&>they<&>They<&>They<|>
+Candidate Event 2
+hard-coded<|>hard-coded<|>AdobeIns<&>AdobeIns<&>Program “AdobeIns.exe”<&>AdobeIns<&>The malware<|>the initial set of domain names<|>
+Candidate Event 3
+sets up<|>set up<|>AdobeIns<&>AdobeIns<&>Program “AdobeIns.exe”<&>AdobeIns<&>The malware<|>the hooks<|>
+Candidate Event 4
+connects<|>connect<|>AdobeIns<&>AdobeIns<&>Program “AdobeIns.exe”<&>AdobeIns<&>The malware<|><|>to+an account
+Candidate Event 5
+cached<|>cache<|>AdobeIns<&>AdobeIns<&>Program “AdobeIns.exe”<&>AdobeIns<&>The malware<|>the results<|>in+a location the dropped malware can access
+---

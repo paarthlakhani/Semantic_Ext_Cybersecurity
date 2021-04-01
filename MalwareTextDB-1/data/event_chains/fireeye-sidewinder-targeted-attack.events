@@ -1,0 +1,178 @@
+---
+Answer
+1
+Context Event 1
+utilizing<|>utilize<|>the attackers<&>they<&>attackers over the network<&>the attacker<&>the attackers<&>they<|>the makeCall interface<|>
+Context Event 2
+hijack<|>hijack<|>the attackers<&>they<&>attackers over the network<&>the attacker<&>the attackers<&>they<|>the communication channels<|>
+Context Event 3
+inject<|>inject<|>the attackers<&>they<&>attackers over the network<&>the attacker<&>the attackers<&>they<|>malicious DEX files<|>
+Context Event 4
+control<|>control<|>the attackers<&>they<&>attackers over the network<&>the attacker<&>the attackers<&>they<|>the behaviors of the victim apps<|>
+Context Event 5
+getting<|>get<|>the attackers<&>they<&>attackers over the network<&>the attacker<&>the attackers<&>they<|>local access<|>
+Context Event 6
+upload<|>upload<|>the attackers<&>they<&>attackers over the network<&>the attacker<&>the attackers<&>they<|>private and sensitive files<|>
+Context Event 7
+modify<|>modify<|>the attackers<&>they<&>attackers over the network<&>the attacker<&>the attackers<&>they<|>files that the host app can write to<|>
+Context Event 8
+taking<|>take<|>the attackers<&>they<&>attackers over the network<&>the attacker<&>the attackers<&>they<|>pictures<|>
+Context Event 9
+sending<|>send<|>the attackers<&>they<&>attackers over the network<&>the attacker<&>the attackers<&>they<|>SMS<|>
+Candidate Event 1
+communicated<|>communicate<|>the attackers<&>they<&>attackers over the network<&>the attacker<&>the attackers<&>they<|><|>
+Candidate Event 2
+obtain<|>obtain<|>the attackers<&>they<&>attackers over the network<&>the attacker<&>the attackers<&>they<|>root<|>
+Candidate Event 3
+is<|>be<|>the attackers<&>they<&>attackers over the network<&>the attacker<&>the attackers<&>they<|>a backdoor<|>
+Candidate Event 4
+encoded<|>encode<|>the attackers<&>they<&>attackers over the network<&>the attacker<&>the attackers<&>they<|>The communication between the attacker and the SOCKSS<|>
+Candidate Event 5
+gained<|>gain<|>the attackers<&>they<&>attackers over the network<&>the attacker<&>the attackers<&>they<|>access to PayPal and Go Daddy credentials<|>
+---
+Answer
+3
+Context Event 1
+attempt<|>attempt<|>the attackers<&>they<&>they<&>an attacker<&>an attacker<&>the attackers<&>They<&>the attackers<&>attackers<&>the attackers<&>the attackers<&>an attacker<&>Attackers<&>attackers<&>attackers<&>Attackers<&>attackers<&>they<|>ptrace<|>
+Context Event 2
+load<|>load<|>the attackers<&>they<&>they<&>an attacker<&>an attacker<&>the attackers<&>They<&>the attackers<&>attackers<&>the attackers<&>the attackers<&>an attacker<&>Attackers<&>attackers<&>attackers<&>Attackers<&>attackers<&>they<|>executables compiled from JNI code<&>the code<|>
+Context Event 3
+monitor<|>monitor<|>the attackers<&>they<&>they<&>an attacker<&>an attacker<&>the attackers<&>They<&>the attackers<&>attackers<&>the attackers<&>the attackers<&>an attacker<&>Attackers<&>attackers<&>attackers<&>Attackers<&>attackers<&>they<|><|>
+Context Event 4
+monitor<|>monitor<|>the attackers<&>they<&>they<&>an attacker<&>an attacker<&>the attackers<&>They<&>the attackers<&>attackers<&>the attackers<&>the attackers<&>an attacker<&>Attackers<&>attackers<&>attackers<&>Attackers<&>attackers<&>they<|>the clipboard contents<&>the clipboard content<&>changes to a clipboard<|>
+Context Event 5
+transfer<|>transfer<|>the attackers<&>they<&>they<&>an attacker<&>an attacker<&>the attackers<&>They<&>the attackers<&>attackers<&>the attackers<&>the attackers<&>an attacker<&>Attackers<&>attackers<&>attackers<&>Attackers<&>attackers<&>they<|>the clipboard contents<&>the clipboard content<&>changes to a clipboard<|>to+some remote server
+Context Event 6
+alter<|>alter<|>the attackers<&>they<&>they<&>an attacker<&>an attacker<&>the attackers<&>They<&>the attackers<&>attackers<&>the attackers<&>the attackers<&>an attacker<&>Attackers<&>attackers<&>attackers<&>Attackers<&>attackers<&>they<|>the clipboard contents<&>the clipboard content<&>changes to a clipboard<|>
+Context Event 7
+manipulate<|>manipulate<|>the attackers<&>they<&>they<&>an attacker<&>an attacker<&>the attackers<&>They<&>the attackers<&>attackers<&>the attackers<&>the attackers<&>an attacker<&>Attackers<&>attackers<&>attackers<&>Attackers<&>attackers<&>they<|>Android home screen icons<|>
+Context Event 8
+redirect<|>redirect<|>the attackers<&>they<&>they<&>an attacker<&>an attacker<&>the attackers<&>They<&>the attackers<&>attackers<&>the attackers<&>the attackers<&>an attacker<&>Attackers<&>attackers<&>attackers<&>Attackers<&>attackers<&>they<|>other app icons (e.g., bank or email app icons)<|>to+the phishing app
+Context Event 9
+steal<|>steal<|>the attackers<&>they<&>they<&>an attacker<&>an attacker<&>the attackers<&>They<&>the attackers<&>attackers<&>the attackers<&>the attackers<&>an attacker<&>Attackers<&>attackers<&>attackers<&>Attackers<&>attackers<&>they<|>the user’s login credentials<|>
+Context Event 10
+install<|>install<|>the attackers<&>they<&>they<&>an attacker<&>an attacker<&>the attackers<&>They<&>the attackers<&>attackers<&>the attackers<&>the attackers<&>an attacker<&>Attackers<&>attackers<&>attackers<&>Attackers<&>attackers<&>they<|>apps of choice (e.g., an attacker’s phishing app)<|>
+Context Event 11
+hijacking<|>hijack<|>the attackers<&>they<&>they<&>an attacker<&>an attacker<&>the attackers<&>They<&>the attackers<&>attackers<&>the attackers<&>the attackers<&>an attacker<&>Attackers<&>attackers<&>attackers<&>Attackers<&>attackers<&>they<|>the HTTP traffic<|>
+Context Event 12
+locate<|>locate<|>the attackers<&>they<&>they<&>an attacker<&>an attacker<&>the attackers<&>They<&>the attackers<&>attackers<&>the attackers<&>the attackers<&>an attacker<&>Attackers<&>attackers<&>attackers<&>Attackers<&>attackers<&>they<|>the victim<|>
+Context Event 13
+acquire<|>acquire<|>the attackers<&>they<&>they<&>an attacker<&>an attacker<&>the attackers<&>They<&>the attackers<&>attackers<&>the attackers<&>the attackers<&>an attacker<&>Attackers<&>attackers<&>attackers<&>Attackers<&>attackers<&>they<|>the device’s specifications<|>
+Context Event 14
+compromised<|>compromise<|>the attackers<&>they<&>they<&>an attacker<&>an attacker<&>the attackers<&>They<&>the attackers<&>attackers<&>the attackers<&>the attackers<&>an attacker<&>Attackers<&>attackers<&>attackers<&>Attackers<&>attackers<&>they<|>many DNS servers, including the ones from Google and Godaddy<|>
+Context Event 15
+access<|>access<|>the attackers<&>they<&>they<&>an attacker<&>an attacker<&>the attackers<&>They<&>the attackers<&>attackers<&>the attackers<&>the attackers<&>an attacker<&>Attackers<&>attackers<&>attackers<&>Attackers<&>attackers<&>they<|>all the traffic to ad servers<|>
+Context Event 16
+monitor<|>monitor<|>the attackers<&>they<&>they<&>an attacker<&>an attacker<&>the attackers<&>They<&>the attackers<&>attackers<&>the attackers<&>the attackers<&>an attacker<&>Attackers<&>attackers<&>attackers<&>Attackers<&>attackers<&>they<|>all traffic to specific IPs<|>
+Context Event 17
+use<|>use<|>the attackers<&>they<&>they<&>an attacker<&>an attacker<&>the attackers<&>They<&>the attackers<&>attackers<&>the attackers<&>the attackers<&>an attacker<&>Attackers<&>attackers<&>attackers<&>Attackers<&>attackers<&>they<|>fake ARP packets<|>
+Context Event 18
+identify<|>identify<|>the attackers<&>they<&>they<&>an attacker<&>an attacker<&>the attackers<&>They<&>the attackers<&>attackers<&>the attackers<&>the attackers<&>an attacker<&>Attackers<&>attackers<&>attackers<&>Attackers<&>attackers<&>they<|>potential victims<|>
+Candidate Event 1
+delivered<|>deliver<|>the attackers<&>they<&>they<&>an attacker<&>an attacker<&>the attackers<&>They<&>the attackers<&>attackers<&>the attackers<&>the attackers<&>an attacker<&>Attackers<&>attackers<&>attackers<&>Attackers<&>attackers<&>they<|>malvertising<&>malvertising<|>
+Candidate Event 2
+intercepts<|>intercept<|>the attackers<&>they<&>they<&>an attacker<&>an attacker<&>the attackers<&>They<&>the attackers<&>attackers<&>the attackers<&>the attackers<&>an attacker<&>Attackers<&>attackers<&>attackers<&>Attackers<&>attackers<&>they<|>all requests along with their parameters<|>
+Candidate Event 3
+cleans<|>clean<|>the attackers<&>they<&>they<&>an attacker<&>an attacker<&>the attackers<&>They<&>the attackers<&>attackers<&>the attackers<&>the attackers<&>an attacker<&>Attackers<&>attackers<&>attackers<&>Attackers<&>attackers<&>they<|>traces of the initial loader<|>
+Candidate Event 4
+inject<|>inject<|>the attackers<&>they<&>they<&>an attacker<&>an attacker<&>the attackers<&>They<&>the attackers<&>attackers<&>the attackers<&>the attackers<&>an attacker<&>Attackers<&>attackers<&>attackers<&>Attackers<&>attackers<&>they<|>exploits<|>
+Candidate Event 5
+target<|>target<|>the attackers<&>they<&>they<&>an attacker<&>an attacker<&>the attackers<&>They<&>the attackers<&>attackers<&>the attackers<&>the attackers<&>an attacker<&>Attackers<&>attackers<&>attackers<&>Attackers<&>attackers<&>they<|>a large number of systems<|>
+---
+Answer
+1
+Context Event 1
+keep<|>keep<|>Attackers<&>they<&>Sidewinder Targeted Attacks<&>malicious ads or attackers<|>a low profile<|>
+Context Event 2
+target<|>target<|>Attackers<&>they<&>Sidewinder Targeted Attacks<&>malicious ads or attackers<|>victims<|>
+Candidate Event 1
+disinfect<|>disinfect<|>Attackers<&>they<&>Sidewinder Targeted Attacks<&>malicious ads or attackers<|>the compromised device<|>
+Candidate Event 2
+hijacking<|>hijack<|>Attackers<&>they<&>Sidewinder Targeted Attacks<&>malicious ads or attackers<|>the communication channels<|>
+Candidate Event 3
+distributed<|>distribute<|>Attackers<&>they<&>Sidewinder Targeted Attacks<&>malicious ads or attackers<|>It<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<&>the threat<&>Regin<&>Regin<&>Regin<&>Regin<&>Regin<|>
+Candidate Event 4
+used<|>use<|>Attackers<&>they<&>Sidewinder Targeted Attacks<&>malicious ads or attackers<|>a secondary password<|>
+Candidate Event 5
+launched<|>launch<|>Attackers<&>they<&>Sidewinder Targeted Attacks<&>malicious ads or attackers<|>the main application<|>
+---
+Answer
+1
+Context Event 1
+intercept<|>intercept<|>an attacker<&>an attacker<&>attackers<&>the attackers<&>The attacker<&>the attacker<&>an attacker<&>the attacker<&>the attacker<&>an attacker<&>an attacker over the network<&>a remote attacker<&>an attacker over the network<&>attackers over the network<|>the user’s private information<&>private information uploaded from ad libraries<|>
+Context Event 2
+conduct<|>conduct<|>an attacker<&>an attacker<&>attackers<&>the attackers<&>The attacker<&>the attacker<&>an attacker<&>the attacker<&>the attacker<&>an attacker<&>an attacker over the network<&>a remote attacker<&>an attacker over the network<&>attackers over the network<|>more targeted attacks<|>
+Context Event 3
+invoke<|>invoke<|>an attacker<&>an attacker<&>attackers<&>the attackers<&>The attacker<&>the attacker<&>an attacker<&>the attacker<&>the attacker<&>an attacker<&>an attacker over the network<&>a remote attacker<&>an attacker over the network<&>attackers over the network<|>Android services<|>
+Context Event 4
+invoke<|>invoke<|>an attacker<&>an attacker<&>attackers<&>the attackers<&>The attacker<&>the attacker<&>an attacker<&>the attacker<&>the attacker<&>an attacker<&>an attacker over the network<&>a remote attacker<&>an attacker over the network<&>attackers over the network<|>Android services<|>
+Context Event 5
+invoke<|>invoke<|>an attacker<&>an attacker<&>attackers<&>the attackers<&>The attacker<&>the attacker<&>an attacker<&>the attacker<&>the attacker<&>an attacker<&>an attacker over the network<&>a remote attacker<&>an attacker over the network<&>attackers over the network<|>Android services<|>
+Context Event 6
+invoke<|>invoke<|>an attacker<&>an attacker<&>attackers<&>the attackers<&>The attacker<&>the attacker<&>an attacker<&>the attacker<&>the attacker<&>an attacker<&>an attacker over the network<&>a remote attacker<&>an attacker over the network<&>attackers over the network<|>Android services<|>
+Context Event 7
+exploit<|>exploit<|>an attacker<&>an attacker<&>attackers<&>the attackers<&>The attacker<&>the attacker<&>an attacker<&>the attacker<&>the attacker<&>an attacker<&>an attacker over the network<&>a remote attacker<&>an attacker over the network<&>attackers over the network<|>several Android vulnerabilities<|>
+Context Event 8
+exploit<|>exploit<|>an attacker<&>an attacker<&>attackers<&>the attackers<&>The attacker<&>the attacker<&>an attacker<&>the attacker<&>the attacker<&>an attacker<&>an attacker over the network<&>a remote attacker<&>an attacker over the network<&>attackers over the network<|>several Android vulnerabilities<|>
+Context Event 9
+hijack<|>hijack<|>an attacker<&>an attacker<&>attackers<&>the attackers<&>The attacker<&>the attacker<&>an attacker<&>the attacker<&>the attacker<&>an attacker<&>an attacker over the network<&>a remote attacker<&>an attacker over the network<&>attackers over the network<|>the network where the targeted victim resides<|>
+Context Event 10
+choose<|>choose<|>an attacker<&>an attacker<&>attackers<&>the attackers<&>The attacker<&>the attacker<&>an attacker<&>the attacker<&>the attacker<&>an attacker<&>an attacker over the network<&>a remote attacker<&>an attacker over the network<&>attackers over the network<|><|>
+Context Event 11
+launch<|>launch<|>an attacker<&>an attacker<&>attackers<&>the attackers<&>The attacker<&>the attacker<&>an attacker<&>the attacker<&>the attacker<&>an attacker<&>an attacker over the network<&>a remote attacker<&>an attacker over the network<&>attackers over the network<|>remotely<&>different attacks<|>on+target devices
+Context Event 12
+enables<|>enable<|>The left panel<|>an attacker<&>an attacker<&>attackers<&>the attackers<&>The attacker<&>the attacker<&>an attacker<&>the attacker<&>the attacker<&>an attacker<&>an attacker over the network<&>a remote attacker<&>an attacker over the network<&>attackers over the network<|>
+Context Event 13
+uploading<|>upload<|>an attacker<&>an attacker<&>attackers<&>the attackers<&>The attacker<&>the attacker<&>an attacker<&>the attacker<&>the attacker<&>an attacker<&>an attacker over the network<&>a remote attacker<&>an attacker over the network<&>attackers over the network<|>local files<|>
+Context Event 14
+taking<|>take<|>an attacker<&>an attacker<&>attackers<&>the attackers<&>The attacker<&>the attacker<&>an attacker<&>the attacker<&>the attacker<&>an attacker<&>an attacker over the network<&>a remote attacker<&>an attacker over the network<&>attackers over the network<|>pictures<|>
+Context Event 15
+recording<|>record<|>an attacker<&>an attacker<&>attackers<&>the attackers<&>The attacker<&>the attacker<&>an attacker<&>the attacker<&>the attacker<&>an attacker<&>an attacker over the network<&>a remote attacker<&>an attacker over the network<&>attackers over the network<|>audio/video<|>
+Context Event 16
+manipulating<|>manipulate<|>an attacker<&>an attacker<&>attackers<&>the attackers<&>The attacker<&>the attacker<&>an attacker<&>the attacker<&>the attacker<&>an attacker<&>an attacker over the network<&>a remote attacker<&>an attacker over the network<&>attackers over the network<|>the clipboard<|>
+Context Event 17
+sending<|>send<|>an attacker<&>an attacker<&>attackers<&>the attackers<&>The attacker<&>the attacker<&>an attacker<&>the attacker<&>the attacker<&>an attacker<&>an attacker over the network<&>a remote attacker<&>an attacker over the network<&>attackers over the network<|>SMS<|>
+Context Event 18
+dialing<|>dial<|>an attacker<&>an attacker<&>attackers<&>the attackers<&>The attacker<&>the attacker<&>an attacker<&>the attacker<&>the attacker<&>an attacker<&>an attacker over the network<&>a remote attacker<&>an attacker over the network<&>attackers over the network<|>numbers<|>
+Context Event 19
+implanting<|>implant<|>an attacker<&>an attacker<&>attackers<&>the attackers<&>The attacker<&>the attacker<&>an attacker<&>the attacker<&>the attacker<&>an attacker<&>an attacker over the network<&>a remote attacker<&>an attacker over the network<&>attackers over the network<|>bootkit<|>
+Context Event 20
+installing<|>instal<|>an attacker<&>an attacker<&>attackers<&>the attackers<&>The attacker<&>the attacker<&>an attacker<&>the attacker<&>the attacker<&>an attacker<&>an attacker over the network<&>a remote attacker<&>an attacker over the network<&>attackers over the network<|>the attacker’s apps uploaded to Google Play<|>
+Context Event 21
+manipulate<|>manipulate<|>an attacker<&>an attacker<&>attackers<&>the attackers<&>The attacker<&>the attacker<&>an attacker<&>the attacker<&>the attacker<&>an attacker<&>an attacker over the network<&>a remote attacker<&>an attacker over the network<&>attackers over the network<|>the host application<|>
+Context Event 22
+executing<|>execute<|>an attacker<&>an attacker<&>attackers<&>the attackers<&>The attacker<&>the attacker<&>an attacker<&>the attacker<&>the attacker<&>an attacker<&>an attacker over the network<&>a remote attacker<&>an attacker over the network<&>attackers over the network<|>Java code<|>
+Context Event 23
+hijack<|>hijack<|>an attacker<&>an attacker<&>attackers<&>the attackers<&>The attacker<&>the attacker<&>an attacker<&>the attacker<&>the attacker<&>an attacker<&>an attacker over the network<&>a remote attacker<&>an attacker over the network<&>attackers over the network<|>the HTTP traffic<|>
+Context Event 24
+taking<|>take<|>an attacker<&>an attacker<&>attackers<&>the attackers<&>The attacker<&>the attacker<&>an attacker<&>the attacker<&>the attacker<&>an attacker<&>an attacker over the network<&>a remote attacker<&>an attacker over the network<&>attackers over the network<|>photos<|>
+Context Event 25
+recording<|>record<|>an attacker<&>an attacker<&>attackers<&>the attackers<&>The attacker<&>the attacker<&>an attacker<&>the attacker<&>the attacker<&>an attacker<&>an attacker over the network<&>a remote attacker<&>an attacker over the network<&>attackers over the network<|>video<|>
+Candidate Event 1
+masqueraded<|>masquerade<|>an attacker<&>an attacker<&>attackers<&>the attackers<&>The attacker<&>the attacker<&>an attacker<&>the attacker<&>the attacker<&>an attacker<&>an attacker over the network<&>a remote attacker<&>an attacker over the network<&>attackers over the network<|><|>
+Candidate Event 2
+inject<|>inject<|>an attacker<&>an attacker<&>attackers<&>the attackers<&>The attacker<&>the attacker<&>an attacker<&>the attacker<&>the attacker<&>an attacker<&>an attacker over the network<&>a remote attacker<&>an attacker over the network<&>attackers over the network<|>malicious content<|>into+the WebView
+Candidate Event 3
+obtain<|>obtain<|>an attacker<&>an attacker<&>attackers<&>the attackers<&>The attacker<&>the attacker<&>an attacker<&>the attacker<&>the attacker<&>an attacker<&>an attacker over the network<&>a remote attacker<&>an attacker over the network<&>attackers over the network<|>Administrator privileges<|>
+Candidate Event 4
+identifying<|>identify<|>an attacker<&>an attacker<&>attackers<&>the attackers<&>The attacker<&>the attacker<&>an attacker<&>the attacker<&>the attacker<&>an attacker<&>an attacker over the network<&>a remote attacker<&>an attacker over the network<&>attackers over the network<|>proxy accounts<|>
+Candidate Event 5
+exfiltrated<|>exfiltrated<|>an attacker<&>an attacker<&>attackers<&>the attackers<&>The attacker<&>the attacker<&>an attacker<&>the attacker<&>the attacker<&>an attacker<&>an attacker over the network<&>a remote attacker<&>an attacker over the network<&>attackers over the network<|>files<|>to+the command and control server
+---
+Answer
+3
+Context Event 1
+monitor<|>monitor<|>the attackers<&>they<&>they<&>an attacker<&>an attacker<&>the attackers<&>They<&>the attackers<&>attackers<&>the attackers<&>the attackers<&>an attacker<&>Attackers<&>attackers<&>attackers<&>Attackers<&>attackers<&>they<|>the clipboard contents<&>the clipboard content<&>changes to a clipboard<|>
+Context Event 2
+transfer<|>transfer<|>the attackers<&>they<&>they<&>an attacker<&>an attacker<&>the attackers<&>They<&>the attackers<&>attackers<&>the attackers<&>the attackers<&>an attacker<&>Attackers<&>attackers<&>attackers<&>Attackers<&>attackers<&>they<|>the clipboard contents<&>the clipboard content<&>changes to a clipboard<|>to+some remote server
+Candidate Event 1
+initiate<|>initiate<|>the attackers<&>they<&>they<&>an attacker<&>an attacker<&>the attackers<&>They<&>the attackers<&>attackers<&>the attackers<&>the attackers<&>an attacker<&>Attackers<&>attackers<&>attackers<&>Attackers<&>attackers<&>they<|>communications<|>
+Candidate Event 2
+exfiltrated<|>exfiltrated<|>the attackers<&>they<&>they<&>an attacker<&>an attacker<&>the attackers<&>They<&>the attackers<&>attackers<&>the attackers<&>the attackers<&>an attacker<&>Attackers<&>attackers<&>attackers<&>Attackers<&>attackers<&>they<|>privileged information<|>
+Candidate Event 3
+loaded<|>load<|>the attackers<&>they<&>they<&>an attacker<&>an attacker<&>the attackers<&>They<&>the attackers<&>attackers<&>the attackers<&>the attackers<&>an attacker<&>Attackers<&>attackers<&>attackers<&>Attackers<&>attackers<&>they<|>MiniDuke<&>it<&>the payload<&>the encrypted version of the malware<&>the malware<&>the malware<&>the malware<&>MiniDuke<&>MiniDuke<&>it<&>MiniDuke<&>MiniDuke<|>
+Candidate Event 4
+alter<|>alter<|>the attackers<&>they<&>they<&>an attacker<&>an attacker<&>the attackers<&>They<&>the attackers<&>attackers<&>the attackers<&>the attackers<&>an attacker<&>Attackers<&>attackers<&>attackers<&>Attackers<&>attackers<&>they<|>the clipboard contents<&>the clipboard content<&>changes to a clipboard<|>
+Candidate Event 5
+collected<|>collect<|>the attackers<&>they<&>they<&>an attacker<&>an attacker<&>the attackers<&>They<&>the attackers<&>attackers<&>the attackers<&>the attackers<&>an attacker<&>Attackers<&>attackers<&>attackers<&>Attackers<&>attackers<&>they<|>information on some of their targets<|>
+---

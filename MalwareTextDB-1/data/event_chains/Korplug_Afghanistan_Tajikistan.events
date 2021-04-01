@@ -1,0 +1,78 @@
+---
+Answer
+4
+Context Event 1
+connecting<|>connect<|>this well-known Remote Access Trojan<&>the Korplug RAT (a.k.a .PlugX)<&>the employed Korplug samples<&>Other Korplug samples<&>the Korplug trojan<&>The Korplug RAT<|><|>to+the same C&C domain
+Context Event 2
+connecting<|>connect<|>this well-known Remote Access Trojan<&>the Korplug RAT (a.k.a .PlugX)<&>the employed Korplug samples<&>Other Korplug samples<&>the Korplug trojan<&>The Korplug RAT<|><|>to+a different domain name resolving to the same IPs as notebookhk.net
+Context Event 3
+employing<|>employ<|>two larger scale campaigns<|>this well-known Remote Access Trojan<&>the Korplug RAT (a.k.a .PlugX)<&>the employed Korplug samples<&>Other Korplug samples<&>the Korplug trojan<&>The Korplug RAT<|>
+Context Event 4
+used<|>use<|><|>this well-known Remote Access Trojan<&>the Korplug RAT (a.k.a .PlugX)<&>the employed Korplug samples<&>Other Korplug samples<&>the Korplug trojan<&>The Korplug RAT<|>
+Context Event 5
+use<|>use<|>this well-known Remote Access Trojan<&>the Korplug RAT (a.k.a .PlugX)<&>the employed Korplug samples<&>Other Korplug samples<&>the Korplug trojan<&>The Korplug RAT<|>this side-loading trick<|>
+Context Event 6
+stay<|>stay<|>this well-known Remote Access Trojan<&>the Korplug RAT (a.k.a .PlugX)<&>the employed Korplug samples<&>Other Korplug samples<&>the Korplug trojan<&>The Korplug RAT<|><|>
+Candidate Event 1
+obtain<|>obtain<|>this well-known Remote Access Trojan<&>the Korplug RAT (a.k.a .PlugX)<&>the employed Korplug samples<&>Other Korplug samples<&>the Korplug trojan<&>The Korplug RAT<|>information<|>
+Candidate Event 2
+is<|>be<|>this well-known Remote Access Trojan<&>the Korplug RAT (a.k.a .PlugX)<&>the employed Korplug samples<&>Other Korplug samples<&>the Korplug trojan<&>The Korplug RAT<|>the initial load point for the threat<|>
+Candidate Event 3
+move<|>move<|>this well-known Remote Access Trojan<&>the Korplug RAT (a.k.a .PlugX)<&>the employed Korplug samples<&>Other Korplug samples<&>the Korplug trojan<&>The Korplug RAT<|><|>
+Candidate Event 4
+drops<|>drop<|>this well-known Remote Access Trojan<&>the Korplug RAT (a.k.a .PlugX)<&>the employed Korplug samples<&>Other Korplug samples<&>the Korplug trojan<&>The Korplug RAT<|>the malicious file with the MD5 7731d42b043865559258464fe1c98513<&>This<&>an Epic backdoor<|>
+Candidate Event 5
+loading<|>load<|><|>this well-known Remote Access Trojan<&>the Korplug RAT (a.k.a .PlugX)<&>the employed Korplug samples<&>Other Korplug samples<&>the Korplug trojan<&>The Korplug RAT<|>into+memory
+---
+Answer
+0
+Context Event 1
+manage<|>manage<|>The malware<&>It<|>processes and services on the infected machine<|>
+Context Event 2
+transfer<|>transfer<|>The malware<&>It<|>files<|>to+the C&C server
+Context Event 3
+transfer<|>transfer<|>The malware<&>It<|>files<|>
+Context Event 4
+run<|>run<|>The malware<&>It<|>shell commands<|>
+Candidate Event 1
+connects<|>connect<|>The malware<&>It<|><|>to+www.dicemention.com
+Candidate Event 2
+downloading<|>download<|>The malware<&>It<|>files<|>
+Candidate Event 3
+monitor<|>monitor<|>The malware<&>It<|>the state of the threat<|>
+Candidate Event 4
+including<|>include<|>The malware<&>It<|>screen capture<|>
+Candidate Event 5
+preconfigured<|>preconfigured<|>The malware<&>It<|>the landing pages<|>
+---
+Answer
+4
+Context Event 1
+harvesting<|>harvest<|>This malware<&>it<&>the malware<&>Some samples of this file stealer<|>files<|>
+Context Event 2
+doing<|>do<|>This malware<&>it<&>the malware<&>Some samples of this file stealer<|>a recursive sweep of all logical fixed and remote drives<|>
+Context Event 3
+monitors<|>monitor<|>This malware<&>it<&>the malware<&>Some samples of this file stealer<|>network shares<|>
+Context Event 4
+monitors<|>monitor<|>This malware<&>it<&>the malware<&>Some samples of this file stealer<|>attached removable media<|>
+Context Event 5
+collecting<|>collect<|>This malware<&>it<&>the malware<&>Some samples of this file stealer<|>files<|>
+Context Event 6
+gather<|>gather<|>This malware<&>it<&>the malware<&>Some samples of this file stealer<|>saved passwords<|>
+Context Event 7
+gather<|>gather<|>This malware<&>it<&>the malware<&>Some samples of this file stealer<|>history of visited URLs<|>
+Context Event 8
+gather<|>gather<|>This malware<&>it<&>the malware<&>Some samples of this file stealer<|>account information<|>
+Context Event 9
+gather<|>gather<|>This malware<&>it<&>the malware<&>Some samples of this file stealer<|>proxy information<|>
+Candidate Event 1
+write<|>write<|>This malware<&>it<&>the malware<&>Some samples of this file stealer<|>a malicious payload<&>it<&>the malicious payload<&>the malicious payload<&>the newly created malicious  DLL<&>The malicious DLL file that is dropped<&>the file<&>the file<&>the dropped file<&>the dropped DLL<&>the DLL<|>
+Candidate Event 2
+has<|>have<|>This malware<&>it<&>the malware<&>Some samples of this file stealer<|>basic backdoor functionality<|>
+Candidate Event 3
+infect<|>infect<|>This malware<&>it<&>the malware<&>Some samples of this file stealer<|>Step7 project files, which are used to control Programmable Logic Controllers (PLCs)<|>
+Candidate Event 4
+maintains<|>maintain<|>This malware<&>it<&>the malware<&>Some samples of this file stealer<|>persistence<|>
+Candidate Event 5
+detected<|>detect<|><|>This malware<&>it<&>the malware<&>Some samples of this file stealer<|>
+---

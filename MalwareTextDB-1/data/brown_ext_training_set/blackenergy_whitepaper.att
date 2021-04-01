@@ -1,0 +1,157 @@
+TLP : WHITE BlackEnergy is a toolkit that has been used for years by various criminal outfits . 
+In the summer of 2014 , we noted that certain samples of BlackEnergy malware began targeting Ukranian government organizations for information harvesting . 
+These samples were identified as being the work of one group , referred to in this document as `` Quedagh '' , which has a history of targeting political organizations . 
+The Quedagh-related customizations to the BlackEnergy malware include support for proxy servers and use of techniques to bypass User Account Control and driver signing features in 64-bit Windows systems . 
+While monitoring BlackEnergy samples , we also uncovered a new variant used by this group . 
+We named this new variant BlackEnergy 3 . 
+The use of BlackEnergy for a politically-oriented attack is an intriguing convergence of criminal activity and espionage . 
+As the kit is being used by multiple groups , it provides a greater measure of plausible deniability than is afforded by a custom- made piece of code . 
+F-SECURE LABS SECURITY RESPONSE Malware Analysis Whitepaper BlackEnergy is a popular crimeware ( that is , malware designed to automate criminal activities ) that is sold in the Russian cyber underground and dates back to as early as 2007 . 
+Originally , it was designed as a toolkit for creating botnets for use in conducting Distributed Denial of Service ( DDoS ) attacks . 
+Over time , the malware has evolved to support different plugins , which are used to extend its capabilities to provide necessary functions , depending on the purpose of an attack . 
+Given the nature of its toolkit , BlackEnergy has unsurprisingly been used by different gangs for different purposes ; some use it for sending spam , others for stealing banking credentials . 
+The most notorious use may be when it was used to conduct cyberattacks against Georgia during the Russo-Georgian confrontation in 2008 . 
+In the summer of 2014 , BlackEnergy caught our attention when we noticed that samples of it were now tailored to target Ukrainian government institutions . 
+Though it may be unrelated , it is interesting to note that this change conveniently coincides with the on-going crisis in that country . 
+Related or not , one thing is certain : the actor ( s ) using these customized BlackEnergy malware are intent on stealing information from the targets . 
+The use of this crimeware in what constitutes as an advance persistent threat ( APT ) attack is interesting . 
+In 'black operations' ( black ops ) , an important criteria is that the attack should not be attributable - and what provides better plausible deniability than crimeware known to be used by multiple parties ? In this paper we focus only on BlackEnergy samples known to be used specifically by the actors we identify as Quedagh , who seem to have a particular interest in political targets . 
+Special focus will be on the samples that were used in targeted attacks against Ukrainian government organizations earlier this year . 
+ATTACK OVERVIEW At the time of writing , we have little information on how exactly victims are receiving the BlackEnergy malware being pushed by the Quedagh gang . 
+An educated guess is that they are receiving the malware via targeted emails containing malicious attachments . 
+Meanwhile , the following infection and technical details are based on samples gathered after searching through F-Secure Labs ' collection of all BlackEnergy samples and identifying those with Quedagh characteristics . 
+The BlackEnergy toolkit comes with a builder application which is used to generate the clients that the attacker ( s ) use to infect victim machines . 
+The toolkit also comes with server-side scripts , which the attackers set up in the command and control ( C & C ) server . 
+The scripts also provide an interface where an attacker can control his bots . 
+The simplicity and convenience provided by the toolkit means that anyone who has access to the kit can build his own botnet without any skills required . 
+The original BlackEnergy toolkit first emerged in 2007 and is referred to in this paper as BlackEnergy 1 . 
+A later variant of the toolkit ( BlackEnergy 2 ) was released in 2010 . 
+We also encountered a previously unseen variant , which had been rewritten and uses a different format for its configuration . 
+It also no longer uses a driver component . 
+We dubbed this new variant BlackEnergy 3 . 
+Most of the recent BlackEnergy installers collected are named msiexec.exe . 
+We believe they are either dropped by another executable that uses social engineering tricks to mislead the user into executing the installer , or by documents containing exploits that silently perform the installation . 
+We found at least 2 trojanized legitimate applications that execute the installer ( in addition to their legitimate tasks ) . 
+Trojanization is an effective infection method , as most users have no way of observing that a malicious component is being installed in tandem with a legitimate program . 
+Some earlier installer variants , then named regedt32 . 
+exe , were distributed by documents exploiting software vulnerabilities , one of which was CVE-2010-3333 . 
+These documents drop and execute the installer , then open a decoy document . 
+It is reasonable to assume that a similar approach has been used to deliver the more recent installer variants . 
+The installer filename of BlackEnergy 3 is still msiexec.exe . 
+However , it is delivered and executed by a dropper which opens a decoy document in the foreground . 
+We also encountered a standalone , non-persistent sample that pretends to be Adobe Flash Player Installer . 
+It does not use any decoy document or application and does not run after reboot . 
+The overview below summarizes the various infection vectors used by the Quedagh gang to deliver BlackEnergy crimeware to the designated targets . 
+From the very earliest variants we were able to attribute to Quedagh , we have noticed that their targets have been political in nature . 
+Apart from other indicators , we can deduce the nature of the target based on the content of social engineering tactics used to distribute the installers . 
+For example , one decoy dropped from a sample dating to 2012 ( image 2 ) seems to be targeting European audiences and discusses a political/economic situation . 
+Strings found in another sample from 2012 ( image 3 ) again indicate a political motivation behind the attack . 
+Most decoys used content taken from news sites ; we noted one decoy dropped by an exploit document was created using the Russian version of Office ( image 4 ) . 
+The latest variant of the dropper pretends to be a document file with a Ukrainian filename ( image 5 ) . 
+The choice of language for the filename again may tie in or reference the current political crisis in that country . 
+The filename itself means 'password list ' in English . 
+During our investigation , we found interesting details that lead us to suspect that Quedagh might have been involved in the cyberattacks launched against Georgia during the 2008 Russo-Georgian confrontation . 
+While the details identified are suggestive , they are not conclusive ; they do however seem consistent with the group's involvement in subsequent targeted attacks . 
+While examining the samples collected during our BlackEnergy monitoring , we noticed that samples from this year had been updated to support the use of proxy servers while connecting to their C & C servers . 
+This contrasts with earlier BlackEnergy 2 variants , which do not support proxy servers . 
+In some network setups , a proxy server is needed to allow internal users to access the Internet . 
+BlackEnergy¹s use of a proxy server may indicate that the gang has prior knowledge of the target organization 's internal setup to note of this requirement . 
+For example , in one sample the configuration uses the proxy server associated with the Ukrainian Railway ( image 6 ) . 
+The configuration from another sample also shows it using an internal proxy under the giknpc domain ( image 7 ) . 
+The domain giknpc.com.ua in turn hosts 3 domains ( image 8 ) , one of which is for the city of Dnipropetrovsk ( image 9 ) , the fourth-largest city in Ukraine , located in the southeast . 
+Based on the set proxy servers for the different samples , we concluded that the gang is targeting Ukrainian government organizations . 
+Although they may have started much earlier , the earliest BlackEnergy sample we could attribute to the Quedagh gang is from December 14 , 2010 . 
+Initially , the group seemed to prefer to use the filename of the Windows registry editor ( regedt32.exe ) , presumably because the installer needs administrator rights to install its driver component and therefore would try to request for the highest available rights ( image 10 ) , if possible . 
+As this triggers a notification message visible to the user , said user is more likely to grant permission if it appears to be the registry editor that is requesting for permission , since it is normal to run it with administrator rights . 
+Experienced users though are less likely to be taken in , thereby decreasing the likelihood of a successful infection . 
+Starting April 2013 , modified installers appeared showing that the Quedagh group found a way to bypass the default User Account Control ( UAC ) settings . 
+With this change , the user 's permission is no longer need ( image 11 ) . 
+At this point , the gang also began to use the Windows installer program filename msiexec.exe . 
+Within a month of Windows 8.1 's release , the gang had quickly added support for 64-bit systems , possibly anticipating that more of their target systems will be migrated to 64-bit systems . 
+They also employ a neat trick to bypass the driver signing requirement on 64- bit Windows systems . 
+As a side note , this latest finding updates and supercedes previously published research related to BlackEnergy 's driver signing behavior . 
+However , this trick does n't work on Windows 8 and later systems . 
+The driver also crashes occassionally . 
+This could be the reason for the stand-alone non-persistent BlackEnergy variant . 
+We identified the new BlackEnergy 3 variant first by the change in its configuration , which differed from those of its two predecessors , 1 and 2 ( images 12 to 14 ) . 
+It also no longer uses a driver component [ 3 ] . 
+Further technical details are documented on page 10 to 11 . 
+The malware will only attempt to infect a system if the current user is a member of the local administrator group . 
+If not , it will re-launch itself as Administrator on Vista . 
+This in effect will trigger a UAC prompt . 
+On Windows 7 and later however , the malware will attempt to bypass the default UAC settings . 
+It exploits a backward-compatibility feature found in newer versions of Windows . 
+BlackEnergy installers include a Shim Database , or a `` fix '' , instructing SndVol.exe to execute cmd.exe ( image 15 , below ) instead in order to resolve the incompatibility . 
+SndVol.exe is one of the Windows executables that will be automatically elevated upon execution because it is thought to be safe . 
+What harm can a volume control cause ? With the malicious `` fix '' installed however , executing SndVol.exe will execute the not-so-safe file cmd.exe instead , which can then be used to install the malware while in an elevated state . 
+The role of the installer is to set up the malware's persistent component , which is the driver component . 
+On 64-bit Windows systems , Microsoft has enforced a policy that requires all drivers to be signed as a security precaution . 
+Signing provides a way to identify a driver to its author , effectively reducing the number of malware developers willing to take the risk . 
+To allow developers to test their drivers during development , Microsoft provides a TESTSIGNING boot configuration option ; while in this mode , a watermark is displayed on the screen to make it obvious to users and to prevent malware from exploiting this option . 
+BlackEnergy enables the TESTSIGNING option to load its driver component ; to hide this change from the user , the malware removes the watermark by removing the relevant strings in the user32.dll.mui of the system . 
+In Windows 8 and up however , the strings are no longer stored in user32.dll.mui , so the trick will not work . 
+This may be one of the reasons for the existence of a standalone non- persistent BlackEnergy variant . 
+The malware does not infect 64-bit Windows systems that are older than Vista . 
+The installer will try to locate an existing driver service that is inactive . 
+The service found will usually be a legitimate one that is disabled because it is no longer used or because it is set to start only on demand . 
+The installer will drop the driver component using the corresponding path of the service . 
+It will overwrite the existing driver if necessary . 
+The hijacked service is then set to start automatically . 
+This is how the malware is able to survive after a reboot . 
+By doing this , the gang may be hoping that their malicious driver will be overlooked by administrators or investigators who are so used to seeing those legitimate services . 
+The only component that will remain permanently on the infected system will be the driver component . 
+The driver component used by the gang is a stripped down version of the BlackEnergy 2 driver . 
+The sole purpose of this driver component is to inject the main DLL component into svchost.exe . 
+Interestingly , it does not contain the rootkit functionalities for hiding processes , files and registry objects that is found in the usual BlackEnergy 2 drivers . 
+The gang may have opted for a 'hide in plain sight ' approach to evade detections from rootkit scanners , such as GMER and RootkitRevealer , that checks for system anomalies . 
+The driver component provides a IOCTL interface to communicate with the main DLL component . 
+Table 1 ( above ) summarizes the command codes that can be passed to the IOCTL buffer . 
+The 32-bit version contains additional , incomplete routines for hiding processes via direct kernel object manipulation ( DKOM ) and managing BlackEnergy 2 rootkit rules in memory . 
+BlackEnergy 2 was very well documented by Dell SecureWorks [ 5 ] in 2010 . 
+Table 2 ( above ) summarizes the differences between the driver component used by Quedagh compared to the typical BlackEnergy 2 . 
+The core functionality of BlackEnergy 2 is found in the main DLL component . 
+This component is embedded inside the driver component and is not found in the file system ; this is to reduce the infection footprint on the system . 
+The main DLL provides a robust framework for attackers to maintain a botnet that is not tied to any specific functionality . 
+The malware is designed to be used by loading customized plugins depending on the purpose of the botmaster . 
+It is mainly a framework for plugins to communicate with a central command and control . 
+Otherwise , the main DLL only provides a minimal set of commands . 
+Table 3 ( above ) summarizes the commands supported by the variants used in the attack against Ukrainian government organizations . 
+In BlackEnergy 2 , the main DLL component communicates with its plugins via a defined set of API calls . 
+It exports a number of function calls , which can be used by the plugins . 
+On the other hand , plugins are required to export 2 functions to work . 
+We highly recommend the research of Dell SecureWorks for those looking for more details regarding the BlackEnergy 2 plugin framework . 
+In contrast to previous variants , BlackEnergy 3 uses a simpler installer component . 
+It does not have a driver component and the installer drops the main DLL component directly to the local application data ( non- roaming ) folder . 
+The installer then creates a LNK file in the startup folder , using a filename generated based on the volume serial number as a launch point . 
+The LNK file is a shortcut to execute the main DLL using rundll32.exe . 
+This variant uses a new configuration format . 
+The configuration data is a series of X509_ASN encoded values and are accessed by an ID number . 
+Table 4 summarizes the fields and their equivalent BlackEnergy 2 XML node , while table 5 lists the completely new set of commands used in this latest variant . 
+BlackEnergy 3 also uses a different method of communication with its plugins , as it now communicates via RPC over the named-pipe protocol ( ncacn_np ) . 
+Since the main DLL component offers little clue as to what the malware was used for , we need to look at the plugin to determine the objective of the gang . 
+One particular plugin that was used in the campaign was called `` si '' , perhaps to mean 'steal information ' . 
+The latest sample we found will attempt to gather the following information and send them to the C & C server : The nature of the information being gathered seems to be generic rather than targeted . 
+This may be because the malware has roots from crimeware . 
+The information is still useful however as such data makes it easier for the gang to plan any further attacks on the same targets . 
+Main DLL process configuration data embedded 1 in its body ; will only process fields related to communication . 
+BlackEnergy 2 configuration may also contain initial commands to execute . 
+2 Main DLL reports to C & C . 
+Main DLL processes the configuration data 3 returned by the C & C . 
+This time , it processes fields related to plugins and commands . 
+BlackEnergy communicates with its C & C server via HTTP POST requests . 
+For the BlackEnergy 2 samples used by the gang , the request contains the following fields : Where : • bot_id is equivalent to the infected host name and the volume serial number following the format x [ host_name ] _ [ serial_no ] ( e.g . 
+xJOE- PC_484DA98A ) • build_id is the string found in the build_id field in the sample 's configuration data • x , y , z are hardcoded values which varies among samples The fields are almost the same for BlackEnergy 3 samples : The only major difference is that the id field contain just the hash instead of the actual string . 
+The actual bot_id string in which the id hash is derived is also a bit different ; it now uses the format [ domain_sid ] _ [ host_name ] _ [ serial_no ] . 
+The response of the command and control server will be encrypted using the id field in the POST request as the key . 
+After the response is decrypted , it will be in the form of the corresponding configuration data of the BlackEnergy sample ; for example , BlackEnergy 2 samples expect the decrypted response to be a XML document , while BlackEnergy 3 samples expect the decrypted response to be a series X509_ASN encoded values . 
+The decrypted response , which is equivalent to another configuration data , will be processed similar to the initial configuration data embedded in the main DLL ; the only differences are the data fields that are processed . 
+This cycle is illustrated in diagram 3 ( above ) . 
+The main DLL also uses the fields listed in table 6 ( above ) when it needs to download additional files . 
+BlackEnergy is a toolkit that has been used for years by various criminal outfits . 
+In the summer of 2014 , we noted that certain samples of BlackEnergy malware began targeting Ukranian government organizations for information harvesting . 
+These samples were identified as being the work of one group , referred to in this document as `` Quedagh '' , which has a history of targeting political organizations . 
+Though inconclusive , suggestive details indicate that BlackEnergy malware , possibly also from this gang , may also have been used in the Russo-Georgian confrontation in 2008 . 
+The Quedagh-customizations to the BlackEnergy malware include support for proxy servers ( which , in the samples examined are associated with Ukrainian entities ) and use of techniques to bypass User Account Control and driver signing features in 64-bit Windows systems . 
+While monitoring BlackEnergy samples , we also encountered a new variant , which we dub BlackEnergy 3 , with a modified configuration , no driver component and a different installation procedure . 
+The use of BlackEnergy for a politically-oriented attack is an intriguing convergence of criminal activity and espionage . 
+As the kit is being used by multiple groups , it provides a greater measure of plausible deniability than is afforded by a custom-made piece of code . 
