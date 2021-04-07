@@ -1,46 +1,113 @@
-import numpy as np
 from os import listdir
-
-dataset_path = './MalwareTextDB-1/data'
-annotations_path = dataset_path + "/plaintext/"
-
-
-def read_filenames():
-    fn = listdir(annotations_path)
-    return fn
+from os import path
+import xml.etree.ElementTree as et
 
 
-def get_filename_list(start, end, entire_filename_list):
-    altered_filename_list = []
-    for index in range(start, end):
-        filename = entire_filename_list[index]
-        altered_filename_list.append(filename)
-    return altered_filename_list
+class DataProcessing:
+    def __init__(self):
+        self.dataset_path = './MalwareTextDB-1/data'
+        self.plaintext_path = self.dataset_path + "/plaintext/"
+        self.annotations_path = self.dataset_path + "/annotations/"
+        self.tokenized_path = self.dataset_path + "/tokenized/"
 
+        self.train_token_file_contents = None
+        self.test_plaintext_file_content = None
 
-def read_files(filenames):
-    filename_content_dict = {}
-    for filename in filenames:
+    def read_ann_txt_filenames(self):
+        all_fns = listdir(self.annotations_path)
+        fn = []
+        for filename in all_fns:
+            if filename.endswith('.txt'):
+                fn.append(filename)
+        return fn
+
+    def read_plaintext_filenames(self):
+        all_fns = listdir(self.plaintext_path)
+        return all_fns
+
+    def get_filename_list(self, start, end, entire_filename_list):
+        altered_filename_list = []
+        for index in range(start, end):
+            filename = entire_filename_list[index]
+            altered_filename_list.append(filename)
+        return altered_filename_list
+
+    def read_plaintext_file_contents(self, filenames):
+        filename_content_dict = {}
+        for filename in filenames:
+            filepath = self.plaintext_path + filename
+            with open(filepath) as file_driver:
+                file_content = file_driver.readlines()
+                filename_content_dict[filename] = file_content
+        return filename_content_dict
+
+    def read_tokenized_file_contents(self, filenames):
+        filename_token_content_dict = {}
+        for file in filenames:
+            # pre, ext = path.splitext(file)
+            fileparts = file.split('.')
+            filename = '.'.join(fileparts[:-2])
+            token_filename = filename + '.tokens'
+            token_fpath = self.tokenized_path + token_filename
+
+            with open(token_fpath) as file_content:
+                token_content = file_content.readlines()
+                filename_token_content_dict[filename] = token_content
+        return filename_token_content_dict
+
+    def read_ann_xml_files(self, filenames):
+        ''' filename = 'Compromise_Greece_Beijing.txt'
         filepath = annotations_path + filename
-        with open(filepath) as file_driver:
-            file_content = file_driver.readlines()
-            filename_content_dict[filename] = file_content
-            # print("This is the file content")
-            # print(file_content)
-    return filename_content_dict
+        DOMTree = xml.dom.minidom.parse(filepath, encoding='utf-8')
+        print(DOMTree)'''
+
+        parser = et.XMLParser(encoding="UTF-8")
+        for filename in filenames:
+            # filename = 'Compromise_Greece_Beijing.xml'
+            filename = 'Compromise_Greece_Beijing_2.txt'
+            filepath = self.annotations_path + filename
+            tree = et.parse(filepath, parser=parser)
+            print(tree)
+
+            # with open(filepath) as file_driver:
+            #    file_content = file_driver.read()
+            #    print(type(file_content))
+            #    #file_content_lines = file_driver.readlines()
+            #    tree = et.parse(file_content, parser=parser)
+            #   print(tree)
+
+    def data_processing_main(self):
+        filenames = self.read_plaintext_filenames()
+        number_filenames = len(filenames)
+        train_number = 25
+        test_number = 14
+        eval_number = number_filenames - train_number - test_number
+        # get train filename list
+        train_filenames = self.get_filename_list(0, train_number, filenames)
+        self.train_token_file_contents = self.read_tokenized_file_contents(train_filenames)
+
+        # get test filename list
+        test_filenames = self.get_filename_list(train_number, train_number + test_number, filenames)
+        self.test_plaintext_file_content = self.read_plaintext_file_contents(test_filenames)
+        # test_file_content = read_files(test_filenames)
 
 
-filenames = read_filenames()
-number_filenames = len(filenames)
-train_number = 25
-test_number = 14
-eval_number = number_filenames - train_number - test_number
-# get train filename list
-train_filenames = get_filename_list(0, train_number, filenames)
-train_file_content = read_files(train_filenames)
+if __name__ == '__main__':
+    dp = DataProcessing()
+    dp.data_processing_main()
 
+'''
+Complete by tomorrow
+Things to do:
+1. read xml files and read the lines before the footer
+2. split each line from one word into separate line and every line should be separated by an empty line
+3. Save the above files in a folder called evaluations or something
+4. Write the evaluation script that compared this generated file with the one already created
 
-# get test filename list
-test_filenames = get_filename_list(train_number, train_number + test_number, filenames)
-test_file_content = read_files(test_filenames)
+For training:
+Read the tokens file, combine every line along with the tags and BIO tagging, don't consider the txt files
+Do the training with CRFs
 
+leetcode:
+Prep for tuesday interview
+'''
