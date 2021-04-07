@@ -105,8 +105,9 @@ Things to do:
 4. Write the evaluation script that compared this generated file with the one already created
 
 For training:
-Read the tokens file, combine every line along with the tags and BIO tagging, don't consider the txt files
-Do the training with CRFs
+1. Read the tokens file, combine every line along with the tags and BIO tagging, don't consider the txt files
+2. Do the training with CRFs
+3. combine the train sentences
 
 leetcode:
 Prep for tuesday interview
