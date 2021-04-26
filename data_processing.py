@@ -11,7 +11,7 @@ class DataProcessing:
         self.tokenized_path = self.dataset_path + "/tokenized/"
 
         self.train_token_file_contents = None
-        self.test_plaintext_file_content = None
+        self.test_token_file_contents = None
 
     def read_ann_txt_filenames(self):
         all_fns = listdir(self.annotations_path)
@@ -79,8 +79,8 @@ class DataProcessing:
     def data_processing_main(self):
         filenames = self.read_plaintext_filenames()
         number_filenames = len(filenames)
-        train_number = 25
-        test_number = 14
+        train_number = 3
+        test_number = 1
         eval_number = number_filenames - train_number - test_number
         # get train filename list
         train_filenames = self.get_filename_list(0, train_number, filenames)
@@ -88,7 +88,7 @@ class DataProcessing:
 
         # get test filename list
         test_filenames = self.get_filename_list(train_number, train_number + test_number, filenames)
-        self.test_plaintext_file_content = self.read_plaintext_file_contents(test_filenames)
+        self.test_token_file_contents = self.read_tokenized_file_contents(test_filenames)
         # test_file_content = read_files(test_filenames)
 
 
@@ -108,7 +108,4 @@ For training:
 1. Read the tokens file, combine every line along with the tags and BIO tagging, don't consider the txt files
 2. Do the training with CRFs
 3. combine the train sentences
-
-leetcode:
-Prep for tuesday interview
 '''
