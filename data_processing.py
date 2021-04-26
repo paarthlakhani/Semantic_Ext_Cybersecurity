@@ -52,6 +52,7 @@ class DataProcessing:
 
             with open(token_fpath) as file_content:
                 token_content = file_content.readlines()
+                #token_content = file_content.read()
                 filename_token_content_dict[filename] = token_content
         return filename_token_content_dict
 
@@ -79,8 +80,8 @@ class DataProcessing:
     def data_processing_main(self):
         filenames = self.read_plaintext_filenames()
         number_filenames = len(filenames)
-        train_number = 3
-        test_number = 1
+        train_number = 10
+        test_number = 10
         eval_number = number_filenames - train_number - test_number
         # get train filename list
         train_filenames = self.get_filename_list(0, train_number, filenames)
