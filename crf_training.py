@@ -26,30 +26,69 @@ class CRFTraining:
 
         features = {
             'postag': pos_tag,
-            'word.lower()': word.lower()
+            'postag[:2]': pos_tag[:2],
+            'word.lower()': word.lower(),
+            'word': word,
+            'word[-3:]': word[-3:],
+            'word[-2:]': word[-2:],
+            'word.isupper()': word.isupper(),
+            'word.istitle()': word.istitle(),
+            'word.isdigit()': word.isdigit()
         }
 
         if i != total_length - 1:
             if i >= 1:
                 if self.train_table_word_attrs[i - 1] != '\n':
-                    word_before = self.train_table_word_attrs[i - 1][0].split()[0]
-                    features['unigram_before'] = word_before
+                    previous_word_attr = self.train_table_word_attrs[i - 1][0].split()
+                    word_before = previous_word_attr[0]
+                    features['word_unigram_before'] = word_before
+                    features['-1:word.lower()'] = word_before.lower()
+                    features['-1:word.istitle()'] = word_before.istitle()
+                    features['-1:word.isupper()'] = word_before.isupper()
+                    features['pos_unigram_before'] = previous_word_attr[1]
+                    features['-1:postag[:2]']: previous_word_attr[1][:2]
             if i >= 2:
                 if self.train_table_word_attrs[i - 1] != '\n' and self.train_table_word_attrs[i - 2] != '\n':
-                    word_before_1 = self.train_table_word_attrs[i - 1][0].split()[0]
-                    word_before_2 = self.train_table_word_attrs[i - 2][0].split()[0]
+                    previous_word_attr_1 = self.train_table_word_attrs[i - 1][0].split()
+                    previous_word_attr_2 = self.train_table_word_attrs[i - 2][0].split()
+                    word_before_1 = previous_word_attr_1[0]
+                    word_before_2 = previous_word_attr_2[0]
                     bigram_before = word_before_1 + " " + word_before_2
-                    features['bigram_before'] = bigram_before
+                    #bigram_before = word_before_2
+                    features['word_bigram_before'] = bigram_before
+                    features['-2:word.lower()'] = bigram_before.lower()
+                    features['-2:word.istitle()'] = bigram_before.istitle()
+                    features['-2:word.isupper()'] = bigram_before.isupper()
+                    features['pos_bigram_before'] = previous_word_attr_1[1] + " " + previous_word_attr_2[1]
+                    #features['pos_bigram_before'] = previous_word_attr_2[1]
+                    #features['-2:postag[:2]']: previous_word_attr_2[1][:2]
+                    features['-2:postag[:2]']: previous_word_attr_1[1][:2] + " " + previous_word_attr_2[1][:2]
             if i <= total_length - 2:
                 if self.train_table_word_attrs[i + 1] != '\n':
-                    word_after = self.train_table_word_attrs[i + 1][0].split()[0]
-                    features['unigram_after'] = word_after
+                    next_word_attr = self.train_table_word_attrs[i + 1][0].split()
+                    word_after = next_word_attr[0]
+                    features['word_unigram_after'] = word_after
+                    features['+1:word.lower()'] = word_after.lower()
+                    features['+1:word.istitle()'] = word_after.istitle()
+                    features['+1:word.isupper()'] = word_after.isupper()
+                    features['pos_unigram_after'] = next_word_attr[1]
+                    features['+1:postag[:2]']: next_word_attr[1][:2]
             if i <= total_length - 3:
                 if self.train_table_word_attrs[i + 1] != '\n' and self.train_table_word_attrs[i + 2] != '\n':
-                    word_after_1 = self.train_table_word_attrs[i + 1][0].split()[0]
-                    word_after_2 = self.train_table_word_attrs[i + 2][0].split()[0]
+                    next_word_attr_1 = self.train_table_word_attrs[i + 1][0].split()
+                    next_word_attr_2 = self.train_table_word_attrs[i + 2][0].split()
+                    word_after_1 = next_word_attr_1[0]
+                    word_after_2 = next_word_attr_2[0]
                     bigram_after = word_after_1 + " " + word_after_2
-                    features['bigram_after'] = bigram_after
+                    #bigram_after = word_after_2
+                    features['word_bigram_after'] = bigram_after
+                    features['+2:word.lower()'] = bigram_after.lower()
+                    features['+2:word.istitle()'] = bigram_after.istitle()
+                    features['+2:word.isupper()'] = bigram_after.isupper()
+                    features['pos_bigram_after'] = next_word_attr_1[1] + " " + next_word_attr_2[1]
+                    #features['pos_bigram_after'] = next_word_attr_2[1]
+                    #features['+2:postag[:2]']: next_word_attr_2[1][:2]
+                    features['+2:postag[:2]']: next_word_attr_1[1][:2] + " " + next_word_attr_2[1][:2]
         return features
 
     def word2features_test(self, i):
@@ -62,31 +101,69 @@ class CRFTraining:
 
         features = {
             'postag': pos_tag,
-            'word.lower()': word.lower()
+            'postag[:2]': pos_tag[:2],
+            'word.lower()': word.lower(),
+            'word': word,
+            'word[-3:]': word[-3:],
+            'word[-2:]': word[-2:],
+            'word.isupper()': word.isupper(),
+            'word.istitle()': word.istitle(),
+            'word.isdigit()': word.isdigit()
         }
 
         if i != total_length - 1:
             if i >= 1:
                 if self.test_table_word_attrs[i - 1] != '\n':
-                    word_before = self.test_table_word_attrs[i - 1][0].split()[0]
-                    features['unigram_before'] = word_before
+                    previous_word_attr = self.test_table_word_attrs[i - 1][0].split()
+                    word_before = previous_word_attr[0]
+                    features['word_unigram_before'] = word_before
+                    features['-1:word.lower()'] = word_before.lower()
+                    features['-1:word.istitle()'] = word_before.istitle()
+                    features['-1:word.isupper()'] = word_before.isupper()
+                    features['pos_unigram_before'] = previous_word_attr[1]
+                    features['-1:postag[:2]']: previous_word_attr[1][:2]
             if i >= 2:
                 if self.test_table_word_attrs[i - 1] != '\n' and self.test_table_word_attrs[i - 2] != '\n':
-                    word_before_1 = self.test_table_word_attrs[i - 1][0].split()[0]
-                    word_before_2 = self.test_table_word_attrs[i - 2][0].split()[0]
+                    previous_word_attr_1 = self.test_table_word_attrs[i - 1][0].split()
+                    previous_word_attr_2 = self.test_table_word_attrs[i - 2][0].split()
+                    word_before_1 = previous_word_attr_1[0]
+                    word_before_2 = previous_word_attr_2[0]
                     bigram_before = word_before_1 + " " + word_before_2
-                    features['bigram_before'] = bigram_before
+                    #bigram_before = word_before_2
+                    features['word_bigram_before'] = bigram_before
+                    features['-2:word.lower()'] = bigram_before.lower()
+                    features['-2:word.istitle()'] = bigram_before.istitle()
+                    features['-2:word.isupper()'] = bigram_before.isupper()
+                    features['pos_bigram_before'] = previous_word_attr_1[1] + " " + previous_word_attr_2[1]
+                    #features['pos_bigram_before'] = previous_word_attr_2[1]
+                    #features['-2:postag[:2]']: previous_word_attr_2[1][:2]
+                    features['-2:postag[:2]']: previous_word_attr_1[1][:2] + " " + previous_word_attr_2[1][:2]
             if i <= total_length - 2:
                 if self.test_table_word_attrs[i + 1] != '\n':
-                    word_after = self.test_table_word_attrs[i + 1][0].split()[0]
-                    features['unigram_after'] = word_after
+                    next_word_attr = self.test_table_word_attrs[i + 1][0].split()
+                    word_after = next_word_attr[0]
+                    features['word_unigram_after'] = word_after
+                    features['+1:word.lower()'] = word_after.lower()
+                    features['+1:word.istitle()'] = word_after.istitle()
+                    features['+1:word.isupper()'] = word_after.isupper()
+                    features['pos_unigram_after'] = next_word_attr[1]
+                    features['+1:postag[:2]']: next_word_attr[1][:2]
             if i <= total_length - 3:
                 if self.test_table_word_attrs[i + 1] != '\n' and self.test_table_word_attrs[i + 2] != '\n':
-                    word_after_1 = self.test_table_word_attrs[i + 1][0].split()[0]
-                    word_after_2 = self.test_table_word_attrs[i + 2][0].split()[0]
+                    next_word_attr_1 = self.test_table_word_attrs[i + 1][0].split()
+                    next_word_attr_2 = self.test_table_word_attrs[i + 2][0].split()
+                    word_after_1 = next_word_attr_1[0]
+                    word_after_2 = next_word_attr_2[0]
                     bigram_after = word_after_1 + " " + word_after_2
-                    features['bigram_after'] = bigram_after
-
+                    #bigram_after = word_after_2
+                    features['word_bigram_after'] = bigram_after
+                    features['+2:word.lower()'] = bigram_after.lower()
+                    features['+2:word.istitle()'] = bigram_after.istitle()
+                    features['+2:word.isupper()'] = bigram_after.isupper()
+                    features['pos_bigram_after'] = next_word_attr_1[1] + " " + next_word_attr_2[1]
+                    #features['pos_bigram_after'] = next_word_attr_2[1]
+                    #features['+2:postag[:2]']: next_word_attr_2[1][:2]
+                    features['+2:postag[:2]']: next_word_attr_1[1][:2] + " " + next_word_attr_2[1][:2]
         return features
 
     def create_x_train(self):
@@ -126,7 +203,7 @@ class CRFTraining:
             algorithm='lbfgs',
             c1=0.1,
             c2=0.1,
-            max_iterations=100,
+            max_iterations=1000,
             all_possible_transitions=True
         )
 
@@ -140,6 +217,14 @@ class CRFTraining:
         labels.remove('O')
         y_pred = self.crf_model.predict(x_test)
         print(metrics.flat_f1_score(y_test, y_pred, average='weighted', labels = labels))
+
+        sorted_labels = sorted(
+            labels,
+            key=lambda name: (name[1:], name[0])
+        )
+        print(metrics.flat_classification_report(
+            y_test, y_pred, labels=sorted_labels, digits=3
+        ))
 
         #metrics.flat_f1_score(y_test, y_pred, average='weighted', labels = labels)
 
