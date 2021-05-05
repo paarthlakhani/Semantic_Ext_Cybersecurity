@@ -1,6 +1,21 @@
 from os import listdir
 from os import path
 import xml.etree.ElementTree as et
+import numpy as np
+from io import StringIO
+
+
+def sequence_label_dict():
+    seq_label = {
+        "O": 0,
+        "B-Action": 1,
+        "I-Action": 2,
+        "B-Entity": 3,
+        "I-Entity": 4,
+        "B-Modifier": 5,
+        "I-Modifier": 6
+    }
+    return seq_label
 
 
 class DataProcessing:
@@ -12,6 +27,7 @@ class DataProcessing:
 
         self.train_token_file_contents = None
         self.test_token_file_contents = None
+        self.seq_label = sequence_label_dict()
 
     def read_ann_txt_filenames(self):
         all_fns = listdir(self.annotations_path)
@@ -54,6 +70,7 @@ class DataProcessing:
                 token_content = file_content.readlines()
                 #token_content = file_content.read()
                 filename_token_content_dict[filename] = token_content
+
         return filename_token_content_dict
 
     def read_ann_xml_files(self, filenames):
@@ -80,8 +97,8 @@ class DataProcessing:
     def data_processing_main(self):
         filenames = self.read_plaintext_filenames()
         number_filenames = len(filenames)
-        train_number = 10
-        test_number = 10
+        train_number = 30 # 25
+        test_number = 9 # 14
         eval_number = number_filenames - train_number - test_number
         # get train filename list
         train_filenames = self.get_filename_list(0, train_number, filenames)
