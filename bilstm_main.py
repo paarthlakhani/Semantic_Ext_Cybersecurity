@@ -42,7 +42,7 @@ class BiLSTMMain:
         predicted_labels = torch.argmax(predicted_output_probs_of_labels, dim=1)
         return predicted_labels
 
-    def train_model(self, num_epochs=10):
+    def train_model(self, num_epochs=30):
         optimizer = self.get_optmizer(learning_rate=0.0001, weight_decay=0.0001)
         self.bilstm_model.train()
         #print("Number of sentences: " + str(len(self.train_sentences)))
@@ -126,9 +126,9 @@ class BiLSTMMain:
             if true_label == all_predicted_labels[idx]:
                 correctly_labeled[true_label] = correctly_labeled[true_label] + 1
         for i in range(7):
-            recall[i] = float(correctly_labeled[i]/all_true_label_counts[i])
-            precision[i] = float(correctly_labeled[i]/all_predicted_label_counts[i])
-            f_score[i] = float(2*recall[i]*precision[i]/(recall[i] + precision[i]))
+            recall[i] = float((correctly_labeled[i] + 1)/(all_true_label_counts[i] + 1))
+            precision[i] = float((correctly_labeled[i] + 1)/(all_predicted_label_counts[i] + 1))
+            f_score[i] = float((2*recall[i]*precision[i])/(recall[i] + precision[i]))
         print(recall)
         print(precision)
         print(f_score)
