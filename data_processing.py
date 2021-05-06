@@ -97,8 +97,8 @@ class DataProcessing:
     def data_processing_main(self):
         filenames = self.read_plaintext_filenames()
         number_filenames = len(filenames)
-        train_number = 30 # 25
-        test_number = 9 # 14
+        train_number = 25 # 25
+        test_number = 14 # 14
         eval_number = number_filenames - train_number - test_number
         # get train filename list
         train_filenames = self.get_filename_list(0, train_number, filenames)

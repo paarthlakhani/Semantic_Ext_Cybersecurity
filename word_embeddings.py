@@ -10,6 +10,12 @@ class WordEmbeddings:
             return -1
         return self.word_to_idx[word]
 
+    def get_embedding(self, word):
+        word_idx = self.get_idx_of_word(word)
+        if word_idx != -1:
+            return word_idx
+        else:
+            return self.get_idx_of_word("UNK")
 
     def get_idx_word_or_add(self, word):
         if word not in self.word_to_idx:
