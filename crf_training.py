@@ -214,7 +214,7 @@ class CRFTraining:
         y_test = [self.create_y_label_for_test()]
 
         labels = list(self.crf_model.classes_)
-        labels.remove('O')
+        #labels.remove('O')
         y_pred = self.crf_model.predict(x_test)
         print(metrics.flat_f1_score(y_test, y_pred, average='weighted', labels = labels))
 

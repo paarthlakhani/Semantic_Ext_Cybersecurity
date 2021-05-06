@@ -1,0 +1,38 @@
+/Users/paarthlakhani/Desktop/CS_6355_SP/Project/Semantic_Ext_Cybersecurity/venv/bin/python /Users/paarthlakhani/Desktop/CS_6355_SP/Project/Semantic_Ext_Cybersecurity/bilstm_main.py
+Epoch number:1, Loss:11926.6904
+Epoch number:2, Loss:9488.1748
+Epoch number:3, Loss:8957.1855
+Epoch number:4, Loss:8679.4639
+Epoch number:5, Loss:8493.5811
+Epoch number:6, Loss:8353.7891
+Epoch number:7, Loss:8241.5928
+Epoch number:8, Loss:8147.9185
+Epoch number:9, Loss:8067.7476
+Epoch number:10, Loss:7997.8960
+Epoch number:11, Loss:7936.1470
+Epoch number:12, Loss:7880.9595
+Epoch number:13, Loss:7831.1279
+Epoch number:14, Loss:7785.7490
+Epoch number:15, Loss:7744.0938
+Epoch number:16, Loss:7705.6763
+Epoch number:17, Loss:7670.0127
+Epoch number:18, Loss:7636.8184
+Epoch number:19, Loss:7605.7559
+Epoch number:20, Loss:7576.6406
+Epoch number:21, Loss:7549.2266
+Epoch number:22, Loss:7523.3740
+Epoch number:23, Loss:7498.9927
+Epoch number:24, Loss:7475.9058
+Epoch number:25, Loss:7454.0049
+Epoch number:26, Loss:7433.2505
+Epoch number:27, Loss:7413.5288
+Epoch number:28, Loss:7394.7666
+Epoch number:29, Loss:7376.9067
+Epoch number:30, Loss:7359.8911
+
+Recall: [0.7223237156867981, 0.6634511947631836, 0.3427419364452362, 0.419900506734848, 0.2097901999950409, 0.8506711721420288, 0.22807016968727112]
+Precision: [0.8775689601898193, 0.14872656762599945, 0.10897435992956161, 0.14783675968647003, 0.3340757191181183, 0.10509949922561646, 0.21666668355464935]
+F-score: [0.792414243347152, 0.24298330625116096, 0.1653696510171863, 0.21868118926799338, 0.2577319499687009, 0.1870848664352978, 0.22222222837470634]
+Average F-score: tensor(0.2981)
+
+Process finished with exit code 0
